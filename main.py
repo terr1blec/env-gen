@@ -2,10 +2,12 @@ from __future__ import annotations
 
 import argparse
 import asyncio
+import logging
 import os
 import sys
 from pathlib import Path
 
+from workflow.logging_utils import get_workflow_logger
 from workflow.runtime import run_workflow
 
 
@@ -61,11 +63,16 @@ def main() -> None:
     try:
         summary = asyncio.run(run_workflow(args))
     except Exception as exc:
-        print(f"Workflow failed: {exc}", file=sys.stderr)
+        logger = get_workflow_logger()
+        if not logger.handlers:
+            logging.basicConfig(level=logging.ERROR, format="%(asctime)s - %(levelname)s - %(message)s")
+            logger = get_workflow_logger()
+        logger.exception("Workflow failed")
         sys.exit(1)
 
-    print("Workflow completed.")
-    print(summary)
+    logger = get_workflow_logger()
+    logger.info("Workflow completed.")
+    logger.info(summary)
 
 
 if __name__ == "__main__":

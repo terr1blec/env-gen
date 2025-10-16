@@ -10,7 +10,7 @@ from agents.extensions.models.litellm_model import LitellmModel
 
 from .agents import build_agent_suite
 from .context import WorkflowContext, build_schema_summary, load_schema, slugify
-from .logging_utils import init_workflow_logger
+from .logging_utils import get_workflow_logger, init_workflow_logger
 from .orchestrator import execute_workflow
 from .utils import ensure_directory
 
@@ -89,7 +89,7 @@ async def run_workflow(args: Any) -> str:
         or os.getenv("API_KEY")
     )
     if not api_key: 
-        raise ValueError("API key is required. Please set the API key in the environment variables or pass it as an argument.")
+        raise ValueError("API key is required")
     base_url: Optional[str] = (
         getattr(args, "base_url", None)
         or os.getenv("DEEPSEEK_BASE_URL")

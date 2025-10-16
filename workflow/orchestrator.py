@@ -3,11 +3,12 @@ from __future__ import annotations
 from dataclasses import dataclass
 from typing import Any, List
 
-from agents.run import RunConfig
 from agents import Runner
+from agents.run import RunConfig
 
 from .agents import AgentSuite
 from .context import WorkflowContext
+from .logging_utils import get_workflow_logger
 
 
 @dataclass
@@ -33,10 +34,14 @@ async def _run_agent_step(
     max_turns: int,
     workflow_slug: str,
 ) -> StepResult:
+    logger = get_workflow_logger()
     run_config = RunConfig(workflow_name=f"offline-mcp::{workflow_slug}::{name}")
-    print(
-        f"[workflow] [{name}] starting (max_turns={max_turns}). Prompt excerpt: { _shorten(prompt, 180) }",
-        flush=True,
+
+    logger.info(
+        "[%s] starting (max_turns=%s). Prompt excerpt: %s",
+        name,
+        max_turns,
+        _shorten(prompt, 180),
     )
     try:
         result = await Runner.run(
@@ -47,13 +52,14 @@ async def _run_agent_step(
             max_turns=max_turns,
         )
     except Exception as exc:
-        print(f"[workflow] [{name}] FAILED with error: {exc}", flush=True)
+        logger.exception("[%s] failed with error", name)
         raise
 
     output_text = result.final_output if result.final_output is not None else "(no final output)"
-    print(
-        f"[workflow] [{name}] completed. Output excerpt: {_shorten(output_text, 200)}",
-        flush=True,
+    logger.info(
+        "[%s] completed. Output excerpt: %s",
+        name,
+        _shorten(output_text, 200),
     )
     return StepResult(name=name, description=prompt, output=output_text.strip())
 
@@ -65,6 +71,7 @@ async def execute_workflow(
     goal_prompt: str,
     max_turns: int,
 ) -> List[StepResult]:
+    logger = get_workflow_logger()
     step_results: List[StepResult] = []
 
     dataset_module_rel = context.relative(context.dataset_module_path)
@@ -153,16 +160,13 @@ async def execute_workflow(
         verdict = review_result.output.upper()
         if verdict.startswith("APPROVED"):
             review_feedback = None
-            print(
-                f"[workflow] [code_review_cycle_{cycle + 1}] Review approved, proceeding.",
-                flush=True,
-            )
+            logger.info("[code_review_cycle_%s] Review approved, proceeding.", cycle + 1)
             break
 
         review_feedback = review_result.output
-        print(
-            f"[workflow] [code_review_cycle_{cycle + 1}] Review requested revisions; iterating...",
-            flush=True,
+        logger.info(
+            "[code_review_cycle_%s] Review requested revisions; iterating...",
+            cycle + 1,
         )
     else:
         raise RuntimeError(

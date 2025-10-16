@@ -3,7 +3,7 @@ from __future__ import annotations
 import json
 from dataclasses import dataclass, field
 from pathlib import Path
-from typing import Any, Dict, List
+from typing import Any, Dict, List, Optional
 
 
 @dataclass
@@ -20,6 +20,8 @@ class WorkflowContext:
     dataset_json_path: Path
     tests_dir: Path
     transcripts_dir: Path
+    logs_dir: Path | None = None
+    log_file_path: Path | None = None
     recommended_paths: Dict[str, Path] = field(default_factory=dict)
     schema_summary: str = ""
     notes: List[str] = field(default_factory=list)

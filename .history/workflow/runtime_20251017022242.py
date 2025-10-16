@@ -1,7 +1,6 @@
 from __future__ import annotations
 
 import os
-from datetime import datetime
 from pathlib import Path
 from typing import Any, Optional
 
@@ -10,7 +9,6 @@ from agents.extensions.models.litellm_model import LitellmModel
 
 from .agents import build_agent_suite
 from .context import WorkflowContext, build_schema_summary, load_schema, slugify
-from .logging_utils import init_workflow_logger
 from .orchestrator import execute_workflow
 from .utils import ensure_directory
 
@@ -44,8 +42,6 @@ def prepare_context(args: Any) -> WorkflowContext:
     dataset_module_path = output_dir / f"{module_slug}_dataset.py"
     dataset_json_path = output_dir / f"{module_slug}_dataset.json"
     tests_dir = workspace_root / "tests" / slug
-    logs_dir = workspace_root / "logs" / slug
-    ensure_directory(logs_dir)
 
     context = WorkflowContext(
         workspace_root=workspace_root,
@@ -58,7 +54,6 @@ def prepare_context(args: Any) -> WorkflowContext:
         dataset_json_path=dataset_json_path,
         tests_dir=tests_dir,
         transcripts_dir=transcripts_dir,
-        logs_dir=logs_dir,
     )
     context.recommended_paths = {
         "server_module": server_module_path,
@@ -72,15 +67,10 @@ def prepare_context(args: Any) -> WorkflowContext:
 
 async def run_workflow(args: Any) -> str:
     context = prepare_context(args)
-    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-    log_file = (context.logs_dir or (context.workspace_root / "logs")) / f"workflow_{timestamp}.log"
-    context.log_file_path = log_file
-
-    logger = init_workflow_logger(log_file)
-    logger.info("Prepared context for schema: %s", context.schema_path)
-    logger.info("Recommended output paths:")
+    print(f"[workflow] Prepared context for schema: {context.schema_path}")
+    print("[workflow] Recommended output paths:")
     for key, path in context.recommended_paths.items():
-        logger.info("  - %s: %s", key, context.relative(path))
+        print(f"  - {key}: {context.relative(path)}")
 
     api_key = (
         getattr(args, "api_key", None)
@@ -88,21 +78,12 @@ async def run_workflow(args: Any) -> str:
         or os.getenv("LITELLM_API_KEY")
         or os.getenv("API_KEY")
     )
-    if not api_key: 
-        raise ValueError("API key is required. Please set the API key in the environment variables or pass it as an argument.")
-    base_url: Optional[str] = (
-        getattr(args, "base_url", None)
-        or os.getenv("DEEPSEEK_BASE_URL")
-        or os.getenv("LITELLM_BASE_URL")
-        or os.getenv("BASE_URL")
-        or "https://api.deepseek.com"
-    )
-
+    
     set_tracing_disabled(disabled=True)
 
-    model = LitellmModel(model=args.model, api_key=api_key, base_url=base_url)
+    model = LitellmModel(model=args.model, api_key=api_key)
     agents = build_agent_suite(context, model)
-    logger.info("Starting multi-agent pipeline with model %s...", args.model)
+    print(f"[workflow] Starting multi-agent pipeline with model {args.model}...", flush=True)
 
     step_results = await execute_workflow(
         context=context,
@@ -110,7 +91,7 @@ async def run_workflow(args: Any) -> str:
         goal_prompt=args.prompt,
         max_turns=args.max_turns,
     )
-    logger.info("Multi-agent pipeline complete.")
+    print("[workflow] Multi-agent pipeline complete.", flush=True)
 
     summary_lines = [
         f"Workflow slug: {context.slug}",
@@ -123,7 +104,6 @@ async def run_workflow(args: Any) -> str:
     summary_lines.append("Step outcomes:")
     for step in step_results:
         summary_lines.append(f"[{step.name}] {step.output}")
-        logger.info("Step %s result: %s", step.name, step.output)
 
     return "\n".join(summary_lines)
 
