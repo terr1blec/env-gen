@@ -1,0 +1,253 @@
+{
+  "metadata": {
+    "generated_at": "2024-12-19T10:00:00+00:00",
+    "seed": 42,
+    "event_count": 50,
+    "calendar_count": 5,
+    "version": "1.0"
+  },
+  "calendars": [
+    {
+      "id": "12345678-1234-5678-1234-567812345678",
+      "summary": "Work Calendar",
+      "description": "Work-related meetings and events",
+      "timeZone": "America/New_York",
+      "backgroundColor": "#1d76db",
+      "foregroundColor": "#ffffff",
+      "accessRole": "owner"
+    },
+    {
+      "id": "87654321-4321-8765-4321-876543210987",
+      "summary": "Personal Calendar",
+      "description": "Personal appointments and reminders",
+      "timeZone": "America/New_York",
+      "backgroundColor": "#0b8043",
+      "foregroundColor": "#ffffff",
+      "accessRole": "owner"
+    },
+    {
+      "id": "11111111-2222-3333-4444-555555555555",
+      "summary": "Family Calendar",
+      "description": "Family events and activities",
+      "timeZone": "America/New_York",
+      "backgroundColor": "#8e24aa",
+      "foregroundColor": "#ffffff",
+      "accessRole": "owner"
+    },
+    {
+      "id": "aaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+      "summary": "Holidays",
+      "description": "Public holidays and observances",
+      "timeZone": "America/New_York",
+      "backgroundColor": "#f6c026",
+      "foregroundColor": "#000000",
+      "accessRole": "owner"
+    },
+    {
+      "id": "bbbbbbbb-cccc-dddd-eeee-ffffffffffff",
+      "summary": "Birthdays",
+      "description": "Birthday reminders",
+      "timeZone": "America/New_York",
+      "backgroundColor": "#e67c73",
+      "foregroundColor": "#ffffff",
+      "accessRole": "owner"
+    }
+  ],
+  "events": {
+    "12345678-1234-5678-1234-567812345678": [
+      {
+        "id": "event-001",
+        "summary": "Team Meeting",
+        "description": "Weekly team sync",
+        "location": "Conference Room A",
+        "start": {
+          "dateTime": "2024-12-19T09:00:00-05:00"
+        },
+        "end": {
+          "dateTime": "2024-12-19T10:00:00-05:00"
+        },
+        "organizer": {
+          "email": "user@example.com",
+          "displayName": "Test User"
+        },
+        "attendees": [
+          {
+            "email": "alice@example.com",
+            "responseStatus": "accepted"
+          },
+          {
+            "email": "bob@example.com",
+            "responseStatus": "accepted"
+          }
+        ],
+        "created": "2024-12-18T10:00:00+00:00",
+        "updated": "2024-12-18T10:00:00+00:00",
+        "status": "confirmed",
+        "transparency": "opaque",
+        "visibility": "default",
+        "iCalUID": "event-001@google.com",
+        "sequence": 0,
+        "reminders": {
+          "useDefault": true
+        }
+      },
+      {
+        "id": "event-002",
+        "summary": "Project Review",
+        "description": "Quarterly project review meeting",
+        "location": "Zoom",
+        "start": {
+          "dateTime": "2024-12-20T14:00:00-05:00"
+        },
+        "end": {
+          "dateTime": "2024-12-20T15:30:00-05:00"
+        },
+        "organizer": {
+          "email": "user@example.com",
+          "displayName": "Test User"
+        },
+        "attendees": [
+          {
+            "email": "charlie@example.com",
+            "responseStatus": "tentative"
+          }
+        ],
+        "created": "2024-12-18T10:00:00+00:00",
+        "updated": "2024-12-18T10:00:00+00:00",
+        "status": "confirmed",
+        "transparency": "opaque",
+        "visibility": "default",
+        "iCalUID": "event-002@google.com",
+        "sequence": 0,
+        "reminders": {
+          "useDefault": true
+        }
+      }
+    ],
+    "87654321-4321-8765-4321-876543210987": [
+      {
+        "id": "event-003",
+        "summary": "Doctor Appointment",
+        "description": "Annual checkup",
+        "location": "Medical Center",
+        "start": {
+          "dateTime": "2024-12-21T10:00:00-05:00"
+        },
+        "end": {
+          "dateTime": "2024-12-21T11:00:00-05:00"
+        },
+        "organizer": {
+          "email": "user@example.com",
+          "displayName": "Test User"
+        },
+        "attendees": [],
+        "created": "2024-12-18T10:00:00+00:00",
+        "updated": "2024-12-18T10:00:00+00:00",
+        "status": "confirmed",
+        "transparency": "opaque",
+        "visibility": "default",
+        "iCalUID": "event-003@google.com",
+        "sequence": 0,
+        "reminders": {
+          "useDefault": true
+        }
+      }
+    ],
+    "11111111-2222-3333-4444-555555555555": [
+      {
+        "id": "event-004",
+        "summary": "Birthday Party",
+        "description": "Family birthday celebration",
+        "location": "Home",
+        "start": {
+          "dateTime": "2024-12-22T18:00:00-05:00"
+        },
+        "end": {
+          "dateTime": "2024-12-22T21:00:00-05:00"
+        },
+        "organizer": {
+          "email": "user@example.com",
+          "displayName": "Test User"
+        },
+        "attendees": [
+          {
+            "email": "diana@example.com",
+            "responseStatus": "accepted"
+          },
+          {
+            "email": "eve@example.com",
+            "responseStatus": "accepted"
+          }
+        ],
+        "created": "2024-12-18T10:00:00+00:00",
+        "updated": "2024-12-18T10:00:00+00:00",
+        "status": "confirmed",
+        "transparency": "opaque",
+        "visibility": "default",
+        "iCalUID": "event-004@google.com",
+        "sequence": 0,
+        "reminders": {
+          "useDefault": true
+        }
+      }
+    ],
+    "aaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee": [
+      {
+        "id": "event-005",
+        "summary": "Christmas Day",
+        "description": "Public holiday",
+        "location": "",
+        "start": {
+          "date": "2024-12-25"
+        },
+        "end": {
+          "date": "2024-12-25"
+        },
+        "organizer": {
+          "email": "user@example.com",
+          "displayName": "Test User"
+        },
+        "attendees": [],
+        "created": "2024-12-18T10:00:00+00:00",
+        "updated": "2024-12-18T10:00:00+00:00",
+        "status": "confirmed",
+        "transparency": "transparent",
+        "visibility": "public",
+        "iCalUID": "event-005@google.com",
+        "sequence": 0,
+        "reminders": {
+          "useDefault": true
+        }
+      }
+    ],
+    "bbbbbbbb-cccc-dddd-eeee-ffffffffffff": [
+      {
+        "id": "event-006",
+        "summary": "Alice's Birthday",
+        "description": "Birthday reminder",
+        "location": "",
+        "start": {
+          "date": "2024-12-28"
+        },
+        "end": {
+          "date": "2024-12-28"
+        },
+        "organizer": {
+          "email": "user@example.com",
+          "displayName": "Test User"
+        },
+        "attendees": [],
+        "created": "2024-12-18T10:00:00+00:00",
+        "updated": "2024-12-18T10:00:00+00:00",
+        "status": "confirmed",
+        "transparency": "transparent",
+        "visibility": "private",
+        "iCalUID": "event-006@google.com",
+        "sequence": 0,
+        "reminders": {
+          "useDefault": true
+        }
+      }
+    ]
+  }
+}

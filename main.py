@@ -16,7 +16,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--schema",
         type=Path,
-        default=Path("cf_0014.@smithery-ai_google-maps_labeled.json"),
+        default=Path("mcp_servers\cf_1629.google-calendar-mcp_google-calendar_labeled.json"),
         help="Path to the MCP schema JSON file.",
     )
     parser.add_argument(
