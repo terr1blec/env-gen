@@ -12,11 +12,15 @@ from workflow.runtime import run_workflow
 
 
 def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description="Run the MCP offline server generation workflow.")
+    parser = argparse.ArgumentParser(
+        description="Run the MCP offline server generation workflow."
+    )
     parser.add_argument(
         "--schema",
         type=Path,
-        default=Path("mcp_servers\cf_1629.google-calendar-mcp_google-calendar_labeled.json"),
+        default=Path(
+            "mcp_servers/0242.@JackKuo666_chembl-mcp-server_labeled.json"
+        ),
         help="Path to the MCP schema JSON file.",
     )
     parser.add_argument(
@@ -40,7 +44,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--max-turns",
         type=int,
-        default=24,
+        default=36,
         help="Maximum number of agent turns to allow for the workflow.",
     )
     parser.add_argument(
@@ -65,7 +69,9 @@ def main() -> None:
     except Exception as exc:
         logger = get_workflow_logger()
         if not logger.handlers:
-            logging.basicConfig(level=logging.ERROR, format="%(asctime)s - %(levelname)s - %(message)s")
+            logging.basicConfig(
+                level=logging.ERROR, format="%(asctime)s - %(levelname)s - %(message)s"
+            )
             logger = get_workflow_logger()
         logger.exception("Workflow failed")
         sys.exit(1)

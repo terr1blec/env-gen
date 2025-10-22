@@ -18,6 +18,7 @@ class WorkflowContext:
     server_module_path: Path
     dataset_module_path: Path
     dataset_json_path: Path
+    metadata_json_path: Path
     tests_dir: Path
     transcripts_dir: Path
     logs_dir: Path | None = None

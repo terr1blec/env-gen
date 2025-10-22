@@ -1,0 +1,588 @@
+{
+  "name": "Google Calendar MCP Server",
+  "description": "FastMCP server for Google Calendar operations using offline dataset. Provides calendar and event management tools with realistic synthetic data.",
+  "version": "1.0.0",
+  "tools": [
+    {
+      "name": "list_calendars",
+      "description": "List all available calendars from the dataset",
+      "input_schema": {
+        "type": "object",
+        "properties": {},
+        "required": []
+      },
+      "output_schema": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string"
+            },
+            "summary": {
+              "type": "string"
+            },
+            "description": {
+              "type": "string"
+            },
+            "timeZone": {
+              "type": "string"
+            },
+            "primary": {
+              "type": "boolean"
+            },
+            "accessRole": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "summary",
+            "accessRole"
+          ]
+        }
+      }
+    },
+    {
+      "name": "list_events",
+      "description": "List events, optionally filtered by calendar and time range",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "calendar_id": {
+            "type": "string",
+            "description": "Optional calendar ID to filter events"
+          },
+          "time_min": {
+            "type": "string",
+            "description": "Optional start time for filtering (ISO 8601 format)"
+          },
+          "time_max": {
+            "type": "string",
+            "description": "Optional end time for filtering (ISO 8601 format)"
+          }
+        },
+        "required": []
+      },
+      "output_schema": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string"
+            },
+            "calendarId": {
+              "type": "string"
+            },
+            "summary": {
+              "type": "string"
+            },
+            "description": {
+              "type": "string"
+            },
+            "start": {
+              "type": "object",
+              "properties": {
+                "dateTime": {
+                  "type": "string"
+                },
+                "timeZone": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "dateTime",
+                "timeZone"
+              ]
+            },
+            "end": {
+              "type": "object",
+              "properties": {
+                "dateTime": {
+                  "type": "string"
+                },
+                "timeZone": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "dateTime",
+                "timeZone"
+              ]
+            },
+            "location": {
+              "type": "string"
+            },
+            "status": {
+              "type": "string"
+            },
+            "attendees": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "email": {
+                    "type": "string"
+                  },
+                  "displayName": {
+                    "type": "string"
+                  },
+                  "responseStatus": {
+                    "type": "string"
+                  }
+                }
+              }
+            },
+            "recurrence": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "reminders": {
+              "type": "object",
+              "properties": {
+                "useDefault": {
+                  "type": "boolean"
+                },
+                "overrides": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "minutes": {
+                        "type": "integer"
+                      },
+                      "method": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "required": [
+            "id",
+            "calendarId",
+            "summary",
+            "start",
+            "end",
+            "status"
+          ]
+        }
+      }
+    },
+    {
+      "name": "create_event",
+      "description": "Create a new calendar event",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "calendar_id": {
+            "type": "string",
+            "description": "ID of the calendar to add the event to"
+          },
+          "summary": {
+            "type": "string",
+            "description": "Event title"
+          },
+          "start_time": {
+            "type": "string",
+            "description": "Event start time (ISO 8601 format)"
+          },
+          "end_time": {
+            "type": "string",
+            "description": "Event end time (ISO 8601 format)"
+          },
+          "description": {
+            "type": "string",
+            "description": "Optional event description"
+          },
+          "location": {
+            "type": "string",
+            "description": "Optional event location"
+          },
+          "time_zone": {
+            "type": "string",
+            "description": "Timezone for the event (default: America/New_York)"
+          }
+        },
+        "required": [
+          "calendar_id",
+          "summary",
+          "start_time",
+          "end_time"
+        ]
+      },
+      "output_schema": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "calendarId": {
+            "type": "string"
+          },
+          "summary": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "start": {
+            "type": "object",
+            "properties": {
+              "dateTime": {
+                "type": "string"
+              },
+              "timeZone": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "dateTime",
+              "timeZone"
+            ]
+          },
+          "end": {
+            "type": "object",
+            "properties": {
+              "dateTime": {
+                "type": "string"
+              },
+              "timeZone": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "dateTime",
+              "timeZone"
+            ]
+          },
+          "location": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string"
+          },
+          "reminders": {
+            "type": "object",
+            "properties": {
+              "useDefault": {
+                "type": "boolean"
+              },
+              "overrides": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "minutes": {
+                      "type": "integer"
+                    },
+                    "method": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "required": [
+          "id",
+          "calendarId",
+          "summary",
+          "start",
+          "end",
+          "status"
+        ]
+      }
+    },
+    {
+      "name": "update_event",
+      "description": "Update an existing calendar event",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "event_id": {
+            "type": "string",
+            "description": "ID of the event to update"
+          },
+          "summary": {
+            "type": "string",
+            "description": "New event title (optional)"
+          },
+          "description": {
+            "type": "string",
+            "description": "New event description (optional)"
+          },
+          "start_time": {
+            "type": "string",
+            "description": "New start time (ISO 8601 format, optional)"
+          },
+          "end_time": {
+            "type": "string",
+            "description": "New end time (ISO 8601 format, optional)"
+          },
+          "location": {
+            "type": "string",
+            "description": "New event location (optional)"
+          },
+          "status": {
+            "type": "string",
+            "description": "New event status (optional)"
+          }
+        },
+        "required": [
+          "event_id"
+        ]
+      },
+      "output_schema": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "calendarId": {
+            "type": "string"
+          },
+          "summary": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "start": {
+            "type": "object",
+            "properties": {
+              "dateTime": {
+                "type": "string"
+              },
+              "timeZone": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "dateTime",
+              "timeZone"
+            ]
+          },
+          "end": {
+            "type": "object",
+            "properties": {
+              "dateTime": {
+                "type": "string"
+              },
+              "timeZone": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "dateTime",
+              "timeZone"
+            ]
+          },
+          "location": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string"
+          },
+          "attendees": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "email": {
+                  "type": "string"
+                },
+                "displayName": {
+                  "type": "string"
+                },
+                "responseStatus": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "recurrence": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "reminders": {
+            "type": "object",
+            "properties": {
+              "useDefault": {
+                "type": "boolean"
+              },
+              "overrides": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "minutes": {
+                      "type": "integer"
+                    },
+                    "method": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "required": [
+          "id",
+          "calendarId",
+          "summary",
+          "start",
+          "end",
+          "status"
+        ]
+      }
+    },
+    {
+      "name": "delete_event",
+      "description": "Delete a calendar event",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "calendar_id": {
+            "type": "string",
+            "description": "ID of the calendar containing the event"
+          },
+          "event_id": {
+            "type": "string",
+            "description": "ID of the event to delete"
+          }
+        },
+        "required": [
+          "calendar_id",
+          "event_id"
+        ]
+      },
+      "output_schema": {
+        "type": "object",
+        "properties": {
+          "message": {
+            "type": "string"
+          },
+          "deleted_event": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "calendarId": {
+                "type": "string"
+              },
+              "summary": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "start": {
+                "type": "object",
+                "properties": {
+                  "dateTime": {
+                    "type": "string"
+                  },
+                  "timeZone": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "dateTime",
+                  "timeZone"
+                ]
+              },
+              "end": {
+                "type": "object",
+                "properties": {
+                  "dateTime": {
+                    "type": "string"
+                  },
+                  "timeZone": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "dateTime",
+                  "timeZone"
+                ]
+              },
+              "location": {
+                "type": "string"
+              },
+              "status": {
+                "type": "string"
+              },
+              "attendees": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "email": {
+                      "type": "string"
+                    },
+                    "displayName": {
+                      "type": "string"
+                    },
+                    "responseStatus": {
+                      "type": "string"
+                    }
+                  }
+                }
+              },
+              "recurrence": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "reminders": {
+                "type": "object",
+                "properties": {
+                  "useDefault": {
+                    "type": "boolean"
+                  },
+                  "overrides": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "minutes": {
+                          "type": "integer"
+                        },
+                        "method": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "required": [
+          "message",
+          "deleted_event"
+        ]
+      }
+    }
+  ],
+  "usage_examples": {
+    "list_calendars": "Use this tool to get an overview of all available calendars in the dataset.",
+    "list_events": "Use this tool to find events. You can filter by calendar ID or time range to narrow down results.",
+    "create_event": "Use this tool to add new events to a calendar. Provide required fields like summary, start_time, and end_time.",
+    "update_event": "Use this tool to modify existing events. Only provide the fields you want to change.",
+    "delete_event": "Use this tool to remove events from a calendar. You need both the calendar ID and event ID."
+  }
+}

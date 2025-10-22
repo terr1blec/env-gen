@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import json
 import subprocess
 import sys
 from pathlib import Path
@@ -69,6 +70,23 @@ def ensure_dir(ctx: RunContextWrapper[WorkflowContext], relative_path: str) -> s
     path = ctx.context.resolve_path(relative_path)
     ensure_directory(path)
     return f"Directory ready: {ctx.context.relative(path)}"
+
+
+@function_tool
+def write_json(
+    ctx: RunContextWrapper[WorkflowContext],
+    relative_path: str,
+    data: Any,
+    *,
+    indent: int = 2,
+    sort_keys: bool = True,
+) -> str:
+    """Serialize JSON data to the given workspace-relative path."""
+    path = ctx.context.resolve_path(relative_path)
+    ensure_directory(path.parent)
+    json_content = json.dumps(data, indent=indent, sort_keys=sort_keys, ensure_ascii=False)
+    path.write_text(json_content, encoding="utf-8")
+    return f"Wrote JSON to {ctx.context.relative(path)}"
 
 
 @function_tool
@@ -145,6 +163,7 @@ TOOLS = [
     list_directory,
     read_text,
     write_text,
+    write_json,
     ensure_dir,
     run_python,
     record_note,
@@ -157,6 +176,7 @@ __all__ = [
     "list_directory",
     "read_text",
     "write_text",
+    "write_json",
     "ensure_dir",
     "run_python",
     "record_note",

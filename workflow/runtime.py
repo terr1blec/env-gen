@@ -28,14 +28,20 @@ def prepare_context(args: Any) -> WorkflowContext:
     raw_name = server_info.get("name") or metadata.get("server_name") or schema_path.stem
     slug = slugify(raw_name)
 
-    output_dir = args.output_dir if args.output_dir.is_absolute() else workspace_root / args.output_dir
-    output_dir = output_dir.resolve()
+    output_root = args.output_dir if args.output_dir.is_absolute() else workspace_root / args.output_dir
+    output_root = output_root.resolve()
+    ensure_directory(output_root)
+
+    output_dir = output_root / slug
     ensure_directory(output_dir)
 
-    transcripts_dir = (
+    transcripts_root = (
         args.transcripts_dir if args.transcripts_dir.is_absolute() else workspace_root / args.transcripts_dir
     )
-    transcripts_dir = transcripts_dir.resolve()
+    transcripts_root = transcripts_root.resolve()
+    ensure_directory(transcripts_root)
+
+    transcripts_dir = transcripts_root / slug
     ensure_directory(transcripts_dir)
 
     module_slug = slug.replace("-", "_")
@@ -43,8 +49,10 @@ def prepare_context(args: Any) -> WorkflowContext:
     server_module_path = output_dir / f"{module_slug}_server.py"
     dataset_module_path = output_dir / f"{module_slug}_dataset.py"
     dataset_json_path = output_dir / f"{module_slug}_dataset.json"
+    metadata_json_path = output_dir / f"{module_slug}_metadata.json"
     tests_dir = workspace_root / "tests" / slug
     logs_dir = workspace_root / "logs" / slug
+    ensure_directory(tests_dir)
     ensure_directory(logs_dir)
 
     context = WorkflowContext(
@@ -56,6 +64,7 @@ def prepare_context(args: Any) -> WorkflowContext:
         server_module_path=server_module_path,
         dataset_module_path=dataset_module_path,
         dataset_json_path=dataset_json_path,
+        metadata_json_path=metadata_json_path,
         tests_dir=tests_dir,
         transcripts_dir=transcripts_dir,
         logs_dir=logs_dir,
@@ -64,7 +73,9 @@ def prepare_context(args: Any) -> WorkflowContext:
         "server_module": server_module_path,
         "dataset_module": dataset_module_path,
         "dataset_json": dataset_json_path,
+        "metadata_json": metadata_json_path,
         "tests_directory": tests_dir,
+        "transcripts_directory": transcripts_dir,
     }
     context.schema_summary = build_schema_summary(context)
     return context

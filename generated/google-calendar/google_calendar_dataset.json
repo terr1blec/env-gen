@@ -1,0 +1,1718 @@
+{
+  "calendars": [
+    {
+      "id": "calendar-1",
+      "summary": "Work Calendar",
+      "description": "Professional meetings and work-related events",
+      "timeZone": "America/New_York",
+      "primary": true,
+      "accessRole": "owner"
+    },
+    {
+      "id": "calendar-2",
+      "summary": "Personal Calendar",
+      "description": "Personal appointments and family events",
+      "timeZone": "America/New_York",
+      "primary": false,
+      "accessRole": "owner"
+    },
+    {
+      "id": "calendar-3",
+      "summary": "Holidays",
+      "description": "Public holidays and observances",
+      "timeZone": "America/New_York",
+      "primary": false,
+      "accessRole": "reader"
+    },
+    {
+      "id": "calendar-4",
+      "summary": "Team Projects",
+      "description": "Team collaboration and project timelines",
+      "timeZone": "America/Los_Angeles",
+      "primary": false,
+      "accessRole": "writer"
+    }
+  ],
+  "events": [
+    {
+      "id": "b3f419eb-d224-409b-986f-ca82c52733c5",
+      "calendarId": "calendar-1",
+      "summary": "Client Meeting",
+      "description": "Description for Client Meeting",
+      "start": {
+        "dateTime": "2025-11-02T15:45:00",
+        "timeZone": "America/New_York"
+      },
+      "end": {
+        "dateTime": "2025-11-02T18:45:00",
+        "timeZone": "America/New_York"
+      },
+      "location": "Location for Client Meeting",
+      "status": "cancelled",
+      "attendees": [],
+      "recurrence": [
+        "RRULE:FREQ=WEEKLY;INTERVAL=2;BYDAY=TU,TH"
+      ],
+      "reminders": {
+        "useDefault": false,
+        "overrides": [
+          {
+            "minutes": 30,
+            "method": "popup"
+          }
+        ]
+      }
+    },
+    {
+      "id": "e34f00d6-cb78-4642-88f0-0faa6853544a",
+      "calendarId": "calendar-2",
+      "summary": "Grocery Shopping",
+      "description": "Description for Grocery Shopping",
+      "start": {
+        "dateTime": "2025-10-26T10:30:00",
+        "timeZone": "America/New_York"
+      },
+      "end": {
+        "dateTime": "2025-10-26T13:30:00",
+        "timeZone": "America/New_York"
+      },
+      "location": "Location for Grocery Shopping",
+      "status": "cancelled",
+      "attendees": [],
+      "reminders": {
+        "useDefault": false,
+        "overrides": [
+          {
+            "minutes": 60,
+            "method": "email"
+          },
+          {
+            "minutes": 15,
+            "method": "email"
+          }
+        ]
+      }
+    },
+    {
+      "id": "366cea3e-75c6-44fc-b492-91154a30d3d4",
+      "calendarId": "calendar-1",
+      "summary": "Client Meeting",
+      "description": "Description for Client Meeting",
+      "start": {
+        "dateTime": "2025-10-28T15:00:00",
+        "timeZone": "America/New_York"
+      },
+      "end": {
+        "dateTime": "2025-10-28T15:30:00",
+        "timeZone": "America/New_York"
+      },
+      "location": "Location for Client Meeting",
+      "status": "confirmed",
+      "attendees": [
+        {
+          "email": "alice.johnson@test.net",
+          "displayName": "Alice Johnson",
+          "responseStatus": "declined"
+        },
+        {
+          "email": "bob.smith@company.com",
+          "displayName": "Bob Smith",
+          "responseStatus": "accepted"
+        },
+        {
+          "email": "carol.davis@example.org",
+          "displayName": "Carol Davis",
+          "responseStatus": "tentative"
+        },
+        {
+          "email": "david.wilson@company.com",
+          "displayName": "David Wilson",
+          "responseStatus": "accepted"
+        },
+        {
+          "email": "eva.brown@example.org",
+          "displayName": "Eva Brown",
+          "responseStatus": "tentative"
+        }
+      ],
+      "reminders": {
+        "useDefault": true,
+        "overrides": []
+      }
+    },
+    {
+      "id": "c0cb7ede-9b5a-43f6-90aa-7ba2a21df0a6",
+      "calendarId": "calendar-1",
+      "summary": "Team Standup",
+      "description": "Description for Team Standup",
+      "start": {
+        "dateTime": "2025-10-27T09:00:00",
+        "timeZone": "America/New_York"
+      },
+      "end": {
+        "dateTime": "2025-10-27T09:30:00",
+        "timeZone": "America/New_York"
+      },
+      "status": "tentative",
+      "attendees": [],
+      "reminders": {
+        "useDefault": false,
+        "overrides": [
+          {
+            "minutes": 60,
+            "method": "email"
+          }
+        ]
+      }
+    },
+    {
+      "id": "b842b02a-4f78-4a7e-a6ac-b745a89d0bc9",
+      "calendarId": "calendar-4",
+      "summary": "Project Kickoff",
+      "description": "Description for Project Kickoff",
+      "start": {
+        "dateTime": "2025-11-03T11:30:00",
+        "timeZone": "America/Los_Angeles"
+      },
+      "end": {
+        "dateTime": "2025-11-03T14:30:00",
+        "timeZone": "America/Los_Angeles"
+      },
+      "status": "confirmed",
+      "attendees": [
+        {
+          "email": "alice.johnson@example.org",
+          "displayName": "Alice Johnson",
+          "responseStatus": "declined"
+        },
+        {
+          "email": "bob.smith@example.org",
+          "displayName": "Bob Smith",
+          "responseStatus": "needsAction"
+        }
+      ],
+      "reminders": {
+        "useDefault": true,
+        "overrides": []
+      }
+    },
+    {
+      "id": "5fde4bdb-f8e2-4cc9-adda-d19723531751",
+      "calendarId": "calendar-1",
+      "summary": "Client Meeting",
+      "description": "Description for Client Meeting",
+      "start": {
+        "dateTime": "2025-11-01T14:45:00",
+        "timeZone": "America/New_York"
+      },
+      "end": {
+        "dateTime": "2025-11-01T16:15:00",
+        "timeZone": "America/New_York"
+      },
+      "location": "Location for Client Meeting",
+      "status": "cancelled",
+      "attendees": [
+        {
+          "email": "alice.johnson@example.org",
+          "displayName": "Alice Johnson",
+          "responseStatus": "needsAction"
+        },
+        {
+          "email": "bob.smith@company.com",
+          "displayName": "Bob Smith",
+          "responseStatus": "tentative"
+        },
+        {
+          "email": "carol.davis@example.org",
+          "displayName": "Carol Davis",
+          "responseStatus": "declined"
+        }
+      ],
+      "reminders": {
+        "useDefault": false,
+        "overrides": [
+          {
+            "minutes": 15,
+            "method": "email"
+          },
+          {
+            "minutes": 30,
+            "method": "popup"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ab9b2e1e-c939-4147-b5c1-57fdc6b543b8",
+      "calendarId": "calendar-3",
+      "summary": "Christmas Day",
+      "description": "Description for Christmas Day",
+      "start": {
+        "dateTime": "2025-11-15T00:00:00",
+        "timeZone": "America/New_York"
+      },
+      "end": {
+        "dateTime": "2025-11-15T23:59:00",
+        "timeZone": "America/New_York"
+      },
+      "location": "Location for Christmas Day",
+      "status": "tentative",
+      "attendees": [
+        {
+          "email": "alice.johnson@example.org",
+          "displayName": "Alice Johnson",
+          "responseStatus": "declined"
+        },
+        {
+          "email": "bob.smith@company.com",
+          "displayName": "Bob Smith",
+          "responseStatus": "accepted"
+        },
+        {
+          "email": "carol.davis@company.com",
+          "displayName": "Carol Davis",
+          "responseStatus": "needsAction"
+        },
+        {
+          "email": "david.wilson@example.org",
+          "displayName": "David Wilson",
+          "responseStatus": "accepted"
+        },
+        {
+          "email": "eva.brown@test.net",
+          "displayName": "Eva Brown",
+          "responseStatus": "tentative"
+        }
+      ],
+      "reminders": {
+        "useDefault": false,
+        "overrides": [
+          {
+            "minutes": 15,
+            "method": "email"
+          },
+          {
+            "minutes": 30,
+            "method": "popup"
+          }
+        ]
+      }
+    },
+    {
+      "id": "9163c793-a483-4cba-a12c-42dfc9a5ea61",
+      "calendarId": "calendar-1",
+      "summary": "Sprint Retrospective",
+      "description": "Description for Sprint Retrospective",
+      "start": {
+        "dateTime": "2025-11-18T15:15:00",
+        "timeZone": "America/New_York"
+      },
+      "end": {
+        "dateTime": "2025-11-18T17:15:00",
+        "timeZone": "America/New_York"
+      },
+      "location": "Location for Sprint Retrospective",
+      "status": "cancelled",
+      "attendees": [
+        {
+          "email": "alice.johnson@example.org",
+          "displayName": "Alice Johnson",
+          "responseStatus": "tentative"
+        },
+        {
+          "email": "bob.smith@company.com",
+          "displayName": "Bob Smith",
+          "responseStatus": "tentative"
+        },
+        {
+          "email": "carol.davis@test.net",
+          "displayName": "Carol Davis",
+          "responseStatus": "needsAction"
+        }
+      ],
+      "reminders": {
+        "useDefault": false,
+        "overrides": [
+          {
+            "minutes": 60,
+            "method": "email"
+          },
+          {
+            "minutes": 15,
+            "method": "email"
+          }
+        ]
+      }
+    },
+    {
+      "id": "820e8102-ff89-4604-9252-7225cee0ab6c",
+      "calendarId": "calendar-3",
+      "summary": "Independence Day",
+      "start": {
+        "dateTime": "2025-11-17T00:00:00",
+        "timeZone": "America/New_York"
+      },
+      "end": {
+        "dateTime": "2025-11-17T23:59:00",
+        "timeZone": "America/New_York"
+      },
+      "location": "Location for Independence Day",
+      "status": "tentative",
+      "attendees": [
+        {
+          "email": "alice.johnson@test.net",
+          "displayName": "Alice Johnson",
+          "responseStatus": "tentative"
+        },
+        {
+          "email": "bob.smith@example.org",
+          "displayName": "Bob Smith",
+          "responseStatus": "accepted"
+        }
+      ],
+      "recurrence": [
+        "RRULE:FREQ=DAILY;COUNT=5"
+      ],
+      "reminders": {
+        "useDefault": false,
+        "overrides": [
+          {
+            "minutes": 10,
+            "method": "popup"
+          }
+        ]
+      }
+    },
+    {
+      "id": "5db84d50-ad4b-44f3-962f-b276e639d512",
+      "calendarId": "calendar-1",
+      "summary": "Code Review",
+      "description": "Description for Code Review",
+      "start": {
+        "dateTime": "2025-11-20T11:15:00",
+        "timeZone": "America/New_York"
+      },
+      "end": {
+        "dateTime": "2025-11-20T12:45:00",
+        "timeZone": "America/New_York"
+      },
+      "location": "Location for Code Review",
+      "status": "tentative",
+      "attendees": [
+        {
+          "email": "alice.johnson@company.com",
+          "displayName": "Alice Johnson",
+          "responseStatus": "accepted"
+        }
+      ],
+      "recurrence": [
+        "RRULE:FREQ=DAILY;COUNT=5"
+      ],
+      "reminders": {
+        "useDefault": false,
+        "overrides": [
+          {
+            "minutes": 30,
+            "method": "popup"
+          },
+          {
+            "minutes": 10,
+            "method": "popup"
+          }
+        ]
+      }
+    },
+    {
+      "id": "fff76e55-42cd-4567-a04b-9812ca0c5566",
+      "calendarId": "calendar-1",
+      "summary": "Sprint Retrospective",
+      "description": "Description for Sprint Retrospective",
+      "start": {
+        "dateTime": "2025-10-30T15:15:00",
+        "timeZone": "America/New_York"
+      },
+      "end": {
+        "dateTime": "2025-10-30T18:15:00",
+        "timeZone": "America/New_York"
+      },
+      "location": "Location for Sprint Retrospective",
+      "status": "cancelled",
+      "attendees": [
+        {
+          "email": "alice.johnson@example.org",
+          "displayName": "Alice Johnson",
+          "responseStatus": "declined"
+        },
+        {
+          "email": "bob.smith@company.com",
+          "displayName": "Bob Smith",
+          "responseStatus": "declined"
+        },
+        {
+          "email": "carol.davis@company.com",
+          "displayName": "Carol Davis",
+          "responseStatus": "declined"
+        }
+      ],
+      "recurrence": [
+        "RRULE:FREQ=WEEKLY;INTERVAL=2;BYDAY=TU,TH"
+      ],
+      "reminders": {
+        "useDefault": false,
+        "overrides": [
+          {
+            "minutes": 15,
+            "method": "email"
+          },
+          {
+            "minutes": 10,
+            "method": "popup"
+          }
+        ]
+      }
+    },
+    {
+      "id": "aabd51b9-349f-4163-824e-fc1c22fcb1c0",
+      "calendarId": "calendar-1",
+      "summary": "Sprint Retrospective",
+      "description": "Description for Sprint Retrospective",
+      "start": {
+        "dateTime": "2025-11-03T15:15:00",
+        "timeZone": "America/New_York"
+      },
+      "end": {
+        "dateTime": "2025-11-03T16:45:00",
+        "timeZone": "America/New_York"
+      },
+      "location": "Location for Sprint Retrospective",
+      "status": "cancelled",
+      "attendees": [],
+      "reminders": {
+        "useDefault": false,
+        "overrides": [
+          {
+            "minutes": 15,
+            "method": "email"
+          }
+        ]
+      }
+    },
+    {
+      "id": "a89d24cb-465f-48fa-b00c-ba42cd9813aa",
+      "calendarId": "calendar-2",
+      "summary": "Grocery Shopping",
+      "description": "Description for Grocery Shopping",
+      "start": {
+        "dateTime": "2025-10-30T10:45:00",
+        "timeZone": "America/New_York"
+      },
+      "end": {
+        "dateTime": "2025-10-30T11:15:00",
+        "timeZone": "America/New_York"
+      },
+      "location": "Location for Grocery Shopping",
+      "status": "tentative",
+      "attendees": [],
+      "reminders": {
+        "useDefault": false,
+        "overrides": [
+          {
+            "minutes": 30,
+            "method": "popup"
+          },
+          {
+            "minutes": 10,
+            "method": "popup"
+          }
+        ]
+      }
+    },
+    {
+      "id": "9e905579-0cbc-4910-bc19-2c3bf47fa447",
+      "calendarId": "calendar-1",
+      "summary": "Code Review",
+      "description": "Description for Code Review",
+      "start": {
+        "dateTime": "2025-11-04T11:15:00",
+        "timeZone": "America/New_York"
+      },
+      "end": {
+        "dateTime": "2025-11-04T13:15:00",
+        "timeZone": "America/New_York"
+      },
+      "location": "Location for Code Review",
+      "status": "tentative",
+      "attendees": [
+        {
+          "email": "alice.johnson@test.net",
+          "displayName": "Alice Johnson",
+          "responseStatus": "declined"
+        },
+        {
+          "email": "bob.smith@example.org",
+          "displayName": "Bob Smith",
+          "responseStatus": "tentative"
+        },
+        {
+          "email": "carol.davis@test.net",
+          "displayName": "Carol Davis",
+          "responseStatus": "needsAction"
+        },
+        {
+          "email": "david.wilson@test.net",
+          "displayName": "David Wilson",
+          "responseStatus": "tentative"
+        }
+      ],
+      "reminders": {
+        "useDefault": false,
+        "overrides": [
+          {
+            "minutes": 60,
+            "method": "email"
+          }
+        ]
+      }
+    },
+    {
+      "id": "9eeb51b5-ce58-4049-af7a-3651b06345f5",
+      "calendarId": "calendar-2",
+      "summary": "Dinner with Friends",
+      "description": "Description for Dinner with Friends",
+      "start": {
+        "dateTime": "2025-11-05T20:15:00",
+        "timeZone": "America/New_York"
+      },
+      "end": {
+        "dateTime": "2025-11-05T20:45:00",
+        "timeZone": "America/New_York"
+      },
+      "status": "tentative",
+      "attendees": [
+        {
+          "email": "alice.johnson@test.net",
+          "displayName": "Alice Johnson",
+          "responseStatus": "needsAction"
+        }
+      ],
+      "reminders": {
+        "useDefault": false,
+        "overrides": [
+          {
+            "minutes": 30,
+            "method": "popup"
+          },
+          {
+            "minutes": 60,
+            "method": "email"
+          }
+        ]
+      }
+    },
+    {
+      "id": "e58f0b7e-ffa8-48a4-b124-c715388e5922",
+      "calendarId": "calendar-1",
+      "summary": "Project Planning",
+      "description": "Description for Project Planning",
+      "start": {
+        "dateTime": "2025-11-17T10:15:00",
+        "timeZone": "America/New_York"
+      },
+      "end": {
+        "dateTime": "2025-11-17T12:15:00",
+        "timeZone": "America/New_York"
+      },
+      "status": "confirmed",
+      "attendees": [],
+      "recurrence": [
+        "RRULE:FREQ=DAILY;COUNT=5"
+      ],
+      "reminders": {
+        "useDefault": true,
+        "overrides": []
+      }
+    },
+    {
+      "id": "86a6f141-01b2-4db0-8965-417be9422081",
+      "calendarId": "calendar-2",
+      "summary": "Doctor Appointment",
+      "description": "Description for Doctor Appointment",
+      "start": {
+        "dateTime": "2025-11-11T15:15:00",
+        "timeZone": "America/New_York"
+      },
+      "end": {
+        "dateTime": "2025-11-11T17:15:00",
+        "timeZone": "America/New_York"
+      },
+      "status": "confirmed",
+      "attendees": [],
+      "reminders": {
+        "useDefault": true,
+        "overrides": []
+      }
+    },
+    {
+      "id": "28e59347-82cd-485a-a7f8-ec0f57243fbc",
+      "calendarId": "calendar-3",
+      "summary": "Christmas Day",
+      "description": "Description for Christmas Day",
+      "start": {
+        "dateTime": "2025-10-22T00:00:00",
+        "timeZone": "America/New_York"
+      },
+      "end": {
+        "dateTime": "2025-10-22T23:59:00",
+        "timeZone": "America/New_York"
+      },
+      "location": "Location for Christmas Day",
+      "status": "tentative",
+      "attendees": [
+        {
+          "email": "alice.johnson@example.org",
+          "displayName": "Alice Johnson",
+          "responseStatus": "declined"
+        },
+        {
+          "email": "bob.smith@example.org",
+          "displayName": "Bob Smith",
+          "responseStatus": "tentative"
+        },
+        {
+          "email": "carol.davis@example.org",
+          "displayName": "Carol Davis",
+          "responseStatus": "needsAction"
+        }
+      ],
+      "recurrence": [
+        "RRULE:FREQ=WEEKLY;BYDAY=MO,WE,FR"
+      ],
+      "reminders": {
+        "useDefault": true,
+        "overrides": []
+      }
+    },
+    {
+      "id": "2bbd2dab-b59f-43e3-a6a4-ffe64b83ea1c",
+      "calendarId": "calendar-4",
+      "summary": "Project Kickoff",
+      "description": "Description for Project Kickoff",
+      "start": {
+        "dateTime": "2025-10-24T11:45:00",
+        "timeZone": "America/Los_Angeles"
+      },
+      "end": {
+        "dateTime": "2025-10-24T14:45:00",
+        "timeZone": "America/Los_Angeles"
+      },
+      "status": "tentative",
+      "attendees": [
+        {
+          "email": "alice.johnson@example.org",
+          "displayName": "Alice Johnson",
+          "responseStatus": "accepted"
+        },
+        {
+          "email": "bob.smith@example.org",
+          "displayName": "Bob Smith",
+          "responseStatus": "tentative"
+        },
+        {
+          "email": "carol.davis@company.com",
+          "displayName": "Carol Davis",
+          "responseStatus": "accepted"
+        },
+        {
+          "email": "david.wilson@test.net",
+          "displayName": "David Wilson",
+          "responseStatus": "needsAction"
+        }
+      ],
+      "reminders": {
+        "useDefault": false,
+        "overrides": [
+          {
+            "minutes": 15,
+            "method": "email"
+          }
+        ]
+      }
+    },
+    {
+      "id": "6e87ba69-4944-4060-9fdc-a66d42be5874",
+      "calendarId": "calendar-1",
+      "summary": "Team Standup",
+      "description": "Description for Team Standup",
+      "start": {
+        "dateTime": "2025-10-28T09:30:00",
+        "timeZone": "America/New_York"
+      },
+      "end": {
+        "dateTime": "2025-10-28T11:00:00",
+        "timeZone": "America/New_York"
+      },
+      "location": "Location for Team Standup",
+      "status": "tentative",
+      "attendees": [
+        {
+          "email": "alice.johnson@example.org",
+          "displayName": "Alice Johnson",
+          "responseStatus": "tentative"
+        },
+        {
+          "email": "bob.smith@test.net",
+          "displayName": "Bob Smith",
+          "responseStatus": "tentative"
+        },
+        {
+          "email": "carol.davis@example.org",
+          "displayName": "Carol Davis",
+          "responseStatus": "needsAction"
+        }
+      ],
+      "recurrence": [
+        "RRULE:FREQ=DAILY;COUNT=5"
+      ],
+      "reminders": {
+        "useDefault": false,
+        "overrides": [
+          {
+            "minutes": 60,
+            "method": "email"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ec9408e0-8a9e-4fcc-8717-028c8bac0532",
+      "calendarId": "calendar-4",
+      "summary": "Project Kickoff",
+      "description": "Description for Project Kickoff",
+      "start": {
+        "dateTime": "2025-10-22T10:15:00",
+        "timeZone": "America/Los_Angeles"
+      },
+      "end": {
+        "dateTime": "2025-10-22T12:45:00",
+        "timeZone": "America/Los_Angeles"
+      },
+      "location": "Location for Project Kickoff",
+      "status": "cancelled",
+      "attendees": [],
+      "recurrence": [
+        "RRULE:FREQ=WEEKLY;BYDAY=MO,WE,FR"
+      ],
+      "reminders": {
+        "useDefault": true,
+        "overrides": []
+      }
+    },
+    {
+      "id": "48013147-fe8d-4591-a502-5407b2a76b6e",
+      "calendarId": "calendar-4",
+      "summary": "Deployment Planning",
+      "description": "Description for Deployment Planning",
+      "start": {
+        "dateTime": "2025-10-30T11:15:00",
+        "timeZone": "America/Los_Angeles"
+      },
+      "end": {
+        "dateTime": "2025-10-30T12:45:00",
+        "timeZone": "America/Los_Angeles"
+      },
+      "location": "Location for Deployment Planning",
+      "status": "tentative",
+      "attendees": [
+        {
+          "email": "alice.johnson@test.net",
+          "displayName": "Alice Johnson",
+          "responseStatus": "declined"
+        }
+      ],
+      "reminders": {
+        "useDefault": false,
+        "overrides": [
+          {
+            "minutes": 15,
+            "method": "email"
+          }
+        ]
+      }
+    },
+    {
+      "id": "8b9535fc-2269-4a39-9548-b4c379a0373d",
+      "calendarId": "calendar-2",
+      "summary": "Movie Night",
+      "description": "Description for Movie Night",
+      "start": {
+        "dateTime": "2025-11-09T19:30:00",
+        "timeZone": "America/New_York"
+      },
+      "end": {
+        "dateTime": "2025-11-09T21:00:00",
+        "timeZone": "America/New_York"
+      },
+      "status": "cancelled",
+      "attendees": [],
+      "reminders": {
+        "useDefault": true,
+        "overrides": []
+      }
+    },
+    {
+      "id": "e58152ae-0ee3-4ae5-b791-fe2efa8b6921",
+      "calendarId": "calendar-2",
+      "summary": "Movie Night",
+      "description": "Description for Movie Night",
+      "start": {
+        "dateTime": "2025-10-28T20:15:00",
+        "timeZone": "America/New_York"
+      },
+      "end": {
+        "dateTime": "2025-10-28T21:15:00",
+        "timeZone": "America/New_York"
+      },
+      "status": "tentative",
+      "attendees": [
+        {
+          "email": "alice.johnson@example.org",
+          "displayName": "Alice Johnson",
+          "responseStatus": "tentative"
+        }
+      ],
+      "recurrence": [
+        "RRULE:FREQ=WEEKLY;BYDAY=MO,WE,FR"
+      ],
+      "reminders": {
+        "useDefault": false,
+        "overrides": [
+          {
+            "minutes": 10,
+            "method": "popup"
+          }
+        ]
+      }
+    },
+    {
+      "id": "63fa4318-a7cb-4382-9db9-21361f7b8ade",
+      "calendarId": "calendar-2",
+      "summary": "Grocery Shopping",
+      "description": "Description for Grocery Shopping",
+      "start": {
+        "dateTime": "2025-11-08T10:15:00",
+        "timeZone": "America/New_York"
+      },
+      "end": {
+        "dateTime": "2025-11-08T12:15:00",
+        "timeZone": "America/New_York"
+      },
+      "location": "Location for Grocery Shopping",
+      "status": "cancelled",
+      "attendees": [],
+      "reminders": {
+        "useDefault": false,
+        "overrides": [
+          {
+            "minutes": 15,
+            "method": "email"
+          },
+          {
+            "minutes": 60,
+            "method": "email"
+          }
+        ]
+      }
+    },
+    {
+      "id": "87a7d0ce-eb96-4f9c-a394-d3446e47d895",
+      "calendarId": "calendar-3",
+      "summary": "New Year's Day",
+      "description": "Description for New Year's Day",
+      "start": {
+        "dateTime": "2025-10-22T00:00:00",
+        "timeZone": "America/New_York"
+      },
+      "end": {
+        "dateTime": "2025-10-22T23:59:00",
+        "timeZone": "America/New_York"
+      },
+      "location": "Location for New Year's Day",
+      "status": "cancelled",
+      "attendees": [],
+      "reminders": {
+        "useDefault": false,
+        "overrides": [
+          {
+            "minutes": 60,
+            "method": "email"
+          },
+          {
+            "minutes": 10,
+            "method": "popup"
+          }
+        ]
+      }
+    },
+    {
+      "id": "99aeea66-c1bd-48e3-a623-c6364938f2f1",
+      "calendarId": "calendar-4",
+      "summary": "Project Kickoff",
+      "description": "Description for Project Kickoff",
+      "start": {
+        "dateTime": "2025-11-06T10:00:00",
+        "timeZone": "America/Los_Angeles"
+      },
+      "end": {
+        "dateTime": "2025-11-06T10:30:00",
+        "timeZone": "America/Los_Angeles"
+      },
+      "location": "Location for Project Kickoff",
+      "status": "cancelled",
+      "attendees": [
+        {
+          "email": "alice.johnson@example.org",
+          "displayName": "Alice Johnson",
+          "responseStatus": "tentative"
+        },
+        {
+          "email": "bob.smith@test.net",
+          "displayName": "Bob Smith",
+          "responseStatus": "declined"
+        }
+      ],
+      "reminders": {
+        "useDefault": false,
+        "overrides": [
+          {
+            "minutes": 60,
+            "method": "email"
+          }
+        ]
+      }
+    },
+    {
+      "id": "74084ad1-2103-4919-bec9-8255ad5f42a3",
+      "calendarId": "calendar-3",
+      "summary": "Independence Day",
+      "description": "Description for Independence Day",
+      "start": {
+        "dateTime": "2025-11-19T00:00:00",
+        "timeZone": "America/New_York"
+      },
+      "end": {
+        "dateTime": "2025-11-19T23:59:00",
+        "timeZone": "America/New_York"
+      },
+      "status": "tentative",
+      "attendees": [
+        {
+          "email": "alice.johnson@test.net",
+          "displayName": "Alice Johnson",
+          "responseStatus": "needsAction"
+        }
+      ],
+      "reminders": {
+        "useDefault": false,
+        "overrides": [
+          {
+            "minutes": 60,
+            "method": "email"
+          }
+        ]
+      }
+    },
+    {
+      "id": "46366224-b3cc-4d89-a294-09a730bec20b",
+      "calendarId": "calendar-3",
+      "summary": "Independence Day",
+      "description": "Description for Independence Day",
+      "start": {
+        "dateTime": "2025-10-22T00:00:00",
+        "timeZone": "America/New_York"
+      },
+      "end": {
+        "dateTime": "2025-10-22T23:59:00",
+        "timeZone": "America/New_York"
+      },
+      "location": "Location for Independence Day",
+      "status": "cancelled",
+      "attendees": [
+        {
+          "email": "alice.johnson@example.org",
+          "displayName": "Alice Johnson",
+          "responseStatus": "accepted"
+        },
+        {
+          "email": "bob.smith@company.com",
+          "displayName": "Bob Smith",
+          "responseStatus": "tentative"
+        }
+      ],
+      "recurrence": [
+        "RRULE:FREQ=MONTHLY;BYMONTHDAY=15"
+      ],
+      "reminders": {
+        "useDefault": true,
+        "overrides": []
+      }
+    },
+    {
+      "id": "6a33c0fd-0e94-414e-94c9-8b8ee9368708",
+      "calendarId": "calendar-4",
+      "summary": "Project Kickoff",
+      "description": "Description for Project Kickoff",
+      "start": {
+        "dateTime": "2025-11-03T11:15:00",
+        "timeZone": "America/Los_Angeles"
+      },
+      "end": {
+        "dateTime": "2025-11-03T11:45:00",
+        "timeZone": "America/Los_Angeles"
+      },
+      "status": "cancelled",
+      "attendees": [],
+      "reminders": {
+        "useDefault": true,
+        "overrides": []
+      }
+    },
+    {
+      "id": "bb7298dc-1f34-4c7a-a2e7-defef1cb9e7a",
+      "calendarId": "calendar-1",
+      "summary": "Project Planning",
+      "description": "Description for Project Planning",
+      "start": {
+        "dateTime": "2025-11-15T10:15:00",
+        "timeZone": "America/New_York"
+      },
+      "end": {
+        "dateTime": "2025-11-15T12:45:00",
+        "timeZone": "America/New_York"
+      },
+      "location": "Location for Project Planning",
+      "status": "cancelled",
+      "attendees": [
+        {
+          "email": "alice.johnson@company.com",
+          "displayName": "Alice Johnson",
+          "responseStatus": "declined"
+        },
+        {
+          "email": "bob.smith@company.com",
+          "displayName": "Bob Smith",
+          "responseStatus": "accepted"
+        },
+        {
+          "email": "carol.davis@company.com",
+          "displayName": "Carol Davis",
+          "responseStatus": "declined"
+        },
+        {
+          "email": "david.wilson@example.org",
+          "displayName": "David Wilson",
+          "responseStatus": "declined"
+        }
+      ],
+      "reminders": {
+        "useDefault": true,
+        "overrides": []
+      }
+    },
+    {
+      "id": "2a039043-528a-46df-8c76-2eb1949ff2dd",
+      "calendarId": "calendar-3",
+      "summary": "Independence Day",
+      "description": "Description for Independence Day",
+      "start": {
+        "dateTime": "2025-10-30T00:00:00",
+        "timeZone": "America/New_York"
+      },
+      "end": {
+        "dateTime": "2025-10-30T23:59:00",
+        "timeZone": "America/New_York"
+      },
+      "location": "Location for Independence Day",
+      "status": "tentative",
+      "attendees": [],
+      "reminders": {
+        "useDefault": false,
+        "overrides": [
+          {
+            "minutes": 60,
+            "method": "email"
+          },
+          {
+            "minutes": 30,
+            "method": "popup"
+          }
+        ]
+      }
+    },
+    {
+      "id": "8724fef9-a99a-43ae-979c-396c2e9aa4dd",
+      "calendarId": "calendar-2",
+      "summary": "Gym Session",
+      "start": {
+        "dateTime": "2025-10-30T07:15:00",
+        "timeZone": "America/New_York"
+      },
+      "end": {
+        "dateTime": "2025-10-30T08:45:00",
+        "timeZone": "America/New_York"
+      },
+      "location": "Location for Gym Session",
+      "status": "cancelled",
+      "attendees": [
+        {
+          "email": "alice.johnson@company.com",
+          "displayName": "Alice Johnson",
+          "responseStatus": "accepted"
+        }
+      ],
+      "recurrence": [
+        "RRULE:FREQ=WEEKLY;BYDAY=MO,WE,FR"
+      ],
+      "reminders": {
+        "useDefault": true,
+        "overrides": []
+      }
+    },
+    {
+      "id": "2ff272ec-8284-4568-a095-8eb71c99bbd3",
+      "calendarId": "calendar-2",
+      "summary": "Movie Night",
+      "description": "Description for Movie Night",
+      "start": {
+        "dateTime": "2025-11-01T19:45:00",
+        "timeZone": "America/New_York"
+      },
+      "end": {
+        "dateTime": "2025-11-01T22:15:00",
+        "timeZone": "America/New_York"
+      },
+      "status": "cancelled",
+      "attendees": [],
+      "reminders": {
+        "useDefault": false,
+        "overrides": [
+          {
+            "minutes": 30,
+            "method": "popup"
+          }
+        ]
+      }
+    },
+    {
+      "id": "d763f23c-6f99-4fc7-9f4b-eff2ea524792",
+      "calendarId": "calendar-2",
+      "summary": "Grocery Shopping",
+      "description": "Description for Grocery Shopping",
+      "start": {
+        "dateTime": "2025-11-04T11:30:00",
+        "timeZone": "America/New_York"
+      },
+      "end": {
+        "dateTime": "2025-11-04T13:30:00",
+        "timeZone": "America/New_York"
+      },
+      "location": "Location for Grocery Shopping",
+      "status": "cancelled",
+      "attendees": [],
+      "reminders": {
+        "useDefault": false,
+        "overrides": [
+          {
+            "minutes": 60,
+            "method": "email"
+          },
+          {
+            "minutes": 10,
+            "method": "popup"
+          }
+        ]
+      }
+    },
+    {
+      "id": "93a5cb86-19e1-48bf-904d-8f691388f5fb",
+      "calendarId": "calendar-2",
+      "summary": "Movie Night",
+      "start": {
+        "dateTime": "2025-11-03T20:00:00",
+        "timeZone": "America/New_York"
+      },
+      "end": {
+        "dateTime": "2025-11-03T20:30:00",
+        "timeZone": "America/New_York"
+      },
+      "status": "confirmed",
+      "attendees": [],
+      "reminders": {
+        "useDefault": false,
+        "overrides": [
+          {
+            "minutes": 30,
+            "method": "popup"
+          },
+          {
+            "minutes": 15,
+            "method": "email"
+          }
+        ]
+      }
+    },
+    {
+      "id": "d10bad8b-7736-4f3f-993b-457165f525ef",
+      "calendarId": "calendar-4",
+      "summary": "Deployment Planning",
+      "description": "Description for Deployment Planning",
+      "start": {
+        "dateTime": "2025-10-30T11:45:00",
+        "timeZone": "America/Los_Angeles"
+      },
+      "end": {
+        "dateTime": "2025-10-30T13:15:00",
+        "timeZone": "America/Los_Angeles"
+      },
+      "status": "confirmed",
+      "attendees": [
+        {
+          "email": "alice.johnson@company.com",
+          "displayName": "Alice Johnson",
+          "responseStatus": "needsAction"
+        },
+        {
+          "email": "bob.smith@example.org",
+          "displayName": "Bob Smith",
+          "responseStatus": "needsAction"
+        },
+        {
+          "email": "carol.davis@test.net",
+          "displayName": "Carol Davis",
+          "responseStatus": "needsAction"
+        },
+        {
+          "email": "david.wilson@test.net",
+          "displayName": "David Wilson",
+          "responseStatus": "needsAction"
+        }
+      ],
+      "reminders": {
+        "useDefault": false,
+        "overrides": [
+          {
+            "minutes": 10,
+            "method": "popup"
+          }
+        ]
+      }
+    },
+    {
+      "id": "b864e0b3-1452-4a2c-a338-2a1bb8066459",
+      "calendarId": "calendar-4",
+      "summary": "Design Review",
+      "description": "Description for Design Review",
+      "start": {
+        "dateTime": "2025-11-02T14:30:00",
+        "timeZone": "America/Los_Angeles"
+      },
+      "end": {
+        "dateTime": "2025-11-02T16:00:00",
+        "timeZone": "America/Los_Angeles"
+      },
+      "location": "Location for Design Review",
+      "status": "confirmed",
+      "attendees": [],
+      "reminders": {
+        "useDefault": false,
+        "overrides": [
+          {
+            "minutes": 10,
+            "method": "popup"
+          },
+          {
+            "minutes": 30,
+            "method": "popup"
+          }
+        ]
+      }
+    },
+    {
+      "id": "00f22a59-f5bf-4027-b746-d38a7ec7d8b1",
+      "calendarId": "calendar-4",
+      "summary": "Deployment Planning",
+      "start": {
+        "dateTime": "2025-11-06T12:30:00",
+        "timeZone": "America/Los_Angeles"
+      },
+      "end": {
+        "dateTime": "2025-11-06T13:30:00",
+        "timeZone": "America/Los_Angeles"
+      },
+      "location": "Location for Deployment Planning",
+      "status": "cancelled",
+      "attendees": [
+        {
+          "email": "alice.johnson@test.net",
+          "displayName": "Alice Johnson",
+          "responseStatus": "needsAction"
+        },
+        {
+          "email": "bob.smith@example.org",
+          "displayName": "Bob Smith",
+          "responseStatus": "accepted"
+        },
+        {
+          "email": "carol.davis@example.org",
+          "displayName": "Carol Davis",
+          "responseStatus": "declined"
+        },
+        {
+          "email": "david.wilson@test.net",
+          "displayName": "David Wilson",
+          "responseStatus": "needsAction"
+        },
+        {
+          "email": "eva.brown@example.org",
+          "displayName": "Eva Brown",
+          "responseStatus": "tentative"
+        }
+      ],
+      "reminders": {
+        "useDefault": false,
+        "overrides": [
+          {
+            "minutes": 30,
+            "method": "popup"
+          }
+        ]
+      }
+    },
+    {
+      "id": "c0cd75b2-d0f4-410f-baeb-72ca43237b3f",
+      "calendarId": "calendar-2",
+      "summary": "Movie Night",
+      "start": {
+        "dateTime": "2025-11-11T19:30:00",
+        "timeZone": "America/New_York"
+      },
+      "end": {
+        "dateTime": "2025-11-11T22:00:00",
+        "timeZone": "America/New_York"
+      },
+      "status": "tentative",
+      "attendees": [],
+      "reminders": {
+        "useDefault": false,
+        "overrides": [
+          {
+            "minutes": 60,
+            "method": "email"
+          }
+        ]
+      }
+    },
+    {
+      "id": "26e3dda2-8b1b-42cb-ba56-38cb0e42c4eb",
+      "calendarId": "calendar-2",
+      "summary": "Gym Session",
+      "start": {
+        "dateTime": "2025-11-18T07:15:00",
+        "timeZone": "America/New_York"
+      },
+      "end": {
+        "dateTime": "2025-11-18T09:45:00",
+        "timeZone": "America/New_York"
+      },
+      "status": "cancelled",
+      "attendees": [],
+      "reminders": {
+        "useDefault": false,
+        "overrides": [
+          {
+            "minutes": 30,
+            "method": "popup"
+          },
+          {
+            "minutes": 15,
+            "method": "email"
+          }
+        ]
+      }
+    },
+    {
+      "id": "74b932f6-1a9f-4f88-9bc4-540e19fd3599",
+      "calendarId": "calendar-2",
+      "summary": "Movie Night",
+      "start": {
+        "dateTime": "2025-11-05T20:15:00",
+        "timeZone": "America/New_York"
+      },
+      "end": {
+        "dateTime": "2025-11-05T21:45:00",
+        "timeZone": "America/New_York"
+      },
+      "location": "Location for Movie Night",
+      "status": "tentative",
+      "attendees": [
+        {
+          "email": "alice.johnson@example.org",
+          "displayName": "Alice Johnson",
+          "responseStatus": "needsAction"
+        },
+        {
+          "email": "bob.smith@company.com",
+          "displayName": "Bob Smith",
+          "responseStatus": "needsAction"
+        },
+        {
+          "email": "carol.davis@example.org",
+          "displayName": "Carol Davis",
+          "responseStatus": "tentative"
+        }
+      ],
+      "reminders": {
+        "useDefault": false,
+        "overrides": [
+          {
+            "minutes": 30,
+            "method": "popup"
+          }
+        ]
+      }
+    },
+    {
+      "id": "65caa9fa-b8a6-474f-b2c0-5f3be71a6304",
+      "calendarId": "calendar-2",
+      "summary": "Doctor Appointment",
+      "start": {
+        "dateTime": "2025-11-14T10:00:00",
+        "timeZone": "America/New_York"
+      },
+      "end": {
+        "dateTime": "2025-11-14T11:30:00",
+        "timeZone": "America/New_York"
+      },
+      "status": "tentative",
+      "attendees": [],
+      "reminders": {
+        "useDefault": false,
+        "overrides": [
+          {
+            "minutes": 30,
+            "method": "popup"
+          }
+        ]
+      }
+    },
+    {
+      "id": "f22576cd-395a-4c05-bc65-3bab0f8abddd",
+      "calendarId": "calendar-1",
+      "summary": "Project Planning",
+      "description": "Description for Project Planning",
+      "start": {
+        "dateTime": "2025-11-21T11:45:00",
+        "timeZone": "America/New_York"
+      },
+      "end": {
+        "dateTime": "2025-11-21T14:15:00",
+        "timeZone": "America/New_York"
+      },
+      "location": "Location for Project Planning",
+      "status": "confirmed",
+      "attendees": [],
+      "reminders": {
+        "useDefault": false,
+        "overrides": [
+          {
+            "minutes": 30,
+            "method": "popup"
+          }
+        ]
+      }
+    },
+    {
+      "id": "c1865ccd-b9b4-4696-8af3-aac3648f9607",
+      "calendarId": "calendar-4",
+      "summary": "Project Kickoff",
+      "description": "Description for Project Kickoff",
+      "start": {
+        "dateTime": "2025-10-23T11:30:00",
+        "timeZone": "America/Los_Angeles"
+      },
+      "end": {
+        "dateTime": "2025-10-23T13:00:00",
+        "timeZone": "America/Los_Angeles"
+      },
+      "status": "tentative",
+      "attendees": [
+        {
+          "email": "alice.johnson@company.com",
+          "displayName": "Alice Johnson",
+          "responseStatus": "accepted"
+        },
+        {
+          "email": "bob.smith@company.com",
+          "displayName": "Bob Smith",
+          "responseStatus": "needsAction"
+        }
+      ],
+      "reminders": {
+        "useDefault": false,
+        "overrides": [
+          {
+            "minutes": 10,
+            "method": "popup"
+          }
+        ]
+      }
+    },
+    {
+      "id": "adaf5604-ec18-4cbd-9202-573b9750f9fc",
+      "calendarId": "calendar-2",
+      "summary": "Movie Night",
+      "description": "Description for Movie Night",
+      "start": {
+        "dateTime": "2025-11-10T19:00:00",
+        "timeZone": "America/New_York"
+      },
+      "end": {
+        "dateTime": "2025-11-10T22:00:00",
+        "timeZone": "America/New_York"
+      },
+      "location": "Location for Movie Night",
+      "status": "tentative",
+      "attendees": [],
+      "reminders": {
+        "useDefault": false,
+        "overrides": [
+          {
+            "minutes": 10,
+            "method": "popup"
+          },
+          {
+            "minutes": 15,
+            "method": "email"
+          }
+        ]
+      }
+    },
+    {
+      "id": "1129457f-92e2-40e8-9364-311427979647",
+      "calendarId": "calendar-3",
+      "summary": "Christmas Day",
+      "start": {
+        "dateTime": "2025-11-04T00:00:00",
+        "timeZone": "America/New_York"
+      },
+      "end": {
+        "dateTime": "2025-11-04T23:59:00",
+        "timeZone": "America/New_York"
+      },
+      "status": "tentative",
+      "attendees": [
+        {
+          "email": "alice.johnson@example.org",
+          "displayName": "Alice Johnson",
+          "responseStatus": "accepted"
+        },
+        {
+          "email": "bob.smith@example.org",
+          "displayName": "Bob Smith",
+          "responseStatus": "tentative"
+        },
+        {
+          "email": "carol.davis@company.com",
+          "displayName": "Carol Davis",
+          "responseStatus": "needsAction"
+        },
+        {
+          "email": "david.wilson@test.net",
+          "displayName": "David Wilson",
+          "responseStatus": "needsAction"
+        }
+      ],
+      "reminders": {
+        "useDefault": true,
+        "overrides": []
+      }
+    },
+    {
+      "id": "33027d9f-7787-4e4a-bd0a-1c4289793f3a",
+      "calendarId": "calendar-2",
+      "summary": "Dinner with Friends",
+      "description": "Description for Dinner with Friends",
+      "start": {
+        "dateTime": "2025-11-14T19:00:00",
+        "timeZone": "America/New_York"
+      },
+      "end": {
+        "dateTime": "2025-11-14T19:30:00",
+        "timeZone": "America/New_York"
+      },
+      "location": "Location for Dinner with Friends",
+      "status": "confirmed",
+      "attendees": [
+        {
+          "email": "alice.johnson@company.com",
+          "displayName": "Alice Johnson",
+          "responseStatus": "needsAction"
+        },
+        {
+          "email": "bob.smith@example.org",
+          "displayName": "Bob Smith",
+          "responseStatus": "tentative"
+        },
+        {
+          "email": "carol.davis@example.org",
+          "displayName": "Carol Davis",
+          "responseStatus": "needsAction"
+        }
+      ],
+      "reminders": {
+        "useDefault": true,
+        "overrides": []
+      }
+    },
+    {
+      "id": "902536ea-f5a7-4fe9-92bd-17c6916e6a30",
+      "calendarId": "calendar-1",
+      "summary": "Sprint Retrospective",
+      "description": "Description for Sprint Retrospective",
+      "start": {
+        "dateTime": "2025-11-17T16:30:00",
+        "timeZone": "America/New_York"
+      },
+      "end": {
+        "dateTime": "2025-11-17T18:30:00",
+        "timeZone": "America/New_York"
+      },
+      "status": "confirmed",
+      "attendees": [],
+      "reminders": {
+        "useDefault": true,
+        "overrides": []
+      }
+    },
+    {
+      "id": "3f974e0e-ed20-4633-bc7d-843b6b2377ee",
+      "calendarId": "calendar-1",
+      "summary": "Code Review",
+      "description": "Description for Code Review",
+      "start": {
+        "dateTime": "2025-11-19T11:30:00",
+        "timeZone": "America/New_York"
+      },
+      "end": {
+        "dateTime": "2025-11-19T12:00:00",
+        "timeZone": "America/New_York"
+      },
+      "location": "Location for Code Review",
+      "status": "cancelled",
+      "attendees": [],
+      "reminders": {
+        "useDefault": true,
+        "overrides": []
+      }
+    }
+  ]
+}
