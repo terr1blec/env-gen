@@ -22,10 +22,14 @@ class WorkflowContext:
     tests_dir: Path
     transcripts_dir: Path
     logs_dir: Path | None = None
+    domain: Optional[str] = None
+    domain_slug: Optional[str] = None
     log_file_path: Path | None = None
     recommended_paths: Dict[str, Path] = field(default_factory=dict)
     schema_summary: str = ""
     notes: List[str] = field(default_factory=list)
+    data_contract: Dict[str, Any] | None = None
+    expected_tool_names: List[str] = field(default_factory=list)
 
     def resolve_path(self, value: str | Path) -> Path:
         """Resolve a workspace-relative path, preventing directory escape."""

@@ -28,11 +28,31 @@ def prepare_context(args: Any) -> WorkflowContext:
     raw_name = server_info.get("name") or metadata.get("server_name") or schema_path.stem
     slug = slugify(raw_name)
 
+    domain_name: Optional[str] = None
+    domain_slug: Optional[str] = None
+    try:
+        schema_rel = schema_path.relative_to(workspace_root)
+    except ValueError:
+        schema_rel = None
+
+    if schema_rel is not None:
+        parts = list(schema_rel.parts)
+        if "mcp_servers" in parts:
+            idx = parts.index("mcp_servers")
+            if idx + 1 < len(parts):
+                domain_name = parts[idx + 1]
+                domain_slug = slugify(domain_name)
+
     output_root = args.output_dir if args.output_dir.is_absolute() else workspace_root / args.output_dir
     output_root = output_root.resolve()
     ensure_directory(output_root)
 
-    output_dir = output_root / slug
+    if domain_slug:
+        domain_output_root = output_root / domain_slug
+        ensure_directory(domain_output_root)
+        output_dir = domain_output_root / slug
+    else:
+        output_dir = output_root / slug
     ensure_directory(output_dir)
 
     transcripts_root = (
@@ -41,7 +61,10 @@ def prepare_context(args: Any) -> WorkflowContext:
     transcripts_root = transcripts_root.resolve()
     ensure_directory(transcripts_root)
 
-    transcripts_dir = transcripts_root / slug
+    if domain_slug:
+        transcripts_dir = transcripts_root / domain_slug / slug
+    else:
+        transcripts_dir = transcripts_root / slug
     ensure_directory(transcripts_dir)
 
     module_slug = slug.replace("-", "_")
@@ -50,8 +73,16 @@ def prepare_context(args: Any) -> WorkflowContext:
     dataset_module_path = output_dir / f"{module_slug}_dataset.py"
     dataset_json_path = output_dir / f"{module_slug}_dataset.json"
     metadata_json_path = output_dir / f"{module_slug}_metadata.json"
-    tests_dir = workspace_root / "tests" / slug
-    logs_dir = workspace_root / "logs" / slug
+    tests_root = workspace_root / "tests"
+    if domain_slug:
+        tests_dir = tests_root / domain_slug / slug
+    else:
+        tests_dir = tests_root / slug
+    logs_root = workspace_root / "logs"
+    if domain_slug:
+        logs_dir = logs_root / domain_slug / slug
+    else:
+        logs_dir = logs_root / slug
     ensure_directory(tests_dir)
     ensure_directory(logs_dir)
 
@@ -61,6 +92,8 @@ def prepare_context(args: Any) -> WorkflowContext:
         schema=schema,
         slug=slug,
         server_name=raw_name,
+        domain=domain_name,
+        domain_slug=domain_slug,
         server_module_path=server_module_path,
         dataset_module_path=dataset_module_path,
         dataset_json_path=dataset_json_path,
@@ -77,6 +110,12 @@ def prepare_context(args: Any) -> WorkflowContext:
         "tests_directory": tests_dir,
         "transcripts_directory": transcripts_dir,
     }
+    server_tools = server_info.get("tools", [])
+    context.expected_tool_names = [
+        tool.get("name")
+        for tool in server_tools
+        if isinstance(tool, dict) and tool.get("name")
+    ]
     context.schema_summary = build_schema_summary(context)
     return context
 
