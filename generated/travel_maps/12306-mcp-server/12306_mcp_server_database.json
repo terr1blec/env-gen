@@ -1,0 +1,1354 @@
+{
+  "train_tickets": [
+    {
+      "train_number": "K2824",
+      "departure_station": "北京南站",
+      "arrival_station": "苏州北站",
+      "departure_time": "13:15",
+      "arrival_time": "21:30",
+      "duration": "8h15m",
+      "date": "2024-01-23",
+      "seat_types": {
+        "business_class": "-",
+        "first_class": "一等座",
+        "second_class": "二等座",
+        "hard_seat": "硬座"
+      },
+      "prices": {
+        "business_class": 0,
+        "first_class": 940,
+        "second_class": 630,
+        "hard_seat": 265
+      },
+      "available_seats": {
+        "business_class": 0,
+        "first_class": 13,
+        "second_class": 41,
+        "hard_seat": 97
+      }
+    },
+    {
+      "train_number": "K2424",
+      "departure_station": "重庆北站",
+      "arrival_station": "武汉站",
+      "departure_time": "06:00",
+      "arrival_time": "09:15",
+      "duration": "3h15m",
+      "date": "2024-01-16",
+      "seat_types": {
+        "business_class": "-",
+        "first_class": "一等座",
+        "second_class": "二等座",
+        "hard_seat": "硬座"
+      },
+      "prices": {
+        "business_class": 0,
+        "first_class": 620,
+        "second_class": 390,
+        "hard_seat": 145
+      },
+      "available_seats": {
+        "business_class": 0,
+        "first_class": 17,
+        "second_class": 36,
+        "hard_seat": 88
+      }
+    },
+    {
+      "train_number": "G4257",
+      "departure_station": "苏州北站",
+      "arrival_station": "天津西站",
+      "departure_time": "19:15",
+      "arrival_time": "21:00",
+      "duration": "1h45m",
+      "date": "2024-02-06",
+      "seat_types": {
+        "business_class": "商务座",
+        "first_class": "一等座",
+        "second_class": "二等座",
+        "hard_seat": "-"
+      },
+      "prices": {
+        "business_class": 1275,
+        "first_class": 810,
+        "second_class": 495,
+        "hard_seat": 0
+      },
+      "available_seats": {
+        "business_class": 13,
+        "first_class": 10,
+        "second_class": 44,
+        "hard_seat": 0
+      }
+    },
+    {
+      "train_number": "G7924",
+      "departure_station": "南京南站",
+      "arrival_station": "杭州东站",
+      "departure_time": "12:30",
+      "arrival_time": "13:30",
+      "duration": "1h00m",
+      "date": "2024-01-19",
+      "seat_types": {
+        "business_class": "商务座",
+        "first_class": "一等座",
+        "second_class": "二等座",
+        "hard_seat": "-"
+      },
+      "prices": {
+        "business_class": 1275,
+        "first_class": 810,
+        "second_class": 495,
+        "hard_seat": 0
+      },
+      "available_seats": {
+        "business_class": 7,
+        "first_class": 22,
+        "second_class": 23,
+        "hard_seat": 0
+      }
+    },
+    {
+      "train_number": "D6635",
+      "departure_station": "重庆北站",
+      "arrival_station": "杭州东站",
+      "departure_time": "07:45",
+      "arrival_time": "12:45",
+      "duration": "5h00m",
+      "date": "2024-02-09",
+      "seat_types": {
+        "business_class": "-",
+        "first_class": "一等座",
+        "second_class": "二等座",
+        "hard_seat": "-"
+      },
+      "prices": {
+        "business_class": 0,
+        "first_class": 840,
+        "second_class": 540,
+        "hard_seat": 0
+      },
+      "available_seats": {
+        "business_class": 0,
+        "first_class": 22,
+        "second_class": 22,
+        "hard_seat": 0
+      }
+    },
+    {
+      "train_number": "K5803",
+      "departure_station": "长沙南站",
+      "arrival_station": "天津西站",
+      "departure_time": "17:15",
+      "arrival_time": "20:15",
+      "duration": "3h00m",
+      "date": "2024-02-03",
+      "seat_types": {
+        "business_class": "-",
+        "first_class": "一等座",
+        "second_class": "二等座",
+        "hard_seat": "硬座"
+      },
+      "prices": {
+        "business_class": 0,
+        "first_class": 620,
+        "second_class": 390,
+        "hard_seat": 145
+      },
+      "available_seats": {
+        "business_class": 0,
+        "first_class": 11,
+        "second_class": 41,
+        "hard_seat": 64
+      }
+    },
+    {
+      "train_number": "D2307",
+      "departure_station": "长沙南站",
+      "arrival_station": "深圳北站",
+      "departure_time": "09:45",
+      "arrival_time": "18:15",
+      "duration": "8h30m",
+      "date": "2024-02-11",
+      "seat_types": {
+        "business_class": "-",
+        "first_class": "一等座",
+        "second_class": "二等座",
+        "hard_seat": "-"
+      },
+      "prices": {
+        "business_class": 0,
+        "first_class": 1080,
+        "second_class": 720,
+        "hard_seat": 0
+      },
+      "available_seats": {
+        "business_class": 0,
+        "first_class": 24,
+        "second_class": 40,
+        "hard_seat": 0
+      }
+    },
+    {
+      "train_number": "D3664",
+      "departure_station": "南京南站",
+      "arrival_station": "合肥南站",
+      "departure_time": "14:00",
+      "arrival_time": "22:15",
+      "duration": "8h15m",
+      "date": "2024-01-21",
+      "seat_types": {
+        "business_class": "-",
+        "first_class": "一等座",
+        "second_class": "二等座",
+        "hard_seat": "-"
+      },
+      "prices": {
+        "business_class": 0,
+        "first_class": 1032,
+        "second_class": 684,
+        "hard_seat": 0
+      },
+      "available_seats": {
+        "business_class": 0,
+        "first_class": 27,
+        "second_class": 43,
+        "hard_seat": 0
+      }
+    },
+    {
+      "train_number": "G3677",
+      "departure_station": "西安北站",
+      "arrival_station": "武汉站",
+      "departure_time": "13:30",
+      "arrival_time": "14:30",
+      "duration": "1h00m",
+      "date": "2024-01-23",
+      "seat_types": {
+        "business_class": "商务座",
+        "first_class": "一等座",
+        "second_class": "二等座",
+        "hard_seat": "-"
+      },
+      "prices": {
+        "business_class": 1275,
+        "first_class": 810,
+        "second_class": 495,
+        "hard_seat": 0
+      },
+      "available_seats": {
+        "business_class": 12,
+        "first_class": 11,
+        "second_class": 45,
+        "hard_seat": 0
+      }
+    },
+    {
+      "train_number": "D7572",
+      "departure_station": "杭州东站",
+      "arrival_station": "上海虹桥",
+      "departure_time": "16:15",
+      "arrival_time": "20:00",
+      "duration": "3h45m",
+      "date": "2024-01-21",
+      "seat_types": {
+        "business_class": "-",
+        "first_class": "一等座",
+        "second_class": "二等座",
+        "hard_seat": "-"
+      },
+      "prices": {
+        "business_class": 0,
+        "first_class": 744,
+        "second_class": 468,
+        "hard_seat": 0
+      },
+      "available_seats": {
+        "business_class": 0,
+        "first_class": 22,
+        "second_class": 48,
+        "hard_seat": 0
+      }
+    },
+    {
+      "train_number": "K8517",
+      "departure_station": "广州南站",
+      "arrival_station": "杭州东站",
+      "departure_time": "13:30",
+      "arrival_time": "16:15",
+      "duration": "2h45m",
+      "date": "2024-01-19",
+      "seat_types": {
+        "business_class": "-",
+        "first_class": "一等座",
+        "second_class": "二等座",
+        "hard_seat": "硬座"
+      },
+      "prices": {
+        "business_class": 0,
+        "first_class": 580,
+        "second_class": 360,
+        "hard_seat": 130
+      },
+      "available_seats": {
+        "business_class": 0,
+        "first_class": 28,
+        "second_class": 32,
+        "hard_seat": 73
+      }
+    },
+    {
+      "train_number": "G3266",
+      "departure_station": "成都东站",
+      "arrival_station": "西安北站",
+      "departure_time": "07:00",
+      "arrival_time": "08:15",
+      "duration": "1h15m",
+      "date": "2024-01-17",
+      "seat_types": {
+        "business_class": "商务座",
+        "first_class": "一等座",
+        "second_class": "二等座",
+        "hard_seat": "-"
+      },
+      "prices": {
+        "business_class": 1275,
+        "first_class": 810,
+        "second_class": 495,
+        "hard_seat": 0
+      },
+      "available_seats": {
+        "business_class": 10,
+        "first_class": 23,
+        "second_class": 39,
+        "hard_seat": 0
+      }
+    },
+    {
+      "train_number": "G7304",
+      "departure_station": "武汉站",
+      "arrival_station": "重庆北站",
+      "departure_time": "22:30",
+      "arrival_time": "01:30",
+      "duration": "3h00m",
+      "date": "2024-01-29",
+      "seat_types": {
+        "business_class": "商务座",
+        "first_class": "一等座",
+        "second_class": "二等座",
+        "hard_seat": "-"
+      },
+      "prices": {
+        "business_class": 1425,
+        "first_class": 930,
+        "second_class": 585,
+        "hard_seat": 0
+      },
+      "available_seats": {
+        "business_class": 8,
+        "first_class": 27,
+        "second_class": 44,
+        "hard_seat": 0
+      }
+    },
+    {
+      "train_number": "D6573",
+      "departure_station": "上海虹桥",
+      "arrival_station": "杭州东站",
+      "departure_time": "11:45",
+      "arrival_time": "14:45",
+      "duration": "3h00m",
+      "date": "2024-01-28",
+      "seat_types": {
+        "business_class": "-",
+        "first_class": "一等座",
+        "second_class": "二等座",
+        "hard_seat": "-"
+      },
+      "prices": {
+        "business_class": 0,
+        "first_class": 744,
+        "second_class": 468,
+        "hard_seat": 0
+      },
+      "available_seats": {
+        "business_class": 0,
+        "first_class": 18,
+        "second_class": 36,
+        "hard_seat": 0
+      }
+    },
+    {
+      "train_number": "G9317",
+      "departure_station": "合肥南站",
+      "arrival_station": "上海虹桥",
+      "departure_time": "15:15",
+      "arrival_time": "23:30",
+      "duration": "8h15m",
+      "date": "2024-02-11",
+      "seat_types": {
+        "business_class": "商务座",
+        "first_class": "一等座",
+        "second_class": "二等座",
+        "hard_seat": "-"
+      },
+      "prices": {
+        "business_class": 2175,
+        "first_class": 1530,
+        "second_class": 1035,
+        "hard_seat": 0
+      },
+      "available_seats": {
+        "business_class": 16,
+        "first_class": 15,
+        "second_class": 37,
+        "hard_seat": 0
+      }
+    },
+    {
+      "train_number": "K1009",
+      "departure_station": "重庆北站",
+      "arrival_station": "南京南站",
+      "departure_time": "06:00",
+      "arrival_time": "10:30",
+      "duration": "4h30m",
+      "date": "2024-01-30",
+      "seat_types": {
+        "business_class": "-",
+        "first_class": "一等座",
+        "second_class": "二等座",
+        "hard_seat": "硬座"
+      },
+      "prices": {
+        "business_class": 0,
+        "first_class": 660,
+        "second_class": 420,
+        "hard_seat": 160
+      },
+      "available_seats": {
+        "business_class": 0,
+        "first_class": 19,
+        "second_class": 27,
+        "hard_seat": 53
+      }
+    },
+    {
+      "train_number": "G2290",
+      "departure_station": "上海虹桥",
+      "arrival_station": "苏州北站",
+      "departure_time": "08:15",
+      "arrival_time": "16:30",
+      "duration": "8h15m",
+      "date": "2024-01-30",
+      "seat_types": {
+        "business_class": "商务座",
+        "first_class": "一等座",
+        "second_class": "二等座",
+        "hard_seat": "-"
+      },
+      "prices": {
+        "business_class": 1950,
+        "first_class": 1350,
+        "second_class": 900,
+        "hard_seat": 0
+      },
+      "available_seats": {
+        "business_class": 20,
+        "first_class": 27,
+        "second_class": 25,
+        "hard_seat": 0
+      }
+    },
+    {
+      "train_number": "D9645",
+      "departure_station": "长沙南站",
+      "arrival_station": "重庆北站",
+      "departure_time": "12:15",
+      "arrival_time": "16:45",
+      "duration": "4h30m",
+      "date": "2024-01-28",
+      "seat_types": {
+        "business_class": "-",
+        "first_class": "一等座",
+        "second_class": "二等座",
+        "hard_seat": "-"
+      },
+      "prices": {
+        "business_class": 0,
+        "first_class": 792,
+        "second_class": 504,
+        "hard_seat": 0
+      },
+      "available_seats": {
+        "business_class": 0,
+        "first_class": 22,
+        "second_class": 41,
+        "hard_seat": 0
+      }
+    },
+    {
+      "train_number": "K7118",
+      "departure_station": "西安北站",
+      "arrival_station": "成都东站",
+      "departure_time": "09:15",
+      "arrival_time": "10:30",
+      "duration": "1h15m",
+      "date": "2024-01-29",
+      "seat_types": {
+        "business_class": "-",
+        "first_class": "一等座",
+        "second_class": "二等座",
+        "hard_seat": "硬座"
+      },
+      "prices": {
+        "business_class": 0,
+        "first_class": 540,
+        "second_class": 330,
+        "hard_seat": 115
+      },
+      "available_seats": {
+        "business_class": 0,
+        "first_class": 12,
+        "second_class": 30,
+        "hard_seat": 51
+      }
+    },
+    {
+      "train_number": "K4770",
+      "departure_station": "重庆北站",
+      "arrival_station": "深圳北站",
+      "departure_time": "08:00",
+      "arrival_time": "14:15",
+      "duration": "6h15m",
+      "date": "2024-01-15",
+      "seat_types": {
+        "business_class": "-",
+        "first_class": "一等座",
+        "second_class": "二等座",
+        "hard_seat": "硬座"
+      },
+      "prices": {
+        "business_class": 0,
+        "first_class": 740,
+        "second_class": 480,
+        "hard_seat": 190
+      },
+      "available_seats": {
+        "business_class": 0,
+        "first_class": 12,
+        "second_class": 48,
+        "hard_seat": 52
+      }
+    },
+    {
+      "train_number": "D2160",
+      "departure_station": "成都东站",
+      "arrival_station": "深圳北站",
+      "departure_time": "21:15",
+      "arrival_time": "02:30",
+      "duration": "5h15m",
+      "date": "2024-01-23",
+      "seat_types": {
+        "business_class": "-",
+        "first_class": "一等座",
+        "second_class": "二等座",
+        "hard_seat": "-"
+      },
+      "prices": {
+        "business_class": 0,
+        "first_class": 840,
+        "second_class": 540,
+        "hard_seat": 0
+      },
+      "available_seats": {
+        "business_class": 0,
+        "first_class": 28,
+        "second_class": 38,
+        "hard_seat": 0
+      }
+    },
+    {
+      "train_number": "D4981",
+      "departure_station": "郑州东站",
+      "arrival_station": "西安北站",
+      "departure_time": "19:15",
+      "arrival_time": "00:15",
+      "duration": "5h00m",
+      "date": "2024-02-09",
+      "seat_types": {
+        "business_class": "-",
+        "first_class": "一等座",
+        "second_class": "二等座",
+        "hard_seat": "-"
+      },
+      "prices": {
+        "business_class": 0,
+        "first_class": 840,
+        "second_class": 540,
+        "hard_seat": 0
+      },
+      "available_seats": {
+        "business_class": 0,
+        "first_class": 13,
+        "second_class": 41,
+        "hard_seat": 0
+      }
+    },
+    {
+      "train_number": "D6804",
+      "departure_station": "武汉站",
+      "arrival_station": "合肥南站",
+      "departure_time": "07:00",
+      "arrival_time": "15:00",
+      "duration": "8h00m",
+      "date": "2024-01-29",
+      "seat_types": {
+        "business_class": "-",
+        "first_class": "一等座",
+        "second_class": "二等座",
+        "hard_seat": "-"
+      },
+      "prices": {
+        "business_class": 0,
+        "first_class": 984,
+        "second_class": 648,
+        "hard_seat": 0
+      },
+      "available_seats": {
+        "business_class": 0,
+        "first_class": 22,
+        "second_class": 43,
+        "hard_seat": 0
+      }
+    },
+    {
+      "train_number": "D2790",
+      "departure_station": "深圳北站",
+      "arrival_station": "合肥南站",
+      "departure_time": "20:15",
+      "arrival_time": "05:00",
+      "duration": "8h45m",
+      "date": "2024-01-21",
+      "seat_types": {
+        "business_class": "-",
+        "first_class": "一等座",
+        "second_class": "二等座",
+        "hard_seat": "-"
+      },
+      "prices": {
+        "business_class": 0,
+        "first_class": 1128,
+        "second_class": 756,
+        "hard_seat": 0
+      },
+      "available_seats": {
+        "business_class": 0,
+        "first_class": 15,
+        "second_class": 28,
+        "hard_seat": 0
+      }
+    },
+    {
+      "train_number": "D5092",
+      "departure_station": "长沙南站",
+      "arrival_station": "上海虹桥",
+      "departure_time": "09:00",
+      "arrival_time": "17:00",
+      "duration": "8h00m",
+      "date": "2024-01-29",
+      "seat_types": {
+        "business_class": "-",
+        "first_class": "一等座",
+        "second_class": "二等座",
+        "hard_seat": "-"
+      },
+      "prices": {
+        "business_class": 0,
+        "first_class": 1176,
+        "second_class": 792,
+        "hard_seat": 0
+      },
+      "available_seats": {
+        "business_class": 0,
+        "first_class": 12,
+        "second_class": 49,
+        "hard_seat": 0
+      }
+    },
+    {
+      "train_number": "G3724",
+      "departure_station": "武汉站",
+      "arrival_station": "西安北站",
+      "departure_time": "12:45",
+      "arrival_time": "13:45",
+      "duration": "1h00m",
+      "date": "2024-01-30",
+      "seat_types": {
+        "business_class": "商务座",
+        "first_class": "一等座",
+        "second_class": "二等座",
+        "hard_seat": "-"
+      },
+      "prices": {
+        "business_class": 1275,
+        "first_class": 810,
+        "second_class": 495,
+        "hard_seat": 0
+      },
+      "available_seats": {
+        "business_class": 10,
+        "first_class": 22,
+        "second_class": 20,
+        "hard_seat": 0
+      }
+    },
+    {
+      "train_number": "D5345",
+      "departure_station": "合肥南站",
+      "arrival_station": "郑州东站",
+      "departure_time": "20:30",
+      "arrival_time": "23:15",
+      "duration": "2h45m",
+      "date": "2024-02-09",
+      "seat_types": {
+        "business_class": "-",
+        "first_class": "一等座",
+        "second_class": "二等座",
+        "hard_seat": "-"
+      },
+      "prices": {
+        "business_class": 0,
+        "first_class": 696,
+        "second_class": 432,
+        "hard_seat": 0
+      },
+      "available_seats": {
+        "business_class": 0,
+        "first_class": 27,
+        "second_class": 41,
+        "hard_seat": 0
+      }
+    },
+    {
+      "train_number": "K8973",
+      "departure_station": "广州南站",
+      "arrival_station": "深圳北站",
+      "departure_time": "12:00",
+      "arrival_time": "13:00",
+      "duration": "1h00m",
+      "date": "2024-01-24",
+      "seat_types": {
+        "business_class": "-",
+        "first_class": "一等座",
+        "second_class": "二等座",
+        "hard_seat": "硬座"
+      },
+      "prices": {
+        "business_class": 0,
+        "first_class": 540,
+        "second_class": 330,
+        "hard_seat": 115
+      },
+      "available_seats": {
+        "business_class": 0,
+        "first_class": 20,
+        "second_class": 21,
+        "hard_seat": 53
+      }
+    },
+    {
+      "train_number": "K8811",
+      "departure_station": "成都东站",
+      "arrival_station": "长沙南站",
+      "departure_time": "11:00",
+      "arrival_time": "16:00",
+      "duration": "5h00m",
+      "date": "2024-01-31",
+      "seat_types": {
+        "business_class": "-",
+        "first_class": "一等座",
+        "second_class": "二等座",
+        "hard_seat": "硬座"
+      },
+      "prices": {
+        "business_class": 0,
+        "first_class": 700,
+        "second_class": 450,
+        "hard_seat": 175
+      },
+      "available_seats": {
+        "business_class": 0,
+        "first_class": 15,
+        "second_class": 22,
+        "hard_seat": 88
+      }
+    },
+    {
+      "train_number": "G4853",
+      "departure_station": "武汉站",
+      "arrival_station": "上海虹桥",
+      "departure_time": "13:00",
+      "arrival_time": "18:00",
+      "duration": "5h00m",
+      "date": "2024-02-14",
+      "seat_types": {
+        "business_class": "商务座",
+        "first_class": "一等座",
+        "second_class": "二等座",
+        "hard_seat": "-"
+      },
+      "prices": {
+        "business_class": 1575,
+        "first_class": 1050,
+        "second_class": 675,
+        "hard_seat": 0
+      },
+      "available_seats": {
+        "business_class": 18,
+        "first_class": 28,
+        "second_class": 38,
+        "hard_seat": 0
+      }
+    },
+    {
+      "train_number": "K6183",
+      "departure_station": "合肥南站",
+      "arrival_station": "杭州东站",
+      "departure_time": "16:15",
+      "arrival_time": "00:45",
+      "duration": "8h30m",
+      "date": "2024-01-21",
+      "seat_types": {
+        "business_class": "-",
+        "first_class": "一等座",
+        "second_class": "二等座",
+        "hard_seat": "硬座"
+      },
+      "prices": {
+        "business_class": 0,
+        "first_class": 900,
+        "second_class": 600,
+        "hard_seat": 250
+      },
+      "available_seats": {
+        "business_class": 0,
+        "first_class": 22,
+        "second_class": 24,
+        "hard_seat": 92
+      }
+    },
+    {
+      "train_number": "K5915",
+      "departure_station": "西安北站",
+      "arrival_station": "南京南站",
+      "departure_time": "08:00",
+      "arrival_time": "10:45",
+      "duration": "2h45m",
+      "date": "2024-02-13",
+      "seat_types": {
+        "business_class": "-",
+        "first_class": "一等座",
+        "second_class": "二等座",
+        "hard_seat": "硬座"
+      },
+      "prices": {
+        "business_class": 0,
+        "first_class": 580,
+        "second_class": 360,
+        "hard_seat": 130
+      },
+      "available_seats": {
+        "business_class": 0,
+        "first_class": 29,
+        "second_class": 38,
+        "hard_seat": 56
+      }
+    },
+    {
+      "train_number": "G9808",
+      "departure_station": "深圳北站",
+      "arrival_station": "成都东站",
+      "departure_time": "10:30",
+      "arrival_time": "15:30",
+      "duration": "5h00m",
+      "date": "2024-01-23",
+      "seat_types": {
+        "business_class": "商务座",
+        "first_class": "一等座",
+        "second_class": "二等座",
+        "hard_seat": "-"
+      },
+      "prices": {
+        "business_class": 1575,
+        "first_class": 1050,
+        "second_class": 675,
+        "hard_seat": 0
+      },
+      "available_seats": {
+        "business_class": 12,
+        "first_class": 21,
+        "second_class": 29,
+        "hard_seat": 0
+      }
+    },
+    {
+      "train_number": "G8179",
+      "departure_station": "长沙南站",
+      "arrival_station": "成都东站",
+      "departure_time": "15:00",
+      "arrival_time": "20:30",
+      "duration": "5h30m",
+      "date": "2024-02-06",
+      "seat_types": {
+        "business_class": "商务座",
+        "first_class": "一等座",
+        "second_class": "二等座",
+        "hard_seat": "-"
+      },
+      "prices": {
+        "business_class": 1575,
+        "first_class": 1050,
+        "second_class": 675,
+        "hard_seat": 0
+      },
+      "available_seats": {
+        "business_class": 8,
+        "first_class": 14,
+        "second_class": 28,
+        "hard_seat": 0
+      }
+    },
+    {
+      "train_number": "G2753",
+      "departure_station": "苏州北站",
+      "arrival_station": "成都东站",
+      "departure_time": "14:30",
+      "arrival_time": "17:45",
+      "duration": "3h15m",
+      "date": "2024-01-19",
+      "seat_types": {
+        "business_class": "商务座",
+        "first_class": "一等座",
+        "second_class": "二等座",
+        "hard_seat": "-"
+      },
+      "prices": {
+        "business_class": 1425,
+        "first_class": 930,
+        "second_class": 585,
+        "hard_seat": 0
+      },
+      "available_seats": {
+        "business_class": 15,
+        "first_class": 16,
+        "second_class": 41,
+        "hard_seat": 0
+      }
+    },
+    {
+      "train_number": "K5325",
+      "departure_station": "成都东站",
+      "arrival_station": "西安北站",
+      "departure_time": "07:00",
+      "arrival_time": "08:45",
+      "duration": "1h45m",
+      "date": "2024-01-23",
+      "seat_types": {
+        "business_class": "-",
+        "first_class": "一等座",
+        "second_class": "二等座",
+        "hard_seat": "硬座"
+      },
+      "prices": {
+        "business_class": 0,
+        "first_class": 540,
+        "second_class": 330,
+        "hard_seat": 115
+      },
+      "available_seats": {
+        "business_class": 0,
+        "first_class": 18,
+        "second_class": 21,
+        "hard_seat": 50
+      }
+    },
+    {
+      "train_number": "D3143",
+      "departure_station": "天津西站",
+      "arrival_station": "杭州东站",
+      "departure_time": "20:45",
+      "arrival_time": "02:45",
+      "duration": "6h00m",
+      "date": "2024-01-20",
+      "seat_types": {
+        "business_class": "-",
+        "first_class": "一等座",
+        "second_class": "二等座",
+        "hard_seat": "-"
+      },
+      "prices": {
+        "business_class": 0,
+        "first_class": 888,
+        "second_class": 576,
+        "hard_seat": 0
+      },
+      "available_seats": {
+        "business_class": 0,
+        "first_class": 13,
+        "second_class": 22,
+        "hard_seat": 0
+      }
+    },
+    {
+      "train_number": "K3442",
+      "departure_station": "成都东站",
+      "arrival_station": "北京南站",
+      "departure_time": "17:15",
+      "arrival_time": "02:00",
+      "duration": "8h45m",
+      "date": "2024-02-10",
+      "seat_types": {
+        "business_class": "-",
+        "first_class": "一等座",
+        "second_class": "二等座",
+        "hard_seat": "硬座"
+      },
+      "prices": {
+        "business_class": 0,
+        "first_class": 820,
+        "second_class": 540,
+        "hard_seat": 220
+      },
+      "available_seats": {
+        "business_class": 0,
+        "first_class": 14,
+        "second_class": 21,
+        "hard_seat": 69
+      }
+    },
+    {
+      "train_number": "D1653",
+      "departure_station": "合肥南站",
+      "arrival_station": "南京南站",
+      "departure_time": "13:00",
+      "arrival_time": "21:30",
+      "duration": "8h30m",
+      "date": "2024-01-21",
+      "seat_types": {
+        "business_class": "-",
+        "first_class": "一等座",
+        "second_class": "二等座",
+        "hard_seat": "-"
+      },
+      "prices": {
+        "business_class": 0,
+        "first_class": 1032,
+        "second_class": 684,
+        "hard_seat": 0
+      },
+      "available_seats": {
+        "business_class": 0,
+        "first_class": 27,
+        "second_class": 48,
+        "hard_seat": 0
+      }
+    },
+    {
+      "train_number": "D3532",
+      "departure_station": "合肥南站",
+      "arrival_station": "深圳北站",
+      "departure_time": "11:15",
+      "arrival_time": "20:00",
+      "duration": "8h45m",
+      "date": "2024-02-11",
+      "seat_types": {
+        "business_class": "-",
+        "first_class": "一等座",
+        "second_class": "二等座",
+        "hard_seat": "-"
+      },
+      "prices": {
+        "business_class": 0,
+        "first_class": 1128,
+        "second_class": 756,
+        "hard_seat": 0
+      },
+      "available_seats": {
+        "business_class": 0,
+        "first_class": 10,
+        "second_class": 25,
+        "hard_seat": 0
+      }
+    },
+    {
+      "train_number": "K6442",
+      "departure_station": "郑州东站",
+      "arrival_station": "武汉站",
+      "departure_time": "13:30",
+      "arrival_time": "19:45",
+      "duration": "6h15m",
+      "date": "2024-02-09",
+      "seat_types": {
+        "business_class": "-",
+        "first_class": "一等座",
+        "second_class": "二等座",
+        "hard_seat": "硬座"
+      },
+      "prices": {
+        "business_class": 0,
+        "first_class": 740,
+        "second_class": 480,
+        "hard_seat": 190
+      },
+      "available_seats": {
+        "business_class": 0,
+        "first_class": 13,
+        "second_class": 32,
+        "hard_seat": 52
+      }
+    },
+    {
+      "train_number": "D4644",
+      "departure_station": "深圳北站",
+      "arrival_station": "长沙南站",
+      "departure_time": "20:30",
+      "arrival_time": "05:00",
+      "duration": "8h30m",
+      "date": "2024-02-13",
+      "seat_types": {
+        "business_class": "-",
+        "first_class": "一等座",
+        "second_class": "二等座",
+        "hard_seat": "-"
+      },
+      "prices": {
+        "business_class": 0,
+        "first_class": 1080,
+        "second_class": 720,
+        "hard_seat": 0
+      },
+      "available_seats": {
+        "business_class": 0,
+        "first_class": 17,
+        "second_class": 27,
+        "hard_seat": 0
+      }
+    },
+    {
+      "train_number": "G4164",
+      "departure_station": "武汉站",
+      "arrival_station": "南京南站",
+      "departure_time": "08:30",
+      "arrival_time": "10:00",
+      "duration": "1h30m",
+      "date": "2024-01-23",
+      "seat_types": {
+        "business_class": "商务座",
+        "first_class": "一等座",
+        "second_class": "二等座",
+        "hard_seat": "-"
+      },
+      "prices": {
+        "business_class": 1275,
+        "first_class": 810,
+        "second_class": 495,
+        "hard_seat": 0
+      },
+      "available_seats": {
+        "business_class": 17,
+        "first_class": 27,
+        "second_class": 30,
+        "hard_seat": 0
+      }
+    },
+    {
+      "train_number": "G2889",
+      "departure_station": "合肥南站",
+      "arrival_station": "杭州东站",
+      "departure_time": "14:00",
+      "arrival_time": "22:00",
+      "duration": "8h00m",
+      "date": "2024-01-20",
+      "seat_types": {
+        "business_class": "商务座",
+        "first_class": "一等座",
+        "second_class": "二等座",
+        "hard_seat": "-"
+      },
+      "prices": {
+        "business_class": 1950,
+        "first_class": 1350,
+        "second_class": 900,
+        "hard_seat": 0
+      },
+      "available_seats": {
+        "business_class": 18,
+        "first_class": 21,
+        "second_class": 43,
+        "hard_seat": 0
+      }
+    },
+    {
+      "train_number": "D8149",
+      "departure_station": "重庆北站",
+      "arrival_station": "成都东站",
+      "departure_time": "18:15",
+      "arrival_time": "19:45",
+      "duration": "1h30m",
+      "date": "2024-01-18",
+      "seat_types": {
+        "business_class": "-",
+        "first_class": "一等座",
+        "second_class": "二等座",
+        "hard_seat": "-"
+      },
+      "prices": {
+        "business_class": 0,
+        "first_class": 648,
+        "second_class": 396,
+        "hard_seat": 0
+      },
+      "available_seats": {
+        "business_class": 0,
+        "first_class": 11,
+        "second_class": 42,
+        "hard_seat": 0
+      }
+    },
+    {
+      "train_number": "D1027",
+      "departure_station": "成都东站",
+      "arrival_station": "郑州东站",
+      "departure_time": "12:30",
+      "arrival_time": "17:15",
+      "duration": "4h45m",
+      "date": "2024-02-01",
+      "seat_types": {
+        "business_class": "-",
+        "first_class": "一等座",
+        "second_class": "二等座",
+        "hard_seat": "-"
+      },
+      "prices": {
+        "business_class": 0,
+        "first_class": 792,
+        "second_class": 504,
+        "hard_seat": 0
+      },
+      "available_seats": {
+        "business_class": 0,
+        "first_class": 12,
+        "second_class": 50,
+        "hard_seat": 0
+      }
+    },
+    {
+      "train_number": "K6409",
+      "departure_station": "重庆北站",
+      "arrival_station": "南京南站",
+      "departure_time": "09:30",
+      "arrival_time": "14:00",
+      "duration": "4h30m",
+      "date": "2024-02-05",
+      "seat_types": {
+        "business_class": "-",
+        "first_class": "一等座",
+        "second_class": "二等座",
+        "hard_seat": "硬座"
+      },
+      "prices": {
+        "business_class": 0,
+        "first_class": 660,
+        "second_class": 420,
+        "hard_seat": 160
+      },
+      "available_seats": {
+        "business_class": 0,
+        "first_class": 23,
+        "second_class": 30,
+        "hard_seat": 75
+      }
+    },
+    {
+      "train_number": "K5844",
+      "departure_station": "成都东站",
+      "arrival_station": "广州南站",
+      "departure_time": "19:45",
+      "arrival_time": "02:00",
+      "duration": "6h15m",
+      "date": "2024-01-21",
+      "seat_types": {
+        "business_class": "-",
+        "first_class": "一等座",
+        "second_class": "二等座",
+        "hard_seat": "硬座"
+      },
+      "prices": {
+        "business_class": 0,
+        "first_class": 740,
+        "second_class": 480,
+        "hard_seat": 190
+      },
+      "available_seats": {
+        "business_class": 0,
+        "first_class": 29,
+        "second_class": 38,
+        "hard_seat": 69
+      }
+    },
+    {
+      "train_number": "D9977",
+      "departure_station": "长沙南站",
+      "arrival_station": "北京南站",
+      "departure_time": "15:15",
+      "arrival_time": "00:00",
+      "duration": "8h45m",
+      "date": "2024-01-24",
+      "seat_types": {
+        "business_class": "-",
+        "first_class": "一等座",
+        "second_class": "二等座",
+        "hard_seat": "-"
+      },
+      "prices": {
+        "business_class": 0,
+        "first_class": 1224,
+        "second_class": 828,
+        "hard_seat": 0
+      },
+      "available_seats": {
+        "business_class": 0,
+        "first_class": 28,
+        "second_class": 39,
+        "hard_seat": 0
+      }
+    },
+    {
+      "train_number": "K6279",
+      "departure_station": "西安北站",
+      "arrival_station": "合肥南站",
+      "departure_time": "12:45",
+      "arrival_time": "20:00",
+      "duration": "7h15m",
+      "date": "2024-01-29",
+      "seat_types": {
+        "business_class": "-",
+        "first_class": "一等座",
+        "second_class": "二等座",
+        "hard_seat": "硬座"
+      },
+      "prices": {
+        "business_class": 0,
+        "first_class": 780,
+        "second_class": 510,
+        "hard_seat": 205
+      },
+      "available_seats": {
+        "business_class": 0,
+        "first_class": 12,
+        "second_class": 29,
+        "hard_seat": 82
+      }
+    }
+  ]
+}

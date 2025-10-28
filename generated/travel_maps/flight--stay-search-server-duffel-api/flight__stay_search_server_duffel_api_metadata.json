@@ -1,0 +1,207 @@
+{
+  "description": "A FastMCP server for searching flights and accommodation stays using offline database",
+  "name": "Flight & Stay Search Server (Duffel API)",
+  "tools": [
+    {
+      "description": "Search for flights between origin and destination",
+      "input_schema": {
+        "properties": {
+          "adults": {
+            "description": "Number of adult passengers",
+            "type": "number"
+          },
+          "cabin_class": {
+            "description": "Desired cabin class (economy, premium_economy, business, first)",
+            "type": "string"
+          },
+          "departure_date": {
+            "description": "Departure date in YYYY-MM-DD format",
+            "type": "string"
+          },
+          "destination": {
+            "description": "Arrival airport code (e.g., CDG, LHR)",
+            "type": "string"
+          },
+          "max_connections": {
+            "description": "Maximum number of connections allowed",
+            "type": "number"
+          },
+          "origin": {
+            "description": "Departure airport code (e.g., LAX, JFK)",
+            "type": "string"
+          }
+        },
+        "required": [
+          "origin",
+          "destination",
+          "departure_date"
+        ],
+        "type": "object"
+      },
+      "name": "search_flights",
+      "output_schema": {
+        "properties": {
+          "flights": {
+            "description": "List of matching flight options",
+            "items": {
+              "type": "object"
+            },
+            "type": "array"
+          }
+        },
+        "type": "object"
+      }
+    },
+    {
+      "description": "Get detailed information about a specific flight offer",
+      "input_schema": {
+        "properties": {
+          "offer_id": {
+            "description": "The unique identifier for the offer",
+            "type": "string"
+          }
+        },
+        "required": [
+          "offer_id"
+        ],
+        "type": "object"
+      },
+      "name": "get_offer_details",
+      "output_schema": {
+        "properties": {
+          "offer": {
+            "description": "Detailed offer information including flight details",
+            "type": "object"
+          }
+        },
+        "type": "object"
+      }
+    },
+    {
+      "description": "Search for multi-city flight itineraries. The segments parameter should be a JSON string containing an array of flight segments with origin, destination, and departure_date.",
+      "input_schema": {
+        "properties": {
+          "adults": {
+            "description": "Number of adult passengers",
+            "type": "number"
+          },
+          "cabin_class": {
+            "description": "Desired cabin class",
+            "type": "string"
+          },
+          "max_connections": {
+            "description": "Maximum number of connections per segment",
+            "type": "number"
+          },
+          "segments": {
+            "description": "JSON string representing flight segments. Expected format: [{\"origin\": \"LAX\", \"destination\": \"JFK\", \"departure_date\": \"2025-12-01\"}, ...]",
+            "type": "string"
+          }
+        },
+        "required": [
+          "segments"
+        ],
+        "type": "object"
+      },
+      "name": "search_multi_city",
+      "output_schema": {
+        "properties": {
+          "itineraries": {
+            "description": "List of multi-city itineraries with available flights for each segment",
+            "items": {
+              "type": "object"
+            },
+            "type": "array"
+          }
+        },
+        "type": "object"
+      }
+    },
+    {
+      "description": "Search for accommodation stays in a specific location",
+      "input_schema": {
+        "properties": {
+          "check_in_date": {
+            "description": "Check-in date in YYYY-MM-DD format",
+            "type": "string"
+          },
+          "check_out_date": {
+            "description": "Check-out date in YYYY-MM-DD format",
+            "type": "string"
+          },
+          "guests": {
+            "description": "Number of guests",
+            "type": "number"
+          },
+          "location": {
+            "description": "Location/city name for the stay",
+            "type": "string"
+          },
+          "radius_km": {
+            "description": "Search radius in kilometers (not implemented in offline mode)",
+            "type": "string"
+          }
+        },
+        "required": [
+          "location",
+          "check_in_date",
+          "check_out_date"
+        ],
+        "type": "object"
+      },
+      "name": "search_stays",
+      "output_schema": {
+        "properties": {
+          "stays": {
+            "description": "List of matching accommodation options",
+            "items": {
+              "type": "object"
+            },
+            "type": "array"
+          }
+        },
+        "type": "object"
+      }
+    },
+    {
+      "description": "Get reviews for a specific accommodation stay with pagination",
+      "input_schema": {
+        "properties": {
+          "after": {
+            "description": "Return reviews after this date (YYYY-MM-DD)",
+            "type": "string"
+          },
+          "before": {
+            "description": "Return reviews before this date (YYYY-MM-DD)",
+            "type": "string"
+          },
+          "limit": {
+            "description": "Maximum number of reviews to return",
+            "type": "number"
+          },
+          "stay_id": {
+            "description": "The unique identifier for the stay",
+            "type": "string"
+          }
+        },
+        "required": [
+          "stay_id"
+        ],
+        "type": "object"
+      },
+      "name": "get_stay_reviews",
+      "output_schema": {
+        "properties": {
+          "reviews": {
+            "description": "List of filtered reviews for the stay",
+            "items": {
+              "type": "object"
+            },
+            "type": "array"
+          }
+        },
+        "type": "object"
+      }
+    }
+  ]
+}

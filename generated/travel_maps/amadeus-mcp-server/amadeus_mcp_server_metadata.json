@@ -1,0 +1,137 @@
+{
+  "description": "MCP server for searching flight offers using offline database",
+  "name": "Amadeus MCP Server",
+  "tools": [
+    {
+      "description": "Search for flight offers based on search criteria",
+      "input_schema": {
+        "properties": {
+          "adults": {
+            "description": "Number of adult passengers",
+            "type": "integer"
+          },
+          "children": {
+            "description": "Number of child passengers",
+            "type": "integer"
+          },
+          "currency": {
+            "description": "Currency code for pricing",
+            "type": "string"
+          },
+          "departure_date": {
+            "description": "Departure date in YYYY-MM-DD format",
+            "type": "string"
+          },
+          "destination": {
+            "description": "Arrival airport code (e.g., \"LHR\", \"CDG\")",
+            "type": "string"
+          },
+          "infants": {
+            "description": "Number of infant passengers",
+            "type": "integer"
+          },
+          "origin": {
+            "description": "Departure airport code (e.g., \"JFK\", \"LAX\")",
+            "type": "string"
+          },
+          "return_date": {
+            "description": "Return date in YYYY-MM-DD format for round trips",
+            "type": "string"
+          },
+          "travel_class": {
+            "description": "Travel class (ECONOMY, PREMIUM_ECONOMY, BUSINESS, FIRST)",
+            "type": "string"
+          }
+        },
+        "required": [
+          "origin",
+          "destination",
+          "departure_date"
+        ],
+        "type": "object"
+      },
+      "name": "search_flight_offers",
+      "output_schema": {
+        "properties": {
+          "flight_offers": {
+            "items": {
+              "properties": {
+                "adults": {
+                  "description": "Number of adult passengers",
+                  "type": "integer"
+                },
+                "airline": {
+                  "description": "Airline name",
+                  "type": "string"
+                },
+                "arrival_time": {
+                  "description": "Arrival time in HH:MM format",
+                  "type": "string"
+                },
+                "children": {
+                  "description": "Number of child passengers",
+                  "type": "integer"
+                },
+                "currency": {
+                  "description": "Currency code for pricing",
+                  "type": "string"
+                },
+                "departure_date": {
+                  "description": "Departure date in YYYY-MM-DD format",
+                  "type": "string"
+                },
+                "departure_time": {
+                  "description": "Departure time in HH:MM format",
+                  "type": "string"
+                },
+                "destination": {
+                  "description": "Arrival airport code",
+                  "type": "string"
+                },
+                "duration": {
+                  "description": "Flight duration (e.g., \"6h 30m\")",
+                  "type": "string"
+                },
+                "flight_number": {
+                  "description": "Flight number",
+                  "type": "string"
+                },
+                "id": {
+                  "description": "Unique identifier for the flight offer",
+                  "type": "string"
+                },
+                "infants": {
+                  "description": "Number of infant passengers",
+                  "type": "integer"
+                },
+                "origin": {
+                  "description": "Departure airport code",
+                  "type": "string"
+                },
+                "price": {
+                  "description": "Price of the flight offer",
+                  "type": "number"
+                },
+                "return_date": {
+                  "description": "Return date in YYYY-MM-DD format for round trips",
+                  "type": "string"
+                },
+                "stops": {
+                  "description": "Number of stops",
+                  "type": "integer"
+                },
+                "travel_class": {
+                  "description": "Travel class (ECONOMY, PREMIUM_ECONOMY, BUSINESS, FIRST)",
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            },
+            "type": "array"
+          }
+        },
+        "type": "object"
+      }
+    }
+  ]
+}

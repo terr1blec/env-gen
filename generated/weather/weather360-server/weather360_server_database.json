@@ -1,0 +1,454 @@
+{
+  "weather_data": [
+    {
+      "latitude": 40.7128,
+      "longitude": -74.006,
+      "temperature": 30.1,
+      "humidity": 45.8,
+      "wind_speed": 2.9,
+      "description": "few clouds",
+      "timestamp": "2025-10-19T04:15:37.359398Z"
+    },
+    {
+      "latitude": 34.0522,
+      "longitude": -118.2437,
+      "temperature": 30.3,
+      "humidity": 86.8,
+      "wind_speed": 4.0,
+      "description": "scattered clouds",
+      "timestamp": "2025-09-27T23:27:18.365068Z"
+    },
+    {
+      "latitude": 41.8781,
+      "longitude": -87.6298,
+      "temperature": 25.6,
+      "humidity": 60.2,
+      "wind_speed": 1.2,
+      "description": "few clouds",
+      "timestamp": "2025-10-16T13:55:04.435010Z"
+    },
+    {
+      "latitude": 25.7617,
+      "longitude": -80.1918,
+      "temperature": 31.3,
+      "humidity": 66.6,
+      "wind_speed": 10.1,
+      "description": "rain",
+      "timestamp": "2025-09-27T06:40:48.757371Z"
+    },
+    {
+      "latitude": 47.6062,
+      "longitude": -122.3321,
+      "temperature": 27.8,
+      "humidity": 80.9,
+      "wind_speed": 7.1,
+      "description": "few clouds",
+      "timestamp": "2025-10-25T19:11:40.255445Z"
+    },
+    {
+      "latitude": 39.7392,
+      "longitude": -104.9903,
+      "temperature": 17.3,
+      "humidity": 43.7,
+      "wind_speed": 6.5,
+      "description": "thunderstorm",
+      "timestamp": "2025-10-15T04:41:01.845588Z"
+    },
+    {
+      "latitude": 51.5074,
+      "longitude": -0.1278,
+      "temperature": 28.8,
+      "humidity": 66.9,
+      "wind_speed": 4.8,
+      "description": "snow",
+      "timestamp": "2025-10-08T10:32:45.078009Z"
+    },
+    {
+      "latitude": 48.8566,
+      "longitude": 2.3522,
+      "temperature": 26.9,
+      "humidity": 69.9,
+      "wind_speed": 5.3,
+      "description": "snow",
+      "timestamp": "2025-10-14T09:41:40.732791Z"
+    },
+    {
+      "latitude": 52.52,
+      "longitude": 13.405,
+      "temperature": 27.5,
+      "humidity": 46.4,
+      "wind_speed": 2.6,
+      "description": "scattered clouds",
+      "timestamp": "2025-09-29T11:27:04.776471Z"
+    },
+    {
+      "latitude": 41.9028,
+      "longitude": 12.4964,
+      "temperature": 25.7,
+      "humidity": 48.0,
+      "wind_speed": 2.9,
+      "description": "broken clouds",
+      "timestamp": "2025-10-08T00:40:48.980175Z"
+    },
+    {
+      "latitude": 55.7558,
+      "longitude": 37.6173,
+      "temperature": 23.2,
+      "humidity": 51.3,
+      "wind_speed": 2.9,
+      "description": "snow",
+      "timestamp": "2025-10-16T12:35:11.690844Z"
+    },
+    {
+      "latitude": 59.3293,
+      "longitude": 18.0686,
+      "temperature": 22.6,
+      "humidity": 65.1,
+      "wind_speed": 11.7,
+      "description": "few clouds",
+      "timestamp": "2025-10-08T11:12:32.477321Z"
+    },
+    {
+      "latitude": 35.6762,
+      "longitude": 139.6503,
+      "temperature": 33.0,
+      "humidity": 79.2,
+      "wind_speed": 9.7,
+      "description": "shower rain",
+      "timestamp": "2025-10-22T08:51:16.149417Z"
+    },
+    {
+      "latitude": 31.2304,
+      "longitude": 121.4737,
+      "temperature": 32.1,
+      "humidity": 66.9,
+      "wind_speed": 3.4,
+      "description": "scattered clouds",
+      "timestamp": "2025-10-05T02:46:28.322814Z"
+    },
+    {
+      "latitude": 28.6139,
+      "longitude": 77.209,
+      "temperature": 29.2,
+      "humidity": 73.3,
+      "wind_speed": 7.1,
+      "description": "few clouds",
+      "timestamp": "2025-10-16T17:55:00.992729Z"
+    },
+    {
+      "latitude": 22.3193,
+      "longitude": 114.1694,
+      "temperature": 30.8,
+      "humidity": 87.4,
+      "wind_speed": 8.5,
+      "description": "scattered clouds",
+      "timestamp": "2025-10-04T11:34:22.472228Z"
+    },
+    {
+      "latitude": 1.3521,
+      "longitude": 103.8198,
+      "temperature": 38.2,
+      "humidity": 67.9,
+      "wind_speed": 10.0,
+      "description": "rain",
+      "timestamp": "2025-10-09T01:34:10.081609Z"
+    },
+    {
+      "latitude": 25.033,
+      "longitude": 121.5654,
+      "temperature": 28.2,
+      "humidity": 89.9,
+      "wind_speed": 9.1,
+      "description": "clear sky",
+      "timestamp": "2025-09-28T11:55:29.617386Z"
+    },
+    {
+      "latitude": -23.5505,
+      "longitude": -46.6333,
+      "temperature": 29.6,
+      "humidity": 63.8,
+      "wind_speed": 6.5,
+      "description": "scattered clouds",
+      "timestamp": "2025-09-28T23:44:27.786631Z"
+    },
+    {
+      "latitude": -34.6037,
+      "longitude": -58.3816,
+      "temperature": 27.2,
+      "humidity": 89.9,
+      "wind_speed": 9.3,
+      "description": "mist",
+      "timestamp": "2025-10-22T21:45:44.960477Z"
+    },
+    {
+      "latitude": -12.0464,
+      "longitude": -77.0428,
+      "temperature": 29.8,
+      "humidity": 81.6,
+      "wind_speed": 11.2,
+      "description": "broken clouds",
+      "timestamp": "2025-10-05T02:06:54.864642Z"
+    },
+    {
+      "latitude": -33.9249,
+      "longitude": 18.4241,
+      "temperature": 30.0,
+      "humidity": 63.3,
+      "wind_speed": 8.2,
+      "description": "broken clouds",
+      "timestamp": "2025-10-25T16:44:54.856420Z"
+    },
+    {
+      "latitude": 30.0444,
+      "longitude": 31.2357,
+      "temperature": 40.4,
+      "humidity": 17.9,
+      "wind_speed": 7.0,
+      "description": "clear sky",
+      "timestamp": "2025-10-24T11:05:35.331867Z"
+    },
+    {
+      "latitude": 6.5244,
+      "longitude": 3.3792,
+      "temperature": 39.9,
+      "humidity": 69.0,
+      "wind_speed": 10.7,
+      "description": "shower rain",
+      "timestamp": "2025-10-01T16:02:43.356366Z"
+    },
+    {
+      "latitude": -33.8688,
+      "longitude": 151.2093,
+      "temperature": 31.2,
+      "humidity": 76.2,
+      "wind_speed": 12.3,
+      "description": "broken clouds",
+      "timestamp": "2025-09-27T02:24:46.327049Z"
+    },
+    {
+      "latitude": -37.8136,
+      "longitude": 144.9631,
+      "temperature": 25.7,
+      "humidity": 60.6,
+      "wind_speed": 14.1,
+      "description": "rain",
+      "timestamp": "2025-10-22T00:48:01.024389Z"
+    },
+    {
+      "latitude": 27.9881,
+      "longitude": 86.925,
+      "temperature": 20.3,
+      "humidity": 42.3,
+      "wind_speed": 18.2,
+      "description": "snow",
+      "timestamp": "2025-09-29T15:40:17.720045Z"
+    },
+    {
+      "latitude": 36.7783,
+      "longitude": -119.4179,
+      "temperature": 29.6,
+      "humidity": 52.4,
+      "wind_speed": 6.3,
+      "description": "shower rain",
+      "timestamp": "2025-09-30T22:26:34.648268Z"
+    },
+    {
+      "latitude": 64.2008,
+      "longitude": -149.4937,
+      "temperature": -3.1,
+      "humidity": 69.2,
+      "wind_speed": 2.9,
+      "description": "snow",
+      "timestamp": "2025-10-09T18:39:37.513286Z"
+    },
+    {
+      "latitude": -54.8019,
+      "longitude": -68.303,
+      "temperature": 19.9,
+      "humidity": 76.2,
+      "wind_speed": 11.8,
+      "description": "scattered clouds",
+      "timestamp": "2025-10-06T10:26:12.599337Z"
+    },
+    {
+      "latitude": 28.3949,
+      "longitude": 84.124,
+      "temperature": 27.1,
+      "humidity": 66.0,
+      "wind_speed": 11.6,
+      "description": "broken clouds",
+      "timestamp": "2025-09-30T17:07:26.847976Z"
+    },
+    {
+      "latitude": -49.5545,
+      "longitude": -58.2892,
+      "temperature": 31.8,
+      "humidity": 27.7,
+      "wind_speed": 2.1,
+      "description": "broken clouds",
+      "timestamp": "2025-09-28T20:23:24.776028Z"
+    },
+    {
+      "latitude": -77.8679,
+      "longitude": -168.6913,
+      "temperature": 4.1,
+      "humidity": 49.5,
+      "wind_speed": 15.0,
+      "description": "scattered clouds",
+      "timestamp": "2025-10-01T01:15:56.284180Z"
+    },
+    {
+      "latitude": 78.3926,
+      "longitude": 25.5755,
+      "temperature": 15.7,
+      "humidity": 66.6,
+      "wind_speed": 3.8,
+      "description": "clear sky",
+      "timestamp": "2025-10-16T20:28:07.259027Z"
+    },
+    {
+      "latitude": -26.2264,
+      "longitude": -32.0032,
+      "temperature": 34.4,
+      "humidity": 74.5,
+      "wind_speed": 1.7,
+      "description": "scattered clouds",
+      "timestamp": "2025-10-07T06:17:56.325469Z"
+    },
+    {
+      "latitude": 65.1011,
+      "longitude": -90.4837,
+      "temperature": 20.3,
+      "humidity": 64.2,
+      "wind_speed": 5.2,
+      "description": "broken clouds",
+      "timestamp": "2025-10-23T07:37:51.565236Z"
+    },
+    {
+      "latitude": -76.4307,
+      "longitude": 110.888,
+      "temperature": 19.7,
+      "humidity": 29.6,
+      "wind_speed": 7.4,
+      "description": "clear sky",
+      "timestamp": "2025-09-29T21:09:01.088154Z"
+    },
+    {
+      "latitude": 45.6418,
+      "longitude": -94.9034,
+      "temperature": 27.2,
+      "humidity": 57.5,
+      "wind_speed": 3.8,
+      "description": "clear sky",
+      "timestamp": "2025-10-08T10:51:42.296673Z"
+    },
+    {
+      "latitude": 87.3556,
+      "longitude": -84.5269,
+      "temperature": 13.6,
+      "humidity": 74.4,
+      "wind_speed": 6.1,
+      "description": "rain",
+      "timestamp": "2025-10-16T22:32:54.412861Z"
+    },
+    {
+      "latitude": -2.3991,
+      "longitude": -111.6368,
+      "temperature": 42.0,
+      "humidity": 77.4,
+      "wind_speed": 9.5,
+      "description": "shower rain",
+      "timestamp": "2025-09-28T19:09:36.359661Z"
+    },
+    {
+      "latitude": 15.152,
+      "longitude": 1.0261,
+      "temperature": 37.4,
+      "humidity": 38.8,
+      "wind_speed": 2.8,
+      "description": "clear sky",
+      "timestamp": "2025-10-14T22:25:34.968203Z"
+    },
+    {
+      "latitude": 31.5383,
+      "longitude": -95.3266,
+      "temperature": 35.7,
+      "humidity": 62.1,
+      "wind_speed": 5.1,
+      "description": "clear sky",
+      "timestamp": "2025-09-29T13:01:44.959328Z"
+    },
+    {
+      "latitude": 28.3272,
+      "longitude": 23.4817,
+      "temperature": 26.5,
+      "humidity": 48.2,
+      "wind_speed": 15.7,
+      "description": "scattered clouds",
+      "timestamp": "2025-10-08T22:58:00.887168Z"
+    },
+    {
+      "latitude": 30.9042,
+      "longitude": -72.0011,
+      "temperature": 25.7,
+      "humidity": 77.4,
+      "wind_speed": 5.1,
+      "description": "shower rain",
+      "timestamp": "2025-10-13T23:21:23.501781Z"
+    },
+    {
+      "latitude": -72.0034,
+      "longitude": 13.5484,
+      "temperature": 22.7,
+      "humidity": 38.0,
+      "wind_speed": 10.8,
+      "description": "thunderstorm",
+      "timestamp": "2025-10-08T04:03:38.186296Z"
+    },
+    {
+      "latitude": -61.6056,
+      "longitude": 120.1482,
+      "temperature": 14.0,
+      "humidity": 79.5,
+      "wind_speed": 14.8,
+      "description": "clear sky",
+      "timestamp": "2025-10-21T14:18:57.890504Z"
+    },
+    {
+      "latitude": -36.1118,
+      "longitude": 58.8199,
+      "temperature": 25.6,
+      "humidity": 86.7,
+      "wind_speed": 11.9,
+      "description": "few clouds",
+      "timestamp": "2025-10-05T12:51:56.227904Z"
+    },
+    {
+      "latitude": -52.0867,
+      "longitude": -56.5631,
+      "temperature": 15.6,
+      "humidity": 50.0,
+      "wind_speed": 18.6,
+      "description": "few clouds",
+      "timestamp": "2025-10-16T02:41:09.259710Z"
+    },
+    {
+      "latitude": 59.2827,
+      "longitude": -164.1288,
+      "temperature": 16.2,
+      "humidity": 65.5,
+      "wind_speed": 8.9,
+      "description": "thunderstorm",
+      "timestamp": "2025-10-13T15:12:39.623845Z"
+    },
+    {
+      "latitude": -13.0164,
+      "longitude": -176.5189,
+      "temperature": 40.8,
+      "humidity": 65.7,
+      "wind_speed": 2.0,
+      "description": "clear sky",
+      "timestamp": "2025-10-08T03:50:11.804141Z"
+    }
+  ]
+}

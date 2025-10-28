@@ -1,0 +1,280 @@
+{
+  "description": "Offline Google Maps server providing geocoding, place search, directions, and other mapping functionality using a local database",
+  "name": "Google Maps",
+  "tools": [
+    {
+      "description": "Convert an address into geographic coordinates",
+      "input_schema": {
+        "properties": {
+          "address": {
+            "description": "The address to geocode, e.g., '754 Main St, New York'",
+            "type": "string"
+          }
+        },
+        "required": [
+          "address"
+        ],
+        "type": "object"
+      },
+      "name": "maps_geocode",
+      "output_schema": {
+        "properties": {
+          "formatted_address": {
+            "description": "The formatted address string",
+            "type": "string"
+          },
+          "latitude": {
+            "description": "The latitude coordinate",
+            "type": "string"
+          },
+          "longitude": {
+            "description": "The longitude coordinate",
+            "type": "string"
+          },
+          "place_id": {
+            "description": "The unique place identifier",
+            "type": "string"
+          }
+        },
+        "type": "object"
+      }
+    },
+    {
+      "description": "Convert geographic coordinates into a human-readable address",
+      "input_schema": {
+        "properties": {
+          "latitude": {
+            "description": "The latitude coordinate as a string",
+            "type": "string"
+          },
+          "longitude": {
+            "description": "The longitude coordinate as a string",
+            "type": "string"
+          }
+        },
+        "required": [
+          "latitude",
+          "longitude"
+        ],
+        "type": "object"
+      },
+      "name": "maps_reverse_geocode",
+      "output_schema": {
+        "properties": {
+          "address_components": {
+            "description": "Array of address component objects with long_name and types",
+            "type": "array"
+          },
+          "formatted_address": {
+            "description": "The formatted address string",
+            "type": "string"
+          }
+        },
+        "type": "object"
+      }
+    },
+    {
+      "description": "Search for places using a query string",
+      "input_schema": {
+        "properties": {
+          "query": {
+            "description": "The search query, e.g., 'restaurant in New York'",
+            "type": "string"
+          }
+        },
+        "required": [
+          "query"
+        ],
+        "type": "object"
+      },
+      "name": "maps_search_places",
+      "output_schema": {
+        "properties": {
+          "query": {
+            "description": "The original search query",
+            "type": "string"
+          },
+          "results": {
+            "description": "Array of place search results with name, place_id, address, and coordinates",
+            "type": "array"
+          }
+        },
+        "type": "object"
+      }
+    },
+    {
+      "description": "Get detailed information about a specific place",
+      "input_schema": {
+        "properties": {
+          "place_id": {
+            "description": "The unique identifier for the place, e.g., 'PLACE_0000'",
+            "type": "string"
+          }
+        },
+        "required": [
+          "place_id"
+        ],
+        "type": "object"
+      },
+      "name": "maps_place_details",
+      "output_schema": {
+        "properties": {
+          "formatted_address": {
+            "description": "The formatted address of the place",
+            "type": "string"
+          },
+          "name": {
+            "description": "The name of the place",
+            "type": "string"
+          },
+          "opening_hours": {
+            "description": "The opening hours information including periods and weekday_text",
+            "type": "object"
+          },
+          "phone_number": {
+            "description": "The phone number of the place",
+            "type": "string"
+          },
+          "place_id": {
+            "description": "The unique place identifier",
+            "type": "string"
+          },
+          "rating": {
+            "description": "The average rating of the place",
+            "type": "number"
+          },
+          "website": {
+            "description": "The website URL of the place",
+            "type": "string"
+          }
+        },
+        "type": "object"
+      }
+    },
+    {
+      "description": "Calculate travel distance and time between multiple origins and destinations",
+      "input_schema": {
+        "properties": {
+          "destinations": {
+            "description": "List of destination locations as strings",
+            "type": "array"
+          },
+          "origins": {
+            "description": "List of origin locations as strings",
+            "type": "array"
+          }
+        },
+        "required": [
+          "origins",
+          "destinations"
+        ],
+        "type": "object"
+      },
+      "name": "maps_distance_matrix",
+      "output_schema": {
+        "properties": {
+          "destinations": {
+            "description": "The destination locations",
+            "type": "array"
+          },
+          "distances": {
+            "description": "Array of distance strings between origins and destinations",
+            "type": "array"
+          },
+          "durations": {
+            "description": "Array of duration strings between origins and destinations",
+            "type": "array"
+          },
+          "origins": {
+            "description": "The origin locations",
+            "type": "array"
+          }
+        },
+        "type": "object"
+      }
+    },
+    {
+      "description": "Get elevation data for geographic locations",
+      "input_schema": {
+        "properties": {
+          "locations": {
+            "description": "List of location dictionaries with 'lat' and 'lng' keys",
+            "type": "array"
+          }
+        },
+        "required": [
+          "locations"
+        ],
+        "type": "object"
+      },
+      "name": "maps_elevation",
+      "output_schema": {
+        "properties": {
+          "elevations": {
+            "description": "Array of elevation values corresponding to the input locations",
+            "type": "array"
+          },
+          "locations": {
+            "description": "The input locations",
+            "type": "array"
+          }
+        },
+        "type": "object"
+      }
+    },
+    {
+      "description": "Get directions between two points with optional travel mode",
+      "input_schema": {
+        "properties": {
+          "destination": {
+            "description": "The destination location",
+            "type": "string"
+          },
+          "mode": {
+            "description": "Travel mode - driving, walking, bicycling, transit",
+            "type": "string"
+          },
+          "origin": {
+            "description": "The starting location",
+            "type": "string"
+          }
+        },
+        "required": [
+          "origin",
+          "destination"
+        ],
+        "type": "object"
+      },
+      "name": "maps_directions",
+      "output_schema": {
+        "properties": {
+          "destination": {
+            "description": "The destination location",
+            "type": "string"
+          },
+          "distance": {
+            "description": "The total distance of the route",
+            "type": "string"
+          },
+          "duration": {
+            "description": "The total duration of the route",
+            "type": "string"
+          },
+          "mode": {
+            "description": "The travel mode used",
+            "type": "string"
+          },
+          "origin": {
+            "description": "The starting location",
+            "type": "string"
+          },
+          "steps": {
+            "description": "Array of step objects with description and distance",
+            "type": "array"
+          }
+        },
+        "type": "object"
+      }
+    }
+  ]
+}

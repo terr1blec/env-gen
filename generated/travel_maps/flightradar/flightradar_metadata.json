@@ -1,0 +1,385 @@
+{
+  "name": "FlightRadar",
+  "description": "Flight tracking and information service providing real-time flight data, status, and search capabilities",
+  "tools": [
+    {
+      "name": "get_flight_data",
+      "description": "Get detailed information for a specific flight including departure/arrival details, status, and aircraft information",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "flight_identifier": {
+            "type": "string",
+            "description": "Flight identifier (IATA code, ICAO code, or flight number)"
+          }
+        },
+        "required": ["flight_identifier"]
+      },
+      "output_schema": {
+        "type": "object",
+        "properties": {
+          "flight_iata": {
+            "type": "string",
+            "description": "Flight IATA code"
+          },
+          "flight_icao": {
+            "type": "string",
+            "description": "Flight ICAO code"
+          },
+          "flight_number": {
+            "type": "string",
+            "description": "Flight number"
+          },
+          "airline": {
+            "type": "string",
+            "description": "Airline name"
+          },
+          "airline_iata": {
+            "type": "string",
+            "description": "Airline IATA code"
+          },
+          "airline_icao": {
+            "type": "string",
+            "description": "Airline ICAO code"
+          },
+          "departure": {
+            "type": "object",
+            "description": "Departure information",
+            "properties": {
+              "airport": {
+                "type": "string",
+                "description": "Departure airport name"
+              },
+              "iata": {
+                "type": "string",
+                "description": "Departure airport IATA code"
+              },
+              "city": {
+                "type": "string",
+                "description": "Departure city"
+              },
+              "country": {
+                "type": "string",
+                "description": "Departure country"
+              },
+              "time": {
+                "type": "string",
+                "description": "Departure time (HH:MM)"
+              },
+              "terminal": {
+                "type": "string",
+                "description": "Departure terminal"
+              },
+              "gate": {
+                "type": "string",
+                "description": "Departure gate"
+              }
+            }
+          },
+          "arrival": {
+            "type": "object",
+            "description": "Arrival information",
+            "properties": {
+              "airport": {
+                "type": "string",
+                "description": "Arrival airport name"
+              },
+              "iata": {
+                "type": "string",
+                "description": "Arrival airport IATA code"
+              },
+              "city": {
+                "type": "string",
+                "description": "Arrival city"
+              },
+              "country": {
+                "type": "string",
+                "description": "Arrival country"
+              },
+              "time": {
+                "type": "string",
+                "description": "Arrival time (HH:MM)"
+              },
+              "terminal": {
+                "type": "string",
+                "description": "Arrival terminal"
+              },
+              "gate": {
+                "type": "string",
+                "description": "Arrival gate"
+              }
+            }
+          },
+          "status": {
+            "type": "string",
+            "description": "Flight status (scheduled, active, landed, cancelled, diverted)"
+          },
+          "aircraft": {
+            "type": "string",
+            "description": "Aircraft ICAO code"
+          },
+          "duration": {
+            "type": "string",
+            "description": "Flight duration (e.g., '6h 00m')"
+          },
+          "error": {
+            "type": "string",
+            "description": "Error message if flight not found"
+          }
+        }
+      }
+    },
+    {
+      "name": "search_flights",
+      "description": "Search for flights based on various criteria including departure/arrival airports, airline, and status",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "departure_airport": {
+            "type": "string",
+            "description": "Departure airport IATA code"
+          },
+          "arrival_airport": {
+            "type": "string",
+            "description": "Arrival airport IATA code"
+          },
+          "airline": {
+            "type": "string",
+            "description": "Airline IATA code"
+          },
+          "status": {
+            "type": "string",
+            "description": "Flight status (scheduled, active, landed, cancelled, diverted)"
+          },
+          "max_results": {
+            "type": "integer",
+            "description": "Maximum number of results to return (default: 20)"
+          }
+        }
+      },
+      "output_schema": {
+        "type": "object",
+        "properties": {
+          "search_criteria": {
+            "type": "object",
+            "description": "Search criteria used",
+            "properties": {
+              "departure_airport": {
+                "type": "string",
+                "description": "Departure airport filter"
+              },
+              "arrival_airport": {
+                "type": "string",
+                "description": "Arrival airport filter"
+              },
+              "airline": {
+                "type": "string",
+                "description": "Airline filter"
+              },
+              "status": {
+                "type": "string",
+                "description": "Status filter"
+              }
+            }
+          },
+          "total_matches": {
+            "type": "integer",
+            "description": "Total number of matching flights"
+          },
+          "returned_results": {
+            "type": "integer",
+            "description": "Number of flights returned in this response"
+          },
+          "flights": {
+            "type": "array",
+            "description": "List of matching flights",
+            "items": {
+              "type": "object",
+              "properties": {
+                "flight_iata": {
+                  "type": "string",
+                  "description": "Flight IATA code"
+                },
+                "flight_icao": {
+                  "type": "string",
+                  "description": "Flight ICAO code"
+                },
+                "flight_number": {
+                  "type": "string",
+                  "description": "Flight number"
+                },
+                "airline": {
+                  "type": "string",
+                  "description": "Airline name"
+                },
+                "airline_iata": {
+                  "type": "string",
+                  "description": "Airline IATA code"
+                },
+                "departure": {
+                  "type": "object",
+                  "description": "Departure information",
+                  "properties": {
+                    "airport": {
+                      "type": "string",
+                      "description": "Departure airport name"
+                    },
+                    "iata": {
+                      "type": "string",
+                      "description": "Departure airport IATA code"
+                    },
+                    "city": {
+                      "type": "string",
+                      "description": "Departure city"
+                    },
+                    "time": {
+                      "type": "string",
+                      "description": "Departure time (HH:MM)"
+                    },
+                    "terminal": {
+                      "type": "string",
+                      "description": "Departure terminal"
+                    },
+                    "gate": {
+                      "type": "string",
+                      "description": "Departure gate"
+                    }
+                  }
+                },
+                "arrival": {
+                  "type": "object",
+                  "description": "Arrival information",
+                  "properties": {
+                    "airport": {
+                      "type": "string",
+                      "description": "Arrival airport name"
+                    },
+                    "iata": {
+                      "type": "string",
+                      "description": "Arrival airport IATA code"
+                    },
+                    "city": {
+                      "type": "string",
+                      "description": "Arrival city"
+                    },
+                    "time": {
+                      "type": "string",
+                      "description": "Arrival time (HH:MM)"
+                    },
+                    "terminal": {
+                      "type": "string",
+                      "description": "Arrival terminal"
+                    },
+                    "gate": {
+                      "type": "string",
+                      "description": "Arrival gate"
+                    }
+                  }
+                },
+                "status": {
+                  "type": "string",
+                  "description": "Flight status"
+                },
+                "aircraft": {
+                  "type": "string",
+                  "description": "Aircraft ICAO code"
+                },
+                "duration": {
+                  "type": "string",
+                  "description": "Flight duration"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "get_flight_status",
+      "description": "Get the current status of a specific flight with basic flight information",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "flight_identifier": {
+            "type": "string",
+            "description": "Flight identifier (IATA code, ICAO code, or flight number)"
+          }
+        },
+        "required": ["flight_identifier"]
+      },
+      "output_schema": {
+        "type": "object",
+        "properties": {
+          "flight_iata": {
+            "type": "string",
+            "description": "Flight IATA code"
+          },
+          "flight_icao": {
+            "type": "string",
+            "description": "Flight ICAO code"
+          },
+          "flight_number": {
+            "type": "string",
+            "description": "Flight number"
+          },
+          "airline": {
+            "type": "string",
+            "description": "Airline name"
+          },
+          "route": {
+            "type": "string",
+            "description": "Flight route (departure → arrival)"
+          },
+          "departure": {
+            "type": "object",
+            "description": "Departure information",
+            "properties": {
+              "airport": {
+                "type": "string",
+                "description": "Departure airport name"
+              },
+              "time": {
+                "type": "string",
+                "description": "Departure time (HH:MM)"
+              }
+            }
+          },
+          "arrival": {
+            "type": "object",
+            "description": "Arrival information",
+            "properties": {
+              "airport": {
+                "type": "string",
+                "description": "Arrival airport name"
+              },
+              "time": {
+                "type": "string",
+                "description": "Arrival time (HH:MM)"
+              }
+            }
+          },
+          "status": {
+            "type": "string",
+            "description": "Flight status (scheduled, active, landed, cancelled, diverted)"
+          },
+          "status_description": {
+            "type": "string",
+            "description": "Human-readable status description"
+          },
+          "aircraft": {
+            "type": "string",
+            "description": "Aircraft ICAO code"
+          },
+          "duration": {
+            "type": "string",
+            "description": "Flight duration (e.g., '6h 00m')"
+          },
+          "error": {
+            "type": "string",
+            "description": "Error message if flight not found"
+          }
+        }
+      }
+    }
+  ]
+}

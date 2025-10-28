@@ -128,7 +128,7 @@ def run_python(
     *,
     as_module: bool = False,
     cwd: Optional[str] = None,
-    timeout_seconds: float = 180.0,
+    timeout_seconds: Optional[float] = None,
 ) -> Dict[str, Any]:
     """
     Execute Python code inside the workspace.
@@ -136,12 +136,22 @@ def run_python(
     Args:
         entrypoint: Module name when `as_module=True`, otherwise workspace-relative script path.
         args: Optional command-line arguments.
-        as_module: Run `python -m entrypoint` when True (only 'pytest' is permitted).
+        as_module: Run `python -m entrypoint` when True (only 'pytest' is permitted by default).
         cwd: Optional workspace-relative working directory.
-        timeout_seconds: Timeout for the process.
+        timeout_seconds: Timeout for the process. If not provided, uses config default.
     """
     args = args or []
     python_executable = sys.executable
+    
+    # Get configuration from context
+    config = ctx.context.config
+    if config is None:
+        from .config import WorkflowConfig
+        config = WorkflowConfig()
+    
+    # Use configured timeout if not provided
+    if timeout_seconds is None:
+        timeout_seconds = config.execution.python_timeout_seconds
 
     if cwd:
         working_dir = ctx.context.resolve_path(cwd)
@@ -149,8 +159,11 @@ def run_python(
         working_dir = ctx.context.workspace_root
 
     if as_module:
-        if entrypoint not in {"pytest"}:
-            raise ValueError("Only running pytest modules is permitted in module mode.")
+        allowed_modules = set(config.execution.allowed_modules)
+        if entrypoint not in allowed_modules:
+            raise ValueError(
+                f"Module '{entrypoint}' is not permitted. Allowed modules: {', '.join(sorted(allowed_modules))}"
+            )
         command: List[str] = [python_executable, "-m", entrypoint, *args]
     else:
         script_path = ctx.context.resolve_path(entrypoint)

@@ -1,0 +1,41 @@
+Database Generation Transcript
+==============================
+
+Generated flight__stay_search_server_duffel_api_database.py with the following features:
+
+1. Deterministic Data Generation:
+   - Uses random seed (default: 42) for reproducible results
+   - Configurable counts for each data type
+   - Realistic flight routes between major airports
+   - Coordinated offers linked to flights
+   - Geographically accurate stay locations
+   - Reviews linked to specific stays
+
+2. DATA CONTRACT Compliance:
+   - flights: array with id, origin, destination, departure_date, airline, price, cabin_class, max_connections, segments
+   - offers: array with id, flight_id, price, cabin_class, airline, details
+   - stays: array with id, name, location, latitude, longitude, price_per_night, guests, check_in_date, check_out_date
+   - reviews: array with id, stay_id, rating, comment, date
+
+3. Realistic Data Features:
+   - 15 major international airports
+   - 10 different airlines
+   - 4 cabin classes (economy, premium_economy, business, first)
+   - Multi-segment flights with realistic routing
+   - Hotels in 10 major cities with accurate coordinates
+   - Varied pricing based on realistic market ranges
+   - Review ratings between 3.0-5.0 with realistic comments
+
+4. update_database Function:
+   - Merges updates into existing database
+   - Validates against DATA CONTRACT schema
+   - Extends lists rather than replacing
+   - Handles file I/O with proper error handling
+
+Default counts:
+- 50 flights
+- 100 offers (2 per flight on average)
+- 30 stays
+- 200 reviews (~6-7 per stay on average)
+
+The database provides comprehensive test data for all server functions including flight search, offer details, multi-city search, stay search, and stay reviews.

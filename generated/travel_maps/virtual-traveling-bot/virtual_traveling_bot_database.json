@@ -1,0 +1,460 @@
+{
+  "facilities": [
+    {
+      "description": "A restaurant located near 123 Central Park West",
+      "facility_id": "facility_001",
+      "location_id": "location_001",
+      "name": "Skyline Lounge",
+      "type": "restaurant"
+    },
+    {
+      "description": "A hotel located near 123 Central Park West",
+      "facility_id": "facility_002",
+      "location_id": "location_001",
+      "name": "Historic Manor Hotel",
+      "type": "hotel"
+    },
+    {
+      "description": "An attraction located near 123 Central Park West",
+      "facility_id": "facility_003",
+      "location_id": "location_001",
+      "name": "Science Center",
+      "type": "attraction"
+    },
+    {
+      "description": "A museum located near 123 Central Park West",
+      "facility_id": "facility_004",
+      "location_id": "location_001",
+      "name": "Cultural Heritage Center",
+      "type": "museum"
+    },
+    {
+      "description": "A restaurant located near 456 Champs-Élysées",
+      "facility_id": "facility_005",
+      "location_id": "location_002",
+      "name": "The Urban Bistro",
+      "type": "restaurant"
+    },
+    {
+      "description": "A hotel located near 456 Champs-Élysées",
+      "facility_id": "facility_006",
+      "location_id": "location_002",
+      "name": "Seaside Resort",
+      "type": "hotel"
+    },
+    {
+      "description": "An attraction located near 456 Champs-Élysées",
+      "facility_id": "facility_007",
+      "location_id": "location_002",
+      "name": "Observation Deck",
+      "type": "attraction"
+    },
+    {
+      "description": "A museum located near 456 Champs-Élysées",
+      "facility_id": "facility_008",
+      "location_id": "location_002",
+      "name": "Science Museum",
+      "type": "museum"
+    },
+    {
+      "description": "A restaurant located near 789 Shibuya Crossing",
+      "facility_id": "facility_009",
+      "location_id": "location_003",
+      "name": "Cafe Central",
+      "type": "restaurant"
+    },
+    {
+      "description": "A hotel located near 789 Shibuya Crossing",
+      "facility_id": "facility_010",
+      "location_id": "location_003",
+      "name": "Grand Plaza Hotel",
+      "type": "hotel"
+    },
+    {
+      "description": "An attraction located near 789 Shibuya Crossing",
+      "facility_id": "facility_011",
+      "location_id": "location_003",
+      "name": "Botanical Gardens",
+      "type": "attraction"
+    },
+    {
+      "description": "A museum located near 789 Shibuya Crossing",
+      "facility_id": "facility_012",
+      "location_id": "location_003",
+      "name": "Art Gallery",
+      "type": "museum"
+    },
+    {
+      "description": "A restaurant located near 101 Colosseum Square",
+      "facility_id": "facility_013",
+      "location_id": "location_004",
+      "name": "Riverside Grill",
+      "type": "restaurant"
+    },
+    {
+      "description": "A hotel located near 101 Colosseum Square",
+      "facility_id": "facility_014",
+      "location_id": "location_004",
+      "name": "Mountain View Inn",
+      "type": "hotel"
+    },
+    {
+      "description": "An attraction located near 101 Colosseum Square",
+      "facility_id": "facility_015",
+      "location_id": "location_004",
+      "name": "Historic District",
+      "type": "attraction"
+    },
+    {
+      "description": "A museum located near 101 Colosseum Square",
+      "facility_id": "facility_016",
+      "location_id": "location_004",
+      "name": "History Museum",
+      "type": "museum"
+    },
+    {
+      "description": "A restaurant located near 202 Sydney Opera House",
+      "facility_id": "facility_017",
+      "location_id": "location_005",
+      "name": "Skyline Lounge",
+      "type": "restaurant"
+    },
+    {
+      "description": "A hotel located near 202 Sydney Opera House",
+      "facility_id": "facility_018",
+      "location_id": "location_005",
+      "name": "Historic Manor Hotel",
+      "type": "hotel"
+    },
+    {
+      "description": "An attraction located near 202 Sydney Opera House",
+      "facility_id": "facility_019",
+      "location_id": "location_005",
+      "name": "Science Center",
+      "type": "attraction"
+    },
+    {
+      "description": "A museum located near 202 Sydney Opera House",
+      "facility_id": "facility_020",
+      "location_id": "location_005",
+      "name": "Cultural Heritage Center",
+      "type": "museum"
+    },
+    {
+      "description": "A restaurant located near 303 Machu Picchu",
+      "facility_id": "facility_021",
+      "location_id": "location_006",
+      "name": "The Urban Bistro",
+      "type": "restaurant"
+    },
+    {
+      "description": "A hotel located near 303 Machu Picchu",
+      "facility_id": "facility_022",
+      "location_id": "location_006",
+      "name": "Seaside Resort",
+      "type": "hotel"
+    },
+    {
+      "description": "An attraction located near 303 Machu Picchu",
+      "facility_id": "facility_023",
+      "location_id": "location_006",
+      "name": "Observation Deck",
+      "type": "attraction"
+    },
+    {
+      "description": "A museum located near 303 Machu Picchu",
+      "facility_id": "facility_024",
+      "location_id": "location_006",
+      "name": "Science Museum",
+      "type": "museum"
+    }
+  ],
+  "journeys": [
+    {
+      "destination_location_id": "location_003",
+      "end_time": "2024-01-15T18:45:00",
+      "journey_id": "journey_001",
+      "start_time": "2024-01-15T10:30:00",
+      "status": "completed",
+      "traveler_id": "traveler_001"
+    },
+    {
+      "destination_location_id": "location_006",
+      "end_time": "2024-01-20T16:30:00",
+      "journey_id": "journey_002",
+      "start_time": "2024-01-20T08:15:00",
+      "status": "completed",
+      "traveler_id": "traveler_002"
+    },
+    {
+      "destination_location_id": "location_004",
+      "end_time": "2024-01-25T19:15:00",
+      "journey_id": "journey_003",
+      "start_time": "2024-01-25T11:00:00",
+      "status": "completed",
+      "traveler_id": "traveler_003"
+    },
+    {
+      "destination_location_id": "location_001",
+      "end_time": "2024-01-10T17:30:00",
+      "journey_id": "journey_004",
+      "start_time": "2024-01-10T09:00:00",
+      "status": "completed",
+      "traveler_id": "traveler_004"
+    },
+    {
+      "destination_location_id": "location_005",
+      "end_time": "2024-01-28T14:45:00",
+      "journey_id": "journey_005",
+      "start_time": "2024-01-28T14:00:00",
+      "status": "cancelled",
+      "traveler_id": "traveler_004"
+    },
+    {
+      "destination_location_id": "location_002",
+      "end_time": "2024-01-18T20:15:00",
+      "journey_id": "journey_006",
+      "start_time": "2024-01-18T12:30:00",
+      "status": "completed",
+      "traveler_id": "traveler_005"
+    },
+    {
+      "destination_location_id": "location_003",
+      "end_time": "",
+      "journey_id": "journey_007",
+      "start_time": "2024-01-30T10:00:00",
+      "status": "active",
+      "traveler_id": "traveler_005"
+    },
+    {
+      "destination_location_id": "location_004",
+      "end_time": "2024-01-22T21:30:00",
+      "journey_id": "journey_008",
+      "start_time": "2024-01-22T13:45:00",
+      "status": "completed",
+      "traveler_id": "traveler_006"
+    },
+    {
+      "destination_location_id": "location_006",
+      "end_time": "2024-01-12T15:45:00",
+      "journey_id": "journey_009",
+      "start_time": "2024-01-12T07:30:00",
+      "status": "completed",
+      "traveler_id": "traveler_006"
+    }
+  ],
+  "locations": [
+    {
+      "address": "123 Central Park West, New York, NY 10023",
+      "coordinates": {
+        "lat": 40.7829,
+        "lng": -73.9654
+      },
+      "location_id": "location_001",
+      "nearby_facilities": [
+        "facility_001",
+        "facility_002",
+        "facility_003",
+        "facility_004"
+      ],
+      "view_snapshot": "A sprawling urban oasis with winding paths, serene lakes, and iconic bridges surrounded by towering skyscrapers."
+    },
+    {
+      "address": "456 Champs-Élysées, 75008 Paris, France",
+      "coordinates": {
+        "lat": 48.8738,
+        "lng": 2.295
+      },
+      "location_id": "location_002",
+      "nearby_facilities": [
+        "facility_005",
+        "facility_006",
+        "facility_007",
+        "facility_008"
+      ],
+      "view_snapshot": "The famous avenue lined with luxury shops, theaters, and cafes, leading to the majestic Arc de Triomphe."
+    },
+    {
+      "address": "789 Shibuya Crossing, Shibuya City, Tokyo 150-8010",
+      "coordinates": {
+        "lat": 35.6595,
+        "lng": 139.7004
+      },
+      "location_id": "location_003",
+      "nearby_facilities": [
+        "facility_009",
+        "facility_010",
+        "facility_011",
+        "facility_012"
+      ],
+      "view_snapshot": "The world's busiest pedestrian crossing with neon billboards, bustling crowds, and the iconic Hachiko statue."
+    },
+    {
+      "address": "101 Colosseum Square, 00184 Rome, Italy",
+      "coordinates": {
+        "lat": 41.8902,
+        "lng": 12.4922
+      },
+      "location_id": "location_004",
+      "nearby_facilities": [
+        "facility_013",
+        "facility_014",
+        "facility_015",
+        "facility_016"
+      ],
+      "view_snapshot": "The ancient amphitheater stands majestically against the Roman sky, surrounded by historic ruins and modern city life."
+    },
+    {
+      "address": "202 Sydney Opera House, Bennelong Point, Sydney NSW 2000",
+      "coordinates": {
+        "lat": -33.8568,
+        "lng": 151.2153
+      },
+      "location_id": "location_005",
+      "nearby_facilities": [
+        "facility_017",
+        "facility_018",
+        "facility_019",
+        "facility_020"
+      ],
+      "view_snapshot": "The iconic white sails of the opera house reflect in the harbor waters with the Sydney Harbour Bridge in the background."
+    },
+    {
+      "address": "303 Machu Picchu, 08680, Peru",
+      "coordinates": {
+        "lat": -13.1631,
+        "lng": -72.545
+      },
+      "location_id": "location_006",
+      "nearby_facilities": [
+        "facility_021",
+        "facility_022",
+        "facility_023",
+        "facility_024"
+      ],
+      "view_snapshot": "Ancient Incan ruins perched high in the Andes mountains, surrounded by misty peaks and terraced landscapes."
+    }
+  ],
+  "settings": [
+    {
+      "current_setting": "Standard Navigation",
+      "device_tips": [
+        "Enable battery saver mode for longer journeys",
+        "Use offline maps in areas with poor connectivity",
+        "Adjust screen brightness based on ambient light"
+      ],
+      "setting_id": "setting_traveler_001",
+      "traveler_id": "traveler_001"
+    },
+    {
+      "current_setting": "Battery Optimized",
+      "device_tips": [
+        "Enable voice guidance for hands-free navigation",
+        "Save favorite locations for quick access",
+        "Share your location with trusted contacts"
+      ],
+      "setting_id": "setting_traveler_002",
+      "traveler_id": "traveler_002"
+    },
+    {
+      "current_setting": "High Performance",
+      "device_tips": [
+        "Use data compression for faster loading",
+        "Enable accessibility features if needed",
+        "Enable battery saver mode for longer journeys"
+      ],
+      "setting_id": "setting_traveler_003",
+      "traveler_id": "traveler_003"
+    },
+    {
+      "current_setting": "Data Saver",
+      "device_tips": [
+        "Adjust screen brightness based on ambient light",
+        "Use offline maps in areas with poor connectivity",
+        "Save favorite locations for quick access",
+        "Enable voice guidance for hands-free navigation"
+      ],
+      "setting_id": "setting_traveler_004",
+      "traveler_id": "traveler_004"
+    },
+    {
+      "current_setting": "Accessibility Mode",
+      "device_tips": [
+        "Share your location with trusted contacts",
+        "Enable battery saver mode for longer journeys",
+        "Use data compression for faster loading",
+        "Enable accessibility features if needed"
+      ],
+      "setting_id": "setting_traveler_005",
+      "traveler_id": "traveler_005"
+    },
+    {
+      "current_setting": "Offline Mode",
+      "device_tips": [
+        "Enable voice guidance for hands-free navigation",
+        "Adjust screen brightness based on ambient light",
+        "Save favorite locations for quick access",
+        "Use offline maps in areas with poor connectivity",
+        "Share your location with trusted contacts"
+      ],
+      "setting_id": "setting_traveler_006",
+      "traveler_id": "traveler_006"
+    }
+  ],
+  "travelers": [
+    {
+      "active_journey_id": "",
+      "current_location_id": "location_003",
+      "language": "English",
+      "name": "Alice Chen",
+      "personality": "Adventurous",
+      "speaking_habits": "Enthusiastic",
+      "traveler_id": "traveler_001"
+    },
+    {
+      "active_journey_id": "",
+      "current_location_id": "location_006",
+      "language": "Italian",
+      "name": "Marco Rossi",
+      "personality": "Spontaneous",
+      "speaking_habits": "Casual",
+      "traveler_id": "traveler_002"
+    },
+    {
+      "active_journey_id": "",
+      "current_location_id": "location_004",
+      "language": "French",
+      "name": "Sophie Dubois",
+      "personality": "Planner",
+      "speaking_habits": "Formal",
+      "traveler_id": "traveler_003"
+    },
+    {
+      "active_journey_id": "",
+      "current_location_id": "location_001",
+      "language": "Japanese",
+      "name": "Kenji Tanaka",
+      "personality": "Cautious",
+      "speaking_habits": "Reserved",
+      "traveler_id": "traveler_004"
+    },
+    {
+      "active_journey_id": "journey_007",
+      "current_location_id": "location_003",
+      "language": "Spanish",
+      "name": "Carlos Mendez",
+      "personality": "Social",
+      "speaking_habits": "Humorous",
+      "traveler_id": "traveler_005"
+    },
+    {
+      "active_journey_id": "",
+      "current_location_id": "location_002",
+      "language": "English",
+      "name": "Emma Wilson",
+      "personality": "Solo",
+      "speaking_habits": "Direct",
+      "traveler_id": "traveler_006"
+    }
+  ]
+}

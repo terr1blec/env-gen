@@ -1,0 +1,422 @@
+{
+  "addresses": [
+    {
+      "placeName": "강남역",
+      "address": "서울특별시 강남구 강남대로 396",
+      "coordinates": {
+        "latitude": 37.4979,
+        "longitude": 127.0276
+      }
+    },
+    {
+      "placeName": "홍대입구역",
+      "address": "서울특별시 마포구 양화로 160",
+      "coordinates": {
+        "latitude": 37.5572,
+        "longitude": 126.9254
+      }
+    },
+    {
+      "placeName": "명동",
+      "address": "서울특별시 중구 명동길 14",
+      "coordinates": {
+        "latitude": 37.5637,
+        "longitude": 126.9826
+      }
+    },
+    {
+      "placeName": "동대문디자인플라자",
+      "address": "서울특별시 중구 을지로 281",
+      "coordinates": {
+        "latitude": 37.5665,
+        "longitude": 127.0097
+      }
+    },
+    {
+      "placeName": "여의도한강공원",
+      "address": "서울특별시 영등포구 여의동로 330",
+      "coordinates": {
+        "latitude": 37.5265,
+        "longitude": 126.9329
+      }
+    },
+    {
+      "placeName": "롯데월드타워",
+      "address": "서울특별시 송파구 올림픽로 300",
+      "coordinates": {
+        "latitude": 37.5125,
+        "longitude": 127.1025
+      }
+    },
+    {
+      "placeName": "경복궁",
+      "address": "서울특별시 종로구 사직로 161",
+      "coordinates": {
+        "latitude": 37.5796,
+        "longitude": 126.977
+      }
+    },
+    {
+      "placeName": "N서울타워",
+      "address": "서울특별시 용산구 남산공원길 105",
+      "coordinates": {
+        "latitude": 37.5512,
+        "longitude": 126.9882
+      }
+    },
+    {
+      "placeName": "코엑스",
+      "address": "서울특별시 강남구 영동대로 513",
+      "coordinates": {
+        "latitude": 37.5121,
+        "longitude": 127.0592
+      }
+    },
+    {
+      "placeName": "광화문광장",
+      "address": "서울특별시 종로구 세종대로 172",
+      "coordinates": {
+        "latitude": 37.5725,
+        "longitude": 126.9769
+      }
+    }
+  ],
+  "directions": [
+    {
+      "start_coords": {
+        "latitude": 37.4979,
+        "longitude": 127.0276
+      },
+      "end_coords": {
+        "latitude": 37.5572,
+        "longitude": 126.9254
+      },
+      "start_address": "서울특별시 강남구 강남대로 396",
+      "end_address": "서울특별시 마포구 양화로 160",
+      "distance": "23.8 km",
+      "duration": "76 min",
+      "route_details": "강남역에서 홍대입구역까지 최적 경로. 주요 도로 이용, 보통 교통."
+    },
+    {
+      "start_coords": {
+        "latitude": 37.5572,
+        "longitude": 126.9254
+      },
+      "end_coords": {
+        "latitude": 37.5637,
+        "longitude": 126.9826
+      },
+      "start_address": "서울특별시 마포구 양화로 160",
+      "end_address": "서울특별시 중구 명동길 14",
+      "distance": "10.5 km",
+      "duration": "37 min",
+      "route_details": "홍대입구역에서 명동까지 최적 경로. 주요 도로 이용, 교통량 적음."
+    },
+    {
+      "start_coords": {
+        "latitude": 37.5637,
+        "longitude": 126.9826
+      },
+      "end_coords": {
+        "latitude": 37.5665,
+        "longitude": 127.0097
+      },
+      "start_address": "서울특별시 중구 명동길 14",
+      "end_address": "서울특별시 중구 을지로 281",
+      "distance": "9.4 km",
+      "duration": "42 min",
+      "route_details": "명동에서 동대문디자인플라자까지 최적 경로. 주요 도로 이용, 교통량 적음."
+    },
+    {
+      "start_coords": {
+        "latitude": 37.5665,
+        "longitude": 127.0097
+      },
+      "end_coords": {
+        "latitude": 37.5265,
+        "longitude": 126.9329
+      },
+      "start_address": "서울특별시 중구 을지로 281",
+      "end_address": "서울특별시 영등포구 여의동로 330",
+      "distance": "18.5 km",
+      "duration": "60 min",
+      "route_details": "동대문디자인플라자에서 여의도한강공원까지 최적 경로. 주요 도로 이용, 교통량 적음."
+    },
+    {
+      "start_coords": {
+        "latitude": 37.5265,
+        "longitude": 126.9329
+      },
+      "end_coords": {
+        "latitude": 37.5125,
+        "longitude": 127.1025
+      },
+      "start_address": "서울특별시 영등포구 여의동로 330",
+      "end_address": "서울특별시 송파구 올림픽로 300",
+      "distance": "23.7 km",
+      "duration": "81 min",
+      "route_details": "여의도한강공원에서 롯데월드타워까지 최적 경로. 주요 도로 이용, 교통량 적음."
+    },
+    {
+      "start_coords": {
+        "latitude": 37.5125,
+        "longitude": 127.1025
+      },
+      "end_coords": {
+        "latitude": 37.5796,
+        "longitude": 126.977
+      },
+      "start_address": "서울특별시 송파구 올림픽로 300",
+      "end_address": "서울특별시 종로구 사직로 161",
+      "distance": "26.7 km",
+      "duration": "92 min",
+      "route_details": "롯데월드타워에서 경복궁까지 최적 경로. 주요 도로 이용, 일부 정체 구간."
+    },
+    {
+      "start_coords": {
+        "latitude": 37.5796,
+        "longitude": 126.977
+      },
+      "end_coords": {
+        "latitude": 37.5512,
+        "longitude": 126.9882
+      },
+      "start_address": "서울특별시 종로구 사직로 161",
+      "end_address": "서울특별시 용산구 남산공원길 105",
+      "distance": "9.7 km",
+      "duration": "36 min",
+      "route_details": "경복궁에서 N서울타워까지 최적 경로. 주요 도로 이용, 일부 정체 구간."
+    },
+    {
+      "start_coords": {
+        "latitude": 37.5512,
+        "longitude": 126.9882
+      },
+      "end_coords": {
+        "latitude": 37.5121,
+        "longitude": 127.0592
+      },
+      "start_address": "서울특별시 용산구 남산공원길 105",
+      "end_address": "서울특별시 강남구 영동대로 513",
+      "distance": "15.9 km",
+      "duration": "61 min",
+      "route_details": "N서울타워에서 코엑스까지 최적 경로. 주요 도로 이용, 교통량 적음."
+    }
+  ],
+  "future_directions": [
+    {
+      "start_coords": {
+        "latitude": 37.4979,
+        "longitude": 127.0276
+      },
+      "end_coords": {
+        "latitude": 37.5637,
+        "longitude": 126.9826
+      },
+      "departure_time": "2024-03-15 08:30",
+      "distance": "18.5 km",
+      "duration": "106 min",
+      "traffic_prediction": "출근 시간 대로 정체 예상"
+    },
+    {
+      "start_coords": {
+        "latitude": 37.5572,
+        "longitude": 126.9254
+      },
+      "end_coords": {
+        "latitude": 37.5665,
+        "longitude": 127.0097
+      },
+      "departure_time": "2024-03-15 18:00",
+      "distance": "13.3 km",
+      "duration": "73 min",
+      "traffic_prediction": "퇴근 시간 정체 구간 있음"
+    },
+    {
+      "start_coords": {
+        "latitude": 37.5265,
+        "longitude": 126.9329
+      },
+      "end_coords": {
+        "latitude": 37.5796,
+        "longitude": 126.977
+      },
+      "departure_time": "2024-03-16 10:00",
+      "distance": "14.8 km",
+      "duration": "54 min",
+      "traffic_prediction": "교통량 원활 예상"
+    },
+    {
+      "start_coords": {
+        "latitude": 37.5125,
+        "longitude": 127.1025
+      },
+      "end_coords": {
+        "latitude": 37.5512,
+        "longitude": 126.9882
+      },
+      "departure_time": "2024-03-16 14:00",
+      "distance": "19.6 km",
+      "duration": "85 min",
+      "traffic_prediction": "주말 오후 보통 교통"
+    },
+    {
+      "start_coords": {
+        "latitude": 37.5121,
+        "longitude": 127.0592
+      },
+      "end_coords": {
+        "latitude": 37.5725,
+        "longitude": 126.9769
+      },
+      "departure_time": "2024-03-17 12:00",
+      "distance": "21.5 km",
+      "duration": "79 min",
+      "traffic_prediction": "교통량 원활 예상"
+    },
+    {
+      "start_coords": {
+        "latitude": 37.5725,
+        "longitude": 126.9769
+      },
+      "end_coords": {
+        "latitude": 37.4979,
+        "longitude": 127.0276
+      },
+      "departure_time": "2024-03-17 20:00",
+      "distance": "20.3 km",
+      "duration": "74 min",
+      "traffic_prediction": "교통량 원활 예상"
+    }
+  ],
+  "multi_destination_directions": [
+    {
+      "start_coords": {
+        "latitude": 37.4979,
+        "longitude": 127.0276
+      },
+      "destinations": [
+        {
+          "coordinates": {
+            "latitude": 37.5637,
+            "longitude": 126.9826
+          },
+          "address": "서울특별시 중구 명동길 14"
+        },
+        {
+          "coordinates": {
+            "latitude": 37.5265,
+            "longitude": 126.9329
+          },
+          "address": "서울특별시 영등포구 여의동로 330"
+        },
+        {
+          "coordinates": {
+            "latitude": 37.5796,
+            "longitude": 126.977
+          },
+          "address": "서울특별시 종로구 사직로 161"
+        }
+      ],
+      "summary": "관광 명소 순회 코스",
+      "total_distance": "32.7 km",
+      "total_duration": "122 min"
+    },
+    {
+      "start_coords": {
+        "latitude": 37.5572,
+        "longitude": 126.9254
+      },
+      "destinations": [
+        {
+          "coordinates": {
+            "latitude": 37.5665,
+            "longitude": 127.0097
+          },
+          "address": "서울특별시 중구 을지로 281"
+        },
+        {
+          "coordinates": {
+            "latitude": 37.5125,
+            "longitude": 127.1025
+          },
+          "address": "서울특별시 송파구 올림픽로 300"
+        },
+        {
+          "coordinates": {
+            "latitude": 37.5121,
+            "longitude": 127.0592
+          },
+          "address": "서울특별시 강남구 영동대로 513"
+        }
+      ],
+      "summary": "쇼핑 및 엔터테인먼트 투어",
+      "total_distance": "31.5 km",
+      "total_duration": "121 min"
+    },
+    {
+      "start_coords": {
+        "latitude": 37.5265,
+        "longitude": 126.9329
+      },
+      "destinations": [
+        {
+          "coordinates": {
+            "latitude": 37.5512,
+            "longitude": 126.9882
+          },
+          "address": "서울특별시 용산구 남산공원길 105"
+        },
+        {
+          "coordinates": {
+            "latitude": 37.5725,
+            "longitude": 126.9769
+          },
+          "address": "서울특별시 종로구 세종대로 172"
+        },
+        {
+          "coordinates": {
+            "latitude": 37.4979,
+            "longitude": 127.0276
+          },
+          "address": "서울특별시 강남구 강남대로 396"
+        }
+      ],
+      "summary": "서울 야경 명소 순회",
+      "total_distance": "26.4 km",
+      "total_duration": "100 min"
+    },
+    {
+      "start_coords": {
+        "latitude": 37.5121,
+        "longitude": 127.0592
+      },
+      "destinations": [
+        {
+          "coordinates": {
+            "latitude": 37.5572,
+            "longitude": 126.9254
+          },
+          "address": "서울특별시 마포구 양화로 160"
+        },
+        {
+          "coordinates": {
+            "latitude": 37.5665,
+            "longitude": 127.0097
+          },
+          "address": "서울특별시 중구 을지로 281"
+        },
+        {
+          "coordinates": {
+            "latitude": 37.5125,
+            "longitude": 127.1025
+          },
+          "address": "서울특별시 송파구 올림픽로 300"
+        }
+      ],
+      "summary": "대형 쇼핑몰 투어",
+      "total_distance": "46.5 km",
+      "total_duration": "157 min"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "description": "A place recommendation service for Korean travel locations based on location and user preferences",
+  "name": "Kakao Map",
+  "tools": [
+    {
+      "description": "Recommends places based on location and preferences",
+      "input_schema": {
+        "properties": {
+          "location": {
+            "description": "Location to search around (e.g., Seoul, Busan, Gangnam)",
+            "type": "string"
+          },
+          "preferences": {
+            "description": "User preferences for place types (e.g., restaurant, cafe, cultural_site)",
+            "type": "string"
+          }
+        },
+        "required": [
+          "location",
+          "preferences"
+        ],
+        "type": "object"
+      },
+      "name": "kakao_map_place_recommender",
+      "output_schema": {
+        "properties": {
+          "recommendations": {
+            "description": "List of recommended places matching the criteria",
+            "items": {
+              "description": "Place details including name, location, type, rating, and other attributes",
+              "type": "object"
+            },
+            "type": "array"
+          }
+        },
+        "type": "object"
+      }
+    }
+  ]
+}

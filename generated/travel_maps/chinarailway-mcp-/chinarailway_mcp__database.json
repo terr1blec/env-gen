@@ -1,0 +1,4954 @@
+{
+  "trains": [
+    {
+      "train_number": "K4507",
+      "departure_station": "上海",
+      "arrival_station": "北京",
+      "departure_time": "07:15",
+      "arrival_time": "14:00",
+      "duration": "09:53",
+      "date": "2025-11-25",
+      "seat_types": {
+        "business_class": "有",
+        "first_class": "有",
+        "second_class": "有",
+        "soft_sleeper": "有",
+        "hard_sleeper": "有",
+        "hard_seat": "有"
+      },
+      "prices": {
+        "business_class": 541.75,
+        "first_class": 418.74,
+        "second_class": 278.37,
+        "soft_sleeper": 197.47,
+        "hard_sleeper": 132.44,
+        "hard_seat": 63.93
+      },
+      "available_seats": {
+        "business_class": 5,
+        "first_class": 34,
+        "second_class": 90,
+        "soft_sleeper": 23,
+        "hard_sleeper": 41,
+        "hard_seat": 242
+      }
+    },
+    {
+      "train_number": "C1675",
+      "departure_station": "广州",
+      "arrival_station": "深圳",
+      "departure_time": "05:45",
+      "arrival_time": "13:30",
+      "duration": "01:15",
+      "date": "2025-11-16",
+      "seat_types": {
+        "business_class": "有",
+        "first_class": "有",
+        "second_class": "有",
+        "soft_sleeper": "有",
+        "hard_sleeper": "少量",
+        "hard_seat": "有"
+      },
+      "prices": {
+        "business_class": 100.77,
+        "first_class": 80.86,
+        "second_class": 56.61,
+        "soft_sleeper": 38.33,
+        "hard_sleeper": 24.66,
+        "hard_seat": 12.01
+      },
+      "available_seats": {
+        "business_class": 12,
+        "first_class": 34,
+        "second_class": 124,
+        "soft_sleeper": 12,
+        "hard_sleeper": 34,
+        "hard_seat": 151
+      }
+    },
+    {
+      "train_number": "Z5978",
+      "departure_station": "武汉",
+      "arrival_station": "杭州",
+      "departure_time": "06:30",
+      "arrival_time": "17:15",
+      "duration": "04:39",
+      "date": "2025-11-19",
+      "seat_types": {
+        "business_class": "少量",
+        "first_class": "有",
+        "second_class": "有",
+        "soft_sleeper": "有",
+        "hard_sleeper": "无",
+        "hard_seat": "有"
+      },
+      "prices": {
+        "business_class": 507.67,
+        "first_class": 428.36,
+        "second_class": 267.39,
+        "soft_sleeper": 197.3,
+        "hard_sleeper": 134.86,
+        "hard_seat": 69.49
+      },
+      "available_seats": {
+        "business_class": 6,
+        "first_class": 17,
+        "second_class": 58,
+        "soft_sleeper": 20,
+        "hard_sleeper": 45,
+        "hard_seat": 237
+      }
+    },
+    {
+      "train_number": "T5156",
+      "departure_station": "上海",
+      "arrival_station": "深圳",
+      "departure_time": "07:45",
+      "arrival_time": "18:45",
+      "duration": "09:20",
+      "date": "2025-11-01",
+      "seat_types": {
+        "business_class": "有",
+        "first_class": "有",
+        "second_class": "有",
+        "soft_sleeper": "有",
+        "hard_sleeper": "少量",
+        "hard_seat": "有"
+      },
+      "prices": {
+        "business_class": 765.87,
+        "first_class": 669.12,
+        "second_class": 406.48,
+        "soft_sleeper": 279.39,
+        "hard_sleeper": 184.48,
+        "hard_seat": 93.51
+      },
+      "available_seats": {
+        "business_class": 10,
+        "first_class": 35,
+        "second_class": 158,
+        "soft_sleeper": 29,
+        "hard_sleeper": 24,
+        "hard_seat": 297
+      }
+    },
+    {
+      "train_number": "T4120",
+      "departure_station": "武汉",
+      "arrival_station": "西安",
+      "departure_time": "12:00",
+      "arrival_time": "13:30",
+      "duration": "05:51",
+      "date": "2025-11-07",
+      "seat_types": {
+        "business_class": "有",
+        "first_class": "有",
+        "second_class": "有",
+        "soft_sleeper": "少量",
+        "hard_sleeper": "少量",
+        "hard_seat": "有"
+      },
+      "prices": {
+        "business_class": 465.05,
+        "first_class": 326.33,
+        "second_class": 251.68,
+        "soft_sleeper": 187.3,
+        "hard_sleeper": 111.56,
+        "hard_seat": 59.74
+      },
+      "available_seats": {
+        "business_class": 11,
+        "first_class": 14,
+        "second_class": 145,
+        "soft_sleeper": 15,
+        "hard_sleeper": 54,
+        "hard_seat": 371
+      }
+    },
+    {
+      "train_number": "Z0320",
+      "departure_station": "北京",
+      "arrival_station": "南京",
+      "departure_time": "05:30",
+      "arrival_time": "16:15",
+      "duration": "05:55",
+      "date": "2025-11-25",
+      "seat_types": {
+        "business_class": "有",
+        "first_class": "有",
+        "second_class": "无",
+        "soft_sleeper": "少量",
+        "hard_sleeper": "少量",
+        "hard_seat": "有"
+      },
+      "prices": {
+        "business_class": 673.64,
+        "first_class": 563.55,
+        "second_class": 396.61,
+        "soft_sleeper": 254.77,
+        "hard_sleeper": 183.04,
+        "hard_seat": 92.96
+      },
+      "available_seats": {
+        "business_class": 11,
+        "first_class": 39,
+        "second_class": 188,
+        "soft_sleeper": 16,
+        "hard_sleeper": 39,
+        "hard_seat": 304
+      }
+    },
+    {
+      "train_number": "T7398",
+      "departure_station": "南京",
+      "arrival_station": "西安",
+      "departure_time": "05:15",
+      "arrival_time": "15:00",
+      "duration": "08:25",
+      "date": "2025-11-15",
+      "seat_types": {
+        "business_class": "有",
+        "first_class": "有",
+        "second_class": "有",
+        "soft_sleeper": "无",
+        "hard_sleeper": "有",
+        "hard_seat": "有"
+      },
+      "prices": {
+        "business_class": 651.4,
+        "first_class": 520.79,
+        "second_class": 360.4,
+        "soft_sleeper": 257.59,
+        "hard_sleeper": 179.17,
+        "hard_seat": 90.55
+      },
+      "available_seats": {
+        "business_class": 20,
+        "first_class": 17,
+        "second_class": 171,
+        "soft_sleeper": 23,
+        "hard_sleeper": 32,
+        "hard_seat": 148
+      }
+    },
+    {
+      "train_number": "C6940",
+      "departure_station": "上海",
+      "arrival_station": "武汉",
+      "departure_time": "10:45",
+      "arrival_time": "12:00",
+      "duration": "04:13",
+      "date": "2025-11-20",
+      "seat_types": {
+        "business_class": "有",
+        "first_class": "少量",
+        "second_class": "有",
+        "soft_sleeper": "有",
+        "hard_sleeper": "有",
+        "hard_seat": "有"
+      },
+      "prices": {
+        "business_class": 732.89,
+        "first_class": 546.36,
+        "second_class": 415.89,
+        "soft_sleeper": 284.3,
+        "hard_sleeper": 205.57,
+        "hard_seat": 96.82
+      },
+      "available_seats": {
+        "business_class": 6,
+        "first_class": 30,
+        "second_class": 188,
+        "soft_sleeper": 10,
+        "hard_sleeper": 25,
+        "hard_seat": 221
+      }
+    },
+    {
+      "train_number": "Z7887",
+      "departure_station": "广州",
+      "arrival_station": "武汉",
+      "departure_time": "07:45",
+      "arrival_time": "12:15",
+      "duration": "05:39",
+      "date": "2025-11-09",
+      "seat_types": {
+        "business_class": "有",
+        "first_class": "无",
+        "second_class": "有",
+        "soft_sleeper": "有",
+        "hard_sleeper": "少量",
+        "hard_seat": "少量"
+      },
+      "prices": {
+        "business_class": 676.66,
+        "first_class": 523.82,
+        "second_class": 311.5,
+        "soft_sleeper": 240.74,
+        "hard_sleeper": 182.98,
+        "hard_seat": 84.97
+      },
+      "available_seats": {
+        "business_class": 6,
+        "first_class": 33,
+        "second_class": 130,
+        "soft_sleeper": 11,
+        "hard_sleeper": 23,
+        "hard_seat": 399
+      }
+    },
+    {
+      "train_number": "T2580",
+      "departure_station": "西安",
+      "arrival_station": "成都",
+      "departure_time": "04:00",
+      "arrival_time": "14:00",
+      "duration": "05:26",
+      "date": "2025-11-18",
+      "seat_types": {
+        "business_class": "少量",
+        "first_class": "有",
+        "second_class": "少量",
+        "soft_sleeper": "有",
+        "hard_sleeper": "有",
+        "hard_seat": "有"
+      },
+      "prices": {
+        "business_class": 401.04,
+        "first_class": 338.55,
+        "second_class": 221.67,
+        "soft_sleeper": 158.08,
+        "hard_sleeper": 104.17,
+        "hard_seat": 56.56
+      },
+      "available_seats": {
+        "business_class": 15,
+        "first_class": 17,
+        "second_class": 117,
+        "soft_sleeper": 22,
+        "hard_sleeper": 28,
+        "hard_seat": 253
+      }
+    },
+    {
+      "train_number": "G0153",
+      "departure_station": "西安",
+      "arrival_station": "南京",
+      "departure_time": "11:00",
+      "arrival_time": "13:15",
+      "duration": "04:14",
+      "date": "2025-11-01",
+      "seat_types": {
+        "business_class": "少量",
+        "first_class": "少量",
+        "second_class": "少量",
+        "soft_sleeper": "有",
+        "hard_sleeper": "有",
+        "hard_seat": "少量"
+      },
+      "prices": {
+        "business_class": 1402.53,
+        "first_class": 1033.33,
+        "second_class": 739.5,
+        "soft_sleeper": 520.94,
+        "hard_sleeper": 303.75,
+        "hard_seat": 179.14
+      },
+      "available_seats": {
+        "business_class": 14,
+        "first_class": 39,
+        "second_class": 76,
+        "soft_sleeper": 14,
+        "hard_sleeper": 36,
+        "hard_seat": 159
+      }
+    },
+    {
+      "train_number": "D4463",
+      "departure_station": "上海",
+      "arrival_station": "成都",
+      "departure_time": "08:15",
+      "arrival_time": "17:15",
+      "duration": "08:20",
+      "date": "2025-11-24",
+      "seat_types": {
+        "business_class": "有",
+        "first_class": "有",
+        "second_class": "少量",
+        "soft_sleeper": "少量",
+        "hard_sleeper": "有",
+        "hard_seat": "有"
+      },
+      "prices": {
+        "business_class": 1921.07,
+        "first_class": 1358.42,
+        "second_class": 1059.96,
+        "soft_sleeper": 774.76,
+        "hard_sleeper": 478.79,
+        "hard_seat": 263.49
+      },
+      "available_seats": {
+        "business_class": 18,
+        "first_class": 27,
+        "second_class": 52,
+        "soft_sleeper": 13,
+        "hard_sleeper": 24,
+        "hard_seat": 176
+      }
+    },
+    {
+      "train_number": "C9544",
+      "departure_station": "成都",
+      "arrival_station": "北京",
+      "departure_time": "12:15",
+      "arrival_time": "18:15",
+      "duration": "08:48",
+      "date": "2025-11-08",
+      "seat_types": {
+        "business_class": "少量",
+        "first_class": "无",
+        "second_class": "少量",
+        "soft_sleeper": "少量",
+        "hard_sleeper": "有",
+        "hard_seat": "有"
+      },
+      "prices": {
+        "business_class": 1517.67,
+        "first_class": 1305.75,
+        "second_class": 887.65,
+        "soft_sleeper": 606.66,
+        "hard_sleeper": 422.11,
+        "hard_seat": 191.84
+      },
+      "available_seats": {
+        "business_class": 12,
+        "first_class": 37,
+        "second_class": 91,
+        "soft_sleeper": 15,
+        "hard_sleeper": 46,
+        "hard_seat": 112
+      }
+    },
+    {
+      "train_number": "Z4066",
+      "departure_station": "广州",
+      "arrival_station": "南京",
+      "departure_time": "08:15",
+      "arrival_time": "13:45",
+      "duration": "08:00",
+      "date": "2025-11-24",
+      "seat_types": {
+        "business_class": "有",
+        "first_class": "有",
+        "second_class": "少量",
+        "soft_sleeper": "有",
+        "hard_sleeper": "少量",
+        "hard_seat": "少量"
+      },
+      "prices": {
+        "business_class": 881.23,
+        "first_class": 722.09,
+        "second_class": 456.99,
+        "soft_sleeper": 334.36,
+        "hard_sleeper": 213.15,
+        "hard_seat": 122.99
+      },
+      "available_seats": {
+        "business_class": 16,
+        "first_class": 30,
+        "second_class": 180,
+        "soft_sleeper": 22,
+        "hard_sleeper": 54,
+        "hard_seat": 269
+      }
+    },
+    {
+      "train_number": "C2926",
+      "departure_station": "北京",
+      "arrival_station": "上海",
+      "departure_time": "08:00",
+      "arrival_time": "13:45",
+      "duration": "05:58",
+      "date": "2025-11-22",
+      "seat_types": {
+        "business_class": "有",
+        "first_class": "有",
+        "second_class": "有",
+        "soft_sleeper": "有",
+        "hard_sleeper": "有",
+        "hard_seat": "有"
+      },
+      "prices": {
+        "business_class": 1115.09,
+        "first_class": 722.79,
+        "second_class": 580.75,
+        "soft_sleeper": 404.49,
+        "hard_sleeper": 279.34,
+        "hard_seat": 140.27
+      },
+      "available_seats": {
+        "business_class": 11,
+        "first_class": 21,
+        "second_class": 160,
+        "soft_sleeper": 12,
+        "hard_sleeper": 41,
+        "hard_seat": 260
+      }
+    },
+    {
+      "train_number": "T5068",
+      "departure_station": "上海",
+      "arrival_station": "杭州",
+      "departure_time": "10:30",
+      "arrival_time": "18:30",
+      "duration": "01:49",
+      "date": "2025-11-03",
+      "seat_types": {
+        "business_class": "有",
+        "first_class": "少量",
+        "second_class": "有",
+        "soft_sleeper": "少量",
+        "hard_sleeper": "有",
+        "hard_seat": "有"
+      },
+      "prices": {
+        "business_class": 116.82,
+        "first_class": 78.11,
+        "second_class": 55.39,
+        "soft_sleeper": 42.78,
+        "hard_sleeper": 29.39,
+        "hard_seat": 14.91
+      },
+      "available_seats": {
+        "business_class": 19,
+        "first_class": 24,
+        "second_class": 163,
+        "soft_sleeper": 16,
+        "hard_sleeper": 52,
+        "hard_seat": 342
+      }
+    },
+    {
+      "train_number": "C8446",
+      "departure_station": "广州",
+      "arrival_station": "上海",
+      "departure_time": "09:00",
+      "arrival_time": "15:30",
+      "duration": "06:44",
+      "date": "2025-11-03",
+      "seat_types": {
+        "business_class": "有",
+        "first_class": "有",
+        "second_class": "少量",
+        "soft_sleeper": "有",
+        "hard_sleeper": "无",
+        "hard_seat": "有"
+      },
+      "prices": {
+        "business_class": 1323.93,
+        "first_class": 935.71,
+        "second_class": 641.34,
+        "soft_sleeper": 450.19,
+        "hard_sleeper": 301.09,
+        "hard_seat": 142.8
+      },
+      "available_seats": {
+        "business_class": 5,
+        "first_class": 38,
+        "second_class": 77,
+        "soft_sleeper": 23,
+        "hard_sleeper": 34,
+        "hard_seat": 190
+      }
+    },
+    {
+      "train_number": "G9133",
+      "departure_station": "成都",
+      "arrival_station": "西安",
+      "departure_time": "07:00",
+      "arrival_time": "19:15",
+      "duration": "02:57",
+      "date": "2025-11-18",
+      "seat_types": {
+        "business_class": "有",
+        "first_class": "有",
+        "second_class": "有",
+        "soft_sleeper": "无",
+        "hard_sleeper": "有",
+        "hard_seat": "少量"
+      },
+      "prices": {
+        "business_class": 884.89,
+        "first_class": 606.4,
+        "second_class": 443.66,
+        "soft_sleeper": 304.38,
+        "hard_sleeper": 191.16,
+        "hard_seat": 109.99
+      },
+      "available_seats": {
+        "business_class": 19,
+        "first_class": 18,
+        "second_class": 113,
+        "soft_sleeper": 30,
+        "hard_sleeper": 37,
+        "hard_seat": 366
+      }
+    },
+    {
+      "train_number": "C7207",
+      "departure_station": "西安",
+      "arrival_station": "深圳",
+      "departure_time": "05:30",
+      "arrival_time": "15:30",
+      "duration": "07:32",
+      "date": "2025-11-25",
+      "seat_types": {
+        "business_class": "有",
+        "first_class": "有",
+        "second_class": "有",
+        "soft_sleeper": "有",
+        "hard_sleeper": "无",
+        "hard_seat": "有"
+      },
+      "prices": {
+        "business_class": 1345.12,
+        "first_class": 1036.59,
+        "second_class": 673.68,
+        "soft_sleeper": 483.78,
+        "hard_sleeper": 337.14,
+        "hard_seat": 185.18
+      },
+      "available_seats": {
+        "business_class": 5,
+        "first_class": 37,
+        "second_class": 197,
+        "soft_sleeper": 22,
+        "hard_sleeper": 50,
+        "hard_seat": 103
+      }
+    },
+    {
+      "train_number": "Z6866",
+      "departure_station": "南京",
+      "arrival_station": "杭州",
+      "departure_time": "12:15",
+      "arrival_time": "19:15",
+      "duration": "01:55",
+      "date": "2025-11-12",
+      "seat_types": {
+        "business_class": "有",
+        "first_class": "有",
+        "second_class": "有",
+        "soft_sleeper": "有",
+        "hard_sleeper": "有",
+        "hard_seat": "有"
+      },
+      "prices": {
+        "business_class": 184.42,
+        "first_class": 153.1,
+        "second_class": 90.2,
+        "soft_sleeper": 73.14,
+        "hard_sleeper": 50.46,
+        "hard_seat": 22.55
+      },
+      "available_seats": {
+        "business_class": 18,
+        "first_class": 14,
+        "second_class": 168,
+        "soft_sleeper": 15,
+        "hard_sleeper": 23,
+        "hard_seat": 233
+      }
+    },
+    {
+      "train_number": "D7450",
+      "departure_station": "武汉",
+      "arrival_station": "南京",
+      "departure_time": "09:30",
+      "arrival_time": "18:30",
+      "duration": "02:44",
+      "date": "2025-11-23",
+      "seat_types": {
+        "business_class": "有",
+        "first_class": "少量",
+        "second_class": "有",
+        "soft_sleeper": "无",
+        "hard_sleeper": "有",
+        "hard_seat": "少量"
+      },
+      "prices": {
+        "business_class": 515.38,
+        "first_class": 373.8,
+        "second_class": 297.67,
+        "soft_sleeper": 185.74,
+        "hard_sleeper": 123.58,
+        "hard_seat": 64.74
+      },
+      "available_seats": {
+        "business_class": 5,
+        "first_class": 29,
+        "second_class": 89,
+        "soft_sleeper": 17,
+        "hard_sleeper": 28,
+        "hard_seat": 342
+      }
+    },
+    {
+      "train_number": "Z4199",
+      "departure_station": "上海",
+      "arrival_station": "深圳",
+      "departure_time": "09:15",
+      "arrival_time": "13:15",
+      "duration": "08:42",
+      "date": "2025-10-31",
+      "seat_types": {
+        "business_class": "有",
+        "first_class": "少量",
+        "second_class": "有",
+        "soft_sleeper": "少量",
+        "hard_sleeper": "有",
+        "hard_seat": "少量"
+      },
+      "prices": {
+        "business_class": 953.08,
+        "first_class": 774.72,
+        "second_class": 540.67,
+        "soft_sleeper": 360.79,
+        "hard_sleeper": 263.57,
+        "hard_seat": 121.75
+      },
+      "available_seats": {
+        "business_class": 8,
+        "first_class": 35,
+        "second_class": 194,
+        "soft_sleeper": 11,
+        "hard_sleeper": 42,
+        "hard_seat": 372
+      }
+    },
+    {
+      "train_number": "G8290",
+      "departure_station": "武汉",
+      "arrival_station": "南京",
+      "departure_time": "09:00",
+      "arrival_time": "18:45",
+      "duration": "02:00",
+      "date": "2025-11-08",
+      "seat_types": {
+        "business_class": "有",
+        "first_class": "少量",
+        "second_class": "无",
+        "soft_sleeper": "有",
+        "hard_sleeper": "无",
+        "hard_seat": "少量"
+      },
+      "prices": {
+        "business_class": 600.44,
+        "first_class": 501.13,
+        "second_class": 317.09,
+        "soft_sleeper": 235.24,
+        "hard_sleeper": 155.32,
+        "hard_seat": 82.31
+      },
+      "available_seats": {
+        "business_class": 13,
+        "first_class": 20,
+        "second_class": 112,
+        "soft_sleeper": 12,
+        "hard_sleeper": 37,
+        "hard_seat": 330
+      }
+    },
+    {
+      "train_number": "T6210",
+      "departure_station": "深圳",
+      "arrival_station": "西安",
+      "departure_time": "09:00",
+      "arrival_time": "19:30",
+      "duration": "10:30",
+      "date": "2025-11-03",
+      "seat_types": {
+        "business_class": "有",
+        "first_class": "有",
+        "second_class": "有",
+        "soft_sleeper": "有",
+        "hard_sleeper": "少量",
+        "hard_seat": "有"
+      },
+      "prices": {
+        "business_class": 916.67,
+        "first_class": 642.88,
+        "second_class": 433.18,
+        "soft_sleeper": 336.2,
+        "hard_sleeper": 230.93,
+        "hard_seat": 108.27
+      },
+      "available_seats": {
+        "business_class": 20,
+        "first_class": 30,
+        "second_class": 175,
+        "soft_sleeper": 24,
+        "hard_sleeper": 21,
+        "hard_seat": 147
+      }
+    },
+    {
+      "train_number": "Z3987",
+      "departure_station": "杭州",
+      "arrival_station": "深圳",
+      "departure_time": "08:30",
+      "arrival_time": "19:30",
+      "duration": "07:17",
+      "date": "2025-11-20",
+      "seat_types": {
+        "business_class": "有",
+        "first_class": "有",
+        "second_class": "有",
+        "soft_sleeper": "有",
+        "hard_sleeper": "有",
+        "hard_seat": "无"
+      },
+      "prices": {
+        "business_class": 842.07,
+        "first_class": 687.6,
+        "second_class": 476.58,
+        "soft_sleeper": 340.34,
+        "hard_sleeper": 205.1,
+        "hard_seat": 114.51
+      },
+      "available_seats": {
+        "business_class": 13,
+        "first_class": 33,
+        "second_class": 200,
+        "soft_sleeper": 26,
+        "hard_sleeper": 58,
+        "hard_seat": 244
+      }
+    },
+    {
+      "train_number": "C3728",
+      "departure_station": "上海",
+      "arrival_station": "深圳",
+      "departure_time": "09:15",
+      "arrival_time": "16:00",
+      "duration": "06:57",
+      "date": "2025-11-01",
+      "seat_types": {
+        "business_class": "有",
+        "first_class": "少量",
+        "second_class": "有",
+        "soft_sleeper": "有",
+        "hard_sleeper": "有",
+        "hard_seat": "少量"
+      },
+      "prices": {
+        "business_class": 1214.91,
+        "first_class": 980.9,
+        "second_class": 617.58,
+        "soft_sleeper": 453.63,
+        "hard_sleeper": 300.66,
+        "hard_seat": 142.54
+      },
+      "available_seats": {
+        "business_class": 6,
+        "first_class": 18,
+        "second_class": 172,
+        "soft_sleeper": 13,
+        "hard_sleeper": 24,
+        "hard_seat": 305
+      }
+    },
+    {
+      "train_number": "T0879",
+      "departure_station": "西安",
+      "arrival_station": "上海",
+      "departure_time": "06:15",
+      "arrival_time": "16:00",
+      "duration": "11:02",
+      "date": "2025-10-31",
+      "seat_types": {
+        "business_class": "有",
+        "first_class": "有",
+        "second_class": "有",
+        "soft_sleeper": "有",
+        "hard_sleeper": "无",
+        "hard_seat": "有"
+      },
+      "prices": {
+        "business_class": 992.38,
+        "first_class": 660.18,
+        "second_class": 466.84,
+        "soft_sleeper": 339.14,
+        "hard_sleeper": 232.51,
+        "hard_seat": 104.59
+      },
+      "available_seats": {
+        "business_class": 8,
+        "first_class": 40,
+        "second_class": 103,
+        "soft_sleeper": 30,
+        "hard_sleeper": 33,
+        "hard_seat": 235
+      }
+    },
+    {
+      "train_number": "D2848",
+      "departure_station": "上海",
+      "arrival_station": "广州",
+      "departure_time": "12:00",
+      "arrival_time": "14:00",
+      "duration": "05:33",
+      "date": "2025-11-19",
+      "seat_types": {
+        "business_class": "有",
+        "first_class": "有",
+        "second_class": "有",
+        "soft_sleeper": "无",
+        "hard_sleeper": "无",
+        "hard_seat": "有"
+      },
+      "prices": {
+        "business_class": 1381.34,
+        "first_class": 1083.24,
+        "second_class": 704.04,
+        "soft_sleeper": 511.78,
+        "hard_sleeper": 343.59,
+        "hard_seat": 180.86
+      },
+      "available_seats": {
+        "business_class": 18,
+        "first_class": 13,
+        "second_class": 189,
+        "soft_sleeper": 17,
+        "hard_sleeper": 29,
+        "hard_seat": 236
+      }
+    },
+    {
+      "train_number": "G2719",
+      "departure_station": "广州",
+      "arrival_station": "上海",
+      "departure_time": "08:30",
+      "arrival_time": "19:00",
+      "duration": "04:44",
+      "date": "2025-11-06",
+      "seat_types": {
+        "business_class": "有",
+        "first_class": "少量",
+        "second_class": "有",
+        "soft_sleeper": "有",
+        "hard_sleeper": "有",
+        "hard_seat": "有"
+      },
+      "prices": {
+        "business_class": 1515.39,
+        "first_class": 1111.26,
+        "second_class": 729.79,
+        "soft_sleeper": 529.02,
+        "hard_sleeper": 419.55,
+        "hard_seat": 204.94
+      },
+      "available_seats": {
+        "business_class": 5,
+        "first_class": 34,
+        "second_class": 118,
+        "soft_sleeper": 28,
+        "hard_sleeper": 22,
+        "hard_seat": 189
+      }
+    },
+    {
+      "train_number": "K7246",
+      "departure_station": "西安",
+      "arrival_station": "成都",
+      "departure_time": "08:15",
+      "arrival_time": "18:45",
+      "duration": "06:28",
+      "date": "2025-11-12",
+      "seat_types": {
+        "business_class": "有",
+        "first_class": "有",
+        "second_class": "有",
+        "soft_sleeper": "少量",
+        "hard_sleeper": "有",
+        "hard_seat": "有"
+      },
+      "prices": {
+        "business_class": 314.32,
+        "first_class": 268.09,
+        "second_class": 174.4,
+        "soft_sleeper": 124.32,
+        "hard_sleeper": 81.31,
+        "hard_seat": 39.51
+      },
+      "available_seats": {
+        "business_class": 15,
+        "first_class": 13,
+        "second_class": 153,
+        "soft_sleeper": 26,
+        "hard_sleeper": 20,
+        "hard_seat": 377
+      }
+    },
+    {
+      "train_number": "G3074",
+      "departure_station": "西安",
+      "arrival_station": "武汉",
+      "departure_time": "12:30",
+      "arrival_time": "19:45",
+      "duration": "03:04",
+      "date": "2025-11-03",
+      "seat_types": {
+        "business_class": "有",
+        "first_class": "有",
+        "second_class": "有",
+        "soft_sleeper": "少量",
+        "hard_sleeper": "有",
+        "hard_seat": "有"
+      },
+      "prices": {
+        "business_class": 894.54,
+        "first_class": 693.04,
+        "second_class": 454.22,
+        "soft_sleeper": 314.58,
+        "hard_sleeper": 196.77,
+        "hard_seat": 106.98
+      },
+      "available_seats": {
+        "business_class": 12,
+        "first_class": 36,
+        "second_class": 79,
+        "soft_sleeper": 24,
+        "hard_sleeper": 27,
+        "hard_seat": 178
+      }
+    },
+    {
+      "train_number": "T4480",
+      "departure_station": "西安",
+      "arrival_station": "杭州",
+      "departure_time": "10:45",
+      "arrival_time": "19:15",
+      "duration": "09:55",
+      "date": "2025-11-01",
+      "seat_types": {
+        "business_class": "有",
+        "first_class": "少量",
+        "second_class": "有",
+        "soft_sleeper": "少量",
+        "hard_sleeper": "少量",
+        "hard_seat": "有"
+      },
+      "prices": {
+        "business_class": 896.67,
+        "first_class": 624.82,
+        "second_class": 460.56,
+        "soft_sleeper": 318.31,
+        "hard_sleeper": 225.46,
+        "hard_seat": 101.34
+      },
+      "available_seats": {
+        "business_class": 14,
+        "first_class": 36,
+        "second_class": 200,
+        "soft_sleeper": 28,
+        "hard_sleeper": 51,
+        "hard_seat": 176
+      }
+    },
+    {
+      "train_number": "Z5655",
+      "departure_station": "西安",
+      "arrival_station": "成都",
+      "departure_time": "09:45",
+      "arrival_time": "19:30",
+      "duration": "04:59",
+      "date": "2025-11-19",
+      "seat_types": {
+        "business_class": "有",
+        "first_class": "有",
+        "second_class": "少量",
+        "soft_sleeper": "有",
+        "hard_sleeper": "有",
+        "hard_seat": "有"
+      },
+      "prices": {
+        "business_class": 592.27,
+        "first_class": 400.53,
+        "second_class": 300.24,
+        "soft_sleeper": 217.14,
+        "hard_sleeper": 140.92,
+        "hard_seat": 63.62
+      },
+      "available_seats": {
+        "business_class": 6,
+        "first_class": 14,
+        "second_class": 178,
+        "soft_sleeper": 28,
+        "hard_sleeper": 41,
+        "hard_seat": 151
+      }
+    },
+    {
+      "train_number": "T7487",
+      "departure_station": "西安",
+      "arrival_station": "上海",
+      "departure_time": "04:15",
+      "arrival_time": "18:15",
+      "duration": "10:29",
+      "date": "2025-11-22",
+      "seat_types": {
+        "business_class": "少量",
+        "first_class": "有",
+        "second_class": "有",
+        "soft_sleeper": "有",
+        "hard_sleeper": "少量",
+        "hard_seat": "少量"
+      },
+      "prices": {
+        "business_class": 983.36,
+        "first_class": 671.56,
+        "second_class": 441.89,
+        "soft_sleeper": 359.09,
+        "hard_sleeper": 241.26,
+        "hard_seat": 123.22
+      },
+      "available_seats": {
+        "business_class": 6,
+        "first_class": 29,
+        "second_class": 67,
+        "soft_sleeper": 17,
+        "hard_sleeper": 60,
+        "hard_seat": 247
+      }
+    },
+    {
+      "train_number": "Z1613",
+      "departure_station": "深圳",
+      "arrival_station": "上海",
+      "departure_time": "05:45",
+      "arrival_time": "14:30",
+      "duration": "08:39",
+      "date": "2025-10-29",
+      "seat_types": {
+        "business_class": "有",
+        "first_class": "有",
+        "second_class": "有",
+        "soft_sleeper": "有",
+        "hard_sleeper": "有",
+        "hard_seat": "有"
+      },
+      "prices": {
+        "business_class": 1051.16,
+        "first_class": 712.03,
+        "second_class": 474.18,
+        "soft_sleeper": 388.68,
+        "hard_sleeper": 247.61,
+        "hard_seat": 131.43
+      },
+      "available_seats": {
+        "business_class": 20,
+        "first_class": 39,
+        "second_class": 199,
+        "soft_sleeper": 14,
+        "hard_sleeper": 34,
+        "hard_seat": 336
+      }
+    },
+    {
+      "train_number": "C0154",
+      "departure_station": "杭州",
+      "arrival_station": "西安",
+      "departure_time": "11:30",
+      "arrival_time": "20:15",
+      "duration": "06:51",
+      "date": "2025-11-08",
+      "seat_types": {
+        "business_class": "少量",
+        "first_class": "有",
+        "second_class": "少量",
+        "soft_sleeper": "有",
+        "hard_sleeper": "有",
+        "hard_seat": "有"
+      },
+      "prices": {
+        "business_class": 1398.24,
+        "first_class": 1020.83,
+        "second_class": 585.63,
+        "soft_sleeper": 465.42,
+        "hard_sleeper": 308.85,
+        "hard_seat": 152.42
+      },
+      "available_seats": {
+        "business_class": 14,
+        "first_class": 10,
+        "second_class": 151,
+        "soft_sleeper": 18,
+        "hard_sleeper": 20,
+        "hard_seat": 389
+      }
+    },
+    {
+      "train_number": "C3771",
+      "departure_station": "北京",
+      "arrival_station": "西安",
+      "departure_time": "09:15",
+      "arrival_time": "15:30",
+      "duration": "05:46",
+      "date": "2025-11-20",
+      "seat_types": {
+        "business_class": "无",
+        "first_class": "有",
+        "second_class": "有",
+        "soft_sleeper": "有",
+        "hard_sleeper": "有",
+        "hard_seat": "有"
+      },
+      "prices": {
+        "business_class": 1049.53,
+        "first_class": 674.74,
+        "second_class": 482.72,
+        "soft_sleeper": 344.67,
+        "hard_sleeper": 268.39,
+        "hard_seat": 119.73
+      },
+      "available_seats": {
+        "business_class": 18,
+        "first_class": 15,
+        "second_class": 101,
+        "soft_sleeper": 14,
+        "hard_sleeper": 54,
+        "hard_seat": 287
+      }
+    },
+    {
+      "train_number": "C2696",
+      "departure_station": "成都",
+      "arrival_station": "重庆",
+      "departure_time": "08:45",
+      "arrival_time": "16:30",
+      "duration": "02:10",
+      "date": "2025-11-11",
+      "seat_types": {
+        "business_class": "少量",
+        "first_class": "有",
+        "second_class": "少量",
+        "soft_sleeper": "少量",
+        "hard_sleeper": "无",
+        "hard_seat": "少量"
+      },
+      "prices": {
+        "business_class": 312.52,
+        "first_class": 227.42,
+        "second_class": 139.07,
+        "soft_sleeper": 113.41,
+        "hard_sleeper": 64.51,
+        "hard_seat": 35.99
+      },
+      "available_seats": {
+        "business_class": 19,
+        "first_class": 21,
+        "second_class": 117,
+        "soft_sleeper": 28,
+        "hard_sleeper": 44,
+        "hard_seat": 290
+      }
+    },
+    {
+      "train_number": "Z0411",
+      "departure_station": "上海",
+      "arrival_station": "深圳",
+      "departure_time": "12:30",
+      "arrival_time": "15:00",
+      "duration": "08:30",
+      "date": "2025-11-11",
+      "seat_types": {
+        "business_class": "少量",
+        "first_class": "有",
+        "second_class": "有",
+        "soft_sleeper": "有",
+        "hard_sleeper": "少量",
+        "hard_seat": "有"
+      },
+      "prices": {
+        "business_class": 1012.78,
+        "first_class": 699.42,
+        "second_class": 546.42,
+        "soft_sleeper": 352.64,
+        "hard_sleeper": 251.22,
+        "hard_seat": 131.11
+      },
+      "available_seats": {
+        "business_class": 18,
+        "first_class": 28,
+        "second_class": 89,
+        "soft_sleeper": 23,
+        "hard_sleeper": 26,
+        "hard_seat": 350
+      }
+    },
+    {
+      "train_number": "C0537",
+      "departure_station": "重庆",
+      "arrival_station": "武汉",
+      "departure_time": "09:15",
+      "arrival_time": "19:45",
+      "duration": "05:06",
+      "date": "2025-11-24",
+      "seat_types": {
+        "business_class": "有",
+        "first_class": "少量",
+        "second_class": "有",
+        "soft_sleeper": "少量",
+        "hard_sleeper": "有",
+        "hard_seat": "有"
+      },
+      "prices": {
+        "business_class": 796.15,
+        "first_class": 683.67,
+        "second_class": 454.18,
+        "soft_sleeper": 332.83,
+        "hard_sleeper": 191.36,
+        "hard_seat": 98.19
+      },
+      "available_seats": {
+        "business_class": 5,
+        "first_class": 11,
+        "second_class": 135,
+        "soft_sleeper": 17,
+        "hard_sleeper": 28,
+        "hard_seat": 389
+      }
+    },
+    {
+      "train_number": "T3395",
+      "departure_station": "深圳",
+      "arrival_station": "上海",
+      "departure_time": "07:15",
+      "arrival_time": "17:15",
+      "duration": "09:43",
+      "date": "2025-11-16",
+      "seat_types": {
+        "business_class": "有",
+        "first_class": "少量",
+        "second_class": "有",
+        "soft_sleeper": "有",
+        "hard_sleeper": "有",
+        "hard_seat": "有"
+      },
+      "prices": {
+        "business_class": 837.56,
+        "first_class": 550.85,
+        "second_class": 366.35,
+        "soft_sleeper": 321.93,
+        "hard_sleeper": 192.22,
+        "hard_seat": 97.85
+      },
+      "available_seats": {
+        "business_class": 10,
+        "first_class": 18,
+        "second_class": 63,
+        "soft_sleeper": 14,
+        "hard_sleeper": 46,
+        "hard_seat": 369
+      }
+    },
+    {
+      "train_number": "Z7345",
+      "departure_station": "上海",
+      "arrival_station": "重庆",
+      "departure_time": "09:00",
+      "arrival_time": "19:15",
+      "duration": "11:11",
+      "date": "2025-10-29",
+      "seat_types": {
+        "business_class": "无",
+        "first_class": "少量",
+        "second_class": "有",
+        "soft_sleeper": "有",
+        "hard_sleeper": "有",
+        "hard_seat": "有"
+      },
+      "prices": {
+        "business_class": 1466.29,
+        "first_class": 1069.46,
+        "second_class": 656.83,
+        "soft_sleeper": 460.79,
+        "hard_sleeper": 347.49,
+        "hard_seat": 164.78
+      },
+      "available_seats": {
+        "business_class": 7,
+        "first_class": 20,
+        "second_class": 87,
+        "soft_sleeper": 12,
+        "hard_sleeper": 28,
+        "hard_seat": 240
+      }
+    },
+    {
+      "train_number": "K5328",
+      "departure_station": "重庆",
+      "arrival_station": "成都",
+      "departure_time": "10:30",
+      "arrival_time": "19:45",
+      "duration": "02:44",
+      "date": "2025-11-19",
+      "seat_types": {
+        "business_class": "有",
+        "first_class": "有",
+        "second_class": "少量",
+        "soft_sleeper": "有",
+        "hard_sleeper": "少量",
+        "hard_seat": "有"
+      },
+      "prices": {
+        "business_class": 154.0,
+        "first_class": 105.33,
+        "second_class": 76.13,
+        "soft_sleeper": 52.5,
+        "hard_sleeper": 37.37,
+        "hard_seat": 17.19
+      },
+      "available_seats": {
+        "business_class": 15,
+        "first_class": 31,
+        "second_class": 115,
+        "soft_sleeper": 21,
+        "hard_sleeper": 29,
+        "hard_seat": 342
+      }
+    },
+    {
+      "train_number": "G1528",
+      "departure_station": "上海",
+      "arrival_station": "重庆",
+      "departure_time": "10:00",
+      "arrival_time": "17:15",
+      "duration": "06:05",
+      "date": "2025-11-15",
+      "seat_types": {
+        "business_class": "少量",
+        "first_class": "有",
+        "second_class": "有",
+        "soft_sleeper": "有",
+        "hard_sleeper": "少量",
+        "hard_seat": "少量"
+      },
+      "prices": {
+        "business_class": 1969.17,
+        "first_class": 1624.75,
+        "second_class": 910.29,
+        "soft_sleeper": 718.14,
+        "hard_sleeper": 481.24,
+        "hard_seat": 230.18
+      },
+      "available_seats": {
+        "business_class": 11,
+        "first_class": 14,
+        "second_class": 173,
+        "soft_sleeper": 17,
+        "hard_sleeper": 26,
+        "hard_seat": 279
+      }
+    },
+    {
+      "train_number": "G4565",
+      "departure_station": "成都",
+      "arrival_station": "南京",
+      "departure_time": "07:45",
+      "arrival_time": "20:00",
+      "duration": "06:02",
+      "date": "2025-11-18",
+      "seat_types": {
+        "business_class": "少量",
+        "first_class": "有",
+        "second_class": "有",
+        "soft_sleeper": "无",
+        "hard_sleeper": "有",
+        "hard_seat": "有"
+      },
+      "prices": {
+        "business_class": 1777.23,
+        "first_class": 1588.43,
+        "second_class": 999.09,
+        "soft_sleeper": 724.84,
+        "hard_sleeper": 457.7,
+        "hard_seat": 253.07
+      },
+      "available_seats": {
+        "business_class": 5,
+        "first_class": 12,
+        "second_class": 185,
+        "soft_sleeper": 16,
+        "hard_sleeper": 44,
+        "hard_seat": 314
+      }
+    },
+    {
+      "train_number": "D6063",
+      "departure_station": "西安",
+      "arrival_station": "南京",
+      "departure_time": "08:30",
+      "arrival_time": "13:00",
+      "duration": "04:47",
+      "date": "2025-11-21",
+      "seat_types": {
+        "business_class": "有",
+        "first_class": "有",
+        "second_class": "有",
+        "soft_sleeper": "有",
+        "hard_sleeper": "有",
+        "hard_seat": "有"
+      },
+      "prices": {
+        "business_class": 1114.99,
+        "first_class": 920.65,
+        "second_class": 538.89,
+        "soft_sleeper": 431.85,
+        "hard_sleeper": 279.34,
+        "hard_seat": 151.21
+      },
+      "available_seats": {
+        "business_class": 20,
+        "first_class": 26,
+        "second_class": 128,
+        "soft_sleeper": 11,
+        "hard_sleeper": 34,
+        "hard_seat": 302
+      }
+    },
+    {
+      "train_number": "G3350",
+      "departure_station": "重庆",
+      "arrival_station": "北京",
+      "departure_time": "08:15",
+      "arrival_time": "14:30",
+      "duration": "05:39",
+      "date": "2025-10-31",
+      "seat_types": {
+        "business_class": "有",
+        "first_class": "无",
+        "second_class": "有",
+        "soft_sleeper": "有",
+        "hard_sleeper": "无",
+        "hard_seat": "有"
+      },
+      "prices": {
+        "business_class": 2029.7,
+        "first_class": 1514.52,
+        "second_class": 869.99,
+        "soft_sleeper": 765.19,
+        "hard_sleeper": 432.16,
+        "hard_seat": 214.96
+      },
+      "available_seats": {
+        "business_class": 7,
+        "first_class": 37,
+        "second_class": 130,
+        "soft_sleeper": 28,
+        "hard_sleeper": 47,
+        "hard_seat": 393
+      }
+    },
+    {
+      "train_number": "C1888",
+      "departure_station": "武汉",
+      "arrival_station": "重庆",
+      "departure_time": "10:00",
+      "arrival_time": "17:15",
+      "duration": "05:01",
+      "date": "2025-11-16",
+      "seat_types": {
+        "business_class": "有",
+        "first_class": "有",
+        "second_class": "有",
+        "soft_sleeper": "有",
+        "hard_sleeper": "有",
+        "hard_seat": "有"
+      },
+      "prices": {
+        "business_class": 816.92,
+        "first_class": 572.45,
+        "second_class": 447.64,
+        "soft_sleeper": 327.93,
+        "hard_sleeper": 196.77,
+        "hard_seat": 110.01
+      },
+      "available_seats": {
+        "business_class": 7,
+        "first_class": 26,
+        "second_class": 79,
+        "soft_sleeper": 26,
+        "hard_sleeper": 52,
+        "hard_seat": 199
+      }
+    },
+    {
+      "train_number": "K2420",
+      "departure_station": "南京",
+      "arrival_station": "重庆",
+      "departure_time": "07:00",
+      "arrival_time": "14:30",
+      "duration": "11:52",
+      "date": "2025-11-16",
+      "seat_types": {
+        "business_class": "有",
+        "first_class": "无",
+        "second_class": "有",
+        "soft_sleeper": "少量",
+        "hard_sleeper": "有",
+        "hard_seat": "有"
+      },
+      "prices": {
+        "business_class": 674.35,
+        "first_class": 507.33,
+        "second_class": 344.99,
+        "soft_sleeper": 268.78,
+        "hard_sleeper": 171.23,
+        "hard_seat": 91.33
+      },
+      "available_seats": {
+        "business_class": 15,
+        "first_class": 37,
+        "second_class": 130,
+        "soft_sleeper": 14,
+        "hard_sleeper": 48,
+        "hard_seat": 134
+      }
+    },
+    {
+      "train_number": "K4962",
+      "departure_station": "西安",
+      "arrival_station": "重庆",
+      "departure_time": "08:00",
+      "arrival_time": "17:00",
+      "duration": "05:19",
+      "date": "2025-11-11",
+      "seat_types": {
+        "business_class": "有",
+        "first_class": "有",
+        "second_class": "有",
+        "soft_sleeper": "有",
+        "hard_sleeper": "少量",
+        "hard_seat": "有"
+      },
+      "prices": {
+        "business_class": 289.99,
+        "first_class": 208.54,
+        "second_class": 144.6,
+        "soft_sleeper": 116.43,
+        "hard_sleeper": 74.56,
+        "hard_seat": 32.31
+      },
+      "available_seats": {
+        "business_class": 11,
+        "first_class": 20,
+        "second_class": 171,
+        "soft_sleeper": 26,
+        "hard_sleeper": 29,
+        "hard_seat": 131
+      }
+    },
+    {
+      "train_number": "C1382",
+      "departure_station": "西安",
+      "arrival_station": "上海",
+      "departure_time": "12:15",
+      "arrival_time": "12:15",
+      "duration": "07:47",
+      "date": "2025-11-11",
+      "seat_types": {
+        "business_class": "有",
+        "first_class": "有",
+        "second_class": "有",
+        "soft_sleeper": "少量",
+        "hard_sleeper": "有",
+        "hard_seat": "无"
+      },
+      "prices": {
+        "business_class": 1425.38,
+        "first_class": 939.71,
+        "second_class": 706.08,
+        "soft_sleeper": 498.99,
+        "hard_sleeper": 332.32,
+        "hard_seat": 174.01
+      },
+      "available_seats": {
+        "business_class": 17,
+        "first_class": 19,
+        "second_class": 114,
+        "soft_sleeper": 29,
+        "hard_sleeper": 29,
+        "hard_seat": 270
+      }
+    },
+    {
+      "train_number": "C5083",
+      "departure_station": "上海",
+      "arrival_station": "广州",
+      "departure_time": "10:15",
+      "arrival_time": "13:30",
+      "duration": "06:56",
+      "date": "2025-11-17",
+      "seat_types": {
+        "business_class": "无",
+        "first_class": "少量",
+        "second_class": "有",
+        "soft_sleeper": "少量",
+        "hard_sleeper": "无",
+        "hard_seat": "有"
+      },
+      "prices": {
+        "business_class": 1235.51,
+        "first_class": 948.68,
+        "second_class": 605.1,
+        "soft_sleeper": 448.15,
+        "hard_sleeper": 298.81,
+        "hard_seat": 143.8
+      },
+      "available_seats": {
+        "business_class": 11,
+        "first_class": 20,
+        "second_class": 174,
+        "soft_sleeper": 16,
+        "hard_sleeper": 34,
+        "hard_seat": 170
+      }
+    },
+    {
+      "train_number": "C1658",
+      "departure_station": "广州",
+      "arrival_station": "上海",
+      "departure_time": "12:00",
+      "arrival_time": "17:15",
+      "duration": "06:57",
+      "date": "2025-11-01",
+      "seat_types": {
+        "business_class": "有",
+        "first_class": "少量",
+        "second_class": "无",
+        "soft_sleeper": "少量",
+        "hard_sleeper": "有",
+        "hard_seat": "有"
+      },
+      "prices": {
+        "business_class": 1207.11,
+        "first_class": 954.28,
+        "second_class": 582.25,
+        "soft_sleeper": 455.74,
+        "hard_sleeper": 294.04,
+        "hard_seat": 161.26
+      },
+      "available_seats": {
+        "business_class": 19,
+        "first_class": 17,
+        "second_class": 186,
+        "soft_sleeper": 17,
+        "hard_sleeper": 39,
+        "hard_seat": 340
+      }
+    },
+    {
+      "train_number": "K9346",
+      "departure_station": "深圳",
+      "arrival_station": "南京",
+      "departure_time": "11:45",
+      "arrival_time": "16:45",
+      "duration": "10:20",
+      "date": "2025-11-10",
+      "seat_types": {
+        "business_class": "少量",
+        "first_class": "少量",
+        "second_class": "少量",
+        "soft_sleeper": "有",
+        "hard_sleeper": "有",
+        "hard_seat": "有"
+      },
+      "prices": {
+        "business_class": 608.85,
+        "first_class": 429.48,
+        "second_class": 260.72,
+        "soft_sleeper": 227.12,
+        "hard_sleeper": 151.56,
+        "hard_seat": 67.76
+      },
+      "available_seats": {
+        "business_class": 10,
+        "first_class": 18,
+        "second_class": 165,
+        "soft_sleeper": 26,
+        "hard_sleeper": 29,
+        "hard_seat": 323
+      }
+    },
+    {
+      "train_number": "Z5728",
+      "departure_station": "上海",
+      "arrival_station": "深圳",
+      "departure_time": "04:45",
+      "arrival_time": "12:45",
+      "duration": "08:25",
+      "date": "2025-11-04",
+      "seat_types": {
+        "business_class": "有",
+        "first_class": "有",
+        "second_class": "有",
+        "soft_sleeper": "有",
+        "hard_sleeper": "有",
+        "hard_seat": "无"
+      },
+      "prices": {
+        "business_class": 980.87,
+        "first_class": 706.86,
+        "second_class": 460.31,
+        "soft_sleeper": 412.11,
+        "hard_sleeper": 252.17,
+        "hard_seat": 135.18
+      },
+      "available_seats": {
+        "business_class": 20,
+        "first_class": 24,
+        "second_class": 51,
+        "soft_sleeper": 12,
+        "hard_sleeper": 21,
+        "hard_seat": 231
+      }
+    },
+    {
+      "train_number": "T9976",
+      "departure_station": "深圳",
+      "arrival_station": "广州",
+      "departure_time": "12:45",
+      "arrival_time": "13:30",
+      "duration": "01:07",
+      "date": "2025-10-31",
+      "seat_types": {
+        "business_class": "有",
+        "first_class": "有",
+        "second_class": "无",
+        "soft_sleeper": "有",
+        "hard_sleeper": "有",
+        "hard_seat": "少量"
+      },
+      "prices": {
+        "business_class": 71.43,
+        "first_class": 47.47,
+        "second_class": 35.15,
+        "soft_sleeper": 24.92,
+        "hard_sleeper": 16.27,
+        "hard_seat": 8.64
+      },
+      "available_seats": {
+        "business_class": 16,
+        "first_class": 17,
+        "second_class": 196,
+        "soft_sleeper": 23,
+        "hard_sleeper": 31,
+        "hard_seat": 143
+      }
+    },
+    {
+      "train_number": "G8619",
+      "departure_station": "成都",
+      "arrival_station": "南京",
+      "departure_time": "12:00",
+      "arrival_time": "18:45",
+      "duration": "05:42",
+      "date": "2025-11-09",
+      "seat_types": {
+        "business_class": "少量",
+        "first_class": "有",
+        "second_class": "有",
+        "soft_sleeper": "无",
+        "hard_sleeper": "有",
+        "hard_seat": "无"
+      },
+      "prices": {
+        "business_class": 2022.61,
+        "first_class": 1559.33,
+        "second_class": 1032.39,
+        "soft_sleeper": 714.74,
+        "hard_sleeper": 448.08,
+        "hard_seat": 248.77
+      },
+      "available_seats": {
+        "business_class": 10,
+        "first_class": 36,
+        "second_class": 168,
+        "soft_sleeper": 25,
+        "hard_sleeper": 60,
+        "hard_seat": 193
+      }
+    },
+    {
+      "train_number": "K7499",
+      "departure_station": "广州",
+      "arrival_station": "上海",
+      "departure_time": "04:30",
+      "arrival_time": "15:00",
+      "duration": "11:20",
+      "date": "2025-11-25",
+      "seat_types": {
+        "business_class": "有",
+        "first_class": "少量",
+        "second_class": "有",
+        "soft_sleeper": "少量",
+        "hard_sleeper": "有",
+        "hard_seat": "有"
+      },
+      "prices": {
+        "business_class": 645.64,
+        "first_class": 432.41,
+        "second_class": 298.47,
+        "soft_sleeper": 243.38,
+        "hard_sleeper": 164.87,
+        "hard_seat": 74.23
+      },
+      "available_seats": {
+        "business_class": 8,
+        "first_class": 35,
+        "second_class": 144,
+        "soft_sleeper": 23,
+        "hard_sleeper": 45,
+        "hard_seat": 325
+      }
+    },
+    {
+      "train_number": "D8130",
+      "departure_station": "武汉",
+      "arrival_station": "南京",
+      "departure_time": "11:30",
+      "arrival_time": "20:30",
+      "duration": "02:46",
+      "date": "2025-11-20",
+      "seat_types": {
+        "business_class": "有",
+        "first_class": "有",
+        "second_class": "少量",
+        "soft_sleeper": "有",
+        "hard_sleeper": "有",
+        "hard_seat": "有"
+      },
+      "prices": {
+        "business_class": 526.69,
+        "first_class": 392.38,
+        "second_class": 269.78,
+        "soft_sleeper": 213.45,
+        "hard_sleeper": 127.27,
+        "hard_seat": 67.42
+      },
+      "available_seats": {
+        "business_class": 19,
+        "first_class": 11,
+        "second_class": 140,
+        "soft_sleeper": 29,
+        "hard_sleeper": 47,
+        "hard_seat": 240
+      }
+    },
+    {
+      "train_number": "K6656",
+      "departure_station": "北京",
+      "arrival_station": "上海",
+      "departure_time": "09:15",
+      "arrival_time": "12:15",
+      "duration": "10:00",
+      "date": "2025-11-18",
+      "seat_types": {
+        "business_class": "无",
+        "first_class": "有",
+        "second_class": "有",
+        "soft_sleeper": "无",
+        "hard_sleeper": "有",
+        "hard_seat": "有"
+      },
+      "prices": {
+        "business_class": 542.4,
+        "first_class": 409.84,
+        "second_class": 277.18,
+        "soft_sleeper": 218.71,
+        "hard_sleeper": 130.37,
+        "hard_seat": 70.42
+      },
+      "available_seats": {
+        "business_class": 9,
+        "first_class": 26,
+        "second_class": 143,
+        "soft_sleeper": 22,
+        "hard_sleeper": 40,
+        "hard_seat": 242
+      }
+    },
+    {
+      "train_number": "G3049",
+      "departure_station": "深圳",
+      "arrival_station": "上海",
+      "departure_time": "11:45",
+      "arrival_time": "20:00",
+      "duration": "04:34",
+      "date": "2025-11-05",
+      "seat_types": {
+        "business_class": "无",
+        "first_class": "有",
+        "second_class": "有",
+        "soft_sleeper": "有",
+        "hard_sleeper": "少量",
+        "hard_seat": "有"
+      },
+      "prices": {
+        "business_class": 1410.58,
+        "first_class": 1043.86,
+        "second_class": 710.91,
+        "soft_sleeper": 594.88,
+        "hard_sleeper": 418.18,
+        "hard_seat": 201.99
+      },
+      "available_seats": {
+        "business_class": 15,
+        "first_class": 31,
+        "second_class": 138,
+        "soft_sleeper": 12,
+        "hard_sleeper": 55,
+        "hard_seat": 377
+      }
+    },
+    {
+      "train_number": "D2853",
+      "departure_station": "杭州",
+      "arrival_station": "重庆",
+      "departure_time": "09:15",
+      "arrival_time": "13:15",
+      "duration": "06:43",
+      "date": "2025-11-04",
+      "seat_types": {
+        "business_class": "无",
+        "first_class": "有",
+        "second_class": "有",
+        "soft_sleeper": "有",
+        "hard_sleeper": "少量",
+        "hard_seat": "有"
+      },
+      "prices": {
+        "business_class": 1607.74,
+        "first_class": 1081.8,
+        "second_class": 756.28,
+        "soft_sleeper": 648.62,
+        "hard_sleeper": 410.34,
+        "hard_seat": 197.58
+      },
+      "available_seats": {
+        "business_class": 18,
+        "first_class": 36,
+        "second_class": 197,
+        "soft_sleeper": 12,
+        "hard_sleeper": 28,
+        "hard_seat": 262
+      }
+    },
+    {
+      "train_number": "Z8477",
+      "departure_station": "上海",
+      "arrival_station": "西安",
+      "departure_time": "09:15",
+      "arrival_time": "20:15",
+      "duration": "09:37",
+      "date": "2025-11-01",
+      "seat_types": {
+        "business_class": "有",
+        "first_class": "少量",
+        "second_class": "有",
+        "soft_sleeper": "有",
+        "hard_sleeper": "有",
+        "hard_seat": "有"
+      },
+      "prices": {
+        "business_class": 1106.11,
+        "first_class": 896.1,
+        "second_class": 555.74,
+        "soft_sleeper": 467.97,
+        "hard_sleeper": 309.34,
+        "hard_seat": 153.27
+      },
+      "available_seats": {
+        "business_class": 13,
+        "first_class": 16,
+        "second_class": 191,
+        "soft_sleeper": 18,
+        "hard_sleeper": 28,
+        "hard_seat": 255
+      }
+    },
+    {
+      "train_number": "G8235",
+      "departure_station": "重庆",
+      "arrival_station": "成都",
+      "departure_time": "06:15",
+      "arrival_time": "14:30",
+      "duration": "01:41",
+      "date": "2025-11-15",
+      "seat_types": {
+        "business_class": "有",
+        "first_class": "少量",
+        "second_class": "有",
+        "soft_sleeper": "少量",
+        "hard_sleeper": "无",
+        "hard_seat": "有"
+      },
+      "prices": {
+        "business_class": 336.6,
+        "first_class": 271.81,
+        "second_class": 182.85,
+        "soft_sleeper": 121.39,
+        "hard_sleeper": 96.26,
+        "hard_seat": 45.06
+      },
+      "available_seats": {
+        "business_class": 14,
+        "first_class": 25,
+        "second_class": 112,
+        "soft_sleeper": 22,
+        "hard_sleeper": 39,
+        "hard_seat": 332
+      }
+    },
+    {
+      "train_number": "D7203",
+      "departure_station": "上海",
+      "arrival_station": "北京",
+      "departure_time": "10:45",
+      "arrival_time": "19:15",
+      "duration": "04:51",
+      "date": "2025-11-01",
+      "seat_types": {
+        "business_class": "有",
+        "first_class": "无",
+        "second_class": "无",
+        "soft_sleeper": "少量",
+        "hard_sleeper": "少量",
+        "hard_seat": "有"
+      },
+      "prices": {
+        "business_class": 1129.57,
+        "first_class": 880.42,
+        "second_class": 558.82,
+        "soft_sleeper": 431.93,
+        "hard_sleeper": 276.42,
+        "hard_seat": 137.64
+      },
+      "available_seats": {
+        "business_class": 8,
+        "first_class": 11,
+        "second_class": 124,
+        "soft_sleeper": 22,
+        "hard_sleeper": 59,
+        "hard_seat": 314
+      }
+    },
+    {
+      "train_number": "C9465",
+      "departure_station": "深圳",
+      "arrival_station": "广州",
+      "departure_time": "09:15",
+      "arrival_time": "14:45",
+      "duration": "01:20",
+      "date": "2025-11-11",
+      "seat_types": {
+        "business_class": "有",
+        "first_class": "有",
+        "second_class": "有",
+        "soft_sleeper": "少量",
+        "hard_sleeper": "有",
+        "hard_seat": "少量"
+      },
+      "prices": {
+        "business_class": 99.13,
+        "first_class": 76.52,
+        "second_class": 47.83,
+        "soft_sleeper": 39.38,
+        "hard_sleeper": 28.29,
+        "hard_seat": 13.54
+      },
+      "available_seats": {
+        "business_class": 20,
+        "first_class": 19,
+        "second_class": 187,
+        "soft_sleeper": 10,
+        "hard_sleeper": 26,
+        "hard_seat": 320
+      }
+    },
+    {
+      "train_number": "K5993",
+      "departure_station": "广州",
+      "arrival_station": "杭州",
+      "departure_time": "10:30",
+      "arrival_time": "12:45",
+      "duration": "09:24",
+      "date": "2025-11-14",
+      "seat_types": {
+        "business_class": "有",
+        "first_class": "有",
+        "second_class": "有",
+        "soft_sleeper": "有",
+        "hard_sleeper": "无",
+        "hard_seat": "有"
+      },
+      "prices": {
+        "business_class": 580.61,
+        "first_class": 410.97,
+        "second_class": 244.28,
+        "soft_sleeper": 217.17,
+        "hard_sleeper": 129.41,
+        "hard_seat": 70.01
+      },
+      "available_seats": {
+        "business_class": 15,
+        "first_class": 27,
+        "second_class": 143,
+        "soft_sleeper": 14,
+        "hard_sleeper": 32,
+        "hard_seat": 360
+      }
+    },
+    {
+      "train_number": "G0743",
+      "departure_station": "武汉",
+      "arrival_station": "成都",
+      "departure_time": "04:15",
+      "arrival_time": "17:45",
+      "duration": "04:17",
+      "date": "2025-11-01",
+      "seat_types": {
+        "business_class": "有",
+        "first_class": "有",
+        "second_class": "有",
+        "soft_sleeper": "有",
+        "hard_sleeper": "有",
+        "hard_seat": "少量"
+      },
+      "prices": {
+        "business_class": 1429.07,
+        "first_class": 981.78,
+        "second_class": 659.58,
+        "soft_sleeper": 545.0,
+        "hard_sleeper": 343.15,
+        "hard_seat": 177.59
+      },
+      "available_seats": {
+        "business_class": 14,
+        "first_class": 25,
+        "second_class": 54,
+        "soft_sleeper": 21,
+        "hard_sleeper": 41,
+        "hard_seat": 156
+      }
+    },
+    {
+      "train_number": "K0437",
+      "departure_station": "武汉",
+      "arrival_station": "杭州",
+      "departure_time": "11:30",
+      "arrival_time": "15:00",
+      "duration": "05:58",
+      "date": "2025-11-02",
+      "seat_types": {
+        "business_class": "有",
+        "first_class": "无",
+        "second_class": "无",
+        "soft_sleeper": "有",
+        "hard_sleeper": "少量",
+        "hard_seat": "有"
+      },
+      "prices": {
+        "business_class": 316.66,
+        "first_class": 243.48,
+        "second_class": 146.41,
+        "soft_sleeper": 115.67,
+        "hard_sleeper": 76.76,
+        "hard_seat": 38.34
+      },
+      "available_seats": {
+        "business_class": 11,
+        "first_class": 23,
+        "second_class": 178,
+        "soft_sleeper": 29,
+        "hard_sleeper": 50,
+        "hard_seat": 131
+      }
+    },
+    {
+      "train_number": "D9190",
+      "departure_station": "广州",
+      "arrival_station": "成都",
+      "departure_time": "09:45",
+      "arrival_time": "20:45",
+      "duration": "05:38",
+      "date": "2025-11-02",
+      "seat_types": {
+        "business_class": "有",
+        "first_class": "有",
+        "second_class": "有",
+        "soft_sleeper": "有",
+        "hard_sleeper": "少量",
+        "hard_seat": "有"
+      },
+      "prices": {
+        "business_class": 1448.88,
+        "first_class": 976.17,
+        "second_class": 680.8,
+        "soft_sleeper": 559.07,
+        "hard_sleeper": 326.39,
+        "hard_seat": 163.86
+      },
+      "available_seats": {
+        "business_class": 14,
+        "first_class": 34,
+        "second_class": 123,
+        "soft_sleeper": 16,
+        "hard_sleeper": 51,
+        "hard_seat": 262
+      }
+    },
+    {
+      "train_number": "T4481",
+      "departure_station": "西安",
+      "arrival_station": "南京",
+      "departure_time": "08:00",
+      "arrival_time": "20:45",
+      "duration": "08:45",
+      "date": "2025-11-09",
+      "seat_types": {
+        "business_class": "少量",
+        "first_class": "少量",
+        "second_class": "少量",
+        "soft_sleeper": "有",
+        "hard_sleeper": "有",
+        "hard_seat": "无"
+      },
+      "prices": {
+        "business_class": 696.67,
+        "first_class": 532.86,
+        "second_class": 341.87,
+        "soft_sleeper": 268.41,
+        "hard_sleeper": 168.98,
+        "hard_seat": 90.54
+      },
+      "available_seats": {
+        "business_class": 13,
+        "first_class": 14,
+        "second_class": 77,
+        "soft_sleeper": 29,
+        "hard_sleeper": 57,
+        "hard_seat": 222
+      }
+    },
+    {
+      "train_number": "K8701",
+      "departure_station": "深圳",
+      "arrival_station": "北京",
+      "departure_time": "07:15",
+      "arrival_time": "12:00",
+      "duration": "16:39",
+      "date": "2025-11-19",
+      "seat_types": {
+        "business_class": "有",
+        "first_class": "有",
+        "second_class": "有",
+        "soft_sleeper": "少量",
+        "hard_sleeper": "少量",
+        "hard_seat": "有"
+      },
+      "prices": {
+        "business_class": 961.97,
+        "first_class": 753.37,
+        "second_class": 464.45,
+        "soft_sleeper": 360.58,
+        "hard_sleeper": 245.3,
+        "hard_seat": 111.71
+      },
+      "available_seats": {
+        "business_class": 14,
+        "first_class": 30,
+        "second_class": 65,
+        "soft_sleeper": 12,
+        "hard_sleeper": 56,
+        "hard_seat": 218
+      }
+    },
+    {
+      "train_number": "D6847",
+      "departure_station": "成都",
+      "arrival_station": "北京",
+      "departure_time": "06:00",
+      "arrival_time": "18:45",
+      "duration": "07:10",
+      "date": "2025-11-20",
+      "seat_types": {
+        "business_class": "少量",
+        "first_class": "少量",
+        "second_class": "少量",
+        "soft_sleeper": "有",
+        "hard_sleeper": "有",
+        "hard_seat": "有"
+      },
+      "prices": {
+        "business_class": 1958.55,
+        "first_class": 1281.8,
+        "second_class": 980.37,
+        "soft_sleeper": 675.56,
+        "hard_sleeper": 445.96,
+        "hard_seat": 242.83
+      },
+      "available_seats": {
+        "business_class": 19,
+        "first_class": 18,
+        "second_class": 99,
+        "soft_sleeper": 13,
+        "hard_sleeper": 41,
+        "hard_seat": 183
+      }
+    },
+    {
+      "train_number": "K3051",
+      "departure_station": "西安",
+      "arrival_station": "杭州",
+      "departure_time": "04:30",
+      "arrival_time": "16:15",
+      "duration": "11:20",
+      "date": "2025-11-24",
+      "seat_types": {
+        "business_class": "有",
+        "first_class": "有",
+        "second_class": "有",
+        "soft_sleeper": "有",
+        "hard_sleeper": "有",
+        "hard_seat": "有"
+      },
+      "prices": {
+        "business_class": 696.87,
+        "first_class": 474.58,
+        "second_class": 345.52,
+        "soft_sleeper": 214.85,
+        "hard_sleeper": 155.21,
+        "hard_seat": 78.61
+      },
+      "available_seats": {
+        "business_class": 13,
+        "first_class": 40,
+        "second_class": 134,
+        "soft_sleeper": 19,
+        "hard_sleeper": 57,
+        "hard_seat": 393
+      }
+    },
+    {
+      "train_number": "K5891",
+      "departure_station": "北京",
+      "arrival_station": "杭州",
+      "departure_time": "07:00",
+      "arrival_time": "13:45",
+      "duration": "09:56",
+      "date": "2025-11-09",
+      "seat_types": {
+        "business_class": "有",
+        "first_class": "少量",
+        "second_class": "少量",
+        "soft_sleeper": "无",
+        "hard_sleeper": "有",
+        "hard_seat": "有"
+      },
+      "prices": {
+        "business_class": 599.1,
+        "first_class": 401.99,
+        "second_class": 259.92,
+        "soft_sleeper": 225.35,
+        "hard_sleeper": 137.04,
+        "hard_seat": 68.2
+      },
+      "available_seats": {
+        "business_class": 16,
+        "first_class": 23,
+        "second_class": 190,
+        "soft_sleeper": 25,
+        "hard_sleeper": 54,
+        "hard_seat": 211
+      }
+    },
+    {
+      "train_number": "T7320",
+      "departure_station": "深圳",
+      "arrival_station": "上海",
+      "departure_time": "12:30",
+      "arrival_time": "13:00",
+      "duration": "09:17",
+      "date": "2025-11-14",
+      "seat_types": {
+        "business_class": "少量",
+        "first_class": "有",
+        "second_class": "有",
+        "soft_sleeper": "有",
+        "hard_sleeper": "少量",
+        "hard_seat": "有"
+      },
+      "prices": {
+        "business_class": 840.68,
+        "first_class": 634.97,
+        "second_class": 404.8,
+        "soft_sleeper": 328.56,
+        "hard_sleeper": 200.64,
+        "hard_seat": 92.41
+      },
+      "available_seats": {
+        "business_class": 9,
+        "first_class": 26,
+        "second_class": 156,
+        "soft_sleeper": 24,
+        "hard_sleeper": 56,
+        "hard_seat": 129
+      }
+    },
+    {
+      "train_number": "K5050",
+      "departure_station": "成都",
+      "arrival_station": "西安",
+      "departure_time": "04:45",
+      "arrival_time": "16:00",
+      "duration": "06:20",
+      "date": "2025-11-15",
+      "seat_types": {
+        "business_class": "有",
+        "first_class": "有",
+        "second_class": "无",
+        "soft_sleeper": "有",
+        "hard_sleeper": "有",
+        "hard_seat": "少量"
+      },
+      "prices": {
+        "business_class": 360.14,
+        "first_class": 244.79,
+        "second_class": 157.12,
+        "soft_sleeper": 115.21,
+        "hard_sleeper": 76.07,
+        "hard_seat": 42.19
+      },
+      "available_seats": {
+        "business_class": 18,
+        "first_class": 21,
+        "second_class": 147,
+        "soft_sleeper": 24,
+        "hard_sleeper": 44,
+        "hard_seat": 292
+      }
+    },
+    {
+      "train_number": "D5698",
+      "departure_station": "上海",
+      "arrival_station": "成都",
+      "departure_time": "05:15",
+      "arrival_time": "20:45",
+      "duration": "08:15",
+      "date": "2025-11-20",
+      "seat_types": {
+        "business_class": "少量",
+        "first_class": "少量",
+        "second_class": "无",
+        "soft_sleeper": "少量",
+        "hard_sleeper": "有",
+        "hard_seat": "无"
+      },
+      "prices": {
+        "business_class": 1980.37,
+        "first_class": 1471.75,
+        "second_class": 951.08,
+        "soft_sleeper": 748.14,
+        "hard_sleeper": 468.05,
+        "hard_seat": 235.7
+      },
+      "available_seats": {
+        "business_class": 8,
+        "first_class": 11,
+        "second_class": 157,
+        "soft_sleeper": 29,
+        "hard_sleeper": 21,
+        "hard_seat": 223
+      }
+    },
+    {
+      "train_number": "G9732",
+      "departure_station": "深圳",
+      "arrival_station": "上海",
+      "departure_time": "04:45",
+      "arrival_time": "12:15",
+      "duration": "04:52",
+      "date": "2025-11-09",
+      "seat_types": {
+        "business_class": "有",
+        "first_class": "有",
+        "second_class": "无",
+        "soft_sleeper": "无",
+        "hard_sleeper": "有",
+        "hard_seat": "少量"
+      },
+      "prices": {
+        "business_class": 1440.53,
+        "first_class": 1236.09,
+        "second_class": 772.29,
+        "soft_sleeper": 579.37,
+        "hard_sleeper": 401.09,
+        "hard_seat": 202.29
+      },
+      "available_seats": {
+        "business_class": 12,
+        "first_class": 19,
+        "second_class": 86,
+        "soft_sleeper": 26,
+        "hard_sleeper": 34,
+        "hard_seat": 311
+      }
+    },
+    {
+      "train_number": "G9122",
+      "departure_station": "杭州",
+      "arrival_station": "重庆",
+      "departure_time": "06:45",
+      "arrival_time": "20:45",
+      "duration": "05:16",
+      "date": "2025-11-08",
+      "seat_types": {
+        "business_class": "少量",
+        "first_class": "有",
+        "second_class": "无",
+        "soft_sleeper": "有",
+        "hard_sleeper": "有",
+        "hard_seat": "有"
+      },
+      "prices": {
+        "business_class": 1769.63,
+        "first_class": 1430.09,
+        "second_class": 902.43,
+        "soft_sleeper": 727.96,
+        "hard_sleeper": 435.54,
+        "hard_seat": 236.22
+      },
+      "available_seats": {
+        "business_class": 19,
+        "first_class": 39,
+        "second_class": 64,
+        "soft_sleeper": 27,
+        "hard_sleeper": 46,
+        "hard_seat": 313
+      }
+    },
+    {
+      "train_number": "D6364",
+      "departure_station": "成都",
+      "arrival_station": "重庆",
+      "departure_time": "07:30",
+      "arrival_time": "15:30",
+      "duration": "01:46",
+      "date": "2025-11-26",
+      "seat_types": {
+        "business_class": "有",
+        "first_class": "有",
+        "second_class": "有",
+        "soft_sleeper": "少量",
+        "hard_sleeper": "有",
+        "hard_seat": "有"
+      },
+      "prices": {
+        "business_class": 316.13,
+        "first_class": 210.84,
+        "second_class": 141.59,
+        "soft_sleeper": 123.18,
+        "hard_sleeper": 78.76,
+        "hard_seat": 40.03
+      },
+      "available_seats": {
+        "business_class": 11,
+        "first_class": 25,
+        "second_class": 103,
+        "soft_sleeper": 20,
+        "hard_sleeper": 39,
+        "hard_seat": 107
+      }
+    },
+    {
+      "train_number": "K1923",
+      "departure_station": "深圳",
+      "arrival_station": "重庆",
+      "departure_time": "11:15",
+      "arrival_time": "15:45",
+      "duration": "10:15",
+      "date": "2025-11-14",
+      "seat_types": {
+        "business_class": "有",
+        "first_class": "有",
+        "second_class": "有",
+        "soft_sleeper": "有",
+        "hard_sleeper": "有",
+        "hard_seat": "有"
+      },
+      "prices": {
+        "business_class": 589.5,
+        "first_class": 407.89,
+        "second_class": 290.37,
+        "soft_sleeper": 214.48,
+        "hard_sleeper": 144.06,
+        "hard_seat": 65.99
+      },
+      "available_seats": {
+        "business_class": 11,
+        "first_class": 21,
+        "second_class": 130,
+        "soft_sleeper": 23,
+        "hard_sleeper": 22,
+        "hard_seat": 388
+      }
+    },
+    {
+      "train_number": "G4273",
+      "departure_station": "深圳",
+      "arrival_station": "广州",
+      "departure_time": "12:45",
+      "arrival_time": "16:15",
+      "duration": "00:40",
+      "date": "2025-11-04",
+      "seat_types": {
+        "business_class": "有",
+        "first_class": "少量",
+        "second_class": "有",
+        "soft_sleeper": "有",
+        "hard_sleeper": "有",
+        "hard_seat": "有"
+      },
+      "prices": {
+        "business_class": 139.84,
+        "first_class": 107.74,
+        "second_class": 67.56,
+        "soft_sleeper": 49.18,
+        "hard_sleeper": 30.67,
+        "hard_seat": 17.39
+      },
+      "available_seats": {
+        "business_class": 10,
+        "first_class": 14,
+        "second_class": 189,
+        "soft_sleeper": 25,
+        "hard_sleeper": 31,
+        "hard_seat": 377
+      }
+    },
+    {
+      "train_number": "G1218",
+      "departure_station": "北京",
+      "arrival_station": "成都",
+      "departure_time": "04:00",
+      "arrival_time": "18:15",
+      "duration": "06:25",
+      "date": "2025-11-04",
+      "seat_types": {
+        "business_class": "有",
+        "first_class": "有",
+        "second_class": "有",
+        "soft_sleeper": "有",
+        "hard_sleeper": "有",
+        "hard_seat": "有"
+      },
+      "prices": {
+        "business_class": 2239.63,
+        "first_class": 1673.19,
+        "second_class": 1063.22,
+        "soft_sleeper": 697.95,
+        "hard_sleeper": 518.52,
+        "hard_seat": 253.03
+      },
+      "available_seats": {
+        "business_class": 5,
+        "first_class": 26,
+        "second_class": 120,
+        "soft_sleeper": 27,
+        "hard_sleeper": 38,
+        "hard_seat": 108
+      }
+    },
+    {
+      "train_number": "D1754",
+      "departure_station": "成都",
+      "arrival_station": "武汉",
+      "departure_time": "05:15",
+      "arrival_time": "15:15",
+      "duration": "05:07",
+      "date": "2025-11-05",
+      "seat_types": {
+        "business_class": "少量",
+        "first_class": "有",
+        "second_class": "有",
+        "soft_sleeper": "有",
+        "hard_sleeper": "有",
+        "hard_seat": "有"
+      },
+      "prices": {
+        "business_class": 1297.84,
+        "first_class": 837.86,
+        "second_class": 612.73,
+        "soft_sleeper": 474.07,
+        "hard_sleeper": 304.57,
+        "hard_seat": 158.33
+      },
+      "available_seats": {
+        "business_class": 6,
+        "first_class": 12,
+        "second_class": 153,
+        "soft_sleeper": 22,
+        "hard_sleeper": 44,
+        "hard_seat": 382
+      }
+    },
+    {
+      "train_number": "K0155",
+      "departure_station": "西安",
+      "arrival_station": "北京",
+      "departure_time": "06:00",
+      "arrival_time": "19:45",
+      "duration": "09:12",
+      "date": "2025-11-07",
+      "seat_types": {
+        "business_class": "有",
+        "first_class": "少量",
+        "second_class": "有",
+        "soft_sleeper": "有",
+        "hard_sleeper": "有",
+        "hard_seat": "有"
+      },
+      "prices": {
+        "business_class": 532.65,
+        "first_class": 400.94,
+        "second_class": 246.85,
+        "soft_sleeper": 169.18,
+        "hard_sleeper": 113.47,
+        "hard_seat": 67.29
+      },
+      "available_seats": {
+        "business_class": 6,
+        "first_class": 15,
+        "second_class": 130,
+        "soft_sleeper": 10,
+        "hard_sleeper": 33,
+        "hard_seat": 400
+      }
+    },
+    {
+      "train_number": "G4904",
+      "departure_station": "广州",
+      "arrival_station": "武汉",
+      "departure_time": "06:15",
+      "arrival_time": "18:30",
+      "duration": "03:13",
+      "date": "2025-11-20",
+      "seat_types": {
+        "business_class": "有",
+        "first_class": "少量",
+        "second_class": "无",
+        "soft_sleeper": "有",
+        "hard_sleeper": "少量",
+        "hard_seat": "有"
+      },
+      "prices": {
+        "business_class": 991.16,
+        "first_class": 803.84,
+        "second_class": 485.89,
+        "soft_sleeper": 396.67,
+        "hard_sleeper": 273.78,
+        "hard_seat": 122.88
+      },
+      "available_seats": {
+        "business_class": 15,
+        "first_class": 10,
+        "second_class": 119,
+        "soft_sleeper": 24,
+        "hard_sleeper": 51,
+        "hard_seat": 216
+      }
+    },
+    {
+      "train_number": "Z7076",
+      "departure_station": "南京",
+      "arrival_station": "成都",
+      "departure_time": "06:45",
+      "arrival_time": "13:30",
+      "duration": "10:56",
+      "date": "2025-11-19",
+      "seat_types": {
+        "business_class": "有",
+        "first_class": "有",
+        "second_class": "有",
+        "soft_sleeper": "无",
+        "hard_sleeper": "有",
+        "hard_seat": "有"
+      },
+      "prices": {
+        "business_class": 1278.06,
+        "first_class": 905.46,
+        "second_class": 715.58,
+        "soft_sleeper": 487.56,
+        "hard_sleeper": 345.85,
+        "hard_seat": 151.26
+      },
+      "available_seats": {
+        "business_class": 7,
+        "first_class": 15,
+        "second_class": 160,
+        "soft_sleeper": 24,
+        "hard_sleeper": 55,
+        "hard_seat": 384
+      }
+    },
+    {
+      "train_number": "G0431",
+      "departure_station": "成都",
+      "arrival_station": "武汉",
+      "departure_time": "05:30",
+      "arrival_time": "20:00",
+      "duration": "04:20",
+      "date": "2025-11-22",
+      "seat_types": {
+        "business_class": "有",
+        "first_class": "有",
+        "second_class": "有",
+        "soft_sleeper": "有",
+        "hard_sleeper": "有",
+        "hard_seat": "少量"
+      },
+      "prices": {
+        "business_class": 1474.32,
+        "first_class": 1120.67,
+        "second_class": 691.71,
+        "soft_sleeper": 477.63,
+        "hard_sleeper": 332.82,
+        "hard_seat": 158.16
+      },
+      "available_seats": {
+        "business_class": 14,
+        "first_class": 18,
+        "second_class": 176,
+        "soft_sleeper": 14,
+        "hard_sleeper": 24,
+        "hard_seat": 185
+      }
+    },
+    {
+      "train_number": "Z4912",
+      "departure_station": "武汉",
+      "arrival_station": "杭州",
+      "departure_time": "11:00",
+      "arrival_time": "17:30",
+      "duration": "04:49",
+      "date": "2025-11-20",
+      "seat_types": {
+        "business_class": "有",
+        "first_class": "有",
+        "second_class": "有",
+        "soft_sleeper": "有",
+        "hard_sleeper": "有",
+        "hard_seat": "少量"
+      },
+      "prices": {
+        "business_class": 502.76,
+        "first_class": 399.54,
+        "second_class": 275.93,
+        "soft_sleeper": 188.43,
+        "hard_sleeper": 125.76,
+        "hard_seat": 69.13
+      },
+      "available_seats": {
+        "business_class": 9,
+        "first_class": 19,
+        "second_class": 132,
+        "soft_sleeper": 29,
+        "hard_sleeper": 32,
+        "hard_seat": 345
+      }
+    },
+    {
+      "train_number": "Z5229",
+      "departure_station": "南京",
+      "arrival_station": "广州",
+      "departure_time": "08:45",
+      "arrival_time": "15:30",
+      "duration": "07:42",
+      "date": "2025-11-23",
+      "seat_types": {
+        "business_class": "无",
+        "first_class": "有",
+        "second_class": "少量",
+        "soft_sleeper": "有",
+        "hard_sleeper": "少量",
+        "hard_seat": "有"
+      },
+      "prices": {
+        "business_class": 982.86,
+        "first_class": 633.49,
+        "second_class": 487.66,
+        "soft_sleeper": 380.84,
+        "hard_sleeper": 219.69,
+        "hard_seat": 123.56
+      },
+      "available_seats": {
+        "business_class": 7,
+        "first_class": 36,
+        "second_class": 154,
+        "soft_sleeper": 25,
+        "hard_sleeper": 28,
+        "hard_seat": 255
+      }
+    },
+    {
+      "train_number": "K2526",
+      "departure_station": "深圳",
+      "arrival_station": "杭州",
+      "departure_time": "10:45",
+      "arrival_time": "13:45",
+      "duration": "09:54",
+      "date": "2025-11-12",
+      "seat_types": {
+        "business_class": "有",
+        "first_class": "有",
+        "second_class": "少量",
+        "soft_sleeper": "少量",
+        "hard_sleeper": "有",
+        "hard_seat": "有"
+      },
+      "prices": {
+        "business_class": 573.74,
+        "first_class": 409.31,
+        "second_class": 278.68,
+        "soft_sleeper": 200.41,
+        "hard_sleeper": 142.02,
+        "hard_seat": 60.45
+      },
+      "available_seats": {
+        "business_class": 12,
+        "first_class": 31,
+        "second_class": 140,
+        "soft_sleeper": 15,
+        "hard_sleeper": 59,
+        "hard_seat": 122
+      }
+    },
+    {
+      "train_number": "C7053",
+      "departure_station": "重庆",
+      "arrival_station": "武汉",
+      "departure_time": "05:00",
+      "arrival_time": "13:30",
+      "duration": "04:40",
+      "date": "2025-11-20",
+      "seat_types": {
+        "business_class": "有",
+        "first_class": "有",
+        "second_class": "有",
+        "soft_sleeper": "有",
+        "hard_sleeper": "有",
+        "hard_seat": "无"
+      },
+      "prices": {
+        "business_class": 848.28,
+        "first_class": 625.19,
+        "second_class": 403.83,
+        "soft_sleeper": 282.85,
+        "hard_sleeper": 191.9,
+        "hard_seat": 102.44
+      },
+      "available_seats": {
+        "business_class": 7,
+        "first_class": 13,
+        "second_class": 86,
+        "soft_sleeper": 21,
+        "hard_sleeper": 39,
+        "hard_seat": 275
+      }
+    },
+    {
+      "train_number": "T7913",
+      "departure_station": "西安",
+      "arrival_station": "深圳",
+      "departure_time": "09:45",
+      "arrival_time": "13:45",
+      "duration": "10:49",
+      "date": "2025-11-11",
+      "seat_types": {
+        "business_class": "有",
+        "first_class": "有",
+        "second_class": "少量",
+        "soft_sleeper": "有",
+        "hard_sleeper": "少量",
+        "hard_seat": "有"
+      },
+      "prices": {
+        "business_class": 946.0,
+        "first_class": 639.22,
+        "second_class": 501.03,
+        "soft_sleeper": 325.06,
+        "hard_sleeper": 213.54,
+        "hard_seat": 106.44
+      },
+      "available_seats": {
+        "business_class": 18,
+        "first_class": 40,
+        "second_class": 168,
+        "soft_sleeper": 17,
+        "hard_sleeper": 45,
+        "hard_seat": 194
+      }
+    },
+    {
+      "train_number": "Z0479",
+      "departure_station": "广州",
+      "arrival_station": "武汉",
+      "departure_time": "07:45",
+      "arrival_time": "18:45",
+      "duration": "05:25",
+      "date": "2025-11-03",
+      "seat_types": {
+        "business_class": "有",
+        "first_class": "无",
+        "second_class": "少量",
+        "soft_sleeper": "有",
+        "hard_sleeper": "有",
+        "hard_seat": "少量"
+      },
+      "prices": {
+        "business_class": 627.3,
+        "first_class": 484.43,
+        "second_class": 331.76,
+        "soft_sleeper": 239.02,
+        "hard_sleeper": 179.43,
+        "hard_seat": 84.11
+      },
+      "available_seats": {
+        "business_class": 15,
+        "first_class": 29,
+        "second_class": 149,
+        "soft_sleeper": 29,
+        "hard_sleeper": 45,
+        "hard_seat": 400
+      }
+    },
+    {
+      "train_number": "C7502",
+      "departure_station": "上海",
+      "arrival_station": "南京",
+      "departure_time": "06:30",
+      "arrival_time": "13:15",
+      "duration": "01:56",
+      "date": "2025-11-04",
+      "seat_types": {
+        "business_class": "有",
+        "first_class": "有",
+        "second_class": "有",
+        "soft_sleeper": "有",
+        "hard_sleeper": "有",
+        "hard_seat": "有"
+      },
+      "prices": {
+        "business_class": 291.69,
+        "first_class": 209.9,
+        "second_class": 153.36,
+        "soft_sleeper": 116.32,
+        "hard_sleeper": 76.83,
+        "hard_seat": 41.06
+      },
+      "available_seats": {
+        "business_class": 10,
+        "first_class": 25,
+        "second_class": 123,
+        "soft_sleeper": 14,
+        "hard_sleeper": 31,
+        "hard_seat": 261
+      }
+    },
+    {
+      "train_number": "C0158",
+      "departure_station": "西安",
+      "arrival_station": "北京",
+      "departure_time": "11:15",
+      "arrival_time": "15:45",
+      "duration": "05:56",
+      "date": "2025-11-13",
+      "seat_types": {
+        "business_class": "有",
+        "first_class": "有",
+        "second_class": "有",
+        "soft_sleeper": "无",
+        "hard_sleeper": "有",
+        "hard_seat": "有"
+      },
+      "prices": {
+        "business_class": 1005.23,
+        "first_class": 788.23,
+        "second_class": 468.4,
+        "soft_sleeper": 337.32,
+        "hard_sleeper": 234.41,
+        "hard_seat": 118.79
+      },
+      "available_seats": {
+        "business_class": 19,
+        "first_class": 28,
+        "second_class": 176,
+        "soft_sleeper": 27,
+        "hard_sleeper": 52,
+        "hard_seat": 157
+      }
+    },
+    {
+      "train_number": "C8899",
+      "departure_station": "重庆",
+      "arrival_station": "上海",
+      "departure_time": "09:00",
+      "arrival_time": "19:15",
+      "duration": "09:07",
+      "date": "2025-10-31",
+      "seat_types": {
+        "business_class": "无",
+        "first_class": "有",
+        "second_class": "有",
+        "soft_sleeper": "少量",
+        "hard_sleeper": "有",
+        "hard_seat": "有"
+      },
+      "prices": {
+        "business_class": 1715.9,
+        "first_class": 1100.87,
+        "second_class": 858.44,
+        "soft_sleeper": 554.08,
+        "hard_sleeper": 424.95,
+        "hard_seat": 188.39
+      },
+      "available_seats": {
+        "business_class": 16,
+        "first_class": 37,
+        "second_class": 159,
+        "soft_sleeper": 15,
+        "hard_sleeper": 59,
+        "hard_seat": 171
+      }
+    },
+    {
+      "train_number": "G9341",
+      "departure_station": "深圳",
+      "arrival_station": "重庆",
+      "departure_time": "09:30",
+      "arrival_time": "20:15",
+      "duration": "04:11",
+      "date": "2025-11-19",
+      "seat_types": {
+        "business_class": "有",
+        "first_class": "有",
+        "second_class": "少量",
+        "soft_sleeper": "有",
+        "hard_sleeper": "少量",
+        "hard_seat": "少量"
+      },
+      "prices": {
+        "business_class": 1269.17,
+        "first_class": 1078.06,
+        "second_class": 672.37,
+        "soft_sleeper": 468.1,
+        "hard_sleeper": 326.99,
+        "hard_seat": 176.45
+      },
+      "available_seats": {
+        "business_class": 9,
+        "first_class": 17,
+        "second_class": 87,
+        "soft_sleeper": 20,
+        "hard_sleeper": 35,
+        "hard_seat": 301
+      }
+    },
+    {
+      "train_number": "T4403",
+      "departure_station": "西安",
+      "arrival_station": "广州",
+      "departure_time": "10:45",
+      "arrival_time": "19:00",
+      "duration": "10:06",
+      "date": "2025-11-25",
+      "seat_types": {
+        "business_class": "无",
+        "first_class": "有",
+        "second_class": "无",
+        "soft_sleeper": "有",
+        "hard_sleeper": "少量",
+        "hard_seat": "有"
+      },
+      "prices": {
+        "business_class": 851.69,
+        "first_class": 650.79,
+        "second_class": 458.36,
+        "soft_sleeper": 342.38,
+        "hard_sleeper": 196.06,
+        "hard_seat": 116.79
+      },
+      "available_seats": {
+        "business_class": 16,
+        "first_class": 37,
+        "second_class": 66,
+        "soft_sleeper": 27,
+        "hard_sleeper": 45,
+        "hard_seat": 211
+      }
+    },
+    {
+      "train_number": "Z4400",
+      "departure_station": "武汉",
+      "arrival_station": "深圳",
+      "departure_time": "09:30",
+      "arrival_time": "17:15",
+      "duration": "06:07",
+      "date": "2025-11-12",
+      "seat_types": {
+        "business_class": "无",
+        "first_class": "少量",
+        "second_class": "无",
+        "soft_sleeper": "有",
+        "hard_sleeper": "有",
+        "hard_seat": "少量"
+      },
+      "prices": {
+        "business_class": 645.97,
+        "first_class": 582.43,
+        "second_class": 333.12,
+        "soft_sleeper": 265.85,
+        "hard_sleeper": 196.37,
+        "hard_seat": 88.1
+      },
+      "available_seats": {
+        "business_class": 9,
+        "first_class": 38,
+        "second_class": 127,
+        "soft_sleeper": 15,
+        "hard_sleeper": 37,
+        "hard_seat": 147
+      }
+    },
+    {
+      "train_number": "G6093",
+      "departure_station": "南京",
+      "arrival_station": "杭州",
+      "departure_time": "06:00",
+      "arrival_time": "18:30",
+      "duration": "01:27",
+      "date": "2025-11-21",
+      "seat_types": {
+        "business_class": "有",
+        "first_class": "有",
+        "second_class": "无",
+        "soft_sleeper": "有",
+        "hard_sleeper": "有",
+        "hard_seat": "有"
+      },
+      "prices": {
+        "business_class": 282.52,
+        "first_class": 232.24,
+        "second_class": 134.78,
+        "soft_sleeper": 116.47,
+        "hard_sleeper": 79.46,
+        "hard_seat": 41.01
+      },
+      "available_seats": {
+        "business_class": 18,
+        "first_class": 32,
+        "second_class": 83,
+        "soft_sleeper": 25,
+        "hard_sleeper": 24,
+        "hard_seat": 217
+      }
+    },
+    {
+      "train_number": "K1679",
+      "departure_station": "武汉",
+      "arrival_station": "上海",
+      "departure_time": "05:30",
+      "arrival_time": "17:30",
+      "duration": "06:56",
+      "date": "2025-11-21",
+      "seat_types": {
+        "business_class": "少量",
+        "first_class": "少量",
+        "second_class": "有",
+        "soft_sleeper": "有",
+        "hard_sleeper": "有",
+        "hard_seat": "有"
+      },
+      "prices": {
+        "business_class": 391.89,
+        "first_class": 268.25,
+        "second_class": 186.01,
+        "soft_sleeper": 135.53,
+        "hard_sleeper": 100.62,
+        "hard_seat": 51.95
+      },
+      "available_seats": {
+        "business_class": 19,
+        "first_class": 37,
+        "second_class": 105,
+        "soft_sleeper": 12,
+        "hard_sleeper": 26,
+        "hard_seat": 171
+      }
+    },
+    {
+      "train_number": "C7036",
+      "departure_station": "上海",
+      "arrival_station": "武汉",
+      "departure_time": "09:15",
+      "arrival_time": "15:30",
+      "duration": "04:34",
+      "date": "2025-11-04",
+      "seat_types": {
+        "business_class": "有",
+        "first_class": "有",
+        "second_class": "有",
+        "soft_sleeper": "无",
+        "hard_sleeper": "有",
+        "hard_seat": "少量"
+      },
+      "prices": {
+        "business_class": 791.15,
+        "first_class": 552.33,
+        "second_class": 384.79,
+        "soft_sleeper": 288.12,
+        "hard_sleeper": 201.22,
+        "hard_seat": 91.94
+      },
+      "available_seats": {
+        "business_class": 6,
+        "first_class": 35,
+        "second_class": 111,
+        "soft_sleeper": 25,
+        "hard_sleeper": 44,
+        "hard_seat": 157
+      }
+    },
+    {
+      "train_number": "K9731",
+      "departure_station": "深圳",
+      "arrival_station": "西安",
+      "departure_time": "05:00",
+      "arrival_time": "17:30",
+      "duration": "12:10",
+      "date": "2025-11-24",
+      "seat_types": {
+        "business_class": "少量",
+        "first_class": "有",
+        "second_class": "有",
+        "soft_sleeper": "有",
+        "hard_sleeper": "有",
+        "hard_seat": "少量"
+      },
+      "prices": {
+        "business_class": 626.7,
+        "first_class": 522.9,
+        "second_class": 309.3,
+        "soft_sleeper": 242.35,
+        "hard_sleeper": 185.78,
+        "hard_seat": 93.34
+      },
+      "available_seats": {
+        "business_class": 17,
+        "first_class": 26,
+        "second_class": 123,
+        "soft_sleeper": 30,
+        "hard_sleeper": 52,
+        "hard_seat": 312
+      }
+    },
+    {
+      "train_number": "G8792",
+      "departure_station": "武汉",
+      "arrival_station": "重庆",
+      "departure_time": "12:15",
+      "arrival_time": "16:00",
+      "duration": "03:16",
+      "date": "2025-11-13",
+      "seat_types": {
+        "business_class": "少量",
+        "first_class": "少量",
+        "second_class": "有",
+        "soft_sleeper": "有",
+        "hard_sleeper": "有",
+        "hard_seat": "无"
+      },
+      "prices": {
+        "business_class": 1073.11,
+        "first_class": 803.79,
+        "second_class": 501.17,
+        "soft_sleeper": 385.82,
+        "hard_sleeper": 284.09,
+        "hard_seat": 123.43
+      },
+      "available_seats": {
+        "business_class": 12,
+        "first_class": 12,
+        "second_class": 161,
+        "soft_sleeper": 13,
+        "hard_sleeper": 49,
+        "hard_seat": 128
+      }
+    },
+    {
+      "train_number": "G0208",
+      "departure_station": "杭州",
+      "arrival_station": "广州",
+      "departure_time": "06:00",
+      "arrival_time": "14:45",
+      "duration": "04:26",
+      "date": "2025-11-13",
+      "seat_types": {
+        "business_class": "有",
+        "first_class": "少量",
+        "second_class": "有",
+        "soft_sleeper": "有",
+        "hard_sleeper": "无",
+        "hard_seat": "少量"
+      },
+      "prices": {
+        "business_class": 1383.79,
+        "first_class": 915.89,
+        "second_class": 713.97,
+        "soft_sleeper": 479.46,
+        "hard_sleeper": 325.88,
+        "hard_seat": 166.06
+      },
+      "available_seats": {
+        "business_class": 13,
+        "first_class": 32,
+        "second_class": 197,
+        "soft_sleeper": 30,
+        "hard_sleeper": 24,
+        "hard_seat": 354
+      }
+    },
+    {
+      "train_number": "C0909",
+      "departure_station": "西安",
+      "arrival_station": "成都",
+      "departure_time": "11:15",
+      "arrival_time": "17:15",
+      "duration": "03:46",
+      "date": "2025-10-31",
+      "seat_types": {
+        "business_class": "少量",
+        "first_class": "有",
+        "second_class": "有",
+        "soft_sleeper": "无",
+        "hard_sleeper": "有",
+        "hard_seat": "少量"
+      },
+      "prices": {
+        "business_class": 592.42,
+        "first_class": 447.63,
+        "second_class": 319.29,
+        "soft_sleeper": 266.86,
+        "hard_sleeper": 153.57,
+        "hard_seat": 89.61
+      },
+      "available_seats": {
+        "business_class": 6,
+        "first_class": 27,
+        "second_class": 157,
+        "soft_sleeper": 17,
+        "hard_sleeper": 40,
+        "hard_seat": 227
+      }
+    },
+    {
+      "train_number": "C1277",
+      "departure_station": "武汉",
+      "arrival_station": "南京",
+      "departure_time": "09:00",
+      "arrival_time": "20:00",
+      "duration": "02:55",
+      "date": "2025-11-22",
+      "seat_types": {
+        "business_class": "有",
+        "first_class": "有",
+        "second_class": "有",
+        "soft_sleeper": "少量",
+        "hard_sleeper": "少量",
+        "hard_seat": "无"
+      },
+      "prices": {
+        "business_class": 484.44,
+        "first_class": 346.39,
+        "second_class": 249.57,
+        "soft_sleeper": 183.86,
+        "hard_sleeper": 120.63,
+        "hard_seat": 66.52
+      },
+      "available_seats": {
+        "business_class": 12,
+        "first_class": 24,
+        "second_class": 144,
+        "soft_sleeper": 28,
+        "hard_sleeper": 51,
+        "hard_seat": 200
+      }
+    },
+    {
+      "train_number": "D0105",
+      "departure_station": "成都",
+      "arrival_station": "深圳",
+      "departure_time": "10:00",
+      "arrival_time": "15:30",
+      "duration": "06:16",
+      "date": "2025-11-19",
+      "seat_types": {
+        "business_class": "少量",
+        "first_class": "少量",
+        "second_class": "有",
+        "soft_sleeper": "有",
+        "hard_sleeper": "少量",
+        "hard_seat": "无"
+      },
+      "prices": {
+        "business_class": 1362.49,
+        "first_class": 1116.39,
+        "second_class": 701.11,
+        "soft_sleeper": 554.0,
+        "hard_sleeper": 337.36,
+        "hard_seat": 203.35
+      },
+      "available_seats": {
+        "business_class": 13,
+        "first_class": 12,
+        "second_class": 61,
+        "soft_sleeper": 17,
+        "hard_sleeper": 53,
+        "hard_seat": 311
+      }
+    },
+    {
+      "train_number": "K1392",
+      "departure_station": "南京",
+      "arrival_station": "西安",
+      "departure_time": "05:15",
+      "arrival_time": "18:00",
+      "duration": "09:54",
+      "date": "2025-10-29",
+      "seat_types": {
+        "business_class": "有",
+        "first_class": "少量",
+        "second_class": "有",
+        "soft_sleeper": "有",
+        "hard_sleeper": "有",
+        "hard_seat": "少量"
+      },
+      "prices": {
+        "business_class": 560.71,
+        "first_class": 423.33,
+        "second_class": 259.73,
+        "soft_sleeper": 192.93,
+        "hard_sleeper": 123.3,
+        "hard_seat": 63.38
+      },
+      "available_seats": {
+        "business_class": 8,
+        "first_class": 14,
+        "second_class": 77,
+        "soft_sleeper": 15,
+        "hard_sleeper": 48,
+        "hard_seat": 338
+      }
+    },
+    {
+      "train_number": "G8781",
+      "departure_station": "南京",
+      "arrival_station": "武汉",
+      "departure_time": "09:15",
+      "arrival_time": "19:30",
+      "duration": "02:13",
+      "date": "2025-11-24",
+      "seat_types": {
+        "business_class": "有",
+        "first_class": "有",
+        "second_class": "有",
+        "soft_sleeper": "少量",
+        "hard_sleeper": "有",
+        "hard_seat": "有"
+      },
+      "prices": {
+        "business_class": 671.66,
+        "first_class": 455.78,
+        "second_class": 288.96,
+        "soft_sleeper": 224.13,
+        "hard_sleeper": 152.81,
+        "hard_seat": 78.88
+      },
+      "available_seats": {
+        "business_class": 14,
+        "first_class": 18,
+        "second_class": 94,
+        "soft_sleeper": 10,
+        "hard_sleeper": 45,
+        "hard_seat": 331
+      }
+    },
+    {
+      "train_number": "D1552",
+      "departure_station": "成都",
+      "arrival_station": "重庆",
+      "departure_time": "11:00",
+      "arrival_time": "14:00",
+      "duration": "01:23",
+      "date": "2025-11-23",
+      "seat_types": {
+        "business_class": "无",
+        "first_class": "有",
+        "second_class": "有",
+        "soft_sleeper": "有",
+        "hard_sleeper": "有",
+        "hard_seat": "少量"
+      },
+      "prices": {
+        "business_class": 283.87,
+        "first_class": 236.22,
+        "second_class": 167.74,
+        "soft_sleeper": 106.24,
+        "hard_sleeper": 85.1,
+        "hard_seat": 36.36
+      },
+      "available_seats": {
+        "business_class": 19,
+        "first_class": 35,
+        "second_class": 82,
+        "soft_sleeper": 12,
+        "hard_sleeper": 41,
+        "hard_seat": 162
+      }
+    },
+    {
+      "train_number": "G2753",
+      "departure_station": "北京",
+      "arrival_station": "西安",
+      "departure_time": "10:45",
+      "arrival_time": "19:00",
+      "duration": "03:52",
+      "date": "2025-11-10",
+      "seat_types": {
+        "business_class": "有",
+        "first_class": "有",
+        "second_class": "有",
+        "soft_sleeper": "有",
+        "hard_sleeper": "少量",
+        "hard_seat": "有"
+      },
+      "prices": {
+        "business_class": 1269.88,
+        "first_class": 882.94,
+        "second_class": 594.75,
+        "soft_sleeper": 456.93,
+        "hard_sleeper": 313.22,
+        "hard_seat": 141.43
+      },
+      "available_seats": {
+        "business_class": 13,
+        "first_class": 22,
+        "second_class": 85,
+        "soft_sleeper": 23,
+        "hard_sleeper": 32,
+        "hard_seat": 369
+      }
+    },
+    {
+      "train_number": "G6267",
+      "departure_station": "深圳",
+      "arrival_station": "成都",
+      "departure_time": "09:45",
+      "arrival_time": "20:45",
+      "duration": "05:08",
+      "date": "2025-11-15",
+      "seat_types": {
+        "business_class": "有",
+        "first_class": "有",
+        "second_class": "有",
+        "soft_sleeper": "有",
+        "hard_sleeper": "有",
+        "hard_seat": "少量"
+      },
+      "prices": {
+        "business_class": 1802.45,
+        "first_class": 1167.46,
+        "second_class": 937.59,
+        "soft_sleeper": 644.02,
+        "hard_sleeper": 449.62,
+        "hard_seat": 234.74
+      },
+      "available_seats": {
+        "business_class": 10,
+        "first_class": 13,
+        "second_class": 113,
+        "soft_sleeper": 17,
+        "hard_sleeper": 37,
+        "hard_seat": 373
+      }
+    },
+    {
+      "train_number": "T6364",
+      "departure_station": "北京",
+      "arrival_station": "深圳",
+      "departure_time": "09:15",
+      "arrival_time": "14:15",
+      "duration": "14:26",
+      "date": "2025-11-22",
+      "seat_types": {
+        "business_class": "无",
+        "first_class": "有",
+        "second_class": "有",
+        "soft_sleeper": "无",
+        "hard_sleeper": "有",
+        "hard_seat": "有"
+      },
+      "prices": {
+        "business_class": 1155.49,
+        "first_class": 1017.14,
+        "second_class": 664.19,
+        "soft_sleeper": 495.69,
+        "hard_sleeper": 340.42,
+        "hard_seat": 156.88
+      },
+      "available_seats": {
+        "business_class": 10,
+        "first_class": 25,
+        "second_class": 59,
+        "soft_sleeper": 12,
+        "hard_sleeper": 23,
+        "hard_seat": 219
+      }
+    },
+    {
+      "train_number": "G8626",
+      "departure_station": "重庆",
+      "arrival_station": "深圳",
+      "departure_time": "11:00",
+      "arrival_time": "17:15",
+      "duration": "04:29",
+      "date": "2025-11-07",
+      "seat_types": {
+        "business_class": "无",
+        "first_class": "少量",
+        "second_class": "少量",
+        "soft_sleeper": "有",
+        "hard_sleeper": "有",
+        "hard_seat": "有"
+      },
+      "prices": {
+        "business_class": 1483.17,
+        "first_class": 1083.04,
+        "second_class": 731.9,
+        "soft_sleeper": 550.38,
+        "hard_sleeper": 373.76,
+        "hard_seat": 166.79
+      },
+      "available_seats": {
+        "business_class": 17,
+        "first_class": 28,
+        "second_class": 75,
+        "soft_sleeper": 20,
+        "hard_sleeper": 39,
+        "hard_seat": 265
+      }
+    },
+    {
+      "train_number": "K7158",
+      "departure_station": "广州",
+      "arrival_station": "重庆",
+      "departure_time": "11:30",
+      "arrival_time": "14:30",
+      "duration": "08:56",
+      "date": "2025-11-15",
+      "seat_types": {
+        "business_class": "少量",
+        "first_class": "有",
+        "second_class": "无",
+        "soft_sleeper": "有",
+        "hard_sleeper": "有",
+        "hard_seat": "有"
+      },
+      "prices": {
+        "business_class": 515.42,
+        "first_class": 376.97,
+        "second_class": 265.08,
+        "soft_sleeper": 195.84,
+        "hard_sleeper": 125.52,
+        "hard_seat": 57.99
+      },
+      "available_seats": {
+        "business_class": 15,
+        "first_class": 39,
+        "second_class": 106,
+        "soft_sleeper": 30,
+        "hard_sleeper": 56,
+        "hard_seat": 153
+      }
+    },
+    {
+      "train_number": "C1275",
+      "departure_station": "西安",
+      "arrival_station": "广州",
+      "departure_time": "07:30",
+      "arrival_time": "17:15",
+      "duration": "07:15",
+      "date": "2025-10-30",
+      "seat_types": {
+        "business_class": "少量",
+        "first_class": "有",
+        "second_class": "无",
+        "soft_sleeper": "有",
+        "hard_sleeper": "有",
+        "hard_seat": "有"
+      },
+      "prices": {
+        "business_class": 1330.07,
+        "first_class": 931.72,
+        "second_class": 677.05,
+        "soft_sleeper": 501.39,
+        "hard_sleeper": 291.22,
+        "hard_seat": 158.1
+      },
+      "available_seats": {
+        "business_class": 18,
+        "first_class": 15,
+        "second_class": 155,
+        "soft_sleeper": 25,
+        "hard_sleeper": 44,
+        "hard_seat": 279
+      }
+    },
+    {
+      "train_number": "G7856",
+      "departure_station": "成都",
+      "arrival_station": "武汉",
+      "departure_time": "07:15",
+      "arrival_time": "19:00",
+      "duration": "04:28",
+      "date": "2025-10-29",
+      "seat_types": {
+        "business_class": "有",
+        "first_class": "有",
+        "second_class": "少量",
+        "soft_sleeper": "有",
+        "hard_sleeper": "有",
+        "hard_seat": "有"
+      },
+      "prices": {
+        "business_class": 1427.07,
+        "first_class": 1032.47,
+        "second_class": 736.19,
+        "soft_sleeper": 469.8,
+        "hard_sleeper": 347.36,
+        "hard_seat": 174.35
+      },
+      "available_seats": {
+        "business_class": 20,
+        "first_class": 32,
+        "second_class": 57,
+        "soft_sleeper": 23,
+        "hard_sleeper": 30,
+        "hard_seat": 322
+      }
+    },
+    {
+      "train_number": "G5425",
+      "departure_station": "广州",
+      "arrival_station": "北京",
+      "departure_time": "07:15",
+      "arrival_time": "18:30",
+      "duration": "06:54",
+      "date": "2025-11-06",
+      "seat_types": {
+        "business_class": "有",
+        "first_class": "有",
+        "second_class": "有",
+        "soft_sleeper": "少量",
+        "hard_sleeper": "有",
+        "hard_seat": "有"
+      },
+      "prices": {
+        "business_class": 2240.41,
+        "first_class": 1634.93,
+        "second_class": 1173.49,
+        "soft_sleeper": 869.58,
+        "hard_sleeper": 534.19,
+        "hard_seat": 257.21
+      },
+      "available_seats": {
+        "business_class": 10,
+        "first_class": 30,
+        "second_class": 124,
+        "soft_sleeper": 12,
+        "hard_sleeper": 50,
+        "hard_seat": 159
+      }
+    },
+    {
+      "train_number": "Z8014",
+      "departure_station": "杭州",
+      "arrival_station": "武汉",
+      "departure_time": "08:00",
+      "arrival_time": "20:45",
+      "duration": "04:22",
+      "date": "2025-11-25",
+      "seat_types": {
+        "business_class": "有",
+        "first_class": "有",
+        "second_class": "有",
+        "soft_sleeper": "有",
+        "hard_sleeper": "有",
+        "hard_seat": "少量"
+      },
+      "prices": {
+        "business_class": 526.9,
+        "first_class": 362.94,
+        "second_class": 270.33,
+        "soft_sleeper": 179.35,
+        "hard_sleeper": 134.43,
+        "hard_seat": 69.03
+      },
+      "available_seats": {
+        "business_class": 18,
+        "first_class": 34,
+        "second_class": 200,
+        "soft_sleeper": 17,
+        "hard_sleeper": 55,
+        "hard_seat": 131
+      }
+    },
+    {
+      "train_number": "Z8774",
+      "departure_station": "武汉",
+      "arrival_station": "成都",
+      "departure_time": "11:15",
+      "arrival_time": "19:30",
+      "duration": "07:21",
+      "date": "2025-11-25",
+      "seat_types": {
+        "business_class": "少量",
+        "first_class": "有",
+        "second_class": "有",
+        "soft_sleeper": "有",
+        "hard_sleeper": "有",
+        "hard_seat": "少量"
+      },
+      "prices": {
+        "business_class": 845.09,
+        "first_class": 743.17,
+        "second_class": 449.97,
+        "soft_sleeper": 371.57,
+        "hard_sleeper": 212.17,
+        "hard_seat": 107.1
+      },
+      "available_seats": {
+        "business_class": 11,
+        "first_class": 14,
+        "second_class": 60,
+        "soft_sleeper": 23,
+        "hard_sleeper": 25,
+        "hard_seat": 322
+      }
+    },
+    {
+      "train_number": "T4226",
+      "departure_station": "深圳",
+      "arrival_station": "广州",
+      "departure_time": "09:00",
+      "arrival_time": "13:45",
+      "duration": "01:18",
+      "date": "2025-11-14",
+      "seat_types": {
+        "business_class": "有",
+        "first_class": "有",
+        "second_class": "有",
+        "soft_sleeper": "少量",
+        "hard_sleeper": "无",
+        "hard_seat": "有"
+      },
+      "prices": {
+        "business_class": 70.39,
+        "first_class": 51.71,
+        "second_class": 34.44,
+        "soft_sleeper": 24.43,
+        "hard_sleeper": 17.83,
+        "hard_seat": 9.21
+      },
+      "available_seats": {
+        "business_class": 8,
+        "first_class": 39,
+        "second_class": 77,
+        "soft_sleeper": 28,
+        "hard_sleeper": 26,
+        "hard_seat": 246
+      }
+    },
+    {
+      "train_number": "Z4328",
+      "departure_station": "成都",
+      "arrival_station": "南京",
+      "departure_time": "10:45",
+      "arrival_time": "19:00",
+      "duration": "10:34",
+      "date": "2025-11-09",
+      "seat_types": {
+        "business_class": "有",
+        "first_class": "有",
+        "second_class": "有",
+        "soft_sleeper": "有",
+        "hard_sleeper": "少量",
+        "hard_seat": "有"
+      },
+      "prices": {
+        "business_class": 1245.69,
+        "first_class": 1034.48,
+        "second_class": 712.67,
+        "soft_sleeper": 532.15,
+        "hard_sleeper": 297.13,
+        "hard_seat": 174.77
+      },
+      "available_seats": {
+        "business_class": 14,
+        "first_class": 19,
+        "second_class": 121,
+        "soft_sleeper": 25,
+        "hard_sleeper": 26,
+        "hard_seat": 216
+      }
+    },
+    {
+      "train_number": "K7260",
+      "departure_station": "广州",
+      "arrival_station": "杭州",
+      "departure_time": "09:30",
+      "arrival_time": "18:00",
+      "duration": "09:29",
+      "date": "2025-11-03",
+      "seat_types": {
+        "business_class": "少量",
+        "first_class": "有",
+        "second_class": "有",
+        "soft_sleeper": "有",
+        "hard_sleeper": "有",
+        "hard_seat": "有"
+      },
+      "prices": {
+        "business_class": 559.71,
+        "first_class": 362.2,
+        "second_class": 275.52,
+        "soft_sleeper": 194.5,
+        "hard_sleeper": 139.64,
+        "hard_seat": 66.43
+      },
+      "available_seats": {
+        "business_class": 5,
+        "first_class": 15,
+        "second_class": 99,
+        "soft_sleeper": 16,
+        "hard_sleeper": 23,
+        "hard_seat": 227
+      }
+    },
+    {
+      "train_number": "G5905",
+      "departure_station": "北京",
+      "arrival_station": "西安",
+      "departure_time": "07:30",
+      "arrival_time": "17:45",
+      "duration": "03:56",
+      "date": "2025-11-17",
+      "seat_types": {
+        "business_class": "少量",
+        "first_class": "有",
+        "second_class": "有",
+        "soft_sleeper": "有",
+        "hard_sleeper": "有",
+        "hard_seat": "少量"
+      },
+      "prices": {
+        "business_class": 1234.01,
+        "first_class": 939.79,
+        "second_class": 600.84,
+        "soft_sleeper": 496.53,
+        "hard_sleeper": 295.11,
+        "hard_seat": 165.3
+      },
+      "available_seats": {
+        "business_class": 7,
+        "first_class": 19,
+        "second_class": 57,
+        "soft_sleeper": 22,
+        "hard_sleeper": 23,
+        "hard_seat": 183
+      }
+    },
+    {
+      "train_number": "D3689",
+      "departure_station": "重庆",
+      "arrival_station": "深圳",
+      "departure_time": "07:30",
+      "arrival_time": "18:00",
+      "duration": "05:16",
+      "date": "2025-11-21",
+      "seat_types": {
+        "business_class": "有",
+        "first_class": "有",
+        "second_class": "有",
+        "soft_sleeper": "有",
+        "hard_sleeper": "少量",
+        "hard_seat": "有"
+      },
+      "prices": {
+        "business_class": 1212.12,
+        "first_class": 968.65,
+        "second_class": 618.45,
+        "soft_sleeper": 463.54,
+        "hard_sleeper": 283.28,
+        "hard_seat": 160.03
+      },
+      "available_seats": {
+        "business_class": 16,
+        "first_class": 24,
+        "second_class": 114,
+        "soft_sleeper": 16,
+        "hard_sleeper": 49,
+        "hard_seat": 254
+      }
+    },
+    {
+      "train_number": "T1677",
+      "departure_station": "成都",
+      "arrival_station": "武汉",
+      "departure_time": "04:30",
+      "arrival_time": "20:30",
+      "duration": "08:29",
+      "date": "2025-10-31",
+      "seat_types": {
+        "business_class": "有",
+        "first_class": "有",
+        "second_class": "有",
+        "soft_sleeper": "有",
+        "hard_sleeper": "有",
+        "hard_seat": "有"
+      },
+      "prices": {
+        "business_class": 793.14,
+        "first_class": 562.04,
+        "second_class": 341.01,
+        "soft_sleeper": 273.7,
+        "hard_sleeper": 172.39,
+        "hard_seat": 82.86
+      },
+      "available_seats": {
+        "business_class": 17,
+        "first_class": 31,
+        "second_class": 131,
+        "soft_sleeper": 14,
+        "hard_sleeper": 21,
+        "hard_seat": 354
+      }
+    },
+    {
+      "train_number": "Z6629",
+      "departure_station": "杭州",
+      "arrival_station": "重庆",
+      "departure_time": "10:00",
+      "arrival_time": "15:30",
+      "duration": "10:05",
+      "date": "2025-11-04",
+      "seat_types": {
+        "business_class": "有",
+        "first_class": "有",
+        "second_class": "有",
+        "soft_sleeper": "少量",
+        "hard_sleeper": "有",
+        "hard_seat": "有"
+      },
+      "prices": {
+        "business_class": 1129.8,
+        "first_class": 935.83,
+        "second_class": 611.87,
+        "soft_sleeper": 434.91,
+        "hard_sleeper": 300.64,
+        "hard_seat": 158.49
+      },
+      "available_seats": {
+        "business_class": 10,
+        "first_class": 40,
+        "second_class": 135,
+        "soft_sleeper": 30,
+        "hard_sleeper": 25,
+        "hard_seat": 213
+      }
+    },
+    {
+      "train_number": "K5032",
+      "departure_station": "南京",
+      "arrival_station": "深圳",
+      "departure_time": "10:30",
+      "arrival_time": "17:30",
+      "duration": "10:23",
+      "date": "2025-11-11",
+      "seat_types": {
+        "business_class": "少量",
+        "first_class": "有",
+        "second_class": "少量",
+        "soft_sleeper": "有",
+        "hard_sleeper": "少量",
+        "hard_seat": "有"
+      },
+      "prices": {
+        "business_class": 610.58,
+        "first_class": 424.89,
+        "second_class": 304.05,
+        "soft_sleeper": 207.4,
+        "hard_sleeper": 135.9,
+        "hard_seat": 64.49
+      },
+      "available_seats": {
+        "business_class": 9,
+        "first_class": 14,
+        "second_class": 101,
+        "soft_sleeper": 20,
+        "hard_sleeper": 46,
+        "hard_seat": 391
+      }
+    },
+    {
+      "train_number": "C2955",
+      "departure_station": "西安",
+      "arrival_station": "广州",
+      "departure_time": "05:45",
+      "arrival_time": "17:15",
+      "duration": "07:03",
+      "date": "2025-10-29",
+      "seat_types": {
+        "business_class": "有",
+        "first_class": "有",
+        "second_class": "无",
+        "soft_sleeper": "有",
+        "hard_sleeper": "无",
+        "hard_seat": "有"
+      },
+      "prices": {
+        "business_class": 1348.1,
+        "first_class": 881.31,
+        "second_class": 654.96,
+        "soft_sleeper": 493.04,
+        "hard_sleeper": 313.96,
+        "hard_seat": 174.97
+      },
+      "available_seats": {
+        "business_class": 17,
+        "first_class": 10,
+        "second_class": 59,
+        "soft_sleeper": 27,
+        "hard_sleeper": 32,
+        "hard_seat": 291
+      }
+    },
+    {
+      "train_number": "T3123",
+      "departure_station": "北京",
+      "arrival_station": "南京",
+      "departure_time": "04:00",
+      "arrival_time": "15:15",
+      "duration": "07:07",
+      "date": "2025-11-08",
+      "seat_types": {
+        "business_class": "有",
+        "first_class": "有",
+        "second_class": "有",
+        "soft_sleeper": "有",
+        "hard_sleeper": "有",
+        "hard_seat": "有"
+      },
+      "prices": {
+        "business_class": 634.76,
+        "first_class": 433.03,
+        "second_class": 292.44,
+        "soft_sleeper": 219.5,
+        "hard_sleeper": 143.7,
+        "hard_seat": 75.53
+      },
+      "available_seats": {
+        "business_class": 9,
+        "first_class": 20,
+        "second_class": 175,
+        "soft_sleeper": 21,
+        "hard_sleeper": 32,
+        "hard_seat": 184
+      }
+    },
+    {
+      "train_number": "D3676",
+      "departure_station": "武汉",
+      "arrival_station": "北京",
+      "departure_time": "06:15",
+      "arrival_time": "12:15",
+      "duration": "04:30",
+      "date": "2025-11-19",
+      "seat_types": {
+        "business_class": "有",
+        "first_class": "有",
+        "second_class": "少量",
+        "soft_sleeper": "有",
+        "hard_sleeper": "有",
+        "hard_seat": "有"
+      },
+      "prices": {
+        "business_class": 1210.98,
+        "first_class": 853.24,
+        "second_class": 567.9,
+        "soft_sleeper": 373.54,
+        "hard_sleeper": 285.94,
+        "hard_seat": 135.45
+      },
+      "available_seats": {
+        "business_class": 17,
+        "first_class": 13,
+        "second_class": 190,
+        "soft_sleeper": 18,
+        "hard_sleeper": 50,
+        "hard_seat": 178
+      }
+    },
+    {
+      "train_number": "C6896",
+      "departure_station": "深圳",
+      "arrival_station": "北京",
+      "departure_time": "05:30",
+      "arrival_time": "14:45",
+      "duration": "10:25",
+      "date": "2025-10-31",
+      "seat_types": {
+        "business_class": "有",
+        "first_class": "有",
+        "second_class": "有",
+        "soft_sleeper": "无",
+        "hard_sleeper": "有",
+        "hard_seat": "有"
+      },
+      "prices": {
+        "business_class": 1970.65,
+        "first_class": 1492.98,
+        "second_class": 1021.76,
+        "soft_sleeper": 680.18,
+        "hard_sleeper": 458.29,
+        "hard_seat": 217.51
+      },
+      "available_seats": {
+        "business_class": 20,
+        "first_class": 39,
+        "second_class": 103,
+        "soft_sleeper": 25,
+        "hard_sleeper": 41,
+        "hard_seat": 220
+      }
+    },
+    {
+      "train_number": "K1459",
+      "departure_station": "北京",
+      "arrival_station": "重庆",
+      "departure_time": "05:45",
+      "arrival_time": "14:00",
+      "duration": "13:52",
+      "date": "2025-10-30",
+      "seat_types": {
+        "business_class": "无",
+        "first_class": "有",
+        "second_class": "有",
+        "soft_sleeper": "有",
+        "hard_sleeper": "少量",
+        "hard_seat": "有"
+      },
+      "prices": {
+        "business_class": 755.7,
+        "first_class": 525.16,
+        "second_class": 355.81,
+        "soft_sleeper": 259.13,
+        "hard_sleeper": 182.31,
+        "hard_seat": 100.88
+      },
+      "available_seats": {
+        "business_class": 15,
+        "first_class": 23,
+        "second_class": 79,
+        "soft_sleeper": 13,
+        "hard_sleeper": 22,
+        "hard_seat": 104
+      }
+    },
+    {
+      "train_number": "C5858",
+      "departure_station": "广州",
+      "arrival_station": "重庆",
+      "departure_time": "11:30",
+      "arrival_time": "13:30",
+      "duration": "05:50",
+      "date": "2025-11-02",
+      "seat_types": {
+        "business_class": "有",
+        "first_class": "有",
+        "second_class": "有",
+        "soft_sleeper": "少量",
+        "hard_sleeper": "有",
+        "hard_seat": "有"
+      },
+      "prices": {
+        "business_class": 975.31,
+        "first_class": 800.5,
+        "second_class": 462.39,
+        "soft_sleeper": 344.25,
+        "hard_sleeper": 258.92,
+        "hard_seat": 135.78
+      },
+      "available_seats": {
+        "business_class": 10,
+        "first_class": 13,
+        "second_class": 156,
+        "soft_sleeper": 28,
+        "hard_sleeper": 50,
+        "hard_seat": 391
+      }
+    },
+    {
+      "train_number": "T6222",
+      "departure_station": "西安",
+      "arrival_station": "广州",
+      "departure_time": "09:00",
+      "arrival_time": "14:45",
+      "duration": "10:16",
+      "date": "2025-10-31",
+      "seat_types": {
+        "business_class": "少量",
+        "first_class": "有",
+        "second_class": "有",
+        "soft_sleeper": "有",
+        "hard_sleeper": "有",
+        "hard_seat": "少量"
+      },
+      "prices": {
+        "business_class": 857.97,
+        "first_class": 671.5,
+        "second_class": 445.97,
+        "soft_sleeper": 302.48,
+        "hard_sleeper": 232.89,
+        "hard_seat": 114.68
+      },
+      "available_seats": {
+        "business_class": 8,
+        "first_class": 23,
+        "second_class": 113,
+        "soft_sleeper": 25,
+        "hard_sleeper": 42,
+        "hard_seat": 297
+      }
+    },
+    {
+      "train_number": "T0895",
+      "departure_station": "广州",
+      "arrival_station": "成都",
+      "departure_time": "04:15",
+      "arrival_time": "20:45",
+      "duration": "10:05",
+      "date": "2025-11-24",
+      "seat_types": {
+        "business_class": "有",
+        "first_class": "无",
+        "second_class": "有",
+        "soft_sleeper": "有",
+        "hard_sleeper": "有",
+        "hard_seat": "有"
+      },
+      "prices": {
+        "business_class": 849.06,
+        "first_class": 615.13,
+        "second_class": 446.94,
+        "soft_sleeper": 288.66,
+        "hard_sleeper": 207.8,
+        "hard_seat": 106.61
+      },
+      "available_seats": {
+        "business_class": 7,
+        "first_class": 37,
+        "second_class": 177,
+        "soft_sleeper": 24,
+        "hard_sleeper": 40,
+        "hard_seat": 160
+      }
+    },
+    {
+      "train_number": "G6610",
+      "departure_station": "西安",
+      "arrival_station": "北京",
+      "departure_time": "10:00",
+      "arrival_time": "20:00",
+      "duration": "04:08",
+      "date": "2025-11-22",
+      "seat_types": {
+        "business_class": "有",
+        "first_class": "有",
+        "second_class": "有",
+        "soft_sleeper": "有",
+        "hard_sleeper": "有",
+        "hard_seat": "有"
+      },
+      "prices": {
+        "business_class": 1352.03,
+        "first_class": 904.81,
+        "second_class": 564.87,
+        "soft_sleeper": 439.34,
+        "hard_sleeper": 307.26,
+        "hard_seat": 156.9
+      },
+      "available_seats": {
+        "business_class": 20,
+        "first_class": 32,
+        "second_class": 143,
+        "soft_sleeper": 24,
+        "hard_sleeper": 27,
+        "hard_seat": 149
+      }
+    },
+    {
+      "train_number": "C5819",
+      "departure_station": "深圳",
+      "arrival_station": "北京",
+      "departure_time": "08:30",
+      "arrival_time": "13:00",
+      "duration": "10:27",
+      "date": "2025-11-12",
+      "seat_types": {
+        "business_class": "有",
+        "first_class": "无",
+        "second_class": "无",
+        "soft_sleeper": "有",
+        "hard_sleeper": "有",
+        "hard_seat": "有"
+      },
+      "prices": {
+        "business_class": 2027.49,
+        "first_class": 1370.16,
+        "second_class": 925.41,
+        "soft_sleeper": 739.48,
+        "hard_sleeper": 486.95,
+        "hard_seat": 215.05
+      },
+      "available_seats": {
+        "business_class": 18,
+        "first_class": 11,
+        "second_class": 200,
+        "soft_sleeper": 13,
+        "hard_sleeper": 48,
+        "hard_seat": 334
+      }
+    },
+    {
+      "train_number": "D8173",
+      "departure_station": "重庆",
+      "arrival_station": "成都",
+      "departure_time": "04:00",
+      "arrival_time": "20:45",
+      "duration": "01:53",
+      "date": "2025-11-12",
+      "seat_types": {
+        "business_class": "少量",
+        "first_class": "无",
+        "second_class": "少量",
+        "soft_sleeper": "有",
+        "hard_sleeper": "有",
+        "hard_seat": "少量"
+      },
+      "prices": {
+        "business_class": 285.08,
+        "first_class": 239.54,
+        "second_class": 158.1,
+        "soft_sleeper": 111.97,
+        "hard_sleeper": 83.31,
+        "hard_seat": 38.07
+      },
+      "available_seats": {
+        "business_class": 12,
+        "first_class": 18,
+        "second_class": 151,
+        "soft_sleeper": 20,
+        "hard_sleeper": 38,
+        "hard_seat": 331
+      }
+    },
+    {
+      "train_number": "Z9872",
+      "departure_station": "广州",
+      "arrival_station": "重庆",
+      "departure_time": "12:30",
+      "arrival_time": "20:30",
+      "duration": "07:04",
+      "date": "2025-11-26",
+      "seat_types": {
+        "business_class": "有",
+        "first_class": "有",
+        "second_class": "有",
+        "soft_sleeper": "无",
+        "hard_sleeper": "有",
+        "hard_seat": "少量"
+      },
+      "prices": {
+        "business_class": 765.02,
+        "first_class": 645.32,
+        "second_class": 452.08,
+        "soft_sleeper": 289.68,
+        "hard_sleeper": 208.17,
+        "hard_seat": 106.04
+      },
+      "available_seats": {
+        "business_class": 8,
+        "first_class": 34,
+        "second_class": 140,
+        "soft_sleeper": 27,
+        "hard_sleeper": 50,
+        "hard_seat": 398
+      }
+    },
+    {
+      "train_number": "K8748",
+      "departure_station": "重庆",
+      "arrival_station": "武汉",
+      "departure_time": "08:45",
+      "arrival_time": "12:00",
+      "duration": "07:27",
+      "date": "2025-11-01",
+      "seat_types": {
+        "business_class": "有",
+        "first_class": "有",
+        "second_class": "有",
+        "soft_sleeper": "无",
+        "hard_sleeper": "少量",
+        "hard_seat": "有"
+      },
+      "prices": {
+        "business_class": 387.28,
+        "first_class": 285.19,
+        "second_class": 220.23,
+        "soft_sleeper": 147.03,
+        "hard_sleeper": 105.05,
+        "hard_seat": 50.62
+      },
+      "available_seats": {
+        "business_class": 19,
+        "first_class": 13,
+        "second_class": 193,
+        "soft_sleeper": 17,
+        "hard_sleeper": 55,
+        "hard_seat": 299
+      }
+    },
+    {
+      "train_number": "K4713",
+      "departure_station": "深圳",
+      "arrival_station": "成都",
+      "departure_time": "04:45",
+      "arrival_time": "18:45",
+      "duration": "12:37",
+      "date": "2025-11-18",
+      "seat_types": {
+        "business_class": "有",
+        "first_class": "有",
+        "second_class": "有",
+        "soft_sleeper": "有",
+        "hard_sleeper": "有",
+        "hard_seat": "无"
+      },
+      "prices": {
+        "business_class": 733.49,
+        "first_class": 546.01,
+        "second_class": 369.57,
+        "soft_sleeper": 266.58,
+        "hard_sleeper": 175.78,
+        "hard_seat": 89.72
+      },
+      "available_seats": {
+        "business_class": 11,
+        "first_class": 34,
+        "second_class": 99,
+        "soft_sleeper": 19,
+        "hard_sleeper": 48,
+        "hard_seat": 190
+      }
+    },
+    {
+      "train_number": "D8419",
+      "departure_station": "上海",
+      "arrival_station": "广州",
+      "departure_time": "05:45",
+      "arrival_time": "12:45",
+      "duration": "05:29",
+      "date": "2025-11-05",
+      "seat_types": {
+        "business_class": "有",
+        "first_class": "有",
+        "second_class": "有",
+        "soft_sleeper": "有",
+        "hard_sleeper": "无",
+        "hard_seat": "有"
+      },
+      "prices": {
+        "business_class": 1239.22,
+        "first_class": 963.15,
+        "second_class": 605.92,
+        "soft_sleeper": 542.47,
+        "hard_sleeper": 340.56,
+        "hard_seat": 171.82
+      },
+      "available_seats": {
+        "business_class": 20,
+        "first_class": 35,
+        "second_class": 196,
+        "soft_sleeper": 27,
+        "hard_sleeper": 42,
+        "hard_seat": 137
+      }
+    },
+    {
+      "train_number": "D3013",
+      "departure_station": "南京",
+      "arrival_station": "成都",
+      "departure_time": "12:00",
+      "arrival_time": "20:15",
+      "duration": "07:01",
+      "date": "2025-11-14",
+      "seat_types": {
+        "business_class": "有",
+        "first_class": "有",
+        "second_class": "少量",
+        "soft_sleeper": "有",
+        "hard_sleeper": "有",
+        "hard_seat": "有"
+      },
+      "prices": {
+        "business_class": 1863.01,
+        "first_class": 1312.14,
+        "second_class": 850.25,
+        "soft_sleeper": 648.77,
+        "hard_sleeper": 448.82,
+        "hard_seat": 220.02
+      },
+      "available_seats": {
+        "business_class": 8,
+        "first_class": 31,
+        "second_class": 138,
+        "soft_sleeper": 24,
+        "hard_sleeper": 35,
+        "hard_seat": 224
+      }
+    },
+    {
+      "train_number": "Z1858",
+      "departure_station": "北京",
+      "arrival_station": "南京",
+      "departure_time": "10:30",
+      "arrival_time": "20:30",
+      "duration": "05:54",
+      "date": "2025-11-13",
+      "seat_types": {
+        "business_class": "少量",
+        "first_class": "有",
+        "second_class": "少量",
+        "soft_sleeper": "有",
+        "hard_sleeper": "有",
+        "hard_seat": "少量"
+      },
+      "prices": {
+        "business_class": 683.36,
+        "first_class": 547.62,
+        "second_class": 396.71,
+        "soft_sleeper": 254.89,
+        "hard_sleeper": 198.65,
+        "hard_seat": 91.71
+      },
+      "available_seats": {
+        "business_class": 5,
+        "first_class": 30,
+        "second_class": 66,
+        "soft_sleeper": 16,
+        "hard_sleeper": 60,
+        "hard_seat": 209
+      }
+    },
+    {
+      "train_number": "D8811",
+      "departure_station": "武汉",
+      "arrival_station": "上海",
+      "departure_time": "10:00",
+      "arrival_time": "14:00",
+      "duration": "03:40",
+      "date": "2025-11-07",
+      "seat_types": {
+        "business_class": "有",
+        "first_class": "有",
+        "second_class": "有",
+        "soft_sleeper": "有",
+        "hard_sleeper": "有",
+        "hard_seat": "少量"
+      },
+      "prices": {
+        "business_class": 899.05,
+        "first_class": 611.56,
+        "second_class": 411.32,
+        "soft_sleeper": 305.58,
+        "hard_sleeper": 200.06,
+        "hard_seat": 101.55
+      },
+      "available_seats": {
+        "business_class": 8,
+        "first_class": 27,
+        "second_class": 51,
+        "soft_sleeper": 30,
+        "hard_sleeper": 59,
+        "hard_seat": 132
+      }
+    },
+    {
+      "train_number": "K1190",
+      "departure_station": "重庆",
+      "arrival_station": "北京",
+      "departure_time": "09:00",
+      "arrival_time": "16:30",
+      "duration": "13:46",
+      "date": "2025-11-06",
+      "seat_types": {
+        "business_class": "无",
+        "first_class": "有",
+        "second_class": "有",
+        "soft_sleeper": "有",
+        "hard_sleeper": "有",
+        "hard_seat": "有"
+      },
+      "prices": {
+        "business_class": 705.78,
+        "first_class": 558.41,
+        "second_class": 403.21,
+        "soft_sleeper": 288.04,
+        "hard_sleeper": 207.79,
+        "hard_seat": 88.37
+      },
+      "available_seats": {
+        "business_class": 16,
+        "first_class": 40,
+        "second_class": 52,
+        "soft_sleeper": 27,
+        "hard_sleeper": 55,
+        "hard_seat": 172
+      }
+    }
+  ]
+}

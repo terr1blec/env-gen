@@ -1,0 +1,85 @@
+{
+  "description": "中国铁路12306火车票查询服务端，提供基于离线数据库的火车票查询功能",
+  "name": "chinarailway MCP 服务端",
+  "tools": [
+    {
+      "description": "查询12306火车票",
+      "input_schema": {
+        "properties": {
+          "date": {
+            "description": "出发日期 (YYYY-MM-DD格式)",
+            "type": "string"
+          },
+          "from_station": {
+            "description": "出发站名称",
+            "type": "string"
+          },
+          "to_station": {
+            "description": "到达站名称",
+            "type": "string"
+          }
+        },
+        "required": [
+          "from_station",
+          "to_station",
+          "date"
+        ],
+        "type": "object"
+      },
+      "name": "search",
+      "output_schema": {
+        "properties": {
+          "trains": {
+            "items": {
+              "properties": {
+                "arrival_station": {
+                  "description": "到达站",
+                  "type": "string"
+                },
+                "arrival_time": {
+                  "description": "到达时间",
+                  "type": "string"
+                },
+                "available_seats": {
+                  "description": "各座位类型可用座位数",
+                  "type": "object"
+                },
+                "date": {
+                  "description": "出发日期",
+                  "type": "string"
+                },
+                "departure_station": {
+                  "description": "出发站",
+                  "type": "string"
+                },
+                "departure_time": {
+                  "description": "出发时间",
+                  "type": "string"
+                },
+                "duration": {
+                  "description": "运行时长",
+                  "type": "string"
+                },
+                "prices": {
+                  "description": "各座位类型价格",
+                  "type": "object"
+                },
+                "seat_types": {
+                  "description": "座位类型及可用状态",
+                  "type": "object"
+                },
+                "train_number": {
+                  "description": "车次号",
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            },
+            "type": "array"
+          }
+        },
+        "type": "object"
+      }
+    }
+  ]
+}

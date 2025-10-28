@@ -1,0 +1,74 @@
+# MCP Workflow Default Configuration
+
+execution:
+  python_timeout_seconds: 180.0
+  allowed_modules:
+    - pytest
+  max_turns_per_agent: 20
+
+review:
+  max_review_cycles: 5
+  database_keywords:
+    - database
+    - dataset
+    - data contract
+  negative_indicators:
+    - mismatch
+    - issue
+    - problem
+    - needs
+    - fix
+    - update
+    - incorrect
+    - missing
+    - violation
+    - inconsistent
+    - error
+
+directories:
+  output_dir_name: generated
+  tests_dir_name: tests
+  transcripts_dir_name: transcripts
+  logs_dir_name: logs
+  sample_data_dir_name: sample_data
+
+file_naming:
+  server_suffix: _server.py
+  database_suffix: _database.py
+  database_json_suffix: _database.json
+  metadata_suffix: _metadata.json
+  log_file_pattern: workflow_{timestamp}.log
+
+logging:
+  level: INFO
+  format: "%(asctime)s - %(levelname)s - %(message)s"
+  date_format: "%Y-%m-%d %H:%M:%S"
+  console_enabled: true
+  file_enabled: true
+
+model:
+  default_model: deepseek/deepseek-chat
+  default_base_url: https://api.deepseek.com
+  api_key_env_vars:
+    - DEEPSEEK_API_KEY
+    - LITELLM_API_KEY
+    - API_KEY
+  base_url_env_vars:
+    - DEEPSEEK_BASE_URL
+    - LITELLM_BASE_URL
+    - BASE_URL
+
+validation:
+  strict_sample_validation: true
+  allow_extra_fields: false
+  require_data_contract: true
+  metadata_top_level_keys:
+    - name
+    - description
+    - tools
+  # Validation failure handling strategy
+  on_validation_failure: feedback  # 'fail', 'feedback', or 'warning'
+  allow_missing_tools: true # Allow metadata to miss some expected tools
+  allow_extra_tools: false    # Allow metadata to have extra tools
+  max_validation_feedback_items: 10
+

@@ -1,0 +1,409 @@
+{
+  "description": "Offline travel and logistics server providing routing, geocoding, POI search, and optimization tools using local database",
+  "name": "GeoPal Travel and Logistics Server",
+  "tools": [
+    {
+      "description": "Get directions between two locations",
+      "input_schema": {
+        "properties": {
+          "end": {
+            "description": "Destination coordinates [longitude, latitude]",
+            "items": {
+              "type": "number"
+            },
+            "type": "array"
+          },
+          "profile": {
+            "description": "Transportation profile (driving, cycling, walking, truck)",
+            "type": "string"
+          },
+          "start": {
+            "description": "Starting coordinates [longitude, latitude]",
+            "items": {
+              "type": "number"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "start",
+          "end"
+        ],
+        "type": "object"
+      },
+      "name": "get_directions",
+      "output_schema": {
+        "properties": {
+          "distance": {
+            "description": "Total distance in meters",
+            "type": "number"
+          },
+          "duration": {
+            "description": "Total duration in seconds",
+            "type": "number"
+          },
+          "geometry": {
+            "description": "Route geometry as GeoJSON LineString",
+            "type": "object"
+          },
+          "profile": {
+            "description": "Transportation profile used",
+            "type": "string"
+          }
+        },
+        "type": "object"
+      }
+    },
+    {
+      "description": "Geocode an address to get coordinates",
+      "input_schema": {
+        "properties": {
+          "address": {
+            "description": "Address or location query to geocode",
+            "type": "string"
+          }
+        },
+        "required": [
+          "address"
+        ],
+        "type": "object"
+      },
+      "name": "geocode_address",
+      "output_schema": {
+        "properties": {
+          "confidence": {
+            "description": "Geocoding confidence score",
+            "type": "number"
+          },
+          "coordinates": {
+            "description": "Geocoded coordinates [longitude, latitude]",
+            "items": {
+              "type": "number"
+            },
+            "type": "array"
+          },
+          "properties": {
+            "description": "Additional location properties",
+            "type": "object"
+          }
+        },
+        "type": "object"
+      }
+    },
+    {
+      "description": "Generate isochrones (travel time polygons) from a location",
+      "input_schema": {
+        "properties": {
+          "location": {
+            "description": "Starting coordinates [longitude, latitude]",
+            "items": {
+              "type": "number"
+            },
+            "type": "array"
+          },
+          "profile": {
+            "description": "Transportation profile (driving, cycling, walking)",
+            "type": "string"
+          },
+          "ranges": {
+            "description": "Time ranges in seconds for isochrone generation",
+            "items": {
+              "type": "number"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "location"
+        ],
+        "type": "object"
+      },
+      "name": "get_isochrones",
+      "output_schema": {
+        "properties": {
+          "location": {
+            "description": "Starting location",
+            "items": {
+              "type": "number"
+            },
+            "type": "array"
+          },
+          "polygons": {
+            "description": "Isochrone polygons for each range",
+            "type": "array"
+          },
+          "profile": {
+            "description": "Transportation profile used",
+            "type": "string"
+          },
+          "ranges": {
+            "description": "Time ranges used",
+            "items": {
+              "type": "number"
+            },
+            "type": "array"
+          }
+        },
+        "type": "object"
+      }
+    },
+    {
+      "description": "Get points of interest near a location",
+      "input_schema": {
+        "properties": {
+          "buffer": {
+            "description": "Search radius in meters",
+            "type": "integer"
+          },
+          "filters": {
+            "description": "Filter criteria for POI categories",
+            "type": "object"
+          },
+          "limit": {
+            "description": "Maximum number of POIs to return",
+            "type": "integer"
+          },
+          "location": {
+            "description": "Center coordinates [longitude, latitude]",
+            "items": {
+              "type": "number"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "location"
+        ],
+        "type": "object"
+      },
+      "name": "get_pois",
+      "output_schema": {
+        "properties": {
+          "buffer": {
+            "description": "Search radius used",
+            "type": "integer"
+          },
+          "count": {
+            "description": "Number of POIs found",
+            "type": "integer"
+          },
+          "features": {
+            "description": "POI features with properties and geometry",
+            "type": "array"
+          },
+          "location": {
+            "description": "Center location",
+            "items": {
+              "type": "number"
+            },
+            "type": "array"
+          }
+        },
+        "type": "object"
+      }
+    },
+    {
+      "description": "Get names of points of interest near a location",
+      "input_schema": {
+        "properties": {
+          "buffer": {
+            "description": "Search radius in meters",
+            "type": "integer"
+          },
+          "limit": {
+            "description": "Maximum number of POI names to return",
+            "type": "integer"
+          },
+          "location": {
+            "description": "Center coordinates [longitude, latitude]",
+            "items": {
+              "type": "number"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "location"
+        ],
+        "type": "object"
+      },
+      "name": "get_poi_names",
+      "output_schema": {
+        "properties": {
+          "buffer": {
+            "description": "Search radius used",
+            "type": "integer"
+          },
+          "count": {
+            "description": "Number of POI names found",
+            "type": "integer"
+          },
+          "location": {
+            "description": "Center location",
+            "items": {
+              "type": "number"
+            },
+            "type": "array"
+          },
+          "poi_names": {
+            "description": "List of POI names with basic information",
+            "type": "array"
+          }
+        },
+        "type": "object"
+      }
+    },
+    {
+      "description": "Optimize vehicle routing for deliveries and pickups",
+      "input_schema": {
+        "properties": {
+          "jobs": {
+            "description": "List of delivery jobs with locations and requirements",
+            "type": "array"
+          },
+          "shipments": {
+            "description": "List of shipments with pickup/delivery pairs",
+            "type": "array"
+          },
+          "vehicles": {
+            "description": "List of available vehicles with capacities",
+            "type": "array"
+          }
+        },
+        "required": [
+          "jobs",
+          "vehicles"
+        ],
+        "type": "object"
+      },
+      "name": "optimize_vehicle_routes",
+      "output_schema": {
+        "properties": {
+          "routes": {
+            "description": "Optimized routes for each vehicle",
+            "type": "array"
+          },
+          "total_distance": {
+            "description": "Total distance of all routes",
+            "type": "number"
+          },
+          "total_time": {
+            "description": "Total time of all routes",
+            "type": "number"
+          }
+        },
+        "type": "object"
+      }
+    },
+    {
+      "description": "Create a simple delivery problem for optimization",
+      "input_schema": {
+        "properties": {
+          "deliveries": {
+            "description": "List of delivery locations [longitude, latitude]",
+            "items": {
+              "items": {
+                "type": "number"
+              },
+              "type": "array"
+            },
+            "type": "array"
+          },
+          "start_location": {
+            "description": "Starting location for the vehicle",
+            "items": {
+              "type": "number"
+            },
+            "type": "array"
+          },
+          "vehicle_capacity": {
+            "description": "Vehicle capacity for deliveries",
+            "type": "integer"
+          }
+        },
+        "required": [
+          "deliveries"
+        ],
+        "type": "object"
+      },
+      "name": "create_simple_delivery_problem",
+      "output_schema": {
+        "properties": {
+          "jobs": {
+            "description": "Formatted delivery jobs",
+            "type": "array"
+          },
+          "problem_type": {
+            "description": "Type of optimization problem",
+            "type": "string"
+          },
+          "vehicles": {
+            "description": "Formatted vehicle definitions",
+            "type": "array"
+          }
+        },
+        "type": "object"
+      }
+    },
+    {
+      "description": "Solve traveling salesman problem for optimal route through locations",
+      "input_schema": {
+        "properties": {
+          "locations": {
+            "description": "List of locations to visit [longitude, latitude]",
+            "items": {
+              "items": {
+                "type": "number"
+              },
+              "type": "array"
+            },
+            "type": "array"
+          },
+          "return_to_start": {
+            "description": "Whether to return to starting location",
+            "type": "boolean"
+          },
+          "start_location": {
+            "description": "Starting location (defaults to first location)",
+            "items": {
+              "type": "number"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "locations"
+        ],
+        "type": "object"
+      },
+      "name": "optimize_traveling_salesman",
+      "output_schema": {
+        "properties": {
+          "return_to_start": {
+            "description": "Whether route returns to start",
+            "type": "boolean"
+          },
+          "route": {
+            "description": "Optimized route sequence",
+            "items": {
+              "items": {
+                "type": "number"
+              },
+              "type": "array"
+            },
+            "type": "array"
+          },
+          "total_distance": {
+            "description": "Total distance of optimized route",
+            "type": "number"
+          },
+          "total_time": {
+            "description": "Total time of optimized route",
+            "type": "number"
+          }
+        },
+        "type": "object"
+      }
+    }
+  ]
+}

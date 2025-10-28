@@ -1,18 +1,25 @@
 from __future__ import annotations
 
+import ast
 import json
 import re
-from dataclasses import dataclass
+import time
+from dataclasses import dataclass, field
+from pathlib import Path
 from textwrap import dedent
-from typing import Any, Dict, List
+from typing import Any, Dict, List, Set, Optional
 
 from agents import Runner
 from agents.items import ToolCallItem, ToolCallOutputItem
 from agents.run import RunConfig
+from agents.exceptions import ModelBehaviorError
 
 from .agents import AgentSuite
 from .context import WorkflowContext
+from .config import WorkflowConfig
 from .logging_utils import get_workflow_logger
+from .observability import ObservabilityTracker
+from .progress import StageStatus
 
 
 @dataclass
@@ -20,6 +27,24 @@ class StepResult:
     name: str
     description: str
     output: str
+    success: bool = True
+
+def _get_stage_id_from_step_name(step_name: str) -> str:
+    """Map step name to stage ID for progress tracking."""
+    if "schema_planning" in step_name:
+        return "planning"
+    elif "database_generation" in step_name:
+        return "database_gen"
+    elif "database_sampling" in step_name or "database_executor" in step_name:
+        return "database_exec"
+    elif "server_generation" in step_name:
+        return "server_gen"
+    elif "code_review" in step_name or "review" in step_name:
+        return "review"
+    elif "integration_tests" in step_name or "test" in step_name:
+        return "testing"
+    return "unknown"
+
 
 async def _run_agent_step(
     *,
@@ -29,9 +54,33 @@ async def _run_agent_step(
     context: WorkflowContext,
     max_turns: int,
     workflow_slug: str,
+    tracker: Optional[ObservabilityTracker] = None,
+    cycle: Optional[int] = None,
 ) -> StepResult:
     logger = get_workflow_logger()
     run_config = RunConfig(workflow_name=f"offline-mcp::{workflow_slug}::{name}")
+
+    # Get progress tracker from context if available
+    progress = getattr(context, '_progress', None)
+    stage_id = _get_stage_id_from_step_name(name)
+    
+    # Update progress: starting stage
+    if progress:
+        progress.update_stage(
+            stage_id=stage_id,
+            status=StageStatus.IN_PROGRESS,
+            message=f"Starting {agent.name}",
+            cycle=cycle,
+        )
+
+    # Record agent start
+    if tracker:
+        tracker.start_agent(
+            agent_name=agent.name,
+            step_name=name,
+            cycle=cycle,
+            prompt=prompt,
+        )
 
     logger.info(
         "[%s] starting (max_turns=%s). Prompt: %s",
@@ -39,6 +88,8 @@ async def _run_agent_step(
         max_turns,
         prompt.strip(),
     )
+    
+    success = True
     try:
         result = await Runner.run(
             agent,
@@ -47,8 +98,45 @@ async def _run_agent_step(
             run_config=run_config,
             max_turns=max_turns,
         )
+    except ModelBehaviorError as exc:
+        success = False
+        error_msg = str(exc)
+        logger.warning("[%s] model behavior warning: %s", name, error_msg)
+
+        if tracker:
+            tracker.record_note(
+                message=f"Model behavior warning in {name}: {error_msg}",
+                metadata={"agent": agent.name},
+            )
+
+        _record_model_behavior_warning(context, name, error_msg)
+
+        short_msg = error_msg[:60]
+        if progress:
+            progress.update_stage(
+                stage_id=stage_id,
+                status=StageStatus.IN_PROGRESS,
+                message=f"Warning: {short_msg}",
+                cycle=cycle,
+            )
+
+        return StepResult(
+            name=name,
+            description=prompt,
+            output=f"WARNING: {error_msg}",
+            success=False,
+        )
     except Exception as exc:
+        success = False
         logger.exception("[%s] failed with error", name)
+        if tracker:
+            tracker.record_error(exc, step_name=name)
+        if progress:
+            progress.update_stage(
+                stage_id=stage_id,
+                status=StageStatus.FAILED,
+                message=f"Error: {str(exc)[:50]}",
+            )
         raise
 
     output_text = result.final_output if result.final_output is not None else "(no final output)"
@@ -57,8 +145,27 @@ async def _run_agent_step(
         name,
         output_text,
     )
-    _log_tool_activity(name, result)
-    return StepResult(name=name, description=prompt, output=output_text.strip())
+    
+    # Log tool activity and record to tracker
+    _log_tool_activity(name, result, tracker, progress, stage_id)
+    
+    # Record agent completion
+    if tracker:
+        tracker.end_agent(
+            step_name=name,
+            output=output_text,
+            success=success,
+        )
+    
+    # Update progress: completed stage
+    if progress and "review" not in name:  # Review status updated separately
+        progress.update_stage(
+            stage_id=stage_id,
+            status=StageStatus.COMPLETED,
+            message="Done",
+        )
+    
+    return StepResult(name=name, description=prompt, output=output_text.strip(), success=success)
 
 
 async def execute_workflow(
@@ -67,9 +174,23 @@ async def execute_workflow(
     agents: AgentSuite,
     goal_prompt: str,
     max_turns: int,
+    config: WorkflowConfig | None = None,
+    tracker: Optional[ObservabilityTracker] = None,
 ) -> List[StepResult]:
     logger = get_workflow_logger()
     step_results: List[StepResult] = []
+    
+    # Use config from context if not provided
+    if config is None:
+        if context.config is not None:
+            config = context.config
+        else:
+            from .config import WorkflowConfig
+            config = WorkflowConfig()
+    
+    # Store config in context for other components
+    if context.config is None:
+        context.config = config
 
     database_module_rel = context.relative(context.database_module_path)
     database_json_rel = context.relative(context.database_json_path)
@@ -86,7 +207,7 @@ async def execute_workflow(
         Be explicit about offline database synthesis, server implementation, metadata JSON production, and testing requirements.
         You MUST record at least one `DATA CONTRACT` note that lists the exact offline database structure (top-level keys, important nested fields, and types) that all agents must follow—do not proceed without writing this note.
         Record open questions if expectations are unclear.
-        Document the required metadata JSON schema (tool name, description, input_schema, output_schema with `type`, `properties`, and `required`) so builders align on structure.
+        Document the required metadata JSON schema (tool name, description, input_schema with `type`, `properties`, and `required`, output_schema with `type`, `properties`) so builders align on structure.
         Return a succinct plan summary after confirming the DATA CONTRACT note exists.
         """
     ).strip()
@@ -98,17 +219,31 @@ async def execute_workflow(
             context=context,
             max_turns=max_turns,
             workflow_slug=context.slug,
+            tracker=tracker,
         )
     )
 
-    if not any(note.strip().upper().startswith("DATA CONTRACT") for note in context.notes):
-        raise RuntimeError(
-            "Schema planning must record a DATA CONTRACT note detailing the offline database structure before continuing."
-        )
-    context.data_contract = _load_data_contract(context)
+    if config.validation.require_data_contract:
+        if not any(note.strip().upper().startswith("DATA CONTRACT") for note in context.notes):
+            raise RuntimeError(
+                "Schema planning must record a DATA CONTRACT note detailing the offline database structure before continuing."
+            )
+    context.data_contract = _load_data_contract(context, config)
+
+    # Pre-run purge: remove any stray files in output dir not among canonical outputs
+    _purge_output_dir_unexpected(
+        context,
+        allowed={
+            context.database_module_path.resolve(),
+            context.database_json_path.resolve(),
+            context.server_module_path.resolve(),
+            context.metadata_json_path.resolve(),
+        },
+        note_label="PRE_RUN",
+    )
 
     review_feedback: str | None = None
-    max_review_cycles = 3
+    max_review_cycles = config.review.max_review_cycles
     needs_database_update = True
     for cycle in range(max_review_cycles):
         revision_suffix = ""
@@ -127,6 +262,11 @@ async def execute_workflow(
             )
 
         if needs_database_update:
+            parent_dir = context.database_module_path.parent
+            before_snapshot: Set[Path] = set()
+            if parent_dir.exists():
+                before_snapshot = {path.resolve() for path in parent_dir.iterdir()}
+
             database_instructions = dedent(
                 f"""
                 Generate or update the offline database synthesis module at `{database_module_rel}` and ensure it writes JSON to `{database_json_rel}`.
@@ -147,7 +287,36 @@ async def execute_workflow(
                     context=context,
                     max_turns=max_turns,
                     workflow_slug=context.slug,
+                    tracker=tracker,
+                    cycle=cycle + 1,
                 )
+            )
+
+            _detect_unexpected_artifacts(context, before_snapshot)
+
+            # Post-database-generation purge to catch any leftover or pre-existing extras
+            allowed_outputs = {
+                context.database_module_path.resolve(),
+                context.database_json_path.resolve(),
+                context.server_module_path.resolve(),
+                context.metadata_json_path.resolve(),
+            }
+
+            if not _ensure_update_database_function(context):
+                _purge_output_dir_unexpected(
+                    context,
+                    allowed=allowed_outputs,
+                    note_label="POST_DATABASE_GEN",
+                )
+                logger.warning(
+                    "Database module missing required update_database helper; queuing another generation cycle."
+                )
+                continue
+
+            _purge_output_dir_unexpected(
+                context,
+                allowed=allowed_outputs,
+                note_label="POST_DATABASE_GEN",
             )
 
             sampling_prompt = dedent(
@@ -165,9 +334,11 @@ async def execute_workflow(
                     context=context,
                     max_turns=max_turns,
                     workflow_slug=context.slug,
+                    tracker=tracker,
+                    cycle=cycle + 1,
                 )
             )
-            _validate_database_against_contract(context)
+            _validate_database_against_contract(context, config, tracker)
             needs_database_update = False
         else:
             logger.info(
@@ -190,17 +361,39 @@ async def execute_workflow(
             """
         ).strip()
         server_prompt = f"{server_instructions}{revision_suffix}"
-        step_results.append(
-            await _run_agent_step(
-                name=f"server_generation_cycle_{cycle + 1}",
-                agent=agents.server_builder,
-                prompt=server_prompt,
-                context=context,
-                max_turns=max_turns,
-                workflow_slug=context.slug,
-            )
+        server_result = await _run_agent_step(
+            name=f"server_generation_cycle_{cycle + 1}",
+            agent=agents.server_builder,
+            prompt=server_prompt,
+            context=context,
+            max_turns=max_turns,
+            workflow_slug=context.slug,
+            tracker=tracker,
+            cycle=cycle + 1,
         )
-        _validate_metadata_against_expected_tools(context)
+        step_results.append(server_result)
+
+        if not server_result.success:
+            logger.warning(
+                "[server_generation_cycle_%s] Server builder returned warning; skipping metadata validation this cycle.",
+                cycle + 1,
+            )
+        else:
+            _validate_metadata_against_expected_tools(context, config, tracker)
+
+        _ensure_recommended_paths_note(context)
+
+        # Post-server-generation purge to remove any extra helper files
+        _purge_output_dir_unexpected(
+            context,
+            allowed={
+                context.database_module_path.resolve(),
+                context.database_json_path.resolve(),
+                context.server_module_path.resolve(),
+                context.metadata_json_path.resolve(),
+            },
+            note_label="POST_SERVER_GEN",
+        )
 
         review_prompt = dedent(
             """
@@ -221,23 +414,62 @@ async def execute_workflow(
             context=context,
             max_turns=max_turns,
             workflow_slug=context.slug,
+            tracker=tracker,
+            cycle=cycle + 1,
         )
         step_results.append(review_result)
 
         verdict_text = review_result.output
+        new_feedback_items = _extract_review_feedback_items(verdict_text)
+        
+        # Get progress for status update
+        progress = getattr(context, '_progress', None)
+        
         if _is_approved(verdict_text):
             review_feedback = None
             logger.info("[code_review_cycle_%s] Review approved, proceeding.", cycle + 1)
+            
+            # Update progress: review completed
+            if progress:
+                progress.update_stage(
+                    stage_id="review",
+                    status=StageStatus.COMPLETED,
+                    message="Approved",
+                )
+            
+            # Record decision to tracker
+            if tracker:
+                tracker.record_decision(
+                    step_name=f"code_review_cycle_{cycle + 1}",
+                    decision="APPROVED",
+                    reasoning="Code review passed all checks",
+                )
             break
 
         review_feedback = verdict_text
-        new_feedback_items = _extract_review_feedback_items(verdict_text)
         _record_review_feedback_notes(context, new_feedback_items, verdict_text)
-        needs_database_update = _database_revision_requested(review_feedback)
+        needs_database_update = _database_revision_requested(new_feedback_items, review_feedback, config)
+        
         logger.info(
             "[code_review_cycle_%s] Review requested revisions; iterating...",
             cycle + 1,
         )
+        
+        # Update progress: revisions needed
+        if progress:
+            progress.update_stage(
+                stage_id="review",
+                status=StageStatus.IN_PROGRESS,
+                message=f"Revisions needed (cycle {cycle + 1})",
+            )
+        
+        # Record decision to tracker
+        if tracker:
+            tracker.record_decision(
+                step_name=f"code_review_cycle_{cycle + 1}",
+                decision="REVISIONS_NEEDED",
+                reasoning=f"Review cycle {cycle + 1} requested {len(new_feedback_items)} revisions",
+            )
     else:
         failure_message = "Code review did not pass after multiple iterations. Check review feedback notes for details."
         if review_feedback:
@@ -263,7 +495,20 @@ async def execute_workflow(
             context=context,
             max_turns=max_turns,
             workflow_slug=context.slug,
+            tracker=tracker,
         )
+    )
+
+    # Final purge to ensure the output directory is clean
+    _purge_output_dir_unexpected(
+        context,
+        allowed={
+            context.database_module_path.resolve(),
+            context.database_json_path.resolve(),
+            context.server_module_path.resolve(),
+            context.metadata_json_path.resolve(),
+        },
+        note_label="FINAL",
     )
 
     return step_results
@@ -291,10 +536,10 @@ def _extract_review_feedback_items(feedback: str) -> List[str]:
 def _format_revision_suffix(items: List[str], raw_feedback: str) -> str:
     if items:
         bullet_lines = "\n".join(f"{index + 1}. {item}" for index, item in enumerate(items))
-        return "\n\n最新的审查反馈，请逐项处理：\n" + bullet_lines + "\n"
+        return "\n\nThe latest review feedback, please handle each item one by one:\n" + bullet_lines + "\n"
     cleaned = raw_feedback.strip()
     if cleaned:
-        return "\n\n审查反馈：\n" + cleaned + "\n"
+        return "\n\nReview feedback:\n" + cleaned + "\n"
     return "\n"
 
 
@@ -312,43 +557,66 @@ def _record_review_feedback_notes(context: WorkflowContext, items: List[str], ra
             context.notes.append(note)
 
 
-def _database_revision_requested(feedback: str) -> bool:
-    lowered = feedback.lower()
-    if not any(term in lowered for term in ("database", "dataset", "data contract")):
-        return False
-    negative_indicators = [
-        "mismatch",
-        "issue",
-        "problem",
-        "needs",
-        "fix",
-        "update",
-        "incorrect",
-        "missing",
-        "violation",
-        "inconsistent",
-        "error",
-    ]
-    return any(indicator in lowered for indicator in negative_indicators)
+def _database_revision_requested(items: List[str], raw_feedback: str, config: WorkflowConfig) -> bool:
+    data_terms = tuple(config.review.database_keywords)
+    negative_indicators = tuple(config.review.negative_indicators)
+
+    def _mentions_data_issue(text: str) -> bool:
+        lowered = text.lower()
+        if not any(term in lowered for term in data_terms):
+            return False
+        return any(term in lowered for term in negative_indicators)
+
+    for item in items:
+        if _mentions_data_issue(item):
+            return True
+
+    for line in raw_feedback.splitlines():
+        if _mentions_data_issue(line):
+            return True
+
+    return False
 
 
 def _is_approved(feedback: str) -> bool:
+    # Prefer explicit first-line verdict if present
     for line in feedback.splitlines():
         clean = line.strip()
         if not clean:
             continue
-        while clean and clean[0] in "*_`-:> ":
-            clean = clean[1:]
-        if not clean:
-            continue
-        return clean.upper().startswith("APPROVED")
+        stripped = clean
+        while stripped and stripped[0] in "*_`-:> ":
+            stripped = stripped[1:]
+        upper = stripped.upper()
+        if upper.startswith("APPROVED"):
+            return True
+        if upper.startswith("REVISIONS_NEEDED"):
+            return False
+        # keep scanning subsequent lines
+    # Fallback: scan entire text for clear approval signal
+    text_upper = feedback.upper()
+    if "APPROVED" in text_upper:
+        return True
+    if "REVISIONS_NEEDED" in text_upper:
+        return False
     return False
 
 
-def _log_tool_activity(step_name: str, result) -> None:
+def _log_tool_activity(
+    step_name: str,
+    result,
+    tracker: Optional[ObservabilityTracker] = None,
+    progress=None,
+    stage_id: Optional[str] = None,
+) -> None:
     logger = get_workflow_logger()
     tool_calls: list[str] = []
     tool_outputs: list[str] = []
+
+    # Get agent name from result if available
+    agent_name = getattr(result, "agent_name", "unknown")
+    if hasattr(result, "agent") and hasattr(result.agent, "name"):
+        agent_name = result.agent.name
 
     for item in getattr(result, "new_items", []):
         if isinstance(item, ToolCallItem):
@@ -359,12 +627,42 @@ def _log_tool_activity(step_name: str, result) -> None:
             if not name:
                 name = getattr(item.raw_item, "type", "unknown")
             tool_calls.append(str(name))
+            
+            # Record to progress
+            if progress and stage_id:
+                progress.record_tool_call(agent_name, str(name), stage_id)
+            
+            # Record to tracker
+            if tracker:
+                # Extract arguments if available
+                args = {}
+                if function and hasattr(function, "arguments"):
+                    try:
+                        import json
+                        args = json.loads(function.arguments)
+                    except:
+                        args = {"raw": str(function.arguments)[:100]}
+                
+                call_start = tracker.record_tool_call(
+                    step_name=step_name,
+                    tool_name=str(name),
+                    tool_args=args,
+                )
         elif isinstance(item, ToolCallOutputItem):
             tool_name = getattr(item.raw_item, "call_id", None)
             summary = item.output
             if isinstance(summary, dict):
                 summary = summary.get("result") or summary.get("message") or "dict"
             tool_outputs.append(f"{tool_name or 'tool'} -> {summary}")
+            
+            # Record result to tracker (we don't have the exact start time here, so using current time)
+            if tracker and tool_calls:
+                tracker.record_tool_result(
+                    step_name=step_name,
+                    tool_name=tool_calls[-1] if tool_calls else "unknown",
+                    result=summary,
+                    start_time=time.time(),  # Approximate
+                )
 
     if tool_calls:
         logger.info("[%s] tool calls: %s", step_name, ", ".join(tool_calls))
@@ -375,7 +673,7 @@ def _log_tool_activity(step_name: str, result) -> None:
         logger.info("[%s] tool outputs: %s", step_name, "; ".join(tool_outputs))
 
 
-def _load_data_contract(context: WorkflowContext) -> Dict[str, Any]:
+def _load_data_contract(context: WorkflowContext, config: WorkflowConfig) -> Dict[str, Any]:
     if context.data_contract:
         return context.data_contract
 
@@ -387,7 +685,10 @@ def _load_data_contract(context: WorkflowContext) -> Dict[str, Any]:
         _, _, payload = stripped.partition(":")
         payload = payload.strip()
         if not payload:
-            raise RuntimeError("DATA CONTRACT note is present but empty.")
+            if config.validation.require_data_contract:
+                raise RuntimeError("DATA CONTRACT note is present but empty.")
+            else:
+                return {}
         try:
             contract = json.loads(payload)
         except json.JSONDecodeError as exc:
@@ -397,35 +698,56 @@ def _load_data_contract(context: WorkflowContext) -> Dict[str, Any]:
         context.data_contract = contract
         logger.info("Loaded DATA CONTRACT with keys: %s", ", ".join(contract.keys()))
         return contract
-    raise RuntimeError("DATA CONTRACT note not found in planner output.")
+    
+    if config.validation.require_data_contract:
+        raise RuntimeError("DATA CONTRACT note not found in planner output.")
+    return {}
 
 
-def _validate_database_against_contract(context: WorkflowContext) -> None:
+def _validate_database_against_contract(
+    context: WorkflowContext,
+    config: WorkflowConfig,
+    tracker: Optional[ObservabilityTracker] = None,
+) -> None:
     logger = get_workflow_logger()
-    contract = _load_data_contract(context)
+    contract = _load_data_contract(context, config)
     database_path = context.database_json_path
+    
     if not database_path.exists():
-        raise RuntimeError(
-            f"Database JSON not found at {context.relative(database_path)} after database synthesis."
-        )
+        error_msg = f"Database JSON not found at {context.relative(database_path)} after database synthesis."
+        if tracker:
+            tracker.record_validation("database_contract", False, error_msg)
+        raise RuntimeError(error_msg)
+    
     try:
         database_data = json.loads(database_path.read_text(encoding="utf-8"))
     except json.JSONDecodeError as exc:
-        raise RuntimeError(
-            f"Database JSON at {context.relative(database_path)} is not valid JSON."
-        ) from exc
+        error_msg = f"Database JSON at {context.relative(database_path)} is not valid JSON."
+        if tracker:
+            tracker.record_validation("database_contract", False, error_msg)
+        raise RuntimeError(error_msg) from exc
 
     expected_keys = contract.get("top_level_keys")
+    if not expected_keys:
+        logger.warning("DATA CONTRACT does not specify top_level_keys, skipping key validation.")
+        if tracker:
+            tracker.record_validation("database_contract", True, "No top_level_keys in contract")
+        return
+    
     if not isinstance(expected_keys, list) or not all(isinstance(item, str) for item in expected_keys):
-        raise RuntimeError("DATA CONTRACT must include a string list under `top_level_keys`.")
+        error_msg = "DATA CONTRACT must include a string list under `top_level_keys`."
+        if tracker:
+            tracker.record_validation("database_contract", False, error_msg)
+        raise RuntimeError(error_msg)
 
     missing = sorted(key for key in expected_keys if key not in database_data)
     if missing:
-        raise RuntimeError(
-            "Database JSON is missing required DATA CONTRACT keys: " + ", ".join(missing)
-        )
+        error_msg = "Database JSON is missing required DATA CONTRACT keys: " + ", ".join(missing)
+        if tracker:
+            tracker.record_validation("database_contract", False, error_msg, {"missing_keys": missing})
+        raise RuntimeError(error_msg)
 
-    if context.sample_database_path and context.sample_database_path.exists():
+    if context.sample_database_path and context.sample_database_path.exists() and config.validation.strict_sample_validation:
         try:
             sample_data = json.loads(context.sample_database_path.read_text(encoding="utf-8"))
         except json.JSONDecodeError as exc:
@@ -451,37 +773,115 @@ def _validate_database_against_contract(context: WorkflowContext) -> None:
                         f"'{key}'."
                     )
 
+    if tracker:
+        tracker.record_validation(
+            "database_contract",
+            True,
+            f"Validated database JSON against DATA CONTRACT ({len(expected_keys)} keys)",
+            {"expected_keys": expected_keys},
+        )
+    
     logger.info(
         "Validated database JSON against DATA CONTRACT (%s top-level keys).",
         len(expected_keys),
     )
 
 
-def _validate_metadata_against_expected_tools(context: WorkflowContext) -> None:
+def _validate_metadata_against_expected_tools(
+    context: WorkflowContext,
+    config: WorkflowConfig,
+    tracker: Optional[ObservabilityTracker] = None,
+) -> None:
     logger = get_workflow_logger()
     metadata_path = context.metadata_json_path
+    
     if not metadata_path.exists():
-        raise RuntimeError(
-            f"Metadata JSON not found at {context.relative(metadata_path)} after server generation."
-        )
+        error_msg = f"Metadata JSON not found at {context.relative(metadata_path)} after server generation."
+        if tracker:
+            tracker.record_validation("metadata_tools", False, error_msg)
+        raise RuntimeError(error_msg)
 
     try:
         metadata = json.loads(metadata_path.read_text(encoding="utf-8"))
     except json.JSONDecodeError as exc:
+        error_msg = f"Metadata JSON at {context.relative(metadata_path)} is not valid JSON."
+        if tracker:
+            tracker.record_validation("metadata_tools", False, error_msg)
+        raise RuntimeError(error_msg) from exc
+
+    allowed_top_keys = set(config.validation.metadata_top_level_keys)
+    unexpected_top = sorted(set(metadata.keys()) - allowed_top_keys)
+    if unexpected_top:
         raise RuntimeError(
-            f"Metadata JSON at {context.relative(metadata_path)} is not valid JSON."
-        ) from exc
+            "Metadata JSON contains unexpected top-level fields: " + ", ".join(unexpected_top)
+        )
+
+    name_value = metadata.get("name")
+    if not isinstance(name_value, str):
+        raise RuntimeError("Metadata JSON `name` must be a string.")
+    if name_value != context.server_name:
+        raise RuntimeError(
+            f"Metadata JSON `name` must match the server name '{context.server_name}', but found '{name_value}'."
+        )
 
     tools = metadata.get("tools")
     if not isinstance(tools, list):
         raise RuntimeError("Metadata JSON must contain a `tools` list.")
 
-    observed_tool_names = {
-        tool.get("name")
-        for tool in tools
-        if isinstance(tool, dict) and tool.get("name")
-    }
+    observed_tool_names: Set[str] = set()
     expected_tool_names = {name for name in context.expected_tool_names if name}
+
+    for index, tool in enumerate(tools):
+        if not isinstance(tool, dict):
+            raise RuntimeError(f"Metadata tool entry #{index + 1} must be an object.")
+        if "inputSchema" in tool or "outputSchema" in tool:
+            raise RuntimeError(
+                "Metadata tool entries must use snake_case keys `input_schema` and `output_schema`."
+            )
+        required_tool_fields = {"name", "description", "input_schema", "output_schema"}
+        missing_fields = sorted(required_tool_fields - set(tool.keys()))
+        if missing_fields:
+            raise RuntimeError(
+                f"Metadata tool entry #{index + 1} is missing required fields: " + ", ".join(missing_fields)
+            )
+
+        tool_name = tool["name"]
+        if not isinstance(tool_name, str) or not tool_name:
+            raise RuntimeError(f"Metadata tool entry #{index + 1} must include a non-empty string `name`.")
+        observed_tool_names.add(tool_name)
+
+        description = tool["description"]
+        if not isinstance(description, str) or not description.strip():
+            raise RuntimeError(f"Metadata tool '{tool_name}' must include a non-empty string `description`.")
+
+        input_schema = tool["input_schema"]
+        if not isinstance(input_schema, dict):
+            raise RuntimeError(f"Metadata tool '{tool_name}' `input_schema` must be an object.")
+        if input_schema.get("type") != "object":
+            raise RuntimeError(f"Metadata tool '{tool_name}' `input_schema.type` must be 'object'.")
+        input_properties = input_schema.get("properties")
+        if not isinstance(input_properties, dict):
+            raise RuntimeError(f"Metadata tool '{tool_name}' `input_schema.properties` must be an object.")
+        required_inputs = input_schema.get("required", [])
+        if not isinstance(required_inputs, list) or not all(isinstance(item, str) for item in required_inputs):
+            raise RuntimeError(
+                f"Metadata tool '{tool_name}' `input_schema.required` must be a list of strings."
+            )
+        missing_required_props = sorted(name for name in required_inputs if name not in input_properties)
+        if missing_required_props:
+            raise RuntimeError(
+                f"Metadata tool '{tool_name}' marks missing properties as required: "
+                + ", ".join(missing_required_props)
+            )
+
+        output_schema = tool["output_schema"]
+        if not isinstance(output_schema, dict):
+            raise RuntimeError(f"Metadata tool '{tool_name}' `output_schema` must be an object.")
+        if output_schema.get("type") != "object":
+            raise RuntimeError(f"Metadata tool '{tool_name}' `output_schema.type` must be 'object'.")
+        output_properties = output_schema.get("properties")
+        if not isinstance(output_properties, dict):
+            raise RuntimeError(f"Metadata tool '{tool_name}' `output_schema.properties` must be an object.")
 
     missing = sorted(expected_tool_names - observed_tool_names)
     if missing:
@@ -496,9 +896,186 @@ def _validate_metadata_against_expected_tools(context: WorkflowContext) -> None:
             ", ".join(unexpected),
         )
 
+    if tracker:
+        tracker.record_validation(
+            "metadata_tools",
+            True,
+            f"Validated metadata tool coverage ({len(observed_tool_names)} tools)",
+            {
+                "expected_tools": list(expected_tool_names),
+                "observed_tools": list(observed_tool_names),
+            },
+        )
+    
     logger.info(
         "Validated metadata tool coverage (%s tools).",
         len(observed_tool_names),
     )
+
+
+def _detect_unexpected_artifacts(context: WorkflowContext, before_snapshot: Set[Path]) -> None:
+    parent_dir = context.database_module_path.parent
+    if not parent_dir.exists():
+        return
+
+    after_snapshot = {path.resolve() for path in parent_dir.iterdir()}
+    new_entries = after_snapshot - before_snapshot
+    allowed_outputs = {
+        context.database_module_path.resolve(),
+        context.database_json_path.resolve(),
+    }
+
+    unexpected = [
+        path for path in new_entries
+        if path not in allowed_outputs
+    ]
+
+    if not unexpected:
+        return
+
+    # Auto-cleanup: delete unexpected files (files only) and notify via shared notes
+    deleted: list[str] = []
+    skipped: list[str] = []
+    for path in unexpected:
+        try:
+            if path.is_file():
+                path.unlink(missing_ok=True)
+                deleted.append(context.relative(path))
+            else:
+                skipped.append(context.relative(path))
+        except Exception:
+            skipped.append(context.relative(path))
+
+    if deleted:
+        note = (
+            "ARTIFACT_CLEANUP: Deleted unexpected files created during database generation: "
+            + ", ".join(sorted(deleted))
+        )
+        if note not in context.notes:
+            context.notes.append(note)
+
+    if skipped:
+        note = (
+            "ARTIFACT_CLEANUP: Detected unexpected non-file entries (left untouched): "
+            + ", ".join(sorted(skipped))
+        )
+        if note not in context.notes:
+            context.notes.append(note)
+
+    # Do not fail the workflow; proceed after cleanup
+
+
+def _purge_output_dir_unexpected(
+    context: WorkflowContext,
+    *,
+    allowed: Set[Path],
+    note_label: str = "PURGE",
+) -> None:
+    """Delete any files in the output directory that are not in the allowed set.
+
+    - Only deletes files (not directories).
+    - Records a coordination note describing deletions and any items skipped.
+    """
+    parent_dir = context.database_module_path.parent
+    if not parent_dir.exists():
+        return
+
+    deleted: list[str] = []
+    skipped: list[str] = []
+    for entry in parent_dir.iterdir():
+        resolved = entry.resolve()
+        if resolved in allowed:
+            continue
+        try:
+            if entry.is_file():
+                entry.unlink(missing_ok=True)
+                deleted.append(context.relative(resolved))
+            else:
+                skipped.append(context.relative(resolved))
+        except Exception:
+            skipped.append(context.relative(resolved))
+
+    if deleted:
+        note = (
+            f"ARTIFACT_CLEANUP[{note_label}]: Deleted unexpected files: "
+            + ", ".join(sorted(deleted))
+        )
+        if note not in context.notes:
+            context.notes.append(note)
+
+    if skipped:
+        note = (
+            f"ARTIFACT_CLEANUP[{note_label}]: Detected non-file entries (left untouched): "
+            + ", ".join(sorted(skipped))
+        )
+        if note not in context.notes:
+            context.notes.append(note)
+
+
+def _ensure_recommended_paths_note(context: WorkflowContext) -> None:
+    marker = "RECOMMENDED_PATHS:"
+    if any(note.startswith(marker) for note in context.notes):
+        return
+    lines = [f"{key}: {context.relative(path)}" for key, path in sorted(context.recommended_paths.items())]
+    payload = marker + "\n" + "\n".join(lines)
+    context.notes.append(payload)
+
+
+def _ensure_update_database_function(context: WorkflowContext) -> bool:
+    module_path = context.database_module_path
+    if not module_path.exists():
+        _record_update_database_feedback(
+            context,
+            "Database module was not created; ensure the generator writes the module before proceeding.",
+        )
+        return False
+
+    source = module_path.read_text(encoding="utf-8")
+
+    try:
+        tree = ast.parse(source, filename=str(module_path))
+    except SyntaxError as exc:
+        _record_update_database_feedback(
+            context,
+            "Database module contains syntax errors; fix them and add the required update_database helper.",
+        )
+        return False
+
+    for node in tree.body:
+        if isinstance(node, ast.FunctionDef) and node.name == "update_database":
+            if not node.args.args:
+                _record_update_database_feedback(
+                    context,
+                    "update_database must accept an 'updates' argument describing the new records.",
+                )
+                return False
+
+            first_arg = node.args.args[0].arg
+            if first_arg != "updates":
+                _record_update_database_feedback(
+                    context,
+                    "update_database must use 'updates' as its first parameter to match the documented contract.",
+                )
+                return False
+
+            return True
+
+    _record_update_database_feedback(
+        context,
+        "Database module must define an update_database(updates, ...) helper for manual data updates.",
+    )
+    return False
+
+
+def _record_update_database_feedback(context: WorkflowContext, message: str) -> None:
+    note = f"REVIEW_FEEDBACK: {message}"
+    if note not in context.notes:
+        context.notes.append(note)
+
+
+def _record_model_behavior_warning(context: WorkflowContext, step_name: str, message: str) -> None:
+    note = f"MODEL_WARNING[{step_name}]: {message}"
+    if note not in context.notes:
+        context.notes.append(note)
 
 

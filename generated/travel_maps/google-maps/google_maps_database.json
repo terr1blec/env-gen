@@ -1,0 +1,2781 @@
+{
+  "geocoding_results": [
+    {
+      "address": "754 Main St, New York",
+      "latitude": "40.703300215104456",
+      "longitude": "-74.01049941363262",
+      "formatted_address": "754 Main St, New York, USA",
+      "place_id": "GEO_0000"
+    },
+    {
+      "address": "328 Broadway, Los Angeles",
+      "latitude": "34.05692942428328",
+      "longitude": "-118.24016601025154",
+      "formatted_address": "328 Broadway, Los Angeles, USA",
+      "place_id": "GEO_0001"
+    },
+    {
+      "address": "658 Main St, Chicago",
+      "latitude": "41.879909850248985",
+      "longitude": "-87.63916434641037",
+      "formatted_address": "658 Main St, Chicago, USA",
+      "place_id": "GEO_0002"
+    },
+    {
+      "address": "195 Broadway, Houston",
+      "latitude": "29.755053217867815",
+      "longitude": "-95.367759625419",
+      "formatted_address": "195 Broadway, Houston, USA",
+      "place_id": "GEO_0003"
+    },
+    {
+      "address": "674 Broadway, Phoenix",
+      "latitude": "33.45272039225845",
+      "longitude": "-112.06997350052819",
+      "formatted_address": "674 Broadway, Phoenix, USA",
+      "place_id": "GEO_0004"
+    },
+    {
+      "address": "529 Broadway, Philadelphia",
+      "latitude": "39.95158418092567",
+      "longitude": "-75.16963618583539",
+      "formatted_address": "529 Broadway, Philadelphia, USA",
+      "place_id": "GEO_0005"
+    },
+    {
+      "address": "990 Main St, San Antonio",
+      "latitude": "29.429276147342595",
+      "longitude": "-98.50040681367247",
+      "formatted_address": "990 Main St, San Antonio, USA",
+      "place_id": "GEO_0006"
+    },
+    {
+      "address": "532 Park Ave, San Diego",
+      "latitude": "32.711257426833434",
+      "longitude": "-117.16679372475785",
+      "formatted_address": "532 Park Ave, San Diego, USA",
+      "place_id": "GEO_0007"
+    },
+    {
+      "address": "881 Park Ave, Dallas",
+      "latitude": "32.768744205530396",
+      "longitude": "-96.79940145398724",
+      "formatted_address": "881 Park Ave, Dallas, USA",
+      "place_id": "GEO_0008"
+    },
+    {
+      "address": "467 Park Ave, San Jose",
+      "latitude": "37.34027452062734",
+      "longitude": "-121.88015743453452",
+      "formatted_address": "467 Park Ave, San Jose, USA",
+      "place_id": "GEO_0009"
+    },
+    {
+      "address": "847 Oak St, New York",
+      "latitude": "40.7135245618291",
+      "longitude": "-73.99653768472041",
+      "formatted_address": "847 Oak St, New York, USA",
+      "place_id": "GEO_0010"
+    },
+    {
+      "address": "487 Main St, Los Angeles",
+      "latitude": "34.05324081262546",
+      "longitude": "-118.23711190671494",
+      "formatted_address": "487 Main St, Los Angeles, USA",
+      "place_id": "GEO_0011"
+    },
+    {
+      "address": "733 Park Ave, Chicago",
+      "latitude": "41.87964704290514",
+      "longitude": "-87.62570856327571",
+      "formatted_address": "733 Park Ave, Chicago, USA",
+      "place_id": "GEO_0012"
+    },
+    {
+      "address": "146 Broadway, Houston",
+      "latitude": "29.765861366815773",
+      "longitude": "-95.36009556958679",
+      "formatted_address": "146 Broadway, Houston, USA",
+      "place_id": "GEO_0013"
+    },
+    {
+      "address": "975 Broadway, Phoenix",
+      "latitude": "33.45572967333511",
+      "longitude": "-112.07639747549922",
+      "formatted_address": "975 Broadway, Phoenix, USA",
+      "place_id": "GEO_0014"
+    },
+    {
+      "address": "564 Park Ave, Philadelphia",
+      "latitude": "39.94585308194312",
+      "longitude": "-75.16809458599545",
+      "formatted_address": "564 Park Ave, Philadelphia, USA",
+      "place_id": "GEO_0015"
+    },
+    {
+      "address": "786 Park Ave, San Antonio",
+      "latitude": "29.42813640626917",
+      "longitude": "-98.48992904668927",
+      "formatted_address": "786 Park Ave, San Antonio, USA",
+      "place_id": "GEO_0016"
+    },
+    {
+      "address": "173 Maple Dr, San Diego",
+      "latitude": "32.71839956576394",
+      "longitude": "-117.16041720245941",
+      "formatted_address": "173 Maple Dr, San Diego, USA",
+      "place_id": "GEO_0017"
+    },
+    {
+      "address": "350 Broadway, Dallas",
+      "latitude": "32.77594520423702",
+      "longitude": "-96.80160104346432",
+      "formatted_address": "350 Broadway, Dallas, USA",
+      "place_id": "GEO_0018"
+    },
+    {
+      "address": "755 Maple Dr, San Jose",
+      "latitude": "37.33259230347941",
+      "longitude": "-121.8898143453117",
+      "formatted_address": "755 Maple Dr, San Jose, USA",
+      "place_id": "GEO_0019"
+    }
+  ],
+  "reverse_geocoding_results": [
+    {
+      "latitude": "40.707380961439284",
+      "longitude": "-74.01535799512192",
+      "formatted_address": "886 Main St, New York, USA",
+      "address_components": [
+        {
+          "long_name": "886",
+          "types": [
+            "street_number"
+          ]
+        },
+        {
+          "long_name": "Main St",
+          "types": [
+            "route"
+          ]
+        },
+        {
+          "long_name": "New York",
+          "types": [
+            "locality",
+            "political"
+          ]
+        },
+        {
+          "long_name": "USA",
+          "types": [
+            "country",
+            "political"
+          ]
+        }
+      ]
+    },
+    {
+      "latitude": "34.04755481751951",
+      "longitude": "-118.24948034312828",
+      "formatted_address": "423 Oak St, Los Angeles, USA",
+      "address_components": [
+        {
+          "long_name": "423",
+          "types": [
+            "street_number"
+          ]
+        },
+        {
+          "long_name": "Oak St",
+          "types": [
+            "route"
+          ]
+        },
+        {
+          "long_name": "Los Angeles",
+          "types": [
+            "locality",
+            "political"
+          ]
+        },
+        {
+          "long_name": "USA",
+          "types": [
+            "country",
+            "political"
+          ]
+        }
+      ]
+    },
+    {
+      "latitude": "41.87235253088109",
+      "longitude": "-87.62981537481016",
+      "formatted_address": "680 Park Ave, Chicago, USA",
+      "address_components": [
+        {
+          "long_name": "680",
+          "types": [
+            "street_number"
+          ]
+        },
+        {
+          "long_name": "Park Ave",
+          "types": [
+            "route"
+          ]
+        },
+        {
+          "long_name": "Chicago",
+          "types": [
+            "locality",
+            "political"
+          ]
+        },
+        {
+          "long_name": "USA",
+          "types": [
+            "country",
+            "political"
+          ]
+        }
+      ]
+    },
+    {
+      "latitude": "29.75325743180884",
+      "longitude": "-95.37700739360949",
+      "formatted_address": "758 Oak St, Houston, USA",
+      "address_components": [
+        {
+          "long_name": "758",
+          "types": [
+            "street_number"
+          ]
+        },
+        {
+          "long_name": "Oak St",
+          "types": [
+            "route"
+          ]
+        },
+        {
+          "long_name": "Houston",
+          "types": [
+            "locality",
+            "political"
+          ]
+        },
+        {
+          "long_name": "USA",
+          "types": [
+            "country",
+            "political"
+          ]
+        }
+      ]
+    },
+    {
+      "latitude": "33.44917954579334",
+      "longitude": "-112.06905972376696",
+      "formatted_address": "862 Maple Dr, Phoenix, USA",
+      "address_components": [
+        {
+          "long_name": "862",
+          "types": [
+            "street_number"
+          ]
+        },
+        {
+          "long_name": "Maple Dr",
+          "types": [
+            "route"
+          ]
+        },
+        {
+          "long_name": "Phoenix",
+          "types": [
+            "locality",
+            "political"
+          ]
+        },
+        {
+          "long_name": "USA",
+          "types": [
+            "country",
+            "political"
+          ]
+        }
+      ]
+    },
+    {
+      "latitude": "39.950588010102805",
+      "longitude": "-75.17081358481686",
+      "formatted_address": "538 Maple Dr, Philadelphia, USA",
+      "address_components": [
+        {
+          "long_name": "538",
+          "types": [
+            "street_number"
+          ]
+        },
+        {
+          "long_name": "Maple Dr",
+          "types": [
+            "route"
+          ]
+        },
+        {
+          "long_name": "Philadelphia",
+          "types": [
+            "locality",
+            "political"
+          ]
+        },
+        {
+          "long_name": "USA",
+          "types": [
+            "country",
+            "political"
+          ]
+        }
+      ]
+    },
+    {
+      "latitude": "29.42397031669779",
+      "longitude": "-98.48848435684933",
+      "formatted_address": "241 Maple Dr, San Antonio, USA",
+      "address_components": [
+        {
+          "long_name": "241",
+          "types": [
+            "street_number"
+          ]
+        },
+        {
+          "long_name": "Maple Dr",
+          "types": [
+            "route"
+          ]
+        },
+        {
+          "long_name": "San Antonio",
+          "types": [
+            "locality",
+            "political"
+          ]
+        },
+        {
+          "long_name": "USA",
+          "types": [
+            "country",
+            "political"
+          ]
+        }
+      ]
+    },
+    {
+      "latitude": "32.70875682638696",
+      "longitude": "-117.16790035996556",
+      "formatted_address": "981 Main St, San Diego, USA",
+      "address_components": [
+        {
+          "long_name": "981",
+          "types": [
+            "street_number"
+          ]
+        },
+        {
+          "long_name": "Main St",
+          "types": [
+            "route"
+          ]
+        },
+        {
+          "long_name": "San Diego",
+          "types": [
+            "locality",
+            "political"
+          ]
+        },
+        {
+          "long_name": "USA",
+          "types": [
+            "country",
+            "political"
+          ]
+        }
+      ]
+    },
+    {
+      "latitude": "32.77862818061464",
+      "longitude": "-96.79930465376651",
+      "formatted_address": "796 Oak St, Dallas, USA",
+      "address_components": [
+        {
+          "long_name": "796",
+          "types": [
+            "street_number"
+          ]
+        },
+        {
+          "long_name": "Oak St",
+          "types": [
+            "route"
+          ]
+        },
+        {
+          "long_name": "Dallas",
+          "types": [
+            "locality",
+            "political"
+          ]
+        },
+        {
+          "long_name": "USA",
+          "types": [
+            "country",
+            "political"
+          ]
+        }
+      ]
+    },
+    {
+      "latitude": "37.33878228690198",
+      "longitude": "-121.87687843244774",
+      "formatted_address": "710 Oak St, San Jose, USA",
+      "address_components": [
+        {
+          "long_name": "710",
+          "types": [
+            "street_number"
+          ]
+        },
+        {
+          "long_name": "Oak St",
+          "types": [
+            "route"
+          ]
+        },
+        {
+          "long_name": "San Jose",
+          "types": [
+            "locality",
+            "political"
+          ]
+        },
+        {
+          "long_name": "USA",
+          "types": [
+            "country",
+            "political"
+          ]
+        }
+      ]
+    },
+    {
+      "latitude": "40.716405668205134",
+      "longitude": "-74.01370896514032",
+      "formatted_address": "981 Main St, New York, USA",
+      "address_components": [
+        {
+          "long_name": "981",
+          "types": [
+            "street_number"
+          ]
+        },
+        {
+          "long_name": "Main St",
+          "types": [
+            "route"
+          ]
+        },
+        {
+          "long_name": "New York",
+          "types": [
+            "locality",
+            "political"
+          ]
+        },
+        {
+          "long_name": "USA",
+          "types": [
+            "country",
+            "political"
+          ]
+        }
+      ]
+    },
+    {
+      "latitude": "34.05757197465315",
+      "longitude": "-118.24689649053938",
+      "formatted_address": "649 Park Ave, Los Angeles, USA",
+      "address_components": [
+        {
+          "long_name": "649",
+          "types": [
+            "street_number"
+          ]
+        },
+        {
+          "long_name": "Park Ave",
+          "types": [
+            "route"
+          ]
+        },
+        {
+          "long_name": "Los Angeles",
+          "types": [
+            "locality",
+            "political"
+          ]
+        },
+        {
+          "long_name": "USA",
+          "types": [
+            "country",
+            "political"
+          ]
+        }
+      ]
+    },
+    {
+      "latitude": "41.87126315508689",
+      "longitude": "-87.63973509367797",
+      "formatted_address": "400 Oak St, Chicago, USA",
+      "address_components": [
+        {
+          "long_name": "400",
+          "types": [
+            "street_number"
+          ]
+        },
+        {
+          "long_name": "Oak St",
+          "types": [
+            "route"
+          ]
+        },
+        {
+          "long_name": "Chicago",
+          "types": [
+            "locality",
+            "political"
+          ]
+        },
+        {
+          "long_name": "USA",
+          "types": [
+            "country",
+            "political"
+          ]
+        }
+      ]
+    },
+    {
+      "latitude": "29.769837761977403",
+      "longitude": "-95.36456075601896",
+      "formatted_address": "839 Park Ave, Houston, USA",
+      "address_components": [
+        {
+          "long_name": "839",
+          "types": [
+            "street_number"
+          ]
+        },
+        {
+          "long_name": "Park Ave",
+          "types": [
+            "route"
+          ]
+        },
+        {
+          "long_name": "Houston",
+          "types": [
+            "locality",
+            "political"
+          ]
+        },
+        {
+          "long_name": "USA",
+          "types": [
+            "country",
+            "political"
+          ]
+        }
+      ]
+    },
+    {
+      "latitude": "33.45581037139674",
+      "longitude": "-112.07803110417103",
+      "formatted_address": "619 Main St, Phoenix, USA",
+      "address_components": [
+        {
+          "long_name": "619",
+          "types": [
+            "street_number"
+          ]
+        },
+        {
+          "long_name": "Main St",
+          "types": [
+            "route"
+          ]
+        },
+        {
+          "long_name": "Phoenix",
+          "types": [
+            "locality",
+            "political"
+          ]
+        },
+        {
+          "long_name": "USA",
+          "types": [
+            "country",
+            "political"
+          ]
+        }
+      ]
+    },
+    {
+      "latitude": "39.95477940422876",
+      "longitude": "-75.172143214629",
+      "formatted_address": "754 Maple Dr, Philadelphia, USA",
+      "address_components": [
+        {
+          "long_name": "754",
+          "types": [
+            "street_number"
+          ]
+        },
+        {
+          "long_name": "Maple Dr",
+          "types": [
+            "route"
+          ]
+        },
+        {
+          "long_name": "Philadelphia",
+          "types": [
+            "locality",
+            "political"
+          ]
+        },
+        {
+          "long_name": "USA",
+          "types": [
+            "country",
+            "political"
+          ]
+        }
+      ]
+    },
+    {
+      "latitude": "29.42488758060239",
+      "longitude": "-98.48802747042738",
+      "formatted_address": "880 Broadway, San Antonio, USA",
+      "address_components": [
+        {
+          "long_name": "880",
+          "types": [
+            "street_number"
+          ]
+        },
+        {
+          "long_name": "Broadway",
+          "types": [
+            "route"
+          ]
+        },
+        {
+          "long_name": "San Antonio",
+          "types": [
+            "locality",
+            "political"
+          ]
+        },
+        {
+          "long_name": "USA",
+          "types": [
+            "country",
+            "political"
+          ]
+        }
+      ]
+    },
+    {
+      "latitude": "32.717678891689204",
+      "longitude": "-117.16132788583943",
+      "formatted_address": "643 Main St, San Diego, USA",
+      "address_components": [
+        {
+          "long_name": "643",
+          "types": [
+            "street_number"
+          ]
+        },
+        {
+          "long_name": "Main St",
+          "types": [
+            "route"
+          ]
+        },
+        {
+          "long_name": "San Diego",
+          "types": [
+            "locality",
+            "political"
+          ]
+        },
+        {
+          "long_name": "USA",
+          "types": [
+            "country",
+            "political"
+          ]
+        }
+      ]
+    },
+    {
+      "latitude": "32.78427443755646",
+      "longitude": "-96.79036668941278",
+      "formatted_address": "214 Park Ave, Dallas, USA",
+      "address_components": [
+        {
+          "long_name": "214",
+          "types": [
+            "street_number"
+          ]
+        },
+        {
+          "long_name": "Park Ave",
+          "types": [
+            "route"
+          ]
+        },
+        {
+          "long_name": "Dallas",
+          "types": [
+            "locality",
+            "political"
+          ]
+        },
+        {
+          "long_name": "USA",
+          "types": [
+            "country",
+            "political"
+          ]
+        }
+      ]
+    },
+    {
+      "latitude": "37.329358503329885",
+      "longitude": "-121.87873980801592",
+      "formatted_address": "414 Broadway, San Jose, USA",
+      "address_components": [
+        {
+          "long_name": "414",
+          "types": [
+            "street_number"
+          ]
+        },
+        {
+          "long_name": "Broadway",
+          "types": [
+            "route"
+          ]
+        },
+        {
+          "long_name": "San Jose",
+          "types": [
+            "locality",
+            "political"
+          ]
+        },
+        {
+          "long_name": "USA",
+          "types": [
+            "country",
+            "political"
+          ]
+        }
+      ]
+    }
+  ],
+  "places_search_results": [
+    {
+      "query": "restaurant in New York",
+      "results": [
+        {
+          "name": "Central Cafe",
+          "place_id": "PLACE_0000",
+          "formatted_address": "180 Main St, New York, USA",
+          "latitude": "40.71743815189689",
+          "longitude": "-73.9996795349316"
+        }
+      ]
+    },
+    {
+      "query": "hotel in Los Angeles",
+      "results": [
+        {
+          "name": "Grand Hotel",
+          "place_id": "PLACE_0001",
+          "formatted_address": "878 Park Ave, Los Angeles, USA",
+          "latitude": "34.05751668858614",
+          "longitude": "-118.25113217071001"
+        }
+      ]
+    },
+    {
+      "query": "museum in Chicago",
+      "results": [
+        {
+          "name": "City Museum",
+          "place_id": "PLACE_0002",
+          "formatted_address": "586 Park Ave, Chicago, USA",
+          "latitude": "41.871402539179485",
+          "longitude": "-87.62924652425164"
+        }
+      ]
+    },
+    {
+      "query": "park in Houston",
+      "results": [
+        {
+          "name": "Main Park",
+          "place_id": "PLACE_0003",
+          "formatted_address": "721 Broadway, Houston, USA",
+          "latitude": "29.76968725812015",
+          "longitude": "-95.36122173013996"
+        }
+      ]
+    },
+    {
+      "query": "shopping_mall in Phoenix",
+      "results": [
+        {
+          "name": "Mega Mall",
+          "place_id": "PLACE_0004",
+          "formatted_address": "873 Park Ave, Phoenix, USA",
+          "latitude": "33.45219735264199",
+          "longitude": "-112.06974102054362"
+        }
+      ]
+    },
+    {
+      "query": "hospital in Philadelphia",
+      "results": [
+        {
+          "name": "General Hospital",
+          "place_id": "PLACE_0005",
+          "formatted_address": "508 Park Ave, Philadelphia, USA",
+          "latitude": "39.955597561152786",
+          "longitude": "-75.16643799832171"
+        }
+      ]
+    },
+    {
+      "query": "school in San Antonio",
+      "results": [
+        {
+          "name": "High School",
+          "place_id": "PLACE_0006",
+          "formatted_address": "629 Broadway, San Antonio, USA",
+          "latitude": "29.416520083917366",
+          "longitude": "-98.49910605325937"
+        }
+      ]
+    },
+    {
+      "query": "gas_station in San Diego",
+      "results": [
+        {
+          "name": "Gas Express",
+          "place_id": "PLACE_0007",
+          "formatted_address": "446 Main St, San Diego, USA",
+          "latitude": "32.71746617436914",
+          "longitude": "-117.16649770534808"
+        }
+      ]
+    },
+    {
+      "query": "coffee_shop in Dallas",
+      "results": [
+        {
+          "name": "Coffee Corner",
+          "place_id": "PLACE_0008",
+          "formatted_address": "325 Main St, Dallas, USA",
+          "latitude": "32.76811986172018",
+          "longitude": "-96.7943779408546"
+        }
+      ]
+    },
+    {
+      "query": "bank in San Jose",
+      "results": [
+        {
+          "name": "National Bank",
+          "place_id": "PLACE_0009",
+          "formatted_address": "334 Main St, San Jose, USA",
+          "latitude": "37.34630840026012",
+          "longitude": "-121.87910729199493"
+        }
+      ]
+    },
+    {
+      "query": "restaurant in New York",
+      "results": [
+        {
+          "name": "Pizza Palace",
+          "place_id": "PLACE_0010",
+          "formatted_address": "172 Park Ave, New York, USA",
+          "latitude": "40.70756009268738",
+          "longitude": "-74.00262044443407"
+        }
+      ]
+    },
+    {
+      "query": "hotel in Los Angeles",
+      "results": [
+        {
+          "name": "Burger Joint",
+          "place_id": "PLACE_0011",
+          "formatted_address": "319 Park Ave, Los Angeles, USA",
+          "latitude": "34.0448462369745",
+          "longitude": "-118.23498971518839"
+        }
+      ]
+    },
+    {
+      "query": "museum in Chicago",
+      "results": [
+        {
+          "name": "Sushi Spot",
+          "place_id": "PLACE_0012",
+          "formatted_address": "684 Park Ave, Chicago, USA",
+          "latitude": "41.87755342052624",
+          "longitude": "-87.62410761151419"
+        }
+      ]
+    },
+    {
+      "query": "park in Houston",
+      "results": [
+        {
+          "name": "Italian Bistro",
+          "place_id": "PLACE_0013",
+          "formatted_address": "926 Broadway, Houston, USA",
+          "latitude": "29.754208198287238",
+          "longitude": "-95.37786138371543"
+        }
+      ]
+    },
+    {
+      "query": "shopping_mall in Phoenix",
+      "results": [
+        {
+          "name": "Mexican Grill",
+          "place_id": "PLACE_0014",
+          "formatted_address": "541 Broadway, Phoenix, USA",
+          "latitude": "33.446871572460395",
+          "longitude": "-112.07465950663926"
+        }
+      ]
+    }
+  ],
+  "place_details": [
+    {
+      "place_id": "PLACE_0000",
+      "name": "Central Cafe",
+      "formatted_address": "846 Main St, New York, USA",
+      "phone_number": "+1-555-789-2612",
+      "website": "https://www.centralcafe.com",
+      "rating": 3.1,
+      "opening_hours": {
+        "periods": [
+          {
+            "open": {
+              "day": 0,
+              "time": "0900"
+            },
+            "close": {
+              "day": 0,
+              "time": "1700"
+            }
+          },
+          {
+            "open": {
+              "day": 1,
+              "time": "0900"
+            },
+            "close": {
+              "day": 1,
+              "time": "1700"
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "time": "0900"
+            },
+            "close": {
+              "day": 2,
+              "time": "1700"
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "time": "0900"
+            },
+            "close": {
+              "day": 3,
+              "time": "1700"
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "time": "0900"
+            },
+            "close": {
+              "day": 4,
+              "time": "1700"
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "time": "1000"
+            },
+            "close": {
+              "day": 5,
+              "time": "1500"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: 9:00 AM – 5:00 PM",
+          "Tuesday: 9:00 AM – 5:00 PM",
+          "Wednesday: 9:00 AM – 5:00 PM",
+          "Thursday: 9:00 AM – 5:00 PM",
+          "Friday: 9:00 AM – 5:00 PM",
+          "Saturday: 10:00 AM – 3:00 PM",
+          "Sunday: Closed"
+        ]
+      }
+    },
+    {
+      "place_id": "PLACE_0001",
+      "name": "Grand Hotel",
+      "formatted_address": "845 Broadway, Los Angeles, USA",
+      "phone_number": "+1-555-919-2790",
+      "website": "https://www.grandhotel.com",
+      "rating": 3.5,
+      "opening_hours": {
+        "periods": [
+          {
+            "open": {
+              "day": 0,
+              "time": "0900"
+            },
+            "close": {
+              "day": 0,
+              "time": "1700"
+            }
+          },
+          {
+            "open": {
+              "day": 1,
+              "time": "0900"
+            },
+            "close": {
+              "day": 1,
+              "time": "1700"
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "time": "0900"
+            },
+            "close": {
+              "day": 2,
+              "time": "1700"
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "time": "0900"
+            },
+            "close": {
+              "day": 3,
+              "time": "1700"
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "time": "0900"
+            },
+            "close": {
+              "day": 4,
+              "time": "1700"
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "time": "1000"
+            },
+            "close": {
+              "day": 5,
+              "time": "1500"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: 9:00 AM – 5:00 PM",
+          "Tuesday: 9:00 AM – 5:00 PM",
+          "Wednesday: 9:00 AM – 5:00 PM",
+          "Thursday: 9:00 AM – 5:00 PM",
+          "Friday: 9:00 AM – 5:00 PM",
+          "Saturday: 10:00 AM – 3:00 PM",
+          "Sunday: Closed"
+        ]
+      }
+    },
+    {
+      "place_id": "PLACE_0002",
+      "name": "City Museum",
+      "formatted_address": "294 Park Ave, Chicago, USA",
+      "phone_number": "+1-555-559-3296",
+      "website": "https://www.citymuseum.com",
+      "rating": 3.8,
+      "opening_hours": {
+        "periods": [
+          {
+            "open": {
+              "day": 0,
+              "time": "0900"
+            },
+            "close": {
+              "day": 0,
+              "time": "1700"
+            }
+          },
+          {
+            "open": {
+              "day": 1,
+              "time": "0900"
+            },
+            "close": {
+              "day": 1,
+              "time": "1700"
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "time": "0900"
+            },
+            "close": {
+              "day": 2,
+              "time": "1700"
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "time": "0900"
+            },
+            "close": {
+              "day": 3,
+              "time": "1700"
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "time": "0900"
+            },
+            "close": {
+              "day": 4,
+              "time": "1700"
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "time": "1000"
+            },
+            "close": {
+              "day": 5,
+              "time": "1500"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: 9:00 AM – 5:00 PM",
+          "Tuesday: 9:00 AM – 5:00 PM",
+          "Wednesday: 9:00 AM – 5:00 PM",
+          "Thursday: 9:00 AM – 5:00 PM",
+          "Friday: 9:00 AM – 5:00 PM",
+          "Saturday: 10:00 AM – 3:00 PM",
+          "Sunday: Closed"
+        ]
+      }
+    },
+    {
+      "place_id": "PLACE_0003",
+      "name": "Main Park",
+      "formatted_address": "385 Broadway, Houston, USA",
+      "phone_number": "+1-555-355-2235",
+      "website": "https://www.mainpark.com",
+      "rating": 3.9,
+      "opening_hours": {
+        "periods": [
+          {
+            "open": {
+              "day": 0,
+              "time": "0900"
+            },
+            "close": {
+              "day": 0,
+              "time": "1700"
+            }
+          },
+          {
+            "open": {
+              "day": 1,
+              "time": "0900"
+            },
+            "close": {
+              "day": 1,
+              "time": "1700"
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "time": "0900"
+            },
+            "close": {
+              "day": 2,
+              "time": "1700"
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "time": "0900"
+            },
+            "close": {
+              "day": 3,
+              "time": "1700"
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "time": "0900"
+            },
+            "close": {
+              "day": 4,
+              "time": "1700"
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "time": "1000"
+            },
+            "close": {
+              "day": 5,
+              "time": "1500"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: 9:00 AM – 5:00 PM",
+          "Tuesday: 9:00 AM – 5:00 PM",
+          "Wednesday: 9:00 AM – 5:00 PM",
+          "Thursday: 9:00 AM – 5:00 PM",
+          "Friday: 9:00 AM – 5:00 PM",
+          "Saturday: 10:00 AM – 3:00 PM",
+          "Sunday: Closed"
+        ]
+      }
+    },
+    {
+      "place_id": "PLACE_0004",
+      "name": "Mega Mall",
+      "formatted_address": "982 Park Ave, Phoenix, USA",
+      "phone_number": "+1-555-200-1828",
+      "website": "https://www.megamall.com",
+      "rating": 4.3,
+      "opening_hours": {
+        "periods": [
+          {
+            "open": {
+              "day": 0,
+              "time": "0900"
+            },
+            "close": {
+              "day": 0,
+              "time": "1700"
+            }
+          },
+          {
+            "open": {
+              "day": 1,
+              "time": "0900"
+            },
+            "close": {
+              "day": 1,
+              "time": "1700"
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "time": "0900"
+            },
+            "close": {
+              "day": 2,
+              "time": "1700"
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "time": "0900"
+            },
+            "close": {
+              "day": 3,
+              "time": "1700"
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "time": "0900"
+            },
+            "close": {
+              "day": 4,
+              "time": "1700"
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "time": "1000"
+            },
+            "close": {
+              "day": 5,
+              "time": "1500"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: 9:00 AM – 5:00 PM",
+          "Tuesday: 9:00 AM – 5:00 PM",
+          "Wednesday: 9:00 AM – 5:00 PM",
+          "Thursday: 9:00 AM – 5:00 PM",
+          "Friday: 9:00 AM – 5:00 PM",
+          "Saturday: 10:00 AM – 3:00 PM",
+          "Sunday: Closed"
+        ]
+      }
+    },
+    {
+      "place_id": "PLACE_0005",
+      "name": "General Hospital",
+      "formatted_address": "653 Main St, Philadelphia, USA",
+      "phone_number": "+1-555-195-4872",
+      "website": "https://www.generalhospital.com",
+      "rating": 3.3,
+      "opening_hours": {
+        "periods": [
+          {
+            "open": {
+              "day": 0,
+              "time": "0900"
+            },
+            "close": {
+              "day": 0,
+              "time": "1700"
+            }
+          },
+          {
+            "open": {
+              "day": 1,
+              "time": "0900"
+            },
+            "close": {
+              "day": 1,
+              "time": "1700"
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "time": "0900"
+            },
+            "close": {
+              "day": 2,
+              "time": "1700"
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "time": "0900"
+            },
+            "close": {
+              "day": 3,
+              "time": "1700"
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "time": "0900"
+            },
+            "close": {
+              "day": 4,
+              "time": "1700"
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "time": "1000"
+            },
+            "close": {
+              "day": 5,
+              "time": "1500"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: 9:00 AM – 5:00 PM",
+          "Tuesday: 9:00 AM – 5:00 PM",
+          "Wednesday: 9:00 AM – 5:00 PM",
+          "Thursday: 9:00 AM – 5:00 PM",
+          "Friday: 9:00 AM – 5:00 PM",
+          "Saturday: 10:00 AM – 3:00 PM",
+          "Sunday: Closed"
+        ]
+      }
+    },
+    {
+      "place_id": "PLACE_0006",
+      "name": "High School",
+      "formatted_address": "597 Broadway, San Antonio, USA",
+      "phone_number": "+1-555-318-7570",
+      "website": "https://www.highschool.com",
+      "rating": 4.8,
+      "opening_hours": {
+        "periods": [
+          {
+            "open": {
+              "day": 0,
+              "time": "0900"
+            },
+            "close": {
+              "day": 0,
+              "time": "1700"
+            }
+          },
+          {
+            "open": {
+              "day": 1,
+              "time": "0900"
+            },
+            "close": {
+              "day": 1,
+              "time": "1700"
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "time": "0900"
+            },
+            "close": {
+              "day": 2,
+              "time": "1700"
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "time": "0900"
+            },
+            "close": {
+              "day": 3,
+              "time": "1700"
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "time": "0900"
+            },
+            "close": {
+              "day": 4,
+              "time": "1700"
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "time": "1000"
+            },
+            "close": {
+              "day": 5,
+              "time": "1500"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: 9:00 AM – 5:00 PM",
+          "Tuesday: 9:00 AM – 5:00 PM",
+          "Wednesday: 9:00 AM – 5:00 PM",
+          "Thursday: 9:00 AM – 5:00 PM",
+          "Friday: 9:00 AM – 5:00 PM",
+          "Saturday: 10:00 AM – 3:00 PM",
+          "Sunday: Closed"
+        ]
+      }
+    },
+    {
+      "place_id": "PLACE_0007",
+      "name": "Gas Express",
+      "formatted_address": "268 Broadway, San Diego, USA",
+      "phone_number": "+1-555-102-7396",
+      "website": "https://www.gasexpress.com",
+      "rating": 3.5,
+      "opening_hours": {
+        "periods": [
+          {
+            "open": {
+              "day": 0,
+              "time": "0900"
+            },
+            "close": {
+              "day": 0,
+              "time": "1700"
+            }
+          },
+          {
+            "open": {
+              "day": 1,
+              "time": "0900"
+            },
+            "close": {
+              "day": 1,
+              "time": "1700"
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "time": "0900"
+            },
+            "close": {
+              "day": 2,
+              "time": "1700"
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "time": "0900"
+            },
+            "close": {
+              "day": 3,
+              "time": "1700"
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "time": "0900"
+            },
+            "close": {
+              "day": 4,
+              "time": "1700"
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "time": "1000"
+            },
+            "close": {
+              "day": 5,
+              "time": "1500"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: 9:00 AM – 5:00 PM",
+          "Tuesday: 9:00 AM – 5:00 PM",
+          "Wednesday: 9:00 AM – 5:00 PM",
+          "Thursday: 9:00 AM – 5:00 PM",
+          "Friday: 9:00 AM – 5:00 PM",
+          "Saturday: 10:00 AM – 3:00 PM",
+          "Sunday: Closed"
+        ]
+      }
+    },
+    {
+      "place_id": "PLACE_0008",
+      "name": "Coffee Corner",
+      "formatted_address": "902 Broadway, Dallas, USA",
+      "phone_number": "+1-555-392-7930",
+      "website": "https://www.coffeecorner.com",
+      "rating": 4.4,
+      "opening_hours": {
+        "periods": [
+          {
+            "open": {
+              "day": 0,
+              "time": "0900"
+            },
+            "close": {
+              "day": 0,
+              "time": "1700"
+            }
+          },
+          {
+            "open": {
+              "day": 1,
+              "time": "0900"
+            },
+            "close": {
+              "day": 1,
+              "time": "1700"
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "time": "0900"
+            },
+            "close": {
+              "day": 2,
+              "time": "1700"
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "time": "0900"
+            },
+            "close": {
+              "day": 3,
+              "time": "1700"
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "time": "0900"
+            },
+            "close": {
+              "day": 4,
+              "time": "1700"
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "time": "1000"
+            },
+            "close": {
+              "day": 5,
+              "time": "1500"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: 9:00 AM – 5:00 PM",
+          "Tuesday: 9:00 AM – 5:00 PM",
+          "Wednesday: 9:00 AM – 5:00 PM",
+          "Thursday: 9:00 AM – 5:00 PM",
+          "Friday: 9:00 AM – 5:00 PM",
+          "Saturday: 10:00 AM – 3:00 PM",
+          "Sunday: Closed"
+        ]
+      }
+    },
+    {
+      "place_id": "PLACE_0009",
+      "name": "National Bank",
+      "formatted_address": "848 Park Ave, San Jose, USA",
+      "phone_number": "+1-555-777-8973",
+      "website": "https://www.nationalbank.com",
+      "rating": 3.3,
+      "opening_hours": {
+        "periods": [
+          {
+            "open": {
+              "day": 0,
+              "time": "0900"
+            },
+            "close": {
+              "day": 0,
+              "time": "1700"
+            }
+          },
+          {
+            "open": {
+              "day": 1,
+              "time": "0900"
+            },
+            "close": {
+              "day": 1,
+              "time": "1700"
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "time": "0900"
+            },
+            "close": {
+              "day": 2,
+              "time": "1700"
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "time": "0900"
+            },
+            "close": {
+              "day": 3,
+              "time": "1700"
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "time": "0900"
+            },
+            "close": {
+              "day": 4,
+              "time": "1700"
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "time": "1000"
+            },
+            "close": {
+              "day": 5,
+              "time": "1500"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: 9:00 AM – 5:00 PM",
+          "Tuesday: 9:00 AM – 5:00 PM",
+          "Wednesday: 9:00 AM – 5:00 PM",
+          "Thursday: 9:00 AM – 5:00 PM",
+          "Friday: 9:00 AM – 5:00 PM",
+          "Saturday: 10:00 AM – 3:00 PM",
+          "Sunday: Closed"
+        ]
+      }
+    },
+    {
+      "place_id": "PLACE_0010",
+      "name": "Pizza Palace",
+      "formatted_address": "403 Main St, New York, USA",
+      "phone_number": "+1-555-159-9883",
+      "website": "https://www.pizzapalace.com",
+      "rating": 3.1,
+      "opening_hours": {
+        "periods": [
+          {
+            "open": {
+              "day": 0,
+              "time": "0900"
+            },
+            "close": {
+              "day": 0,
+              "time": "1700"
+            }
+          },
+          {
+            "open": {
+              "day": 1,
+              "time": "0900"
+            },
+            "close": {
+              "day": 1,
+              "time": "1700"
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "time": "0900"
+            },
+            "close": {
+              "day": 2,
+              "time": "1700"
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "time": "0900"
+            },
+            "close": {
+              "day": 3,
+              "time": "1700"
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "time": "0900"
+            },
+            "close": {
+              "day": 4,
+              "time": "1700"
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "time": "1000"
+            },
+            "close": {
+              "day": 5,
+              "time": "1500"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: 9:00 AM – 5:00 PM",
+          "Tuesday: 9:00 AM – 5:00 PM",
+          "Wednesday: 9:00 AM – 5:00 PM",
+          "Thursday: 9:00 AM – 5:00 PM",
+          "Friday: 9:00 AM – 5:00 PM",
+          "Saturday: 10:00 AM – 3:00 PM",
+          "Sunday: Closed"
+        ]
+      }
+    },
+    {
+      "place_id": "PLACE_0011",
+      "name": "Burger Joint",
+      "formatted_address": "421 Main St, Los Angeles, USA",
+      "phone_number": "+1-555-151-8811",
+      "website": "https://www.burgerjoint.com",
+      "rating": 4.0,
+      "opening_hours": {
+        "periods": [
+          {
+            "open": {
+              "day": 0,
+              "time": "0900"
+            },
+            "close": {
+              "day": 0,
+              "time": "1700"
+            }
+          },
+          {
+            "open": {
+              "day": 1,
+              "time": "0900"
+            },
+            "close": {
+              "day": 1,
+              "time": "1700"
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "time": "0900"
+            },
+            "close": {
+              "day": 2,
+              "time": "1700"
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "time": "0900"
+            },
+            "close": {
+              "day": 3,
+              "time": "1700"
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "time": "0900"
+            },
+            "close": {
+              "day": 4,
+              "time": "1700"
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "time": "1000"
+            },
+            "close": {
+              "day": 5,
+              "time": "1500"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: 9:00 AM – 5:00 PM",
+          "Tuesday: 9:00 AM – 5:00 PM",
+          "Wednesday: 9:00 AM – 5:00 PM",
+          "Thursday: 9:00 AM – 5:00 PM",
+          "Friday: 9:00 AM – 5:00 PM",
+          "Saturday: 10:00 AM – 3:00 PM",
+          "Sunday: Closed"
+        ]
+      }
+    },
+    {
+      "place_id": "PLACE_0012",
+      "name": "Sushi Spot",
+      "formatted_address": "973 Park Ave, Chicago, USA",
+      "phone_number": "+1-555-261-1931",
+      "website": "https://www.sushispot.com",
+      "rating": 4.9,
+      "opening_hours": {
+        "periods": [
+          {
+            "open": {
+              "day": 0,
+              "time": "0900"
+            },
+            "close": {
+              "day": 0,
+              "time": "1700"
+            }
+          },
+          {
+            "open": {
+              "day": 1,
+              "time": "0900"
+            },
+            "close": {
+              "day": 1,
+              "time": "1700"
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "time": "0900"
+            },
+            "close": {
+              "day": 2,
+              "time": "1700"
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "time": "0900"
+            },
+            "close": {
+              "day": 3,
+              "time": "1700"
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "time": "0900"
+            },
+            "close": {
+              "day": 4,
+              "time": "1700"
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "time": "1000"
+            },
+            "close": {
+              "day": 5,
+              "time": "1500"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: 9:00 AM – 5:00 PM",
+          "Tuesday: 9:00 AM – 5:00 PM",
+          "Wednesday: 9:00 AM – 5:00 PM",
+          "Thursday: 9:00 AM – 5:00 PM",
+          "Friday: 9:00 AM – 5:00 PM",
+          "Saturday: 10:00 AM – 3:00 PM",
+          "Sunday: Closed"
+        ]
+      }
+    },
+    {
+      "place_id": "PLACE_0013",
+      "name": "Italian Bistro",
+      "formatted_address": "182 Main St, Houston, USA",
+      "phone_number": "+1-555-170-2113",
+      "website": "https://www.italianbistro.com",
+      "rating": 4.4,
+      "opening_hours": {
+        "periods": [
+          {
+            "open": {
+              "day": 0,
+              "time": "0900"
+            },
+            "close": {
+              "day": 0,
+              "time": "1700"
+            }
+          },
+          {
+            "open": {
+              "day": 1,
+              "time": "0900"
+            },
+            "close": {
+              "day": 1,
+              "time": "1700"
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "time": "0900"
+            },
+            "close": {
+              "day": 2,
+              "time": "1700"
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "time": "0900"
+            },
+            "close": {
+              "day": 3,
+              "time": "1700"
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "time": "0900"
+            },
+            "close": {
+              "day": 4,
+              "time": "1700"
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "time": "1000"
+            },
+            "close": {
+              "day": 5,
+              "time": "1500"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: 9:00 AM – 5:00 PM",
+          "Tuesday: 9:00 AM – 5:00 PM",
+          "Wednesday: 9:00 AM – 5:00 PM",
+          "Thursday: 9:00 AM – 5:00 PM",
+          "Friday: 9:00 AM – 5:00 PM",
+          "Saturday: 10:00 AM – 3:00 PM",
+          "Sunday: Closed"
+        ]
+      }
+    },
+    {
+      "place_id": "PLACE_0014",
+      "name": "Mexican Grill",
+      "formatted_address": "340 Broadway, Phoenix, USA",
+      "phone_number": "+1-555-222-5033",
+      "website": "https://www.mexicangrill.com",
+      "rating": 4.2,
+      "opening_hours": {
+        "periods": [
+          {
+            "open": {
+              "day": 0,
+              "time": "0900"
+            },
+            "close": {
+              "day": 0,
+              "time": "1700"
+            }
+          },
+          {
+            "open": {
+              "day": 1,
+              "time": "0900"
+            },
+            "close": {
+              "day": 1,
+              "time": "1700"
+            }
+          },
+          {
+            "open": {
+              "day": 2,
+              "time": "0900"
+            },
+            "close": {
+              "day": 2,
+              "time": "1700"
+            }
+          },
+          {
+            "open": {
+              "day": 3,
+              "time": "0900"
+            },
+            "close": {
+              "day": 3,
+              "time": "1700"
+            }
+          },
+          {
+            "open": {
+              "day": 4,
+              "time": "0900"
+            },
+            "close": {
+              "day": 4,
+              "time": "1700"
+            }
+          },
+          {
+            "open": {
+              "day": 5,
+              "time": "1000"
+            },
+            "close": {
+              "day": 5,
+              "time": "1500"
+            }
+          }
+        ],
+        "weekday_text": [
+          "Monday: 9:00 AM – 5:00 PM",
+          "Tuesday: 9:00 AM – 5:00 PM",
+          "Wednesday: 9:00 AM – 5:00 PM",
+          "Thursday: 9:00 AM – 5:00 PM",
+          "Friday: 9:00 AM – 5:00 PM",
+          "Saturday: 10:00 AM – 3:00 PM",
+          "Sunday: Closed"
+        ]
+      }
+    }
+  ],
+  "distance_matrix_results": [
+    {
+      "origins": [
+        "New York, USA"
+      ],
+      "destinations": [
+        "Los Angeles, USA"
+      ],
+      "distances": [
+        "5649 km"
+      ],
+      "durations": [
+        "6778 mins"
+      ]
+    },
+    {
+      "origins": [
+        "Los Angeles, USA"
+      ],
+      "destinations": [
+        "Chicago, USA"
+      ],
+      "distances": [
+        "4266 km"
+      ],
+      "durations": [
+        "5119 mins"
+      ]
+    },
+    {
+      "origins": [
+        "Chicago, USA"
+      ],
+      "destinations": [
+        "Houston, USA"
+      ],
+      "distances": [
+        "2204 km"
+      ],
+      "durations": [
+        "2644 mins"
+      ]
+    },
+    {
+      "origins": [
+        "Houston, USA"
+      ],
+      "destinations": [
+        "Phoenix, USA"
+      ],
+      "distances": [
+        "2263 km"
+      ],
+      "durations": [
+        "2715 mins"
+      ]
+    },
+    {
+      "origins": [
+        "Phoenix, USA"
+      ],
+      "destinations": [
+        "Philadelphia, USA"
+      ],
+      "distances": [
+        "4818 km"
+      ],
+      "durations": [
+        "5781 mins"
+      ]
+    },
+    {
+      "origins": [
+        "Philadelphia, USA"
+      ],
+      "destinations": [
+        "San Antonio, USA"
+      ],
+      "distances": [
+        "3758 km"
+      ],
+      "durations": [
+        "4509 mins"
+      ]
+    },
+    {
+      "origins": [
+        "San Antonio, USA"
+      ],
+      "destinations": [
+        "San Diego, USA"
+      ],
+      "distances": [
+        "2437 km"
+      ],
+      "durations": [
+        "2924 mins"
+      ]
+    },
+    {
+      "origins": [
+        "San Diego, USA"
+      ],
+      "destinations": [
+        "Dallas, USA"
+      ],
+      "distances": [
+        "2267 km"
+      ],
+      "durations": [
+        "2720 mins"
+      ]
+    },
+    {
+      "origins": [
+        "Dallas, USA"
+      ],
+      "destinations": [
+        "San Jose, USA"
+      ],
+      "distances": [
+        "3291 km"
+      ],
+      "durations": [
+        "3949 mins"
+      ]
+    },
+    {
+      "origins": [
+        "San Jose, USA"
+      ],
+      "destinations": [
+        "New York, USA"
+      ],
+      "distances": [
+        "5689 km"
+      ],
+      "durations": [
+        "6826 mins"
+      ]
+    }
+  ],
+  "elevation_data": [
+    {
+      "locations": [
+        {
+          "lat": 40.620748332457815,
+          "lng": -74.08960331890103
+        }
+      ],
+      "elevations": [
+        34
+      ]
+    },
+    {
+      "locations": [
+        {
+          "lat": 34.065245384768815,
+          "lng": -118.28042603080466
+        }
+      ],
+      "elevations": [
+        76
+      ]
+    },
+    {
+      "locations": [
+        {
+          "lat": 41.91204519495397,
+          "lng": -87.66696322744089
+        }
+      ],
+      "elevations": [
+        180
+      ]
+    },
+    {
+      "locations": [
+        {
+          "lat": 29.686575656425493,
+          "lng": -95.34069984223247
+        }
+      ],
+      "elevations": [
+        224
+      ]
+    },
+    {
+      "locations": [
+        {
+          "lat": 33.5342036663411,
+          "lng": -111.98685314251104
+        }
+      ],
+      "elevations": [
+        308
+      ]
+    },
+    {
+      "locations": [
+        {
+          "lat": 39.976831851098616,
+          "lng": -75.15260127087221
+        }
+      ],
+      "elevations": [
+        10
+      ]
+    },
+    {
+      "locations": [
+        {
+          "lat": 29.431626880820325,
+          "lng": -98.49242306119025
+        }
+      ],
+      "elevations": [
+        61
+      ]
+    },
+    {
+      "locations": [
+        {
+          "lat": 32.79187283473728,
+          "lng": -117.0852459515031
+        }
+      ],
+      "elevations": [
+        175
+      ]
+    },
+    {
+      "locations": [
+        {
+          "lat": 32.70824936647144,
+          "lng": -96.73025100907203
+        }
+      ],
+      "elevations": [
+        348
+      ]
+    },
+    {
+      "locations": [
+        {
+          "lat": 37.36053555314519,
+          "lng": -121.7888533872737
+        }
+      ],
+      "elevations": [
+        351
+      ]
+    },
+    {
+      "locations": [
+        {
+          "lat": 40.61436462143043,
+          "lng": -73.9425791729769
+        }
+      ],
+      "elevations": [
+        44
+      ]
+    },
+    {
+      "locations": [
+        {
+          "lat": 33.97291730038364,
+          "lng": -118.16807460700528
+        }
+      ],
+      "elevations": [
+        64
+      ]
+    },
+    {
+      "locations": [
+        {
+          "lat": 41.956042541401146,
+          "lng": -87.58131666320381
+        }
+      ],
+      "elevations": [
+        164
+      ]
+    },
+    {
+      "locations": [
+        {
+          "lat": 29.71675125429158,
+          "lng": -95.42767406903862
+        }
+      ],
+      "elevations": [
+        151
+      ]
+    },
+    {
+      "locations": [
+        {
+          "lat": 33.485899425760266,
+          "lng": -112.00341743692162
+        }
+      ],
+      "elevations": [
+        312
+      ]
+    },
+    {
+      "locations": [
+        {
+          "lat": 39.90282425041398,
+          "lng": -75.08356819075628
+        }
+      ],
+      "elevations": [
+        -13
+      ]
+    },
+    {
+      "locations": [
+        {
+          "lat": 29.45095688946184,
+          "lng": -98.42773038212556
+        }
+      ],
+      "elevations": [
+        -28
+      ]
+    },
+    {
+      "locations": [
+        {
+          "lat": 32.68241130772102,
+          "lng": -117.23493606785966
+        }
+      ],
+      "elevations": [
+        104
+      ]
+    },
+    {
+      "locations": [
+        {
+          "lat": 32.82494618166958,
+          "lng": -96.78666391577472
+        }
+      ],
+      "elevations": [
+        239
+      ]
+    },
+    {
+      "locations": [
+        {
+          "lat": 37.24013393992167,
+          "lng": -121.97125122798525
+        }
+      ],
+      "elevations": [
+        490
+      ]
+    }
+  ],
+  "directions_results": [
+    {
+      "origin": "New York, USA",
+      "destination": "Los Angeles, USA",
+      "mode": "walking",
+      "steps": [
+        {
+          "description": "Start at New York",
+          "distance": "0 km"
+        },
+        {
+          "description": "Take highway towards Los Angeles",
+          "distance": "2824 km"
+        },
+        {
+          "description": "Arrive at Los Angeles",
+          "distance": "5649 km"
+        }
+      ],
+      "distance": "5649 km",
+      "duration": "6778 mins"
+    },
+    {
+      "origin": "Los Angeles, USA",
+      "destination": "Chicago, USA",
+      "mode": "driving",
+      "steps": [
+        {
+          "description": "Start at Los Angeles",
+          "distance": "0 km"
+        },
+        {
+          "description": "Take highway towards Chicago",
+          "distance": "2133 km"
+        },
+        {
+          "description": "Arrive at Chicago",
+          "distance": "4266 km"
+        }
+      ],
+      "distance": "4266 km",
+      "duration": "5119 mins"
+    },
+    {
+      "origin": "Chicago, USA",
+      "destination": "Houston, USA",
+      "mode": "bicycling",
+      "steps": [
+        {
+          "description": "Start at Chicago",
+          "distance": "0 km"
+        },
+        {
+          "description": "Take highway towards Houston",
+          "distance": "1102 km"
+        },
+        {
+          "description": "Arrive at Houston",
+          "distance": "2204 km"
+        }
+      ],
+      "distance": "2204 km",
+      "duration": "2644 mins"
+    },
+    {
+      "origin": "Houston, USA",
+      "destination": "Phoenix, USA",
+      "mode": "walking",
+      "steps": [
+        {
+          "description": "Start at Houston",
+          "distance": "0 km"
+        },
+        {
+          "description": "Take highway towards Phoenix",
+          "distance": "1131 km"
+        },
+        {
+          "description": "Arrive at Phoenix",
+          "distance": "2263 km"
+        }
+      ],
+      "distance": "2263 km",
+      "duration": "2715 mins"
+    },
+    {
+      "origin": "Phoenix, USA",
+      "destination": "Philadelphia, USA",
+      "mode": "transit",
+      "steps": [
+        {
+          "description": "Start at Phoenix",
+          "distance": "0 km"
+        },
+        {
+          "description": "Take highway towards Philadelphia",
+          "distance": "2409 km"
+        },
+        {
+          "description": "Arrive at Philadelphia",
+          "distance": "4818 km"
+        }
+      ],
+      "distance": "4818 km",
+      "duration": "5781 mins"
+    },
+    {
+      "origin": "Philadelphia, USA",
+      "destination": "San Antonio, USA",
+      "mode": "walking",
+      "steps": [
+        {
+          "description": "Start at Philadelphia",
+          "distance": "0 km"
+        },
+        {
+          "description": "Take highway towards San Antonio",
+          "distance": "1879 km"
+        },
+        {
+          "description": "Arrive at San Antonio",
+          "distance": "3758 km"
+        }
+      ],
+      "distance": "3758 km",
+      "duration": "4509 mins"
+    },
+    {
+      "origin": "San Antonio, USA",
+      "destination": "San Diego, USA",
+      "mode": "driving",
+      "steps": [
+        {
+          "description": "Start at San Antonio",
+          "distance": "0 km"
+        },
+        {
+          "description": "Take highway towards San Diego",
+          "distance": "1218 km"
+        },
+        {
+          "description": "Arrive at San Diego",
+          "distance": "2437 km"
+        }
+      ],
+      "distance": "2437 km",
+      "duration": "2924 mins"
+    },
+    {
+      "origin": "San Diego, USA",
+      "destination": "Dallas, USA",
+      "mode": "bicycling",
+      "steps": [
+        {
+          "description": "Start at San Diego",
+          "distance": "0 km"
+        },
+        {
+          "description": "Take highway towards Dallas",
+          "distance": "1133 km"
+        },
+        {
+          "description": "Arrive at Dallas",
+          "distance": "2267 km"
+        }
+      ],
+      "distance": "2267 km",
+      "duration": "2720 mins"
+    },
+    {
+      "origin": "Dallas, USA",
+      "destination": "San Jose, USA",
+      "mode": "bicycling",
+      "steps": [
+        {
+          "description": "Start at Dallas",
+          "distance": "0 km"
+        },
+        {
+          "description": "Take highway towards San Jose",
+          "distance": "1645 km"
+        },
+        {
+          "description": "Arrive at San Jose",
+          "distance": "3291 km"
+        }
+      ],
+      "distance": "3291 km",
+      "duration": "3949 mins"
+    },
+    {
+      "origin": "San Jose, USA",
+      "destination": "New York, USA",
+      "mode": "driving",
+      "steps": [
+        {
+          "description": "Start at San Jose",
+          "distance": "0 km"
+        },
+        {
+          "description": "Take highway towards New York",
+          "distance": "2844 km"
+        },
+        {
+          "description": "Arrive at New York",
+          "distance": "5689 km"
+        }
+      ],
+      "distance": "5689 km",
+      "duration": "6826 mins"
+    }
+  ]
+}

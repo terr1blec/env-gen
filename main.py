@@ -27,7 +27,7 @@ def parse_args() -> argparse.Namespace:
         "--output-dir",
         type=Path,
         default=Path("generated"),
-        help="Directory where generated modules and datasets will be stored.",
+        help="Directory where generated modules and offline databases will be stored.",
     )
     parser.add_argument(
         "--transcripts-dir",
@@ -44,20 +44,39 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--max-turns",
         type=int,
-        default=24,
+        default=48,
         help="Maximum number of agent turns to allow for the workflow.",
-    )
-    parser.add_argument(
-        "--prompt",
-        type=str,
-        default="Construct the offline MCP server, dataset generator, dataset, and tests based on the provided schema.",
-        help="High-level goal shared across agents during the workflow.",
     )
     parser.add_argument(
         "--api-key",
         type=str,
         default=None,
         help="Override API key passed to LiteLLM (falls back to DEEPSEEK_API_KEY / API_KEY environments).",
+    )
+    parser.add_argument(
+        "--config",
+        type=Path,
+        default=Path("workflow/config/default.yaml"),
+        help="Path to workflow configuration YAML file.",
+    )
+    parser.add_argument(
+        "--no-progress",
+        dest="enable_progress",
+        action="store_false",
+        default=True,
+        help="Disable real-time progress visualization (enabled by default).",
+    )
+    parser.add_argument(
+        "--domain",
+        type=str,
+        default=None,
+        help="Override the domain folder name (e.g., travel_maps).",
+    )
+    parser.add_argument(
+        "--slug",
+        type=str,
+        default=None,
+        help="Override the slug used for output directories (defaults to schema-derived name).",
     )
     return parser.parse_args()
 
@@ -83,3 +102,4 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+

@@ -1,0 +1,325 @@
+{
+  "shelters": [
+    {
+      "id": "shelter_001",
+      "name": "Bay Area Animal Shelter",
+      "address": "789 California St",
+      "neighborhood": "Potrero Hill",
+      "hours": "Mon-Fri 9am-6pm, Sat-Sun 10am-4pm",
+      "phone": "(415) 892-9935",
+      "website": "https://bay-area-animal-shelter.org",
+      "services": [
+        "emergency",
+        "training"
+      ],
+      "capacity": 20,
+      "current_occupancy": 6,
+      "latitude": 37.754313,
+      "longitude": -122.394184
+    },
+    {
+      "id": "shelter_002",
+      "name": "Mission Animal Shelter",
+      "address": "404 Market St",
+      "neighborhood": "Noe Valley",
+      "hours": "Mon-Fri 10am-8pm, Sat-Sun 9am-6pm",
+      "phone": "(415) 803-5557",
+      "website": "https://mission-animal-shelter.org",
+      "services": [
+        "boarding",
+        "training"
+      ],
+      "capacity": 40,
+      "current_occupancy": 19,
+      "latitude": 37.747527,
+      "longitude": -122.43268
+    },
+    {
+      "id": "shelter_003",
+      "name": "San Francisco Canine Center",
+      "address": "456 Van Ness Ave",
+      "neighborhood": "Noe Valley",
+      "hours": "Daily 7am-8pm",
+      "phone": "(415) 818-5333",
+      "website": "https://san-francisco-canine-center.org",
+      "services": [
+        "training",
+        "adoption"
+      ],
+      "capacity": 50,
+      "current_occupancy": 17,
+      "latitude": 37.754772,
+      "longitude": -122.435334
+    },
+    {
+      "id": "shelter_004",
+      "name": "Golden Gate Dog Sanctuary",
+      "address": "101 California St",
+      "neighborhood": "Hayes Valley",
+      "hours": "Mon-Fri 9am-6pm, Sat-Sun 10am-4pm",
+      "phone": "(415) 246-4733",
+      "website": "https://golden-gate-dog-sanctuary.org",
+      "services": [
+        "adoption",
+        "boarding",
+        "emergency"
+      ],
+      "capacity": 50,
+      "current_occupancy": 24,
+      "latitude": 37.779894,
+      "longitude": -122.426115
+    },
+    {
+      "id": "shelter_005",
+      "name": "Golden Gate Animal Shelter",
+      "address": "202 California St",
+      "neighborhood": "Potrero Hill",
+      "hours": "Mon-Fri 9am-6pm, Sat-Sun 10am-4pm",
+      "phone": "(415) 823-3803",
+      "website": "https://golden-gate-animal-shelter.org",
+      "services": [
+        "boarding",
+        "emergency",
+        "training",
+        "grooming"
+      ],
+      "capacity": 40,
+      "current_occupancy": 37,
+      "latitude": 37.761541,
+      "longitude": -122.399973
+    },
+    {
+      "id": "shelter_006",
+      "name": "Golden Gate Dog Rescue",
+      "address": "101 Clement St",
+      "neighborhood": "Potrero Hill",
+      "hours": "Mon-Fri 9am-6pm, Sat-Sun 10am-4pm",
+      "phone": "(415) 523-7572",
+      "website": "https://golden-gate-dog-rescue.org",
+      "services": [
+        "adoption",
+        "boarding",
+        "grooming"
+      ],
+      "capacity": 75,
+      "current_occupancy": 37,
+      "latitude": 37.760082,
+      "longitude": -122.399404
+    },
+    {
+      "id": "shelter_007",
+      "name": "Coastal Canine Center",
+      "address": "789 Van Ness Ave",
+      "neighborhood": "Potrero Hill",
+      "hours": "Mon-Sat 8am-7pm, Sun 9am-5pm",
+      "phone": "(415) 452-9830",
+      "website": "https://coastal-canine-center.org",
+      "services": [
+        "emergency",
+        "training",
+        "grooming"
+      ],
+      "capacity": 50,
+      "current_occupancy": 26,
+      "latitude": 37.758192,
+      "longitude": -122.392753
+    },
+    {
+      "id": "shelter_008",
+      "name": "San Francisco Dog Rescue",
+      "address": "789 California St",
+      "neighborhood": "Marina",
+      "hours": "Mon-Sat 8am-7pm, Sun 9am-5pm",
+      "phone": "(415) 896-7916",
+      "website": "https://san-francisco-dog-rescue.org",
+      "services": [
+        "adoption",
+        "training",
+        "boarding",
+        "grooming"
+      ],
+      "capacity": 60,
+      "current_occupancy": 27,
+      "latitude": 37.802695,
+      "longitude": -122.439891
+    },
+    {
+      "id": "shelter_009",
+      "name": "Coastal Dog Rescue",
+      "address": "202 Clement St",
+      "neighborhood": "Sunset",
+      "hours": "Daily 7am-8pm",
+      "phone": "(415) 314-5808",
+      "website": "https://coastal-dog-rescue.org",
+      "services": [
+        "boarding",
+        "training",
+        "adoption"
+      ],
+      "capacity": 75,
+      "current_occupancy": 65,
+      "latitude": 37.758508,
+      "longitude": -122.497285
+    },
+    {
+      "id": "shelter_010",
+      "name": "Mission Dog Rescue",
+      "address": "202 Clement St",
+      "neighborhood": "Hayes Valley",
+      "hours": "24/7 Emergency Services, Regular hours: Mon-Fri 9am-5pm",
+      "phone": "(415) 823-4258",
+      "website": "https://mission-dog-rescue.org",
+      "services": [
+        "grooming",
+        "boarding"
+      ],
+      "capacity": 60,
+      "current_occupancy": 55,
+      "latitude": 37.781319,
+      "longitude": -122.42468
+    },
+    {
+      "id": "shelter_011",
+      "name": "Golden Gate Canine Center",
+      "address": "123 Mission St",
+      "neighborhood": "Russian Hill",
+      "hours": "Daily 7am-8pm",
+      "phone": "(415) 514-4923",
+      "website": "https://golden-gate-canine-center.org",
+      "services": [
+        "boarding",
+        "adoption"
+      ],
+      "capacity": 20,
+      "current_occupancy": 15,
+      "latitude": 37.801704,
+      "longitude": -122.423594
+    },
+    {
+      "id": "shelter_012",
+      "name": "Bay Area Animal Shelter",
+      "address": "505 Fulton St",
+      "neighborhood": "North Beach",
+      "hours": "Mon-Sat 8am-7pm, Sun 9am-5pm",
+      "phone": "(415) 471-9645",
+      "website": "https://bay-area-animal-shelter.org",
+      "services": [
+        "training",
+        "boarding",
+        "grooming",
+        "adoption"
+      ],
+      "capacity": 75,
+      "current_occupancy": 37,
+      "latitude": 37.800692,
+      "longitude": -122.407394
+    },
+    {
+      "id": "shelter_013",
+      "name": "Mission Canine Center",
+      "address": "456 Market St",
+      "neighborhood": "Potrero Hill",
+      "hours": "Mon-Sat 8am-7pm, Sun 9am-5pm",
+      "phone": "(415) 265-6539",
+      "website": "https://mission-canine-center.org",
+      "services": [
+        "emergency",
+        "boarding"
+      ],
+      "capacity": 60,
+      "current_occupancy": 26,
+      "latitude": 37.759699,
+      "longitude": -122.397219
+    },
+    {
+      "id": "shelter_014",
+      "name": "San Francisco Dog Rescue",
+      "address": "303 Mission St",
+      "neighborhood": "Pacific Heights",
+      "hours": "24/7 Emergency Services, Regular hours: Mon-Fri 9am-5pm",
+      "phone": "(415) 443-5562",
+      "website": "https://san-francisco-dog-rescue.org",
+      "services": [
+        "training",
+        "boarding",
+        "grooming",
+        "adoption"
+      ],
+      "capacity": 75,
+      "current_occupancy": 68,
+      "latitude": 37.789778,
+      "longitude": -122.442011
+    },
+    {
+      "id": "shelter_015",
+      "name": "Pacific Canine Center",
+      "address": "101 Mission St",
+      "neighborhood": "Bernal Heights",
+      "hours": "Mon-Fri 9am-6pm, Sat-Sun 10am-4pm",
+      "phone": "(415) 874-8062",
+      "website": "https://pacific-canine-center.org",
+      "services": [
+        "training",
+        "emergency",
+        "boarding"
+      ],
+      "capacity": 100,
+      "current_occupancy": 77,
+      "latitude": 37.744862,
+      "longitude": -122.41677
+    },
+    {
+      "id": "shelter_016",
+      "name": "San Francisco Canine Center",
+      "address": "303 Clement St",
+      "neighborhood": "Potrero Hill",
+      "hours": "Mon-Fri 9am-6pm, Sat-Sun 10am-4pm",
+      "phone": "(415) 454-4139",
+      "website": "https://san-francisco-canine-center.org",
+      "services": [
+        "emergency",
+        "training"
+      ],
+      "capacity": 30,
+      "current_occupancy": 17,
+      "latitude": 37.759735,
+      "longitude": -122.395138
+    },
+    {
+      "id": "shelter_017",
+      "name": "San Francisco Canine Center",
+      "address": "456 Mission St",
+      "neighborhood": "Hayes Valley",
+      "hours": "24/7 Emergency Services, Regular hours: Mon-Fri 9am-5pm",
+      "phone": "(415) 215-2528",
+      "website": "https://san-francisco-canine-center.org",
+      "services": [
+        "boarding",
+        "training"
+      ],
+      "capacity": 50,
+      "current_occupancy": 30,
+      "latitude": 37.776226,
+      "longitude": -122.423555
+    },
+    {
+      "id": "shelter_018",
+      "name": "Pacific Dog Rescue",
+      "address": "404 Van Ness Ave",
+      "neighborhood": "North Beach",
+      "hours": "Mon-Fri 10am-8pm, Sat-Sun 9am-6pm",
+      "phone": "(415) 492-7930",
+      "website": "https://pacific-dog-rescue.org",
+      "services": [
+        "emergency",
+        "training",
+        "adoption",
+        "grooming"
+      ],
+      "capacity": 40,
+      "current_occupancy": 17,
+      "latitude": 37.80401,
+      "longitude": -122.414414
+    }
+  ]
+}

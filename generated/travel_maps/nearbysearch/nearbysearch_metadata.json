@@ -1,0 +1,89 @@
+{
+  "name": "NearbySearch",
+  "description": "Search for nearby places based on location and category",
+  "tools": [
+    {
+      "name": "search_nearby",
+      "description": "Search for nearby places based on location and category",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "latitude": {
+            "type": "number",
+            "description": "Latitude coordinate"
+          },
+          "longitude": {
+            "type": "number",
+            "description": "Longitude coordinate"
+          },
+          "category": {
+            "type": "string",
+            "description": "Category of places to search for"
+          },
+          "radius": {
+            "type": "number",
+            "description": "Search radius in meters"
+          }
+        },
+        "required": ["latitude", "longitude", "category"]
+      },
+      "output_schema": {
+        "type": "object",
+        "properties": {
+          "places": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "description": "Unique identifier for the place"
+                },
+                "name": {
+                  "type": "string",
+                  "description": "Name of the place"
+                },
+                "latitude": {
+                  "type": "number",
+                  "description": "Latitude coordinate of the place"
+                },
+                "longitude": {
+                  "type": "number",
+                  "description": "Longitude coordinate of the place"
+                },
+                "category": {
+                  "type": "string",
+                  "description": "Category of the place"
+                },
+                "address": {
+                  "type": "string",
+                  "description": "Street address of the place"
+                },
+                "rating": {
+                  "type": "number",
+                  "description": "Rating of the place (1-5 scale)"
+                },
+                "price_level": {
+                  "type": "number",
+                  "description": "Price level indicator (1-4 scale)"
+                },
+                "opening_hours": {
+                  "type": "string",
+                  "description": "Opening hours information"
+                },
+                "description": {
+                  "type": "string",
+                  "description": "Description of the place"
+                },
+                "distance": {
+                  "type": "number",
+                  "description": "Distance from search location in meters"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  ]
+}

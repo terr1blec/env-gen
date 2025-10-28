@@ -1,0 +1,309 @@
+{
+  "description": "A FastMCP-compliant server that provides navigation and routing services using offline Korean navigation data.",
+  "name": "Kakao Navigation",
+  "tools": [
+    {
+      "description": "Search for directions between two coordinate points.",
+      "input_schema": {
+        "properties": {
+          "end_latitude": {
+            "description": "Destination latitude coordinate",
+            "type": "number"
+          },
+          "end_longitude": {
+            "description": "Destination longitude coordinate",
+            "type": "number"
+          },
+          "start_latitude": {
+            "description": "Starting point latitude coordinate",
+            "type": "number"
+          },
+          "start_longitude": {
+            "description": "Starting point longitude coordinate",
+            "type": "number"
+          }
+        },
+        "required": [
+          "start_latitude",
+          "start_longitude",
+          "end_latitude",
+          "end_longitude"
+        ],
+        "type": "object"
+      },
+      "name": "direction_search_by_coords",
+      "output_schema": {
+        "properties": {
+          "distance": {
+            "description": "Total distance of the route",
+            "type": "string"
+          },
+          "duration": {
+            "description": "Estimated travel time",
+            "type": "string"
+          },
+          "end_address": {
+            "description": "Address of the destination",
+            "type": "string"
+          },
+          "route_details": {
+            "description": "Detailed description of the route",
+            "type": "string"
+          },
+          "start_address": {
+            "description": "Address of the starting point",
+            "type": "string"
+          }
+        },
+        "type": "object"
+      }
+    },
+    {
+      "description": "Search for directions between two addresses.",
+      "input_schema": {
+        "properties": {
+          "end_address": {
+            "description": "Destination address",
+            "type": "string"
+          },
+          "start_address": {
+            "description": "Starting point address",
+            "type": "string"
+          }
+        },
+        "required": [
+          "start_address",
+          "end_address"
+        ],
+        "type": "object"
+      },
+      "name": "direction_search_by_address",
+      "output_schema": {
+        "properties": {
+          "distance": {
+            "description": "Total distance of the route",
+            "type": "string"
+          },
+          "duration": {
+            "description": "Estimated travel time",
+            "type": "string"
+          },
+          "end_address": {
+            "description": "Address of the destination",
+            "type": "string"
+          },
+          "route_details": {
+            "description": "Detailed description of the route",
+            "type": "string"
+          },
+          "start_address": {
+            "description": "Address of the starting point",
+            "type": "string"
+          }
+        },
+        "type": "object"
+      }
+    },
+    {
+      "description": "Search for address information by place name.",
+      "input_schema": {
+        "properties": {
+          "place_name": {
+            "description": "Name of the place to search for",
+            "type": "string"
+          }
+        },
+        "required": [
+          "place_name"
+        ],
+        "type": "object"
+      },
+      "name": "address_search_by_place_name",
+      "output_schema": {
+        "properties": {
+          "address": {
+            "description": "Full address of the place",
+            "type": "string"
+          },
+          "latitude": {
+            "description": "Latitude coordinate of the place",
+            "type": "number"
+          },
+          "longitude": {
+            "description": "Longitude coordinate of the place",
+            "type": "number"
+          },
+          "place_name": {
+            "description": "Name of the place",
+            "type": "string"
+          }
+        },
+        "type": "object"
+      }
+    },
+    {
+      "description": "Convert address to geographic coordinates.",
+      "input_schema": {
+        "properties": {
+          "address": {
+            "description": "Address to geocode",
+            "type": "string"
+          }
+        },
+        "required": [
+          "address"
+        ],
+        "type": "object"
+      },
+      "name": "geocode",
+      "output_schema": {
+        "properties": {
+          "address": {
+            "description": "Input address",
+            "type": "string"
+          },
+          "error": {
+            "description": "Error message if address not found",
+            "type": "string"
+          },
+          "latitude": {
+            "description": "Latitude coordinate of the address",
+            "type": "number"
+          },
+          "longitude": {
+            "description": "Longitude coordinate of the address",
+            "type": "number"
+          }
+        },
+        "type": "object"
+      }
+    },
+    {
+      "description": "Search for future directions with traffic prediction based on departure time.",
+      "input_schema": {
+        "properties": {
+          "departure_time": {
+            "description": "Planned departure time (YYYY-MM-DD HH:MM format)",
+            "type": "string"
+          },
+          "end_latitude": {
+            "description": "Destination latitude coordinate",
+            "type": "number"
+          },
+          "end_longitude": {
+            "description": "Destination longitude coordinate",
+            "type": "number"
+          },
+          "start_latitude": {
+            "description": "Starting point latitude coordinate",
+            "type": "number"
+          },
+          "start_longitude": {
+            "description": "Starting point longitude coordinate",
+            "type": "number"
+          }
+        },
+        "required": [
+          "start_latitude",
+          "start_longitude",
+          "end_latitude",
+          "end_longitude",
+          "departure_time"
+        ],
+        "type": "object"
+      },
+      "name": "future_direction_search_by_coords",
+      "output_schema": {
+        "properties": {
+          "departure_time": {
+            "description": "Planned departure time",
+            "type": "string"
+          },
+          "distance": {
+            "description": "Total distance of the route",
+            "type": "string"
+          },
+          "duration": {
+            "description": "Estimated travel time",
+            "type": "string"
+          },
+          "end_address": {
+            "description": "Address of the destination",
+            "type": "string"
+          },
+          "start_address": {
+            "description": "Address of the starting point",
+            "type": "string"
+          },
+          "traffic_prediction": {
+            "description": "Traffic prediction for the route",
+            "type": "string"
+          }
+        },
+        "type": "object"
+      }
+    },
+    {
+      "description": "Search for multi-destination directions starting from coordinates.",
+      "input_schema": {
+        "properties": {
+          "destinations": {
+            "description": "List of destination objects with 'latitude' and 'longitude' fields",
+            "items": {
+              "properties": {
+                "latitude": {
+                  "type": "number"
+                },
+                "longitude": {
+                  "type": "number"
+                }
+              },
+              "type": "object"
+            },
+            "type": "array"
+          },
+          "start_latitude": {
+            "description": "Starting point latitude coordinate",
+            "type": "number"
+          },
+          "start_longitude": {
+            "description": "Starting point longitude coordinate",
+            "type": "number"
+          }
+        },
+        "required": [
+          "start_latitude",
+          "start_longitude",
+          "destinations"
+        ],
+        "type": "object"
+      },
+      "name": "multi_destination_direction_search",
+      "output_schema": {
+        "properties": {
+          "destinations": {
+            "description": "List of destinations in the route",
+            "type": "array"
+          },
+          "start_address": {
+            "description": "Address of the starting point",
+            "type": "string"
+          },
+          "summary": {
+            "description": "Summary of the multi-destination route",
+            "type": "string"
+          },
+          "total_distance": {
+            "description": "Total distance of the entire route",
+            "type": "string"
+          },
+          "total_duration": {
+            "description": "Total duration of the entire route",
+            "type": "string"
+          }
+        },
+        "type": "object"
+      }
+    }
+  ]
+}

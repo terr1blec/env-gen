@@ -3,7 +3,10 @@ from __future__ import annotations
 import json
 from dataclasses import dataclass, field
 from pathlib import Path
-from typing import Any, Dict, List, Optional, Set
+from typing import Any, Dict, List, Optional, Set, TYPE_CHECKING
+
+if TYPE_CHECKING:
+    from .config import WorkflowConfig
 
 
 @dataclass
@@ -32,6 +35,7 @@ class WorkflowContext:
     data_contract: Dict[str, Any] | None = None
     expected_tool_names: List[str] = field(default_factory=list)
     allowed_write_roots: Set[Path] = field(default_factory=set)
+    config: Optional[WorkflowConfig] = None
 
     @property
     def dataset_module_path(self) -> Path:

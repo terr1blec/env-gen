@@ -1,11 +1,13 @@
 [project]
 name = "env-gen"
 version = "0.1.0"
-description = "Add your description here"
+description = "MCP Offline Server Generation Workflow with Multi-Agent System"
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
     "openai-agents>=0.3.3",
     "litellm>=1.44.16",
     "pytest>=8.4.2",
+    "rich>=13.7.0",
+    "pyyaml>=6.0.1",
 ]

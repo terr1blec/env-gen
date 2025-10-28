@@ -1,0 +1,188 @@
+{
+  "name": "Flight Search Service",
+  "description": "A flight search service that provides access to flight information, airport details, and airline information using an offline database",
+  "tools": [
+    {
+      "name": "search_flights",
+      "description": "Search for available flights based on departure and arrival airports",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "departure_airport": {
+            "type": "string",
+            "description": "IATA code of departure airport (e.g., JFK, LAX)"
+          },
+          "arrival_airport": {
+            "type": "string",
+            "description": "IATA code of arrival airport (e.g., LAX, LHR)"
+          },
+          "departure_date": {
+            "type": "string",
+            "description": "Departure date in YYYY-MM-DD format"
+          }
+        },
+        "required": [
+          "departure_airport",
+          "arrival_airport",
+          "departure_date"
+        ]
+      },
+      "output_schema": {
+        "type": "object",
+        "properties": {
+          "flights": {
+            "type": "array",
+            "description": "Array of matching flight objects"
+          },
+          "total_results": {
+            "type": "number",
+            "description": "Total number of flights found"
+          },
+          "search_criteria": {
+            "type": "object",
+            "description": "The search criteria used for the query"
+          }
+        }
+      }
+    },
+    {
+      "name": "get_airport_info",
+      "description": "Get detailed information about a specific airport",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "airport_code": {
+            "type": "string",
+            "description": "IATA code of the airport (e.g., JFK, LAX)"
+          }
+        },
+        "required": [
+          "airport_code"
+        ]
+      },
+      "output_schema": {
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "string",
+            "description": "IATA airport code"
+          },
+          "name": {
+            "type": "string",
+            "description": "Full name of the airport"
+          },
+          "city": {
+            "type": "string",
+            "description": "City where the airport is located"
+          },
+          "country": {
+            "type": "string",
+            "description": "Country where the airport is located"
+          },
+          "timezone": {
+            "type": "string",
+            "description": "Timezone of the airport"
+          }
+        }
+      }
+    },
+    {
+      "name": "get_airline_info",
+      "description": "Get information about a specific airline",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "airline_code": {
+            "type": "string",
+            "description": "IATA code of the airline (e.g., DL, UA)"
+          }
+        },
+        "required": [
+          "airline_code"
+        ]
+      },
+      "output_schema": {
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "string",
+            "description": "IATA airline code"
+          },
+          "name": {
+            "type": "string",
+            "description": "Full name of the airline"
+          },
+          "hub_airport": {
+            "type": "string",
+            "description": "Hub airport for the airline"
+          }
+        }
+      }
+    },
+    {
+      "name": "get_flight_details",
+      "description": "Get detailed information about a specific flight",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "flight_id": {
+            "type": "string",
+            "description": "Unique identifier of the flight (e.g., FL0001)"
+          }
+        },
+        "required": [
+          "flight_id"
+        ]
+      },
+      "output_schema": {
+        "type": "object",
+        "properties": {
+          "flight_id": {
+            "type": "string",
+            "description": "Unique identifier of the flight"
+          },
+          "airline": {
+            "type": "string",
+            "description": "Airline code operating the flight"
+          },
+          "flight_number": {
+            "type": "string",
+            "description": "Flight number"
+          },
+          "departure_airport": {
+            "type": "string",
+            "description": "Departure airport IATA code"
+          },
+          "arrival_airport": {
+            "type": "string",
+            "description": "Arrival airport IATA code"
+          },
+          "departure_time": {
+            "type": "string",
+            "description": "Departure time in 24-hour format"
+          },
+          "arrival_time": {
+            "type": "string",
+            "description": "Arrival time in 24-hour format"
+          },
+          "duration": {
+            "type": "string",
+            "description": "Flight duration in HH:MM format"
+          },
+          "price": {
+            "type": "number",
+            "description": "Price in USD"
+          },
+          "available_seats": {
+            "type": "number",
+            "description": "Number of available seats"
+          },
+          "aircraft_type": {
+            "type": "string",
+            "description": "Type of aircraft used for the flight"
+          }
+        }
+      }
+    }
+  ]
+}

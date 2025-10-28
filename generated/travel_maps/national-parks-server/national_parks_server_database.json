@@ -1,0 +1,1969 @@
+{
+  "parks": [
+    {
+      "id": "92222c06-f572-53a1-8ef5-70d170678c61",
+      "name": "Yellowstone National Park",
+      "parkCode": "yell",
+      "description": "World's first national park with geothermal wonders.",
+      "states": "WY,MT,ID",
+      "designation": "National Park"
+    },
+    {
+      "id": "45df4f84-053a-555b-aa00-40f498203ca7",
+      "name": "Yosemite National Park",
+      "parkCode": "yose",
+      "description": "Famous for giant sequoias and granite cliffs.",
+      "states": "CA",
+      "designation": "National Park"
+    },
+    {
+      "id": "7602708e-e885-5d52-b6cd-6402663396f3",
+      "name": "Grand Canyon National Park",
+      "parkCode": "grca",
+      "description": "Awe-inspiring canyon carved by Colorado River.",
+      "states": "AZ",
+      "designation": "National Park"
+    },
+    {
+      "id": "5deb4e5e-83f1-55db-b06b-e2f5b2ec6254",
+      "name": "Great Smoky Mountains National Park",
+      "parkCode": "grsm",
+      "description": "America's most visited national park.",
+      "states": "TN,NC",
+      "designation": "National Park"
+    },
+    {
+      "id": "5d9d0105-3e5e-55bb-969f-d217725bced0",
+      "name": "Rocky Mountain National Park",
+      "parkCode": "romo",
+      "description": "Mountain wilderness with alpine lakes.",
+      "states": "CO",
+      "designation": "National Park"
+    },
+    {
+      "id": "b891efaf-552f-5026-b4a1-f461086a0508",
+      "name": "Zion National Park",
+      "parkCode": "zion",
+      "description": "Dramatic desert landscape with sandstone cliffs.",
+      "states": "UT",
+      "designation": "National Park"
+    },
+    {
+      "id": "cfc0ad03-37b6-58ab-89cb-ee60fdd9cd9e",
+      "name": "Acadia National Park",
+      "parkCode": "acad",
+      "description": "Coastal park with rocky beaches and mountains.",
+      "states": "ME",
+      "designation": "National Park"
+    },
+    {
+      "id": "cf7d663c-2d0d-5eff-80e0-dc34d768fb34",
+      "name": "Olympic National Park",
+      "parkCode": "olym",
+      "description": "Diverse ecosystems including rainforest.",
+      "states": "WA",
+      "designation": "National Park"
+    },
+    {
+      "id": "7fba7f0a-64da-5a40-9201-59204ec14e18",
+      "name": "Glacier National Park",
+      "parkCode": "glac",
+      "description": "Crown of the Continent with glaciers.",
+      "states": "MT",
+      "designation": "National Park"
+    },
+    {
+      "id": "1ed53e87-3443-55cd-9656-db3502808ae0",
+      "name": "Grand Teton National Park",
+      "parkCode": "grte",
+      "description": "Dramatic mountain range.",
+      "states": "WY",
+      "designation": "National Park"
+    },
+    {
+      "id": "5e514708-d213-5773-bce5-65ed16b1d0e3",
+      "name": "Bryce Canyon National Park",
+      "parkCode": "brca",
+      "description": "Unique geological structures called hoodoos.",
+      "states": "UT",
+      "designation": "National Park"
+    },
+    {
+      "id": "39624487-9aff-5ad8-9d54-7f40477649b8",
+      "name": "Arches National Park",
+      "parkCode": "arch",
+      "description": "World's largest concentration of stone arches.",
+      "states": "UT",
+      "designation": "National Park"
+    },
+    {
+      "id": "a3e44e6b-71f4-5dd0-8a99-0b3379bfaf65",
+      "name": "Sequoia National Park",
+      "parkCode": "seki",
+      "description": "Home to giant sequoia trees.",
+      "states": "CA",
+      "designation": "National Park"
+    },
+    {
+      "id": "ddcdd393-dafa-51ec-aca2-f8262b188479",
+      "name": "Joshua Tree National Park",
+      "parkCode": "jotr",
+      "description": "Desert landscape with Joshua trees.",
+      "states": "CA",
+      "designation": "National Park"
+    },
+    {
+      "id": "2bb03ff0-33fe-5a6f-8176-5399a945263f",
+      "name": "Shenandoah National Park",
+      "parkCode": "shen",
+      "description": "Scenic park along Blue Ridge Mountains.",
+      "states": "VA",
+      "designation": "National Park"
+    }
+  ],
+  "park_details": [
+    {
+      "parkCode": "yell",
+      "fullName": "Yellowstone National Park",
+      "description": "World's first national park with geothermal wonders.",
+      "directions": "Main entrance accessible via highway. Check NPS website for directions.",
+      "weather": "Weather varies by season. Check current conditions before visiting.",
+      "activities": [
+        "Hiking",
+        "Photography",
+        "Wildlife Viewing",
+        "Camping",
+        "Fishing"
+      ],
+      "entranceFees": [
+        {
+          "cost": "35.00",
+          "description": "Private Vehicle (7-day pass)",
+          "title": "Vehicle Fee"
+        }
+      ],
+      "operatingHours": [
+        {
+          "description": "Open 24 hours",
+          "standardHours": {
+            "sunday": "All Day",
+            "monday": "All Day",
+            "tuesday": "All Day",
+            "wednesday": "All Day",
+            "thursday": "All Day",
+            "friday": "All Day",
+            "saturday": "All Day"
+          },
+          "exceptions": []
+        }
+      ]
+    },
+    {
+      "parkCode": "yose",
+      "fullName": "Yosemite National Park",
+      "description": "Famous for giant sequoias and granite cliffs.",
+      "directions": "Main entrance accessible via highway. Check NPS website for directions.",
+      "weather": "Weather varies by season. Check current conditions before visiting.",
+      "activities": [
+        "Fishing",
+        "Hiking",
+        "Bird Watching"
+      ],
+      "entranceFees": [
+        {
+          "cost": "35.00",
+          "description": "Private Vehicle (7-day pass)",
+          "title": "Vehicle Fee"
+        }
+      ],
+      "operatingHours": [
+        {
+          "description": "Open 24 hours",
+          "standardHours": {
+            "sunday": "All Day",
+            "monday": "All Day",
+            "tuesday": "All Day",
+            "wednesday": "All Day",
+            "thursday": "All Day",
+            "friday": "All Day",
+            "saturday": "All Day"
+          },
+          "exceptions": []
+        }
+      ]
+    },
+    {
+      "parkCode": "grca",
+      "fullName": "Grand Canyon National Park",
+      "description": "Awe-inspiring canyon carved by Colorado River.",
+      "directions": "Main entrance accessible via highway. Check NPS website for directions.",
+      "weather": "Weather varies by season. Check current conditions before visiting.",
+      "activities": [
+        "Bird Watching",
+        "Scenic Driving",
+        "Hiking"
+      ],
+      "entranceFees": [
+        {
+          "cost": "35.00",
+          "description": "Private Vehicle (7-day pass)",
+          "title": "Vehicle Fee"
+        }
+      ],
+      "operatingHours": [
+        {
+          "description": "Open 24 hours",
+          "standardHours": {
+            "sunday": "All Day",
+            "monday": "All Day",
+            "tuesday": "All Day",
+            "wednesday": "All Day",
+            "thursday": "All Day",
+            "friday": "All Day",
+            "saturday": "All Day"
+          },
+          "exceptions": []
+        }
+      ]
+    },
+    {
+      "parkCode": "grsm",
+      "fullName": "Great Smoky Mountains National Park",
+      "description": "America's most visited national park.",
+      "directions": "Main entrance accessible via highway. Check NPS website for directions.",
+      "weather": "Weather varies by season. Check current conditions before visiting.",
+      "activities": [
+        "Hiking",
+        "Camping",
+        "Fishing"
+      ],
+      "entranceFees": [
+        {
+          "cost": "35.00",
+          "description": "Private Vehicle (7-day pass)",
+          "title": "Vehicle Fee"
+        }
+      ],
+      "operatingHours": [
+        {
+          "description": "Open 24 hours",
+          "standardHours": {
+            "sunday": "All Day",
+            "monday": "All Day",
+            "tuesday": "All Day",
+            "wednesday": "All Day",
+            "thursday": "All Day",
+            "friday": "All Day",
+            "saturday": "All Day"
+          },
+          "exceptions": []
+        }
+      ]
+    },
+    {
+      "parkCode": "romo",
+      "fullName": "Rocky Mountain National Park",
+      "description": "Mountain wilderness with alpine lakes.",
+      "directions": "Main entrance accessible via highway. Check NPS website for directions.",
+      "weather": "Weather varies by season. Check current conditions before visiting.",
+      "activities": [
+        "Bird Watching",
+        "Hiking",
+        "Photography",
+        "Camping",
+        "Wildlife Viewing"
+      ],
+      "entranceFees": [
+        {
+          "cost": "35.00",
+          "description": "Private Vehicle (7-day pass)",
+          "title": "Vehicle Fee"
+        }
+      ],
+      "operatingHours": [
+        {
+          "description": "Open 24 hours",
+          "standardHours": {
+            "sunday": "All Day",
+            "monday": "All Day",
+            "tuesday": "All Day",
+            "wednesday": "All Day",
+            "thursday": "All Day",
+            "friday": "All Day",
+            "saturday": "All Day"
+          },
+          "exceptions": []
+        }
+      ]
+    },
+    {
+      "parkCode": "zion",
+      "fullName": "Zion National Park",
+      "description": "Dramatic desert landscape with sandstone cliffs.",
+      "directions": "Main entrance accessible via highway. Check NPS website for directions.",
+      "weather": "Weather varies by season. Check current conditions before visiting.",
+      "activities": [
+        "Fishing",
+        "Bird Watching",
+        "Scenic Driving",
+        "Camping",
+        "Photography"
+      ],
+      "entranceFees": [
+        {
+          "cost": "35.00",
+          "description": "Private Vehicle (7-day pass)",
+          "title": "Vehicle Fee"
+        }
+      ],
+      "operatingHours": [
+        {
+          "description": "Open 24 hours",
+          "standardHours": {
+            "sunday": "All Day",
+            "monday": "All Day",
+            "tuesday": "All Day",
+            "wednesday": "All Day",
+            "thursday": "All Day",
+            "friday": "All Day",
+            "saturday": "All Day"
+          },
+          "exceptions": []
+        }
+      ]
+    },
+    {
+      "parkCode": "acad",
+      "fullName": "Acadia National Park",
+      "description": "Coastal park with rocky beaches and mountains.",
+      "directions": "Main entrance accessible via highway. Check NPS website for directions.",
+      "weather": "Weather varies by season. Check current conditions before visiting.",
+      "activities": [
+        "Wildlife Viewing",
+        "Hiking",
+        "Camping",
+        "Scenic Driving",
+        "Bird Watching"
+      ],
+      "entranceFees": [
+        {
+          "cost": "35.00",
+          "description": "Private Vehicle (7-day pass)",
+          "title": "Vehicle Fee"
+        }
+      ],
+      "operatingHours": [
+        {
+          "description": "Open 24 hours",
+          "standardHours": {
+            "sunday": "All Day",
+            "monday": "All Day",
+            "tuesday": "All Day",
+            "wednesday": "All Day",
+            "thursday": "All Day",
+            "friday": "All Day",
+            "saturday": "All Day"
+          },
+          "exceptions": []
+        }
+      ]
+    },
+    {
+      "parkCode": "olym",
+      "fullName": "Olympic National Park",
+      "description": "Diverse ecosystems including rainforest.",
+      "directions": "Main entrance accessible via highway. Check NPS website for directions.",
+      "weather": "Weather varies by season. Check current conditions before visiting.",
+      "activities": [
+        "Camping",
+        "Photography",
+        "Wildlife Viewing",
+        "Hiking"
+      ],
+      "entranceFees": [
+        {
+          "cost": "35.00",
+          "description": "Private Vehicle (7-day pass)",
+          "title": "Vehicle Fee"
+        }
+      ],
+      "operatingHours": [
+        {
+          "description": "Open 24 hours",
+          "standardHours": {
+            "sunday": "All Day",
+            "monday": "All Day",
+            "tuesday": "All Day",
+            "wednesday": "All Day",
+            "thursday": "All Day",
+            "friday": "All Day",
+            "saturday": "All Day"
+          },
+          "exceptions": []
+        }
+      ]
+    },
+    {
+      "parkCode": "glac",
+      "fullName": "Glacier National Park",
+      "description": "Crown of the Continent with glaciers.",
+      "directions": "Main entrance accessible via highway. Check NPS website for directions.",
+      "weather": "Weather varies by season. Check current conditions before visiting.",
+      "activities": [
+        "Scenic Driving",
+        "Hiking",
+        "Wildlife Viewing"
+      ],
+      "entranceFees": [
+        {
+          "cost": "35.00",
+          "description": "Private Vehicle (7-day pass)",
+          "title": "Vehicle Fee"
+        }
+      ],
+      "operatingHours": [
+        {
+          "description": "Open 24 hours",
+          "standardHours": {
+            "sunday": "All Day",
+            "monday": "All Day",
+            "tuesday": "All Day",
+            "wednesday": "All Day",
+            "thursday": "All Day",
+            "friday": "All Day",
+            "saturday": "All Day"
+          },
+          "exceptions": []
+        }
+      ]
+    },
+    {
+      "parkCode": "grte",
+      "fullName": "Grand Teton National Park",
+      "description": "Dramatic mountain range.",
+      "directions": "Main entrance accessible via highway. Check NPS website for directions.",
+      "weather": "Weather varies by season. Check current conditions before visiting.",
+      "activities": [
+        "Bird Watching",
+        "Wildlife Viewing",
+        "Hiking",
+        "Scenic Driving"
+      ],
+      "entranceFees": [
+        {
+          "cost": "35.00",
+          "description": "Private Vehicle (7-day pass)",
+          "title": "Vehicle Fee"
+        }
+      ],
+      "operatingHours": [
+        {
+          "description": "Open 24 hours",
+          "standardHours": {
+            "sunday": "All Day",
+            "monday": "All Day",
+            "tuesday": "All Day",
+            "wednesday": "All Day",
+            "thursday": "All Day",
+            "friday": "All Day",
+            "saturday": "All Day"
+          },
+          "exceptions": []
+        }
+      ]
+    },
+    {
+      "parkCode": "brca",
+      "fullName": "Bryce Canyon National Park",
+      "description": "Unique geological structures called hoodoos.",
+      "directions": "Main entrance accessible via highway. Check NPS website for directions.",
+      "weather": "Weather varies by season. Check current conditions before visiting.",
+      "activities": [
+        "Hiking",
+        "Scenic Driving",
+        "Photography",
+        "Wildlife Viewing",
+        "Fishing"
+      ],
+      "entranceFees": [
+        {
+          "cost": "35.00",
+          "description": "Private Vehicle (7-day pass)",
+          "title": "Vehicle Fee"
+        }
+      ],
+      "operatingHours": [
+        {
+          "description": "Open 24 hours",
+          "standardHours": {
+            "sunday": "All Day",
+            "monday": "All Day",
+            "tuesday": "All Day",
+            "wednesday": "All Day",
+            "thursday": "All Day",
+            "friday": "All Day",
+            "saturday": "All Day"
+          },
+          "exceptions": []
+        }
+      ]
+    },
+    {
+      "parkCode": "arch",
+      "fullName": "Arches National Park",
+      "description": "World's largest concentration of stone arches.",
+      "directions": "Main entrance accessible via highway. Check NPS website for directions.",
+      "weather": "Weather varies by season. Check current conditions before visiting.",
+      "activities": [
+        "Photography",
+        "Wildlife Viewing",
+        "Bird Watching",
+        "Camping",
+        "Fishing"
+      ],
+      "entranceFees": [
+        {
+          "cost": "35.00",
+          "description": "Private Vehicle (7-day pass)",
+          "title": "Vehicle Fee"
+        }
+      ],
+      "operatingHours": [
+        {
+          "description": "Open 24 hours",
+          "standardHours": {
+            "sunday": "All Day",
+            "monday": "All Day",
+            "tuesday": "All Day",
+            "wednesday": "All Day",
+            "thursday": "All Day",
+            "friday": "All Day",
+            "saturday": "All Day"
+          },
+          "exceptions": []
+        }
+      ]
+    },
+    {
+      "parkCode": "seki",
+      "fullName": "Sequoia National Park",
+      "description": "Home to giant sequoia trees.",
+      "directions": "Main entrance accessible via highway. Check NPS website for directions.",
+      "weather": "Weather varies by season. Check current conditions before visiting.",
+      "activities": [
+        "Hiking",
+        "Fishing",
+        "Camping"
+      ],
+      "entranceFees": [
+        {
+          "cost": "35.00",
+          "description": "Private Vehicle (7-day pass)",
+          "title": "Vehicle Fee"
+        }
+      ],
+      "operatingHours": [
+        {
+          "description": "Open 24 hours",
+          "standardHours": {
+            "sunday": "All Day",
+            "monday": "All Day",
+            "tuesday": "All Day",
+            "wednesday": "All Day",
+            "thursday": "All Day",
+            "friday": "All Day",
+            "saturday": "All Day"
+          },
+          "exceptions": []
+        }
+      ]
+    },
+    {
+      "parkCode": "jotr",
+      "fullName": "Joshua Tree National Park",
+      "description": "Desert landscape with Joshua trees.",
+      "directions": "Main entrance accessible via highway. Check NPS website for directions.",
+      "weather": "Weather varies by season. Check current conditions before visiting.",
+      "activities": [
+        "Hiking",
+        "Camping",
+        "Photography",
+        "Scenic Driving"
+      ],
+      "entranceFees": [
+        {
+          "cost": "35.00",
+          "description": "Private Vehicle (7-day pass)",
+          "title": "Vehicle Fee"
+        }
+      ],
+      "operatingHours": [
+        {
+          "description": "Open 24 hours",
+          "standardHours": {
+            "sunday": "All Day",
+            "monday": "All Day",
+            "tuesday": "All Day",
+            "wednesday": "All Day",
+            "thursday": "All Day",
+            "friday": "All Day",
+            "saturday": "All Day"
+          },
+          "exceptions": []
+        }
+      ]
+    },
+    {
+      "parkCode": "shen",
+      "fullName": "Shenandoah National Park",
+      "description": "Scenic park along Blue Ridge Mountains.",
+      "directions": "Main entrance accessible via highway. Check NPS website for directions.",
+      "weather": "Weather varies by season. Check current conditions before visiting.",
+      "activities": [
+        "Scenic Driving",
+        "Fishing",
+        "Wildlife Viewing",
+        "Camping"
+      ],
+      "entranceFees": [
+        {
+          "cost": "35.00",
+          "description": "Private Vehicle (7-day pass)",
+          "title": "Vehicle Fee"
+        }
+      ],
+      "operatingHours": [
+        {
+          "description": "Open 24 hours",
+          "standardHours": {
+            "sunday": "All Day",
+            "monday": "All Day",
+            "tuesday": "All Day",
+            "wednesday": "All Day",
+            "thursday": "All Day",
+            "friday": "All Day",
+            "saturday": "All Day"
+          },
+          "exceptions": []
+        }
+      ]
+    }
+  ],
+  "alerts": [
+    {
+      "id": "3ac43b96-ccb7-5ffd-92d7-f133278cc60d",
+      "title": "Safety Alert - Yellowstone",
+      "description": "Trail closure",
+      "category": "Safety",
+      "parkCode": "yell",
+      "lastIndexedDate": "2025-10-22"
+    },
+    {
+      "id": "5cb95fc2-4535-5d63-82d0-8b9303804563",
+      "title": "Weather Alert - Yellowstone",
+      "description": "Severe weather warning",
+      "category": "Weather",
+      "parkCode": "yell",
+      "lastIndexedDate": "2025-10-09"
+    },
+    {
+      "id": "91159c01-6737-5ca8-9a07-de524f89094c",
+      "title": "Roads Alert - Yosemite",
+      "description": "Construction delays",
+      "category": "Roads",
+      "parkCode": "yose",
+      "lastIndexedDate": "2025-10-23"
+    },
+    {
+      "id": "eec5a4ea-48a8-51d0-87ca-2ebbf2f76d45",
+      "title": "Fire Alert - Yosemite",
+      "description": "Fire restrictions in effect",
+      "category": "Fire",
+      "parkCode": "yose",
+      "lastIndexedDate": "2025-10-20"
+    },
+    {
+      "id": "992ab497-a990-5b71-950c-332ac8e1cbf5",
+      "title": "Safety Alert - Yosemite",
+      "description": "Bear activity reported",
+      "category": "Safety",
+      "parkCode": "yose",
+      "lastIndexedDate": "2025-10-02"
+    },
+    {
+      "id": "e1974ca1-8334-5fdd-bbf1-9771e91399c5",
+      "title": "Weather Alert - Grand Canyon",
+      "description": "Winter storm advisory",
+      "category": "Weather",
+      "parkCode": "grca",
+      "lastIndexedDate": "2025-10-03"
+    },
+    {
+      "id": "2958837f-3870-5259-8c18-013883738303",
+      "title": "Safety Alert - Great Smoky Mountains",
+      "description": "Bear activity reported",
+      "category": "Safety",
+      "parkCode": "grsm",
+      "lastIndexedDate": "2025-10-26"
+    },
+    {
+      "id": "78bdf337-158e-591a-adae-648f5393ec09",
+      "title": "Safety Alert - Great Smoky Mountains",
+      "description": "Trail closure",
+      "category": "Safety",
+      "parkCode": "grsm",
+      "lastIndexedDate": "2025-10-22"
+    },
+    {
+      "id": "72adfcd3-0b4e-51fd-9988-7ab6ee48f858",
+      "title": "Fire Alert - Rocky Mountain",
+      "description": "Prescribed burn operations",
+      "category": "Fire",
+      "parkCode": "romo",
+      "lastIndexedDate": "2025-10-24"
+    },
+    {
+      "id": "3c0dc7fc-9bce-57f6-bb33-9e248ee4c307",
+      "title": "Roads Alert - Rocky Mountain",
+      "description": "Construction delays",
+      "category": "Roads",
+      "parkCode": "romo",
+      "lastIndexedDate": "2025-10-21"
+    },
+    {
+      "id": "5210b220-3d92-5b5e-8b33-701ef385cb0e",
+      "title": "Fire Alert - Zion",
+      "description": "Prescribed burn operations",
+      "category": "Fire",
+      "parkCode": "zion",
+      "lastIndexedDate": "2025-09-30"
+    },
+    {
+      "id": "6c17cac9-77d7-5f38-804d-0b7cf2e47e93",
+      "title": "Safety Alert - Zion",
+      "description": "Bear activity reported",
+      "category": "Safety",
+      "parkCode": "zion",
+      "lastIndexedDate": "2025-10-21"
+    },
+    {
+      "id": "25493d56-bc74-5aa3-9b7d-b49dff24ebb3",
+      "title": "Fire Alert - Zion",
+      "description": "Fire restrictions in effect",
+      "category": "Fire",
+      "parkCode": "zion",
+      "lastIndexedDate": "2025-10-26"
+    },
+    {
+      "id": "dd615743-bef0-5769-943a-bf2c477bd199",
+      "title": "Roads Alert - Acadia",
+      "description": "Road closure for maintenance",
+      "category": "Roads",
+      "parkCode": "acad",
+      "lastIndexedDate": "2025-10-08"
+    },
+    {
+      "id": "a842ab89-b09d-57a7-a8dc-354d56553613",
+      "title": "Fire Alert - Olympic",
+      "description": "Fire restrictions in effect",
+      "category": "Fire",
+      "parkCode": "olym",
+      "lastIndexedDate": "2025-10-09"
+    },
+    {
+      "id": "e90de911-fe8e-51da-8c47-694129ddc598",
+      "title": "Fire Alert - Olympic",
+      "description": "Prescribed burn operations",
+      "category": "Fire",
+      "parkCode": "olym",
+      "lastIndexedDate": "2025-10-16"
+    },
+    {
+      "id": "78878c62-3d79-5058-b041-fe4032a7edf9",
+      "title": "Safety Alert - Olympic",
+      "description": "Bear activity reported",
+      "category": "Safety",
+      "parkCode": "olym",
+      "lastIndexedDate": "2025-10-11"
+    },
+    {
+      "id": "29799c0a-eeb4-5ca6-9f7f-c5c69a9bf6be",
+      "title": "Weather Alert - Glacier",
+      "description": "Winter storm advisory",
+      "category": "Weather",
+      "parkCode": "glac",
+      "lastIndexedDate": "2025-10-07"
+    },
+    {
+      "id": "f67ba753-80ec-536d-b4ce-8976a17546e5",
+      "title": "Safety Alert - Glacier",
+      "description": "Trail closure",
+      "category": "Safety",
+      "parkCode": "glac",
+      "lastIndexedDate": "2025-10-25"
+    },
+    {
+      "id": "88a655c5-8890-534c-954f-ce8a3f27ec5f",
+      "title": "Fire Alert - Glacier",
+      "description": "Prescribed burn operations",
+      "category": "Fire",
+      "parkCode": "glac",
+      "lastIndexedDate": "2025-10-23"
+    },
+    {
+      "id": "15a1ac1c-aaad-5dba-8e14-235e24cfc5cc",
+      "title": "Safety Alert - Grand Teton",
+      "description": "Bear activity reported",
+      "category": "Safety",
+      "parkCode": "grte",
+      "lastIndexedDate": "2025-10-12"
+    },
+    {
+      "id": "7e750b87-7cda-52d4-b503-86fd6aa294bc",
+      "title": "Weather Alert - Bryce Canyon",
+      "description": "Winter storm advisory",
+      "category": "Weather",
+      "parkCode": "brca",
+      "lastIndexedDate": "2025-10-01"
+    },
+    {
+      "id": "0442fc8a-facc-58bf-bb8b-d5c4b27bb639",
+      "title": "Roads Alert - Bryce Canyon",
+      "description": "Construction delays",
+      "category": "Roads",
+      "parkCode": "brca",
+      "lastIndexedDate": "2025-10-24"
+    },
+    {
+      "id": "b733a5d3-10b3-52d0-99ab-13a2cf7e4b84",
+      "title": "Roads Alert - Bryce Canyon",
+      "description": "Road closure for maintenance",
+      "category": "Roads",
+      "parkCode": "brca",
+      "lastIndexedDate": "2025-10-11"
+    },
+    {
+      "id": "32d5fdd8-aca0-5a48-851a-1c1ece3d6dfb",
+      "title": "Safety Alert - Arches",
+      "description": "Bear activity reported",
+      "category": "Safety",
+      "parkCode": "arch",
+      "lastIndexedDate": "2025-10-13"
+    },
+    {
+      "id": "749b9b7c-ac57-5f2e-b8d1-3729dd42bd47",
+      "title": "Weather Alert - Arches",
+      "description": "Winter storm advisory",
+      "category": "Weather",
+      "parkCode": "arch",
+      "lastIndexedDate": "2025-09-29"
+    },
+    {
+      "id": "2ebe28be-0bf7-5ed9-843f-f1742cd1d147",
+      "title": "Safety Alert - Arches",
+      "description": "Bear activity reported",
+      "category": "Safety",
+      "parkCode": "arch",
+      "lastIndexedDate": "2025-10-21"
+    },
+    {
+      "id": "e6a01aa0-10be-57b7-bf75-738fd10b8774",
+      "title": "Weather Alert - Sequoia",
+      "description": "Winter storm advisory",
+      "category": "Weather",
+      "parkCode": "seki",
+      "lastIndexedDate": "2025-10-26"
+    },
+    {
+      "id": "ee5943ce-605d-5aa9-9b92-8f19e0a9a34b",
+      "title": "Roads Alert - Joshua Tree",
+      "description": "Construction delays",
+      "category": "Roads",
+      "parkCode": "jotr",
+      "lastIndexedDate": "2025-10-24"
+    },
+    {
+      "id": "895c150c-e148-508d-8351-3a7a484cf5b5",
+      "title": "Roads Alert - Shenandoah",
+      "description": "Construction delays",
+      "category": "Roads",
+      "parkCode": "shen",
+      "lastIndexedDate": "2025-10-20"
+    },
+    {
+      "id": "bf662f44-a545-5e60-b0f6-4e550cd6ef4d",
+      "title": "Roads Alert - Shenandoah",
+      "description": "Road closure for maintenance",
+      "category": "Roads",
+      "parkCode": "shen",
+      "lastIndexedDate": "2025-09-29"
+    },
+    {
+      "id": "db356135-192d-5ae3-9de8-bd72355da453",
+      "title": "Safety Alert - Shenandoah",
+      "description": "Trail closure",
+      "category": "Safety",
+      "parkCode": "shen",
+      "lastIndexedDate": "2025-10-16"
+    }
+  ],
+  "visitor_centers": [
+    {
+      "id": "2dc28dba-97f6-5ca5-8a95-51827f751652",
+      "name": "Yellowstone Visitor Center",
+      "description": "Provides park information, maps, and ranger assistance.",
+      "parkCode": "yell",
+      "operatingHours": [
+        {
+          "description": "Visitor Center Hours",
+          "standardHours": {
+            "sunday": "9AM-5PM",
+            "monday": "9AM-5PM",
+            "tuesday": "9AM-5PM",
+            "wednesday": "9AM-5PM",
+            "thursday": "9AM-5PM",
+            "friday": "9AM-5PM",
+            "saturday": "9AM-5PM"
+          },
+          "exceptions": []
+        }
+      ]
+    },
+    {
+      "id": "654e8828-2d1a-5a49-b6aa-25c220812407",
+      "name": "Yellowstone Visitor Center",
+      "description": "Provides park information, maps, and ranger assistance.",
+      "parkCode": "yell",
+      "operatingHours": [
+        {
+          "description": "Visitor Center Hours",
+          "standardHours": {
+            "sunday": "9AM-5PM",
+            "monday": "9AM-5PM",
+            "tuesday": "9AM-5PM",
+            "wednesday": "9AM-5PM",
+            "thursday": "9AM-5PM",
+            "friday": "9AM-5PM",
+            "saturday": "9AM-5PM"
+          },
+          "exceptions": []
+        }
+      ]
+    },
+    {
+      "id": "258c0991-f0cd-51cf-97fb-a13e42c13d24",
+      "name": "Yosemite Visitor Center",
+      "description": "Provides park information, maps, and ranger assistance.",
+      "parkCode": "yose",
+      "operatingHours": [
+        {
+          "description": "Visitor Center Hours",
+          "standardHours": {
+            "sunday": "9AM-5PM",
+            "monday": "9AM-5PM",
+            "tuesday": "9AM-5PM",
+            "wednesday": "9AM-5PM",
+            "thursday": "9AM-5PM",
+            "friday": "9AM-5PM",
+            "saturday": "9AM-5PM"
+          },
+          "exceptions": []
+        }
+      ]
+    },
+    {
+      "id": "afa19210-86e0-518a-8273-60109d474027",
+      "name": "Yosemite Visitor Center",
+      "description": "Provides park information, maps, and ranger assistance.",
+      "parkCode": "yose",
+      "operatingHours": [
+        {
+          "description": "Visitor Center Hours",
+          "standardHours": {
+            "sunday": "9AM-5PM",
+            "monday": "9AM-5PM",
+            "tuesday": "9AM-5PM",
+            "wednesday": "9AM-5PM",
+            "thursday": "9AM-5PM",
+            "friday": "9AM-5PM",
+            "saturday": "9AM-5PM"
+          },
+          "exceptions": []
+        }
+      ]
+    },
+    {
+      "id": "bb260242-4581-5e07-91fe-b5dfc22577df",
+      "name": "Grand Canyon Visitor Center",
+      "description": "Provides park information, maps, and ranger assistance.",
+      "parkCode": "grca",
+      "operatingHours": [
+        {
+          "description": "Visitor Center Hours",
+          "standardHours": {
+            "sunday": "9AM-5PM",
+            "monday": "9AM-5PM",
+            "tuesday": "9AM-5PM",
+            "wednesday": "9AM-5PM",
+            "thursday": "9AM-5PM",
+            "friday": "9AM-5PM",
+            "saturday": "9AM-5PM"
+          },
+          "exceptions": []
+        }
+      ]
+    },
+    {
+      "id": "b08fe7cd-5778-5dca-aece-6ceb31fd694a",
+      "name": "Great Smoky Mountains Visitor Center",
+      "description": "Provides park information, maps, and ranger assistance.",
+      "parkCode": "grsm",
+      "operatingHours": [
+        {
+          "description": "Visitor Center Hours",
+          "standardHours": {
+            "sunday": "9AM-5PM",
+            "monday": "9AM-5PM",
+            "tuesday": "9AM-5PM",
+            "wednesday": "9AM-5PM",
+            "thursday": "9AM-5PM",
+            "friday": "9AM-5PM",
+            "saturday": "9AM-5PM"
+          },
+          "exceptions": []
+        }
+      ]
+    },
+    {
+      "id": "81ff38d6-e0d3-5b00-bf20-7f8a6d067f16",
+      "name": "Rocky Mountain Visitor Center",
+      "description": "Provides park information, maps, and ranger assistance.",
+      "parkCode": "romo",
+      "operatingHours": [
+        {
+          "description": "Visitor Center Hours",
+          "standardHours": {
+            "sunday": "9AM-5PM",
+            "monday": "9AM-5PM",
+            "tuesday": "9AM-5PM",
+            "wednesday": "9AM-5PM",
+            "thursday": "9AM-5PM",
+            "friday": "9AM-5PM",
+            "saturday": "9AM-5PM"
+          },
+          "exceptions": []
+        }
+      ]
+    },
+    {
+      "id": "3b828083-e561-57e5-9002-b066af719879",
+      "name": "Zion Visitor Center",
+      "description": "Provides park information, maps, and ranger assistance.",
+      "parkCode": "zion",
+      "operatingHours": [
+        {
+          "description": "Visitor Center Hours",
+          "standardHours": {
+            "sunday": "9AM-5PM",
+            "monday": "9AM-5PM",
+            "tuesday": "9AM-5PM",
+            "wednesday": "9AM-5PM",
+            "thursday": "9AM-5PM",
+            "friday": "9AM-5PM",
+            "saturday": "9AM-5PM"
+          },
+          "exceptions": []
+        }
+      ]
+    },
+    {
+      "id": "c9f1bdbf-7b7f-552f-9ca6-0598766664dd",
+      "name": "Acadia Visitor Center",
+      "description": "Provides park information, maps, and ranger assistance.",
+      "parkCode": "acad",
+      "operatingHours": [
+        {
+          "description": "Visitor Center Hours",
+          "standardHours": {
+            "sunday": "9AM-5PM",
+            "monday": "9AM-5PM",
+            "tuesday": "9AM-5PM",
+            "wednesday": "9AM-5PM",
+            "thursday": "9AM-5PM",
+            "friday": "9AM-5PM",
+            "saturday": "9AM-5PM"
+          },
+          "exceptions": []
+        }
+      ]
+    },
+    {
+      "id": "3bcfd495-f2a4-554d-88bb-46cc9a4f59b2",
+      "name": "Acadia Visitor Center",
+      "description": "Provides park information, maps, and ranger assistance.",
+      "parkCode": "acad",
+      "operatingHours": [
+        {
+          "description": "Visitor Center Hours",
+          "standardHours": {
+            "sunday": "9AM-5PM",
+            "monday": "9AM-5PM",
+            "tuesday": "9AM-5PM",
+            "wednesday": "9AM-5PM",
+            "thursday": "9AM-5PM",
+            "friday": "9AM-5PM",
+            "saturday": "9AM-5PM"
+          },
+          "exceptions": []
+        }
+      ]
+    },
+    {
+      "id": "c35ae1e5-ac02-5f5f-b26e-c1356f45eef7",
+      "name": "Olympic Visitor Center",
+      "description": "Provides park information, maps, and ranger assistance.",
+      "parkCode": "olym",
+      "operatingHours": [
+        {
+          "description": "Visitor Center Hours",
+          "standardHours": {
+            "sunday": "9AM-5PM",
+            "monday": "9AM-5PM",
+            "tuesday": "9AM-5PM",
+            "wednesday": "9AM-5PM",
+            "thursday": "9AM-5PM",
+            "friday": "9AM-5PM",
+            "saturday": "9AM-5PM"
+          },
+          "exceptions": []
+        }
+      ]
+    },
+    {
+      "id": "9e20ec7e-bfd2-5824-ad54-7f88f6fb1a4b",
+      "name": "Glacier Visitor Center",
+      "description": "Provides park information, maps, and ranger assistance.",
+      "parkCode": "glac",
+      "operatingHours": [
+        {
+          "description": "Visitor Center Hours",
+          "standardHours": {
+            "sunday": "9AM-5PM",
+            "monday": "9AM-5PM",
+            "tuesday": "9AM-5PM",
+            "wednesday": "9AM-5PM",
+            "thursday": "9AM-5PM",
+            "friday": "9AM-5PM",
+            "saturday": "9AM-5PM"
+          },
+          "exceptions": []
+        }
+      ]
+    },
+    {
+      "id": "bf64348f-cd51-58e3-b068-667e11d77137",
+      "name": "Grand Teton Visitor Center",
+      "description": "Provides park information, maps, and ranger assistance.",
+      "parkCode": "grte",
+      "operatingHours": [
+        {
+          "description": "Visitor Center Hours",
+          "standardHours": {
+            "sunday": "9AM-5PM",
+            "monday": "9AM-5PM",
+            "tuesday": "9AM-5PM",
+            "wednesday": "9AM-5PM",
+            "thursday": "9AM-5PM",
+            "friday": "9AM-5PM",
+            "saturday": "9AM-5PM"
+          },
+          "exceptions": []
+        }
+      ]
+    },
+    {
+      "id": "c369d5a4-6e5f-5a5c-980a-8ed9f06e45d2",
+      "name": "Bryce Canyon Visitor Center",
+      "description": "Provides park information, maps, and ranger assistance.",
+      "parkCode": "brca",
+      "operatingHours": [
+        {
+          "description": "Visitor Center Hours",
+          "standardHours": {
+            "sunday": "9AM-5PM",
+            "monday": "9AM-5PM",
+            "tuesday": "9AM-5PM",
+            "wednesday": "9AM-5PM",
+            "thursday": "9AM-5PM",
+            "friday": "9AM-5PM",
+            "saturday": "9AM-5PM"
+          },
+          "exceptions": []
+        }
+      ]
+    },
+    {
+      "id": "50fb1d2e-277b-5510-8f5c-97aa49c3f801",
+      "name": "Arches Visitor Center",
+      "description": "Provides park information, maps, and ranger assistance.",
+      "parkCode": "arch",
+      "operatingHours": [
+        {
+          "description": "Visitor Center Hours",
+          "standardHours": {
+            "sunday": "9AM-5PM",
+            "monday": "9AM-5PM",
+            "tuesday": "9AM-5PM",
+            "wednesday": "9AM-5PM",
+            "thursday": "9AM-5PM",
+            "friday": "9AM-5PM",
+            "saturday": "9AM-5PM"
+          },
+          "exceptions": []
+        }
+      ]
+    },
+    {
+      "id": "6d63858d-d719-5f8c-babb-3309b18beab3",
+      "name": "Sequoia Visitor Center",
+      "description": "Provides park information, maps, and ranger assistance.",
+      "parkCode": "seki",
+      "operatingHours": [
+        {
+          "description": "Visitor Center Hours",
+          "standardHours": {
+            "sunday": "9AM-5PM",
+            "monday": "9AM-5PM",
+            "tuesday": "9AM-5PM",
+            "wednesday": "9AM-5PM",
+            "thursday": "9AM-5PM",
+            "friday": "9AM-5PM",
+            "saturday": "9AM-5PM"
+          },
+          "exceptions": []
+        }
+      ]
+    },
+    {
+      "id": "ec0c3fc6-8f30-5eb9-8af4-aa30ed897631",
+      "name": "Joshua Tree Visitor Center",
+      "description": "Provides park information, maps, and ranger assistance.",
+      "parkCode": "jotr",
+      "operatingHours": [
+        {
+          "description": "Visitor Center Hours",
+          "standardHours": {
+            "sunday": "9AM-5PM",
+            "monday": "9AM-5PM",
+            "tuesday": "9AM-5PM",
+            "wednesday": "9AM-5PM",
+            "thursday": "9AM-5PM",
+            "friday": "9AM-5PM",
+            "saturday": "9AM-5PM"
+          },
+          "exceptions": []
+        }
+      ]
+    },
+    {
+      "id": "fe82215a-86e1-5c4b-8d71-bb98c7f36071",
+      "name": "Shenandoah Visitor Center",
+      "description": "Provides park information, maps, and ranger assistance.",
+      "parkCode": "shen",
+      "operatingHours": [
+        {
+          "description": "Visitor Center Hours",
+          "standardHours": {
+            "sunday": "9AM-5PM",
+            "monday": "9AM-5PM",
+            "tuesday": "9AM-5PM",
+            "wednesday": "9AM-5PM",
+            "thursday": "9AM-5PM",
+            "friday": "9AM-5PM",
+            "saturday": "9AM-5PM"
+          },
+          "exceptions": []
+        }
+      ]
+    }
+  ],
+  "campgrounds": [
+    {
+      "id": "467bf250-bc41-5214-94e3-babc2e75504f",
+      "name": "Yellowstone Campground",
+      "description": "Scenic campground with access to park trails.",
+      "parkCode": "yell",
+      "amenities": [
+        "Picnic Tables",
+        "Drinking Water",
+        "Restrooms"
+      ],
+      "reservationInfo": "Reservations available through Recreation.gov."
+    },
+    {
+      "id": "fd8592f2-cec2-5f03-9507-16d9f17f2372",
+      "name": "Yosemite Campground",
+      "description": "Scenic campground with access to park trails.",
+      "parkCode": "yose",
+      "amenities": [
+        "Restrooms",
+        "Picnic Tables",
+        "Drinking Water",
+        "Fire Rings"
+      ],
+      "reservationInfo": "Reservations available through Recreation.gov."
+    },
+    {
+      "id": "7f6ac7e0-3a53-5fe4-aee6-4a154318e312",
+      "name": "Yosemite Campground",
+      "description": "Scenic campground with access to park trails.",
+      "parkCode": "yose",
+      "amenities": [
+        "Restrooms",
+        "Fire Rings"
+      ],
+      "reservationInfo": "Reservations available through Recreation.gov."
+    },
+    {
+      "id": "7b6edc0c-fa72-5c91-b6de-a90d2f2b0acc",
+      "name": "Grand Canyon Campground",
+      "description": "Scenic campground with access to park trails.",
+      "parkCode": "grca",
+      "amenities": [
+        "Picnic Tables",
+        "Drinking Water"
+      ],
+      "reservationInfo": "Reservations available through Recreation.gov."
+    },
+    {
+      "id": "3a2813ec-c258-5f42-b459-f12f136d94f9",
+      "name": "Great Smoky Mountains Campground",
+      "description": "Scenic campground with access to park trails.",
+      "parkCode": "grsm",
+      "amenities": [
+        "Restrooms",
+        "Fire Rings",
+        "Drinking Water"
+      ],
+      "reservationInfo": "Reservations available through Recreation.gov."
+    },
+    {
+      "id": "0d328b97-cc40-5c5e-b2a3-108797a53780",
+      "name": "Great Smoky Mountains Campground",
+      "description": "Scenic campground with access to park trails.",
+      "parkCode": "grsm",
+      "amenities": [
+        "Picnic Tables",
+        "Drinking Water",
+        "Restrooms",
+        "Fire Rings"
+      ],
+      "reservationInfo": "Reservations available through Recreation.gov."
+    },
+    {
+      "id": "8d02c802-56bf-5644-a024-5cf7e25330f3",
+      "name": "Rocky Mountain Campground",
+      "description": "Scenic campground with access to park trails.",
+      "parkCode": "romo",
+      "amenities": [
+        "Drinking Water",
+        "Picnic Tables",
+        "Restrooms",
+        "Fire Rings"
+      ],
+      "reservationInfo": "Reservations available through Recreation.gov."
+    },
+    {
+      "id": "a9c01d07-4343-51c7-99af-cbfa549f5281",
+      "name": "Rocky Mountain Campground",
+      "description": "Scenic campground with access to park trails.",
+      "parkCode": "romo",
+      "amenities": [
+        "Restrooms",
+        "Picnic Tables"
+      ],
+      "reservationInfo": "Reservations available through Recreation.gov."
+    },
+    {
+      "id": "f444b9a3-bb1a-582f-9df7-10b440f7981e",
+      "name": "Zion Campground",
+      "description": "Scenic campground with access to park trails.",
+      "parkCode": "zion",
+      "amenities": [
+        "Drinking Water",
+        "Fire Rings"
+      ],
+      "reservationInfo": "Reservations available through Recreation.gov."
+    },
+    {
+      "id": "3cc18ddf-f312-5a52-9e72-2341c5acfd20",
+      "name": "Zion Campground",
+      "description": "Scenic campground with access to park trails.",
+      "parkCode": "zion",
+      "amenities": [
+        "Picnic Tables",
+        "Fire Rings"
+      ],
+      "reservationInfo": "Reservations available through Recreation.gov."
+    },
+    {
+      "id": "fd67db0e-fddb-57e1-8209-606c0d9a7863",
+      "name": "Acadia Campground",
+      "description": "Scenic campground with access to park trails.",
+      "parkCode": "acad",
+      "amenities": [
+        "Picnic Tables",
+        "Drinking Water"
+      ],
+      "reservationInfo": "Reservations available through Recreation.gov."
+    },
+    {
+      "id": "9439e186-e3c2-5002-b8a1-9f5d645933cf",
+      "name": "Acadia Campground",
+      "description": "Scenic campground with access to park trails.",
+      "parkCode": "acad",
+      "amenities": [
+        "Picnic Tables",
+        "Restrooms",
+        "Drinking Water",
+        "Fire Rings"
+      ],
+      "reservationInfo": "Reservations available through Recreation.gov."
+    },
+    {
+      "id": "a99c4b3c-958f-5b44-9010-7d1b42aac587",
+      "name": "Acadia Campground",
+      "description": "Scenic campground with access to park trails.",
+      "parkCode": "acad",
+      "amenities": [
+        "Restrooms",
+        "Fire Rings",
+        "Picnic Tables"
+      ],
+      "reservationInfo": "Reservations available through Recreation.gov."
+    },
+    {
+      "id": "a81067fb-2704-56c4-b5c8-dfd9e485021b",
+      "name": "Olympic Campground",
+      "description": "Scenic campground with access to park trails.",
+      "parkCode": "olym",
+      "amenities": [
+        "Fire Rings",
+        "Restrooms"
+      ],
+      "reservationInfo": "Reservations available through Recreation.gov."
+    },
+    {
+      "id": "85d55ee3-cbf6-55ed-bdf0-ac6c8bb2d01a",
+      "name": "Olympic Campground",
+      "description": "Scenic campground with access to park trails.",
+      "parkCode": "olym",
+      "amenities": [
+        "Restrooms",
+        "Fire Rings"
+      ],
+      "reservationInfo": "Reservations available through Recreation.gov."
+    },
+    {
+      "id": "a56982bb-dfa7-5c1b-9b57-1d9ab29c8fcc",
+      "name": "Glacier Campground",
+      "description": "Scenic campground with access to park trails.",
+      "parkCode": "glac",
+      "amenities": [
+        "Restrooms",
+        "Drinking Water",
+        "Fire Rings"
+      ],
+      "reservationInfo": "Reservations available through Recreation.gov."
+    },
+    {
+      "id": "3326d48c-a756-5f5e-a5fa-ea5b78a2fc15",
+      "name": "Glacier Campground",
+      "description": "Scenic campground with access to park trails.",
+      "parkCode": "glac",
+      "amenities": [
+        "Fire Rings",
+        "Restrooms"
+      ],
+      "reservationInfo": "Reservations available through Recreation.gov."
+    },
+    {
+      "id": "da2e6bca-1333-5a9e-9a13-250b724a6e61",
+      "name": "Grand Teton Campground",
+      "description": "Scenic campground with access to park trails.",
+      "parkCode": "grte",
+      "amenities": [
+        "Picnic Tables",
+        "Drinking Water"
+      ],
+      "reservationInfo": "Reservations available through Recreation.gov."
+    },
+    {
+      "id": "e076c535-d9a2-513c-9142-176060a387ea",
+      "name": "Bryce Canyon Campground",
+      "description": "Scenic campground with access to park trails.",
+      "parkCode": "brca",
+      "amenities": [
+        "Picnic Tables",
+        "Drinking Water"
+      ],
+      "reservationInfo": "Reservations available through Recreation.gov."
+    },
+    {
+      "id": "f5885ebe-41b7-5b79-b643-cf2fa469f64c",
+      "name": "Bryce Canyon Campground",
+      "description": "Scenic campground with access to park trails.",
+      "parkCode": "brca",
+      "amenities": [
+        "Fire Rings",
+        "Picnic Tables",
+        "Drinking Water"
+      ],
+      "reservationInfo": "Reservations available through Recreation.gov."
+    },
+    {
+      "id": "c3449fc8-8408-5892-8898-5ebcf2d867f2",
+      "name": "Arches Campground",
+      "description": "Scenic campground with access to park trails.",
+      "parkCode": "arch",
+      "amenities": [
+        "Picnic Tables",
+        "Drinking Water"
+      ],
+      "reservationInfo": "Reservations available through Recreation.gov."
+    },
+    {
+      "id": "723a885f-5ad3-52fb-91bb-010cc5741ddf",
+      "name": "Sequoia Campground",
+      "description": "Scenic campground with access to park trails.",
+      "parkCode": "seki",
+      "amenities": [
+        "Picnic Tables",
+        "Drinking Water",
+        "Restrooms"
+      ],
+      "reservationInfo": "Reservations available through Recreation.gov."
+    },
+    {
+      "id": "62587998-def4-5c15-968e-4f410d9286cd",
+      "name": "Joshua Tree Campground",
+      "description": "Scenic campground with access to park trails.",
+      "parkCode": "jotr",
+      "amenities": [
+        "Picnic Tables",
+        "Drinking Water",
+        "Restrooms",
+        "Fire Rings"
+      ],
+      "reservationInfo": "Reservations available through Recreation.gov."
+    },
+    {
+      "id": "067781aa-9ec1-5dce-b7ec-ac10c3315faf",
+      "name": "Joshua Tree Campground",
+      "description": "Scenic campground with access to park trails.",
+      "parkCode": "jotr",
+      "amenities": [
+        "Drinking Water",
+        "Fire Rings",
+        "Picnic Tables",
+        "Restrooms"
+      ],
+      "reservationInfo": "Reservations available through Recreation.gov."
+    },
+    {
+      "id": "be4cc667-7ed2-529d-b14f-626ce680fb97",
+      "name": "Joshua Tree Campground",
+      "description": "Scenic campground with access to park trails.",
+      "parkCode": "jotr",
+      "amenities": [
+        "Drinking Water",
+        "Fire Rings"
+      ],
+      "reservationInfo": "Reservations available through Recreation.gov."
+    },
+    {
+      "id": "8e754666-f1fd-5bfd-882b-b3c3dff7f4b0",
+      "name": "Shenandoah Campground",
+      "description": "Scenic campground with access to park trails.",
+      "parkCode": "shen",
+      "amenities": [
+        "Drinking Water",
+        "Fire Rings",
+        "Restrooms",
+        "Picnic Tables"
+      ],
+      "reservationInfo": "Reservations available through Recreation.gov."
+    }
+  ],
+  "events": [
+    {
+      "id": "d55f83f3-f6b4-5c6b-8ff7-6f6c9e329d1a",
+      "title": "Evening Program - Yellowstone",
+      "description": "Join park staff for educational programs and activities.",
+      "parkCode": "yell",
+      "dateStart": "2025-12-26",
+      "dateEnd": "2025-12-27",
+      "category": "Evening Program"
+    },
+    {
+      "id": "556ea22b-57f8-59cd-bcc4-7a5e5b3a74de",
+      "title": "Ranger Program - Yellowstone",
+      "description": "Join park staff for educational programs and activities.",
+      "parkCode": "yell",
+      "dateStart": "2025-12-03",
+      "dateEnd": "2025-12-04",
+      "category": "Evening Program"
+    },
+    {
+      "id": "11b639e9-df5d-55b2-a01f-72f8b3f645eb",
+      "title": "Guided Hike - Yosemite",
+      "description": "Join park staff for educational programs and activities.",
+      "parkCode": "yose",
+      "dateStart": "2025-12-29",
+      "dateEnd": "2025-12-30",
+      "category": "Ranger Program"
+    },
+    {
+      "id": "b0c42f84-f140-553b-9188-4da62ec812d3",
+      "title": "Guided Hike - Yosemite",
+      "description": "Join park staff for educational programs and activities.",
+      "parkCode": "yose",
+      "dateStart": "2026-01-25",
+      "dateEnd": "2026-01-26",
+      "category": "Ranger Program"
+    },
+    {
+      "id": "7378048b-6cc4-5ef1-90cf-40d82652331a",
+      "title": "Guided Hike - Grand Canyon",
+      "description": "Join park staff for educational programs and activities.",
+      "parkCode": "grca",
+      "dateStart": "2025-12-20",
+      "dateEnd": "2025-12-21",
+      "category": "Ranger Program"
+    },
+    {
+      "id": "2d06c3d9-f412-503d-8422-4a3777158a70",
+      "title": "Evening Program - Grand Canyon",
+      "description": "Join park staff for educational programs and activities.",
+      "parkCode": "grca",
+      "dateStart": "2025-12-25",
+      "dateEnd": "2025-12-26",
+      "category": "Evening Program"
+    },
+    {
+      "id": "3cedf2a7-5b68-542c-9001-6e14ea9fad15",
+      "title": "Evening Program - Great Smoky Mountains",
+      "description": "Join park staff for educational programs and activities.",
+      "parkCode": "grsm",
+      "dateStart": "2026-01-05",
+      "dateEnd": "2026-01-06",
+      "category": "Evening Program"
+    },
+    {
+      "id": "725281c3-1f41-5508-a7e7-18ec27194e31",
+      "title": "Evening Program - Great Smoky Mountains",
+      "description": "Join park staff for educational programs and activities.",
+      "parkCode": "grsm",
+      "dateStart": "2025-11-27",
+      "dateEnd": "2025-11-28",
+      "category": "Evening Program"
+    },
+    {
+      "id": "9f908470-a22b-5d08-a9b6-e58b01264498",
+      "title": "Evening Program - Great Smoky Mountains",
+      "description": "Join park staff for educational programs and activities.",
+      "parkCode": "grsm",
+      "dateStart": "2025-12-16",
+      "dateEnd": "2025-12-17",
+      "category": "Ranger Program"
+    },
+    {
+      "id": "d8c41038-c832-5525-8841-b2b9ac801361",
+      "title": "Ranger Program - Rocky Mountain",
+      "description": "Join park staff for educational programs and activities.",
+      "parkCode": "romo",
+      "dateStart": "2025-12-13",
+      "dateEnd": "2025-12-14",
+      "category": "Ranger Program"
+    },
+    {
+      "id": "9188e79a-ee88-5b6b-9f72-bcb2dc94d92e",
+      "title": "Evening Program - Rocky Mountain",
+      "description": "Join park staff for educational programs and activities.",
+      "parkCode": "romo",
+      "dateStart": "2026-01-13",
+      "dateEnd": "2026-01-14",
+      "category": "Ranger Program"
+    },
+    {
+      "id": "2512fbe6-2f5d-503c-a9c9-2f724307b9c3",
+      "title": "Evening Program - Zion",
+      "description": "Join park staff for educational programs and activities.",
+      "parkCode": "zion",
+      "dateStart": "2025-12-15",
+      "dateEnd": "2025-12-16",
+      "category": "Ranger Program"
+    },
+    {
+      "id": "89a42f6d-fce0-5130-a75b-54e2decb3301",
+      "title": "Guided Hike - Zion",
+      "description": "Join park staff for educational programs and activities.",
+      "parkCode": "zion",
+      "dateStart": "2026-01-11",
+      "dateEnd": "2026-01-12",
+      "category": "Ranger Program"
+    },
+    {
+      "id": "3645c225-dfb5-5752-a857-7d0e69fe082f",
+      "title": "Evening Program - Zion",
+      "description": "Join park staff for educational programs and activities.",
+      "parkCode": "zion",
+      "dateStart": "2026-01-09",
+      "dateEnd": "2026-01-10",
+      "category": "Guided Hike"
+    },
+    {
+      "id": "2e8caa43-a61c-569a-9f1a-754dfca47c72",
+      "title": "Guided Hike - Acadia",
+      "description": "Join park staff for educational programs and activities.",
+      "parkCode": "acad",
+      "dateStart": "2025-12-28",
+      "dateEnd": "2025-12-29",
+      "category": "Ranger Program"
+    },
+    {
+      "id": "eae39708-8a4c-58e6-bd8a-a9f5aeea79fc",
+      "title": "Evening Program - Acadia",
+      "description": "Join park staff for educational programs and activities.",
+      "parkCode": "acad",
+      "dateStart": "2025-12-02",
+      "dateEnd": "2025-12-03",
+      "category": "Guided Hike"
+    },
+    {
+      "id": "8093d51a-8c81-5771-9388-a426bfa24c51",
+      "title": "Guided Hike - Acadia",
+      "description": "Join park staff for educational programs and activities.",
+      "parkCode": "acad",
+      "dateStart": "2026-01-19",
+      "dateEnd": "2026-01-20",
+      "category": "Ranger Program"
+    },
+    {
+      "id": "651aff17-9fc9-5ee2-ace3-fbc432428e3d",
+      "title": "Guided Hike - Acadia",
+      "description": "Join park staff for educational programs and activities.",
+      "parkCode": "acad",
+      "dateStart": "2025-11-27",
+      "dateEnd": "2025-11-28",
+      "category": "Ranger Program"
+    },
+    {
+      "id": "105d54b9-4367-5577-b0f9-daefeeded65d",
+      "title": "Ranger Program - Olympic",
+      "description": "Join park staff for educational programs and activities.",
+      "parkCode": "olym",
+      "dateStart": "2025-12-13",
+      "dateEnd": "2025-12-14",
+      "category": "Evening Program"
+    },
+    {
+      "id": "e00b7b53-2c0f-5666-86ce-cced84b8aa8d",
+      "title": "Evening Program - Olympic",
+      "description": "Join park staff for educational programs and activities.",
+      "parkCode": "olym",
+      "dateStart": "2025-12-25",
+      "dateEnd": "2025-12-26",
+      "category": "Evening Program"
+    },
+    {
+      "id": "b4b06824-73bd-5583-ae81-de11dc04d66c",
+      "title": "Evening Program - Olympic",
+      "description": "Join park staff for educational programs and activities.",
+      "parkCode": "olym",
+      "dateStart": "2025-12-24",
+      "dateEnd": "2025-12-25",
+      "category": "Ranger Program"
+    },
+    {
+      "id": "6ab090b1-d18c-5520-9e18-6d4fe72c8ba6",
+      "title": "Ranger Program - Olympic",
+      "description": "Join park staff for educational programs and activities.",
+      "parkCode": "olym",
+      "dateStart": "2025-12-04",
+      "dateEnd": "2025-12-05",
+      "category": "Evening Program"
+    },
+    {
+      "id": "378203cc-55ce-58f0-baa7-e0944484572b",
+      "title": "Ranger Program - Glacier",
+      "description": "Join park staff for educational programs and activities.",
+      "parkCode": "glac",
+      "dateStart": "2025-12-31",
+      "dateEnd": "2026-01-01",
+      "category": "Guided Hike"
+    },
+    {
+      "id": "acdb26e3-6429-519b-81f0-76e309995a34",
+      "title": "Evening Program - Glacier",
+      "description": "Join park staff for educational programs and activities.",
+      "parkCode": "glac",
+      "dateStart": "2026-01-03",
+      "dateEnd": "2026-01-04",
+      "category": "Ranger Program"
+    },
+    {
+      "id": "89ae3fb5-d0ef-5d94-ba44-8ae4bd8b3e24",
+      "title": "Ranger Program - Grand Teton",
+      "description": "Join park staff for educational programs and activities.",
+      "parkCode": "grte",
+      "dateStart": "2025-12-05",
+      "dateEnd": "2025-12-06",
+      "category": "Guided Hike"
+    },
+    {
+      "id": "12b5ab89-a30f-5b08-9589-4215eb49283b",
+      "title": "Ranger Program - Grand Teton",
+      "description": "Join park staff for educational programs and activities.",
+      "parkCode": "grte",
+      "dateStart": "2025-12-20",
+      "dateEnd": "2025-12-21",
+      "category": "Guided Hike"
+    },
+    {
+      "id": "16f89e1b-9b3e-5304-88c1-bb785147ab3b",
+      "title": "Evening Program - Grand Teton",
+      "description": "Join park staff for educational programs and activities.",
+      "parkCode": "grte",
+      "dateStart": "2025-12-10",
+      "dateEnd": "2025-12-11",
+      "category": "Ranger Program"
+    },
+    {
+      "id": "ad80760f-db72-56ec-a384-aba65842c9f8",
+      "title": "Guided Hike - Bryce Canyon",
+      "description": "Join park staff for educational programs and activities.",
+      "parkCode": "brca",
+      "dateStart": "2025-12-03",
+      "dateEnd": "2025-12-04",
+      "category": "Evening Program"
+    },
+    {
+      "id": "974a7ec9-3678-5876-b35f-8ffe962c7564",
+      "title": "Guided Hike - Bryce Canyon",
+      "description": "Join park staff for educational programs and activities.",
+      "parkCode": "brca",
+      "dateStart": "2026-01-22",
+      "dateEnd": "2026-01-23",
+      "category": "Evening Program"
+    },
+    {
+      "id": "c54b41b3-72d8-5b49-a6c1-3100af223487",
+      "title": "Ranger Program - Bryce Canyon",
+      "description": "Join park staff for educational programs and activities.",
+      "parkCode": "brca",
+      "dateStart": "2026-01-13",
+      "dateEnd": "2026-01-14",
+      "category": "Ranger Program"
+    },
+    {
+      "id": "a212c794-e202-572d-8860-565e2f1f3b69",
+      "title": "Ranger Program - Bryce Canyon",
+      "description": "Join park staff for educational programs and activities.",
+      "parkCode": "brca",
+      "dateStart": "2026-01-21",
+      "dateEnd": "2026-01-22",
+      "category": "Ranger Program"
+    },
+    {
+      "id": "f20a595f-eb4d-5bdd-9f92-b3f29a9abe5c",
+      "title": "Ranger Program - Arches",
+      "description": "Join park staff for educational programs and activities.",
+      "parkCode": "arch",
+      "dateStart": "2025-11-28",
+      "dateEnd": "2025-11-29",
+      "category": "Evening Program"
+    },
+    {
+      "id": "4e003594-d2f9-51e0-91c5-3e91e7f5b0c4",
+      "title": "Guided Hike - Arches",
+      "description": "Join park staff for educational programs and activities.",
+      "parkCode": "arch",
+      "dateStart": "2026-01-25",
+      "dateEnd": "2026-01-26",
+      "category": "Guided Hike"
+    },
+    {
+      "id": "5e5371dc-6dec-547f-ae97-aaac3a86c4c9",
+      "title": "Evening Program - Arches",
+      "description": "Join park staff for educational programs and activities.",
+      "parkCode": "arch",
+      "dateStart": "2026-01-17",
+      "dateEnd": "2026-01-18",
+      "category": "Evening Program"
+    },
+    {
+      "id": "29083ddb-2344-5024-8930-0730ce5fbc72",
+      "title": "Ranger Program - Sequoia",
+      "description": "Join park staff for educational programs and activities.",
+      "parkCode": "seki",
+      "dateStart": "2025-12-14",
+      "dateEnd": "2025-12-15",
+      "category": "Evening Program"
+    },
+    {
+      "id": "db1b760a-a32b-5ebb-9062-67f979dda32e",
+      "title": "Guided Hike - Sequoia",
+      "description": "Join park staff for educational programs and activities.",
+      "parkCode": "seki",
+      "dateStart": "2025-12-03",
+      "dateEnd": "2025-12-04",
+      "category": "Ranger Program"
+    },
+    {
+      "id": "5400cfa1-0c21-52f0-b146-ad60be3b2122",
+      "title": "Ranger Program - Joshua Tree",
+      "description": "Join park staff for educational programs and activities.",
+      "parkCode": "jotr",
+      "dateStart": "2025-12-11",
+      "dateEnd": "2025-12-12",
+      "category": "Guided Hike"
+    },
+    {
+      "id": "09824102-f7ca-50e1-80d1-c4d36760452b",
+      "title": "Guided Hike - Joshua Tree",
+      "description": "Join park staff for educational programs and activities.",
+      "parkCode": "jotr",
+      "dateStart": "2025-12-19",
+      "dateEnd": "2025-12-20",
+      "category": "Ranger Program"
+    },
+    {
+      "id": "09530a4c-dd72-5d19-8cf0-c998d81676cd",
+      "title": "Ranger Program - Joshua Tree",
+      "description": "Join park staff for educational programs and activities.",
+      "parkCode": "jotr",
+      "dateStart": "2025-12-11",
+      "dateEnd": "2025-12-12",
+      "category": "Evening Program"
+    },
+    {
+      "id": "727e22bb-5bd0-564c-a7a8-b4dedf8a128b",
+      "title": "Guided Hike - Shenandoah",
+      "description": "Join park staff for educational programs and activities.",
+      "parkCode": "shen",
+      "dateStart": "2025-12-22",
+      "dateEnd": "2025-12-23",
+      "category": "Guided Hike"
+    },
+    {
+      "id": "9da737b7-f0ed-53b6-974a-4a9a378c3734",
+      "title": "Ranger Program - Shenandoah",
+      "description": "Join park staff for educational programs and activities.",
+      "parkCode": "shen",
+      "dateStart": "2026-01-21",
+      "dateEnd": "2026-01-22",
+      "category": "Guided Hike"
+    }
+  ]
+}

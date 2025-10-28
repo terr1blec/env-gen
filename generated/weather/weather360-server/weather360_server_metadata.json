@@ -1,0 +1,52 @@
+{
+  "description": "Weather data server providing access to offline weather database with global coverage",
+  "name": "Weather360 Server",
+  "tools": [
+    {
+      "description": "Get live weather details for a given latitude and longitude",
+      "input_schema": {
+        "properties": {
+          "latitude": {
+            "description": "The latitude coordinate in decimal degrees",
+            "type": "number"
+          },
+          "longitude": {
+            "description": "The longitude coordinate in decimal degrees",
+            "type": "number"
+          }
+        },
+        "required": [
+          "latitude",
+          "longitude"
+        ],
+        "type": "object"
+      },
+      "name": "get_live_weather",
+      "output_schema": {
+        "properties": {
+          "description": {
+            "description": "Weather condition description",
+            "type": "string"
+          },
+          "humidity": {
+            "description": "Relative humidity percentage",
+            "type": "number"
+          },
+          "temperature": {
+            "description": "Temperature in Celsius",
+            "type": "number"
+          },
+          "timestamp": {
+            "description": "ISO 8601 timestamp of the weather data",
+            "type": "string"
+          },
+          "wind_speed": {
+            "description": "Wind speed in meters per second",
+            "type": "number"
+          }
+        },
+        "type": "object"
+      }
+    }
+  ]
+}

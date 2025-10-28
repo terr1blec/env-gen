@@ -1,0 +1,249 @@
+{
+  "description": "MCP server providing access to US national parks information including park details, alerts, visitor centers, campgrounds, and events. All data is sourced from an offline database.",
+  "name": "National Parks Server",
+  "tools": [
+    {
+      "description": "Search for national parks by name, description, state, or designation.",
+      "input_schema": {
+        "properties": {
+          "designation": {
+            "description": "Optional designation type (e.g., \"National Park\") to filter parks.",
+            "type": "string"
+          },
+          "search_term": {
+            "description": "Optional search term to match against park names or descriptions.",
+            "type": "string"
+          },
+          "state": {
+            "description": "Optional state code (e.g., \"CA\", \"WY\") to filter parks by location.",
+            "type": "string"
+          }
+        },
+        "required": [],
+        "type": "object"
+      },
+      "name": "findParks",
+      "output_schema": {
+        "properties": {
+          "parks": {
+            "description": "List of matching parks with their basic information.",
+            "items": {
+              "type": "object"
+            },
+            "type": "array"
+          }
+        },
+        "type": "object"
+      }
+    },
+    {
+      "description": "Get detailed information about a specific national park by its park code.",
+      "input_schema": {
+        "properties": {
+          "parkCode": {
+            "description": "The unique park code (e.g., \"yell\" for Yellowstone).",
+            "type": "string"
+          }
+        },
+        "required": [
+          "parkCode"
+        ],
+        "type": "object"
+      },
+      "name": "getParkDetails",
+      "output_schema": {
+        "properties": {
+          "activities": {
+            "description": "List of available activities at the park.",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "description": {
+            "description": "Detailed description of the park.",
+            "type": "string"
+          },
+          "directions": {
+            "description": "Directions and access information for the park.",
+            "type": "string"
+          },
+          "entranceFees": {
+            "description": "List of entrance fees and pass information.",
+            "items": {
+              "type": "object"
+            },
+            "type": "array"
+          },
+          "fullName": {
+            "description": "Full official name of the park.",
+            "type": "string"
+          },
+          "operatingHours": {
+            "description": "Park operating hours and exceptions.",
+            "items": {
+              "type": "object"
+            },
+            "type": "array"
+          },
+          "parkCode": {
+            "description": "The unique park code.",
+            "type": "string"
+          },
+          "weather": {
+            "description": "Weather information and typical conditions.",
+            "type": "string"
+          }
+        },
+        "type": "object"
+      }
+    },
+    {
+      "description": "Get current alerts for national parks with optional filtering.",
+      "input_schema": {
+        "properties": {
+          "category": {
+            "description": "Optional alert category to filter by (e.g., \"Safety\", \"Weather\").",
+            "type": "string"
+          },
+          "end_date": {
+            "description": "Optional end date (YYYY-MM-DD) to filter alerts by last indexed date.",
+            "type": "string"
+          },
+          "parkCode": {
+            "description": "Optional park code to filter alerts for a specific park.",
+            "type": "string"
+          },
+          "search_text": {
+            "description": "Optional text to search in alert titles and descriptions.",
+            "type": "string"
+          },
+          "start_date": {
+            "description": "Optional start date (YYYY-MM-DD) to filter alerts by last indexed date.",
+            "type": "string"
+          }
+        },
+        "required": [],
+        "type": "object"
+      },
+      "name": "getAlerts",
+      "output_schema": {
+        "properties": {
+          "alerts": {
+            "description": "List of alerts matching the filter criteria.",
+            "items": {
+              "type": "object"
+            },
+            "type": "array"
+          }
+        },
+        "type": "object"
+      }
+    },
+    {
+      "description": "Get information about visitor centers with optional filtering.",
+      "input_schema": {
+        "properties": {
+          "parkCode": {
+            "description": "Optional park code to filter visitor centers for a specific park.",
+            "type": "string"
+          },
+          "search_name": {
+            "description": "Optional text to search in visitor center names.",
+            "type": "string"
+          }
+        },
+        "required": [],
+        "type": "object"
+      },
+      "name": "getVisitorCenters",
+      "output_schema": {
+        "properties": {
+          "visitor_centers": {
+            "description": "List of visitor centers matching the filter criteria.",
+            "items": {
+              "type": "object"
+            },
+            "type": "array"
+          }
+        },
+        "type": "object"
+      }
+    },
+    {
+      "description": "Get information about available campgrounds with optional filtering.",
+      "input_schema": {
+        "properties": {
+          "amenities": {
+            "description": "Optional list of amenities to filter by (e.g., [\"Restrooms\", \"Fire Rings\"]).",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "parkCode": {
+            "description": "Optional park code to filter campgrounds for a specific park.",
+            "type": "string"
+          },
+          "search_name": {
+            "description": "Optional text to search in campground names.",
+            "type": "string"
+          }
+        },
+        "required": [],
+        "type": "object"
+      },
+      "name": "getCampgrounds",
+      "output_schema": {
+        "properties": {
+          "campgrounds": {
+            "description": "List of campgrounds matching the filter criteria.",
+            "items": {
+              "type": "object"
+            },
+            "type": "array"
+          }
+        },
+        "type": "object"
+      }
+    },
+    {
+      "description": "Find upcoming events at parks with optional filtering.",
+      "input_schema": {
+        "properties": {
+          "category": {
+            "description": "Optional event category to filter by (e.g., \"Ranger Program\", \"Guided Hike\").",
+            "type": "string"
+          },
+          "end_date": {
+            "description": "Optional end date (YYYY-MM-DD) to filter events ending before this date.",
+            "type": "string"
+          },
+          "parkCode": {
+            "description": "Optional park code to filter events for a specific park.",
+            "type": "string"
+          },
+          "start_date": {
+            "description": "Optional start date (YYYY-MM-DD) to filter events starting after this date.",
+            "type": "string"
+          }
+        },
+        "required": [],
+        "type": "object"
+      },
+      "name": "getEvents",
+      "output_schema": {
+        "properties": {
+          "events": {
+            "description": "List of events matching the filter criteria.",
+            "items": {
+              "type": "object"
+            },
+            "type": "array"
+          }
+        },
+        "type": "object"
+      }
+    }
+  ]
+}

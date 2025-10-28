@@ -1,0 +1,99 @@
+{
+  "name": "San Francisco Dog Shelter Finder",
+  "description": "Find dog shelters in San Francisco based on location, services, and availability criteria",
+  "tools": [
+    {
+      "name": "find_dog_shelters",
+      "description": "Find dog shelters in San Francisco based on location and criteria",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "location": {
+            "type": "string",
+            "description": "Neighborhood or area in San Francisco"
+          },
+          "max_distance": {
+            "type": "number",
+            "description": "Maximum distance in miles from location"
+          },
+          "services": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "Required services (adoption, boarding, grooming, training, emergency)"
+          },
+          "has_vacancy": {
+            "type": "boolean",
+            "description": "Only show shelters with available space"
+          }
+        },
+        "required": []
+      },
+      "output_schema": {
+        "type": "object",
+        "properties": {
+          "shelters": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "description": "Unique identifier for the shelter"
+                },
+                "name": {
+                  "type": "string",
+                  "description": "Name of the shelter"
+                },
+                "address": {
+                  "type": "string",
+                  "description": "Street address of the shelter"
+                },
+                "neighborhood": {
+                  "type": "string",
+                  "description": "San Francisco neighborhood where the shelter is located"
+                },
+                "distance": {
+                  "type": "number",
+                  "description": "Distance in miles from the specified location (if applicable)"
+                },
+                "hours": {
+                  "type": "string",
+                  "description": "Operating hours of the shelter"
+                },
+                "phone": {
+                  "type": "string",
+                  "description": "Contact phone number"
+                },
+                "website": {
+                  "type": "string",
+                  "description": "Website URL"
+                },
+                "services": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  },
+                  "description": "Services offered by the shelter"
+                },
+                "capacity": {
+                  "type": "integer",
+                  "description": "Maximum capacity of the shelter"
+                },
+                "current_occupancy": {
+                  "type": "integer",
+                  "description": "Current number of dogs in the shelter"
+                },
+                "vacancy": {
+                  "type": "boolean",
+                  "description": "Whether the shelter has available space"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  ]
+}

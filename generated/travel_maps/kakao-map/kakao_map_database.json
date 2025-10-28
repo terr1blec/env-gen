@@ -1,0 +1,1778 @@
+{
+  "places": [
+    {
+      "id": "place_001",
+      "name": "Namsan Tower",
+      "location": "Haeundae, Busan",
+      "type": "attraction",
+      "description": "Must-visit attraction showcasing Korean culture",
+      "rating": 4.6,
+      "price_range": "₩",
+      "tags": [
+        "cultural",
+        "family",
+        "scenic",
+        "modern",
+        "popular",
+        "tourist",
+        "historical",
+        "authentic"
+      ],
+      "coordinates": {
+        "latitude": 35.054767,
+        "longitude": 129.00937
+      }
+    },
+    {
+      "id": "place_002",
+      "name": "Korean Traditional Hanok Village",
+      "location": "Incheon",
+      "type": "cultural_site",
+      "description": "Educational experience about Korean traditions",
+      "rating": 3.8,
+      "price_range": "₩",
+      "tags": [
+        "cultural",
+        "heritage",
+        "local",
+        "educational",
+        "traditional",
+        "historical",
+        "authentic"
+      ],
+      "coordinates": {
+        "latitude": 36.178531,
+        "longitude": 128.428291
+      }
+    },
+    {
+      "id": "place_003",
+      "name": "Latte Bakery",
+      "location": "Yongsan, Seoul",
+      "type": "cafe",
+      "description": "Modern cafe perfect for studying or relaxing",
+      "rating": 3.9,
+      "price_range": "₩",
+      "tags": [
+        "instagrammable",
+        "study",
+        "modern",
+        "popular",
+        "tourist",
+        "dessert",
+        "coffee",
+        "relaxing"
+      ],
+      "coordinates": {
+        "latitude": 37.468549,
+        "longitude": 126.879015
+      }
+    },
+    {
+      "id": "place_004",
+      "name": "Jeju Folk Hanok Village",
+      "location": "Gwangju",
+      "type": "cultural_site",
+      "description": "Educational experience about Korean traditions",
+      "rating": 4.2,
+      "price_range": "₩",
+      "tags": [
+        "cultural",
+        "popular",
+        "heritage",
+        "educational",
+        "traditional",
+        "historical",
+        "authentic"
+      ],
+      "coordinates": {
+        "latitude": 36.104081,
+        "longitude": 128.488214
+      }
+    },
+    {
+      "id": "place_005",
+      "name": "Insadong Hanok Village",
+      "location": "Gwangju",
+      "type": "cultural_site",
+      "description": "Experience traditional Korean culture and history",
+      "rating": 4.5,
+      "price_range": "₩",
+      "tags": [
+        "cultural",
+        "popular",
+        "heritage",
+        "local",
+        "educational",
+        "traditional",
+        "historical"
+      ],
+      "coordinates": {
+        "latitude": 36.732967,
+        "longitude": 127.140379
+      }
+    },
+    {
+      "id": "place_006",
+      "name": "Namsan Park",
+      "location": "Ulsan",
+      "type": "attraction",
+      "description": "Beautiful scenic spot perfect for photos",
+      "rating": 3.8,
+      "price_range": "₩₩",
+      "tags": [
+        "cultural",
+        "family",
+        "scenic",
+        "popular",
+        "tourist",
+        "traditional",
+        "historical"
+      ],
+      "coordinates": {
+        "latitude": 36.218262,
+        "longitude": 126.513416
+      }
+    },
+    {
+      "id": "place_007",
+      "name": "Patbingsu Bakery",
+      "location": "Incheon",
+      "type": "cafe",
+      "description": "Modern cafe perfect for studying or relaxing",
+      "rating": 5.0,
+      "price_range": "₩",
+      "tags": [
+        "instagrammable",
+        "study",
+        "modern",
+        "tourist",
+        "dessert",
+        "coffee",
+        "relaxing",
+        "traditional"
+      ],
+      "coordinates": {
+        "latitude": 36.685704,
+        "longitude": 128.328
+      }
+    },
+    {
+      "id": "place_008",
+      "name": "Jjajangmyeon Dining",
+      "location": "Incheon",
+      "type": "restaurant",
+      "description": "Traditional dishes with modern twist in Incheon",
+      "rating": 3.6,
+      "price_range": "₩₩₩",
+      "tags": [
+        "family",
+        "tourist",
+        "korean",
+        "local",
+        "traditional",
+        "casual",
+        "authentic"
+      ],
+      "coordinates": {
+        "latitude": 35.425253,
+        "longitude": 127.497694
+      }
+    },
+    {
+      "id": "place_009",
+      "name": "Bingsu Coffee Shop",
+      "location": "Ulsan",
+      "type": "cafe",
+      "description": "Cozy cafe with artisanal coffee in Ulsan",
+      "rating": 4.6,
+      "price_range": "₩₩",
+      "tags": [
+        "instagrammable",
+        "study",
+        "modern",
+        "dessert",
+        "coffee",
+        "relaxing",
+        "traditional"
+      ],
+      "coordinates": {
+        "latitude": 35.856868,
+        "longitude": 127.750599
+      }
+    },
+    {
+      "id": "place_010",
+      "name": "Dalgona Dessert Cafe",
+      "location": "Gwangju",
+      "type": "cafe",
+      "description": "Modern cafe perfect for studying or relaxing",
+      "rating": 3.6,
+      "price_range": "₩",
+      "tags": [
+        "instagrammable",
+        "study",
+        "modern",
+        "popular",
+        "dessert",
+        "coffee",
+        "relaxing",
+        "local"
+      ],
+      "coordinates": {
+        "latitude": 36.254892,
+        "longitude": 128.376238
+      }
+    },
+    {
+      "id": "place_011",
+      "name": "Bukchon History Museum",
+      "location": "Daejeon",
+      "type": "cultural_site",
+      "description": "Well-preserved cultural heritage site",
+      "rating": 4.4,
+      "price_range": "₩",
+      "tags": [
+        "cultural",
+        "modern",
+        "heritage",
+        "tourist",
+        "educational",
+        "traditional",
+        "historical"
+      ],
+      "coordinates": {
+        "latitude": 36.942157,
+        "longitude": 128.582339
+      }
+    },
+    {
+      "id": "place_012",
+      "name": "Samgyeopsal Cafe",
+      "location": "Mapo, Seoul",
+      "type": "restaurant",
+      "description": "Traditional dishes with modern twist in Mapo, Seoul",
+      "rating": 3.7,
+      "price_range": "₩₩",
+      "tags": [
+        "family",
+        "korean",
+        "local",
+        "traditional",
+        "casual",
+        "authentic"
+      ],
+      "coordinates": {
+        "latitude": 37.450649,
+        "longitude": 127.066628
+      }
+    },
+    {
+      "id": "place_013",
+      "name": "Insadong Art Center",
+      "location": "Daegu",
+      "type": "cultural_site",
+      "description": "Experience traditional Korean culture and history",
+      "rating": 4.8,
+      "price_range": "₩",
+      "tags": [
+        "cultural",
+        "modern",
+        "heritage",
+        "educational",
+        "traditional",
+        "historical"
+      ],
+      "coordinates": {
+        "latitude": 36.21794,
+        "longitude": 126.458518
+      }
+    },
+    {
+      "id": "place_014",
+      "name": "Bukchon Art Center",
+      "location": "Pyoseon, Jeju",
+      "type": "cultural_site",
+      "description": "Well-preserved cultural heritage site",
+      "rating": 4.2,
+      "price_range": "₩",
+      "tags": [
+        "cultural",
+        "heritage",
+        "tourist",
+        "educational",
+        "traditional",
+        "historical"
+      ],
+      "coordinates": {
+        "latitude": 33.34789,
+        "longitude": 126.448174
+      }
+    },
+    {
+      "id": "place_015",
+      "name": "Gangnam Department Store",
+      "location": "Haeundae, Busan",
+      "type": "shopping",
+      "description": "Vibrant market with unique Korean products",
+      "rating": 4.6,
+      "price_range": "₩",
+      "tags": [
+        "shopping",
+        "fashion",
+        "tourist",
+        "local",
+        "traditional",
+        "luxury",
+        "authentic",
+        "budget"
+      ],
+      "coordinates": {
+        "latitude": 35.192027,
+        "longitude": 129.016513
+      }
+    },
+    {
+      "id": "place_016",
+      "name": "Matcha Coffee Shop",
+      "location": "Daejeon",
+      "type": "cafe",
+      "description": "Popular spot for Korean desserts and beverages",
+      "rating": 4.0,
+      "price_range": "₩₩",
+      "tags": [
+        "instagrammable",
+        "study",
+        "modern",
+        "dessert",
+        "coffee",
+        "relaxing",
+        "authentic"
+      ],
+      "coordinates": {
+        "latitude": 35.902972,
+        "longitude": 126.743717
+      }
+    },
+    {
+      "id": "place_017",
+      "name": "Bulgogi Grill",
+      "location": "Seomyeon, Busan",
+      "type": "restaurant",
+      "description": "Authentic Korean cuisine in the heart of Seomyeon, Busan",
+      "rating": 3.5,
+      "price_range": "₩₩₩",
+      "tags": [
+        "family",
+        "popular",
+        "korean",
+        "local",
+        "traditional",
+        "casual",
+        "authentic"
+      ],
+      "coordinates": {
+        "latitude": 35.084341,
+        "longitude": 129.090542
+      }
+    },
+    {
+      "id": "place_018",
+      "name": "Bulgogi Kitchen",
+      "location": "Gwangju",
+      "type": "restaurant",
+      "description": "Family-friendly restaurant serving local specialties",
+      "rating": 4.2,
+      "price_range": "₩₩₩",
+      "tags": [
+        "family",
+        "modern",
+        "korean",
+        "local",
+        "traditional",
+        "casual",
+        "authentic"
+      ],
+      "coordinates": {
+        "latitude": 36.152423,
+        "longitude": 126.728992
+      }
+    },
+    {
+      "id": "place_019",
+      "name": "Shinsegae Department Store",
+      "location": "Ulsan",
+      "type": "shopping",
+      "description": "Premier shopping destination in Ulsan",
+      "rating": 4.5,
+      "price_range": "₩₩",
+      "tags": [
+        "shopping",
+        "fashion",
+        "tourist",
+        "local",
+        "traditional",
+        "luxury",
+        "authentic",
+        "budget"
+      ],
+      "coordinates": {
+        "latitude": 35.934049,
+        "longitude": 128.187228
+      }
+    },
+    {
+      "id": "place_020",
+      "name": "Myeongdong Shopping Center",
+      "location": "Haeundae, Busan",
+      "type": "shopping",
+      "description": "Premier shopping destination in Haeundae, Busan",
+      "rating": 3.9,
+      "price_range": "₩",
+      "tags": [
+        "shopping",
+        "modern",
+        "fashion",
+        "tourist",
+        "local",
+        "luxury",
+        "authentic",
+        "budget"
+      ],
+      "coordinates": {
+        "latitude": 35.071027,
+        "longitude": 129.018349
+      }
+    },
+    {
+      "id": "place_021",
+      "name": "Cappuccino Cafe",
+      "location": "Ulsan",
+      "type": "cafe",
+      "description": "Modern cafe perfect for studying or relaxing",
+      "rating": 4.7,
+      "price_range": "₩",
+      "tags": [
+        "instagrammable",
+        "study",
+        "modern",
+        "popular",
+        "dessert",
+        "coffee",
+        "relaxing"
+      ],
+      "coordinates": {
+        "latitude": 36.672055,
+        "longitude": 128.906989
+      }
+    },
+    {
+      "id": "place_022",
+      "name": "Patbingsu Bakery",
+      "location": "Incheon",
+      "type": "cafe",
+      "description": "Modern cafe perfect for studying or relaxing",
+      "rating": 3.8,
+      "price_range": "₩₩",
+      "tags": [
+        "instagrammable",
+        "study",
+        "modern",
+        "popular",
+        "dessert",
+        "coffee",
+        "relaxing",
+        "local"
+      ],
+      "coordinates": {
+        "latitude": 35.757946,
+        "longitude": 128.955927
+      }
+    },
+    {
+      "id": "place_023",
+      "name": "Hyundai Mall",
+      "location": "Daegu",
+      "type": "shopping",
+      "description": "Vibrant market with unique Korean products",
+      "rating": 4.9,
+      "price_range": "₩₩₩",
+      "tags": [
+        "shopping",
+        "fashion",
+        "tourist",
+        "local",
+        "traditional",
+        "luxury",
+        "authentic",
+        "budget"
+      ],
+      "coordinates": {
+        "latitude": 35.309594,
+        "longitude": 126.890123
+      }
+    },
+    {
+      "id": "place_024",
+      "name": "Bukchon Folk Village",
+      "location": "Jongno, Seoul",
+      "type": "cultural_site",
+      "description": "Experience traditional Korean culture and history",
+      "rating": 3.6,
+      "price_range": "₩",
+      "tags": [
+        "cultural",
+        "modern",
+        "heritage",
+        "educational",
+        "traditional",
+        "historical"
+      ],
+      "coordinates": {
+        "latitude": 37.481487,
+        "longitude": 127.138234
+      }
+    },
+    {
+      "id": "place_025",
+      "name": "Bibimbap Cafe",
+      "location": "Gwangalli, Busan",
+      "type": "restaurant",
+      "description": "Authentic Korean cuisine in the heart of Gwangalli, Busan",
+      "rating": 4.1,
+      "price_range": "₩₩₩",
+      "tags": [
+        "family",
+        "modern",
+        "korean",
+        "local",
+        "traditional",
+        "casual",
+        "authentic"
+      ],
+      "coordinates": {
+        "latitude": 35.139178,
+        "longitude": 129.061938
+      }
+    },
+    {
+      "id": "place_026",
+      "name": "Korean Traditional Art Center",
+      "location": "Daejeon",
+      "type": "cultural_site",
+      "description": "Well-preserved cultural heritage site",
+      "rating": 4.9,
+      "price_range": "₩",
+      "tags": [
+        "cultural",
+        "heritage",
+        "tourist",
+        "educational",
+        "traditional",
+        "historical"
+      ],
+      "coordinates": {
+        "latitude": 35.477372,
+        "longitude": 127.187358
+      }
+    },
+    {
+      "id": "place_027",
+      "name": "Hyundai Department Store",
+      "location": "Daegu",
+      "type": "shopping",
+      "description": "Premier shopping destination in Daegu",
+      "rating": 4.2,
+      "price_range": "₩₩₩",
+      "tags": [
+        "shopping",
+        "fashion",
+        "tourist",
+        "popular",
+        "local",
+        "traditional",
+        "luxury",
+        "budget"
+      ],
+      "coordinates": {
+        "latitude": 36.075269,
+        "longitude": 127.517654
+      }
+    },
+    {
+      "id": "place_028",
+      "name": "Bulgogi Kitchen",
+      "location": "Aewol, Jeju",
+      "type": "restaurant",
+      "description": "Traditional dishes with modern twist in Aewol, Jeju",
+      "rating": 3.7,
+      "price_range": "₩₩₩",
+      "tags": [
+        "family",
+        "tourist",
+        "korean",
+        "local",
+        "traditional",
+        "casual",
+        "authentic"
+      ],
+      "coordinates": {
+        "latitude": 33.422336,
+        "longitude": 126.597447
+      }
+    },
+    {
+      "id": "place_029",
+      "name": "Jeju Folk Hanok Village",
+      "location": "Mapo, Seoul",
+      "type": "cultural_site",
+      "description": "Experience traditional Korean culture and history",
+      "rating": 3.9,
+      "price_range": "₩",
+      "tags": [
+        "cultural",
+        "modern",
+        "heritage",
+        "educational",
+        "traditional",
+        "historical"
+      ],
+      "coordinates": {
+        "latitude": 37.48109,
+        "longitude": 126.934527
+      }
+    },
+    {
+      "id": "place_030",
+      "name": "Namsan Temple",
+      "location": "Incheon",
+      "type": "attraction",
+      "description": "Popular tourist destination with rich history",
+      "rating": 4.8,
+      "price_range": "₩₩",
+      "tags": [
+        "cultural",
+        "family",
+        "scenic",
+        "popular",
+        "tourist",
+        "historical"
+      ],
+      "coordinates": {
+        "latitude": 35.184597,
+        "longitude": 127.270727
+      }
+    },
+    {
+      "id": "place_031",
+      "name": "Hanwoo Kitchen",
+      "location": "Daegu",
+      "type": "restaurant",
+      "description": "Authentic Korean cuisine in the heart of Daegu",
+      "rating": 4.5,
+      "price_range": "₩₩",
+      "tags": [
+        "family",
+        "korean",
+        "local",
+        "traditional",
+        "casual",
+        "authentic"
+      ],
+      "coordinates": {
+        "latitude": 36.103361,
+        "longitude": 127.283061
+      }
+    },
+    {
+      "id": "place_032",
+      "name": "Kimchi Grill",
+      "location": "Gangnam, Seoul",
+      "type": "restaurant",
+      "description": "Authentic Korean cuisine in the heart of Gangnam, Seoul",
+      "rating": 4.8,
+      "price_range": "₩₩₩",
+      "tags": [
+        "family",
+        "modern",
+        "korean",
+        "local",
+        "traditional",
+        "casual",
+        "authentic"
+      ],
+      "coordinates": {
+        "latitude": 37.535957,
+        "longitude": 126.862549
+      }
+    },
+    {
+      "id": "place_033",
+      "name": "Jjajangmyeon Restaurant",
+      "location": "Gwangju",
+      "type": "restaurant",
+      "description": "Family-friendly restaurant serving local specialties",
+      "rating": 3.9,
+      "price_range": "₩",
+      "tags": [
+        "family",
+        "modern",
+        "tourist",
+        "korean",
+        "local",
+        "traditional",
+        "casual",
+        "authentic"
+      ],
+      "coordinates": {
+        "latitude": 36.768269,
+        "longitude": 127.219132
+      }
+    },
+    {
+      "id": "place_034",
+      "name": "Cappuccino Coffee Shop",
+      "location": "Seogwipo, Jeju",
+      "type": "cafe",
+      "description": "Modern cafe perfect for studying or relaxing",
+      "rating": 3.5,
+      "price_range": "₩₩",
+      "tags": [
+        "instagrammable",
+        "study",
+        "modern",
+        "dessert",
+        "coffee",
+        "relaxing",
+        "local",
+        "authentic"
+      ],
+      "coordinates": {
+        "latitude": 33.353361,
+        "longitude": 126.557475
+      }
+    },
+    {
+      "id": "place_035",
+      "name": "Gimbap Restaurant",
+      "location": "Nampo-dong, Busan",
+      "type": "restaurant",
+      "description": "Authentic Korean cuisine in the heart of Nampo-dong, Busan",
+      "rating": 4.7,
+      "price_range": "₩₩",
+      "tags": [
+        "family",
+        "tourist",
+        "korean",
+        "local",
+        "traditional",
+        "casual",
+        "authentic"
+      ],
+      "coordinates": {
+        "latitude": 35.17308,
+        "longitude": 129.087132
+      }
+    },
+    {
+      "id": "place_036",
+      "name": "Bulgogi Dining",
+      "location": "Incheon",
+      "type": "restaurant",
+      "description": "Traditional dishes with modern twist in Incheon",
+      "rating": 3.9,
+      "price_range": "₩",
+      "tags": [
+        "family",
+        "tourist",
+        "korean",
+        "local",
+        "traditional",
+        "casual",
+        "authentic"
+      ],
+      "coordinates": {
+        "latitude": 36.282963,
+        "longitude": 127.199035
+      }
+    },
+    {
+      "id": "place_037",
+      "name": "Bibimbap Kitchen",
+      "location": "Gwangju",
+      "type": "restaurant",
+      "description": "Authentic Korean cuisine in the heart of Gwangju",
+      "rating": 4.4,
+      "price_range": "₩₩",
+      "tags": [
+        "family",
+        "popular",
+        "korean",
+        "local",
+        "traditional",
+        "casual",
+        "authentic"
+      ],
+      "coordinates": {
+        "latitude": 36.193143,
+        "longitude": 127.037061
+      }
+    },
+    {
+      "id": "place_038",
+      "name": "Namdaemun Outlet",
+      "location": "Gwangju",
+      "type": "shopping",
+      "description": "Premier shopping destination in Gwangju",
+      "rating": 4.1,
+      "price_range": "₩₩₩",
+      "tags": [
+        "shopping",
+        "fashion",
+        "tourist",
+        "local",
+        "luxury",
+        "budget"
+      ],
+      "coordinates": {
+        "latitude": 35.088773,
+        "longitude": 127.308173
+      }
+    },
+    {
+      "id": "place_039",
+      "name": "Lotte World Palace",
+      "location": "Incheon",
+      "type": "attraction",
+      "description": "Popular tourist destination with rich history",
+      "rating": 4.9,
+      "price_range": "₩₩",
+      "tags": [
+        "cultural",
+        "family",
+        "scenic",
+        "popular",
+        "tourist",
+        "traditional",
+        "historical"
+      ],
+      "coordinates": {
+        "latitude": 36.439509,
+        "longitude": 126.900967
+      }
+    },
+    {
+      "id": "place_040",
+      "name": "Hyundai Mall",
+      "location": "Daegu",
+      "type": "shopping",
+      "description": "Vibrant market with unique Korean products",
+      "rating": 3.9,
+      "price_range": "₩",
+      "tags": [
+        "shopping",
+        "fashion",
+        "tourist",
+        "local",
+        "luxury",
+        "authentic",
+        "budget"
+      ],
+      "coordinates": {
+        "latitude": 36.329859,
+        "longitude": 127.137436
+      }
+    },
+    {
+      "id": "place_041",
+      "name": "Jeju Folk History Museum",
+      "location": "Pyoseon, Jeju",
+      "type": "cultural_site",
+      "description": "Educational experience about Korean traditions",
+      "rating": 4.8,
+      "price_range": "₩",
+      "tags": [
+        "cultural",
+        "heritage",
+        "tourist",
+        "local",
+        "educational",
+        "traditional",
+        "historical"
+      ],
+      "coordinates": {
+        "latitude": 33.385978,
+        "longitude": 126.515997
+      }
+    },
+    {
+      "id": "place_042",
+      "name": "Dongdaemun Mall",
+      "location": "Gwangju",
+      "type": "shopping",
+      "description": "Vibrant market with unique Korean products",
+      "rating": 3.8,
+      "price_range": "₩₩",
+      "tags": [
+        "shopping",
+        "fashion",
+        "tourist",
+        "local",
+        "traditional",
+        "luxury",
+        "budget"
+      ],
+      "coordinates": {
+        "latitude": 36.317701,
+        "longitude": 126.851359
+      }
+    },
+    {
+      "id": "place_043",
+      "name": "Bulgogi Cafe",
+      "location": "Gwangju",
+      "type": "restaurant",
+      "description": "Traditional dishes with modern twist in Gwangju",
+      "rating": 3.8,
+      "price_range": "₩",
+      "tags": [
+        "family",
+        "popular",
+        "korean",
+        "local",
+        "traditional",
+        "casual",
+        "authentic"
+      ],
+      "coordinates": {
+        "latitude": 35.092427,
+        "longitude": 128.951808
+      }
+    },
+    {
+      "id": "place_044",
+      "name": "Myeongdong Outlet",
+      "location": "Nampo-dong, Busan",
+      "type": "shopping",
+      "description": "Premier shopping destination in Nampo-dong, Busan",
+      "rating": 4.6,
+      "price_range": "₩₩",
+      "tags": [
+        "shopping",
+        "fashion",
+        "tourist",
+        "local",
+        "traditional",
+        "luxury",
+        "authentic",
+        "budget"
+      ],
+      "coordinates": {
+        "latitude": 35.086598,
+        "longitude": 129.065606
+      }
+    },
+    {
+      "id": "place_045",
+      "name": "Tteokbokki Restaurant",
+      "location": "Yongsan, Seoul",
+      "type": "restaurant",
+      "description": "Authentic Korean cuisine in the heart of Yongsan, Seoul",
+      "rating": 4.7,
+      "price_range": "₩₩₩",
+      "tags": [
+        "family",
+        "modern",
+        "korean",
+        "local",
+        "traditional",
+        "casual",
+        "authentic"
+      ],
+      "coordinates": {
+        "latitude": 37.460044,
+        "longitude": 126.924759
+      }
+    },
+    {
+      "id": "place_046",
+      "name": "Cappuccino Bakery",
+      "location": "Nampo-dong, Busan",
+      "type": "cafe",
+      "description": "Popular spot for Korean desserts and beverages",
+      "rating": 4.3,
+      "price_range": "₩₩",
+      "tags": [
+        "instagrammable",
+        "study",
+        "modern",
+        "dessert",
+        "coffee",
+        "relaxing",
+        "authentic"
+      ],
+      "coordinates": {
+        "latitude": 35.172251,
+        "longitude": 129.089202
+      }
+    },
+    {
+      "id": "place_047",
+      "name": "Busan Modern Cultural Street",
+      "location": "Daejeon",
+      "type": "cultural_site",
+      "description": "Educational experience about Korean traditions",
+      "rating": 4.8,
+      "price_range": "₩",
+      "tags": [
+        "cultural",
+        "heritage",
+        "tourist",
+        "local",
+        "educational",
+        "traditional",
+        "historical"
+      ],
+      "coordinates": {
+        "latitude": 36.679726,
+        "longitude": 126.831934
+      }
+    },
+    {
+      "id": "place_048",
+      "name": "Bingsu Bakery",
+      "location": "Ulsan",
+      "type": "cafe",
+      "description": "Cozy cafe with artisanal coffee in Ulsan",
+      "rating": 4.6,
+      "price_range": "₩",
+      "tags": [
+        "instagrammable",
+        "study",
+        "modern",
+        "tourist",
+        "dessert",
+        "coffee",
+        "relaxing",
+        "traditional"
+      ],
+      "coordinates": {
+        "latitude": 35.639419,
+        "longitude": 127.620457
+      }
+    },
+    {
+      "id": "place_049",
+      "name": "Patbingsu Coffee Shop",
+      "location": "Seogwipo, Jeju",
+      "type": "cafe",
+      "description": "Popular spot for Korean desserts and beverages",
+      "rating": 3.8,
+      "price_range": "₩₩",
+      "tags": [
+        "instagrammable",
+        "study",
+        "modern",
+        "tourist",
+        "dessert",
+        "coffee",
+        "relaxing",
+        "authentic"
+      ],
+      "coordinates": {
+        "latitude": 33.408522,
+        "longitude": 126.483155
+      }
+    },
+    {
+      "id": "place_050",
+      "name": "Dongdaemun Outlet",
+      "location": "Incheon",
+      "type": "shopping",
+      "description": "Vibrant market with unique Korean products",
+      "rating": 3.5,
+      "price_range": "₩₩₩",
+      "tags": [
+        "shopping",
+        "fashion",
+        "tourist",
+        "local",
+        "traditional",
+        "luxury",
+        "authentic",
+        "budget"
+      ],
+      "coordinates": {
+        "latitude": 35.011792,
+        "longitude": 127.055276
+      }
+    },
+    {
+      "id": "place_051",
+      "name": "Namdaemun Outlet",
+      "location": "Daejeon",
+      "type": "shopping",
+      "description": "Vibrant market with unique Korean products",
+      "rating": 4.8,
+      "price_range": "₩₩",
+      "tags": [
+        "shopping",
+        "fashion",
+        "tourist",
+        "local",
+        "luxury",
+        "budget"
+      ],
+      "coordinates": {
+        "latitude": 35.871672,
+        "longitude": 126.087074
+      }
+    },
+    {
+      "id": "place_052",
+      "name": "Myeongdong Market",
+      "location": "Gwangju",
+      "type": "shopping",
+      "description": "Everything from luxury brands to local finds",
+      "rating": 4.9,
+      "price_range": "₩₩₩",
+      "tags": [
+        "shopping",
+        "modern",
+        "fashion",
+        "tourist",
+        "popular",
+        "local",
+        "luxury",
+        "budget"
+      ],
+      "coordinates": {
+        "latitude": 36.813858,
+        "longitude": 127.775678
+      }
+    },
+    {
+      "id": "place_053",
+      "name": "Shinsegae Mall",
+      "location": "Gangnam, Seoul",
+      "type": "shopping",
+      "description": "Premier shopping destination in Gangnam, Seoul",
+      "rating": 3.6,
+      "price_range": "₩₩",
+      "tags": [
+        "shopping",
+        "fashion",
+        "tourist",
+        "local",
+        "luxury",
+        "budget"
+      ],
+      "coordinates": {
+        "latitude": 37.54094,
+        "longitude": 126.95125
+      }
+    },
+    {
+      "id": "place_054",
+      "name": "Haeundae Beach Market",
+      "location": "Daejeon",
+      "type": "attraction",
+      "description": "Beautiful scenic spot perfect for photos",
+      "rating": 3.9,
+      "price_range": "₩",
+      "tags": [
+        "cultural",
+        "family",
+        "scenic",
+        "popular",
+        "tourist",
+        "historical",
+        "authentic"
+      ],
+      "coordinates": {
+        "latitude": 36.498049,
+        "longitude": 126.156257
+      }
+    },
+    {
+      "id": "place_055",
+      "name": "Latte Cafe",
+      "location": "Gwangju",
+      "type": "cafe",
+      "description": "Popular spot for Korean desserts and beverages",
+      "rating": 3.6,
+      "price_range": "₩",
+      "tags": [
+        "instagrammable",
+        "study",
+        "modern",
+        "dessert",
+        "coffee",
+        "relaxing",
+        "local",
+        "traditional"
+      ],
+      "coordinates": {
+        "latitude": 36.678458,
+        "longitude": 127.864007
+      }
+    },
+    {
+      "id": "place_056",
+      "name": "Patbingsu Cafe",
+      "location": "Incheon",
+      "type": "cafe",
+      "description": "Popular spot for Korean desserts and beverages",
+      "rating": 4.9,
+      "price_range": "₩₩",
+      "tags": [
+        "instagrammable",
+        "study",
+        "modern",
+        "tourist",
+        "dessert",
+        "coffee",
+        "relaxing",
+        "traditional"
+      ],
+      "coordinates": {
+        "latitude": 36.533796,
+        "longitude": 126.503367
+      }
+    },
+    {
+      "id": "place_057",
+      "name": "Gyeongbokgung Museum",
+      "location": "Gwangalli, Busan",
+      "type": "attraction",
+      "description": "Must-visit attraction showcasing Korean culture",
+      "rating": 4.9,
+      "price_range": "₩₩",
+      "tags": [
+        "cultural",
+        "family",
+        "scenic",
+        "popular",
+        "tourist",
+        "local",
+        "historical",
+        "authentic"
+      ],
+      "coordinates": {
+        "latitude": 35.061399,
+        "longitude": 129.069061
+      }
+    },
+    {
+      "id": "place_058",
+      "name": "Samgyeopsal Cafe",
+      "location": "Incheon",
+      "type": "restaurant",
+      "description": "Family-friendly restaurant serving local specialties",
+      "rating": 4.7,
+      "price_range": "₩₩₩",
+      "tags": [
+        "family",
+        "popular",
+        "tourist",
+        "korean",
+        "local",
+        "traditional",
+        "casual",
+        "authentic"
+      ],
+      "coordinates": {
+        "latitude": 36.06549,
+        "longitude": 127.984564
+      }
+    },
+    {
+      "id": "place_059",
+      "name": "Gyeongbokgung Market",
+      "location": "Jagalchi, Busan",
+      "type": "attraction",
+      "description": "Beautiful scenic spot perfect for photos",
+      "rating": 4.7,
+      "price_range": "₩",
+      "tags": [
+        "cultural",
+        "family",
+        "scenic",
+        "popular",
+        "tourist",
+        "historical",
+        "authentic"
+      ],
+      "coordinates": {
+        "latitude": 35.145338,
+        "longitude": 129.082871
+      }
+    },
+    {
+      "id": "place_060",
+      "name": "Latte Dessert Cafe",
+      "location": "Hallim, Jeju",
+      "type": "cafe",
+      "description": "Popular spot for Korean desserts and beverages",
+      "rating": 3.9,
+      "price_range": "₩₩",
+      "tags": [
+        "instagrammable",
+        "study",
+        "modern",
+        "dessert",
+        "coffee",
+        "relaxing",
+        "traditional",
+        "authentic"
+      ],
+      "coordinates": {
+        "latitude": 33.465147,
+        "longitude": 126.518495
+      }
+    },
+    {
+      "id": "place_061",
+      "name": "Cappuccino Cafe",
+      "location": "Gwangju",
+      "type": "cafe",
+      "description": "Modern cafe perfect for studying or relaxing",
+      "rating": 4.8,
+      "price_range": "₩",
+      "tags": [
+        "instagrammable",
+        "study",
+        "modern",
+        "dessert",
+        "coffee",
+        "relaxing",
+        "authentic"
+      ],
+      "coordinates": {
+        "latitude": 36.220663,
+        "longitude": 127.136968
+      }
+    },
+    {
+      "id": "place_062",
+      "name": "Namsan Beach",
+      "location": "Itaewon, Seoul",
+      "type": "attraction",
+      "description": "Must-visit attraction showcasing Korean culture",
+      "rating": 4.0,
+      "price_range": "₩₩",
+      "tags": [
+        "cultural",
+        "family",
+        "scenic",
+        "popular",
+        "tourist",
+        "traditional",
+        "historical"
+      ],
+      "coordinates": {
+        "latitude": 37.626064,
+        "longitude": 127.060355
+      }
+    },
+    {
+      "id": "place_063",
+      "name": "Bukchon Art Center",
+      "location": "Daegu",
+      "type": "cultural_site",
+      "description": "Experience traditional Korean culture and history",
+      "rating": 3.6,
+      "price_range": "₩",
+      "tags": [
+        "cultural",
+        "modern",
+        "heritage",
+        "educational",
+        "traditional",
+        "historical",
+        "authentic"
+      ],
+      "coordinates": {
+        "latitude": 36.516329,
+        "longitude": 128.071828
+      }
+    },
+    {
+      "id": "place_064",
+      "name": "Gangnam Department Store",
+      "location": "Ulsan",
+      "type": "shopping",
+      "description": "Premier shopping destination in Ulsan",
+      "rating": 3.9,
+      "price_range": "₩₩",
+      "tags": [
+        "shopping",
+        "fashion",
+        "tourist",
+        "local",
+        "traditional",
+        "luxury",
+        "budget"
+      ],
+      "coordinates": {
+        "latitude": 35.612412,
+        "longitude": 127.744667
+      }
+    },
+    {
+      "id": "place_065",
+      "name": "Korean Traditional Folk Village",
+      "location": "Ulsan",
+      "type": "cultural_site",
+      "description": "Well-preserved cultural heritage site",
+      "rating": 5.0,
+      "price_range": "₩",
+      "tags": [
+        "cultural",
+        "heritage",
+        "tourist",
+        "educational",
+        "traditional",
+        "historical",
+        "authentic"
+      ],
+      "coordinates": {
+        "latitude": 35.541833,
+        "longitude": 126.754211
+      }
+    },
+    {
+      "id": "place_066",
+      "name": "Gyeongbokgung Temple",
+      "location": "Gwangalli, Busan",
+      "type": "attraction",
+      "description": "Popular tourist destination with rich history",
+      "rating": 4.9,
+      "price_range": "₩",
+      "tags": [
+        "cultural",
+        "family",
+        "scenic",
+        "popular",
+        "tourist",
+        "local",
+        "traditional",
+        "historical"
+      ],
+      "coordinates": {
+        "latitude": 35.160791,
+        "longitude": 129.02765
+      }
+    },
+    {
+      "id": "place_067",
+      "name": "Bulgogi Kitchen",
+      "location": "Daegu",
+      "type": "restaurant",
+      "description": "Authentic Korean cuisine in the heart of Daegu",
+      "rating": 4.0,
+      "price_range": "₩₩",
+      "tags": [
+        "family",
+        "modern",
+        "popular",
+        "korean",
+        "local",
+        "traditional",
+        "casual",
+        "authentic"
+      ],
+      "coordinates": {
+        "latitude": 35.253166,
+        "longitude": 126.136547
+      }
+    },
+    {
+      "id": "place_068",
+      "name": "Jeju Loveland Tower",
+      "location": "Jongno, Seoul",
+      "type": "attraction",
+      "description": "Popular tourist destination with rich history",
+      "rating": 4.8,
+      "price_range": "₩₩",
+      "tags": [
+        "cultural",
+        "family",
+        "scenic",
+        "popular",
+        "tourist",
+        "traditional",
+        "historical"
+      ],
+      "coordinates": {
+        "latitude": 37.564813,
+        "longitude": 126.990819
+      }
+    },
+    {
+      "id": "place_069",
+      "name": "Namsan Palace",
+      "location": "Ulsan",
+      "type": "attraction",
+      "description": "Beautiful scenic spot perfect for photos",
+      "rating": 4.9,
+      "price_range": "₩₩",
+      "tags": [
+        "cultural",
+        "family",
+        "scenic",
+        "popular",
+        "tourist",
+        "traditional",
+        "historical"
+      ],
+      "coordinates": {
+        "latitude": 35.801415,
+        "longitude": 126.222247
+      }
+    },
+    {
+      "id": "place_070",
+      "name": "Cappuccino Dessert Cafe",
+      "location": "Hongdae, Seoul",
+      "type": "cafe",
+      "description": "Modern cafe perfect for studying or relaxing",
+      "rating": 3.6,
+      "price_range": "₩",
+      "tags": [
+        "instagrammable",
+        "study",
+        "modern",
+        "popular",
+        "dessert",
+        "coffee",
+        "relaxing"
+      ],
+      "coordinates": {
+        "latitude": 37.602889,
+        "longitude": 127.031895
+      }
+    },
+    {
+      "id": "place_071",
+      "name": "Busan Modern History Museum",
+      "location": "Incheon",
+      "type": "cultural_site",
+      "description": "Well-preserved cultural heritage site",
+      "rating": 3.9,
+      "price_range": "₩",
+      "tags": [
+        "cultural",
+        "modern",
+        "heritage",
+        "tourist",
+        "educational",
+        "traditional",
+        "historical"
+      ],
+      "coordinates": {
+        "latitude": 36.242055,
+        "longitude": 127.828893
+      }
+    },
+    {
+      "id": "place_072",
+      "name": "Bingsu Cafe",
+      "location": "Gwangalli, Busan",
+      "type": "cafe",
+      "description": "Cozy cafe with artisanal coffee in Gwangalli, Busan",
+      "rating": 3.9,
+      "price_range": "₩",
+      "tags": [
+        "instagrammable",
+        "study",
+        "modern",
+        "popular",
+        "dessert",
+        "coffee",
+        "relaxing",
+        "local"
+      ],
+      "coordinates": {
+        "latitude": 35.111278,
+        "longitude": 129.068937
+      }
+    },
+    {
+      "id": "place_073",
+      "name": "Gyeongbokgung Tower",
+      "location": "Ulsan",
+      "type": "attraction",
+      "description": "Beautiful scenic spot perfect for photos",
+      "rating": 4.6,
+      "price_range": "₩₩",
+      "tags": [
+        "cultural",
+        "family",
+        "scenic",
+        "popular",
+        "tourist",
+        "local",
+        "historical"
+      ],
+      "coordinates": {
+        "latitude": 36.847822,
+        "longitude": 128.363484
+      }
+    },
+    {
+      "id": "place_074",
+      "name": "Lotte Outlet",
+      "location": "Incheon",
+      "type": "shopping",
+      "description": "Premier shopping destination in Incheon",
+      "rating": 4.5,
+      "price_range": "₩₩",
+      "tags": [
+        "shopping",
+        "fashion",
+        "tourist",
+        "popular",
+        "local",
+        "luxury",
+        "budget"
+      ],
+      "coordinates": {
+        "latitude": 35.119276,
+        "longitude": 128.377886
+      }
+    },
+    {
+      "id": "place_075",
+      "name": "Lotte Mall",
+      "location": "Daegu",
+      "type": "shopping",
+      "description": "Vibrant market with unique Korean products",
+      "rating": 4.0,
+      "price_range": "₩₩",
+      "tags": [
+        "shopping",
+        "modern",
+        "fashion",
+        "tourist",
+        "local",
+        "luxury",
+        "budget"
+      ],
+      "coordinates": {
+        "latitude": 36.079963,
+        "longitude": 127.313277
+      }
+    },
+    {
+      "id": "place_076",
+      "name": "Everland Park",
+      "location": "Itaewon, Seoul",
+      "type": "attraction",
+      "description": "Must-visit attraction showcasing Korean culture",
+      "rating": 3.6,
+      "price_range": "₩",
+      "tags": [
+        "cultural",
+        "family",
+        "scenic",
+        "popular",
+        "tourist",
+        "traditional",
+        "historical"
+      ],
+      "coordinates": {
+        "latitude": 37.565249,
+        "longitude": 127.078933
+      }
+    },
+    {
+      "id": "place_077",
+      "name": "Busan Modern Folk Village",
+      "location": "Hallim, Jeju",
+      "type": "cultural_site",
+      "description": "Experience traditional Korean culture and history",
+      "rating": 5.0,
+      "price_range": "₩",
+      "tags": [
+        "cultural",
+        "heritage",
+        "educational",
+        "traditional",
+        "historical",
+        "authentic"
+      ],
+      "coordinates": {
+        "latitude": 33.493811,
+        "longitude": 126.494002
+      }
+    },
+    {
+      "id": "place_078",
+      "name": "Han River Temple",
+      "location": "Daejeon",
+      "type": "attraction",
+      "description": "Must-visit attraction showcasing Korean culture",
+      "rating": 4.8,
+      "price_range": "₩₩",
+      "tags": [
+        "cultural",
+        "family",
+        "scenic",
+        "popular",
+        "tourist",
+        "traditional",
+        "historical",
+        "authentic"
+      ],
+      "coordinates": {
+        "latitude": 35.576436,
+        "longitude": 128.835581
+      }
+    },
+    {
+      "id": "place_079",
+      "name": "Jjajangmyeon Kitchen",
+      "location": "Itaewon, Seoul",
+      "type": "restaurant",
+      "description": "Traditional dishes with modern twist in Itaewon, Seoul",
+      "rating": 3.7,
+      "price_range": "₩₩",
+      "tags": [
+        "family",
+        "modern",
+        "popular",
+        "korean",
+        "local",
+        "traditional",
+        "casual",
+        "authentic"
+      ],
+      "coordinates": {
+        "latitude": 37.581532,
+        "longitude": 127.012778
+      }
+    },
+    {
+      "id": "place_080",
+      "name": "Bulgogi Grill",
+      "location": "Daejeon",
+      "type": "restaurant",
+      "description": "Traditional dishes with modern twist in Daejeon",
+      "rating": 4.4,
+      "price_range": "₩₩",
+      "tags": [
+        "family",
+        "korean",
+        "local",
+        "traditional",
+        "casual",
+        "authentic"
+      ],
+      "coordinates": {
+        "latitude": 36.519981,
+        "longitude": 126.610675
+      }
+    }
+  ]
+}

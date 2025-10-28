@@ -1,0 +1,154 @@
+{
+  "geocoding_results": [
+    {
+      "query": "Hauptbahnhof, Berlin",
+      "coordinates": [13.4050, 52.5200],
+      "properties": {
+        "city": "Berlin",
+        "country": "Germany",
+        "type": "hauptbahnhof",
+        "postcode": "10115"
+      },
+      "confidence": 0.95
+    },
+    {
+      "query": "Rathaus, Paris",
+      "coordinates": [2.3522, 48.8566],
+      "properties": {
+        "city": "Paris",
+        "country": "France",
+        "type": "rathaus",
+        "postcode": "75001"
+      },
+      "confidence": 0.92
+    }
+  ],
+  "isochrone_data": [
+    {
+      "locations": [[13.4050, 52.5200]],
+      "profile": "driving",
+      "range": [300, 600, 900, 1200],
+      "range_type": "time",
+      "polygons": [
+        {
+          "type": "Feature",
+          "properties": {"range": 300},
+          "geometry": {
+            "type": "Polygon",
+            "coordinates": [[
+              [13.3950, 52.5100],
+              [13.4150, 52.5100],
+              [13.4150, 52.5300],
+              [13.3950, 52.5300],
+              [13.3950, 52.5100]
+            ]]
+          }
+        }
+      ]
+    }
+  ],
+  "poi_data": [
+    {
+      "coordinates": [13.4050, 52.5200],
+      "buffer": 1000,
+      "limit": 10,
+      "filters": {
+        "category": "restaurant",
+        "subcategory": "italian"
+      },
+      "features": [
+        {
+          "id": "poi_0_0",
+          "type": "Feature",
+          "properties": {
+            "name": "Italian Restaurant 1",
+            "category": "restaurant",
+            "subcategory": "italian",
+            "rating": 4.5,
+            "address": "Street 1, Berlin"
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [13.4050, 52.5200]
+          }
+        }
+      ]
+    }
+  ],
+  "route_data": [
+    {
+      "start": [13.4050, 52.5200],
+      "end": [2.3522, 48.8566],
+      "profile": "driving",
+      "distance": 1054000,
+      "duration": 37800,
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [[13.4050, 52.5200], [2.3522, 48.8566]]
+      }
+    }
+  ],
+  "optimization_data": [
+    {
+      "jobs": [
+        {
+          "id": 0,
+          "location": [13.4050, 52.5200],
+          "service": 600,
+          "delivery": [5],
+          "time_windows": [[28800, 43200], [46800, 61200]]
+        }
+      ],
+      "vehicles": [
+        {
+          "id": 0,
+          "start": [13.4050, 52.5200],
+          "end": [2.3522, 48.8566],
+          "capacity": [50],
+          "skills": [1],
+          "time_window": [25200, 68400]
+        }
+      ],
+      "shipments": [
+        {
+          "pickup": {
+            "id": "p0",
+            "location": [13.4050, 52.5200],
+            "service": 300
+          },
+          "delivery": {
+            "id": "d0",
+            "location": [2.3522, 48.8566],
+            "service": 300
+          }
+        }
+      ],
+      "solution": {
+        "total_distance": 1054000,
+        "total_time": 37800,
+        "routes": [
+          {
+            "vehicle": 0,
+            "activities": [
+              {"type": "start", "location": [13.4050, 52.5200]},
+              {"type": "job", "job_id": 0},
+              {"type": "end", "location": [2.3522, 48.8566]}
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "traveling_salesman_data": [
+    {
+      "locations": [[13.4050, 52.5200], [2.3522, 48.8566], [4.9041, 52.3676]],
+      "start_location": [13.4050, 52.5200],
+      "return_to_start": true,
+      "solution": {
+        "total_distance": 1200000,
+        "total_time": 43200,
+        "route": [[13.4050, 52.5200], [2.3522, 48.8566], [4.9041, 52.3676]]
+      }
+    }
+  ]
+}

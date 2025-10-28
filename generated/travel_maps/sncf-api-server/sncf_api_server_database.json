@@ -1,0 +1,904 @@
+{
+  "stations": [
+    {
+      "id": "station_001",
+      "name": "Paris Gare Centrale",
+      "city": "Paris",
+      "coordinates": {
+        "lat": 48.8566,
+        "lon": 2.3522
+      },
+      "transport_types": [
+        "TGV",
+        "Transilien",
+        "Intercités",
+        "TER"
+      ],
+      "nearby_places": [
+        "Tourist Information",
+        "Restaurant",
+        "Bus Station",
+        "Shopping Center"
+      ]
+    },
+    {
+      "id": "station_002",
+      "name": "Lyon Gare Centrale",
+      "city": "Lyon",
+      "coordinates": {
+        "lat": 45.764,
+        "lon": 4.8357
+      },
+      "transport_types": [
+        "Transilien",
+        "TGV",
+        "Intercités",
+        "TER"
+      ],
+      "nearby_places": [
+        "Shopping Center",
+        "Hotel",
+        "Parking"
+      ]
+    },
+    {
+      "id": "station_003",
+      "name": "Marseille Gare Centrale",
+      "city": "Marseille",
+      "coordinates": {
+        "lat": 43.2965,
+        "lon": 5.3698
+      },
+      "transport_types": [
+        "Transilien",
+        "TGV"
+      ],
+      "nearby_places": [
+        "Bike Rental",
+        "Taxi Stand",
+        "Hotel",
+        "Tourist Information"
+      ]
+    },
+    {
+      "id": "station_004",
+      "name": "Bordeaux Gare Centrale",
+      "city": "Bordeaux",
+      "coordinates": {
+        "lat": 44.8378,
+        "lon": -0.5792
+      },
+      "transport_types": [
+        "Intercités",
+        "TGV",
+        "RER",
+        "TER"
+      ],
+      "nearby_places": [
+        "Car Rental",
+        "Restaurant",
+        "Hotel",
+        "Parking",
+        "Shopping Center"
+      ]
+    },
+    {
+      "id": "station_005",
+      "name": "Lille Gare Centrale",
+      "city": "Lille",
+      "coordinates": {
+        "lat": 50.6292,
+        "lon": 3.0573
+      },
+      "transport_types": [
+        "RER",
+        "TGV"
+      ],
+      "nearby_places": [
+        "Bus Station",
+        "Car Rental",
+        "Taxi Stand",
+        "Shopping Center",
+        "Tourist Information"
+      ]
+    }
+  ],
+  "journeys": [
+    {
+      "id": "journey_001",
+      "from_city": "Paris",
+      "to_city": "Bordeaux",
+      "departure_time": "2024-01-15T17:15:00Z",
+      "arrival_time": "2024-01-15T20:10:00Z",
+      "duration": 175,
+      "transfers": 0,
+      "price": 30.73
+    },
+    {
+      "id": "journey_002",
+      "from_city": "Paris",
+      "to_city": "Bordeaux",
+      "departure_time": "2024-01-15T15:00:00Z",
+      "arrival_time": "2024-01-15T17:29:00Z",
+      "duration": 149,
+      "transfers": 0,
+      "price": 133.31
+    },
+    {
+      "id": "journey_003",
+      "from_city": "Paris",
+      "to_city": "Lille",
+      "departure_time": "2024-01-15T17:15:00Z",
+      "arrival_time": "2024-01-15T18:40:00Z",
+      "duration": 85,
+      "transfers": 1,
+      "price": 69.41
+    },
+    {
+      "id": "journey_004",
+      "from_city": "Paris",
+      "to_city": "Lille",
+      "departure_time": "2024-01-15T14:00:00Z",
+      "arrival_time": "2024-01-15T15:27:00Z",
+      "duration": 87,
+      "transfers": 0,
+      "price": 91.77
+    },
+    {
+      "id": "journey_005",
+      "from_city": "Lyon",
+      "to_city": "Paris",
+      "departure_time": "2024-01-15T14:15:00Z",
+      "arrival_time": "2024-01-15T16:24:00Z",
+      "duration": 129,
+      "transfers": 1,
+      "price": 130.36
+    },
+    {
+      "id": "journey_006",
+      "from_city": "Lyon",
+      "to_city": "Paris",
+      "departure_time": "2024-01-15T13:00:00Z",
+      "arrival_time": "2024-01-15T14:48:00Z",
+      "duration": 108,
+      "transfers": 1,
+      "price": 75.15
+    },
+    {
+      "id": "journey_007",
+      "from_city": "Lyon",
+      "to_city": "Marseille",
+      "departure_time": "2024-01-15T21:45:00Z",
+      "arrival_time": "2024-01-15T23:28:00Z",
+      "duration": 103,
+      "transfers": 1,
+      "price": 42.86
+    },
+    {
+      "id": "journey_008",
+      "from_city": "Lyon",
+      "to_city": "Marseille",
+      "departure_time": "2024-01-15T13:30:00Z",
+      "arrival_time": "2024-01-15T15:08:00Z",
+      "duration": 98,
+      "transfers": 1,
+      "price": 137.23
+    },
+    {
+      "id": "journey_009",
+      "from_city": "Lyon",
+      "to_city": "Bordeaux",
+      "departure_time": "2024-01-15T22:45:00Z",
+      "arrival_time": "2024-01-16T02:38:00Z",
+      "duration": 233,
+      "transfers": 0,
+      "price": 119.47
+    },
+    {
+      "id": "journey_010",
+      "from_city": "Marseille",
+      "to_city": "Paris",
+      "departure_time": "2024-01-15T19:00:00Z",
+      "arrival_time": "2024-01-15T22:58:00Z",
+      "duration": 238,
+      "transfers": 1,
+      "price": 72.7
+    },
+    {
+      "id": "journey_011",
+      "from_city": "Bordeaux",
+      "to_city": "Lyon",
+      "departure_time": "2024-01-15T14:30:00Z",
+      "arrival_time": "2024-01-15T18:58:00Z",
+      "duration": 268,
+      "transfers": 0,
+      "price": 61.69
+    },
+    {
+      "id": "journey_012",
+      "from_city": "Bordeaux",
+      "to_city": "Marseille",
+      "departure_time": "2024-01-15T22:15:00Z",
+      "arrival_time": "2024-01-16T02:50:00Z",
+      "duration": 275,
+      "transfers": 0,
+      "price": 133.81
+    },
+    {
+      "id": "journey_013",
+      "from_city": "Bordeaux",
+      "to_city": "Lille",
+      "departure_time": "2024-01-15T11:00:00Z",
+      "arrival_time": "2024-01-15T13:17:00Z",
+      "duration": 137,
+      "transfers": 1,
+      "price": 86.08
+    },
+    {
+      "id": "journey_014",
+      "from_city": "Lille",
+      "to_city": "Paris",
+      "departure_time": "2024-01-15T13:00:00Z",
+      "arrival_time": "2024-01-15T14:04:00Z",
+      "duration": 64,
+      "transfers": 0,
+      "price": 134.75
+    },
+    {
+      "id": "journey_015",
+      "from_city": "Lille",
+      "to_city": "Paris",
+      "departure_time": "2024-01-15T08:45:00Z",
+      "arrival_time": "2024-01-15T09:35:00Z",
+      "duration": 50,
+      "transfers": 0,
+      "price": 147.25
+    },
+    {
+      "id": "journey_016",
+      "from_city": "Lille",
+      "to_city": "Marseille",
+      "departure_time": "2024-01-15T14:45:00Z",
+      "arrival_time": "2024-01-15T18:30:00Z",
+      "duration": 225,
+      "transfers": 0,
+      "price": 141.11
+    },
+    {
+      "id": "journey_017",
+      "from_city": "Lille",
+      "to_city": "Marseille",
+      "departure_time": "2024-01-15T12:30:00Z",
+      "arrival_time": "2024-01-15T17:42:00Z",
+      "duration": 312,
+      "transfers": 1,
+      "price": 149.39
+    }
+  ],
+  "disruptions": [
+    {
+      "id": "disruption_001",
+      "severity": "critical",
+      "message": "Signal failure causing delays",
+      "affected_stations": [
+        "station_002"
+      ],
+      "affected_lines": [
+        "TGV Nord"
+      ],
+      "start_time": "2025-10-27T00:00:00Z",
+      "end_time": "2025-10-27T20:00:00Z"
+    },
+    {
+      "id": "disruption_002",
+      "severity": "medium",
+      "message": "Track maintenance work",
+      "affected_stations": [
+        "station_001"
+      ],
+      "affected_lines": [
+        "TGV Est"
+      ],
+      "start_time": "2025-10-27T02:00:00Z",
+      "end_time": "2025-10-27T05:00:00Z"
+    },
+    {
+      "id": "disruption_003",
+      "severity": "high",
+      "message": "Signal failure causing delays",
+      "affected_stations": [
+        "station_003"
+      ],
+      "affected_lines": [
+        "TGV Est",
+        "TER Auvergne-Rhône-Alpes"
+      ],
+      "start_time": "2025-10-27T04:00:00Z",
+      "end_time": "2025-10-28T00:00:00Z"
+    },
+    {
+      "id": "disruption_004",
+      "severity": "critical",
+      "message": "Track maintenance work",
+      "affected_stations": [
+        "station_004",
+        "station_002"
+      ],
+      "affected_lines": [
+        "TGV Atlantique"
+      ],
+      "start_time": "2025-10-27T21:00:00Z",
+      "end_time": "2025-10-28T12:00:00Z"
+    }
+  ],
+  "schedules": [
+    {
+      "station_id": "station_001",
+      "datetime": "2025-10-27T00:00:00Z",
+      "departures": [
+        {
+          "time": "2025-10-27T00:45:00Z",
+          "train_type": "TGV",
+          "train_number": "5806",
+          "status": "delayed",
+          "platform": 12,
+          "destination": "Lille"
+        },
+        {
+          "time": "2025-10-27T00:00:00Z",
+          "train_type": "TGV",
+          "train_number": "7036",
+          "status": "cancelled",
+          "platform": 6,
+          "destination": "Lille"
+        },
+        {
+          "time": "2025-10-27T00:15:00Z",
+          "train_type": "TER",
+          "train_number": "8456",
+          "status": "cancelled",
+          "platform": 8,
+          "destination": "Marseille"
+        }
+      ],
+      "arrivals": [
+        {
+          "time": "2025-10-27T00:30:00Z",
+          "train_type": "RER",
+          "train_number": "9508",
+          "status": "on time",
+          "platform": 2,
+          "origin": "Lille"
+        },
+        {
+          "time": "2025-10-27T00:00:00Z",
+          "train_type": "TGV",
+          "train_number": "5764",
+          "status": "arrived",
+          "platform": 9,
+          "origin": "Lyon"
+        }
+      ]
+    },
+    {
+      "station_id": "station_001",
+      "datetime": "2025-10-27T01:00:00Z",
+      "departures": [
+        {
+          "time": "2025-10-27T01:15:00Z",
+          "train_type": "TER",
+          "train_number": "8285",
+          "status": "delayed",
+          "platform": 8,
+          "destination": "Lille"
+        },
+        {
+          "time": "2025-10-27T01:00:00Z",
+          "train_type": "RER",
+          "train_number": "7172",
+          "status": "delayed",
+          "platform": 1,
+          "destination": "Marseille"
+        }
+      ],
+      "arrivals": [
+        {
+          "time": "2025-10-27T01:30:00Z",
+          "train_type": "Transilien",
+          "train_number": "8986",
+          "status": "arrived",
+          "platform": 12,
+          "origin": "Lille"
+        },
+        {
+          "time": "2025-10-27T01:15:00Z",
+          "train_type": "TGV",
+          "train_number": "9744",
+          "status": "delayed",
+          "platform": 4,
+          "origin": "Marseille"
+        },
+        {
+          "time": "2025-10-27T01:00:00Z",
+          "train_type": "Transilien",
+          "train_number": "8905",
+          "status": "on time",
+          "platform": 1,
+          "origin": "Bordeaux"
+        }
+      ]
+    },
+    {
+      "station_id": "station_002",
+      "datetime": "2025-10-27T00:00:00Z",
+      "departures": [
+        {
+          "time": "2025-10-27T00:15:00Z",
+          "train_type": "TER",
+          "train_number": "5561",
+          "status": "cancelled",
+          "platform": 2,
+          "destination": "Lyon"
+        },
+        {
+          "time": "2025-10-27T00:00:00Z",
+          "train_type": "Transilien",
+          "train_number": "7016",
+          "status": "delayed",
+          "platform": 2,
+          "destination": "Marseille"
+        },
+        {
+          "time": "2025-10-27T00:00:00Z",
+          "train_type": "Transilien",
+          "train_number": "9630",
+          "status": "delayed",
+          "platform": 11,
+          "destination": "Lyon"
+        },
+        {
+          "time": "2025-10-27T00:30:00Z",
+          "train_type": "Intercités",
+          "train_number": "6955",
+          "status": "on time",
+          "platform": 11,
+          "destination": "Bordeaux"
+        }
+      ],
+      "arrivals": [
+        {
+          "time": "2025-10-27T00:45:00Z",
+          "train_type": "Intercités",
+          "train_number": "8745",
+          "status": "arrived",
+          "platform": 11,
+          "origin": "Marseille"
+        },
+        {
+          "time": "2025-10-27T00:30:00Z",
+          "train_type": "Transilien",
+          "train_number": "9612",
+          "status": "on time",
+          "platform": 8,
+          "origin": "Lyon"
+        },
+        {
+          "time": "2025-10-27T00:00:00Z",
+          "train_type": "Transilien",
+          "train_number": "7172",
+          "status": "arrived",
+          "platform": 4,
+          "origin": "Lyon"
+        }
+      ]
+    },
+    {
+      "station_id": "station_002",
+      "datetime": "2025-10-27T01:00:00Z",
+      "departures": [
+        {
+          "time": "2025-10-27T01:30:00Z",
+          "train_type": "Intercités",
+          "train_number": "6292",
+          "status": "on time",
+          "platform": 6,
+          "destination": "Lyon"
+        },
+        {
+          "time": "2025-10-27T01:45:00Z",
+          "train_type": "Transilien",
+          "train_number": "5064",
+          "status": "cancelled",
+          "platform": 11,
+          "destination": "Bordeaux"
+        }
+      ],
+      "arrivals": [
+        {
+          "time": "2025-10-27T01:30:00Z",
+          "train_type": "TGV",
+          "train_number": "5876",
+          "status": "on time",
+          "platform": 5,
+          "origin": "Lyon"
+        },
+        {
+          "time": "2025-10-27T01:15:00Z",
+          "train_type": "TER",
+          "train_number": "7808",
+          "status": "delayed",
+          "platform": 10,
+          "origin": "Bordeaux"
+        },
+        {
+          "time": "2025-10-27T01:15:00Z",
+          "train_type": "Intercités",
+          "train_number": "5416",
+          "status": "arrived",
+          "platform": 8,
+          "origin": "Bordeaux"
+        },
+        {
+          "time": "2025-10-27T01:00:00Z",
+          "train_type": "TGV",
+          "train_number": "7732",
+          "status": "delayed",
+          "platform": 1,
+          "origin": "Lille"
+        }
+      ]
+    },
+    {
+      "station_id": "station_003",
+      "datetime": "2025-10-27T00:00:00Z",
+      "departures": [
+        {
+          "time": "2025-10-27T00:30:00Z",
+          "train_type": "Transilien",
+          "train_number": "8503",
+          "status": "cancelled",
+          "platform": 8,
+          "destination": "Marseille"
+        },
+        {
+          "time": "2025-10-27T00:00:00Z",
+          "train_type": "TER",
+          "train_number": "9469",
+          "status": "on time",
+          "platform": 12,
+          "destination": "Lyon"
+        }
+      ],
+      "arrivals": [
+        {
+          "time": "2025-10-27T00:30:00Z",
+          "train_type": "TGV",
+          "train_number": "7525",
+          "status": "delayed",
+          "platform": 3,
+          "origin": "Marseille"
+        },
+        {
+          "time": "2025-10-27T00:30:00Z",
+          "train_type": "TER",
+          "train_number": "5842",
+          "status": "delayed",
+          "platform": 4,
+          "origin": "Lyon"
+        }
+      ]
+    },
+    {
+      "station_id": "station_003",
+      "datetime": "2025-10-27T01:00:00Z",
+      "departures": [
+        {
+          "time": "2025-10-27T01:45:00Z",
+          "train_type": "TER",
+          "train_number": "8377",
+          "status": "on time",
+          "platform": 3,
+          "destination": "Marseille"
+        },
+        {
+          "time": "2025-10-27T01:00:00Z",
+          "train_type": "RER",
+          "train_number": "7032",
+          "status": "cancelled",
+          "platform": 6,
+          "destination": "Marseille"
+        },
+        {
+          "time": "2025-10-27T01:30:00Z",
+          "train_type": "RER",
+          "train_number": "5317",
+          "status": "cancelled",
+          "platform": 2,
+          "destination": "Marseille"
+        }
+      ],
+      "arrivals": [
+        {
+          "time": "2025-10-27T01:15:00Z",
+          "train_type": "Intercités",
+          "train_number": "6864",
+          "status": "delayed",
+          "platform": 6,
+          "origin": "Marseille"
+        },
+        {
+          "time": "2025-10-27T01:15:00Z",
+          "train_type": "RER",
+          "train_number": "7689",
+          "status": "arrived",
+          "platform": 4,
+          "origin": "Lyon"
+        },
+        {
+          "time": "2025-10-27T01:30:00Z",
+          "train_type": "Transilien",
+          "train_number": "8274",
+          "status": "delayed",
+          "platform": 6,
+          "origin": "Lyon"
+        }
+      ]
+    },
+    {
+      "station_id": "station_004",
+      "datetime": "2025-10-27T00:00:00Z",
+      "departures": [
+        {
+          "time": "2025-10-27T00:30:00Z",
+          "train_type": "TER",
+          "train_number": "9756",
+          "status": "on time",
+          "platform": 5,
+          "destination": "Lyon"
+        },
+        {
+          "time": "2025-10-27T00:30:00Z",
+          "train_type": "RER",
+          "train_number": "7831",
+          "status": "on time",
+          "platform": 10,
+          "destination": "Lyon"
+        },
+        {
+          "time": "2025-10-27T00:30:00Z",
+          "train_type": "TGV",
+          "train_number": "8155",
+          "status": "cancelled",
+          "platform": 9,
+          "destination": "Lille"
+        },
+        {
+          "time": "2025-10-27T00:15:00Z",
+          "train_type": "RER",
+          "train_number": "5013",
+          "status": "on time",
+          "platform": 12,
+          "destination": "Bordeaux"
+        }
+      ],
+      "arrivals": [
+        {
+          "time": "2025-10-27T00:15:00Z",
+          "train_type": "Intercités",
+          "train_number": "7571",
+          "status": "delayed",
+          "platform": 2,
+          "origin": "Bordeaux"
+        },
+        {
+          "time": "2025-10-27T00:00:00Z",
+          "train_type": "RER",
+          "train_number": "7672",
+          "status": "arrived",
+          "platform": 5,
+          "origin": "Bordeaux"
+        },
+        {
+          "time": "2025-10-27T00:45:00Z",
+          "train_type": "TER",
+          "train_number": "8444",
+          "status": "arrived",
+          "platform": 3,
+          "origin": "Bordeaux"
+        },
+        {
+          "time": "2025-10-27T00:45:00Z",
+          "train_type": "Intercités",
+          "train_number": "8326",
+          "status": "arrived",
+          "platform": 10,
+          "origin": "Marseille"
+        }
+      ]
+    },
+    {
+      "station_id": "station_004",
+      "datetime": "2025-10-27T01:00:00Z",
+      "departures": [
+        {
+          "time": "2025-10-27T01:00:00Z",
+          "train_type": "RER",
+          "train_number": "9751",
+          "status": "delayed",
+          "platform": 4,
+          "destination": "Bordeaux"
+        },
+        {
+          "time": "2025-10-27T01:30:00Z",
+          "train_type": "TER",
+          "train_number": "9187",
+          "status": "delayed",
+          "platform": 8,
+          "destination": "Lille"
+        },
+        {
+          "time": "2025-10-27T01:45:00Z",
+          "train_type": "Intercités",
+          "train_number": "9222",
+          "status": "cancelled",
+          "platform": 2,
+          "destination": "Marseille"
+        },
+        {
+          "time": "2025-10-27T01:30:00Z",
+          "train_type": "Intercités",
+          "train_number": "6840",
+          "status": "on time",
+          "platform": 11,
+          "destination": "Lyon"
+        }
+      ],
+      "arrivals": [
+        {
+          "time": "2025-10-27T01:15:00Z",
+          "train_type": "RER",
+          "train_number": "5596",
+          "status": "on time",
+          "platform": 4,
+          "origin": "Lyon"
+        },
+        {
+          "time": "2025-10-27T01:45:00Z",
+          "train_type": "TER",
+          "train_number": "8145",
+          "status": "arrived",
+          "platform": 10,
+          "origin": "Lille"
+        }
+      ]
+    },
+    {
+      "station_id": "station_005",
+      "datetime": "2025-10-27T00:00:00Z",
+      "departures": [
+        {
+          "time": "2025-10-27T00:45:00Z",
+          "train_type": "TGV",
+          "train_number": "5873",
+          "status": "on time",
+          "platform": 11,
+          "destination": "Marseille"
+        },
+        {
+          "time": "2025-10-27T00:45:00Z",
+          "train_type": "Transilien",
+          "train_number": "8805",
+          "status": "on time",
+          "platform": 12,
+          "destination": "Marseille"
+        },
+        {
+          "time": "2025-10-27T00:00:00Z",
+          "train_type": "TER",
+          "train_number": "8806",
+          "status": "on time",
+          "platform": 8,
+          "destination": "Marseille"
+        }
+      ],
+      "arrivals": [
+        {
+          "time": "2025-10-27T00:30:00Z",
+          "train_type": "Transilien",
+          "train_number": "8495",
+          "status": "arrived",
+          "platform": 12,
+          "origin": "Lille"
+        },
+        {
+          "time": "2025-10-27T00:45:00Z",
+          "train_type": "RER",
+          "train_number": "7123",
+          "status": "arrived",
+          "platform": 8,
+          "origin": "Marseille"
+        },
+        {
+          "time": "2025-10-27T00:15:00Z",
+          "train_type": "TER",
+          "train_number": "7249",
+          "status": "arrived",
+          "platform": 8,
+          "origin": "Bordeaux"
+        },
+        {
+          "time": "2025-10-27T00:45:00Z",
+          "train_type": "TER",
+          "train_number": "7225",
+          "status": "arrived",
+          "platform": 5,
+          "origin": "Lyon"
+        }
+      ]
+    },
+    {
+      "station_id": "station_005",
+      "datetime": "2025-10-27T01:00:00Z",
+      "departures": [
+        {
+          "time": "2025-10-27T01:30:00Z",
+          "train_type": "TER",
+          "train_number": "8137",
+          "status": "on time",
+          "platform": 3,
+          "destination": "Lyon"
+        },
+        {
+          "time": "2025-10-27T01:15:00Z",
+          "train_type": "RER",
+          "train_number": "7710",
+          "status": "on time",
+          "platform": 7,
+          "destination": "Marseille"
+        },
+        {
+          "time": "2025-10-27T01:45:00Z",
+          "train_type": "RER",
+          "train_number": "8190",
+          "status": "on time",
+          "platform": 4,
+          "destination": "Lille"
+        }
+      ],
+      "arrivals": [
+        {
+          "time": "2025-10-27T01:00:00Z",
+          "train_type": "Intercités",
+          "train_number": "7446",
+          "status": "delayed",
+          "platform": 1,
+          "origin": "Lille"
+        },
+        {
+          "time": "2025-10-27T01:45:00Z",
+          "train_type": "Transilien",
+          "train_number": "9941",
+          "status": "arrived",
+          "platform": 12,
+          "origin": "Lille"
+        },
+        {
+          "time": "2025-10-27T01:15:00Z",
+          "train_type": "RER",
+          "train_number": "8978",
+          "status": "on time",
+          "platform": 5,
+          "origin": "Lille"
+        },
+        {
+          "time": "2025-10-27T01:00:00Z",
+          "train_type": "RER",
+          "train_number": "6352",
+          "status": "delayed",
+          "platform": 11,
+          "origin": "Lille"
+        }
+      ]
+    }
+  ]
+}

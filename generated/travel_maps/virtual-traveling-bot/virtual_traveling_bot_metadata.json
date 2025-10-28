@@ -1,0 +1,339 @@
+{
+  "description": "A virtual traveling assistant that provides location information, journey management, and device recommendations for travelers using an offline database.",
+  "name": "Virtual Traveling Bot",
+  "tools": [
+    {
+      "description": "Get location address + nearby facilities + view snapshot for a traveler",
+      "input_schema": {
+        "properties": {
+          "traveler_id": {
+            "description": "The ID of the traveler to get view information for",
+            "type": "string"
+          }
+        },
+        "required": [
+          "traveler_id"
+        ],
+        "type": "object"
+      },
+      "name": "get_traveler_view_info",
+      "output_schema": {
+        "properties": {
+          "coordinates": {
+            "description": "The geographic coordinates of the location",
+            "type": "object"
+          },
+          "location_address": {
+            "description": "The address of the current location",
+            "type": "string"
+          },
+          "nearby_facilities": {
+            "description": "List of nearby facilities with their details",
+            "type": "array"
+          },
+          "traveler_id": {
+            "description": "The ID of the traveler",
+            "type": "string"
+          },
+          "traveler_name": {
+            "description": "The name of the traveler",
+            "type": "string"
+          },
+          "view_snapshot": {
+            "description": "A descriptive snapshot of the location view",
+            "type": "string"
+          }
+        },
+        "type": "object"
+      }
+    },
+    {
+      "description": "Get current traveler location address",
+      "input_schema": {
+        "properties": {
+          "traveler_id": {
+            "description": "The ID of the traveler to get location for",
+            "type": "string"
+          }
+        },
+        "required": [
+          "traveler_id"
+        ],
+        "type": "object"
+      },
+      "name": "get_traveler_location",
+      "output_schema": {
+        "properties": {
+          "current_location": {
+            "description": "The current location information including address and coordinates",
+            "type": "object"
+          },
+          "traveler_id": {
+            "description": "The ID of the traveler",
+            "type": "string"
+          },
+          "traveler_name": {
+            "description": "The name of the traveler",
+            "type": "string"
+          }
+        },
+        "type": "object"
+      }
+    },
+    {
+      "description": "Get device recommendations for a traveler",
+      "input_schema": {
+        "properties": {
+          "traveler_id": {
+            "description": "The ID of the traveler to get tips for",
+            "type": "string"
+          }
+        },
+        "required": [
+          "traveler_id"
+        ],
+        "type": "object"
+      },
+      "name": "tips",
+      "output_schema": {
+        "properties": {
+          "current_setting": {
+            "description": "The current device setting",
+            "type": "string"
+          },
+          "device_tips": {
+            "description": "List of device recommendations and tips",
+            "type": "array"
+          },
+          "traveler_id": {
+            "description": "The ID of the traveler",
+            "type": "string"
+          },
+          "traveler_name": {
+            "description": "The name of the traveler",
+            "type": "string"
+          }
+        },
+        "type": "object"
+      }
+    },
+    {
+      "description": "Get current setting for a traveler",
+      "input_schema": {
+        "properties": {
+          "traveler_id": {
+            "description": "The ID of the traveler to get setting for",
+            "type": "string"
+          }
+        },
+        "required": [
+          "traveler_id"
+        ],
+        "type": "object"
+      },
+      "name": "get_setting",
+      "output_schema": {
+        "properties": {
+          "current_setting": {
+            "description": "The current device setting",
+            "type": "string"
+          },
+          "traveler_id": {
+            "description": "The ID of the traveler",
+            "type": "string"
+          }
+        },
+        "type": "object"
+      }
+    },
+    {
+      "description": "Get traveler settings (name, language, personality, speaking habits)",
+      "input_schema": {
+        "properties": {
+          "traveler_id": {
+            "description": "The ID of the traveler to get info for",
+            "type": "string"
+          }
+        },
+        "required": [
+          "traveler_id"
+        ],
+        "type": "object"
+      },
+      "name": "get_traveler_info",
+      "output_schema": {
+        "properties": {
+          "active_journey_id": {
+            "description": "The ID of the active journey if any",
+            "type": "string"
+          },
+          "current_location_id": {
+            "description": "The ID of the current location",
+            "type": "string"
+          },
+          "language": {
+            "description": "The preferred language of the traveler",
+            "type": "string"
+          },
+          "name": {
+            "description": "The name of the traveler",
+            "type": "string"
+          },
+          "personality": {
+            "description": "The personality type of the traveler",
+            "type": "string"
+          },
+          "speaking_habits": {
+            "description": "The speaking habits of the traveler",
+            "type": "string"
+          },
+          "traveler_id": {
+            "description": "The ID of the traveler",
+            "type": "string"
+          }
+        },
+        "type": "object"
+      }
+    },
+    {
+      "description": "Set traveler settings. Note: Changes are not persisted to the database file and only apply to the current session.",
+      "input_schema": {
+        "properties": {
+          "language": {
+            "description": "New language for the traveler",
+            "type": "string"
+          },
+          "name": {
+            "description": "New name for the traveler",
+            "type": "string"
+          },
+          "personality": {
+            "description": "New personality for the traveler",
+            "type": "string"
+          },
+          "speaking_habits": {
+            "description": "New speaking habits for the traveler",
+            "type": "string"
+          },
+          "traveler_id": {
+            "description": "The ID of the traveler to update",
+            "type": "string"
+          }
+        },
+        "required": [
+          "traveler_id"
+        ],
+        "type": "object"
+      },
+      "name": "set_traveler_info",
+      "output_schema": {
+        "properties": {
+          "current_info": {
+            "description": "The current traveler information after updates",
+            "type": "object"
+          },
+          "traveler_id": {
+            "description": "The ID of the traveler",
+            "type": "string"
+          },
+          "updated_fields": {
+            "description": "List of fields that were updated",
+            "type": "array"
+          }
+        },
+        "type": "object"
+      }
+    },
+    {
+      "description": "Start journey to destination for a traveler. Note: Changes are not persisted to the database file and only apply to the current session.",
+      "input_schema": {
+        "properties": {
+          "destination_location_id": {
+            "description": "The ID of the destination location",
+            "type": "string"
+          },
+          "traveler_id": {
+            "description": "The ID of the traveler starting the journey",
+            "type": "string"
+          }
+        },
+        "required": [
+          "traveler_id",
+          "destination_location_id"
+        ],
+        "type": "object"
+      },
+      "name": "start_traveler_journey",
+      "output_schema": {
+        "properties": {
+          "destination_address": {
+            "description": "The address of the destination location",
+            "type": "string"
+          },
+          "destination_location_id": {
+            "description": "The ID of the destination location",
+            "type": "string"
+          },
+          "journey_id": {
+            "description": "The ID of the created journey",
+            "type": "string"
+          },
+          "message": {
+            "description": "A message describing the operation result",
+            "type": "string"
+          },
+          "status": {
+            "description": "The status of the journey",
+            "type": "string"
+          },
+          "traveler_id": {
+            "description": "The ID of the traveler",
+            "type": "string"
+          },
+          "traveler_name": {
+            "description": "The name of the traveler",
+            "type": "string"
+          }
+        },
+        "type": "object"
+      }
+    },
+    {
+      "description": "Stop current journey for a traveler. Note: Changes are not persisted to the database file and only apply to the current session.",
+      "input_schema": {
+        "properties": {
+          "traveler_id": {
+            "description": "The ID of the traveler to stop journey for",
+            "type": "string"
+          }
+        },
+        "required": [
+          "traveler_id"
+        ],
+        "type": "object"
+      },
+      "name": "stop_traveler_journey",
+      "output_schema": {
+        "properties": {
+          "message": {
+            "description": "A message describing the operation result",
+            "type": "string"
+          },
+          "stopped_journey": {
+            "description": "Information about the stopped journey",
+            "type": "object"
+          },
+          "traveler_id": {
+            "description": "The ID of the traveler",
+            "type": "string"
+          },
+          "traveler_name": {
+            "description": "The name of the traveler",
+            "type": "string"
+          }
+        },
+        "type": "object"
+      }
+    }
+  ]
+}

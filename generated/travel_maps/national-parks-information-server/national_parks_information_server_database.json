@@ -1,0 +1,773 @@
+{
+  "parks": [
+    {
+      "parkCode": "acad",
+      "name": "Acadia National Park",
+      "description": "Experience the rugged coast of Maine with granite peaks, woodlands, and lakes.",
+      "location": "Maine",
+      "states": "ME",
+      "latLong": "lat:44.3386, long:-68.2733",
+      "url": "https://www.nps.gov/acad/index.htm",
+      "weatherInfo": "Summers are generally mild with temperatures ranging from 45°F to 85°F. Winters are cold with temperatures from 14°F to 35°F.",
+      "activities": [
+        "Hiking",
+        "Camping",
+        "Wildlife Watching",
+        "Boating"
+      ],
+      "topics": [
+        "Geology",
+        "Marine Life",
+        "Forests",
+        "Mountains"
+      ],
+      "entranceFees": [
+        {
+          "cost": "30.00",
+          "description": "7-day vehicle pass",
+          "title": "Vehicle Entrance Fee"
+        },
+        {
+          "cost": "25.00",
+          "description": "7-day motorcycle pass",
+          "title": "Motorcycle Entrance Fee"
+        },
+        {
+          "cost": "15.00",
+          "description": "7-day individual pass",
+          "title": "Individual Entrance Fee"
+        }
+      ],
+      "operatingHours": [
+        {
+          "description": "Park is open year-round, 24 hours a day",
+          "standardHours": {
+            "monday": "All Day",
+            "tuesday": "All Day",
+            "wednesday": "All Day",
+            "thursday": "All Day",
+            "friday": "All Day",
+            "saturday": "All Day",
+            "sunday": "All Day"
+          }
+        }
+      ]
+    },
+    {
+      "parkCode": "yell",
+      "name": "Yellowstone National Park",
+      "description": "The world's first national park featuring geysers, hot springs, and abundant wildlife.",
+      "location": "Wyoming, Montana, Idaho",
+      "states": "WY,MT,ID",
+      "latLong": "lat:44.4280, long:-110.5885",
+      "url": "https://www.nps.gov/yell/index.htm",
+      "weatherInfo": "Weather can change rapidly. Summer temperatures range from 30°F to 80°F. Winter temperatures can drop to -20°F.",
+      "activities": [
+        "Geyser Viewing",
+        "Wildlife Watching",
+        "Hiking",
+        "Camping",
+        "Fishing"
+      ],
+      "topics": [
+        "Geothermal",
+        "Wildlife",
+        "Geology",
+        "History"
+      ],
+      "entranceFees": [
+        {
+          "cost": "35.00",
+          "description": "7-day vehicle pass",
+          "title": "Vehicle Entrance Fee"
+        },
+        {
+          "cost": "30.00",
+          "description": "7-day motorcycle pass",
+          "title": "Motorcycle Entrance Fee"
+        },
+        {
+          "cost": "20.00",
+          "description": "7-day individual pass",
+          "title": "Individual Entrance Fee"
+        }
+      ],
+      "operatingHours": [
+        {
+          "description": "Park is open year-round, but some roads and facilities close in winter",
+          "standardHours": {
+            "monday": "All Day",
+            "tuesday": "All Day",
+            "wednesday": "All Day",
+            "thursday": "All Day",
+            "friday": "All Day",
+            "saturday": "All Day",
+            "sunday": "All Day"
+          }
+        }
+      ]
+    }
+  ],
+  "alerts": [
+    {
+      "id": "alert-001",
+      "parkCode": "acad",
+      "title": "Road Closure",
+      "description": "Scenic Drive is closed due to rock slide. Expected reopening in 7 days.",
+      "category": "closure",
+      "severity": "moderate",
+      "lastIndexedDate": "2025-10-28",
+      "status": "active"
+    },
+    {
+      "id": "alert-002",
+      "parkCode": "yell",
+      "title": "Road Closure",
+      "description": "Scenic Drive is closed due to rock slide. Expected reopening in 7 days.",
+      "category": "closure",
+      "severity": "moderate",
+      "lastIndexedDate": "2025-10-21",
+      "status": "active"
+    },
+    {
+      "id": "alert-003",
+      "parkCode": "acad",
+      "title": "Road Closure",
+      "description": "Scenic Drive is closed due to rock slide. Expected reopening in 7 days.",
+      "category": "closure",
+      "severity": "moderate",
+      "lastIndexedDate": "2025-10-24",
+      "status": "active"
+    },
+    {
+      "id": "alert-004",
+      "parkCode": "acad",
+      "title": "Road Closure",
+      "description": "Scenic Drive is closed due to rock slide. Expected reopening in 7 days.",
+      "category": "closure",
+      "severity": "moderate",
+      "lastIndexedDate": "2025-10-07",
+      "status": "active"
+    },
+    {
+      "id": "alert-005",
+      "parkCode": "acad",
+      "title": "Road Closure",
+      "description": "Scenic Drive is closed due to rock slide. Expected reopening in 7 days.",
+      "category": "closure",
+      "severity": "moderate",
+      "lastIndexedDate": "2025-10-10",
+      "status": "active"
+    },
+    {
+      "id": "alert-006",
+      "parkCode": "yell",
+      "title": "Road Closure",
+      "description": "Scenic Drive is closed due to rock slide. Expected reopening in 7 days.",
+      "category": "closure",
+      "severity": "moderate",
+      "lastIndexedDate": "2025-10-27",
+      "status": "active"
+    },
+    {
+      "id": "alert-007",
+      "parkCode": "acad",
+      "title": "Road Closure",
+      "description": "Scenic Drive is closed due to rock slide. Expected reopening in 7 days.",
+      "category": "closure",
+      "severity": "moderate",
+      "lastIndexedDate": "2025-10-26",
+      "status": "active"
+    },
+    {
+      "id": "alert-008",
+      "parkCode": "acad",
+      "title": "Road Closure",
+      "description": "Scenic Drive is closed due to rock slide. Expected reopening in 7 days.",
+      "category": "closure",
+      "severity": "moderate",
+      "lastIndexedDate": "2025-10-21",
+      "status": "active"
+    },
+    {
+      "id": "alert-009",
+      "parkCode": "acad",
+      "title": "Road Closure",
+      "description": "Scenic Drive is closed due to rock slide. Expected reopening in 7 days.",
+      "category": "closure",
+      "severity": "moderate",
+      "lastIndexedDate": "2025-10-11",
+      "status": "active"
+    },
+    {
+      "id": "alert-010",
+      "parkCode": "acad",
+      "title": "Road Closure",
+      "description": "Scenic Drive is closed due to rock slide. Expected reopening in 7 days.",
+      "category": "closure",
+      "severity": "moderate",
+      "lastIndexedDate": "2025-10-06",
+      "status": "active"
+    }
+  ],
+  "visitor_centers": [
+    {
+      "id": "vc-001",
+      "parkCode": "acad",
+      "name": "Acadia Visitor Center",
+      "description": "Information center providing park maps, permits, and educational exhibits about Acadia National Park.",
+      "directions": "Located near the main entrance. Follow signs from the main road.",
+      "latLong": "lat:44.3386, long:-68.2733",
+      "operatingHours": [
+        {
+          "description": "Visitor center hours",
+          "standardHours": {
+            "monday": "8:00AM - 5:00PM",
+            "tuesday": "8:00AM - 5:00PM",
+            "wednesday": "8:00AM - 5:00PM",
+            "thursday": "8:00AM - 5:00PM",
+            "friday": "8:00AM - 5:00PM",
+            "saturday": "8:00AM - 6:00PM",
+            "sunday": "8:00AM - 6:00PM"
+          }
+        }
+      ]
+    },
+    {
+      "id": "vc-002",
+      "parkCode": "acad",
+      "name": "Acadia Visitor Center",
+      "description": "Information center providing park maps, permits, and educational exhibits about Acadia National Park.",
+      "directions": "Located near the main entrance. Follow signs from the main road.",
+      "latLong": "lat:44.3386, long:-68.2733",
+      "operatingHours": [
+        {
+          "description": "Visitor center hours",
+          "standardHours": {
+            "monday": "8:00AM - 5:00PM",
+            "tuesday": "8:00AM - 5:00PM",
+            "wednesday": "8:00AM - 5:00PM",
+            "thursday": "8:00AM - 5:00PM",
+            "friday": "8:00AM - 5:00PM",
+            "saturday": "8:00AM - 6:00PM",
+            "sunday": "8:00AM - 6:00PM"
+          }
+        }
+      ]
+    },
+    {
+      "id": "vc-003",
+      "parkCode": "yell",
+      "name": "Yellowstone Visitor Center",
+      "description": "Information center providing park maps, permits, and educational exhibits about Yellowstone National Park.",
+      "directions": "Located near the main entrance. Follow signs from the main road.",
+      "latLong": "lat:44.4280, long:-110.5885",
+      "operatingHours": [
+        {
+          "description": "Visitor center hours",
+          "standardHours": {
+            "monday": "8:00AM - 5:00PM",
+            "tuesday": "8:00AM - 5:00PM",
+            "wednesday": "8:00AM - 5:00PM",
+            "thursday": "8:00AM - 5:00PM",
+            "friday": "8:00AM - 5:00PM",
+            "saturday": "8:00AM - 6:00PM",
+            "sunday": "8:00AM - 6:00PM"
+          }
+        }
+      ]
+    },
+    {
+      "id": "vc-004",
+      "parkCode": "acad",
+      "name": "Acadia Visitor Center",
+      "description": "Information center providing park maps, permits, and educational exhibits about Acadia National Park.",
+      "directions": "Located near the main entrance. Follow signs from the main road.",
+      "latLong": "lat:44.3386, long:-68.2733",
+      "operatingHours": [
+        {
+          "description": "Visitor center hours",
+          "standardHours": {
+            "monday": "8:00AM - 5:00PM",
+            "tuesday": "8:00AM - 5:00PM",
+            "wednesday": "8:00AM - 5:00PM",
+            "thursday": "8:00AM - 5:00PM",
+            "friday": "8:00AM - 5:00PM",
+            "saturday": "8:00AM - 6:00PM",
+            "sunday": "8:00AM - 6:00PM"
+          }
+        }
+      ]
+    },
+    {
+      "id": "vc-005",
+      "parkCode": "acad",
+      "name": "Acadia Visitor Center",
+      "description": "Information center providing park maps, permits, and educational exhibits about Acadia National Park.",
+      "directions": "Located near the main entrance. Follow signs from the main road.",
+      "latLong": "lat:44.3386, long:-68.2733",
+      "operatingHours": [
+        {
+          "description": "Visitor center hours",
+          "standardHours": {
+            "monday": "8:00AM - 5:00PM",
+            "tuesday": "8:00AM - 5:00PM",
+            "wednesday": "8:00AM - 5:00PM",
+            "thursday": "8:00AM - 5:00PM",
+            "friday": "8:00AM - 5:00PM",
+            "saturday": "8:00AM - 6:00PM",
+            "sunday": "8:00AM - 6:00PM"
+          }
+        }
+      ]
+    },
+    {
+      "id": "vc-006",
+      "parkCode": "acad",
+      "name": "Acadia Visitor Center",
+      "description": "Information center providing park maps, permits, and educational exhibits about Acadia National Park.",
+      "directions": "Located near the main entrance. Follow signs from the main road.",
+      "latLong": "lat:44.3386, long:-68.2733",
+      "operatingHours": [
+        {
+          "description": "Visitor center hours",
+          "standardHours": {
+            "monday": "8:00AM - 5:00PM",
+            "tuesday": "8:00AM - 5:00PM",
+            "wednesday": "8:00AM - 5:00PM",
+            "thursday": "8:00AM - 5:00PM",
+            "friday": "8:00AM - 5:00PM",
+            "saturday": "8:00AM - 6:00PM",
+            "sunday": "8:00AM - 6:00PM"
+          }
+        }
+      ]
+    },
+    {
+      "id": "vc-007",
+      "parkCode": "acad",
+      "name": "Acadia Visitor Center",
+      "description": "Information center providing park maps, permits, and educational exhibits about Acadia National Park.",
+      "directions": "Located near the main entrance. Follow signs from the main road.",
+      "latLong": "lat:44.3386, long:-68.2733",
+      "operatingHours": [
+        {
+          "description": "Visitor center hours",
+          "standardHours": {
+            "monday": "8:00AM - 5:00PM",
+            "tuesday": "8:00AM - 5:00PM",
+            "wednesday": "8:00AM - 5:00PM",
+            "thursday": "8:00AM - 5:00PM",
+            "friday": "8:00AM - 5:00PM",
+            "saturday": "8:00AM - 6:00PM",
+            "sunday": "8:00AM - 6:00PM"
+          }
+        }
+      ]
+    },
+    {
+      "id": "vc-008",
+      "parkCode": "acad",
+      "name": "Acadia Visitor Center",
+      "description": "Information center providing park maps, permits, and educational exhibits about Acadia National Park.",
+      "directions": "Located near the main entrance. Follow signs from the main road.",
+      "latLong": "lat:44.3386, long:-68.2733",
+      "operatingHours": [
+        {
+          "description": "Visitor center hours",
+          "standardHours": {
+            "monday": "8:00AM - 5:00PM",
+            "tuesday": "8:00AM - 5:00PM",
+            "wednesday": "8:00AM - 5:00PM",
+            "thursday": "8:00AM - 5:00PM",
+            "friday": "8:00AM - 5:00PM",
+            "saturday": "8:00AM - 6:00PM",
+            "sunday": "8:00AM - 6:00PM"
+          }
+        }
+      ]
+    }
+  ],
+  "campgrounds": [
+    {
+      "id": "cg-001",
+      "parkCode": "acad",
+      "name": "Acadia Campground",
+      "description": "Scenic campground offering tent camping with beautiful views of Acadia National Park.",
+      "directions": "From the main entrance, follow signs to campground area.",
+      "latLong": "lat:44.3386, long:-68.2733",
+      "reservationInfo": "Reservations required. Book online at recreation.gov",
+      "amenities": [
+        "Restrooms",
+        "Picnic Tables",
+        "Fire Rings",
+        "Drinking Water"
+      ],
+      "accessibility": [
+        "Wheelchair Accessible",
+        "Accessible Restrooms"
+      ]
+    },
+    {
+      "id": "cg-002",
+      "parkCode": "acad",
+      "name": "Acadia Campground",
+      "description": "Scenic campground offering tent camping with beautiful views of Acadia National Park.",
+      "directions": "From the main entrance, follow signs to campground area.",
+      "latLong": "lat:44.3386, long:-68.2733",
+      "reservationInfo": "Reservations required. Book online at recreation.gov",
+      "amenities": [
+        "Restrooms",
+        "Picnic Tables",
+        "Fire Rings",
+        "Drinking Water"
+      ],
+      "accessibility": [
+        "Wheelchair Accessible",
+        "Accessible Restrooms"
+      ]
+    },
+    {
+      "id": "cg-003",
+      "parkCode": "yell",
+      "name": "Yellowstone Campground",
+      "description": "Scenic campground offering tent camping with beautiful views of Yellowstone National Park.",
+      "directions": "From the main entrance, follow signs to campground area.",
+      "latLong": "lat:44.4280, long:-110.5885",
+      "reservationInfo": "Reservations required. Book online at recreation.gov",
+      "amenities": [
+        "Restrooms",
+        "Picnic Tables",
+        "Fire Rings",
+        "Drinking Water"
+      ],
+      "accessibility": [
+        "Wheelchair Accessible",
+        "Accessible Restrooms"
+      ]
+    },
+    {
+      "id": "cg-004",
+      "parkCode": "acad",
+      "name": "Acadia Campground",
+      "description": "Scenic campground offering tent camping with beautiful views of Acadia National Park.",
+      "directions": "From the main entrance, follow signs to campground area.",
+      "latLong": "lat:44.3386, long:-68.2733",
+      "reservationInfo": "Reservations required. Book online at recreation.gov",
+      "amenities": [
+        "Restrooms",
+        "Picnic Tables",
+        "Fire Rings",
+        "Drinking Water"
+      ],
+      "accessibility": [
+        "Wheelchair Accessible",
+        "Accessible Restrooms"
+      ]
+    },
+    {
+      "id": "cg-005",
+      "parkCode": "acad",
+      "name": "Acadia Campground",
+      "description": "Scenic campground offering tent camping with beautiful views of Acadia National Park.",
+      "directions": "From the main entrance, follow signs to campground area.",
+      "latLong": "lat:44.3386, long:-68.2733",
+      "reservationInfo": "Reservations required. Book online at recreation.gov",
+      "amenities": [
+        "Restrooms",
+        "Picnic Tables",
+        "Fire Rings",
+        "Drinking Water"
+      ],
+      "accessibility": [
+        "Wheelchair Accessible",
+        "Accessible Restrooms"
+      ]
+    },
+    {
+      "id": "cg-006",
+      "parkCode": "acad",
+      "name": "Acadia Campground",
+      "description": "Scenic campground offering tent camping with beautiful views of Acadia National Park.",
+      "directions": "From the main entrance, follow signs to campground area.",
+      "latLong": "lat:44.3386, long:-68.2733",
+      "reservationInfo": "Reservations required. Book online at recreation.gov",
+      "amenities": [
+        "Restrooms",
+        "Picnic Tables",
+        "Fire Rings",
+        "Drinking Water"
+      ],
+      "accessibility": [
+        "Wheelchair Accessible",
+        "Accessible Restrooms"
+      ]
+    },
+    {
+      "id": "cg-007",
+      "parkCode": "acad",
+      "name": "Acadia Campground",
+      "description": "Scenic campground offering tent camping with beautiful views of Acadia National Park.",
+      "directions": "From the main entrance, follow signs to campground area.",
+      "latLong": "lat:44.3386, long:-68.2733",
+      "reservationInfo": "Reservations required. Book online at recreation.gov",
+      "amenities": [
+        "Restrooms",
+        "Picnic Tables",
+        "Fire Rings",
+        "Drinking Water"
+      ],
+      "accessibility": [
+        "Wheelchair Accessible",
+        "Accessible Restrooms"
+      ]
+    },
+    {
+      "id": "cg-008",
+      "parkCode": "acad",
+      "name": "Acadia Campground",
+      "description": "Scenic campground offering tent camping with beautiful views of Acadia National Park.",
+      "directions": "From the main entrance, follow signs to campground area.",
+      "latLong": "lat:44.3386, long:-68.2733",
+      "reservationInfo": "Reservations required. Book online at recreation.gov",
+      "amenities": [
+        "Restrooms",
+        "Picnic Tables",
+        "Fire Rings",
+        "Drinking Water"
+      ],
+      "accessibility": [
+        "Wheelchair Accessible",
+        "Accessible Restrooms"
+      ]
+    },
+    {
+      "id": "cg-009",
+      "parkCode": "yell",
+      "name": "Yellowstone Campground",
+      "description": "Scenic campground offering tent camping with beautiful views of Yellowstone National Park.",
+      "directions": "From the main entrance, follow signs to campground area.",
+      "latLong": "lat:44.4280, long:-110.5885",
+      "reservationInfo": "Reservations required. Book online at recreation.gov",
+      "amenities": [
+        "Restrooms",
+        "Picnic Tables",
+        "Fire Rings",
+        "Drinking Water"
+      ],
+      "accessibility": [
+        "Wheelchair Accessible",
+        "Accessible Restrooms"
+      ]
+    },
+    {
+      "id": "cg-010",
+      "parkCode": "acad",
+      "name": "Acadia Campground",
+      "description": "Scenic campground offering tent camping with beautiful views of Acadia National Park.",
+      "directions": "From the main entrance, follow signs to campground area.",
+      "latLong": "lat:44.3386, long:-68.2733",
+      "reservationInfo": "Reservations required. Book online at recreation.gov",
+      "amenities": [
+        "Restrooms",
+        "Picnic Tables",
+        "Fire Rings",
+        "Drinking Water"
+      ],
+      "accessibility": [
+        "Wheelchair Accessible",
+        "Accessible Restrooms"
+      ]
+    },
+    {
+      "id": "cg-011",
+      "parkCode": "acad",
+      "name": "Acadia Campground",
+      "description": "Scenic campground offering tent camping with beautiful views of Acadia National Park.",
+      "directions": "From the main entrance, follow signs to campground area.",
+      "latLong": "lat:44.3386, long:-68.2733",
+      "reservationInfo": "Reservations required. Book online at recreation.gov",
+      "amenities": [
+        "Restrooms",
+        "Picnic Tables",
+        "Fire Rings",
+        "Drinking Water"
+      ],
+      "accessibility": [
+        "Wheelchair Accessible",
+        "Accessible Restrooms"
+      ]
+    },
+    {
+      "id": "cg-012",
+      "parkCode": "acad",
+      "name": "Acadia Campground",
+      "description": "Scenic campground offering tent camping with beautiful views of Acadia National Park.",
+      "directions": "From the main entrance, follow signs to campground area.",
+      "latLong": "lat:44.3386, long:-68.2733",
+      "reservationInfo": "Reservations required. Book online at recreation.gov",
+      "amenities": [
+        "Restrooms",
+        "Picnic Tables",
+        "Fire Rings",
+        "Drinking Water"
+      ],
+      "accessibility": [
+        "Wheelchair Accessible",
+        "Accessible Restrooms"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "id": "event-001",
+      "parkCode": "acad",
+      "title": "Geology Ranger Program",
+      "description": "Join a park ranger for an educational geology program about local geology.",
+      "category": "ranger-led",
+      "dateStart": "2025-11-01",
+      "dateEnd": "2025-11-04",
+      "location": "Visitor Center"
+    },
+    {
+      "id": "event-002",
+      "parkCode": "yell",
+      "title": "Geology Ranger Program",
+      "description": "Join a park ranger for an educational geology program about local geology.",
+      "category": "ranger-led",
+      "dateStart": "2025-11-29",
+      "dateEnd": "2025-11-30",
+      "location": "Visitor Center"
+    },
+    {
+      "id": "event-003",
+      "parkCode": "acad",
+      "title": "Geology Ranger Program",
+      "description": "Join a park ranger for an educational geology program about local geology.",
+      "category": "ranger-led",
+      "dateStart": "2025-11-11",
+      "dateEnd": "2025-11-14",
+      "location": "Visitor Center"
+    },
+    {
+      "id": "event-004",
+      "parkCode": "acad",
+      "title": "Geology Ranger Program",
+      "description": "Join a park ranger for an educational geology program about local geology.",
+      "category": "ranger-led",
+      "dateStart": "2026-01-12",
+      "dateEnd": "2026-01-14",
+      "location": "Visitor Center"
+    },
+    {
+      "id": "event-005",
+      "parkCode": "acad",
+      "title": "Geology Ranger Program",
+      "description": "Join a park ranger for an educational geology program about local geology.",
+      "category": "ranger-led",
+      "dateStart": "2025-11-01",
+      "dateEnd": "2025-11-02",
+      "location": "Visitor Center"
+    },
+    {
+      "id": "event-006",
+      "parkCode": "acad",
+      "title": "Geology Ranger Program",
+      "description": "Join a park ranger for an educational geology program about local geology.",
+      "category": "ranger-led",
+      "dateStart": "2025-11-27",
+      "dateEnd": "2025-11-30",
+      "location": "Visitor Center"
+    },
+    {
+      "id": "event-007",
+      "parkCode": "acad",
+      "title": "Geology Ranger Program",
+      "description": "Join a park ranger for an educational geology program about local geology.",
+      "category": "ranger-led",
+      "dateStart": "2026-01-08",
+      "dateEnd": "2026-01-09",
+      "location": "Visitor Center"
+    },
+    {
+      "id": "event-008",
+      "parkCode": "yell",
+      "title": "Geology Ranger Program",
+      "description": "Join a park ranger for an educational geology program about local geology.",
+      "category": "ranger-led",
+      "dateStart": "2025-11-26",
+      "dateEnd": "2025-11-28",
+      "location": "Visitor Center"
+    },
+    {
+      "id": "event-009",
+      "parkCode": "yell",
+      "title": "Geology Ranger Program",
+      "description": "Join a park ranger for an educational geology program about local geology.",
+      "category": "ranger-led",
+      "dateStart": "2025-10-29",
+      "dateEnd": "2025-10-30",
+      "location": "Visitor Center"
+    },
+    {
+      "id": "event-010",
+      "parkCode": "yell",
+      "title": "Geology Ranger Program",
+      "description": "Join a park ranger for an educational geology program about local geology.",
+      "category": "ranger-led",
+      "dateStart": "2025-12-11",
+      "dateEnd": "2025-12-13",
+      "location": "Visitor Center"
+    },
+    {
+      "id": "event-011",
+      "parkCode": "acad",
+      "title": "Geology Ranger Program",
+      "description": "Join a park ranger for an educational geology program about local geology.",
+      "category": "ranger-led",
+      "dateStart": "2025-11-25",
+      "dateEnd": "2025-11-27",
+      "location": "Visitor Center"
+    },
+    {
+      "id": "event-012",
+      "parkCode": "acad",
+      "title": "Geology Ranger Program",
+      "description": "Join a park ranger for an educational geology program about local geology.",
+      "category": "ranger-led",
+      "dateStart": "2025-11-09",
+      "dateEnd": "2025-11-11",
+      "location": "Visitor Center"
+    },
+    {
+      "id": "event-013",
+      "parkCode": "acad",
+      "title": "Geology Ranger Program",
+      "description": "Join a park ranger for an educational geology program about local geology.",
+      "category": "ranger-led",
+      "dateStart": "2025-12-13",
+      "dateEnd": "2025-12-15",
+      "location": "Visitor Center"
+    },
+    {
+      "id": "event-014",
+      "parkCode": "yell",
+      "title": "Geology Ranger Program",
+      "description": "Join a park ranger for an educational geology program about local geology.",
+      "category": "ranger-led",
+      "dateStart": "2025-11-03",
+      "dateEnd": "2025-11-06",
+      "location": "Visitor Center"
+    },
+    {
+      "id": "event-015",
+      "parkCode": "yell",
+      "title": "Geology Ranger Program",
+      "description": "Join a park ranger for an educational geology program about local geology.",
+      "category": "ranger-led",
+      "dateStart": "2026-01-05",
+      "dateEnd": "2026-01-06",
+      "location": "Visitor Center"
+    }
+  ]
+}

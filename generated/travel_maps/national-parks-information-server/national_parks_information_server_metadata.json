@@ -1,0 +1,330 @@
+{
+  "description": "Provides comprehensive information about national parks including park details, alerts, visitor centers, campgrounds, and events using offline database.",
+  "name": "National Parks Information Server",
+  "tools": [
+    {
+      "description": "Search and filter national parks by various criteria including search term, state, and activities.",
+      "input_schema": {
+        "properties": {
+          "activity": {
+            "description": "Filter by activity (e.g., Hiking, Camping)",
+            "type": "string"
+          },
+          "limit": {
+            "description": "Maximum number of results to return",
+            "type": "integer"
+          },
+          "search_term": {
+            "description": "Search term to match against park name, description, or location (case-insensitive)",
+            "type": "string"
+          },
+          "start": {
+            "description": "Starting index for pagination",
+            "type": "integer"
+          },
+          "state": {
+            "description": "Filter by state code (e.g., ME, WY)",
+            "type": "string"
+          }
+        },
+        "required": [],
+        "type": "object"
+      },
+      "name": "findParks",
+      "output_schema": {
+        "properties": {
+          "limit": {
+            "description": "Maximum number of results returned",
+            "type": "integer"
+          },
+          "parks": {
+            "description": "Array of park objects matching the search criteria",
+            "type": "array"
+          },
+          "start": {
+            "description": "Starting index for pagination",
+            "type": "integer"
+          },
+          "total": {
+            "description": "Total number of matching parks",
+            "type": "integer"
+          }
+        },
+        "type": "object"
+      }
+    },
+    {
+      "description": "Get detailed information for a specific park by its park code.",
+      "input_schema": {
+        "properties": {
+          "parkCode": {
+            "description": "The unique park code (e.g., acad, yell)",
+            "type": "string"
+          }
+        },
+        "required": [
+          "parkCode"
+        ],
+        "type": "object"
+      },
+      "name": "getParkDetails",
+      "output_schema": {
+        "properties": {
+          "activities": {
+            "description": "Available activities in the park",
+            "type": "array"
+          },
+          "description": {
+            "description": "Park description",
+            "type": "string"
+          },
+          "entranceFees": {
+            "description": "Entrance fee information",
+            "type": "array"
+          },
+          "error": {
+            "description": "Error message if park not found",
+            "type": "string"
+          },
+          "latLong": {
+            "description": "Latitude and longitude coordinates",
+            "type": "string"
+          },
+          "location": {
+            "description": "Park location",
+            "type": "string"
+          },
+          "name": {
+            "description": "Park name",
+            "type": "string"
+          },
+          "operatingHours": {
+            "description": "Park operating hours",
+            "type": "array"
+          },
+          "parkCode": {
+            "description": "Unique park code",
+            "type": "string"
+          },
+          "states": {
+            "description": "States where park is located",
+            "type": "string"
+          },
+          "topics": {
+            "description": "Topics related to the park",
+            "type": "array"
+          },
+          "url": {
+            "description": "Official park website URL",
+            "type": "string"
+          },
+          "weatherInfo": {
+            "description": "Weather information for the park",
+            "type": "string"
+          }
+        },
+        "type": "object"
+      }
+    },
+    {
+      "description": "Get alerts with filtering options by park, category, severity, and status.",
+      "input_schema": {
+        "properties": {
+          "category": {
+            "description": "Filter by alert category (e.g., closure, hazard, weather)",
+            "type": "string"
+          },
+          "limit": {
+            "description": "Maximum number of results to return",
+            "type": "integer"
+          },
+          "parkCode": {
+            "description": "Filter by park code (e.g., acad, yell)",
+            "type": "string"
+          },
+          "severity": {
+            "description": "Filter by severity level (e.g., extreme, severe, moderate)",
+            "type": "string"
+          },
+          "start": {
+            "description": "Starting index for pagination",
+            "type": "integer"
+          },
+          "status": {
+            "description": "Filter by status (e.g., active, inactive, expired)",
+            "type": "string"
+          }
+        },
+        "required": [],
+        "type": "object"
+      },
+      "name": "getAlerts",
+      "output_schema": {
+        "properties": {
+          "alerts": {
+            "description": "Array of alert objects matching the filter criteria",
+            "type": "array"
+          },
+          "limit": {
+            "description": "Maximum number of results returned",
+            "type": "integer"
+          },
+          "start": {
+            "description": "Starting index for pagination",
+            "type": "integer"
+          },
+          "total": {
+            "description": "Total number of matching alerts",
+            "type": "integer"
+          }
+        },
+        "type": "object"
+      }
+    },
+    {
+      "description": "Get visitor centers information with filtering by park code.",
+      "input_schema": {
+        "properties": {
+          "limit": {
+            "description": "Maximum number of results to return",
+            "type": "integer"
+          },
+          "parkCode": {
+            "description": "Filter by park code (e.g., acad, yell)",
+            "type": "string"
+          },
+          "start": {
+            "description": "Starting index for pagination",
+            "type": "integer"
+          }
+        },
+        "required": [],
+        "type": "object"
+      },
+      "name": "getVisitorCenters",
+      "output_schema": {
+        "properties": {
+          "limit": {
+            "description": "Maximum number of results returned",
+            "type": "integer"
+          },
+          "start": {
+            "description": "Starting index for pagination",
+            "type": "integer"
+          },
+          "total": {
+            "description": "Total number of matching visitor centers",
+            "type": "integer"
+          },
+          "visitor_centers": {
+            "description": "Array of visitor center objects",
+            "type": "array"
+          }
+        },
+        "type": "object"
+      }
+    },
+    {
+      "description": "Get campgrounds information with filtering options by park and amenities.",
+      "input_schema": {
+        "properties": {
+          "amenity": {
+            "description": "Filter by specific amenity (e.g., Restrooms, Fire Rings)",
+            "type": "string"
+          },
+          "limit": {
+            "description": "Maximum number of results to return",
+            "type": "integer"
+          },
+          "parkCode": {
+            "description": "Filter by park code (e.g., acad, yell)",
+            "type": "string"
+          },
+          "start": {
+            "description": "Starting index for pagination",
+            "type": "integer"
+          }
+        },
+        "required": [],
+        "type": "object"
+      },
+      "name": "getCampgrounds",
+      "output_schema": {
+        "properties": {
+          "campgrounds": {
+            "description": "Array of campground objects matching the filter criteria",
+            "type": "array"
+          },
+          "limit": {
+            "description": "Maximum number of results returned",
+            "type": "integer"
+          },
+          "start": {
+            "description": "Starting index for pagination",
+            "type": "integer"
+          },
+          "total": {
+            "description": "Total number of matching campgrounds",
+            "type": "integer"
+          }
+        },
+        "type": "object"
+      }
+    },
+    {
+      "description": "Get events with date filtering options by park, category, and date range.",
+      "input_schema": {
+        "properties": {
+          "category": {
+            "description": "Filter by event category (e.g., ranger-led, festival)",
+            "type": "string"
+          },
+          "dateEnd": {
+            "description": "Filter events ending on or before this date (YYYY-MM-DD format)",
+            "type": "string"
+          },
+          "dateStart": {
+            "description": "Filter events starting on or after this date (YYYY-MM-DD format)",
+            "type": "string"
+          },
+          "limit": {
+            "description": "Maximum number of results to return",
+            "type": "integer"
+          },
+          "parkCode": {
+            "description": "Filter by park code (e.g., acad, yell)",
+            "type": "string"
+          },
+          "start": {
+            "description": "Starting index for pagination",
+            "type": "integer"
+          }
+        },
+        "required": [],
+        "type": "object"
+      },
+      "name": "getEvents",
+      "output_schema": {
+        "properties": {
+          "events": {
+            "description": "Array of event objects matching the filter criteria",
+            "type": "array"
+          },
+          "limit": {
+            "description": "Maximum number of results returned",
+            "type": "integer"
+          },
+          "start": {
+            "description": "Starting index for pagination",
+            "type": "integer"
+          },
+          "total": {
+            "description": "Total number of matching events",
+            "type": "integer"
+          }
+        },
+        "type": "object"
+      }
+    }
+  ]
+}

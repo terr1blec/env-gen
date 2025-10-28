@@ -1,0 +1,319 @@
+{
+  "flights": [
+    {
+      "flight_id": "FL0001",
+      "airline": "DL",
+      "flight_number": "DL1234",
+      "departure_airport": "JFK",
+      "arrival_airport": "LAX",
+      "departure_time": "06:15",
+      "arrival_time": "09:30",
+      "duration": "05:15",
+      "price": 456.78,
+      "available_seats": 45,
+      "aircraft_type": "Boeing 737"
+    },
+    {
+      "flight_id": "FL0002",
+      "airline": "UA",
+      "flight_number": "UA5678",
+      "departure_airport": "LAX",
+      "arrival_airport": "JFK",
+      "departure_time": "17:30",
+      "arrival_time": "00:45",
+      "duration": "05:15",
+      "price": 512.34,
+      "available_seats": 23,
+      "aircraft_type": "Airbus A320"
+    },
+    {
+      "flight_id": "FL0003",
+      "airline": "BA",
+      "flight_number": "BA9012",
+      "departure_airport": "JFK",
+      "arrival_airport": "LHR",
+      "departure_time": "09:45",
+      "arrival_time": "21:30",
+      "duration": "07:45",
+      "price": 789.12,
+      "available_seats": 67,
+      "aircraft_type": "Boeing 777"
+    },
+    {
+      "flight_id": "FL0004",
+      "airline": "AF",
+      "flight_number": "AF3456",
+      "departure_airport": "LHR",
+      "arrival_airport": "JFK",
+      "departure_time": "14:15",
+      "arrival_time": "17:00",
+      "duration": "07:45",
+      "price": 823.45,
+      "available_seats": 12,
+      "aircraft_type": "Airbus A330"
+    },
+    {
+      "flight_id": "FL0005",
+      "airline": "LH",
+      "flight_number": "LH7890",
+      "departure_airport": "LAX",
+      "arrival_airport": "LHR",
+      "departure_time": "18:30",
+      "arrival_time": "12:15",
+      "duration": "10:45",
+      "price": 945.67,
+      "available_seats": 89,
+      "aircraft_type": "Boeing 787"
+    },
+    {
+      "flight_id": "FL0006",
+      "airline": "EK",
+      "flight_number": "EK2345",
+      "departure_airport": "LHR",
+      "arrival_airport": "LAX",
+      "departure_time": "10:00",
+      "arrival_time": "13:45",
+      "duration": "11:45",
+      "price": 1023.89,
+      "available_seats": 34,
+      "aircraft_type": "Airbus A350"
+    },
+    {
+      "flight_id": "FL0007",
+      "airline": "SQ",
+      "flight_number": "SQ6789",
+      "departure_airport": "JFK",
+      "arrival_airport": "CDG",
+      "departure_time": "07:30",
+      "arrival_time": "19:15",
+      "duration": "07:45",
+      "price": 678.9,
+      "available_seats": 56,
+      "aircraft_type": "Boeing 777"
+    },
+    {
+      "flight_id": "FL0008",
+      "airline": "JL",
+      "flight_number": "JL1234",
+      "departure_airport": "CDG",
+      "arrival_airport": "JFK",
+      "departure_time": "16:45",
+      "arrival_time": "19:30",
+      "duration": "08:45",
+      "price": 734.56,
+      "available_seats": 78,
+      "aircraft_type": "Airbus A330"
+    },
+    {
+      "flight_id": "FL0009",
+      "airline": "QF",
+      "flight_number": "QF5678",
+      "departure_airport": "LAX",
+      "arrival_airport": "SYD",
+      "departure_time": "09:15",
+      "arrival_time": "17:00",
+      "duration": "14:45",
+      "price": 1234.56,
+      "available_seats": 23,
+      "aircraft_type": "Boeing 787"
+    },
+    {
+      "flight_id": "FL0010",
+      "airline": "AA",
+      "flight_number": "AA9012",
+      "departure_airport": "SYD",
+      "arrival_airport": "LAX",
+      "departure_time": "15:30",
+      "arrival_time": "10:15",
+      "duration": "13:45",
+      "price": 1189.23,
+      "available_seats": 45,
+      "aircraft_type": "Boeing 777"
+    }
+  ],
+  "airports": [
+    {
+      "code": "JFK",
+      "name": "John F. Kennedy International Airport",
+      "city": "New York",
+      "country": "USA",
+      "timezone": "America/New_York"
+    },
+    {
+      "code": "LAX",
+      "name": "Los Angeles International Airport",
+      "city": "Los Angeles",
+      "country": "USA",
+      "timezone": "America/Los_Angeles"
+    },
+    {
+      "code": "LHR",
+      "name": "Heathrow Airport",
+      "city": "London",
+      "country": "UK",
+      "timezone": "Europe/London"
+    },
+    {
+      "code": "CDG",
+      "name": "Charles de Gaulle Airport",
+      "city": "Paris",
+      "country": "France",
+      "timezone": "Europe/Paris"
+    },
+    {
+      "code": "FRA",
+      "name": "Frankfurt Airport",
+      "city": "Frankfurt",
+      "country": "Germany",
+      "timezone": "Europe/Berlin"
+    },
+    {
+      "code": "DXB",
+      "name": "Dubai International Airport",
+      "city": "Dubai",
+      "country": "UAE",
+      "timezone": "Asia/Dubai"
+    },
+    {
+      "code": "SIN",
+      "name": "Singapore Changi Airport",
+      "city": "Singapore",
+      "country": "Singapore",
+      "timezone": "Asia/Singapore"
+    },
+    {
+      "code": "HND",
+      "name": "Haneda Airport",
+      "city": "Tokyo",
+      "country": "Japan",
+      "timezone": "Asia/Tokyo"
+    },
+    {
+      "code": "SYD",
+      "name": "Sydney Kingsford Smith Airport",
+      "city": "Sydney",
+      "country": "Australia",
+      "timezone": "Australia/Sydney"
+    },
+    {
+      "code": "YYZ",
+      "name": "Toronto Pearson International Airport",
+      "city": "Toronto",
+      "country": "Canada",
+      "timezone": "America/Toronto"
+    },
+    {
+      "code": "MEX",
+      "name": "Mexico City International Airport",
+      "city": "Mexico City",
+      "country": "Mexico",
+      "timezone": "America/Mexico_City"
+    },
+    {
+      "code": "GRU",
+      "name": "São Paulo–Guarulhos International Airport",
+      "city": "São Paulo",
+      "country": "Brazil",
+      "timezone": "America/Sao_Paulo"
+    }
+  ],
+  "airlines": [
+    {
+      "code": "DL",
+      "name": "Delta Air Lines",
+      "hub_airport": "ATL"
+    },
+    {
+      "code": "UA",
+      "name": "United Airlines",
+      "hub_airport": "ORD"
+    },
+    {
+      "code": "AA",
+      "name": "American Airlines",
+      "hub_airport": "DFW"
+    },
+    {
+      "code": "BA",
+      "name": "British Airways",
+      "hub_airport": "LHR"
+    },
+    {
+      "code": "AF",
+      "name": "Air France",
+      "hub_airport": "CDG"
+    },
+    {
+      "code": "LH",
+      "name": "Lufthansa",
+      "hub_airport": "FRA"
+    },
+    {
+      "code": "EK",
+      "name": "Emirates",
+      "hub_airport": "DXB"
+    },
+    {
+      "code": "SQ",
+      "name": "Singapore Airlines",
+      "hub_airport": "SIN"
+    },
+    {
+      "code": "JL",
+      "name": "Japan Airlines",
+      "hub_airport": "HND"
+    },
+    {
+      "code": "QF",
+      "name": "Qantas",
+      "hub_airport": "SYD"
+    }
+  ],
+  "bookings": [
+    {
+      "booking_id": "BK0001",
+      "flight_id": "FL0001",
+      "passenger_name": "John Smith",
+      "passenger_email": "john.smith@gmail.com",
+      "seat_number": "12A",
+      "booking_status": "confirmed",
+      "booking_date": "2024-01-15"
+    },
+    {
+      "booking_id": "BK0002",
+      "flight_id": "FL0002",
+      "passenger_name": "Jane Johnson",
+      "passenger_email": "jane.johnson@yahoo.com",
+      "seat_number": "15C",
+      "booking_status": "confirmed",
+      "booking_date": "2024-01-20"
+    },
+    {
+      "booking_id": "BK0003",
+      "flight_id": "FL0003",
+      "passenger_name": "Michael Williams",
+      "passenger_email": "michael.williams@hotmail.com",
+      "seat_number": "8B",
+      "booking_status": "pending",
+      "booking_date": "2024-01-25"
+    },
+    {
+      "booking_id": "BK0004",
+      "flight_id": "FL0004",
+      "passenger_name": "Sarah Brown",
+      "passenger_email": "sarah.brown@outlook.com",
+      "seat_number": "22D",
+      "booking_status": "confirmed",
+      "booking_date": "2024-01-18"
+    },
+    {
+      "booking_id": "BK0005",
+      "flight_id": "FL0005",
+      "passenger_name": "David Jones",
+      "passenger_email": "david.jones@gmail.com",
+      "seat_number": "5A",
+      "booking_status": "cancelled",
+      "booking_date": "2024-01-22"
+    }
+  ]
+}

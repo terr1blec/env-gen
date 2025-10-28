@@ -1,0 +1,650 @@
+{
+  "directions": [
+    {
+      "id": "dir_001",
+      "goal": "Myeongdong",
+      "start": "Gangnam Station",
+      "option": "fastest",
+      "waypoints": "Hongdae",
+      "route_info": {
+        "distance": "12.3 km",
+        "duration": "32분",
+        "steps": [
+          "Gangnam Station에서 출발",
+          "주요 도로로 진입",
+          "Myeongdong 방향으로 진행",
+          "Myeongdong 도착"
+        ]
+      }
+    },
+    {
+      "id": "dir_002",
+      "goal": "Hongdae",
+      "start": "Myeongdong",
+      "option": "shortest",
+      "waypoints": null,
+      "route_info": {
+        "distance": "7.3 km",
+        "duration": "26분",
+        "steps": [
+          "Myeongdong에서 출발",
+          "주요 도로로 진입",
+          "Hongdae 방향으로 진행",
+          "Hongdae 도착"
+        ]
+      }
+    },
+    {
+      "id": "dir_003",
+      "goal": "Itaewon",
+      "start": "Hongdae",
+      "option": null,
+      "waypoints": null,
+      "route_info": {
+        "distance": "10.3 km",
+        "duration": "28분",
+        "steps": [
+          "Hongdae에서 출발",
+          "주요 도로로 진입",
+          "Itaewon 방향으로 진행",
+          "Itaewon 도착"
+        ]
+      }
+    },
+    {
+      "id": "dir_004",
+      "goal": "Jamsil Lotte World",
+      "start": "Itaewon",
+      "option": "fastest",
+      "waypoints": null,
+      "route_info": {
+        "distance": "14.1 km",
+        "duration": "46분",
+        "steps": [
+          "Itaewon에서 출발",
+          "주요 도로로 진입",
+          "Jamsil Lotte World 방향으로 진행",
+          "Jamsil Lotte World 도착"
+        ]
+      }
+    },
+    {
+      "id": "dir_005",
+      "goal": "Gwanghwamun",
+      "start": "Jamsil Lotte World",
+      "option": "shortest",
+      "waypoints": null,
+      "route_info": {
+        "distance": "20.7 km",
+        "duration": "48분",
+        "steps": [
+          "Jamsil Lotte World에서 출발",
+          "주요 도로로 진입",
+          "Gwanghwamun 방향으로 진행",
+          "Gwanghwamun 도착"
+        ]
+      }
+    },
+    {
+      "id": "dir_006",
+      "goal": "Dongdaemun",
+      "start": "Gwanghwamun",
+      "option": null,
+      "waypoints": null,
+      "route_info": {
+        "distance": "4.2 km",
+        "duration": "13분",
+        "steps": [
+          "Gwanghwamun에서 출발",
+          "주요 도로로 진입",
+          "Dongdaemun 방향으로 진행",
+          "Dongdaemun 도착"
+        ]
+      }
+    },
+    {
+      "id": "dir_007",
+      "goal": "COEX Mall",
+      "start": "Dongdaemun",
+      "option": "shortest",
+      "waypoints": "Namsan Tower",
+      "route_info": {
+        "distance": "11.9 km",
+        "duration": "41분",
+        "steps": [
+          "Dongdaemun에서 출발",
+          "주요 도로로 진입",
+          "COEX Mall 방향으로 진행",
+          "COEX Mall 도착"
+        ]
+      }
+    },
+    {
+      "id": "dir_008",
+      "goal": "Namsan Tower",
+      "start": "COEX Mall",
+      "option": "fastest",
+      "waypoints": null,
+      "route_info": {
+        "distance": "12.1 km",
+        "duration": "37분",
+        "steps": [
+          "COEX Mall에서 출발",
+          "주요 도로로 진입",
+          "Namsan Tower 방향으로 진행",
+          "Namsan Tower 도착"
+        ]
+      }
+    },
+    {
+      "id": "dir_009",
+      "goal": "Incheon Airport",
+      "start": "Namsan Tower",
+      "option": "recommended",
+      "waypoints": "Busan Station",
+      "route_info": {
+        "distance": "70.9 km",
+        "duration": "159분",
+        "steps": [
+          "Namsan Tower에서 출발",
+          "주요 도로로 진입",
+          "Incheon Airport 방향으로 진행",
+          "Incheon Airport 도착"
+        ]
+      }
+    },
+    {
+      "id": "dir_010",
+      "goal": "Busan Station",
+      "start": "Incheon Airport",
+      "option": "shortest",
+      "waypoints": "Gyeongbokgung Palace",
+      "route_info": {
+        "distance": "549.0 km",
+        "duration": "1107분",
+        "steps": [
+          "Incheon Airport에서 출발",
+          "주요 도로로 진입",
+          "Busan Station 방향으로 진행",
+          "Busan Station 도착"
+        ]
+      }
+    },
+    {
+      "id": "dir_011",
+      "goal": "Gyeongbokgung Palace",
+      "start": "Busan Station",
+      "option": "fastest",
+      "waypoints": "Lotte Tower",
+      "route_info": {
+        "distance": "502.8 km",
+        "duration": "1013분",
+        "steps": [
+          "Busan Station에서 출발",
+          "주요 도로로 진입",
+          "Gyeongbokgung Palace 방향으로 진행",
+          "Gyeongbokgung Palace 도착"
+        ]
+      }
+    },
+    {
+      "id": "dir_012",
+      "goal": "Lotte Tower",
+      "start": "Gyeongbokgung Palace",
+      "option": "recommended",
+      "waypoints": "Yeouido Park",
+      "route_info": {
+        "distance": "21.4 km",
+        "duration": "50분",
+        "steps": [
+          "Gyeongbokgung Palace에서 출발",
+          "주요 도로로 진입",
+          "Lotte Tower 방향으로 진행",
+          "Lotte Tower 도착"
+        ]
+      }
+    },
+    {
+      "id": "dir_013",
+      "goal": "Yeouido Park",
+      "start": "Lotte Tower",
+      "option": "fastest",
+      "waypoints": "Insadong",
+      "route_info": {
+        "distance": "20.8 km",
+        "duration": "54분",
+        "steps": [
+          "Lotte Tower에서 출발",
+          "주요 도로로 진입",
+          "Yeouido Park 방향으로 진행",
+          "Yeouido Park 도착"
+        ]
+      }
+    },
+    {
+      "id": "dir_014",
+      "goal": "Insadong",
+      "start": "Yeouido Park",
+      "option": "avoid_tolls",
+      "waypoints": null,
+      "route_info": {
+        "distance": "12.7 km",
+        "duration": "33분",
+        "steps": [
+          "Yeouido Park에서 출발",
+          "주요 도로로 진입",
+          "Insadong 방향으로 진행",
+          "Insadong 도착"
+        ]
+      }
+    },
+    {
+      "id": "dir_015",
+      "goal": "Gangnam Station",
+      "start": "Insadong",
+      "option": null,
+      "waypoints": "Myeongdong",
+      "route_info": {
+        "distance": "13.0 km",
+        "duration": "40분",
+        "steps": [
+          "Insadong에서 출발",
+          "주요 도로로 진입",
+          "Gangnam Station 방향으로 진행",
+          "Gangnam Station 도착"
+        ]
+      }
+    },
+    {
+      "id": "dir_016",
+      "goal": "Myeongdong",
+      "start": "Gangnam Station",
+      "option": "fastest",
+      "waypoints": null,
+      "route_info": {
+        "distance": "12.3 km",
+        "duration": "35분",
+        "steps": [
+          "Gangnam Station에서 출발",
+          "주요 도로로 진입",
+          "Myeongdong 방향으로 진행",
+          "Myeongdong 도착"
+        ]
+      }
+    },
+    {
+      "id": "dir_017",
+      "goal": "Hongdae",
+      "start": "Myeongdong",
+      "option": "recommended",
+      "waypoints": null,
+      "route_info": {
+        "distance": "7.3 km",
+        "duration": "26분",
+        "steps": [
+          "Myeongdong에서 출발",
+          "주요 도로로 진입",
+          "Hongdae 방향으로 진행",
+          "Hongdae 도착"
+        ]
+      }
+    },
+    {
+      "id": "dir_018",
+      "goal": "Itaewon",
+      "start": "Hongdae",
+      "option": "fastest",
+      "waypoints": "Jamsil Lotte World",
+      "route_info": {
+        "distance": "10.3 km",
+        "duration": "32분",
+        "steps": [
+          "Hongdae에서 출발",
+          "주요 도로로 진입",
+          "Itaewon 방향으로 진행",
+          "Itaewon 도착"
+        ]
+      }
+    },
+    {
+      "id": "dir_019",
+      "goal": "Jamsil Lotte World",
+      "start": "Itaewon",
+      "option": "avoid_tolls",
+      "waypoints": "Gwanghwamun",
+      "route_info": {
+        "distance": "14.1 km",
+        "duration": "41분",
+        "steps": [
+          "Itaewon에서 출발",
+          "주요 도로로 진입",
+          "Jamsil Lotte World 방향으로 진행",
+          "Jamsil Lotte World 도착"
+        ]
+      }
+    },
+    {
+      "id": "dir_020",
+      "goal": "Gwanghwamun",
+      "start": "Jamsil Lotte World",
+      "option": "recommended",
+      "waypoints": "Dongdaemun",
+      "route_info": {
+        "distance": "20.7 km",
+        "duration": "51분",
+        "steps": [
+          "Jamsil Lotte World에서 출발",
+          "주요 도로로 진입",
+          "Gwanghwamun 방향으로 진행",
+          "Gwanghwamun 도착"
+        ]
+      }
+    }
+  ],
+  "geocoding": [
+    {
+      "id": "geo_001",
+      "address": "서울특별시 강남구 강남대로 396",
+      "coordinates": {
+        "lat": "37.4979",
+        "lng": "127.0276"
+      }
+    },
+    {
+      "id": "geo_002",
+      "address": "서울특별시 중구 명동길 14",
+      "coordinates": {
+        "lat": "37.5637",
+        "lng": "126.9826"
+      }
+    },
+    {
+      "id": "geo_003",
+      "address": "서울특별시 마포구 홍익로 5",
+      "coordinates": {
+        "lat": "37.5569",
+        "lng": "126.9239"
+      }
+    },
+    {
+      "id": "geo_004",
+      "address": "서울특별시 용산구 이태원로 177",
+      "coordinates": {
+        "lat": "37.5345",
+        "lng": "126.9946"
+      }
+    },
+    {
+      "id": "geo_005",
+      "address": "서울특별시 송파구 올림픽로 240",
+      "coordinates": {
+        "lat": "37.5111",
+        "lng": "127.0982"
+      }
+    },
+    {
+      "id": "geo_006",
+      "address": "서울특별시 종로구 세종대로 172",
+      "coordinates": {
+        "lat": "37.5760",
+        "lng": "126.9768"
+      }
+    },
+    {
+      "id": "geo_007",
+      "address": "서울특별시 종로구 종로 266",
+      "coordinates": {
+        "lat": "37.5712",
+        "lng": "127.0098"
+      }
+    },
+    {
+      "id": "geo_008",
+      "address": "서울특별시 강남구 영동대로 513",
+      "coordinates": {
+        "lat": "37.5125",
+        "lng": "127.0587"
+      }
+    },
+    {
+      "id": "geo_009",
+      "address": "서울특별시 용산구 남산공원길 105",
+      "coordinates": {
+        "lat": "37.5512",
+        "lng": "126.9882"
+      }
+    },
+    {
+      "id": "geo_010",
+      "address": "인천광역시 중구 공항로 272",
+      "coordinates": {
+        "lat": "37.4602",
+        "lng": "126.4407"
+      }
+    },
+    {
+      "id": "geo_011",
+      "address": "부산광역시 동구 중앙대로 206",
+      "coordinates": {
+        "lat": "35.1145",
+        "lng": "129.0413"
+      }
+    },
+    {
+      "id": "geo_012",
+      "address": "서울특별시 종로구 사직로 161",
+      "coordinates": {
+        "lat": "37.5796",
+        "lng": "126.9770"
+      }
+    },
+    {
+      "id": "geo_013",
+      "address": "서울특별시 송파구 올림픽로 300",
+      "coordinates": {
+        "lat": "37.5121",
+        "lng": "127.1021"
+      }
+    },
+    {
+      "id": "geo_014",
+      "address": "서울특별시 영등포구 여의동로 330",
+      "coordinates": {
+        "lat": "37.5217",
+        "lng": "126.9242"
+      }
+    },
+    {
+      "id": "geo_015",
+      "address": "서울특별시 종로구 인사동길 62",
+      "coordinates": {
+        "lat": "37.5736",
+        "lng": "126.9864"
+      }
+    }
+  ],
+  "reverse_geocoding": [
+    {
+      "id": "rev_001",
+      "lat": "37.4979",
+      "lng": "127.0276",
+      "address": "서울특별시 강남구 강남대로 396"
+    },
+    {
+      "id": "rev_002",
+      "lat": "37.5637",
+      "lng": "126.9826",
+      "address": "서울특별시 중구 명동길 14"
+    },
+    {
+      "id": "rev_003",
+      "lat": "37.5569",
+      "lng": "126.9239",
+      "address": "서울특별시 마포구 홍익로 5"
+    },
+    {
+      "id": "rev_004",
+      "lat": "37.5345",
+      "lng": "126.9946",
+      "address": "서울특별시 용산구 이태원로 177"
+    },
+    {
+      "id": "rev_005",
+      "lat": "37.5111",
+      "lng": "127.0982",
+      "address": "서울특별시 송파구 올림픽로 240"
+    },
+    {
+      "id": "rev_006",
+      "lat": "37.5760",
+      "lng": "126.9768",
+      "address": "서울특별시 종로구 세종대로 172"
+    },
+    {
+      "id": "rev_007",
+      "lat": "37.5712",
+      "lng": "127.0098",
+      "address": "서울특별시 종로구 종로 266"
+    },
+    {
+      "id": "rev_008",
+      "lat": "37.5125",
+      "lng": "127.0587",
+      "address": "서울특별시 강남구 영동대로 513"
+    },
+    {
+      "id": "rev_009",
+      "lat": "37.5512",
+      "lng": "126.9882",
+      "address": "서울특별시 용산구 남산공원길 105"
+    },
+    {
+      "id": "rev_010",
+      "lat": "37.4602",
+      "lng": "126.4407",
+      "address": "인천광역시 중구 공항로 272"
+    },
+    {
+      "id": "rev_011",
+      "lat": "35.1145",
+      "lng": "129.0413",
+      "address": "부산광역시 동구 중앙대로 206"
+    },
+    {
+      "id": "rev_012",
+      "lat": "37.5796",
+      "lng": "126.9770",
+      "address": "서울특별시 종로구 사직로 161"
+    },
+    {
+      "id": "rev_013",
+      "lat": "37.5121",
+      "lng": "127.1021",
+      "address": "서울특별시 송파구 올림픽로 300"
+    },
+    {
+      "id": "rev_014",
+      "lat": "37.5217",
+      "lng": "126.9242",
+      "address": "서울특별시 영등포구 여의동로 330"
+    },
+    {
+      "id": "rev_015",
+      "lat": "37.5736",
+      "lng": "126.9864",
+      "address": "서울특별시 종로구 인사동길 62"
+    }
+  ],
+  "static_maps": [
+    {
+      "id": "map_001",
+      "center": "37.4979,127.0276",
+      "h": "400",
+      "w": "600",
+      "level": "10",
+      "format": null,
+      "image_data": "iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAIAAAACUFjqAAAAFklEQVR4nGP4DwQMDAwMjIyMjIyMjIwAAAAASUVORK5CYII="
+    },
+    {
+      "id": "map_002",
+      "center": "37.5637,126.9826",
+      "h": "400",
+      "w": "500",
+      "level": "12",
+      "format": "jpg",
+      "image_data": "iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAIAAAACUFjqAAAAFklEQVR4nGP4DwQMDAwMjIyMjIyMjIwAAAAASUVORK5CYII="
+    },
+    {
+      "id": "map_003",
+      "center": "37.5569,126.9239",
+      "h": null,
+      "w": "600",
+      "level": "12",
+      "format": null,
+      "image_data": "iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAIAAAACUFjqAAAAFklEQVR4nGP4DwQMDAwMjIyMjIyMjIwAAAAASUVORK5CYII="
+    },
+    {
+      "id": "map_004",
+      "center": "37.5345,126.9946",
+      "h": "500",
+      "w": "400",
+      "level": "12",
+      "format": "png",
+      "image_data": "iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAIAAAACUFjqAAAAFklEQVR4nGP4DwQMDAwMjIyMjIyMjIwAAAAASUVORK5CYII="
+    },
+    {
+      "id": "map_005",
+      "center": "37.5111,127.0982",
+      "h": "500",
+      "w": null,
+      "level": "14",
+      "format": "png",
+      "image_data": "iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAIAAAACUFjqAAAAFklEQVR4nGP4DwQMDAwMjIyMjIyMjIwAAAAASUVORK5CYII="
+    },
+    {
+      "id": "map_006",
+      "center": "37.5760,126.9768",
+      "h": "400",
+      "w": "600",
+      "level": "12",
+      "format": null,
+      "image_data": "iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAIAAAACUFjqAAAAFklEQVR4nGP4DwQMDAwMjIyMjIyMjIwAAAAASUVORK5CYII="
+    },
+    {
+      "id": "map_007",
+      "center": "37.5712,127.0098",
+      "h": null,
+      "w": null,
+      "level": null,
+      "format": "png",
+      "image_data": "iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAIAAAACUFjqAAAAFklEQVR4nGP4DwQMDAwMjIyMjIyMjIwAAAAASUVORK5CYII="
+    },
+    {
+      "id": "map_008",
+      "center": "37.5125,127.0587",
+      "h": "500",
+      "w": "500",
+      "level": "12",
+      "format": null,
+      "image_data": "iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAIAAAACUFjqAAAAFklEQVR4nGP4DwQMDAwMjIyMjIyMjIwAAAAASUVORK5CYII="
+    },
+    {
+      "id": "map_009",
+      "center": "37.5512,126.9882",
+      "h": "500",
+      "w": null,
+      "level": null,
+      "format": "jpg",
+      "image_data": "iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAIAAAACUFjqAAAAFklEQVR4nGP4DwQMDAwMjIyMjIyMjIwAAAAASUVORK5CYII="
+    },
+    {
+      "id": "map_010",
+      "center": "37.4602,126.4407",
+      "h": "400",
+      "w": "500",
+      "level": null,
+      "format": "png",
+      "image_data": "iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAIAAAACUFjqAAAAFklEQVR4nGP4DwQMDAwMjIyMjIyMjIwAAAAASUVORK5CYII="
+    }
+  ]
+}

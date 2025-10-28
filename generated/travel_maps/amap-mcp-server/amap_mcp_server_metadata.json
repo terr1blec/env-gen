@@ -1,0 +1,722 @@
+{
+  "name": "高德地图 MCP Server",
+  "description": "提供离线地图服务的MCP服务器，支持位置服务、路线规划和POI搜索",
+  "tools": [
+    {
+      "name": "maps_regeocode",
+      "description": "根据坐标获取逆地理编码信息",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "location": {
+            "type": "string",
+            "description": "坐标字符串，格式为\"经度,纬度\""
+          }
+        },
+        "required": [
+          "location"
+        ]
+      },
+      "output_schema": {
+        "type": "object",
+        "properties": {
+          "location": {
+            "type": "string",
+            "description": "坐标位置"
+          },
+          "formatted_address": {
+            "type": "string",
+            "description": "格式化地址"
+          },
+          "address_components": {
+            "type": "object",
+            "description": "地址组件信息"
+          },
+          "pois": {
+            "type": "array",
+            "description": "周边POI列表"
+          }
+        }
+      }
+    },
+    {
+      "name": "maps_geo",
+      "description": "根据地址获取地理编码信息",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "address": {
+            "type": "string",
+            "description": "详细地址"
+          },
+          "city": {
+            "type": "string",
+            "description": "城市名称"
+          }
+        },
+        "required": [
+          "address",
+          "city"
+        ]
+      },
+      "output_schema": {
+        "type": "object",
+        "properties": {
+          "address": {
+            "type": "string",
+            "description": "输入地址"
+          },
+          "city": {
+            "type": "string",
+            "description": "城市名称"
+          },
+          "coordinates": {
+            "type": "string",
+            "description": "坐标位置"
+          },
+          "formatted_address": {
+            "type": "string",
+            "description": "格式化地址"
+          }
+        }
+      }
+    },
+    {
+      "name": "maps_ip_location",
+      "description": "根据IP地址获取地理位置信息",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "ip": {
+            "type": "string",
+            "description": "IP地址"
+          }
+        },
+        "required": [
+          "ip"
+        ]
+      },
+      "output_schema": {
+        "type": "object",
+        "properties": {
+          "ip": {
+            "type": "string",
+            "description": "IP地址"
+          },
+          "province": {
+            "type": "string",
+            "description": "省份名称"
+          },
+          "city": {
+            "type": "string",
+            "description": "城市名称"
+          },
+          "district": {
+            "type": "string",
+            "description": "区域名称"
+          },
+          "coordinates": {
+            "type": "string",
+            "description": "坐标位置"
+          }
+        }
+      }
+    },
+    {
+      "name": "maps_weather",
+      "description": "获取城市天气信息",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "city": {
+            "type": "string",
+            "description": "城市名称"
+          }
+        },
+        "required": [
+          "city"
+        ]
+      },
+      "output_schema": {
+        "type": "object",
+        "properties": {
+          "city": {
+            "type": "string",
+            "description": "城市名称"
+          },
+          "weather": {
+            "type": "string",
+            "description": "天气状况"
+          },
+          "temperature": {
+            "type": "string",
+            "description": "温度"
+          },
+          "humidity": {
+            "type": "string",
+            "description": "湿度"
+          },
+          "wind_direction": {
+            "type": "string",
+            "description": "风向"
+          },
+          "wind_power": {
+            "type": "string",
+            "description": "风力"
+          }
+        }
+      }
+    },
+    {
+      "name": "maps_bicycling_by_address",
+      "description": "根据地址获取自行车路线规划",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "origin": {
+            "type": "string",
+            "description": "起点地址"
+          },
+          "destination": {
+            "type": "string",
+            "description": "终点地址"
+          }
+        },
+        "required": [
+          "origin",
+          "destination"
+        ]
+      },
+      "output_schema": {
+        "type": "object",
+        "properties": {
+          "distance": {
+            "type": "string",
+            "description": "总距离"
+          },
+          "duration": {
+            "type": "string",
+            "description": "总时长"
+          },
+          "steps": {
+            "type": "array",
+            "description": "路线步骤"
+          },
+          "origin": {
+            "type": "string",
+            "description": "起点地址"
+          },
+          "destination": {
+            "type": "string",
+            "description": "终点地址"
+          }
+        }
+      }
+    },
+    {
+      "name": "maps_bicycling_by_coordinates",
+      "description": "根据坐标获取自行车路线规划",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "origin": {
+            "type": "string",
+            "description": "起点坐标，格式为\"经度,纬度\""
+          },
+          "destination": {
+            "type": "string",
+            "description": "终点坐标，格式为\"经度,纬度\""
+          }
+        },
+        "required": [
+          "origin",
+          "destination"
+        ]
+      },
+      "output_schema": {
+        "type": "object",
+        "properties": {
+          "distance": {
+            "type": "string",
+            "description": "总距离"
+          },
+          "duration": {
+            "type": "string",
+            "description": "总时长"
+          },
+          "steps": {
+            "type": "array",
+            "description": "路线步骤"
+          },
+          "origin": {
+            "type": "string",
+            "description": "起点坐标"
+          },
+          "destination": {
+            "type": "string",
+            "description": "终点坐标"
+          }
+        }
+      }
+    },
+    {
+      "name": "maps_direction_walking_by_address",
+      "description": "根据地址获取步行路线规划",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "origin": {
+            "type": "string",
+            "description": "起点地址"
+          },
+          "destination": {
+            "type": "string",
+            "description": "终点地址"
+          }
+        },
+        "required": [
+          "origin",
+          "destination"
+        ]
+      },
+      "output_schema": {
+        "type": "object",
+        "properties": {
+          "distance": {
+            "type": "string",
+            "description": "总距离"
+          },
+          "duration": {
+            "type": "string",
+            "description": "总时长"
+          },
+          "steps": {
+            "type": "array",
+            "description": "路线步骤"
+          },
+          "origin": {
+            "type": "string",
+            "description": "起点地址"
+          },
+          "destination": {
+            "type": "string",
+            "description": "终点地址"
+          }
+        }
+      }
+    },
+    {
+      "name": "maps_direction_walking_by_coordinates",
+      "description": "根据坐标获取步行路线规划",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "origin": {
+            "type": "string",
+            "description": "起点坐标，格式为\"经度,纬度\""
+          },
+          "destination": {
+            "type": "string",
+            "description": "终点坐标，格式为\"经度,纬度\""
+          }
+        },
+        "required": [
+          "origin",
+          "destination"
+        ]
+      },
+      "output_schema": {
+        "type": "object",
+        "properties": {
+          "distance": {
+            "type": "string",
+            "description": "总距离"
+          },
+          "duration": {
+            "type": "string",
+            "description": "总时长"
+          },
+          "steps": {
+            "type": "array",
+            "description": "路线步骤"
+          },
+          "origin": {
+            "type": "string",
+            "description": "起点坐标"
+          },
+          "destination": {
+            "type": "string",
+            "description": "终点坐标"
+          }
+        }
+      }
+    },
+    {
+      "name": "maps_direction_driving_by_address",
+      "description": "根据地址获取驾车路线规划",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "origin": {
+            "type": "string",
+            "description": "起点地址"
+          },
+          "destination": {
+            "type": "string",
+            "description": "终点地址"
+          }
+        },
+        "required": [
+          "origin",
+          "destination"
+        ]
+      },
+      "output_schema": {
+        "type": "object",
+        "properties": {
+          "distance": {
+            "type": "string",
+            "description": "总距离"
+          },
+          "duration": {
+            "type": "string",
+            "description": "总时长"
+          },
+          "steps": {
+            "type": "array",
+            "description": "路线步骤"
+          },
+          "origin": {
+            "type": "string",
+            "description": "起点地址"
+          },
+          "destination": {
+            "type": "string",
+            "description": "终点地址"
+          }
+        }
+      }
+    },
+    {
+      "name": "maps_direction_driving_by_coordinates",
+      "description": "根据坐标获取驾车路线规划",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "origin": {
+            "type": "string",
+            "description": "起点坐标，格式为\"经度,纬度\""
+          },
+          "destination": {
+            "type": "string",
+            "description": "终点坐标，格式为\"经度,纬度\""
+          }
+        },
+        "required": [
+          "origin",
+          "destination"
+        ]
+      },
+      "output_schema": {
+        "type": "object",
+        "properties": {
+          "distance": {
+            "type": "string",
+            "description": "总距离"
+          },
+          "duration": {
+            "type": "string",
+            "description": "总时长"
+          },
+          "steps": {
+            "type": "array",
+            "description": "路线步骤"
+          },
+          "origin": {
+            "type": "string",
+            "description": "起点坐标"
+          },
+          "destination": {
+            "type": "string",
+            "description": "终点坐标"
+          }
+        }
+      }
+    },
+    {
+      "name": "maps_direction_transit_integrated_by_address",
+      "description": "根据地址获取公交路线规划",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "origin": {
+            "type": "string",
+            "description": "起点地址"
+          },
+          "destination": {
+            "type": "string",
+            "description": "终点地址"
+          }
+        },
+        "required": [
+          "origin",
+          "destination"
+        ]
+      },
+      "output_schema": {
+        "type": "object",
+        "properties": {
+          "distance": {
+            "type": "string",
+            "description": "总距离"
+          },
+          "duration": {
+            "type": "string",
+            "description": "总时长"
+          },
+          "steps": {
+            "type": "array",
+            "description": "路线步骤"
+          },
+          "origin": {
+            "type": "string",
+            "description": "起点地址"
+          },
+          "destination": {
+            "type": "string",
+            "description": "终点地址"
+          }
+        }
+      }
+    },
+    {
+      "name": "maps_direction_transit_integrated_by_coordinates",
+      "description": "根据坐标获取公交路线规划",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "origin": {
+            "type": "string",
+            "description": "起点坐标，格式为\"经度,纬度\""
+          },
+          "destination": {
+            "type": "string",
+            "description": "终点坐标，格式为\"经度,纬度\""
+          }
+        },
+        "required": [
+          "origin",
+          "destination"
+        ]
+      },
+      "output_schema": {
+        "type": "object",
+        "properties": {
+          "distance": {
+            "type": "string",
+            "description": "总距离"
+          },
+          "duration": {
+            "type": "string",
+            "description": "总时长"
+          },
+          "steps": {
+            "type": "array",
+            "description": "路线步骤"
+          },
+          "origin": {
+            "type": "string",
+            "description": "起点坐标"
+          },
+          "destination": {
+            "type": "string",
+            "description": "终点坐标"
+          }
+        }
+      }
+    },
+    {
+      "name": "maps_distance",
+      "description": "计算多点距离",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "origins": {
+            "type": "string",
+            "description": "起点坐标集合，多个坐标用分号分隔"
+          },
+          "destination": {
+            "type": "string",
+            "description": "终点坐标"
+          },
+          "type": {
+            "type": "string",
+            "description": "距离计算类型，默认\"0\""
+          }
+        },
+        "required": [
+          "origins",
+          "destination"
+        ]
+      },
+      "output_schema": {
+        "type": "object",
+        "properties": {
+          "origins": {
+            "type": "string",
+            "description": "起点坐标集合"
+          },
+          "destination": {
+            "type": "string",
+            "description": "终点坐标"
+          },
+          "distance": {
+            "type": "string",
+            "description": "距离"
+          },
+          "duration": {
+            "type": "string",
+            "description": "时长"
+          },
+          "type": {
+            "type": "string",
+            "description": "计算类型"
+          }
+        }
+      }
+    },
+    {
+      "name": "maps_text_search",
+      "description": "根据关键词搜索POI",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "keywords": {
+            "type": "string",
+            "description": "搜索关键词"
+          },
+          "city": {
+            "type": "string",
+            "description": "城市名称"
+          }
+        },
+        "required": [
+          "keywords",
+          "city"
+        ]
+      },
+      "output_schema": {
+        "type": "object",
+        "properties": {
+          "keywords": {
+            "type": "string",
+            "description": "搜索关键词"
+          },
+          "city": {
+            "type": "string",
+            "description": "城市名称"
+          },
+          "results": {
+            "type": "array",
+            "description": "搜索结果列表"
+          },
+          "total_count": {
+            "type": "number",
+            "description": "结果总数"
+          }
+        }
+      }
+    },
+    {
+      "name": "maps_around_search",
+      "description": "根据关键词搜索周边POI",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "keywords": {
+            "type": "string",
+            "description": "搜索关键词"
+          },
+          "city": {
+            "type": "string",
+            "description": "城市名称"
+          }
+        },
+        "required": [
+          "keywords",
+          "city"
+        ]
+      },
+      "output_schema": {
+        "type": "object",
+        "properties": {
+          "keywords": {
+            "type": "string",
+            "description": "搜索关键词"
+          },
+          "city": {
+            "type": "string",
+            "description": "城市名称"
+          },
+          "results": {
+            "type": "array",
+            "description": "搜索结果列表"
+          },
+          "total_count": {
+            "type": "number",
+            "description": "结果总数"
+          }
+        }
+      }
+    },
+    {
+      "name": "maps_search_detail",
+      "description": "根据POI ID获取详细信息",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "POI ID"
+          }
+        },
+        "required": [
+          "id"
+        ]
+      },
+      "output_schema": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "POI ID"
+          },
+          "name": {
+            "type": "string",
+            "description": "POI名称"
+          },
+          "type": {
+            "type": "string",
+            "description": "POI类型"
+          },
+          "address": {
+            "type": "string",
+            "description": "POI地址"
+          },
+          "coordinates": {
+            "type": "string",
+            "description": "POI坐标"
+          },
+          "rating": {
+            "type": "number",
+            "description": "评分"
+          },
+          "business_hours": {
+            "type": "string",
+            "description": "营业时间"
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,4650 @@
+{
+  "flights": [
+    {
+      "id": "flt_001",
+      "origin": "CDG",
+      "destination": "LAX",
+      "departure_date": "2025-11-01",
+      "airline": "Delta",
+      "price": 1174.39,
+      "cabin_class": "premium_economy",
+      "max_connections": 2,
+      "segments": [
+        {
+          "id": "5f2151f1-76f3-4fd0-ae0c-adffb8298279",
+          "origin": "CDG",
+          "destination": "SFO",
+          "departure_time": "13:14",
+          "arrival_time": "10:47",
+          "duration_minutes": 112,
+          "airline": "Emirates",
+          "flight_number": "UN704"
+        },
+        {
+          "id": "14f1ee38-95c0-4c88-8efb-75e1992a7e11",
+          "origin": "SFO",
+          "destination": "ATL",
+          "departure_time": "07:01",
+          "arrival_time": "08:13",
+          "duration_minutes": 179,
+          "airline": "Emirates",
+          "flight_number": "SI127"
+        },
+        {
+          "id": "78c02f76-dde7-49d7-9f35-07c2f61fdf34",
+          "origin": "ATL",
+          "destination": "LAX",
+          "departure_time": "12:45",
+          "arrival_time": "19:14",
+          "duration_minutes": 289,
+          "airline": "Singapore Airlines",
+          "flight_number": "JE928"
+        }
+      ]
+    },
+    {
+      "id": "flt_002",
+      "origin": "FRA",
+      "destination": "SEA",
+      "departure_date": "2025-12-11",
+      "airline": "Air France",
+      "price": 256.38,
+      "cabin_class": "business",
+      "max_connections": 1,
+      "segments": [
+        {
+          "id": "728ba422-c7d0-4097-b0c6-21355b86ca4f",
+          "origin": "FRA",
+          "destination": "ORD",
+          "departure_time": "12:48",
+          "arrival_time": "16:06",
+          "duration_minutes": 107,
+          "airline": "Air France",
+          "flight_number": "UN467"
+        },
+        {
+          "id": "97663188-cb8e-45dd-917c-7e6a131d0b07",
+          "origin": "ORD",
+          "destination": "SEA",
+          "departure_time": "17:38",
+          "arrival_time": "14:51",
+          "duration_minutes": 82,
+          "airline": "Lufthansa",
+          "flight_number": "EM227"
+        }
+      ]
+    },
+    {
+      "id": "flt_003",
+      "origin": "SIN",
+      "destination": "CDG",
+      "departure_date": "2026-01-16",
+      "airline": "British Airways",
+      "price": 629.62,
+      "cabin_class": "business",
+      "max_connections": 1,
+      "segments": [
+        {
+          "id": "222e9877-a1b2-4dad-8745-b6013b5b374f",
+          "origin": "SIN",
+          "destination": "LHR",
+          "departure_time": "12:45",
+          "arrival_time": "08:02",
+          "duration_minutes": 398,
+          "airline": "Southwest",
+          "flight_number": "JE181"
+        },
+        {
+          "id": "b46a5804-0de7-451a-82b7-c87b5987e3b5",
+          "origin": "LHR",
+          "destination": "CDG",
+          "departure_time": "13:55",
+          "arrival_time": "09:24",
+          "duration_minutes": 202,
+          "airline": "Lufthansa",
+          "flight_number": "BR266"
+        }
+      ]
+    },
+    {
+      "id": "flt_004",
+      "origin": "FRA",
+      "destination": "CDG",
+      "departure_date": "2026-01-19",
+      "airline": "Emirates",
+      "price": 446.48,
+      "cabin_class": "business",
+      "max_connections": 0,
+      "segments": [
+        {
+          "id": "46b4805f-9b55-47e8-948d-53d5630b0e52",
+          "origin": "FRA",
+          "destination": "CDG",
+          "departure_time": "11:34",
+          "arrival_time": "13:10",
+          "duration_minutes": 296,
+          "airline": "Air France",
+          "flight_number": "JE755"
+        }
+      ]
+    },
+    {
+      "id": "flt_005",
+      "origin": "SIN",
+      "destination": "DXB",
+      "departure_date": "2025-11-05",
+      "airline": "British Airways",
+      "price": 437.05,
+      "cabin_class": "first",
+      "max_connections": 0,
+      "segments": [
+        {
+          "id": "bfb2b141-3b5b-49c6-8158-b5d3d13d1358",
+          "origin": "SIN",
+          "destination": "DXB",
+          "departure_time": "07:51",
+          "arrival_time": "16:25",
+          "duration_minutes": 197,
+          "airline": "United",
+          "flight_number": "SO680"
+        }
+      ]
+    },
+    {
+      "id": "flt_006",
+      "origin": "SEA",
+      "destination": "FRA",
+      "departure_date": "2025-12-26",
+      "airline": "Singapore Airlines",
+      "price": 728.39,
+      "cabin_class": "first",
+      "max_connections": 0,
+      "segments": [
+        {
+          "id": "7af60753-6b76-4235-985f-a99666111273",
+          "origin": "SEA",
+          "destination": "FRA",
+          "departure_time": "14:08",
+          "arrival_time": "13:47",
+          "duration_minutes": 347,
+          "airline": "Emirates",
+          "flight_number": "JE864"
+        }
+      ]
+    },
+    {
+      "id": "flt_007",
+      "origin": "SFO",
+      "destination": "DFW",
+      "departure_date": "2025-11-15",
+      "airline": "JetBlue",
+      "price": 1187.61,
+      "cabin_class": "business",
+      "max_connections": 2,
+      "segments": [
+        {
+          "id": "1ae4432d-e4ec-406f-8f9f-729174f92aa0",
+          "origin": "SFO",
+          "destination": "LHR",
+          "departure_time": "08:48",
+          "arrival_time": "07:55",
+          "duration_minutes": 116,
+          "airline": "American",
+          "flight_number": "AM911"
+        },
+        {
+          "id": "128925ea-129d-4860-a3f3-315d01b6f267",
+          "origin": "LHR",
+          "destination": "DXB",
+          "departure_time": "19:38",
+          "arrival_time": "08:24",
+          "duration_minutes": 255,
+          "airline": "Singapore Airlines",
+          "flight_number": "LU641"
+        },
+        {
+          "id": "e3967288-7cab-47fb-b4c9-531c6273b4d4",
+          "origin": "DXB",
+          "destination": "DFW",
+          "departure_time": "14:35",
+          "arrival_time": "06:43",
+          "duration_minutes": 429,
+          "airline": "United",
+          "flight_number": "EM868"
+        }
+      ]
+    },
+    {
+      "id": "flt_008",
+      "origin": "LAX",
+      "destination": "SFO",
+      "departure_date": "2025-12-23",
+      "airline": "JetBlue",
+      "price": 1286.25,
+      "cabin_class": "premium_economy",
+      "max_connections": 0,
+      "segments": [
+        {
+          "id": "f0989f0c-937a-4cd6-8ef4-4d288aa4f787",
+          "origin": "LAX",
+          "destination": "SFO",
+          "departure_time": "20:00",
+          "arrival_time": "14:32",
+          "duration_minutes": 450,
+          "airline": "American",
+          "flight_number": "EM208"
+        }
+      ]
+    },
+    {
+      "id": "flt_009",
+      "origin": "ORD",
+      "destination": "SEA",
+      "departure_date": "2025-11-18",
+      "airline": "Lufthansa",
+      "price": 1428.25,
+      "cabin_class": "premium_economy",
+      "max_connections": 2,
+      "segments": [
+        {
+          "id": "04d1df24-f650-47a9-9949-bb7277a8e343",
+          "origin": "ORD",
+          "destination": "NRT",
+          "departure_time": "22:58",
+          "arrival_time": "06:38",
+          "duration_minutes": 225,
+          "airline": "Lufthansa",
+          "flight_number": "DE214"
+        },
+        {
+          "id": "8ab87f4b-8206-45c8-8cba-f37221f94903",
+          "origin": "NRT",
+          "destination": "SFO",
+          "departure_time": "15:15",
+          "arrival_time": "07:15",
+          "duration_minutes": 350,
+          "airline": "United",
+          "flight_number": "UN849"
+        },
+        {
+          "id": "dd23dbbf-2a82-4d9a-8524-0be42cb80f4f",
+          "origin": "SFO",
+          "destination": "SEA",
+          "departure_time": "21:52",
+          "arrival_time": "08:48",
+          "duration_minutes": 332,
+          "airline": "American",
+          "flight_number": "AM775"
+        }
+      ]
+    },
+    {
+      "id": "flt_010",
+      "origin": "DEN",
+      "destination": "LHR",
+      "departure_date": "2026-01-14",
+      "airline": "Emirates",
+      "price": 460.65,
+      "cabin_class": "premium_economy",
+      "max_connections": 1,
+      "segments": [
+        {
+          "id": "f7fc33d9-9eea-417c-91f3-01b850324fa9",
+          "origin": "DEN",
+          "destination": "DFW",
+          "departure_time": "12:45",
+          "arrival_time": "15:25",
+          "duration_minutes": 403,
+          "airline": "British Airways",
+          "flight_number": "LU629"
+        },
+        {
+          "id": "197478b0-4f56-46eb-843d-964e273b198b",
+          "origin": "DFW",
+          "destination": "LHR",
+          "departure_time": "20:07",
+          "arrival_time": "13:14",
+          "duration_minutes": 92,
+          "airline": "British Airways",
+          "flight_number": "DE702"
+        }
+      ]
+    },
+    {
+      "id": "flt_011",
+      "origin": "JFK",
+      "destination": "ORD",
+      "departure_date": "2026-01-17",
+      "airline": "JetBlue",
+      "price": 1053.12,
+      "cabin_class": "premium_economy",
+      "max_connections": 0,
+      "segments": [
+        {
+          "id": "c98687a6-8e47-44de-a82d-76d726422cd1",
+          "origin": "JFK",
+          "destination": "ORD",
+          "departure_time": "13:04",
+          "arrival_time": "07:55",
+          "duration_minutes": 229,
+          "airline": "United",
+          "flight_number": "EM343"
+        }
+      ]
+    },
+    {
+      "id": "flt_012",
+      "origin": "ATL",
+      "destination": "ORD",
+      "departure_date": "2026-01-10",
+      "airline": "Emirates",
+      "price": 755.63,
+      "cabin_class": "first",
+      "max_connections": 2,
+      "segments": [
+        {
+          "id": "b4855769-333b-4b14-be1b-4b01f42c7211",
+          "origin": "ATL",
+          "destination": "LHR",
+          "departure_time": "13:50",
+          "arrival_time": "21:51",
+          "duration_minutes": 268,
+          "airline": "Southwest",
+          "flight_number": "UN199"
+        },
+        {
+          "id": "6628601d-9448-4dfd-950b-fa54117ccfb0",
+          "origin": "LHR",
+          "destination": "DXB",
+          "departure_time": "19:22",
+          "arrival_time": "19:26",
+          "duration_minutes": 299,
+          "airline": "Delta",
+          "flight_number": "UN162"
+        },
+        {
+          "id": "90c668ff-3f3a-4812-9487-ebd5624940e5",
+          "origin": "DXB",
+          "destination": "ORD",
+          "departure_time": "18:46",
+          "arrival_time": "16:51",
+          "duration_minutes": 115,
+          "airline": "Southwest",
+          "flight_number": "SO294"
+        }
+      ]
+    },
+    {
+      "id": "flt_013",
+      "origin": "ORD",
+      "destination": "SFO",
+      "departure_date": "2025-12-27",
+      "airline": "Southwest",
+      "price": 374.52,
+      "cabin_class": "first",
+      "max_connections": 0,
+      "segments": [
+        {
+          "id": "e11baddd-161a-4cfc-972d-ecc814b06b7e",
+          "origin": "ORD",
+          "destination": "SFO",
+          "departure_time": "08:28",
+          "arrival_time": "09:03",
+          "duration_minutes": 393,
+          "airline": "Emirates",
+          "flight_number": "DE195"
+        }
+      ]
+    },
+    {
+      "id": "flt_014",
+      "origin": "MIA",
+      "destination": "DFW",
+      "departure_date": "2025-12-19",
+      "airline": "Emirates",
+      "price": 1043.53,
+      "cabin_class": "first",
+      "max_connections": 0,
+      "segments": [
+        {
+          "id": "d5ba2e83-ec18-4051-a9b4-62711d103b62",
+          "origin": "MIA",
+          "destination": "DFW",
+          "departure_time": "11:24",
+          "arrival_time": "06:24",
+          "duration_minutes": 195,
+          "airline": "Lufthansa",
+          "flight_number": "JE533"
+        }
+      ]
+    },
+    {
+      "id": "flt_015",
+      "origin": "ORD",
+      "destination": "DEN",
+      "departure_date": "2025-12-05",
+      "airline": "Lufthansa",
+      "price": 828.85,
+      "cabin_class": "premium_economy",
+      "max_connections": 0,
+      "segments": [
+        {
+          "id": "e4e04bbb-0de5-48d5-8abd-8ec05ce85d80",
+          "origin": "ORD",
+          "destination": "DEN",
+          "departure_time": "07:37",
+          "arrival_time": "07:47",
+          "duration_minutes": 220,
+          "airline": "Delta",
+          "flight_number": "DE698"
+        }
+      ]
+    },
+    {
+      "id": "flt_016",
+      "origin": "JFK",
+      "destination": "LHR",
+      "departure_date": "2025-11-08",
+      "airline": "Southwest",
+      "price": 931.54,
+      "cabin_class": "economy",
+      "max_connections": 0,
+      "segments": [
+        {
+          "id": "d8e8772d-cffc-4216-8422-254cf5fb95de",
+          "origin": "JFK",
+          "destination": "LHR",
+          "departure_time": "08:38",
+          "arrival_time": "08:43",
+          "duration_minutes": 180,
+          "airline": "Air France",
+          "flight_number": "UN683"
+        }
+      ]
+    },
+    {
+      "id": "flt_017",
+      "origin": "LHR",
+      "destination": "LAX",
+      "departure_date": "2025-12-21",
+      "airline": "Southwest",
+      "price": 648.86,
+      "cabin_class": "premium_economy",
+      "max_connections": 2,
+      "segments": [
+        {
+          "id": "3705ff07-c890-4948-a91d-5e66c3386a65",
+          "origin": "LHR",
+          "destination": "FRA",
+          "departure_time": "22:20",
+          "arrival_time": "14:13",
+          "duration_minutes": 402,
+          "airline": "British Airways",
+          "flight_number": "SO371"
+        },
+        {
+          "id": "4994f874-cc74-4f7a-9ffd-3490aa1ef6a4",
+          "origin": "FRA",
+          "destination": "MIA",
+          "departure_time": "10:42",
+          "arrival_time": "15:29",
+          "duration_minutes": 221,
+          "airline": "United",
+          "flight_number": "DE569"
+        },
+        {
+          "id": "5d9187a9-29b7-4179-b4f0-612c4cc9388c",
+          "origin": "MIA",
+          "destination": "LAX",
+          "departure_time": "09:04",
+          "arrival_time": "12:32",
+          "duration_minutes": 195,
+          "airline": "American",
+          "flight_number": "BR170"
+        }
+      ]
+    },
+    {
+      "id": "flt_018",
+      "origin": "MIA",
+      "destination": "NRT",
+      "departure_date": "2026-01-06",
+      "airline": "Air France",
+      "price": 1269.62,
+      "cabin_class": "economy",
+      "max_connections": 2,
+      "segments": [
+        {
+          "id": "f24192ec-2a7b-4d3d-ac2d-6c3a29d2ffbb",
+          "origin": "MIA",
+          "destination": "DEN",
+          "departure_time": "22:00",
+          "arrival_time": "15:59",
+          "duration_minutes": 399,
+          "airline": "United",
+          "flight_number": "AM370"
+        },
+        {
+          "id": "237f65a2-73c5-46d6-9a30-17bfce7ea338",
+          "origin": "DEN",
+          "destination": "LAX",
+          "departure_time": "09:47",
+          "arrival_time": "10:17",
+          "duration_minutes": 204,
+          "airline": "Singapore Airlines",
+          "flight_number": "SO834"
+        },
+        {
+          "id": "21ac8d27-f75b-4b22-b8a4-dd86746e8d2c",
+          "origin": "LAX",
+          "destination": "NRT",
+          "departure_time": "16:13",
+          "arrival_time": "14:32",
+          "duration_minutes": 310,
+          "airline": "JetBlue",
+          "flight_number": "DE194"
+        }
+      ]
+    },
+    {
+      "id": "flt_019",
+      "origin": "JFK",
+      "destination": "SEA",
+      "departure_date": "2025-11-14",
+      "airline": "Southwest",
+      "price": 1070.79,
+      "cabin_class": "economy",
+      "max_connections": 2,
+      "segments": [
+        {
+          "id": "485f000f-47e3-44ec-a5bb-cc05da53fdd0",
+          "origin": "JFK",
+          "destination": "SFO",
+          "departure_time": "11:47",
+          "arrival_time": "20:35",
+          "duration_minutes": 421,
+          "airline": "Air France",
+          "flight_number": "EM109"
+        },
+        {
+          "id": "6e94488d-90ca-49c5-96b9-04380c8f6772",
+          "origin": "SFO",
+          "destination": "LAX",
+          "departure_time": "08:56",
+          "arrival_time": "10:34",
+          "duration_minutes": 78,
+          "airline": "British Airways",
+          "flight_number": "SI665"
+        },
+        {
+          "id": "682979d8-f591-494b-a00e-aab0fc479ff4",
+          "origin": "LAX",
+          "destination": "SEA",
+          "departure_time": "10:27",
+          "arrival_time": "10:02",
+          "duration_minutes": 217,
+          "airline": "British Airways",
+          "flight_number": "DE466"
+        }
+      ]
+    },
+    {
+      "id": "flt_020",
+      "origin": "SFO",
+      "destination": "SIN",
+      "departure_date": "2026-01-08",
+      "airline": "United",
+      "price": 666.43,
+      "cabin_class": "economy",
+      "max_connections": 1,
+      "segments": [
+        {
+          "id": "2c8ba2d1-91d8-4751-b64a-a81dd99fa4dc",
+          "origin": "SFO",
+          "destination": "CDG",
+          "departure_time": "10:59",
+          "arrival_time": "13:55",
+          "duration_minutes": 143,
+          "airline": "American",
+          "flight_number": "AI125"
+        },
+        {
+          "id": "fdd4f3a7-c626-4475-85a8-deba7db53636",
+          "origin": "CDG",
+          "destination": "SIN",
+          "departure_time": "11:47",
+          "arrival_time": "16:50",
+          "duration_minutes": 270,
+          "airline": "Southwest",
+          "flight_number": "JE263"
+        }
+      ]
+    },
+    {
+      "id": "flt_021",
+      "origin": "SIN",
+      "destination": "MIA",
+      "departure_date": "2025-11-26",
+      "airline": "Southwest",
+      "price": 687.93,
+      "cabin_class": "business",
+      "max_connections": 0,
+      "segments": [
+        {
+          "id": "a2b4e3dd-69eb-484e-99b3-f68e7bb4806c",
+          "origin": "SIN",
+          "destination": "MIA",
+          "departure_time": "20:22",
+          "arrival_time": "15:52",
+          "duration_minutes": 467,
+          "airline": "Southwest",
+          "flight_number": "SO124"
+        }
+      ]
+    },
+    {
+      "id": "flt_022",
+      "origin": "SIN",
+      "destination": "LAX",
+      "departure_date": "2025-12-03",
+      "airline": "Singapore Airlines",
+      "price": 1478.72,
+      "cabin_class": "economy",
+      "max_connections": 1,
+      "segments": [
+        {
+          "id": "d51b07cf-c568-4aaa-b0b5-faefd3671af7",
+          "origin": "SIN",
+          "destination": "FRA",
+          "departure_time": "22:25",
+          "arrival_time": "16:01",
+          "duration_minutes": 119,
+          "airline": "JetBlue",
+          "flight_number": "AM694"
+        },
+        {
+          "id": "4e8eb85f-dac4-4c9b-a0cb-1b58d093ffea",
+          "origin": "FRA",
+          "destination": "LAX",
+          "departure_time": "14:02",
+          "arrival_time": "09:38",
+          "duration_minutes": 282,
+          "airline": "British Airways",
+          "flight_number": "BR546"
+        }
+      ]
+    },
+    {
+      "id": "flt_023",
+      "origin": "SEA",
+      "destination": "CDG",
+      "departure_date": "2025-11-22",
+      "airline": "JetBlue",
+      "price": 1050.31,
+      "cabin_class": "business",
+      "max_connections": 1,
+      "segments": [
+        {
+          "id": "ec9ffb6a-de0b-4e92-b363-804dc0a0ac04",
+          "origin": "SEA",
+          "destination": "JFK",
+          "departure_time": "19:00",
+          "arrival_time": "22:59",
+          "duration_minutes": 472,
+          "airline": "Emirates",
+          "flight_number": "SO472"
+        },
+        {
+          "id": "90d1e497-10af-4d4b-b42d-cdc098ddacbc",
+          "origin": "JFK",
+          "destination": "CDG",
+          "departure_time": "19:04",
+          "arrival_time": "16:39",
+          "duration_minutes": 220,
+          "airline": "United",
+          "flight_number": "JE619"
+        }
+      ]
+    },
+    {
+      "id": "flt_024",
+      "origin": "SEA",
+      "destination": "DXB",
+      "departure_date": "2025-12-05",
+      "airline": "American",
+      "price": 1039.45,
+      "cabin_class": "business",
+      "max_connections": 2,
+      "segments": [
+        {
+          "id": "f113b0a6-1f7e-4546-bef0-d115733be72f",
+          "origin": "SEA",
+          "destination": "ORD",
+          "departure_time": "12:26",
+          "arrival_time": "18:43",
+          "duration_minutes": 443,
+          "airline": "American",
+          "flight_number": "SI682"
+        },
+        {
+          "id": "ae298d55-e230-4dd1-ad71-9e64c89adc30",
+          "origin": "ORD",
+          "destination": "SFO",
+          "departure_time": "18:35",
+          "arrival_time": "06:19",
+          "duration_minutes": 206,
+          "airline": "Southwest",
+          "flight_number": "AI904"
+        },
+        {
+          "id": "a137280a-b8ff-46a9-a93f-f05d5f46f9ce",
+          "origin": "SFO",
+          "destination": "DXB",
+          "departure_time": "16:29",
+          "arrival_time": "20:28",
+          "duration_minutes": 405,
+          "airline": "Southwest",
+          "flight_number": "EM584"
+        }
+      ]
+    },
+    {
+      "id": "flt_025",
+      "origin": "ATL",
+      "destination": "FRA",
+      "departure_date": "2026-01-18",
+      "airline": "Delta",
+      "price": 1355.09,
+      "cabin_class": "economy",
+      "max_connections": 2,
+      "segments": [
+        {
+          "id": "d87c2848-d38f-4d37-a5a2-159fccb6d385",
+          "origin": "ATL",
+          "destination": "SFO",
+          "departure_time": "08:52",
+          "arrival_time": "13:43",
+          "duration_minutes": 218,
+          "airline": "Southwest",
+          "flight_number": "SO250"
+        },
+        {
+          "id": "b5f806fc-2394-4ea3-9210-a4ae93e5d783",
+          "origin": "SFO",
+          "destination": "JFK",
+          "departure_time": "07:15",
+          "arrival_time": "21:39",
+          "duration_minutes": 453,
+          "airline": "United",
+          "flight_number": "LU524"
+        },
+        {
+          "id": "fb204f35-8573-4973-b088-5cd1964898f2",
+          "origin": "JFK",
+          "destination": "FRA",
+          "departure_time": "12:45",
+          "arrival_time": "18:31",
+          "duration_minutes": 264,
+          "airline": "Southwest",
+          "flight_number": "AM771"
+        }
+      ]
+    },
+    {
+      "id": "flt_026",
+      "origin": "DXB",
+      "destination": "SEA",
+      "departure_date": "2025-11-26",
+      "airline": "Lufthansa",
+      "price": 1051.23,
+      "cabin_class": "business",
+      "max_connections": 0,
+      "segments": [
+        {
+          "id": "b8eb04c4-5d45-4802-b00a-869a0125f0a6",
+          "origin": "DXB",
+          "destination": "SEA",
+          "departure_time": "22:29",
+          "arrival_time": "07:35",
+          "duration_minutes": 187,
+          "airline": "United",
+          "flight_number": "LU236"
+        }
+      ]
+    },
+    {
+      "id": "flt_027",
+      "origin": "DXB",
+      "destination": "MIA",
+      "departure_date": "2026-01-15",
+      "airline": "British Airways",
+      "price": 581.61,
+      "cabin_class": "economy",
+      "max_connections": 2,
+      "segments": [
+        {
+          "id": "94b32467-c8b5-4c6c-a6bf-60235ec11671",
+          "origin": "DXB",
+          "destination": "LHR",
+          "departure_time": "19:53",
+          "arrival_time": "20:57",
+          "duration_minutes": 141,
+          "airline": "Lufthansa",
+          "flight_number": "LU365"
+        },
+        {
+          "id": "313f23b5-deef-4446-a981-4bfd035e8467",
+          "origin": "LHR",
+          "destination": "NRT",
+          "departure_time": "13:53",
+          "arrival_time": "14:49",
+          "duration_minutes": 458,
+          "airline": "Emirates",
+          "flight_number": "LU741"
+        },
+        {
+          "id": "04b9fd6a-ee0b-4fce-a360-09193fe09409",
+          "origin": "NRT",
+          "destination": "MIA",
+          "departure_time": "13:17",
+          "arrival_time": "20:04",
+          "duration_minutes": 425,
+          "airline": "JetBlue",
+          "flight_number": "SO378"
+        }
+      ]
+    },
+    {
+      "id": "flt_028",
+      "origin": "ORD",
+      "destination": "DFW",
+      "departure_date": "2025-11-27",
+      "airline": "Delta",
+      "price": 1306.59,
+      "cabin_class": "first",
+      "max_connections": 1,
+      "segments": [
+        {
+          "id": "9fe00913-3ecd-42bb-8d4b-95faa8c55d9f",
+          "origin": "ORD",
+          "destination": "SIN",
+          "departure_time": "10:45",
+          "arrival_time": "12:04",
+          "duration_minutes": 272,
+          "airline": "Air France",
+          "flight_number": "BR655"
+        },
+        {
+          "id": "82b077f7-2e15-4987-87fe-a1adf44119a5",
+          "origin": "SIN",
+          "destination": "DFW",
+          "departure_time": "20:26",
+          "arrival_time": "07:13",
+          "duration_minutes": 275,
+          "airline": "Air France",
+          "flight_number": "SI812"
+        }
+      ]
+    },
+    {
+      "id": "flt_029",
+      "origin": "MIA",
+      "destination": "JFK",
+      "departure_date": "2025-12-13",
+      "airline": "Air France",
+      "price": 1127.64,
+      "cabin_class": "first",
+      "max_connections": 1,
+      "segments": [
+        {
+          "id": "a6021dcb-195f-4c7f-b74d-067f19c08351",
+          "origin": "MIA",
+          "destination": "NRT",
+          "departure_time": "18:54",
+          "arrival_time": "19:34",
+          "duration_minutes": 442,
+          "airline": "Emirates",
+          "flight_number": "SI325"
+        },
+        {
+          "id": "793dde0a-c6c6-44d1-b60c-ce65341f5b5a",
+          "origin": "NRT",
+          "destination": "JFK",
+          "departure_time": "21:14",
+          "arrival_time": "14:27",
+          "duration_minutes": 308,
+          "airline": "Delta",
+          "flight_number": "AI444"
+        }
+      ]
+    },
+    {
+      "id": "flt_030",
+      "origin": "NRT",
+      "destination": "ORD",
+      "departure_date": "2026-01-16",
+      "airline": "United",
+      "price": 784.91,
+      "cabin_class": "economy",
+      "max_connections": 2,
+      "segments": [
+        {
+          "id": "956b18d5-9754-44c5-9aa8-17b2efc2283a",
+          "origin": "NRT",
+          "destination": "JFK",
+          "departure_time": "18:37",
+          "arrival_time": "06:05",
+          "duration_minutes": 389,
+          "airline": "Air France",
+          "flight_number": "AM987"
+        },
+        {
+          "id": "01812d43-8e93-4d02-affe-dc4d2b74e29d",
+          "origin": "JFK",
+          "destination": "LHR",
+          "departure_time": "11:03",
+          "arrival_time": "14:24",
+          "duration_minutes": 227,
+          "airline": "Southwest",
+          "flight_number": "LU434"
+        },
+        {
+          "id": "7649ac5f-7468-49c7-b395-0c75d2385232",
+          "origin": "LHR",
+          "destination": "ORD",
+          "departure_time": "16:48",
+          "arrival_time": "18:17",
+          "duration_minutes": 445,
+          "airline": "Air France",
+          "flight_number": "JE954"
+        }
+      ]
+    },
+    {
+      "id": "flt_031",
+      "origin": "SFO",
+      "destination": "DFW",
+      "departure_date": "2026-01-20",
+      "airline": "Southwest",
+      "price": 320.4,
+      "cabin_class": "economy",
+      "max_connections": 0,
+      "segments": [
+        {
+          "id": "de31c327-4a76-43b1-ae9a-f7a62174be21",
+          "origin": "SFO",
+          "destination": "DFW",
+          "departure_time": "07:48",
+          "arrival_time": "06:15",
+          "duration_minutes": 162,
+          "airline": "Delta",
+          "flight_number": "SI256"
+        }
+      ]
+    },
+    {
+      "id": "flt_032",
+      "origin": "LHR",
+      "destination": "DFW",
+      "departure_date": "2025-12-27",
+      "airline": "United",
+      "price": 1224.91,
+      "cabin_class": "economy",
+      "max_connections": 2,
+      "segments": [
+        {
+          "id": "c6ed9e08-8fc8-406c-abfe-9d7a17d4cb77",
+          "origin": "LHR",
+          "destination": "SFO",
+          "departure_time": "17:10",
+          "arrival_time": "09:49",
+          "duration_minutes": 479,
+          "airline": "American",
+          "flight_number": "JE210"
+        },
+        {
+          "id": "54c5b3b5-37af-414b-804a-352d452598a6",
+          "origin": "SFO",
+          "destination": "FRA",
+          "departure_time": "06:59",
+          "arrival_time": "15:36",
+          "duration_minutes": 406,
+          "airline": "Air France",
+          "flight_number": "AI832"
+        },
+        {
+          "id": "ee0f5047-2e0e-4346-8c0e-f22e892cddbd",
+          "origin": "FRA",
+          "destination": "DFW",
+          "departure_time": "12:04",
+          "arrival_time": "13:06",
+          "duration_minutes": 416,
+          "airline": "JetBlue",
+          "flight_number": "SI924"
+        }
+      ]
+    },
+    {
+      "id": "flt_033",
+      "origin": "SFO",
+      "destination": "LHR",
+      "departure_date": "2025-12-22",
+      "airline": "Southwest",
+      "price": 1271.49,
+      "cabin_class": "economy",
+      "max_connections": 2,
+      "segments": [
+        {
+          "id": "2c2022f6-543c-4240-bd73-d0e704ae0e46",
+          "origin": "SFO",
+          "destination": "SEA",
+          "departure_time": "08:32",
+          "arrival_time": "16:00",
+          "duration_minutes": 275,
+          "airline": "Lufthansa",
+          "flight_number": "UN543"
+        },
+        {
+          "id": "65b384de-7d6c-49c3-b825-2349a71da926",
+          "origin": "SEA",
+          "destination": "SFO",
+          "departure_time": "20:45",
+          "arrival_time": "10:27",
+          "duration_minutes": 150,
+          "airline": "Emirates",
+          "flight_number": "JE730"
+        },
+        {
+          "id": "f85c638e-c40c-4a12-bc9f-eee469e5f549",
+          "origin": "SFO",
+          "destination": "LHR",
+          "departure_time": "21:29",
+          "arrival_time": "19:52",
+          "duration_minutes": 434,
+          "airline": "Singapore Airlines",
+          "flight_number": "JE430"
+        }
+      ]
+    },
+    {
+      "id": "flt_034",
+      "origin": "DEN",
+      "destination": "ATL",
+      "departure_date": "2025-11-29",
+      "airline": "Delta",
+      "price": 847.45,
+      "cabin_class": "premium_economy",
+      "max_connections": 1,
+      "segments": [
+        {
+          "id": "e9bcde95-9a28-4966-928f-bf8a07a4e2ea",
+          "origin": "DEN",
+          "destination": "FRA",
+          "departure_time": "18:21",
+          "arrival_time": "06:31",
+          "duration_minutes": 226,
+          "airline": "American",
+          "flight_number": "LU317"
+        },
+        {
+          "id": "69add881-e60c-433a-b6d8-d9cb8ab49d0d",
+          "origin": "FRA",
+          "destination": "ATL",
+          "departure_time": "17:51",
+          "arrival_time": "14:21",
+          "duration_minutes": 203,
+          "airline": "Singapore Airlines",
+          "flight_number": "JE669"
+        }
+      ]
+    },
+    {
+      "id": "flt_035",
+      "origin": "LAX",
+      "destination": "DEN",
+      "departure_date": "2025-12-20",
+      "airline": "Singapore Airlines",
+      "price": 648.18,
+      "cabin_class": "business",
+      "max_connections": 1,
+      "segments": [
+        {
+          "id": "3e3d1cf8-f137-438b-ae90-fa33f398d64f",
+          "origin": "LAX",
+          "destination": "CDG",
+          "departure_time": "13:44",
+          "arrival_time": "21:41",
+          "duration_minutes": 424,
+          "airline": "Lufthansa",
+          "flight_number": "LU911"
+        },
+        {
+          "id": "0446e23e-4f9e-4310-a881-53ee34217857",
+          "origin": "CDG",
+          "destination": "DEN",
+          "departure_time": "06:05",
+          "arrival_time": "15:14",
+          "duration_minutes": 267,
+          "airline": "Southwest",
+          "flight_number": "JE779"
+        }
+      ]
+    },
+    {
+      "id": "flt_036",
+      "origin": "SEA",
+      "destination": "DXB",
+      "departure_date": "2026-01-07",
+      "airline": "Singapore Airlines",
+      "price": 1468.42,
+      "cabin_class": "business",
+      "max_connections": 1,
+      "segments": [
+        {
+          "id": "8cae5ccd-809f-47ba-bf69-606ecce0988a",
+          "origin": "SEA",
+          "destination": "SFO",
+          "departure_time": "20:17",
+          "arrival_time": "15:16",
+          "duration_minutes": 178,
+          "airline": "United",
+          "flight_number": "SO423"
+        },
+        {
+          "id": "477f94fb-a2d8-4918-8a84-6751041b68fe",
+          "origin": "SFO",
+          "destination": "DXB",
+          "departure_time": "09:47",
+          "arrival_time": "11:12",
+          "duration_minutes": 170,
+          "airline": "Lufthansa",
+          "flight_number": "JE841"
+        }
+      ]
+    },
+    {
+      "id": "flt_037",
+      "origin": "LAX",
+      "destination": "NRT",
+      "departure_date": "2025-11-22",
+      "airline": "Delta",
+      "price": 924.99,
+      "cabin_class": "first",
+      "max_connections": 1,
+      "segments": [
+        {
+          "id": "20cb6d89-d763-4c19-a2f3-1b0d3cb6226e",
+          "origin": "LAX",
+          "destination": "DEN",
+          "departure_time": "17:11",
+          "arrival_time": "15:00",
+          "duration_minutes": 422,
+          "airline": "Emirates",
+          "flight_number": "AM380"
+        },
+        {
+          "id": "f2d1543b-b5c5-4065-945e-5c248d0b18fe",
+          "origin": "DEN",
+          "destination": "NRT",
+          "departure_time": "07:03",
+          "arrival_time": "15:44",
+          "duration_minutes": 124,
+          "airline": "Lufthansa",
+          "flight_number": "UN993"
+        }
+      ]
+    },
+    {
+      "id": "flt_038",
+      "origin": "MIA",
+      "destination": "ATL",
+      "departure_date": "2025-12-11",
+      "airline": "United",
+      "price": 928.98,
+      "cabin_class": "economy",
+      "max_connections": 0,
+      "segments": [
+        {
+          "id": "061ddaa5-bce1-422b-9c7c-f53b8844178a",
+          "origin": "MIA",
+          "destination": "ATL",
+          "departure_time": "07:16",
+          "arrival_time": "21:07",
+          "duration_minutes": 480,
+          "airline": "United",
+          "flight_number": "AI603"
+        }
+      ]
+    },
+    {
+      "id": "flt_039",
+      "origin": "ORD",
+      "destination": "DFW",
+      "departure_date": "2026-01-09",
+      "airline": "JetBlue",
+      "price": 917.65,
+      "cabin_class": "economy",
+      "max_connections": 1,
+      "segments": [
+        {
+          "id": "902068ff-127d-42c2-93be-c40f28264d6a",
+          "origin": "ORD",
+          "destination": "LAX",
+          "departure_time": "13:07",
+          "arrival_time": "19:38",
+          "duration_minutes": 365,
+          "airline": "Singapore Airlines",
+          "flight_number": "SO894"
+        },
+        {
+          "id": "ff62a9ab-ffec-41c3-a65d-6482e32a3769",
+          "origin": "LAX",
+          "destination": "DFW",
+          "departure_time": "22:24",
+          "arrival_time": "20:58",
+          "duration_minutes": 286,
+          "airline": "JetBlue",
+          "flight_number": "SI539"
+        }
+      ]
+    },
+    {
+      "id": "flt_040",
+      "origin": "LHR",
+      "destination": "DXB",
+      "departure_date": "2025-11-10",
+      "airline": "American",
+      "price": 153.61,
+      "cabin_class": "first",
+      "max_connections": 0,
+      "segments": [
+        {
+          "id": "610a2a8c-7db1-471a-8128-489285763831",
+          "origin": "LHR",
+          "destination": "DXB",
+          "departure_time": "12:16",
+          "arrival_time": "08:10",
+          "duration_minutes": 182,
+          "airline": "American",
+          "flight_number": "EM176"
+        }
+      ]
+    },
+    {
+      "id": "flt_041",
+      "origin": "FRA",
+      "destination": "LHR",
+      "departure_date": "2025-12-28",
+      "airline": "American",
+      "price": 246.4,
+      "cabin_class": "premium_economy",
+      "max_connections": 1,
+      "segments": [
+        {
+          "id": "f6f40f3e-678f-4870-8652-f1064c1d441e",
+          "origin": "FRA",
+          "destination": "JFK",
+          "departure_time": "13:18",
+          "arrival_time": "15:44",
+          "duration_minutes": 292,
+          "airline": "United",
+          "flight_number": "SO370"
+        },
+        {
+          "id": "381b5d08-2285-4ec5-a82a-2d711e670fb8",
+          "origin": "JFK",
+          "destination": "LHR",
+          "departure_time": "12:27",
+          "arrival_time": "09:34",
+          "duration_minutes": 175,
+          "airline": "American",
+          "flight_number": "JE946"
+        }
+      ]
+    },
+    {
+      "id": "flt_042",
+      "origin": "DXB",
+      "destination": "DEN",
+      "departure_date": "2026-01-13",
+      "airline": "JetBlue",
+      "price": 927.93,
+      "cabin_class": "premium_economy",
+      "max_connections": 2,
+      "segments": [
+        {
+          "id": "ec049353-5d6a-4675-a660-816b0852a9fa",
+          "origin": "DXB",
+          "destination": "CDG",
+          "departure_time": "15:28",
+          "arrival_time": "09:29",
+          "duration_minutes": 412,
+          "airline": "JetBlue",
+          "flight_number": "AI378"
+        },
+        {
+          "id": "caabee80-f6cb-47e6-999f-2da1e05a49bd",
+          "origin": "CDG",
+          "destination": "LHR",
+          "departure_time": "21:28",
+          "arrival_time": "08:38",
+          "duration_minutes": 80,
+          "airline": "Air France",
+          "flight_number": "BR718"
+        },
+        {
+          "id": "6d2ecf95-3474-4c19-ae8b-a4ff800cf2e6",
+          "origin": "LHR",
+          "destination": "DEN",
+          "departure_time": "14:01",
+          "arrival_time": "08:14",
+          "duration_minutes": 405,
+          "airline": "Singapore Airlines",
+          "flight_number": "SI121"
+        }
+      ]
+    },
+    {
+      "id": "flt_043",
+      "origin": "MIA",
+      "destination": "LHR",
+      "departure_date": "2026-01-20",
+      "airline": "Air France",
+      "price": 1086.46,
+      "cabin_class": "business",
+      "max_connections": 1,
+      "segments": [
+        {
+          "id": "d574746b-991d-41fd-a9b4-475bf49705c6",
+          "origin": "MIA",
+          "destination": "DEN",
+          "departure_time": "11:37",
+          "arrival_time": "19:40",
+          "duration_minutes": 476,
+          "airline": "Lufthansa",
+          "flight_number": "UN581"
+        },
+        {
+          "id": "f1c8c04a-06aa-436a-a138-8def7c67b860",
+          "origin": "DEN",
+          "destination": "LHR",
+          "departure_time": "17:26",
+          "arrival_time": "16:20",
+          "duration_minutes": 403,
+          "airline": "United",
+          "flight_number": "AM437"
+        }
+      ]
+    },
+    {
+      "id": "flt_044",
+      "origin": "CDG",
+      "destination": "SEA",
+      "departure_date": "2026-01-07",
+      "airline": "Emirates",
+      "price": 1263.65,
+      "cabin_class": "economy",
+      "max_connections": 0,
+      "segments": [
+        {
+          "id": "c25617f9-5f88-47a9-8188-014815b671fe",
+          "origin": "CDG",
+          "destination": "SEA",
+          "departure_time": "20:05",
+          "arrival_time": "16:16",
+          "duration_minutes": 225,
+          "airline": "United",
+          "flight_number": "AI985"
+        }
+      ]
+    },
+    {
+      "id": "flt_045",
+      "origin": "CDG",
+      "destination": "NRT",
+      "departure_date": "2026-01-06",
+      "airline": "Lufthansa",
+      "price": 313.93,
+      "cabin_class": "premium_economy",
+      "max_connections": 1,
+      "segments": [
+        {
+          "id": "a45a3a9b-e81a-4e4f-9e01-3d6d26dd1a29",
+          "origin": "CDG",
+          "destination": "SEA",
+          "departure_time": "07:12",
+          "arrival_time": "22:23",
+          "duration_minutes": 378,
+          "airline": "Lufthansa",
+          "flight_number": "LU878"
+        },
+        {
+          "id": "4d8d9970-54f1-4b84-b597-168148a36ccc",
+          "origin": "SEA",
+          "destination": "NRT",
+          "departure_time": "07:13",
+          "arrival_time": "14:35",
+          "duration_minutes": 127,
+          "airline": "JetBlue",
+          "flight_number": "LU815"
+        }
+      ]
+    },
+    {
+      "id": "flt_046",
+      "origin": "FRA",
+      "destination": "ORD",
+      "departure_date": "2025-12-07",
+      "airline": "Singapore Airlines",
+      "price": 836.13,
+      "cabin_class": "premium_economy",
+      "max_connections": 2,
+      "segments": [
+        {
+          "id": "4f605f01-b651-4817-9302-76540b38c451",
+          "origin": "FRA",
+          "destination": "JFK",
+          "departure_time": "19:05",
+          "arrival_time": "13:53",
+          "duration_minutes": 118,
+          "airline": "Lufthansa",
+          "flight_number": "UN763"
+        },
+        {
+          "id": "f34f7cd5-e6c4-4613-8593-c7adfc6214d8",
+          "origin": "JFK",
+          "destination": "DEN",
+          "departure_time": "21:59",
+          "arrival_time": "15:32",
+          "duration_minutes": 421,
+          "airline": "JetBlue",
+          "flight_number": "AI954"
+        },
+        {
+          "id": "321054c3-a783-48e8-b052-925fd8dbd845",
+          "origin": "DEN",
+          "destination": "ORD",
+          "departure_time": "21:30",
+          "arrival_time": "13:29",
+          "duration_minutes": 342,
+          "airline": "American",
+          "flight_number": "AI295"
+        }
+      ]
+    },
+    {
+      "id": "flt_047",
+      "origin": "SIN",
+      "destination": "LAX",
+      "departure_date": "2025-12-03",
+      "airline": "Emirates",
+      "price": 1179.88,
+      "cabin_class": "first",
+      "max_connections": 1,
+      "segments": [
+        {
+          "id": "d1695dec-eb71-4470-b9e6-c4e4ba6a806b",
+          "origin": "SIN",
+          "destination": "SEA",
+          "departure_time": "22:17",
+          "arrival_time": "06:18",
+          "duration_minutes": 431,
+          "airline": "JetBlue",
+          "flight_number": "SI693"
+        },
+        {
+          "id": "f864a730-3f4d-4eaa-9040-d707be235c63",
+          "origin": "SEA",
+          "destination": "LAX",
+          "departure_time": "21:55",
+          "arrival_time": "10:28",
+          "duration_minutes": 335,
+          "airline": "Lufthansa",
+          "flight_number": "BR440"
+        }
+      ]
+    },
+    {
+      "id": "flt_048",
+      "origin": "MIA",
+      "destination": "SFO",
+      "departure_date": "2025-11-22",
+      "airline": "American",
+      "price": 703.47,
+      "cabin_class": "premium_economy",
+      "max_connections": 2,
+      "segments": [
+        {
+          "id": "f5070243-a8b7-4192-b555-cf3c8196b637",
+          "origin": "MIA",
+          "destination": "DFW",
+          "departure_time": "18:14",
+          "arrival_time": "19:02",
+          "duration_minutes": 222,
+          "airline": "Lufthansa",
+          "flight_number": "AI495"
+        },
+        {
+          "id": "f2fb3b49-b919-4832-ac0f-3ddc79035efe",
+          "origin": "DFW",
+          "destination": "DXB",
+          "departure_time": "10:31",
+          "arrival_time": "07:08",
+          "duration_minutes": 317,
+          "airline": "Singapore Airlines",
+          "flight_number": "BR990"
+        },
+        {
+          "id": "c4550acd-b53a-464c-a0bc-e60277d6038c",
+          "origin": "DXB",
+          "destination": "SFO",
+          "departure_time": "09:55",
+          "arrival_time": "20:06",
+          "duration_minutes": 329,
+          "airline": "Lufthansa",
+          "flight_number": "DE839"
+        }
+      ]
+    },
+    {
+      "id": "flt_049",
+      "origin": "LAX",
+      "destination": "ATL",
+      "departure_date": "2025-12-01",
+      "airline": "United",
+      "price": 735.86,
+      "cabin_class": "economy",
+      "max_connections": 1,
+      "segments": [
+        {
+          "id": "6128422b-1d25-4b4e-9b32-797942ec4a8c",
+          "origin": "LAX",
+          "destination": "FRA",
+          "departure_time": "18:41",
+          "arrival_time": "08:54",
+          "duration_minutes": 228,
+          "airline": "Emirates",
+          "flight_number": "AI424"
+        },
+        {
+          "id": "14f2a5bb-4102-44b2-950c-40e87380435c",
+          "origin": "FRA",
+          "destination": "ATL",
+          "departure_time": "21:55",
+          "arrival_time": "07:39",
+          "duration_minutes": 95,
+          "airline": "Southwest",
+          "flight_number": "JE332"
+        }
+      ]
+    },
+    {
+      "id": "flt_050",
+      "origin": "DXB",
+      "destination": "CDG",
+      "departure_date": "2025-11-10",
+      "airline": "American",
+      "price": 379.48,
+      "cabin_class": "economy",
+      "max_connections": 1,
+      "segments": [
+        {
+          "id": "5a28c449-7276-4ed9-b878-d25693fa32e9",
+          "origin": "DXB",
+          "destination": "ORD",
+          "departure_time": "15:57",
+          "arrival_time": "06:02",
+          "duration_minutes": 226,
+          "airline": "Delta",
+          "flight_number": "JE467"
+        },
+        {
+          "id": "0d8be11f-c172-41c8-8f76-7f80f37a1d7b",
+          "origin": "ORD",
+          "destination": "CDG",
+          "departure_time": "17:27",
+          "arrival_time": "10:15",
+          "duration_minutes": 331,
+          "airline": "Air France",
+          "flight_number": "SI798"
+        }
+      ]
+    }
+  ],
+  "offers": [
+    {
+      "id": "off_001",
+      "flight_id": "flt_040",
+      "price": 176.4,
+      "cabin_class": "first",
+      "airline": "American",
+      "details": {
+        "baggage_allowance": "3 checked bags",
+        "refundable": true,
+        "seat_selection": "Paid",
+        "meal_service": "None"
+      }
+    },
+    {
+      "id": "off_002",
+      "flight_id": "flt_010",
+      "price": 411.3,
+      "cabin_class": "premium_economy",
+      "airline": "Emirates",
+      "details": {
+        "baggage_allowance": "3 checked bags",
+        "refundable": false,
+        "seat_selection": "Paid",
+        "meal_service": "Available for purchase"
+      }
+    },
+    {
+      "id": "off_003",
+      "flight_id": "flt_043",
+      "price": 873.25,
+      "cabin_class": "business",
+      "airline": "Air France",
+      "details": {
+        "baggage_allowance": "2 checked bags",
+        "refundable": false,
+        "seat_selection": "At check-in",
+        "meal_service": "None"
+      }
+    },
+    {
+      "id": "off_004",
+      "flight_id": "flt_011",
+      "price": 873.61,
+      "cabin_class": "premium_economy",
+      "airline": "JetBlue",
+      "details": {
+        "baggage_allowance": "2 checked bags",
+        "refundable": false,
+        "seat_selection": "At check-in",
+        "meal_service": "Available for purchase"
+      }
+    },
+    {
+      "id": "off_005",
+      "flight_id": "flt_045",
+      "price": 282.55,
+      "cabin_class": "premium_economy",
+      "airline": "Lufthansa",
+      "details": {
+        "baggage_allowance": "2 checked bags",
+        "refundable": true,
+        "seat_selection": "Paid",
+        "meal_service": "Available for purchase"
+      }
+    },
+    {
+      "id": "off_006",
+      "flight_id": "flt_007",
+      "price": 1062.77,
+      "cabin_class": "business",
+      "airline": "JetBlue",
+      "details": {
+        "baggage_allowance": "3 checked bags",
+        "refundable": false,
+        "seat_selection": "At check-in",
+        "meal_service": "Available for purchase"
+      }
+    },
+    {
+      "id": "off_007",
+      "flight_id": "flt_045",
+      "price": 288.22,
+      "cabin_class": "premium_economy",
+      "airline": "Lufthansa",
+      "details": {
+        "baggage_allowance": "3 checked bags",
+        "refundable": false,
+        "seat_selection": "Paid",
+        "meal_service": "Included"
+      }
+    },
+    {
+      "id": "off_008",
+      "flight_id": "flt_037",
+      "price": 1060.06,
+      "cabin_class": "first",
+      "airline": "Delta",
+      "details": {
+        "baggage_allowance": "3 checked bags",
+        "refundable": true,
+        "seat_selection": "At check-in",
+        "meal_service": "None"
+      }
+    },
+    {
+      "id": "off_009",
+      "flight_id": "flt_032",
+      "price": 1387.99,
+      "cabin_class": "economy",
+      "airline": "United",
+      "details": {
+        "baggage_allowance": "2 checked bags",
+        "refundable": true,
+        "seat_selection": "At check-in",
+        "meal_service": "Available for purchase"
+      }
+    },
+    {
+      "id": "off_010",
+      "flight_id": "flt_015",
+      "price": 874.14,
+      "cabin_class": "premium_economy",
+      "airline": "Lufthansa",
+      "details": {
+        "baggage_allowance": "3 checked bags",
+        "refundable": false,
+        "seat_selection": "At check-in",
+        "meal_service": "None"
+      }
+    },
+    {
+      "id": "off_011",
+      "flight_id": "flt_050",
+      "price": 403.64,
+      "cabin_class": "economy",
+      "airline": "American",
+      "details": {
+        "baggage_allowance": "1 checked bags",
+        "refundable": true,
+        "seat_selection": "At check-in",
+        "meal_service": "None"
+      }
+    },
+    {
+      "id": "off_012",
+      "flight_id": "flt_003",
+      "price": 581.5,
+      "cabin_class": "business",
+      "airline": "British Airways",
+      "details": {
+        "baggage_allowance": "2 checked bags",
+        "refundable": true,
+        "seat_selection": "At check-in",
+        "meal_service": "Available for purchase"
+      }
+    },
+    {
+      "id": "off_013",
+      "flight_id": "flt_047",
+      "price": 1005.92,
+      "cabin_class": "first",
+      "airline": "Emirates",
+      "details": {
+        "baggage_allowance": "2 checked bags",
+        "refundable": false,
+        "seat_selection": "At check-in",
+        "meal_service": "Available for purchase"
+      }
+    },
+    {
+      "id": "off_014",
+      "flight_id": "flt_012",
+      "price": 665.19,
+      "cabin_class": "first",
+      "airline": "Emirates",
+      "details": {
+        "baggage_allowance": "3 checked bags",
+        "refundable": false,
+        "seat_selection": "At check-in",
+        "meal_service": "None"
+      }
+    },
+    {
+      "id": "off_015",
+      "flight_id": "flt_018",
+      "price": 1437.45,
+      "cabin_class": "economy",
+      "airline": "Air France",
+      "details": {
+        "baggage_allowance": "2 checked bags",
+        "refundable": false,
+        "seat_selection": "Paid",
+        "meal_service": "None"
+      }
+    },
+    {
+      "id": "off_016",
+      "flight_id": "flt_022",
+      "price": 1658.67,
+      "cabin_class": "economy",
+      "airline": "Singapore Airlines",
+      "details": {
+        "baggage_allowance": "2 checked bags",
+        "refundable": true,
+        "seat_selection": "Free",
+        "meal_service": "Included"
+      }
+    },
+    {
+      "id": "off_017",
+      "flight_id": "flt_044",
+      "price": 1376.98,
+      "cabin_class": "economy",
+      "airline": "Emirates",
+      "details": {
+        "baggage_allowance": "2 checked bags",
+        "refundable": false,
+        "seat_selection": "Free",
+        "meal_service": "Available for purchase"
+      }
+    },
+    {
+      "id": "off_018",
+      "flight_id": "flt_001",
+      "price": 1063.74,
+      "cabin_class": "premium_economy",
+      "airline": "Delta",
+      "details": {
+        "baggage_allowance": "1 checked bags",
+        "refundable": false,
+        "seat_selection": "Paid",
+        "meal_service": "None"
+      }
+    },
+    {
+      "id": "off_019",
+      "flight_id": "flt_048",
+      "price": 751.96,
+      "cabin_class": "premium_economy",
+      "airline": "American",
+      "details": {
+        "baggage_allowance": "3 checked bags",
+        "refundable": false,
+        "seat_selection": "At check-in",
+        "meal_service": "Available for purchase"
+      }
+    },
+    {
+      "id": "off_020",
+      "flight_id": "flt_007",
+      "price": 1270.67,
+      "cabin_class": "business",
+      "airline": "JetBlue",
+      "details": {
+        "baggage_allowance": "2 checked bags",
+        "refundable": true,
+        "seat_selection": "At check-in",
+        "meal_service": "None"
+      }
+    },
+    {
+      "id": "off_021",
+      "flight_id": "flt_021",
+      "price": 802.2,
+      "cabin_class": "business",
+      "airline": "Southwest",
+      "details": {
+        "baggage_allowance": "1 checked bags",
+        "refundable": true,
+        "seat_selection": "At check-in",
+        "meal_service": "Available for purchase"
+      }
+    },
+    {
+      "id": "off_022",
+      "flight_id": "flt_045",
+      "price": 289.09,
+      "cabin_class": "premium_economy",
+      "airline": "Lufthansa",
+      "details": {
+        "baggage_allowance": "2 checked bags",
+        "refundable": true,
+        "seat_selection": "Free",
+        "meal_service": "Included"
+      }
+    },
+    {
+      "id": "off_023",
+      "flight_id": "flt_003",
+      "price": 580.35,
+      "cabin_class": "business",
+      "airline": "British Airways",
+      "details": {
+        "baggage_allowance": "2 checked bags",
+        "refundable": true,
+        "seat_selection": "Free",
+        "meal_service": "Included"
+      }
+    },
+    {
+      "id": "off_024",
+      "flight_id": "flt_035",
+      "price": 553.72,
+      "cabin_class": "business",
+      "airline": "Singapore Airlines",
+      "details": {
+        "baggage_allowance": "2 checked bags",
+        "refundable": false,
+        "seat_selection": "At check-in",
+        "meal_service": "None"
+      }
+    },
+    {
+      "id": "off_025",
+      "flight_id": "flt_045",
+      "price": 369.93,
+      "cabin_class": "premium_economy",
+      "airline": "Lufthansa",
+      "details": {
+        "baggage_allowance": "2 checked bags",
+        "refundable": true,
+        "seat_selection": "Paid",
+        "meal_service": "None"
+      }
+    },
+    {
+      "id": "off_026",
+      "flight_id": "flt_007",
+      "price": 1346.13,
+      "cabin_class": "business",
+      "airline": "JetBlue",
+      "details": {
+        "baggage_allowance": "3 checked bags",
+        "refundable": false,
+        "seat_selection": "Paid",
+        "meal_service": "Included"
+      }
+    },
+    {
+      "id": "off_027",
+      "flight_id": "flt_045",
+      "price": 297.67,
+      "cabin_class": "premium_economy",
+      "airline": "Lufthansa",
+      "details": {
+        "baggage_allowance": "2 checked bags",
+        "refundable": false,
+        "seat_selection": "Free",
+        "meal_service": "Available for purchase"
+      }
+    },
+    {
+      "id": "off_028",
+      "flight_id": "flt_007",
+      "price": 1416.07,
+      "cabin_class": "business",
+      "airline": "JetBlue",
+      "details": {
+        "baggage_allowance": "2 checked bags",
+        "refundable": false,
+        "seat_selection": "Free",
+        "meal_service": "Available for purchase"
+      }
+    },
+    {
+      "id": "off_029",
+      "flight_id": "flt_018",
+      "price": 1112.09,
+      "cabin_class": "economy",
+      "airline": "Air France",
+      "details": {
+        "baggage_allowance": "1 checked bags",
+        "refundable": false,
+        "seat_selection": "Free",
+        "meal_service": "None"
+      }
+    },
+    {
+      "id": "off_030",
+      "flight_id": "flt_014",
+      "price": 1102.68,
+      "cabin_class": "first",
+      "airline": "Emirates",
+      "details": {
+        "baggage_allowance": "3 checked bags",
+        "refundable": true,
+        "seat_selection": "Free",
+        "meal_service": "Available for purchase"
+      }
+    },
+    {
+      "id": "off_031",
+      "flight_id": "flt_016",
+      "price": 1113.68,
+      "cabin_class": "economy",
+      "airline": "Southwest",
+      "details": {
+        "baggage_allowance": "3 checked bags",
+        "refundable": true,
+        "seat_selection": "Free",
+        "meal_service": "None"
+      }
+    },
+    {
+      "id": "off_032",
+      "flight_id": "flt_014",
+      "price": 1079.59,
+      "cabin_class": "first",
+      "airline": "Emirates",
+      "details": {
+        "baggage_allowance": "1 checked bags",
+        "refundable": false,
+        "seat_selection": "Free",
+        "meal_service": "None"
+      }
+    },
+    {
+      "id": "off_033",
+      "flight_id": "flt_001",
+      "price": 1069.76,
+      "cabin_class": "premium_economy",
+      "airline": "Delta",
+      "details": {
+        "baggage_allowance": "1 checked bags",
+        "refundable": true,
+        "seat_selection": "At check-in",
+        "meal_service": "Available for purchase"
+      }
+    },
+    {
+      "id": "off_034",
+      "flight_id": "flt_012",
+      "price": 637.73,
+      "cabin_class": "first",
+      "airline": "Emirates",
+      "details": {
+        "baggage_allowance": "1 checked bags",
+        "refundable": true,
+        "seat_selection": "Free",
+        "meal_service": "Available for purchase"
+      }
+    },
+    {
+      "id": "off_035",
+      "flight_id": "flt_016",
+      "price": 964.65,
+      "cabin_class": "economy",
+      "airline": "Southwest",
+      "details": {
+        "baggage_allowance": "1 checked bags",
+        "refundable": true,
+        "seat_selection": "Paid",
+        "meal_service": "Included"
+      }
+    },
+    {
+      "id": "off_036",
+      "flight_id": "flt_009",
+      "price": 1566.34,
+      "cabin_class": "premium_economy",
+      "airline": "Lufthansa",
+      "details": {
+        "baggage_allowance": "3 checked bags",
+        "refundable": true,
+        "seat_selection": "At check-in",
+        "meal_service": "Included"
+      }
+    },
+    {
+      "id": "off_037",
+      "flight_id": "flt_031",
+      "price": 313.77,
+      "cabin_class": "economy",
+      "airline": "Southwest",
+      "details": {
+        "baggage_allowance": "2 checked bags",
+        "refundable": true,
+        "seat_selection": "Paid",
+        "meal_service": "None"
+      }
+    },
+    {
+      "id": "off_038",
+      "flight_id": "flt_015",
+      "price": 976.52,
+      "cabin_class": "premium_economy",
+      "airline": "Lufthansa",
+      "details": {
+        "baggage_allowance": "1 checked bags",
+        "refundable": false,
+        "seat_selection": "Paid",
+        "meal_service": "None"
+      }
+    },
+    {
+      "id": "off_039",
+      "flight_id": "flt_002",
+      "price": 211.34,
+      "cabin_class": "business",
+      "airline": "Air France",
+      "details": {
+        "baggage_allowance": "2 checked bags",
+        "refundable": false,
+        "seat_selection": "Paid",
+        "meal_service": "None"
+      }
+    },
+    {
+      "id": "off_040",
+      "flight_id": "flt_007",
+      "price": 1182.99,
+      "cabin_class": "business",
+      "airline": "JetBlue",
+      "details": {
+        "baggage_allowance": "2 checked bags",
+        "refundable": true,
+        "seat_selection": "Free",
+        "meal_service": "Available for purchase"
+      }
+    },
+    {
+      "id": "off_041",
+      "flight_id": "flt_039",
+      "price": 788.57,
+      "cabin_class": "economy",
+      "airline": "JetBlue",
+      "details": {
+        "baggage_allowance": "1 checked bags",
+        "refundable": false,
+        "seat_selection": "At check-in",
+        "meal_service": "None"
+      }
+    },
+    {
+      "id": "off_042",
+      "flight_id": "flt_038",
+      "price": 946.95,
+      "cabin_class": "economy",
+      "airline": "United",
+      "details": {
+        "baggage_allowance": "2 checked bags",
+        "refundable": false,
+        "seat_selection": "At check-in",
+        "meal_service": "None"
+      }
+    },
+    {
+      "id": "off_043",
+      "flight_id": "flt_019",
+      "price": 1050.97,
+      "cabin_class": "economy",
+      "airline": "Southwest",
+      "details": {
+        "baggage_allowance": "3 checked bags",
+        "refundable": false,
+        "seat_selection": "Free",
+        "meal_service": "None"
+      }
+    },
+    {
+      "id": "off_044",
+      "flight_id": "flt_008",
+      "price": 1467.76,
+      "cabin_class": "premium_economy",
+      "airline": "JetBlue",
+      "details": {
+        "baggage_allowance": "3 checked bags",
+        "refundable": true,
+        "seat_selection": "Paid",
+        "meal_service": "Available for purchase"
+      }
+    },
+    {
+      "id": "off_045",
+      "flight_id": "flt_015",
+      "price": 800.28,
+      "cabin_class": "premium_economy",
+      "airline": "Lufthansa",
+      "details": {
+        "baggage_allowance": "2 checked bags",
+        "refundable": false,
+        "seat_selection": "Paid",
+        "meal_service": "None"
+      }
+    },
+    {
+      "id": "off_046",
+      "flight_id": "flt_007",
+      "price": 1098.56,
+      "cabin_class": "business",
+      "airline": "JetBlue",
+      "details": {
+        "baggage_allowance": "2 checked bags",
+        "refundable": false,
+        "seat_selection": "Paid",
+        "meal_service": "Included"
+      }
+    },
+    {
+      "id": "off_047",
+      "flight_id": "flt_044",
+      "price": 1477.45,
+      "cabin_class": "economy",
+      "airline": "Emirates",
+      "details": {
+        "baggage_allowance": "1 checked bags",
+        "refundable": true,
+        "seat_selection": "Free",
+        "meal_service": "Included"
+      }
+    },
+    {
+      "id": "off_048",
+      "flight_id": "flt_028",
+      "price": 1095.74,
+      "cabin_class": "first",
+      "airline": "Delta",
+      "details": {
+        "baggage_allowance": "3 checked bags",
+        "refundable": false,
+        "seat_selection": "Free",
+        "meal_service": "None"
+      }
+    },
+    {
+      "id": "off_049",
+      "flight_id": "flt_004",
+      "price": 461.92,
+      "cabin_class": "business",
+      "airline": "Emirates",
+      "details": {
+        "baggage_allowance": "3 checked bags",
+        "refundable": false,
+        "seat_selection": "At check-in",
+        "meal_service": "Included"
+      }
+    },
+    {
+      "id": "off_050",
+      "flight_id": "flt_027",
+      "price": 547.55,
+      "cabin_class": "economy",
+      "airline": "British Airways",
+      "details": {
+        "baggage_allowance": "3 checked bags",
+        "refundable": false,
+        "seat_selection": "At check-in",
+        "meal_service": "Included"
+      }
+    },
+    {
+      "id": "off_051",
+      "flight_id": "flt_019",
+      "price": 1113.8,
+      "cabin_class": "economy",
+      "airline": "Southwest",
+      "details": {
+        "baggage_allowance": "2 checked bags",
+        "refundable": true,
+        "seat_selection": "At check-in",
+        "meal_service": "None"
+      }
+    },
+    {
+      "id": "off_052",
+      "flight_id": "flt_014",
+      "price": 899.41,
+      "cabin_class": "first",
+      "airline": "Emirates",
+      "details": {
+        "baggage_allowance": "2 checked bags",
+        "refundable": true,
+        "seat_selection": "Free",
+        "meal_service": "Available for purchase"
+      }
+    },
+    {
+      "id": "off_053",
+      "flight_id": "flt_036",
+      "price": 1390.63,
+      "cabin_class": "business",
+      "airline": "Singapore Airlines",
+      "details": {
+        "baggage_allowance": "2 checked bags",
+        "refundable": true,
+        "seat_selection": "Paid",
+        "meal_service": "None"
+      }
+    },
+    {
+      "id": "off_054",
+      "flight_id": "flt_050",
+      "price": 427.81,
+      "cabin_class": "economy",
+      "airline": "American",
+      "details": {
+        "baggage_allowance": "3 checked bags",
+        "refundable": true,
+        "seat_selection": "At check-in",
+        "meal_service": "None"
+      }
+    },
+    {
+      "id": "off_055",
+      "flight_id": "flt_045",
+      "price": 284.73,
+      "cabin_class": "premium_economy",
+      "airline": "Lufthansa",
+      "details": {
+        "baggage_allowance": "1 checked bags",
+        "refundable": false,
+        "seat_selection": "At check-in",
+        "meal_service": "Available for purchase"
+      }
+    },
+    {
+      "id": "off_056",
+      "flight_id": "flt_022",
+      "price": 1390.6,
+      "cabin_class": "economy",
+      "airline": "Singapore Airlines",
+      "details": {
+        "baggage_allowance": "1 checked bags",
+        "refundable": true,
+        "seat_selection": "At check-in",
+        "meal_service": "None"
+      }
+    },
+    {
+      "id": "off_057",
+      "flight_id": "flt_026",
+      "price": 870.24,
+      "cabin_class": "business",
+      "airline": "Lufthansa",
+      "details": {
+        "baggage_allowance": "3 checked bags",
+        "refundable": true,
+        "seat_selection": "Free",
+        "meal_service": "None"
+      }
+    },
+    {
+      "id": "off_058",
+      "flight_id": "flt_034",
+      "price": 750.89,
+      "cabin_class": "premium_economy",
+      "airline": "Delta",
+      "details": {
+        "baggage_allowance": "2 checked bags",
+        "refundable": false,
+        "seat_selection": "Paid",
+        "meal_service": "Included"
+      }
+    },
+    {
+      "id": "off_059",
+      "flight_id": "flt_024",
+      "price": 961.13,
+      "cabin_class": "business",
+      "airline": "American",
+      "details": {
+        "baggage_allowance": "2 checked bags",
+        "refundable": true,
+        "seat_selection": "Free",
+        "meal_service": "Included"
+      }
+    },
+    {
+      "id": "off_060",
+      "flight_id": "flt_011",
+      "price": 1160.3,
+      "cabin_class": "premium_economy",
+      "airline": "JetBlue",
+      "details": {
+        "baggage_allowance": "1 checked bags",
+        "refundable": true,
+        "seat_selection": "Paid",
+        "meal_service": "Available for purchase"
+      }
+    },
+    {
+      "id": "off_061",
+      "flight_id": "flt_043",
+      "price": 1053.44,
+      "cabin_class": "business",
+      "airline": "Air France",
+      "details": {
+        "baggage_allowance": "3 checked bags",
+        "refundable": false,
+        "seat_selection": "Paid",
+        "meal_service": "Available for purchase"
+      }
+    },
+    {
+      "id": "off_062",
+      "flight_id": "flt_014",
+      "price": 1149.95,
+      "cabin_class": "first",
+      "airline": "Emirates",
+      "details": {
+        "baggage_allowance": "1 checked bags",
+        "refundable": false,
+        "seat_selection": "Paid",
+        "meal_service": "Included"
+      }
+    },
+    {
+      "id": "off_063",
+      "flight_id": "flt_019",
+      "price": 1147.12,
+      "cabin_class": "economy",
+      "airline": "Southwest",
+      "details": {
+        "baggage_allowance": "3 checked bags",
+        "refundable": false,
+        "seat_selection": "At check-in",
+        "meal_service": "None"
+      }
+    },
+    {
+      "id": "off_064",
+      "flight_id": "flt_020",
+      "price": 545.25,
+      "cabin_class": "economy",
+      "airline": "United",
+      "details": {
+        "baggage_allowance": "2 checked bags",
+        "refundable": true,
+        "seat_selection": "Free",
+        "meal_service": "Included"
+      }
+    },
+    {
+      "id": "off_065",
+      "flight_id": "flt_020",
+      "price": 785.14,
+      "cabin_class": "economy",
+      "airline": "United",
+      "details": {
+        "baggage_allowance": "1 checked bags",
+        "refundable": false,
+        "seat_selection": "Paid",
+        "meal_service": "Available for purchase"
+      }
+    },
+    {
+      "id": "off_066",
+      "flight_id": "flt_008",
+      "price": 1032.98,
+      "cabin_class": "premium_economy",
+      "airline": "JetBlue",
+      "details": {
+        "baggage_allowance": "3 checked bags",
+        "refundable": false,
+        "seat_selection": "Free",
+        "meal_service": "Included"
+      }
+    },
+    {
+      "id": "off_067",
+      "flight_id": "flt_025",
+      "price": 1372.75,
+      "cabin_class": "economy",
+      "airline": "Delta",
+      "details": {
+        "baggage_allowance": "1 checked bags",
+        "refundable": false,
+        "seat_selection": "Free",
+        "meal_service": "Available for purchase"
+      }
+    },
+    {
+      "id": "off_068",
+      "flight_id": "flt_048",
+      "price": 574.68,
+      "cabin_class": "premium_economy",
+      "airline": "American",
+      "details": {
+        "baggage_allowance": "1 checked bags",
+        "refundable": false,
+        "seat_selection": "Free",
+        "meal_service": "Available for purchase"
+      }
+    },
+    {
+      "id": "off_069",
+      "flight_id": "flt_037",
+      "price": 898.83,
+      "cabin_class": "first",
+      "airline": "Delta",
+      "details": {
+        "baggage_allowance": "2 checked bags",
+        "refundable": false,
+        "seat_selection": "Paid",
+        "meal_service": "Included"
+      }
+    },
+    {
+      "id": "off_070",
+      "flight_id": "flt_026",
+      "price": 849.75,
+      "cabin_class": "business",
+      "airline": "Lufthansa",
+      "details": {
+        "baggage_allowance": "2 checked bags",
+        "refundable": true,
+        "seat_selection": "At check-in",
+        "meal_service": "Available for purchase"
+      }
+    },
+    {
+      "id": "off_071",
+      "flight_id": "flt_045",
+      "price": 366.64,
+      "cabin_class": "premium_economy",
+      "airline": "Lufthansa",
+      "details": {
+        "baggage_allowance": "1 checked bags",
+        "refundable": false,
+        "seat_selection": "Free",
+        "meal_service": "Included"
+      }
+    },
+    {
+      "id": "off_072",
+      "flight_id": "flt_028",
+      "price": 1353.04,
+      "cabin_class": "first",
+      "airline": "Delta",
+      "details": {
+        "baggage_allowance": "3 checked bags",
+        "refundable": true,
+        "seat_selection": "Paid",
+        "meal_service": "Available for purchase"
+      }
+    },
+    {
+      "id": "off_073",
+      "flight_id": "flt_048",
+      "price": 658.31,
+      "cabin_class": "premium_economy",
+      "airline": "American",
+      "details": {
+        "baggage_allowance": "2 checked bags",
+        "refundable": true,
+        "seat_selection": "Free",
+        "meal_service": "None"
+      }
+    },
+    {
+      "id": "off_074",
+      "flight_id": "flt_041",
+      "price": 208.36,
+      "cabin_class": "premium_economy",
+      "airline": "American",
+      "details": {
+        "baggage_allowance": "3 checked bags",
+        "refundable": true,
+        "seat_selection": "Paid",
+        "meal_service": "Available for purchase"
+      }
+    },
+    {
+      "id": "off_075",
+      "flight_id": "flt_047",
+      "price": 1396.14,
+      "cabin_class": "first",
+      "airline": "Emirates",
+      "details": {
+        "baggage_allowance": "3 checked bags",
+        "refundable": true,
+        "seat_selection": "Free",
+        "meal_service": "Included"
+      }
+    },
+    {
+      "id": "off_076",
+      "flight_id": "flt_010",
+      "price": 415.68,
+      "cabin_class": "premium_economy",
+      "airline": "Emirates",
+      "details": {
+        "baggage_allowance": "1 checked bags",
+        "refundable": true,
+        "seat_selection": "At check-in",
+        "meal_service": "Included"
+      }
+    },
+    {
+      "id": "off_077",
+      "flight_id": "flt_012",
+      "price": 892.03,
+      "cabin_class": "first",
+      "airline": "Emirates",
+      "details": {
+        "baggage_allowance": "3 checked bags",
+        "refundable": false,
+        "seat_selection": "Paid",
+        "meal_service": "None"
+      }
+    },
+    {
+      "id": "off_078",
+      "flight_id": "flt_049",
+      "price": 759.25,
+      "cabin_class": "economy",
+      "airline": "United",
+      "details": {
+        "baggage_allowance": "3 checked bags",
+        "refundable": false,
+        "seat_selection": "At check-in",
+        "meal_service": "Available for purchase"
+      }
+    },
+    {
+      "id": "off_079",
+      "flight_id": "flt_010",
+      "price": 449.55,
+      "cabin_class": "premium_economy",
+      "airline": "Emirates",
+      "details": {
+        "baggage_allowance": "2 checked bags",
+        "refundable": false,
+        "seat_selection": "At check-in",
+        "meal_service": "Available for purchase"
+      }
+    },
+    {
+      "id": "off_080",
+      "flight_id": "flt_018",
+      "price": 1316.05,
+      "cabin_class": "economy",
+      "airline": "Air France",
+      "details": {
+        "baggage_allowance": "2 checked bags",
+        "refundable": true,
+        "seat_selection": "Paid",
+        "meal_service": "Available for purchase"
+      }
+    },
+    {
+      "id": "off_081",
+      "flight_id": "flt_029",
+      "price": 919.07,
+      "cabin_class": "first",
+      "airline": "Air France",
+      "details": {
+        "baggage_allowance": "2 checked bags",
+        "refundable": false,
+        "seat_selection": "Free",
+        "meal_service": "None"
+      }
+    },
+    {
+      "id": "off_082",
+      "flight_id": "flt_006",
+      "price": 761.9,
+      "cabin_class": "first",
+      "airline": "Singapore Airlines",
+      "details": {
+        "baggage_allowance": "3 checked bags",
+        "refundable": false,
+        "seat_selection": "Paid",
+        "meal_service": "None"
+      }
+    },
+    {
+      "id": "off_083",
+      "flight_id": "flt_036",
+      "price": 1735.22,
+      "cabin_class": "business",
+      "airline": "Singapore Airlines",
+      "details": {
+        "baggage_allowance": "3 checked bags",
+        "refundable": true,
+        "seat_selection": "Paid",
+        "meal_service": "None"
+      }
+    },
+    {
+      "id": "off_084",
+      "flight_id": "flt_042",
+      "price": 812.21,
+      "cabin_class": "premium_economy",
+      "airline": "JetBlue",
+      "details": {
+        "baggage_allowance": "3 checked bags",
+        "refundable": false,
+        "seat_selection": "At check-in",
+        "meal_service": "Included"
+      }
+    },
+    {
+      "id": "off_085",
+      "flight_id": "flt_004",
+      "price": 437.64,
+      "cabin_class": "business",
+      "airline": "Emirates",
+      "details": {
+        "baggage_allowance": "2 checked bags",
+        "refundable": true,
+        "seat_selection": "At check-in",
+        "meal_service": "None"
+      }
+    },
+    {
+      "id": "off_086",
+      "flight_id": "flt_012",
+      "price": 616.33,
+      "cabin_class": "first",
+      "airline": "Emirates",
+      "details": {
+        "baggage_allowance": "3 checked bags",
+        "refundable": false,
+        "seat_selection": "Paid",
+        "meal_service": "None"
+      }
+    },
+    {
+      "id": "off_087",
+      "flight_id": "flt_034",
+      "price": 884.67,
+      "cabin_class": "premium_economy",
+      "airline": "Delta",
+      "details": {
+        "baggage_allowance": "2 checked bags",
+        "refundable": false,
+        "seat_selection": "Paid",
+        "meal_service": "Available for purchase"
+      }
+    },
+    {
+      "id": "off_088",
+      "flight_id": "flt_027",
+      "price": 645.46,
+      "cabin_class": "economy",
+      "airline": "British Airways",
+      "details": {
+        "baggage_allowance": "3 checked bags",
+        "refundable": true,
+        "seat_selection": "At check-in",
+        "meal_service": "None"
+      }
+    },
+    {
+      "id": "off_089",
+      "flight_id": "flt_022",
+      "price": 1221.96,
+      "cabin_class": "economy",
+      "airline": "Singapore Airlines",
+      "details": {
+        "baggage_allowance": "1 checked bags",
+        "refundable": false,
+        "seat_selection": "Paid",
+        "meal_service": "Available for purchase"
+      }
+    },
+    {
+      "id": "off_090",
+      "flight_id": "flt_047",
+      "price": 1345.8,
+      "cabin_class": "first",
+      "airline": "Emirates",
+      "details": {
+        "baggage_allowance": "3 checked bags",
+        "refundable": true,
+        "seat_selection": "Paid",
+        "meal_service": "Included"
+      }
+    },
+    {
+      "id": "off_091",
+      "flight_id": "flt_038",
+      "price": 989.78,
+      "cabin_class": "economy",
+      "airline": "United",
+      "details": {
+        "baggage_allowance": "2 checked bags",
+        "refundable": false,
+        "seat_selection": "At check-in",
+        "meal_service": "None"
+      }
+    },
+    {
+      "id": "off_092",
+      "flight_id": "flt_043",
+      "price": 1039.51,
+      "cabin_class": "business",
+      "airline": "Air France",
+      "details": {
+        "baggage_allowance": "3 checked bags",
+        "refundable": true,
+        "seat_selection": "Paid",
+        "meal_service": "None"
+      }
+    },
+    {
+      "id": "off_093",
+      "flight_id": "flt_025",
+      "price": 1432.87,
+      "cabin_class": "economy",
+      "airline": "Delta",
+      "details": {
+        "baggage_allowance": "2 checked bags",
+        "refundable": true,
+        "seat_selection": "At check-in",
+        "meal_service": "None"
+      }
+    },
+    {
+      "id": "off_094",
+      "flight_id": "flt_048",
+      "price": 843.37,
+      "cabin_class": "premium_economy",
+      "airline": "American",
+      "details": {
+        "baggage_allowance": "3 checked bags",
+        "refundable": true,
+        "seat_selection": "At check-in",
+        "meal_service": "None"
+      }
+    },
+    {
+      "id": "off_095",
+      "flight_id": "flt_028",
+      "price": 1311.03,
+      "cabin_class": "first",
+      "airline": "Delta",
+      "details": {
+        "baggage_allowance": "1 checked bags",
+        "refundable": false,
+        "seat_selection": "Paid",
+        "meal_service": "Included"
+      }
+    },
+    {
+      "id": "off_096",
+      "flight_id": "flt_014",
+      "price": 977.47,
+      "cabin_class": "first",
+      "airline": "Emirates",
+      "details": {
+        "baggage_allowance": "2 checked bags",
+        "refundable": true,
+        "seat_selection": "Free",
+        "meal_service": "Included"
+      }
+    },
+    {
+      "id": "off_097",
+      "flight_id": "flt_010",
+      "price": 382.74,
+      "cabin_class": "premium_economy",
+      "airline": "Emirates",
+      "details": {
+        "baggage_allowance": "1 checked bags",
+        "refundable": true,
+        "seat_selection": "At check-in",
+        "meal_service": "Available for purchase"
+      }
+    },
+    {
+      "id": "off_098",
+      "flight_id": "flt_050",
+      "price": 397.4,
+      "cabin_class": "economy",
+      "airline": "American",
+      "details": {
+        "baggage_allowance": "3 checked bags",
+        "refundable": false,
+        "seat_selection": "Free",
+        "meal_service": "Included"
+      }
+    },
+    {
+      "id": "off_099",
+      "flight_id": "flt_012",
+      "price": 855.78,
+      "cabin_class": "first",
+      "airline": "Emirates",
+      "details": {
+        "baggage_allowance": "3 checked bags",
+        "refundable": true,
+        "seat_selection": "At check-in",
+        "meal_service": "Available for purchase"
+      }
+    },
+    {
+      "id": "off_100",
+      "flight_id": "flt_003",
+      "price": 607.17,
+      "cabin_class": "business",
+      "airline": "British Airways",
+      "details": {
+        "baggage_allowance": "3 checked bags",
+        "refundable": true,
+        "seat_selection": "Paid",
+        "meal_service": "None"
+      }
+    }
+  ],
+  "stays": [
+    {
+      "id": "stay_001",
+      "name": "Mountain View Lodge",
+      "location": "San Francisco",
+      "latitude": 37.83166,
+      "longitude": -122.472599,
+      "price_per_night": 209.98,
+      "guests": 4,
+      "check_in_date": "2025-11-22",
+      "check_out_date": "2025-12-05"
+    },
+    {
+      "id": "stay_002",
+      "name": "Heritage Hotel",
+      "location": "Miami",
+      "latitude": 25.851126,
+      "longitude": -80.094912,
+      "price_per_night": 403.16,
+      "guests": 4,
+      "check_in_date": "2025-11-09",
+      "check_out_date": "2025-11-21"
+    },
+    {
+      "id": "stay_003",
+      "name": "Airport Transit Hotel",
+      "location": "Dubai",
+      "latitude": 25.298054,
+      "longitude": 55.334178,
+      "price_per_night": 333.96,
+      "guests": 3,
+      "check_in_date": "2025-11-14",
+      "check_out_date": "2025-11-22"
+    },
+    {
+      "id": "stay_004",
+      "name": "Seaside Resort",
+      "location": "New York",
+      "latitude": 40.787623,
+      "longitude": -73.995092,
+      "price_per_night": 378.79,
+      "guests": 5,
+      "check_in_date": "2025-11-18",
+      "check_out_date": "2025-11-27"
+    },
+    {
+      "id": "stay_005",
+      "name": "Riverside Lodge",
+      "location": "Los Angeles",
+      "latitude": 34.104823,
+      "longitude": -118.289142,
+      "price_per_night": 295.61,
+      "guests": 4,
+      "check_in_date": "2025-11-07",
+      "check_out_date": "2025-11-10"
+    },
+    {
+      "id": "stay_006",
+      "name": "Riverside Lodge",
+      "location": "Los Angeles",
+      "latitude": 34.115541,
+      "longitude": -118.166774,
+      "price_per_night": 91.2,
+      "guests": 1,
+      "check_in_date": "2025-11-27",
+      "check_out_date": "2025-12-02"
+    },
+    {
+      "id": "stay_007",
+      "name": "Luxury Suites",
+      "location": "Paris",
+      "latitude": 48.803756,
+      "longitude": 2.451105,
+      "price_per_night": 174.31,
+      "guests": 3,
+      "check_in_date": "2025-11-14",
+      "check_out_date": "2025-11-21"
+    },
+    {
+      "id": "stay_008",
+      "name": "City Center Inn",
+      "location": "Los Angeles",
+      "latitude": 34.082192,
+      "longitude": -118.185424,
+      "price_per_night": 96.09,
+      "guests": 4,
+      "check_in_date": "2025-11-24",
+      "check_out_date": "2025-12-07"
+    },
+    {
+      "id": "stay_009",
+      "name": "Riverside Lodge",
+      "location": "Chicago",
+      "latitude": 41.871922,
+      "longitude": -87.60673,
+      "price_per_night": 113.27,
+      "guests": 3,
+      "check_in_date": "2025-11-22",
+      "check_out_date": "2025-12-05"
+    },
+    {
+      "id": "stay_010",
+      "name": "Modern Lofts",
+      "location": "Miami",
+      "latitude": 25.771461,
+      "longitude": -80.146353,
+      "price_per_night": 257.77,
+      "guests": 3,
+      "check_in_date": "2025-11-24",
+      "check_out_date": "2025-11-28"
+    },
+    {
+      "id": "stay_011",
+      "name": "Airport Transit Hotel",
+      "location": "Miami",
+      "latitude": 25.67125,
+      "longitude": -80.207835,
+      "price_per_night": 341.58,
+      "guests": 1,
+      "check_in_date": "2025-11-07",
+      "check_out_date": "2025-11-10"
+    },
+    {
+      "id": "stay_012",
+      "name": "Modern Lofts",
+      "location": "Los Angeles",
+      "latitude": 34.071548,
+      "longitude": -118.340413,
+      "price_per_night": 321.52,
+      "guests": 6,
+      "check_in_date": "2025-11-24",
+      "check_out_date": "2025-12-03"
+    },
+    {
+      "id": "stay_013",
+      "name": "Garden Retreat",
+      "location": "Chicago",
+      "latitude": 41.778413,
+      "longitude": -87.659237,
+      "price_per_night": 254.96,
+      "guests": 6,
+      "check_in_date": "2025-11-07",
+      "check_out_date": "2025-11-15"
+    },
+    {
+      "id": "stay_014",
+      "name": "Modern Lofts",
+      "location": "Los Angeles",
+      "latitude": 33.965736,
+      "longitude": -118.238488,
+      "price_per_night": 410.29,
+      "guests": 5,
+      "check_in_date": "2025-11-14",
+      "check_out_date": "2025-11-21"
+    },
+    {
+      "id": "stay_015",
+      "name": "Budget Stay Inn",
+      "location": "Dubai",
+      "latitude": 25.279466,
+      "longitude": 55.179507,
+      "price_per_night": 492.04,
+      "guests": 3,
+      "check_in_date": "2025-10-29",
+      "check_out_date": "2025-11-06"
+    },
+    {
+      "id": "stay_016",
+      "name": "Executive Residence",
+      "location": "New York",
+      "latitude": 40.626312,
+      "longitude": -74.057775,
+      "price_per_night": 343.87,
+      "guests": 5,
+      "check_in_date": "2025-11-09",
+      "check_out_date": "2025-11-23"
+    },
+    {
+      "id": "stay_017",
+      "name": "Executive Residence",
+      "location": "London",
+      "latitude": 51.47786,
+      "longitude": -0.160091,
+      "price_per_night": 153.54,
+      "guests": 6,
+      "check_in_date": "2025-11-02",
+      "check_out_date": "2025-11-04"
+    },
+    {
+      "id": "stay_018",
+      "name": "Seaside Resort",
+      "location": "Tokyo",
+      "latitude": 35.702547,
+      "longitude": 139.7126,
+      "price_per_night": 380.74,
+      "guests": 4,
+      "check_in_date": "2025-11-20",
+      "check_out_date": "2025-11-29"
+    },
+    {
+      "id": "stay_019",
+      "name": "Grand Plaza Hotel",
+      "location": "New York",
+      "latitude": 40.621561,
+      "longitude": -74.066106,
+      "price_per_night": 212.55,
+      "guests": 3,
+      "check_in_date": "2025-11-07",
+      "check_out_date": "2025-11-12"
+    },
+    {
+      "id": "stay_020",
+      "name": "Executive Residence",
+      "location": "Dubai",
+      "latitude": 25.19948,
+      "longitude": 55.178124,
+      "price_per_night": 160.26,
+      "guests": 3,
+      "check_in_date": "2025-11-10",
+      "check_out_date": "2025-11-20"
+    },
+    {
+      "id": "stay_021",
+      "name": "Luxury Suites",
+      "location": "New York",
+      "latitude": 40.679185,
+      "longitude": -74.081105,
+      "price_per_night": 263.52,
+      "guests": 4,
+      "check_in_date": "2025-11-25",
+      "check_out_date": "2025-12-07"
+    },
+    {
+      "id": "stay_022",
+      "name": "Boutique Hotel",
+      "location": "Tokyo",
+      "latitude": 35.644007,
+      "longitude": 139.587663,
+      "price_per_night": 288.96,
+      "guests": 5,
+      "check_in_date": "2025-11-26",
+      "check_out_date": "2025-12-04"
+    },
+    {
+      "id": "stay_023",
+      "name": "Garden Retreat",
+      "location": "San Francisco",
+      "latitude": 37.820316,
+      "longitude": -122.503615,
+      "price_per_night": 497.94,
+      "guests": 2,
+      "check_in_date": "2025-11-23",
+      "check_out_date": "2025-11-26"
+    },
+    {
+      "id": "stay_024",
+      "name": "Business Tower Hotel",
+      "location": "Dubai",
+      "latitude": 25.12532,
+      "longitude": 55.236384,
+      "price_per_night": 208.73,
+      "guests": 5,
+      "check_in_date": "2025-11-07",
+      "check_out_date": "2025-11-14"
+    },
+    {
+      "id": "stay_025",
+      "name": "Boutique Hotel",
+      "location": "Paris",
+      "latitude": 48.845382,
+      "longitude": 2.341626,
+      "price_per_night": 445.42,
+      "guests": 3,
+      "check_in_date": "2025-11-03",
+      "check_out_date": "2025-11-16"
+    },
+    {
+      "id": "stay_026",
+      "name": "Grand Plaza Hotel",
+      "location": "Singapore",
+      "latitude": 1.379994,
+      "longitude": 103.878096,
+      "price_per_night": 111.52,
+      "guests": 6,
+      "check_in_date": "2025-11-11",
+      "check_out_date": "2025-11-17"
+    },
+    {
+      "id": "stay_027",
+      "name": "Grand Plaza Hotel",
+      "location": "Paris",
+      "latitude": 48.916819,
+      "longitude": 2.388082,
+      "price_per_night": 139.97,
+      "guests": 5,
+      "check_in_date": "2025-11-09",
+      "check_out_date": "2025-11-19"
+    },
+    {
+      "id": "stay_028",
+      "name": "Luxury Suites",
+      "location": "Tokyo",
+      "latitude": 35.589647,
+      "longitude": 139.706003,
+      "price_per_night": 232.1,
+      "guests": 5,
+      "check_in_date": "2025-10-30",
+      "check_out_date": "2025-11-03"
+    },
+    {
+      "id": "stay_029",
+      "name": "Luxury Suites",
+      "location": "New York",
+      "latitude": 40.748612,
+      "longitude": -73.916235,
+      "price_per_night": 266.45,
+      "guests": 1,
+      "check_in_date": "2025-11-17",
+      "check_out_date": "2025-11-21"
+    },
+    {
+      "id": "stay_030",
+      "name": "Business Tower Hotel",
+      "location": "Singapore",
+      "latitude": 1.32549,
+      "longitude": 103.782677,
+      "price_per_night": 184.84,
+      "guests": 1,
+      "check_in_date": "2025-11-02",
+      "check_out_date": "2025-11-12"
+    }
+  ],
+  "reviews": [
+    {
+      "id": "rev_001",
+      "stay_id": "stay_001",
+      "rating": 4.0,
+      "comment": "Beautiful views from the room.",
+      "date": "2025-07-24"
+    },
+    {
+      "id": "rev_002",
+      "stay_id": "stay_030",
+      "rating": 3.2,
+      "comment": "Modern amenities and comfortable beds.",
+      "date": "2025-01-13"
+    },
+    {
+      "id": "rev_003",
+      "stay_id": "stay_009",
+      "rating": 3.9,
+      "comment": "Rooms were spacious and clean.",
+      "date": "2024-11-01"
+    },
+    {
+      "id": "rev_004",
+      "stay_id": "stay_010",
+      "rating": 4.8,
+      "comment": "Convenient location near attractions.",
+      "date": "2024-11-06"
+    },
+    {
+      "id": "rev_005",
+      "stay_id": "stay_007",
+      "rating": 3.3,
+      "comment": "Comfortable rooms and friendly staff.",
+      "date": "2025-08-26"
+    },
+    {
+      "id": "rev_006",
+      "stay_id": "stay_015",
+      "rating": 4.8,
+      "comment": "Convenient location near attractions.",
+      "date": "2025-07-31"
+    },
+    {
+      "id": "rev_007",
+      "stay_id": "stay_003",
+      "rating": 4.9,
+      "comment": "Good value for money.",
+      "date": "2024-11-12"
+    },
+    {
+      "id": "rev_008",
+      "stay_id": "stay_022",
+      "rating": 4.4,
+      "comment": "Breakfast was delicious.",
+      "date": "2025-05-03"
+    },
+    {
+      "id": "rev_009",
+      "stay_id": "stay_018",
+      "rating": 4.8,
+      "comment": "Great for business travelers.",
+      "date": "2025-06-01"
+    },
+    {
+      "id": "rev_010",
+      "stay_id": "stay_006",
+      "rating": 4.4,
+      "comment": "Peaceful and quiet atmosphere.",
+      "date": "2024-10-28"
+    },
+    {
+      "id": "rev_011",
+      "stay_id": "stay_021",
+      "rating": 4.6,
+      "comment": "Breakfast was delicious.",
+      "date": "2025-07-30"
+    },
+    {
+      "id": "rev_012",
+      "stay_id": "stay_008",
+      "rating": 5.0,
+      "comment": "Modern amenities and comfortable beds.",
+      "date": "2025-08-26"
+    },
+    {
+      "id": "rev_013",
+      "stay_id": "stay_005",
+      "rating": 4.6,
+      "comment": "Great stay, would recommend!",
+      "date": "2025-06-28"
+    },
+    {
+      "id": "rev_014",
+      "stay_id": "stay_012",
+      "rating": 4.1,
+      "comment": "Convenient location near attractions.",
+      "date": "2025-01-17"
+    },
+    {
+      "id": "rev_015",
+      "stay_id": "stay_026",
+      "rating": 3.3,
+      "comment": "Family-friendly with good facilities.",
+      "date": "2025-01-18"
+    },
+    {
+      "id": "rev_016",
+      "stay_id": "stay_003",
+      "rating": 3.6,
+      "comment": "Peaceful and quiet atmosphere.",
+      "date": "2025-09-24"
+    },
+    {
+      "id": "rev_017",
+      "stay_id": "stay_024",
+      "rating": 4.1,
+      "comment": "Modern amenities and comfortable beds.",
+      "date": "2025-02-24"
+    },
+    {
+      "id": "rev_018",
+      "stay_id": "stay_014",
+      "rating": 3.1,
+      "comment": "Good value for money.",
+      "date": "2025-01-06"
+    },
+    {
+      "id": "rev_019",
+      "stay_id": "stay_021",
+      "rating": 3.9,
+      "comment": "Helpful concierge service.",
+      "date": "2025-09-20"
+    },
+    {
+      "id": "rev_020",
+      "stay_id": "stay_017",
+      "rating": 3.3,
+      "comment": "Great for business travelers.",
+      "date": "2025-05-04"
+    },
+    {
+      "id": "rev_021",
+      "stay_id": "stay_025",
+      "rating": 4.3,
+      "comment": "Perfect location for exploring the city.",
+      "date": "2025-01-18"
+    },
+    {
+      "id": "rev_022",
+      "stay_id": "stay_025",
+      "rating": 3.9,
+      "comment": "Family-friendly with good facilities.",
+      "date": "2025-08-22"
+    },
+    {
+      "id": "rev_023",
+      "stay_id": "stay_028",
+      "rating": 4.7,
+      "comment": "Breakfast was delicious.",
+      "date": "2025-09-29"
+    },
+    {
+      "id": "rev_024",
+      "stay_id": "stay_005",
+      "rating": 3.3,
+      "comment": "Good value for money.",
+      "date": "2025-05-25"
+    },
+    {
+      "id": "rev_025",
+      "stay_id": "stay_030",
+      "rating": 3.5,
+      "comment": "Breakfast was delicious.",
+      "date": "2024-10-29"
+    },
+    {
+      "id": "rev_026",
+      "stay_id": "stay_029",
+      "rating": 4.7,
+      "comment": "Excellent service throughout our stay.",
+      "date": "2025-06-04"
+    },
+    {
+      "id": "rev_027",
+      "stay_id": "stay_007",
+      "rating": 4.9,
+      "comment": "Excellent service throughout our stay.",
+      "date": "2024-12-06"
+    },
+    {
+      "id": "rev_028",
+      "stay_id": "stay_005",
+      "rating": 3.6,
+      "comment": "Breakfast was delicious.",
+      "date": "2024-12-11"
+    },
+    {
+      "id": "rev_029",
+      "stay_id": "stay_003",
+      "rating": 4.3,
+      "comment": "Rooms were spacious and clean.",
+      "date": "2025-02-12"
+    },
+    {
+      "id": "rev_030",
+      "stay_id": "stay_019",
+      "rating": 3.3,
+      "comment": "Rooms were spacious and clean.",
+      "date": "2025-08-10"
+    },
+    {
+      "id": "rev_031",
+      "stay_id": "stay_024",
+      "rating": 3.7,
+      "comment": "Family-friendly with good facilities.",
+      "date": "2024-12-22"
+    },
+    {
+      "id": "rev_032",
+      "stay_id": "stay_019",
+      "rating": 4.7,
+      "comment": "Great stay, would recommend!",
+      "date": "2025-10-06"
+    },
+    {
+      "id": "rev_033",
+      "stay_id": "stay_003",
+      "rating": 4.9,
+      "comment": "Modern amenities and comfortable beds.",
+      "date": "2025-10-04"
+    },
+    {
+      "id": "rev_034",
+      "stay_id": "stay_019",
+      "rating": 4.3,
+      "comment": "Modern amenities and comfortable beds.",
+      "date": "2025-06-14"
+    },
+    {
+      "id": "rev_035",
+      "stay_id": "stay_019",
+      "rating": 4.2,
+      "comment": "Great stay, would recommend!",
+      "date": "2025-03-28"
+    },
+    {
+      "id": "rev_036",
+      "stay_id": "stay_016",
+      "rating": 4.1,
+      "comment": "Helpful concierge service.",
+      "date": "2024-12-10"
+    },
+    {
+      "id": "rev_037",
+      "stay_id": "stay_010",
+      "rating": 3.5,
+      "comment": "Modern amenities and comfortable beds.",
+      "date": "2025-02-22"
+    },
+    {
+      "id": "rev_038",
+      "stay_id": "stay_022",
+      "rating": 3.6,
+      "comment": "Comfortable rooms and friendly staff.",
+      "date": "2025-04-03"
+    },
+    {
+      "id": "rev_039",
+      "stay_id": "stay_023",
+      "rating": 3.3,
+      "comment": "Beautiful views from the room.",
+      "date": "2025-09-27"
+    },
+    {
+      "id": "rev_040",
+      "stay_id": "stay_016",
+      "rating": 3.4,
+      "comment": "Rooms were spacious and clean.",
+      "date": "2025-03-04"
+    },
+    {
+      "id": "rev_041",
+      "stay_id": "stay_005",
+      "rating": 4.7,
+      "comment": "Good value for money.",
+      "date": "2025-05-20"
+    },
+    {
+      "id": "rev_042",
+      "stay_id": "stay_024",
+      "rating": 5.0,
+      "comment": "Perfect location for exploring the city.",
+      "date": "2025-05-04"
+    },
+    {
+      "id": "rev_043",
+      "stay_id": "stay_025",
+      "rating": 4.0,
+      "comment": "Comfortable rooms and friendly staff.",
+      "date": "2025-04-21"
+    },
+    {
+      "id": "rev_044",
+      "stay_id": "stay_011",
+      "rating": 3.9,
+      "comment": "Excellent service throughout our stay.",
+      "date": "2025-06-26"
+    },
+    {
+      "id": "rev_045",
+      "stay_id": "stay_015",
+      "rating": 3.3,
+      "comment": "Great stay, would recommend!",
+      "date": "2025-06-23"
+    },
+    {
+      "id": "rev_046",
+      "stay_id": "stay_010",
+      "rating": 4.7,
+      "comment": "Beautiful views from the room.",
+      "date": "2025-04-14"
+    },
+    {
+      "id": "rev_047",
+      "stay_id": "stay_008",
+      "rating": 4.6,
+      "comment": "Family-friendly with good facilities.",
+      "date": "2025-08-07"
+    },
+    {
+      "id": "rev_048",
+      "stay_id": "stay_019",
+      "rating": 3.4,
+      "comment": "Perfect location for exploring the city.",
+      "date": "2025-05-20"
+    },
+    {
+      "id": "rev_049",
+      "stay_id": "stay_016",
+      "rating": 3.9,
+      "comment": "Family-friendly with good facilities.",
+      "date": "2025-02-06"
+    },
+    {
+      "id": "rev_050",
+      "stay_id": "stay_010",
+      "rating": 3.0,
+      "comment": "Beautiful views from the room.",
+      "date": "2025-02-15"
+    },
+    {
+      "id": "rev_051",
+      "stay_id": "stay_017",
+      "rating": 4.9,
+      "comment": "Clean and modern facilities.",
+      "date": "2025-03-07"
+    },
+    {
+      "id": "rev_052",
+      "stay_id": "stay_019",
+      "rating": 3.1,
+      "comment": "Excellent service throughout our stay.",
+      "date": "2025-04-30"
+    },
+    {
+      "id": "rev_053",
+      "stay_id": "stay_016",
+      "rating": 4.8,
+      "comment": "Helpful concierge service.",
+      "date": "2024-12-26"
+    },
+    {
+      "id": "rev_054",
+      "stay_id": "stay_022",
+      "rating": 3.6,
+      "comment": "Great stay, would recommend!",
+      "date": "2025-03-01"
+    },
+    {
+      "id": "rev_055",
+      "stay_id": "stay_028",
+      "rating": 3.9,
+      "comment": "Family-friendly with good facilities.",
+      "date": "2025-09-02"
+    },
+    {
+      "id": "rev_056",
+      "stay_id": "stay_009",
+      "rating": 4.5,
+      "comment": "Good value for money.",
+      "date": "2025-04-23"
+    },
+    {
+      "id": "rev_057",
+      "stay_id": "stay_002",
+      "rating": 3.1,
+      "comment": "Breakfast was delicious.",
+      "date": "2025-04-05"
+    },
+    {
+      "id": "rev_058",
+      "stay_id": "stay_007",
+      "rating": 4.1,
+      "comment": "Comfortable rooms and friendly staff.",
+      "date": "2025-04-25"
+    },
+    {
+      "id": "rev_059",
+      "stay_id": "stay_013",
+      "rating": 3.9,
+      "comment": "Breakfast was delicious.",
+      "date": "2025-02-11"
+    },
+    {
+      "id": "rev_060",
+      "stay_id": "stay_009",
+      "rating": 4.4,
+      "comment": "Comfortable rooms and friendly staff.",
+      "date": "2024-12-12"
+    },
+    {
+      "id": "rev_061",
+      "stay_id": "stay_005",
+      "rating": 3.8,
+      "comment": "Modern amenities and comfortable beds.",
+      "date": "2025-09-08"
+    },
+    {
+      "id": "rev_062",
+      "stay_id": "stay_011",
+      "rating": 4.9,
+      "comment": "Modern amenities and comfortable beds.",
+      "date": "2025-01-15"
+    },
+    {
+      "id": "rev_063",
+      "stay_id": "stay_005",
+      "rating": 4.2,
+      "comment": "Beautiful views from the room.",
+      "date": "2025-07-18"
+    },
+    {
+      "id": "rev_064",
+      "stay_id": "stay_017",
+      "rating": 3.1,
+      "comment": "Perfect location for exploring the city.",
+      "date": "2025-10-07"
+    },
+    {
+      "id": "rev_065",
+      "stay_id": "stay_023",
+      "rating": 4.6,
+      "comment": "Breakfast was delicious.",
+      "date": "2025-05-10"
+    },
+    {
+      "id": "rev_066",
+      "stay_id": "stay_015",
+      "rating": 4.2,
+      "comment": "Breakfast was delicious.",
+      "date": "2025-08-12"
+    },
+    {
+      "id": "rev_067",
+      "stay_id": "stay_005",
+      "rating": 4.9,
+      "comment": "Good value for money.",
+      "date": "2025-05-13"
+    },
+    {
+      "id": "rev_068",
+      "stay_id": "stay_006",
+      "rating": 5.0,
+      "comment": "Peaceful and quiet atmosphere.",
+      "date": "2025-04-09"
+    },
+    {
+      "id": "rev_069",
+      "stay_id": "stay_027",
+      "rating": 4.2,
+      "comment": "Breakfast was delicious.",
+      "date": "2025-05-27"
+    },
+    {
+      "id": "rev_070",
+      "stay_id": "stay_027",
+      "rating": 4.1,
+      "comment": "Peaceful and quiet atmosphere.",
+      "date": "2025-02-09"
+    },
+    {
+      "id": "rev_071",
+      "stay_id": "stay_019",
+      "rating": 3.9,
+      "comment": "Great stay, would recommend!",
+      "date": "2025-05-27"
+    },
+    {
+      "id": "rev_072",
+      "stay_id": "stay_012",
+      "rating": 4.3,
+      "comment": "Beautiful views from the room.",
+      "date": "2025-05-11"
+    },
+    {
+      "id": "rev_073",
+      "stay_id": "stay_019",
+      "rating": 4.6,
+      "comment": "Peaceful and quiet atmosphere.",
+      "date": "2025-05-23"
+    },
+    {
+      "id": "rev_074",
+      "stay_id": "stay_028",
+      "rating": 4.3,
+      "comment": "Rooms were spacious and clean.",
+      "date": "2024-11-09"
+    },
+    {
+      "id": "rev_075",
+      "stay_id": "stay_016",
+      "rating": 4.9,
+      "comment": "Modern amenities and comfortable beds.",
+      "date": "2025-06-14"
+    },
+    {
+      "id": "rev_076",
+      "stay_id": "stay_025",
+      "rating": 4.2,
+      "comment": "Peaceful and quiet atmosphere.",
+      "date": "2025-01-04"
+    },
+    {
+      "id": "rev_077",
+      "stay_id": "stay_002",
+      "rating": 4.0,
+      "comment": "Breakfast was delicious.",
+      "date": "2025-01-02"
+    },
+    {
+      "id": "rev_078",
+      "stay_id": "stay_021",
+      "rating": 4.5,
+      "comment": "Beautiful views from the room.",
+      "date": "2024-12-14"
+    },
+    {
+      "id": "rev_079",
+      "stay_id": "stay_005",
+      "rating": 3.5,
+      "comment": "Rooms were spacious and clean.",
+      "date": "2024-11-13"
+    },
+    {
+      "id": "rev_080",
+      "stay_id": "stay_023",
+      "rating": 3.4,
+      "comment": "Convenient location near attractions.",
+      "date": "2025-09-01"
+    },
+    {
+      "id": "rev_081",
+      "stay_id": "stay_011",
+      "rating": 3.3,
+      "comment": "Peaceful and quiet atmosphere.",
+      "date": "2025-03-27"
+    },
+    {
+      "id": "rev_082",
+      "stay_id": "stay_007",
+      "rating": 4.0,
+      "comment": "Rooms were spacious and clean.",
+      "date": "2025-03-31"
+    },
+    {
+      "id": "rev_083",
+      "stay_id": "stay_030",
+      "rating": 4.7,
+      "comment": "Peaceful and quiet atmosphere.",
+      "date": "2025-02-28"
+    },
+    {
+      "id": "rev_084",
+      "stay_id": "stay_024",
+      "rating": 4.4,
+      "comment": "Breakfast was delicious.",
+      "date": "2025-09-26"
+    },
+    {
+      "id": "rev_085",
+      "stay_id": "stay_007",
+      "rating": 3.7,
+      "comment": "Helpful concierge service.",
+      "date": "2025-01-13"
+    },
+    {
+      "id": "rev_086",
+      "stay_id": "stay_016",
+      "rating": 3.8,
+      "comment": "Perfect location for exploring the city.",
+      "date": "2025-01-31"
+    },
+    {
+      "id": "rev_087",
+      "stay_id": "stay_015",
+      "rating": 3.7,
+      "comment": "Good value for money.",
+      "date": "2025-01-28"
+    },
+    {
+      "id": "rev_088",
+      "stay_id": "stay_022",
+      "rating": 4.3,
+      "comment": "Peaceful and quiet atmosphere.",
+      "date": "2024-11-13"
+    },
+    {
+      "id": "rev_089",
+      "stay_id": "stay_009",
+      "rating": 4.0,
+      "comment": "Clean and modern facilities.",
+      "date": "2024-12-19"
+    },
+    {
+      "id": "rev_090",
+      "stay_id": "stay_009",
+      "rating": 3.6,
+      "comment": "Excellent service throughout our stay.",
+      "date": "2025-01-15"
+    },
+    {
+      "id": "rev_091",
+      "stay_id": "stay_025",
+      "rating": 4.4,
+      "comment": "Peaceful and quiet atmosphere.",
+      "date": "2025-06-02"
+    },
+    {
+      "id": "rev_092",
+      "stay_id": "stay_023",
+      "rating": 3.6,
+      "comment": "Good value for money.",
+      "date": "2025-02-19"
+    },
+    {
+      "id": "rev_093",
+      "stay_id": "stay_018",
+      "rating": 3.6,
+      "comment": "Rooms were spacious and clean.",
+      "date": "2025-06-09"
+    },
+    {
+      "id": "rev_094",
+      "stay_id": "stay_022",
+      "rating": 3.8,
+      "comment": "Beautiful views from the room.",
+      "date": "2025-01-22"
+    },
+    {
+      "id": "rev_095",
+      "stay_id": "stay_027",
+      "rating": 4.9,
+      "comment": "Modern amenities and comfortable beds.",
+      "date": "2025-05-04"
+    },
+    {
+      "id": "rev_096",
+      "stay_id": "stay_005",
+      "rating": 3.1,
+      "comment": "Peaceful and quiet atmosphere.",
+      "date": "2025-06-01"
+    },
+    {
+      "id": "rev_097",
+      "stay_id": "stay_003",
+      "rating": 4.8,
+      "comment": "Helpful concierge service.",
+      "date": "2025-05-03"
+    },
+    {
+      "id": "rev_098",
+      "stay_id": "stay_009",
+      "rating": 3.4,
+      "comment": "Great for business travelers.",
+      "date": "2025-02-24"
+    },
+    {
+      "id": "rev_099",
+      "stay_id": "stay_018",
+      "rating": 4.9,
+      "comment": "Peaceful and quiet atmosphere.",
+      "date": "2025-06-11"
+    },
+    {
+      "id": "rev_100",
+      "stay_id": "stay_009",
+      "rating": 3.2,
+      "comment": "Peaceful and quiet atmosphere.",
+      "date": "2025-08-18"
+    },
+    {
+      "id": "rev_101",
+      "stay_id": "stay_019",
+      "rating": 3.5,
+      "comment": "Helpful concierge service.",
+      "date": "2025-06-27"
+    },
+    {
+      "id": "rev_102",
+      "stay_id": "stay_029",
+      "rating": 3.5,
+      "comment": "Clean and modern facilities.",
+      "date": "2025-01-29"
+    },
+    {
+      "id": "rev_103",
+      "stay_id": "stay_002",
+      "rating": 3.8,
+      "comment": "Peaceful and quiet atmosphere.",
+      "date": "2025-09-06"
+    },
+    {
+      "id": "rev_104",
+      "stay_id": "stay_016",
+      "rating": 4.4,
+      "comment": "Perfect location for exploring the city.",
+      "date": "2025-09-06"
+    },
+    {
+      "id": "rev_105",
+      "stay_id": "stay_001",
+      "rating": 5.0,
+      "comment": "Perfect location for exploring the city.",
+      "date": "2025-01-19"
+    },
+    {
+      "id": "rev_106",
+      "stay_id": "stay_014",
+      "rating": 4.9,
+      "comment": "Family-friendly with good facilities.",
+      "date": "2024-11-27"
+    },
+    {
+      "id": "rev_107",
+      "stay_id": "stay_016",
+      "rating": 4.3,
+      "comment": "Modern amenities and comfortable beds.",
+      "date": "2025-02-25"
+    },
+    {
+      "id": "rev_108",
+      "stay_id": "stay_010",
+      "rating": 3.6,
+      "comment": "Great stay, would recommend!",
+      "date": "2025-05-16"
+    },
+    {
+      "id": "rev_109",
+      "stay_id": "stay_030",
+      "rating": 4.3,
+      "comment": "Clean and modern facilities.",
+      "date": "2025-09-12"
+    },
+    {
+      "id": "rev_110",
+      "stay_id": "stay_018",
+      "rating": 4.8,
+      "comment": "Perfect location for exploring the city.",
+      "date": "2025-10-08"
+    },
+    {
+      "id": "rev_111",
+      "stay_id": "stay_014",
+      "rating": 4.9,
+      "comment": "Great stay, would recommend!",
+      "date": "2025-07-29"
+    },
+    {
+      "id": "rev_112",
+      "stay_id": "stay_027",
+      "rating": 4.6,
+      "comment": "Perfect location for exploring the city.",
+      "date": "2025-04-07"
+    },
+    {
+      "id": "rev_113",
+      "stay_id": "stay_030",
+      "rating": 4.8,
+      "comment": "Great stay, would recommend!",
+      "date": "2025-06-01"
+    },
+    {
+      "id": "rev_114",
+      "stay_id": "stay_010",
+      "rating": 4.2,
+      "comment": "Family-friendly with good facilities.",
+      "date": "2025-01-10"
+    },
+    {
+      "id": "rev_115",
+      "stay_id": "stay_011",
+      "rating": 3.9,
+      "comment": "Helpful concierge service.",
+      "date": "2025-06-04"
+    },
+    {
+      "id": "rev_116",
+      "stay_id": "stay_018",
+      "rating": 4.0,
+      "comment": "Perfect location for exploring the city.",
+      "date": "2025-02-01"
+    },
+    {
+      "id": "rev_117",
+      "stay_id": "stay_028",
+      "rating": 3.9,
+      "comment": "Clean and modern facilities.",
+      "date": "2025-02-11"
+    },
+    {
+      "id": "rev_118",
+      "stay_id": "stay_026",
+      "rating": 3.7,
+      "comment": "Peaceful and quiet atmosphere.",
+      "date": "2025-08-31"
+    },
+    {
+      "id": "rev_119",
+      "stay_id": "stay_015",
+      "rating": 3.5,
+      "comment": "Perfect location for exploring the city.",
+      "date": "2024-11-30"
+    },
+    {
+      "id": "rev_120",
+      "stay_id": "stay_001",
+      "rating": 4.6,
+      "comment": "Rooms were spacious and clean.",
+      "date": "2025-05-08"
+    },
+    {
+      "id": "rev_121",
+      "stay_id": "stay_022",
+      "rating": 3.4,
+      "comment": "Great for business travelers.",
+      "date": "2025-07-21"
+    },
+    {
+      "id": "rev_122",
+      "stay_id": "stay_021",
+      "rating": 4.7,
+      "comment": "Breakfast was delicious.",
+      "date": "2025-04-03"
+    },
+    {
+      "id": "rev_123",
+      "stay_id": "stay_011",
+      "rating": 3.8,
+      "comment": "Comfortable rooms and friendly staff.",
+      "date": "2025-09-13"
+    },
+    {
+      "id": "rev_124",
+      "stay_id": "stay_006",
+      "rating": 4.0,
+      "comment": "Family-friendly with good facilities.",
+      "date": "2025-08-17"
+    },
+    {
+      "id": "rev_125",
+      "stay_id": "stay_008",
+      "rating": 3.5,
+      "comment": "Clean and modern facilities.",
+      "date": "2025-10-24"
+    },
+    {
+      "id": "rev_126",
+      "stay_id": "stay_015",
+      "rating": 4.9,
+      "comment": "Excellent service throughout our stay.",
+      "date": "2025-06-13"
+    },
+    {
+      "id": "rev_127",
+      "stay_id": "stay_019",
+      "rating": 3.0,
+      "comment": "Helpful concierge service.",
+      "date": "2025-01-07"
+    },
+    {
+      "id": "rev_128",
+      "stay_id": "stay_012",
+      "rating": 3.5,
+      "comment": "Helpful concierge service.",
+      "date": "2024-11-07"
+    },
+    {
+      "id": "rev_129",
+      "stay_id": "stay_004",
+      "rating": 3.6,
+      "comment": "Beautiful views from the room.",
+      "date": "2025-03-03"
+    },
+    {
+      "id": "rev_130",
+      "stay_id": "stay_022",
+      "rating": 4.8,
+      "comment": "Family-friendly with good facilities.",
+      "date": "2025-02-12"
+    },
+    {
+      "id": "rev_131",
+      "stay_id": "stay_023",
+      "rating": 4.4,
+      "comment": "Helpful concierge service.",
+      "date": "2025-05-21"
+    },
+    {
+      "id": "rev_132",
+      "stay_id": "stay_030",
+      "rating": 3.7,
+      "comment": "Clean and modern facilities.",
+      "date": "2025-05-29"
+    },
+    {
+      "id": "rev_133",
+      "stay_id": "stay_008",
+      "rating": 4.0,
+      "comment": "Convenient location near attractions.",
+      "date": "2025-08-20"
+    },
+    {
+      "id": "rev_134",
+      "stay_id": "stay_024",
+      "rating": 3.7,
+      "comment": "Peaceful and quiet atmosphere.",
+      "date": "2024-12-21"
+    },
+    {
+      "id": "rev_135",
+      "stay_id": "stay_018",
+      "rating": 4.5,
+      "comment": "Modern amenities and comfortable beds.",
+      "date": "2025-02-28"
+    },
+    {
+      "id": "rev_136",
+      "stay_id": "stay_022",
+      "rating": 4.5,
+      "comment": "Helpful concierge service.",
+      "date": "2025-07-08"
+    },
+    {
+      "id": "rev_137",
+      "stay_id": "stay_025",
+      "rating": 4.7,
+      "comment": "Comfortable rooms and friendly staff.",
+      "date": "2024-12-26"
+    },
+    {
+      "id": "rev_138",
+      "stay_id": "stay_017",
+      "rating": 4.1,
+      "comment": "Good value for money.",
+      "date": "2025-03-13"
+    },
+    {
+      "id": "rev_139",
+      "stay_id": "stay_003",
+      "rating": 3.2,
+      "comment": "Great for business travelers.",
+      "date": "2025-01-12"
+    },
+    {
+      "id": "rev_140",
+      "stay_id": "stay_018",
+      "rating": 3.4,
+      "comment": "Breakfast was delicious.",
+      "date": "2025-02-11"
+    },
+    {
+      "id": "rev_141",
+      "stay_id": "stay_005",
+      "rating": 3.7,
+      "comment": "Breakfast was delicious.",
+      "date": "2025-08-04"
+    },
+    {
+      "id": "rev_142",
+      "stay_id": "stay_015",
+      "rating": 4.4,
+      "comment": "Peaceful and quiet atmosphere.",
+      "date": "2025-08-29"
+    },
+    {
+      "id": "rev_143",
+      "stay_id": "stay_019",
+      "rating": 3.2,
+      "comment": "Breakfast was delicious.",
+      "date": "2025-02-19"
+    },
+    {
+      "id": "rev_144",
+      "stay_id": "stay_015",
+      "rating": 3.9,
+      "comment": "Breakfast was delicious.",
+      "date": "2025-09-29"
+    },
+    {
+      "id": "rev_145",
+      "stay_id": "stay_014",
+      "rating": 4.1,
+      "comment": "Breakfast was delicious.",
+      "date": "2025-03-08"
+    },
+    {
+      "id": "rev_146",
+      "stay_id": "stay_015",
+      "rating": 4.6,
+      "comment": "Peaceful and quiet atmosphere.",
+      "date": "2024-11-17"
+    },
+    {
+      "id": "rev_147",
+      "stay_id": "stay_001",
+      "rating": 3.5,
+      "comment": "Great stay, would recommend!",
+      "date": "2025-04-08"
+    },
+    {
+      "id": "rev_148",
+      "stay_id": "stay_024",
+      "rating": 4.2,
+      "comment": "Great stay, would recommend!",
+      "date": "2025-07-08"
+    },
+    {
+      "id": "rev_149",
+      "stay_id": "stay_014",
+      "rating": 4.4,
+      "comment": "Breakfast was delicious.",
+      "date": "2025-05-04"
+    },
+    {
+      "id": "rev_150",
+      "stay_id": "stay_002",
+      "rating": 5.0,
+      "comment": "Convenient location near attractions.",
+      "date": "2025-09-22"
+    },
+    {
+      "id": "rev_151",
+      "stay_id": "stay_002",
+      "rating": 3.8,
+      "comment": "Modern amenities and comfortable beds.",
+      "date": "2025-06-03"
+    },
+    {
+      "id": "rev_152",
+      "stay_id": "stay_005",
+      "rating": 5.0,
+      "comment": "Helpful concierge service.",
+      "date": "2024-12-03"
+    },
+    {
+      "id": "rev_153",
+      "stay_id": "stay_014",
+      "rating": 5.0,
+      "comment": "Beautiful views from the room.",
+      "date": "2025-04-19"
+    },
+    {
+      "id": "rev_154",
+      "stay_id": "stay_015",
+      "rating": 3.8,
+      "comment": "Helpful concierge service.",
+      "date": "2025-04-17"
+    },
+    {
+      "id": "rev_155",
+      "stay_id": "stay_022",
+      "rating": 3.3,
+      "comment": "Great for business travelers.",
+      "date": "2025-01-24"
+    },
+    {
+      "id": "rev_156",
+      "stay_id": "stay_012",
+      "rating": 3.4,
+      "comment": "Breakfast was delicious.",
+      "date": "2025-08-28"
+    },
+    {
+      "id": "rev_157",
+      "stay_id": "stay_013",
+      "rating": 3.3,
+      "comment": "Clean and modern facilities.",
+      "date": "2025-01-30"
+    },
+    {
+      "id": "rev_158",
+      "stay_id": "stay_027",
+      "rating": 4.5,
+      "comment": "Excellent service throughout our stay.",
+      "date": "2025-10-26"
+    },
+    {
+      "id": "rev_159",
+      "stay_id": "stay_015",
+      "rating": 4.4,
+      "comment": "Beautiful views from the room.",
+      "date": "2024-11-17"
+    },
+    {
+      "id": "rev_160",
+      "stay_id": "stay_018",
+      "rating": 4.6,
+      "comment": "Clean and modern facilities.",
+      "date": "2025-04-16"
+    },
+    {
+      "id": "rev_161",
+      "stay_id": "stay_015",
+      "rating": 3.3,
+      "comment": "Clean and modern facilities.",
+      "date": "2025-05-03"
+    },
+    {
+      "id": "rev_162",
+      "stay_id": "stay_030",
+      "rating": 3.1,
+      "comment": "Helpful concierge service.",
+      "date": "2025-08-31"
+    },
+    {
+      "id": "rev_163",
+      "stay_id": "stay_014",
+      "rating": 4.5,
+      "comment": "Family-friendly with good facilities.",
+      "date": "2024-12-17"
+    },
+    {
+      "id": "rev_164",
+      "stay_id": "stay_029",
+      "rating": 3.5,
+      "comment": "Comfortable rooms and friendly staff.",
+      "date": "2025-10-19"
+    },
+    {
+      "id": "rev_165",
+      "stay_id": "stay_004",
+      "rating": 3.1,
+      "comment": "Rooms were spacious and clean.",
+      "date": "2024-12-27"
+    },
+    {
+      "id": "rev_166",
+      "stay_id": "stay_022",
+      "rating": 4.7,
+      "comment": "Clean and modern facilities.",
+      "date": "2024-11-01"
+    },
+    {
+      "id": "rev_167",
+      "stay_id": "stay_024",
+      "rating": 3.8,
+      "comment": "Clean and modern facilities.",
+      "date": "2025-10-05"
+    },
+    {
+      "id": "rev_168",
+      "stay_id": "stay_018",
+      "rating": 4.5,
+      "comment": "Modern amenities and comfortable beds.",
+      "date": "2025-07-08"
+    },
+    {
+      "id": "rev_169",
+      "stay_id": "stay_002",
+      "rating": 4.0,
+      "comment": "Excellent service throughout our stay.",
+      "date": "2025-08-17"
+    },
+    {
+      "id": "rev_170",
+      "stay_id": "stay_008",
+      "rating": 3.6,
+      "comment": "Rooms were spacious and clean.",
+      "date": "2025-01-06"
+    },
+    {
+      "id": "rev_171",
+      "stay_id": "stay_025",
+      "rating": 4.6,
+      "comment": "Clean and modern facilities.",
+      "date": "2024-11-17"
+    },
+    {
+      "id": "rev_172",
+      "stay_id": "stay_010",
+      "rating": 5.0,
+      "comment": "Breakfast was delicious.",
+      "date": "2025-08-15"
+    },
+    {
+      "id": "rev_173",
+      "stay_id": "stay_008",
+      "rating": 3.6,
+      "comment": "Great stay, would recommend!",
+      "date": "2025-03-30"
+    },
+    {
+      "id": "rev_174",
+      "stay_id": "stay_018",
+      "rating": 4.8,
+      "comment": "Family-friendly with good facilities.",
+      "date": "2024-12-29"
+    },
+    {
+      "id": "rev_175",
+      "stay_id": "stay_006",
+      "rating": 4.4,
+      "comment": "Breakfast was delicious.",
+      "date": "2024-12-11"
+    },
+    {
+      "id": "rev_176",
+      "stay_id": "stay_016",
+      "rating": 4.9,
+      "comment": "Helpful concierge service.",
+      "date": "2025-10-03"
+    },
+    {
+      "id": "rev_177",
+      "stay_id": "stay_022",
+      "rating": 4.6,
+      "comment": "Good value for money.",
+      "date": "2025-04-15"
+    },
+    {
+      "id": "rev_178",
+      "stay_id": "stay_023",
+      "rating": 3.8,
+      "comment": "Excellent service throughout our stay.",
+      "date": "2025-03-28"
+    },
+    {
+      "id": "rev_179",
+      "stay_id": "stay_013",
+      "rating": 4.5,
+      "comment": "Convenient location near attractions.",
+      "date": "2025-07-25"
+    },
+    {
+      "id": "rev_180",
+      "stay_id": "stay_008",
+      "rating": 3.6,
+      "comment": "Peaceful and quiet atmosphere.",
+      "date": "2025-07-04"
+    },
+    {
+      "id": "rev_181",
+      "stay_id": "stay_005",
+      "rating": 4.8,
+      "comment": "Breakfast was delicious.",
+      "date": "2025-03-04"
+    },
+    {
+      "id": "rev_182",
+      "stay_id": "stay_014",
+      "rating": 4.1,
+      "comment": "Perfect location for exploring the city.",
+      "date": "2025-03-28"
+    },
+    {
+      "id": "rev_183",
+      "stay_id": "stay_013",
+      "rating": 3.5,
+      "comment": "Good value for money.",
+      "date": "2025-06-25"
+    },
+    {
+      "id": "rev_184",
+      "stay_id": "stay_021",
+      "rating": 4.8,
+      "comment": "Great for business travelers.",
+      "date": "2025-09-17"
+    },
+    {
+      "id": "rev_185",
+      "stay_id": "stay_012",
+      "rating": 4.1,
+      "comment": "Great for business travelers.",
+      "date": "2025-09-10"
+    },
+    {
+      "id": "rev_186",
+      "stay_id": "stay_007",
+      "rating": 3.5,
+      "comment": "Helpful concierge service.",
+      "date": "2025-10-01"
+    },
+    {
+      "id": "rev_187",
+      "stay_id": "stay_020",
+      "rating": 3.1,
+      "comment": "Comfortable rooms and friendly staff.",
+      "date": "2024-12-23"
+    },
+    {
+      "id": "rev_188",
+      "stay_id": "stay_007",
+      "rating": 4.4,
+      "comment": "Breakfast was delicious.",
+      "date": "2024-12-31"
+    },
+    {
+      "id": "rev_189",
+      "stay_id": "stay_007",
+      "rating": 3.4,
+      "comment": "Family-friendly with good facilities.",
+      "date": "2025-02-24"
+    },
+    {
+      "id": "rev_190",
+      "stay_id": "stay_011",
+      "rating": 4.9,
+      "comment": "Great stay, would recommend!",
+      "date": "2025-05-25"
+    },
+    {
+      "id": "rev_191",
+      "stay_id": "stay_007",
+      "rating": 4.9,
+      "comment": "Comfortable rooms and friendly staff.",
+      "date": "2025-07-22"
+    },
+    {
+      "id": "rev_192",
+      "stay_id": "stay_024",
+      "rating": 4.8,
+      "comment": "Peaceful and quiet atmosphere.",
+      "date": "2025-02-24"
+    },
+    {
+      "id": "rev_193",
+      "stay_id": "stay_020",
+      "rating": 3.4,
+      "comment": "Family-friendly with good facilities.",
+      "date": "2024-11-01"
+    },
+    {
+      "id": "rev_194",
+      "stay_id": "stay_008",
+      "rating": 3.6,
+      "comment": "Excellent service throughout our stay.",
+      "date": "2025-01-18"
+    },
+    {
+      "id": "rev_195",
+      "stay_id": "stay_013",
+      "rating": 4.1,
+      "comment": "Good value for money.",
+      "date": "2025-03-03"
+    },
+    {
+      "id": "rev_196",
+      "stay_id": "stay_010",
+      "rating": 3.7,
+      "comment": "Family-friendly with good facilities.",
+      "date": "2025-06-16"
+    },
+    {
+      "id": "rev_197",
+      "stay_id": "stay_016",
+      "rating": 3.2,
+      "comment": "Peaceful and quiet atmosphere.",
+      "date": "2025-03-03"
+    },
+    {
+      "id": "rev_198",
+      "stay_id": "stay_016",
+      "rating": 4.8,
+      "comment": "Good value for money.",
+      "date": "2025-05-17"
+    },
+    {
+      "id": "rev_199",
+      "stay_id": "stay_011",
+      "rating": 3.1,
+      "comment": "Great for business travelers.",
+      "date": "2025-03-30"
+    },
+    {
+      "id": "rev_200",
+      "stay_id": "stay_008",
+      "rating": 3.0,
+      "comment": "Breakfast was delicious.",
+      "date": "2025-08-14"
+    }
+  ]
+}

@@ -1,0 +1,220 @@
+{
+  "description": "Offline Korean map services providing directions, geocoding, reverse geocoding, and static maps",
+  "name": "Naver Maps Directions Server",
+  "tools": [
+    {
+      "description": "Get directions between two locations in Korea",
+      "input_schema": {
+        "properties": {
+          "goal": {
+            "description": "The destination location",
+            "type": "string"
+          },
+          "option": {
+            "description": "Route option (fastest, shortest, recommended, avoid_tolls)",
+            "type": "string"
+          },
+          "start": {
+            "description": "The starting location",
+            "type": "string"
+          },
+          "waypoints": {
+            "description": "Waypoints to pass through",
+            "type": "string"
+          }
+        },
+        "required": [
+          "goal",
+          "start"
+        ],
+        "type": "object"
+      },
+      "name": "naver_directions",
+      "output_schema": {
+        "properties": {
+          "error": {
+            "description": "Error message if no route found",
+            "type": "string"
+          },
+          "goal": {
+            "description": "The destination location",
+            "type": "string"
+          },
+          "option": {
+            "description": "Route option used",
+            "type": "string"
+          },
+          "route_id": {
+            "description": "Unique identifier for the route",
+            "type": "string"
+          },
+          "route_info": {
+            "description": "Detailed route information including distance, duration, and steps",
+            "type": "object"
+          },
+          "start": {
+            "description": "The starting location",
+            "type": "string"
+          },
+          "waypoints": {
+            "description": "Waypoints included in the route",
+            "type": "string"
+          }
+        },
+        "type": "object"
+      }
+    },
+    {
+      "description": "Convert a Korean address to geographic coordinates",
+      "input_schema": {
+        "properties": {
+          "address": {
+            "description": "The Korean address to geocode",
+            "type": "string"
+          }
+        },
+        "required": [
+          "address"
+        ],
+        "type": "object"
+      },
+      "name": "naver_geocode",
+      "output_schema": {
+        "properties": {
+          "address": {
+            "description": "The Korean address",
+            "type": "string"
+          },
+          "coordinates": {
+            "description": "Coordinates (latitude and longitude) for the address",
+            "type": "object"
+          },
+          "error": {
+            "description": "Error message if address not found",
+            "type": "string"
+          },
+          "geocode_id": {
+            "description": "Unique identifier for the geocode record",
+            "type": "string"
+          }
+        },
+        "type": "object"
+      }
+    },
+    {
+      "description": "Convert geographic coordinates to a Korean address",
+      "input_schema": {
+        "properties": {
+          "lat": {
+            "description": "Latitude coordinate",
+            "type": "string"
+          },
+          "lng": {
+            "description": "Longitude coordinate",
+            "type": "string"
+          }
+        },
+        "required": [
+          "lat",
+          "lng"
+        ],
+        "type": "object"
+      },
+      "name": "naver_reverse_geocode",
+      "output_schema": {
+        "properties": {
+          "address": {
+            "description": "Korean address corresponding to the coordinates",
+            "type": "string"
+          },
+          "error": {
+            "description": "Error message if coordinates not found",
+            "type": "string"
+          },
+          "lat": {
+            "description": "Latitude coordinate",
+            "type": "string"
+          },
+          "lng": {
+            "description": "Longitude coordinate",
+            "type": "string"
+          },
+          "reverse_geocode_id": {
+            "description": "Unique identifier for the reverse geocode record",
+            "type": "string"
+          }
+        },
+        "type": "object"
+      }
+    },
+    {
+      "description": "Generate a static map image for the specified location",
+      "input_schema": {
+        "properties": {
+          "center": {
+            "description": "Center coordinates in \"lat,lng\" format",
+            "type": "string"
+          },
+          "format": {
+            "description": "Image format (png, jpg)",
+            "type": "string"
+          },
+          "h": {
+            "description": "Map height in pixels",
+            "type": "string"
+          },
+          "level": {
+            "description": "Zoom level",
+            "type": "string"
+          },
+          "w": {
+            "description": "Map width in pixels",
+            "type": "string"
+          }
+        },
+        "required": [
+          "center"
+        ],
+        "type": "object"
+      },
+      "name": "naver_static_map",
+      "output_schema": {
+        "properties": {
+          "center": {
+            "description": "Center coordinates",
+            "type": "string"
+          },
+          "error": {
+            "description": "Error message if static map not found",
+            "type": "string"
+          },
+          "format": {
+            "description": "Image format",
+            "type": "string"
+          },
+          "h": {
+            "description": "Map height in pixels",
+            "type": "string"
+          },
+          "image_data": {
+            "description": "Base64-encoded image data",
+            "type": "string"
+          },
+          "level": {
+            "description": "Zoom level",
+            "type": "string"
+          },
+          "map_id": {
+            "description": "Unique identifier for the static map",
+            "type": "string"
+          },
+          "w": {
+            "description": "Map width in pixels",
+            "type": "string"
+          }
+        },
+        "type": "object"
+      }
+    }
+  ]
+}
