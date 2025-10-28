@@ -1,31 +1,15 @@
-#!/usr/bin/env python3
-"""
-Script to generate the Google Calendar dataset JSON file.
-This is a convenience script that imports and uses the dataset generator.
-"""
+"""Script to generate the Google Calendar dataset JSON file."""
 
-import sys
-import os
-
-# Add current directory to path to import the module
-sys.path.insert(0, os.path.dirname(__file__))
-
-from google_calendar_dataset import GoogleCalendarDatasetGenerator
-import json
-
-def main():
-    """Generate and save the dataset."""
-    # Use a fixed seed for deterministic generation
-    generator = GoogleCalendarDatasetGenerator(seed=42)
-    dataset = generator.generate_dataset(event_count=50)
-    
-    # Save to JSON file
-    output_path = "google_calendar_dataset.json"
-    with open(output_path, 'w', encoding='utf-8') as f:
-        json.dump(dataset, f, indent=2, ensure_ascii=False)
-    
-    print(f"Generated dataset with {len(dataset['calendars'])} calendars and {len(dataset['events'])} events")
-    print(f"Dataset saved to: {output_path}")
+from google_calendar_dataset import generate_dataset
 
 if __name__ == "__main__":
-    main()
+    # Generate and save dataset
+    dataset = generate_dataset(
+        calendar_count=3,
+        event_count=15,  # Extra events for testing
+        seed=42,  # Fixed seed for deterministic output
+        output_path="google_calendar_dataset.json"
+    )
+    
+    print(f"Generated dataset with {len(dataset['calendars'])} calendars and {len(dataset['events'])} events")
+    print(f"Saved to: google_calendar_dataset.json")

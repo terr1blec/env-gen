@@ -19,7 +19,7 @@ def parse_args() -> argparse.Namespace:
         "--schema",
         type=Path,
         default=Path(
-            "mcp_servers/0242.@JackKuo666_chembl-mcp-server_labeled.json"
+            "mcp_servers\Time & Calendar\cf_1629.google-calendar-mcp_google-calendar_labeled.json"
         ),
         help="Path to the MCP schema JSON file.",
     )
@@ -44,7 +44,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--max-turns",
         type=int,
-        default=36,
+        default=24,
         help="Maximum number of agent turns to allow for the workflow.",
     )
     parser.add_argument(

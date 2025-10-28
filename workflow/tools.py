@@ -1,5 +1,7 @@
 from __future__ import annotations
 
+import base64
+import binascii
 import json
 import subprocess
 import sys
@@ -55,19 +57,47 @@ def read_text(ctx: RunContextWrapper[WorkflowContext], relative_path: str) -> st
 def write_text(
     ctx: RunContextWrapper[WorkflowContext],
     relative_path: str,
-    content: str,
+    content: str | None = None,
+    *,
+    content_lines: Optional[List[str]] = None,
+    content_base64: Optional[str] = None,
 ) -> str:
-    """Write UTF-8 text to the given workspace-relative path, overwriting when present."""
+    """Write UTF-8 text to the given workspace-relative path, overwriting when present.
+
+    Exactly one content source must be provided: `content` (plain text), `content_lines`
+    (list of lines to be joined with newlines), or `content_base64` (UTF-8 decoded).
+    """
+    provided = [value is not None for value in (content, content_lines, content_base64)]
+    if provided.count(True) != 1:
+        raise ValueError("Provide exactly one of content, content_lines, or content_base64.")
+
     path = ctx.context.resolve_path(relative_path)
+    ctx.context.ensure_write_allowed(path)
     ensure_directory(path.parent)
-    path.write_text(content, encoding="utf-8")
-    return f"Wrote {len(content)} characters to {ctx.context.relative(path)}"
+
+    if content is not None:
+        final_content = content
+    elif content_lines is not None:
+        final_content = "\n".join(content_lines)
+    else:
+        try:
+            decoded = base64.b64decode(content_base64 or "", validate=True)
+        except (ValueError, binascii.Error) as exc:
+            raise ValueError("Invalid base64 content provided to write_text.") from exc
+        try:
+            final_content = decoded.decode("utf-8")
+        except UnicodeDecodeError as exc:
+            raise ValueError("Decoded base64 content is not valid UTF-8.") from exc
+
+    path.write_text(final_content, encoding="utf-8")
+    return f"Wrote {len(final_content)} characters to {ctx.context.relative(path)}"
 
 
 @function_tool
 def ensure_dir(ctx: RunContextWrapper[WorkflowContext], relative_path: str) -> str:
     """Ensure a workspace-relative directory exists."""
     path = ctx.context.resolve_path(relative_path)
+    ctx.context.ensure_write_allowed(path)
     ensure_directory(path)
     return f"Directory ready: {ctx.context.relative(path)}"
 
@@ -83,6 +113,7 @@ def write_json(
 ) -> str:
     """Serialize JSON data to the given workspace-relative path."""
     path = ctx.context.resolve_path(relative_path)
+    ctx.context.ensure_write_allowed(path)
     ensure_directory(path.parent)
     json_content = json.dumps(data, indent=indent, sort_keys=sort_keys, ensure_ascii=False)
     path.write_text(json_content, encoding="utf-8")

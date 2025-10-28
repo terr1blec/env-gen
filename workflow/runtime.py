@@ -3,7 +3,7 @@ from __future__ import annotations
 import os
 from datetime import datetime
 from pathlib import Path
-from typing import Any, Optional
+from typing import Any, Optional, List
 
 from agents import set_tracing_disabled
 from agents.extensions.models.litellm_model import LitellmModel
@@ -70,8 +70,8 @@ def prepare_context(args: Any) -> WorkflowContext:
     module_slug = slug.replace("-", "_")
 
     server_module_path = output_dir / f"{module_slug}_server.py"
-    dataset_module_path = output_dir / f"{module_slug}_dataset.py"
-    dataset_json_path = output_dir / f"{module_slug}_dataset.json"
+    database_module_path = output_dir / f"{module_slug}_database.py"
+    database_json_path = output_dir / f"{module_slug}_database.json"
     metadata_json_path = output_dir / f"{module_slug}_metadata.json"
     tests_root = workspace_root / "tests"
     if domain_slug:
@@ -95,8 +95,8 @@ def prepare_context(args: Any) -> WorkflowContext:
         domain=domain_name,
         domain_slug=domain_slug,
         server_module_path=server_module_path,
-        dataset_module_path=dataset_module_path,
-        dataset_json_path=dataset_json_path,
+        database_module_path=database_module_path,
+        database_json_path=database_json_path,
         metadata_json_path=metadata_json_path,
         tests_dir=tests_dir,
         transcripts_dir=transcripts_dir,
@@ -104,12 +104,39 @@ def prepare_context(args: Any) -> WorkflowContext:
     )
     context.recommended_paths = {
         "server_module": server_module_path,
-        "dataset_module": dataset_module_path,
-        "dataset_json": dataset_json_path,
+        "database_module": database_module_path,
+        "database_json": database_json_path,
         "metadata_json": metadata_json_path,
         "tests_directory": tests_dir,
         "transcripts_directory": transcripts_dir,
     }
+    sample_database_path: Optional[Path] = None
+    sample_root = workspace_root / "workflow" / "sample_data"
+    candidate_paths: List[Path] = []
+    if domain_slug:
+        candidate_paths.append(sample_root / domain_slug / f"{slug}.json")
+    candidate_paths.append(sample_root / f"{slug}.json")
+    for candidate in candidate_paths:
+        if candidate.exists():
+            sample_database_path = candidate.resolve()
+            context.sample_database_path = sample_database_path
+            context.recommended_paths["sample_database"] = sample_database_path
+            break
+    context.register_allowed_root(
+        server_module_path.parent,
+        database_module_path.parent,
+        database_json_path.parent,
+        metadata_json_path.parent,
+        tests_dir,
+        transcripts_dir,
+        logs_dir,
+    )
+    context.register_allowed_root(
+        server_module_path,
+        database_module_path,
+        database_json_path,
+        metadata_json_path,
+    )
     server_tools = server_info.get("tools", [])
     context.expected_tool_names = [
         tool.get("name")
@@ -154,12 +181,16 @@ async def run_workflow(args: Any) -> str:
     agents = build_agent_suite(context, model)
     logger.info("Starting multi-agent pipeline with model %s...", args.model)
 
-    step_results = await execute_workflow(
-        context=context,
-        agents=agents,
-        goal_prompt=args.prompt,
-        max_turns=args.max_turns,
-    )
+    try:
+        step_results = await execute_workflow(
+            context=context,
+            agents=agents,
+            goal_prompt=args.prompt,
+            max_turns=args.max_turns,
+        )
+    except RuntimeError as exc:
+        logger.error("Workflow terminated prematurely: %s", exc)
+        raise
     logger.info("Multi-agent pipeline complete.")
 
     summary_lines = [
@@ -179,3 +210,4 @@ async def run_workflow(args: Any) -> str:
 
 
 __all__ = ["prepare_context", "run_workflow"]
+

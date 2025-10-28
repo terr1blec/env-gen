@@ -1,0 +1,41 @@
+{
+  "description": "Chinese railway ticket search server providing train schedule information",
+  "name": "12306 MCP Server",
+  "tools": [
+    {
+      "description": "查询12306火车票",
+      "input_schema": {
+        "properties": {
+          "arrival_station": {
+            "description": "到达站 (Arrival station)",
+            "type": "string"
+          },
+          "date": {
+            "description": "日期 (Date in YYYY-MM-DD format)",
+            "type": "string"
+          },
+          "departure_station": {
+            "description": "出发站 (Departure station)",
+            "type": "string"
+          }
+        },
+        "required": [
+          "departure_station",
+          "arrival_station",
+          "date"
+        ],
+        "type": "object"
+      },
+      "name": "search",
+      "output_schema": {
+        "properties": {
+          "search_results": {
+            "description": "Search results with train schedules",
+            "type": "array"
+          }
+        },
+        "type": "object"
+      }
+    }
+  ]
+}

@@ -3,7 +3,7 @@ from __future__ import annotations
 import json
 from dataclasses import dataclass, field
 from pathlib import Path
-from typing import Any, Dict, List, Optional
+from typing import Any, Dict, List, Optional, Set
 
 
 @dataclass
@@ -16,8 +16,8 @@ class WorkflowContext:
     slug: str
     server_name: str
     server_module_path: Path
-    dataset_module_path: Path
-    dataset_json_path: Path
+    database_module_path: Path
+    database_json_path: Path
     metadata_json_path: Path
     tests_dir: Path
     transcripts_dir: Path
@@ -25,11 +25,21 @@ class WorkflowContext:
     domain: Optional[str] = None
     domain_slug: Optional[str] = None
     log_file_path: Path | None = None
+    sample_database_path: Path | None = None
     recommended_paths: Dict[str, Path] = field(default_factory=dict)
     schema_summary: str = ""
     notes: List[str] = field(default_factory=list)
     data_contract: Dict[str, Any] | None = None
     expected_tool_names: List[str] = field(default_factory=list)
+    allowed_write_roots: Set[Path] = field(default_factory=set)
+
+    @property
+    def dataset_module_path(self) -> Path:
+        return self.database_module_path
+
+    @property
+    def dataset_json_path(self) -> Path:
+        return self.database_json_path
 
     def resolve_path(self, value: str | Path) -> Path:
         """Resolve a workspace-relative path, preventing directory escape."""
@@ -49,6 +59,30 @@ class WorkflowContext:
             return str(value.relative_to(self.workspace_root))
         except ValueError:
             return str(value)
+
+    def register_allowed_root(self, *paths: Path) -> None:
+        """Register additional directories where write operations are permitted."""
+        for path in paths:
+            resolved = path.resolve()
+            if resolved == self.workspace_root or self.workspace_root in resolved.parents or resolved == self.workspace_root:
+                self.allowed_write_roots.add(resolved)
+
+    def is_allowed_write_path(self, value: Path) -> bool:
+        """Return True when the target path is within an allowed write root."""
+        resolved = value.resolve()
+        if resolved in self.allowed_write_roots:
+            return True
+        return any(root in resolved.parents for root in self.allowed_write_roots)
+
+    def ensure_write_allowed(self, value: Path) -> None:
+        """Raise if attempting to write outside permitted locations."""
+        if not self.is_allowed_write_path(value):
+            allowed = ", ".join(
+                str(self.relative(root)) for root in sorted(self.allowed_write_roots, key=str)
+            )
+            raise PermissionError(
+                f"Write access denied for {self.relative(value)}. Allowed write roots: {allowed}"
+            )
 
 
 def slugify(value: str) -> str:
@@ -89,3 +123,4 @@ def build_schema_summary(context: WorkflowContext) -> str:
     for key, path in context.recommended_paths.items():
         lines.append(f"- {key}: {context.relative(path)}")
     return "\n".join(lines)
+
